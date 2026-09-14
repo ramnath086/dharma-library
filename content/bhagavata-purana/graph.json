@@ -1,0 +1,65 @@
+{
+  "_note": "Knowledge-graph seed for the pilot range 1.1.1–1.1.10. Descriptions are original Dharma Library editorial text (CC BY-SA 4.0). Identifications follow the text itself and standard reference works (e.g. Vettam Mani, Purāṇic Encyclopaedia, 1975).",
+  "people": [
+    { "slug": "vasudeva-krishna", "kind": "deity", "name_iast": "Vāsudeva (Kṛṣṇa)", "name_sa": "वासुदेवः", "epithets": ["Kṛṣṇa", "Bhagavān", "Hari", "Keśava", "Adhokṣaja", "Uttamaśloka"],
+      "gender": "m", "description": "The supreme Lord to whom the Bhāgavata is addressed; invoked in the maṅgala of 1.1.1 as bhagavān Vāsudeva.",
+      "names": { "en": "Vāsudeva (Krishna)", "ml": "വാസുദേവൻ (ശ്രീകൃഷ്ണൻ)", "hi": "वासुदेव (कृष्ण)" } },
+    { "slug": "vishnu", "kind": "deity", "name_iast": "Viṣṇu", "name_sa": "विष्णुः", "epithets": ["Animiṣa", "Nārāyaṇa"], "gender": "m",
+      "description": "Referred to in 1.1.4 by the epithet Animiṣa, 'the unblinking one', whose sacred field is Naimiṣa.",
+      "names": { "en": "Vishnu", "ml": "വിഷ്ണു", "hi": "विष्णु" } },
+    { "slug": "brahma", "kind": "deity", "name_iast": "Brahmā", "name_sa": "ब्रह्मा", "epithets": ["Ādi-kavi", "Virinci", "Svayambhū"], "gender": "m",
+      "description": "The first created being and first seer (ādi-kavi), into whose heart the Lord imparted the Veda (1.1.1).",
+      "names": { "en": "Brahma", "ml": "ബ്രഹ്മാവ്", "hi": "ब्रह्मा" } },
+    { "slug": "vyasa", "kind": "sage", "name_iast": "Vyāsa", "name_sa": "व्यासः", "epithets": ["Bādarāyaṇa", "Kṛṣṇa Dvaipāyana", "Veda-vyāsa", "Mahā-muni"], "gender": "m",
+      "description": "Compiler of the Vedas and author of the Bhāgavata Purāṇa (mahā-muni, 1.1.2; bhagavān Bādarāyaṇa, 1.1.7). Father of Śuka.",
+      "names": { "en": "Vyasa", "ml": "വേദവ്യാസൻ", "hi": "वेदव्यास" } },
+    { "slug": "suka", "kind": "sage", "name_iast": "Śuka", "name_sa": "शुकः", "epithets": ["Śukadeva", "Vyāsa-sūnu", "Bādarāyaṇi"], "gender": "m",
+      "description": "Son of Vyāsa, who recited the Bhāgavata to King Parīkṣit; 'from the mouth of Śuka' (1.1.3).",
+      "names": { "en": "Shuka", "ml": "ശുകൻ", "hi": "शुकदेव" } },
+    { "slug": "suta", "kind": "narrator", "name_iast": "Sūta", "name_sa": "सूतः", "epithets": ["Ugraśravas", "Raumaharṣaṇi", "Sūta Gosvāmī"], "gender": "m",
+      "description": "Ugraśravas, son of Romaharṣaṇa; the bard who heard Śuka recite the Bhāgavata and retells it to the sages at Naimiṣāraṇya. Addressed in 1.1.5–1.1.10.",
+      "names": { "en": "Suta", "ml": "സൂതൻ", "hi": "सूत" } },
+    { "slug": "saunaka", "kind": "sage", "name_iast": "Śaunaka", "name_sa": "शौनकः", "epithets": ["Kulapati"], "gender": "m",
+      "description": "Leader of the sages performing the thousand-year sacrifice at Naimiṣāraṇya (1.1.4).",
+      "names": { "en": "Shaunaka", "ml": "ശൗനകൻ", "hi": "शौनक" } },
+    { "slug": "sages-of-naimisaranya", "kind": "sage", "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)", "name_sa": "शौनकादयः ऋषयः", "epithets": ["ṛṣayaḥ", "munayaḥ"], "gender": "m",
+      "description": "Collective speaker of 1.1.6–1.1.23: the sages headed by Śaunaka who question Sūta.",
+      "names": { "en": "The sages of Naimisharanya", "ml": "നൈമിഷാരണ്യത്തിലെ ഋഷിമാർ", "hi": "नैमिषारण्य के ऋषि" } }
+  ],
+  "places": [
+    { "slug": "naimisaranya", "kind": "forest", "name_iast": "Naimiṣāraṇya", "name_sa": "नैमिषारण्यम्", "alt_names": ["Naimiṣa", "Animiṣa-kṣetra"],
+      "description": "The forest where the sages perform their thousand-year sacrifice and hear the Bhāgavata from Sūta. Identified with Nimsar (Neemsar) on the Gomatī river.",
+      "modern_name": "Nimsar (Neemsar), Sitapur district, Uttar Pradesh, India", "latitude": 27.35, "longitude": 80.49,
+      "names": { "en": "Naimisharanya", "ml": "നൈമിഷാരണ്യം", "hi": "नैमिषारण्य" } }
+  ],
+  "topics": [
+    { "slug": "satyam-param", "name_iast": "Satyaṁ param — the supreme truth", "name_sa": "सत्यं परम्", "description": "The object of meditation named in 1.1.1; later (1.2.11) said to be known as Brahman, Paramātmā and Bhagavān.", "names": { "en": "The supreme truth", "ml": "പരമസത്യം" } },
+    { "slug": "srsti-sthiti-laya", "name_iast": "Sṛṣṭi–sthiti–laya — creation, sustenance, dissolution", "name_sa": "सृष्टिस्थितिलयाः", "description": "The universe's origin, maintenance and end, all traced to the one source (janmādy asya yataḥ).", "names": { "en": "Creation, sustenance and dissolution", "ml": "സൃഷ്ടി, സ്ഥിതി, ലയം" } },
+    { "slug": "maya", "name_iast": "Māyā — illusion", "name_sa": "माया", "description": "Deception (kuhaka) dispelled by the Lord's own radiance (1.1.1).", "names": { "en": "Maya (illusion)", "ml": "മായ" } },
+    { "slug": "dharma", "name_iast": "Dharma", "name_sa": "धर्मः", "description": "Right conduct / religion; the Bhāgavata teaches the highest dharma free of ulterior motive (1.1.2).", "names": { "en": "Dharma", "ml": "ധർമ്മം" } },
+    { "slug": "tapa-traya", "name_iast": "Tāpa-traya — the three miseries", "name_sa": "तापत्रयम्", "description": "Ādhyātmika, ādhibhautika and ādhidaivika suffering, uprooted by knowledge of the real (1.1.2).", "names": { "en": "The three miseries", "ml": "ത്രിതാപങ്ങൾ" } },
+    { "slug": "sravana", "name_iast": "Śravaṇa — hearing", "name_sa": "श्रवणम्", "description": "Hearing the Bhāgavata is itself the means: the Lord is captured in the heart of those who wish to hear (1.1.2–3).", "names": { "en": "Hearing (shravana)", "ml": "ശ്രവണം" } },
+    { "slug": "rasa", "name_iast": "Rasa — relish", "name_sa": "रसः", "description": "The Bhāgavata is described as the nectarean fruit and very abode of rasa (1.1.3).", "names": { "en": "Rasa (relish)", "ml": "രസം" } },
+    { "slug": "yajna", "name_iast": "Yajña / satra — sacrifice", "name_sa": "यज्ञः", "description": "The thousand-year sacrificial session at Naimiṣāraṇya (1.1.4–5).", "names": { "en": "Sacrifice (yajna)", "ml": "യജ്ഞം" } },
+    { "slug": "sastra", "name_iast": "Śāstra — scripture", "name_sa": "शास्त्रम्", "description": "Purāṇas, Itihāsas and Dharma-śāstras that Sūta has studied and taught (1.1.6).", "names": { "en": "Scripture (shastra)", "ml": "ശാസ്ത്രം" } },
+    { "slug": "guru-sisya", "name_iast": "Guru–śiṣya — teacher and disciple", "name_sa": "गुरुशिष्यसम्बन्धः", "description": "Teachers reveal even secrets to a beloved disciple (1.1.8).", "names": { "en": "Teacher and disciple", "ml": "ഗുരു-ശിഷ്യബന്ധം" } },
+    { "slug": "sreyas", "name_iast": "Śreyas — the ultimate good", "name_sa": "श्रेयः", "description": "The absolute good for humanity, which the sages ask Sūta to state (1.1.9).", "names": { "en": "The ultimate good (shreyas)", "ml": "ശ്രേയസ്സ്" } },
+    { "slug": "kali-yuga", "name_iast": "Kali-yuga", "name_sa": "कलियुगम्", "description": "The present age, whose people are short-lived, dull and troubled (1.1.10).", "names": { "en": "The age of Kali", "ml": "കലിയുഗം" } }
+  ],
+  "stories": [
+    { "slug": "sages-question-suta", "title_iast": "The sages of Naimiṣāraṇya question Sūta", "title_sa": "नैमिषीयाणां सूतं प्रति प्रश्नः",
+      "summary": "Framing narrative of the whole Bhāgavata. At a thousand-year sacrifice in Naimiṣāraṇya, Śaunaka and the sages honour Sūta and ask him to distil the essence of all scripture: what is the ultimate good for people in the age of Kali, and what became of dharma after Kṛṣṇa's departure.",
+      "start": "1.1.4", "end": "1.1.23", "narrator": null, "place": "naimisaranya",
+      "names": { "en": "The sages question Suta", "ml": "ഋഷിമാർ സൂതനോട് ചോദിക്കുന്നു" } }
+  ],
+  "relations": [
+    { "from": ["person", "suka"], "relation": "son_of", "to": ["person", "vyasa"] },
+    { "from": ["person", "suta"], "relation": "disciple_of", "to": ["person", "vyasa"] },
+    { "from": ["person", "saunaka"], "relation": "member_of", "to": ["person", "sages-of-naimisaranya"], "note": "leader (kulapati)" },
+    { "from": ["person", "vasudeva-krishna"], "relation": "same_as", "to": ["person", "vishnu"], "note": "Vāsudeva/Kṛṣṇa is Viṣṇu (Bhagavān) in the Bhāgavata's theology." },
+    { "from": ["story", "sages-question-suta"], "relation": "located_in", "to": ["place", "naimisaranya"] },
+    { "from": ["story", "sages-question-suta"], "relation": "about", "to": ["topic", "sreyas"] },
+    { "from": ["story", "sages-question-suta"], "relation": "about", "to": ["topic", "kali-yuga"] },
+    { "from": ["person", "vyasa"], "relation": "author_of", "to": ["work", "bhagavata-purana"] }
+  ]
+}

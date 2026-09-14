@@ -1,0 +1,66 @@
+# Supabase CLI project config (used by `supabase start` / `supabase db push`).
+# Project ref is supplied via `supabase link --project-ref <ref>`; never commit keys.
+project_id = "dharma-library"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql", "../content/generated/*.sql"]
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "dharmalibrary://auth-callback"
+additional_redirect_urls = ["dharmalibrary://auth-callback", "http://localhost:3000"]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = false
+
+[auth.external.google]
+enabled = false
+client_id = "env(SUPABASE_AUTH_GOOGLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_GOOGLE_SECRET)"
+
+[auth.external.apple]
+enabled = false
+client_id = "env(SUPABASE_AUTH_APPLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_APPLE_SECRET)"
+
+[storage]
+enabled = true
+file_size_limit = "200MiB"
+
+[storage.buckets.audio]
+public = false
+file_size_limit = "200MiB"
+allowed_mime_types = ["audio/mpeg", "audio/mp4", "audio/aac", "audio/ogg", "audio/opus", "audio/flac"]
+
+[storage.buckets.rights-documents]
+public = false
+file_size_limit = "20MiB"
+allowed_mime_types = ["application/pdf", "image/png", "image/jpeg"]
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
+
+[functions.ask]
+verify_jwt = false
