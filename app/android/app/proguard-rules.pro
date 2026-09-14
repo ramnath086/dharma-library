@@ -1,0 +1,5 @@
+-keep class io.flutter.** { *; }
+-keep class com.ryanheise.** { *; }
+-dontwarn org.bouncycastle.**
+-dontwarn org.conscrypt.**
+-dontwarn org.openjsse.**

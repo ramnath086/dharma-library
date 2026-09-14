@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "arena/**"]
+  pull_request:
+
+jobs:
+  database:
+    name: Database (migrations · seed · RLS tests)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: supabase/postgres:15.6.1.139
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      PGURI: postgresql://postgres:postgres@localhost:5432/postgres
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install psql
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+      - name: Auth stub + migrations
+        run: |
+          psql "$PGURI" -v ON_ERROR_STOP=1 -c "create schema if not exists auth" || true
+          # supabase/postgres image already has auth schema + roles; the stub is a no-op there
+          psql "$PGURI" -v ON_ERROR_STOP=1 -f supabase/tests/00_local_auth_stub.sql || true
+          for f in supabase/migrations/*.sql; do echo "== $f"; psql "$PGURI" -v ON_ERROR_STOP=1 -q -f "$f"; done
+      - name: Seed + ingest content
+        run: |
+          psql "$PGURI" -v ON_ERROR_STOP=1 -q -f supabase/seed.sql
+          python3 scripts/ingest.py
+          psql "$PGURI" -v ON_ERROR_STOP=1 -q -f content/generated/bhagavata-purana.sql
+      - name: RLS / API tests
+        run: psql "$PGURI" -v ON_ERROR_STOP=1 -q -f supabase/tests/10_rls_and_api.sql
+      - name: Bundle export matches committed asset
+        run: |
+          python3 scripts/export_bundle.py --db "$PGURI"
+          python3 - <<'PY'
+          import json
+          b=json.load(open('app/assets/bundles/bhagavata-purana.json'))
+          assert len(b['sections'])==1 and len(b['sections'][0]['verses'])==10, 'pilot bundle must contain 1.1.1-1.1.10'
+          assert all(e['rights_status'] in ('public_domain','open_license','permission_granted','original') for e in b['editions'])
+          print('bundle ok')
+          PY
+      - name: Python unit tests
+        run: python3 -m unittest discover -s scripts/tests -v
+
+  flutter:
+    name: Flutter (analyze · test · build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.24.x
+          cache: true
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Regenerate platform boilerplate (non-destructive)
+        run: flutter create . --platforms=android --org org.dharmalibrary --project-name dharma_library
+      - run: flutter pub get
+      - run: flutter gen-l10n
+      - run: python3 ../scripts/dart_lint_lite.py
+      - run: flutter analyze
+      - run: flutter test --coverage
+      - name: Build release APK (bundle mode, unsigned)
+        run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dharma-library-apk
+          path: app/build/app/outputs/flutter-apk/app-release.apk
+
+  edge-functions:
+    name: Edge functions (deno check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: deno check supabase/functions/ask/index.ts
+      - run: deno test -A supabase/functions/ask/

@@ -376,20 +376,26 @@ create or replace function public.retrieve_for_qa(p_query text, p_work_slug text
 returns table (verse_id uuid, ref text, work_slug text, edition_id uuid, edition_title text, language_code text, body text, attribution_text text, rank real)
 language sql stable as $$
   with hits as (
-    select * from public.search_verses(p_query, p_work_slug, null, null, 40, 0)
+    -- search only the translation in the requested language + IAST, so scores
+    -- reflect meaning rather than how many script variants exist
+    select * from public.search_verses(p_query, p_work_slug, null,
+             (select array_agg(e.id) from public.editions e join public.works w on w.id = e.work_id
+               where (p_work_slug is null or w.slug = p_work_slug)
+                 and ((e.kind = 'translation' and e.language_code = p_language) or (e.kind = 'transliteration' and e.script_code = 'Latn') or e.kind = 'word_meanings')),
+             60, 0)
   ),
   best as (
-    select distinct on (h.verse_id) h.verse_id, h.ref, h.work_slug, h.rank
-      from hits h order by h.verse_id, h.rank desc
-  )
+    select h.verse_id, h.ref, h.work_slug, sum(h.rank)::real as rank
+      from hits h group by h.verse_id, h.ref, h.work_slug
+  ),
+  top as (select * from best order by rank desc, string_to_array(ref,'.')::int[] limit greatest(1, least(p_limit, 20)))
   select b.verse_id, b.ref, b.work_slug, vc.edition_id, e.title, e.language_code, vc.body, e.attribution_text, b.rank
-    from best b
+    from top b
     join public.verse_contents vc on vc.verse_id = b.verse_id
     join public.v_editions e on e.id = vc.edition_id
-   where e.kind in ('translation','base_text','transliteration')
-     and (e.language_code = p_language or e.kind <> 'translation')
-   order by b.rank desc, string_to_array(b.ref,'.')::int[], e.sort_order
-   limit greatest(1, least(p_limit * 3, 60));
+   where (e.kind = 'translation' and e.language_code = p_language)
+      or (e.kind = 'transliteration' and e.script_code = 'Latn')
+   order by b.rank desc, string_to_array(b.ref,'.')::int[], e.sort_order;
 $$;
 
 grant execute on all functions in schema public to anon, authenticated, service_role;
