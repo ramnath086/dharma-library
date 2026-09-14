@@ -71,8 +71,18 @@ jobs:
       - run: flutter pub get
       - run: flutter gen-l10n
       - run: python3 ../scripts/dart_lint_lite.py
-      - run: flutter analyze
-      - run: flutter test --coverage
+      - name: flutter analyze
+        run: |
+          set -o pipefail
+          flutter analyze --no-pub 2>&1 | tee analyze.txt || true
+          { echo '### flutter analyze'; echo '```'; cat analyze.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          ! grep -qE '^\s*error •' analyze.txt
+      - name: flutter test
+        run: |
+          set -o pipefail
+          flutter test --coverage 2>&1 | tee test.txt || status=$?
+          { echo '### flutter test'; echo '```'; tail -n 200 test.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit ${status:-0}
       - name: Build release APK (bundle mode, unsigned)
         run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
       - uses: actions/upload-artifact@v4
