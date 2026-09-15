@@ -1,0 +1,43 @@
+# secrets / env
+.env
+.env.*
+!.env.example
+supabase/.env
+supabase/.temp/
+supabase/.branches/
+
+# local db
+.pgdata/
+*.log
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# flutter
+app/.dart_tool/
+app/.packages
+app/build/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/pubspec.lock
+app/ios/Pods/
+app/ios/.symlinks/
+app/android/.gradle/
+app/android/local.properties
+app/android/key.properties
+app/android/app/*.jks
+app/android/app/*.keystore
+app/lib/l10n/generated/
+app/coverage/
+
+# misc
+.DS_Store
+node_modules/
+app/android/settings.gradle*
+app/android/build.gradle*
+app/android/gradle.properties
+app/android/gradle/
+app/android/gradlew*
+app/android/app/build.gradle*

@@ -1,0 +1,150 @@
+import 'dart:async';
+
+import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'config/app_config.dart';
+import 'db/models.dart';
+import 'db/repository.dart';
+import 'offline/local_store.dart';
+
+// ------------------------------------------------------------ bootstrap
+final localStoreProvider = Provider<LocalStore>((ref) => throw UnimplementedError('override in main'));
+final prefsProvider = Provider<SharedPreferences>((ref) => throw UnimplementedError('override in main'));
+
+final supabaseProvider = Provider<SupabaseClient?>((ref) => AppConfig.hasBackend ? Supabase.instance.client : null);
+
+final repositoryProvider = Provider<Repository>((ref) {
+  final repo = Repository(store: ref.watch(localStoreProvider), client: ref.watch(supabaseProvider));
+  ref.listen(connectivityProvider, (_, next) => repo.setOnline(next.value ?? true));
+  return repo;
+});
+
+final connectivityProvider = StreamProvider<bool>((ref) async* {
+  final c = Connectivity();
+  bool up(List<ConnectivityResult> r) => r.any((x) => x != ConnectivityResult.none);
+  yield up(await c.checkConnectivity());
+  yield* c.onConnectivityChanged.map(up);
+});
+
+final isOnlineProvider = Provider<bool>((ref) => ref.watch(connectivityProvider).value ?? true);
+
+// ------------------------------------------------------------ auth
+final authStateProvider = StreamProvider<AuthState?>((ref) {
+  final c = ref.watch(supabaseProvider);
+  if (c == null) return Stream.value(null);
+  return c.auth.onAuthStateChange;
+});
+
+final currentUserProvider = Provider<User?>((ref) {
+  ref.watch(authStateProvider);
+  return ref.watch(supabaseProvider)?.auth.currentUser;
+});
+
+final userRoleProvider = FutureProvider<String>((ref) async {
+  final c = ref.watch(supabaseProvider);
+  final u = ref.watch(currentUserProvider);
+  if (c == null || u == null) return 'reader';
+  try {
+    final r = await c.from('profiles').select('role').eq('id', u.id).maybeSingle();
+    return (r?['role'] as String?) ?? 'reader';
+  } catch (_) {
+    return 'reader';
+  }
+});
+
+// ------------------------------------------------------------ settings
+class Settings {
+  const Settings({
+    this.locale = 'en',
+    this.script = 'Deva',
+    this.fontScale = 1.0,
+    this.themeMode = 'system',
+    this.showBaseText = true,
+    this.showTransliteration = true,
+    this.showTranslation = true,
+    this.showWordMeanings = false,
+    this.translationLang,
+  });
+  final String locale, script, themeMode;
+  final double fontScale;
+  final bool showBaseText, showTransliteration, showTranslation, showWordMeanings;
+  final String? translationLang; // null => follow locale
+
+  String get effectiveTranslationLang => translationLang ?? locale;
+
+  Settings copyWith({String? locale, String? script, double? fontScale, String? themeMode, bool? showBaseText,
+      bool? showTransliteration, bool? showTranslation, bool? showWordMeanings, String? translationLang, bool clearTranslationLang = false}) =>
+      Settings(
+        locale: locale ?? this.locale,
+        script: script ?? this.script,
+        fontScale: fontScale ?? this.fontScale,
+        themeMode: themeMode ?? this.themeMode,
+        showBaseText: showBaseText ?? this.showBaseText,
+        showTransliteration: showTransliteration ?? this.showTransliteration,
+        showTranslation: showTranslation ?? this.showTranslation,
+        showWordMeanings: showWordMeanings ?? this.showWordMeanings,
+        translationLang: clearTranslationLang ? null : (translationLang ?? this.translationLang),
+      );
+
+  static Settings load(SharedPreferences p) => Settings(
+        locale: p.getString('locale') ?? 'en',
+        script: p.getString('script') ?? 'Deva',
+        fontScale: p.getDouble('fontScale') ?? 1.0,
+        themeMode: p.getString('themeMode') ?? 'system',
+        showBaseText: p.getBool('showBaseText') ?? true,
+        showTransliteration: p.getBool('showTransliteration') ?? true,
+        showTranslation: p.getBool('showTranslation') ?? true,
+        showWordMeanings: p.getBool('showWordMeanings') ?? false,
+        translationLang: p.getString('translationLang'),
+      );
+
+  Future<void> save(SharedPreferences p) async {
+    await p.setString('locale', locale);
+    await p.setString('script', script);
+    await p.setDouble('fontScale', fontScale);
+    await p.setString('themeMode', themeMode);
+    await p.setBool('showBaseText', showBaseText);
+    await p.setBool('showTransliteration', showTransliteration);
+    await p.setBool('showTranslation', showTranslation);
+    await p.setBool('showWordMeanings', showWordMeanings);
+    if (translationLang == null) {
+      await p.remove('translationLang');
+    } else {
+      await p.setString('translationLang', translationLang!);
+    }
+  }
+
+  ThemeMode get materialThemeMode => switch (themeMode) { 'light' || 'sepia' => ThemeMode.light, 'dark' => ThemeMode.dark, _ => ThemeMode.system };
+}
+
+class SettingsNotifier extends Notifier<Settings> {
+  @override
+  Settings build() => Settings.load(ref.watch(prefsProvider));
+
+  Future<void> update(Settings Function(Settings) f) async {
+    state = f(state);
+    await state.save(ref.read(prefsProvider));
+  }
+}
+
+final settingsProvider = NotifierProvider<SettingsNotifier, Settings>(SettingsNotifier.new);
+
+// ------------------------------------------------------------ content
+final workSlugProvider = Provider<String>((_) => AppConfig.defaultWorkSlug);
+
+final tocProvider = FutureProvider.family<Toc, String>((ref, slug) => ref.watch(repositoryProvider).toc(slug));
+final editionsProvider = FutureProvider.family<List<Edition>, String>((ref, slug) => ref.watch(repositoryProvider).editions(slug));
+final chapterProvider = FutureProvider.family<Chapter, String>((ref, sectionId) => ref.watch(repositoryProvider).chapter(sectionId));
+final verseProvider = FutureProvider.family<VerseDetail, ({String work, String ref})>((ref, k) => ref.watch(repositoryProvider).verse(k.work, k.ref));
+final entityProvider = FutureProvider.family<Map<String, dynamic>, ({String kind, String slug})>((ref, k) => ref.watch(repositoryProvider).entity(k.kind, k.slug));
+
+final bookmarksProvider = FutureProvider<List<Bookmark>>((ref) => ref.watch(repositoryProvider).bookmarks());
+final progressProvider = FutureProvider.family<ReadingProgress?, String>((ref, workId) => ref.watch(repositoryProvider).progress(workId));
+final downloadedProvider = FutureProvider.family<bool, String>((ref, slug) => ref.watch(repositoryProvider).isDownloaded(slug));
+
+/// Increment to invalidate user-data providers after a local write.
+final userDataVersionProvider = StateProvider<int>((_) => 0);
