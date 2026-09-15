@@ -147,7 +147,7 @@ class _ContentsTabState extends State<_ContentsTab> {
                 TextField(controller: notes, maxLines: 3, decoration: const InputDecoration(labelText: 'Notes (public)', border: OutlineInputBorder())),
                 const SizedBox(height: 8),
                 DropdownButtonFormField<String>(
-                  value: status,
+                  initialValue: status,
                   items: const ['draft', 'in_review', 'published', 'archived'].map((s) => DropdownMenuItem(value: s, child: Text(s))).toList(),
                   onChanged: (v) => setS(() => status = v ?? status),
                   decoration: const InputDecoration(labelText: 'Status'),
@@ -175,7 +175,7 @@ class _ContentsTabState extends State<_ContentsTab> {
       Padding(
         padding: const EdgeInsets.all(12),
         child: DropdownButtonFormField<String>(
-          value: _editionId,
+          initialValue: _editionId,
           hint: const Text('Choose edition'),
           items: _editions.map((e) => DropdownMenuItem(value: e['id'] as String, child: Text('${e['title']} (${e['slug']})', overflow: TextOverflow.ellipsis))).toList(),
           onChanged: (v) { setState(() => _editionId = v); _load(); },

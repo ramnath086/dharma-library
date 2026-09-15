@@ -73,6 +73,7 @@ class AudioController extends Notifier<AudioState> {
       if (state.track?.id != track.id) {
         final url = await ref.read(repositoryProvider).audioUrl(track);
         if (url == null) throw StateError('no audio url');
+        // ignore: experimental_member_use  (offline replay cache; API stable in practice)
         await _player.setAudioSource(LockCachingAudioSource(Uri.parse(url)));
         state = state.copyWith(track: track, chapter: ch, duration: _player.duration, clearError: true);
         _posSub?.cancel();

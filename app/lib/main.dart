@@ -17,6 +17,7 @@ Future<void> main() async {
   if (AppConfig.hasBackend) {
     await Supabase.initialize(
       url: AppConfig.supabaseUrl,
+      // ignore: deprecated_member_use  (publishableKey requires newer key format; anonKey still supported)
       anonKey: AppConfig.supabaseAnonKey,
       authOptions: const FlutterAuthClientOptions(authFlowType: AuthFlowType.pkce),
     );
