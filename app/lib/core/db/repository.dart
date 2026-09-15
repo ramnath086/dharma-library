@@ -55,18 +55,18 @@ class Repository {
 
   // ------------------------------------------------------------ content
   Future<Toc> toc(String workSlug) => _cached('toc:$workSlug',
-      () => _client!.rpc('get_toc', params: {'p_work_slug': workSlug}), (d) => Toc.fromJson(d));
+      () => _client!.rpc('get_toc', params: {'p_work_slug': workSlug}), (d) => Toc.fromJson((d as Map).cast<String, dynamic>()));
 
   Future<List<Edition>> editions(String workSlug) => _cached('editions:$workSlug', () async {
         final rows = await _client!.from('v_editions').select().order('sort_order');
         return rows;
-      }, (d) => (d as List).map((e) => Edition.fromJson(e)).where((e) => e.isCleared).toList());
+      }, (d) => (d as List).map((e) => Edition.fromJson((e as Map).cast<String, dynamic>())).where((e) => e.isCleared).toList());
 
   Future<Chapter> chapter(String sectionId) => _cached('chapter:$sectionId',
-      () => _client!.rpc('get_section_verses', params: {'p_section_id': sectionId}), (d) => Chapter.fromJson(d));
+      () => _client!.rpc('get_section_verses', params: {'p_section_id': sectionId}), (d) => Chapter.fromJson((d as Map).cast<String, dynamic>()));
 
   Future<VerseDetail> verse(String workSlug, String ref) => _cached('verse:$workSlug:$ref',
-      () => _client!.rpc('get_verse', params: {'p_work_slug': workSlug, 'p_ref': ref}), (d) => VerseDetail.fromJson(d));
+      () => _client!.rpc('get_verse', params: {'p_work_slug': workSlug, 'p_ref': ref}), (d) => VerseDetail.fromJson((d as Map).cast<String, dynamic>()));
 
   Future<Map<String, dynamic>> entity(String kind, String slug) => _cached('entity:$kind:$slug',
       () => _client!.rpc('get_entity', params: {'p_kind': kind, 'p_slug': slug}), (d) => (d as Map).cast<String, dynamic>());
@@ -80,7 +80,7 @@ class Repository {
         final rows = await _client!.rpc('search_verses', params: {
           'p_query': q, 'p_work_slug': workSlug, 'p_language': language, 'p_edition_ids': null, 'p_limit': limit, 'p_offset': 0,
         }).timeout(const Duration(seconds: 15));
-        return (rows as List).map((r) => SearchHit.fromJson(r)).toList();
+        return (rows as List).map((r) => SearchHit.fromJson((r as Map).cast<String, dynamic>())).toList();
       } catch (_) {/* offline fallback */}
     }
     return _offlineSearch(q, workSlug: workSlug, language: language, limit: limit);
@@ -90,7 +90,7 @@ class Repository {
     if (_client != null && _online) {
       try {
         final rows = await _client!.rpc('search_entities', params: {'p_query': q, 'p_limit': limit});
-        return (rows as List).map((r) => EntityHit.fromJson(r)).toList();
+        return (rows as List).map((r) => EntityHit.fromJson((r as Map).cast<String, dynamic>())).toList();
       } catch (_) {}
     }
     final g = await graph(workSlugDefault);
@@ -121,10 +121,10 @@ class Repository {
     if (toc == null) return [];
     final f = fold(q);
     final hits = <SearchHit>[];
-    for (final ch in Toc.fromJson(toc as Map<String, dynamic>).chapters) {
+    for (final ch in Toc.fromJson((toc as Map).cast<String, dynamic>()).chapters) {
       final raw = await store.get('chapter:${ch.id}');
       if (raw == null) continue;
-      final chapter = Chapter.fromJson(raw as Map<String, dynamic>);
+      final chapter = Chapter.fromJson((raw as Map).cast<String, dynamic>());
       final edById = {for (final e in chapter.editions) e.id: e};
       for (final v in chapter.verses) {
         if (v.ref == q.trim()) {
@@ -244,18 +244,18 @@ class Repository {
       }
       // pull
       final pulled = await c.rpc('sync_pull', params: {'p_since': '-infinity'});
-      final serverBookmarks = (pulled['bookmarks'] as List).cast<Map<String, dynamic>>();
+      final serverBookmarks = (pulled['bookmarks'] as List).map((e) => (e as Map).cast<String, dynamic>()).toList();
       final localByVerse = {for (final b in await store.bookmarks()) b['verse_id']: b};
       for (final sb in serverBookmarks) {
         final local = localByVerse[sb['verse_id']];
-        if (local == null || DateTime.parse(sb['updated_at']).isAfter(DateTime.parse(local['updated_at']))) {
-          await store.upsertBookmark({...sb, 'verse_ref': local?['verse_ref'] ?? await _refFor(sb['verse_id'])}, dirty: false);
+        if (local == null || DateTime.parse(sb['updated_at'] as String).isAfter(DateTime.parse(local['updated_at'] as String))) {
+          await store.upsertBookmark({...sb, 'verse_ref': local?['verse_ref'] ?? await _refFor(sb['verse_id'] as String)}, dirty: false);
         }
       }
-      for (final sp in (pulled['progress'] as List).cast<Map<String, dynamic>>()) {
-        final local = await store.progress(sp['work_id']);
-        if (local == null || DateTime.parse(sp['last_read_at']).isAfter(DateTime.parse(local['last_read_at'] as String))) {
-          await store.putProgress({...sp, 'verse_ref': await _refFor(sp['verse_id'])}, dirty: false);
+      for (final sp in (pulled['progress'] as List).map((e) => (e as Map).cast<String, dynamic>())) {
+        final local = await store.progress(sp['work_id'] as String);
+        if (local == null || DateTime.parse(sp['last_read_at'] as String).isAfter(DateTime.parse(local['last_read_at'] as String))) {
+          await store.putProgress({...sp, 'verse_ref': await _refFor(sp['verse_id'] as String)}, dirty: false);
         }
       }
     } catch (_) {

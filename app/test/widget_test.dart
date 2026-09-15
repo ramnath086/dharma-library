@@ -21,7 +21,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
     final store = await LocalStore.inMemory();
-    await store.importBundle(jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()));
+    await store.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>());
 
     await tester.pumpWidget(ProviderScope(
       overrides: [localStoreProvider.overrideWithValue(store), prefsProvider.overrideWithValue(prefs)],

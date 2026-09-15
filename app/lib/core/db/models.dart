@@ -38,7 +38,7 @@ class SectionNode {
         titleIast = j['title_iast'],
         titleSa = j['title_sa'],
         summary = j['summary'],
-        children = (j['children'] as List? ?? []).map((c) => SectionNode.fromJson(c)).toList();
+        children = (j['children'] as List? ?? []).map((c) => SectionNode.fromJson((c as Map).cast<String, dynamic>())).toList();
 
   Iterable<SectionNode> get leaves sync* {
     if (children.isEmpty) {
@@ -55,8 +55,8 @@ class Toc {
   final Work work;
   final List<SectionNode> sections;
   Toc.fromJson(Map<String, dynamic> j)
-      : work = Work.fromJson(j['work']),
-        sections = (j['sections'] as List).map((s) => SectionNode.fromJson(s)).toList();
+      : work = Work.fromJson((j['work'] as Map).cast<String, dynamic>()),
+        sections = (j['sections'] as List).map((s) => SectionNode.fromJson((s as Map).cast<String, dynamic>())).toList();
   List<SectionNode> get chapters => sections.expand((s) => s.leaves).toList();
 }
 
@@ -142,9 +142,9 @@ class Verse {
         kind = j['kind'] ?? 'verse',
         ordinal = j['ordinal'],
         meter = j['meter'],
-        speaker = j['speaker'] == null ? null : Speaker.fromJson(j['speaker']),
-        renderings = (j['renderings'] as List? ?? []).map((r) => Rendering.fromJson(r)).toList(),
-        audio = (j['audio'] as List? ?? []).map((a) => AudioSegment.fromJson(a)).toList();
+        speaker = j['speaker'] == null ? null : Speaker.fromJson((j['speaker'] as Map).cast<String, dynamic>()),
+        renderings = (j['renderings'] as List? ?? []).map((r) => Rendering.fromJson((r as Map).cast<String, dynamic>())).toList(),
+        audio = (j['audio'] as List? ?? []).map((a) => AudioSegment.fromJson((a as Map).cast<String, dynamic>())).toList();
 
   Rendering? rendering(String editionId) => renderings.firstWhereOrNull((r) => r.editionId == editionId);
   Rendering? byKind(String kind, {String? lang}) =>
@@ -174,9 +174,9 @@ class Chapter {
   final List<AudioTrack> tracks;
   Chapter.fromJson(Map<String, dynamic> j)
       : section = j['section'],
-        editions = (j['editions'] as List? ?? []).map((e) => Edition.fromJson(e)).toList(),
-        verses = (j['verses'] as List? ?? []).map((v) => Verse.fromJson(v)).toList(),
-        tracks = (j['tracks'] as List? ?? []).map((t) => AudioTrack.fromJson(t)).toList();
+        editions = (j['editions'] as List? ?? []).map((e) => Edition.fromJson((e as Map).cast<String, dynamic>())).toList(),
+        verses = (j['verses'] as List? ?? []).map((v) => Verse.fromJson((v as Map).cast<String, dynamic>())).toList(),
+        tracks = (j['tracks'] as List? ?? []).map((t) => AudioTrack.fromJson((t as Map).cast<String, dynamic>())).toList();
   String get ref => section['ref'];
   String get id => section['id'];
   Map<String, dynamic> get meta => (section['metadata'] as Map?)?.cast<String, dynamic>() ?? {};
@@ -191,7 +191,7 @@ class VerseDetail {
   final String? prevRef, nextRef;
   VerseDetail.fromJson(Map<String, dynamic> j)
       : raw = j,
-        verse = Verse.fromJson({...j['verse'], 'renderings': j['renderings'] ?? []}),
+        verse = Verse.fromJson({...(j['verse'] as Map).cast<String, dynamic>(), 'renderings': j['renderings'] ?? []}),
         renderings = (j['renderings'] as List? ?? []).cast<Map<String, dynamic>>(),
         mentions = (j['mentions'] as List? ?? []).cast<Map<String, dynamic>>(),
         crossReferences = (j['cross_references'] as List? ?? []).cast<Map<String, dynamic>>(),
@@ -283,7 +283,7 @@ class QaAnswer {
   final String? model;
   QaAnswer.fromJson(Map<String, dynamic> j)
       : answer = j['answer'] ?? '',
-        citations = (j['citations'] as List? ?? []).map((c) => Citation.fromJson(c)).toList(),
+        citations = (j['citations'] as List? ?? []).map((c) => Citation.fromJson((c as Map).cast<String, dynamic>())).toList(),
         grounded = j['grounded'] ?? false,
         model = j['model'];
 }

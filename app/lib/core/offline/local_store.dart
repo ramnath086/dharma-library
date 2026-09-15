@@ -77,7 +77,7 @@ class LocalStore {
   /// Import a work bundle (output of get_work_bundle) into the kv cache under
   /// the same keys the repository uses for live data.
   Future<void> importBundle(Map<String, dynamic> bundle) async {
-    final toc = bundle['toc'] as Map<String, dynamic>;
+    final toc = (bundle['toc'] as Map).cast<String, dynamic>();
     final slug = toc['work']['slug'] as String;
     final batch = _db.batch();
     void putB(String k, Object v) =>
@@ -89,10 +89,10 @@ class LocalStore {
       'entity_names': bundle['entity_names'], 'mentions': bundle['mentions'], 'cross_references': bundle['cross_references'],
     });
     for (final sec in (bundle['sections'] as List)) {
-      final s = sec as Map<String, dynamic>;
+      final s = (sec as Map).cast<String, dynamic>();
       putB('chapter:${s['section']['id']}', s);
       // also derive per-verse detail (subset) so verse pages work offline
-      final verses = (s['verses'] as List).cast<Map<String, dynamic>>();
+      final verses = (s['verses'] as List).map((v) => (v as Map).cast<String, dynamic>()).toList();
       for (var i = 0; i < verses.length; i++) {
         final v = verses[i];
         putB('verse:$slug:${v['ref']}', {
