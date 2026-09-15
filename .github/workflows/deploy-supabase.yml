@@ -23,6 +23,34 @@ jobs:
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
           SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+      - name: Resolve dual-stack database host
+        id: dbhost
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+        run: |
+          # db.<ref>.supabase.co resolves to IPv6 only (Supabase retired IPv4 direct
+          # connections), and GitHub-hosted runners have no IPv6 route: raw psql there
+          # dies with "connection ... failed: Network is unreachable". Supavisor is
+          # dual-stack, so the seed/content steps below go through it instead. Session
+          # mode (5432) rather than transaction mode (6543), because `psql -f` runs
+          # multi-statement files that need a real session. The pooler host embeds the
+          # project region, so read it from the Management API rather than adding a
+          # secret. The Supabase CLI steps are unaffected: they already pool via
+          # Supavisor.
+          region=$(curl -sSf -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+            "https://api.supabase.com/v1/projects/$SUPABASE_PROJECT_REF" | jq -r '.region // empty')
+          if [ -z "$region" ]; then
+            echo "::error::could not read .region for project $SUPABASE_PROJECT_REF from the Supabase Management API"
+            exit 1
+          fi
+          case "$region" in
+            aws-*)   cloud=aws;   short=${region#aws-} ;;
+            azure-*) cloud=azure; short=${region#azure-} ;;
+            gcp-*)   cloud=gcp;   short=${region#gcp-} ;;
+            *)       cloud=aws;   short=$region ;;
+          esac
+          echo "host=${cloud}-0-${short}.pooler.supabase.com" >> "$GITHUB_OUTPUT"
       - name: Seed + content
         run: |
           python3 scripts/ingest.py
@@ -35,7 +63,9 @@ jobs:
           # embedded in postgres://user:pw@host. libpq reads PGPASSWORD whenever
           # the URI omits a password.
           PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
-          DB_URL: postgresql://postgres@db.${{ secrets.SUPABASE_PROJECT_REF }}.supabase.co:5432/postgres
+          # Supavisor wants the project ref appended to the user name; against the
+          # direct host the plain `postgres` role is used.
+          DB_URL: postgresql://postgres.${{ secrets.SUPABASE_PROJECT_REF }}@${{ steps.dbhost.outputs.host }}:5432/postgres
       - run: supabase functions deploy ask
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
