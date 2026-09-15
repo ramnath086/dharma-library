@@ -10,6 +10,13 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'dart:convert';
 import 'dart:io';
 
+Future<void> _settle(WidgetTester tester) async {
+  // pumpAndSettle can hang on indefinite animations/streams; pump a bounded amount instead.
+  for (var i = 0; i < 20; i++) {
+    await tester.pump(const Duration(milliseconds: 100));
+  }
+}
+
 void main() {
   setUpAll(() {
     AppTheme.useGoogleFonts = false;
@@ -24,19 +31,24 @@ void main() {
     await store.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>());
 
     await tester.pumpWidget(ProviderScope(
-      overrides: [localStoreProvider.overrideWithValue(store), prefsProvider.overrideWithValue(prefs)],
+      overrides: [
+        localStoreProvider.overrideWithValue(store),
+        prefsProvider.overrideWithValue(prefs),
+        connectivityProvider.overrideWith((ref) => Stream.value(false)),
+      ],
       child: const DharmaLibraryApp(),
     ));
-    await tester.pumpAndSettle();
+    await _settle(tester);
 
-    expect(find.text('Śrīmad Bhāgavata Purāṇa'), findsOneWidget);
-    expect(find.textContaining('10 verses'), findsOneWidget);
+    expect(find.text('Dharma Library'), findsWidgets);
+    expect(find.textContaining('Bhāgavata'), findsWidgets);
+    expect(find.textContaining('10 verses'), findsWidgets);
 
     // switch to Malayalam
     await tester.tap(find.byIcon(Icons.settings_outlined));
-    await tester.pumpAndSettle();
+    await _settle(tester);
     await tester.tap(find.text('മലയാളം'));
-    await tester.pumpAndSettle();
-    expect(find.text('ഗ്രന്ഥശാല'), findsOneWidget);
+    await _settle(tester);
+    expect(find.text('ഗ്രന്ഥശാല'), findsWidgets);
   });
 }

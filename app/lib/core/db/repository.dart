@@ -77,7 +77,7 @@ class Repository {
   Future<List<SearchHit>> search(String q, {String? workSlug, String? language, int limit = 30}) async {
     if (_client != null && _online) {
       try {
-        final rows = await _client!.rpc('search_verses', params: {
+        final rows = await _client.rpc('search_verses', params: {
           'p_query': q, 'p_work_slug': workSlug, 'p_language': language, 'p_edition_ids': null, 'p_limit': limit, 'p_offset': 0,
         }).timeout(const Duration(seconds: 15));
         return (rows as List).map((r) => SearchHit.fromJson((r as Map).cast<String, dynamic>())).toList();
@@ -89,7 +89,7 @@ class Repository {
   Future<List<EntityHit>> searchEntities(String q, {int limit = 20}) async {
     if (_client != null && _online) {
       try {
-        final rows = await _client!.rpc('search_entities', params: {'p_query': q, 'p_limit': limit});
+        final rows = await _client.rpc('search_entities', params: {'p_query': q, 'p_limit': limit});
         return (rows as List).map((r) => EntityHit.fromJson((r as Map).cast<String, dynamic>())).toList();
       } catch (_) {}
     }
@@ -121,6 +121,24 @@ class Repository {
     if (toc == null) return [];
     final f = fold(q);
     final hits = <SearchHit>[];
+    // Entity-name expansion (mirrors search_verses): verses that *mention* a
+    // matching person/place/topic/story count as hits even when the name is
+    // not literally in the text (e.g. "krishna" → 1.1.1 via Vāsudeva).
+    final mentioned = <String>{};
+    final g = await graph(slug);
+    if (g != null && f.length >= 3) {
+      final ids = <String>{};
+      for (final kind in const ['people', 'places', 'topics', 'stories']) {
+        for (final e in (g[kind] as List? ?? [])) {
+          final name = (e['name_iast'] ?? e['title_iast'] ?? '') as String;
+          final names = (g['entity_names'] as List? ?? []).where((n) => n['entity_id'] == e['id']).map((n) => n['name'] as String);
+          if (fold(name).contains(f) || names.any((n) => fold(n).contains(f) || n.contains(q))) ids.add(e['id'] as String);
+        }
+      }
+      for (final m in (g['mentions'] as List? ?? [])) {
+        if (ids.contains(m['entity_id'])) mentioned.add(m['verse_id'] as String);
+      }
+    }
     for (final ch in Toc.fromJson((toc as Map).cast<String, dynamic>()).chapters) {
       final raw = await store.get('chapter:${ch.id}');
       if (raw == null) continue;
@@ -132,6 +150,7 @@ class Repository {
           if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body, 1.0));
           continue;
         }
+        var matched = false;
         for (final r in v.renderings) {
           if (language != null && r.languageCode != language) continue;
           final body = r.body;
@@ -141,7 +160,12 @@ class Repository {
             final start = (at - 60).clamp(0, body.length);
             final end = (at + 100).clamp(0, body.length);
             hits.add(_hit(v, r, edById[r.editionId], slug, '${start > 0 ? '…' : ''}${body.substring(start, end)}${end < body.length ? '…' : ''}', 0.9));
+            matched = true;
           }
+        }
+        if (!matched && mentioned.contains(v.id)) {
+          final r = v.renderings.where((r) => r.kind == 'translation' && (language == null || r.languageCode == language)).firstOrNull ?? v.renderings.firstOrNull;
+          if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body.length > 160 ? '${r.body.substring(0, 160)}…' : r.body, 0.5));
         }
       }
     }

@@ -84,6 +84,9 @@ jobs:
           flutter test --coverage 2>&1 | tee test.txt || status=$?
           { echo '### flutter test'; echo '```'; tail -n 200 test.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           grep -vE '^\s*$' test.txt | grep -B2 -A12 -E '\[E\]|Expected:|EXCEPTION CAUGHT' | head -120 | tr -d '\r' | while read -r l; do echo "::warning title=test::${l}"; done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: flutter-logs, path: app/*.txt, if-no-files-found: ignore }
           exit ${status:-0}
       - name: Build release APK (bundle mode, unsigned)
         run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
