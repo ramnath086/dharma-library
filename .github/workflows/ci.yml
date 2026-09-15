@@ -85,7 +85,7 @@ jobs:
           set -o pipefail
           flutter test --coverage 2>&1 | tee test.txt || status=$?
           { echo '### flutter test'; echo '```'; tail -n 200 test.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
-          grep -vE '^\s*$' test.txt | grep -B2 -A12 -E '\[E\]|Expected:|EXCEPTION CAUGHT' | head -120 | tr -d '\r' | while read -r l; do echo "::warning title=test::${l}"; done
+          grep -vE '^\s*$' test.txt | grep -vE '^\s*(✅|\+[0-9]+)' | tr -d '\r' | tail -n 80 | while IFS= read -r l; do echo "::warning title=test::${l}"; done
           exit ${status:-0}
       - uses: actions/upload-artifact@v4
         if: always()
