@@ -35,3 +35,9 @@ app/coverage/
 # misc
 .DS_Store
 node_modules/
+app/android/settings.gradle*
+app/android/build.gradle*
+app/android/gradle.properties
+app/android/gradle/
+app/android/gradlew*
+app/android/app/build.gradle*

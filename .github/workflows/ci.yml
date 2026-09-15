@@ -66,8 +66,11 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - name: Regenerate platform boilerplate (non-destructive)
-        run: flutter create . --platforms=android --org org.dharmalibrary --project-name dharma_library
+      - name: Regenerate platform boilerplate (non-destructive; Gradle files are not committed)
+        run: |
+          flutter create . --platforms=android --org org.dharmalibrary --project-name dharma_library
+          # app-level tweaks on top of the generated Gradle file
+          sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 23/' android/app/build.gradle.kts android/app/build.gradle 2>/dev/null || true
       - run: flutter pub get
       - run: flutter gen-l10n
       - run: python3 ../scripts/dart_lint_lite.py
