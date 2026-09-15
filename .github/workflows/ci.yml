@@ -99,6 +99,13 @@ jobs:
       - name: Build release APK (bundle mode, unsigned)
         shell: bash
         run: |
+          # generated build.gradle(.kts) does not reference our proguard rules; add them
+          if [ -f android/app/build.gradle.kts ]; then
+            sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("debug"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
+          else
+            sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.debug; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
+          fi
+          grep -n proguard android/app/build.gradle* || true
           flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} > build.txt 2>&1 || status=$?
           cat build.txt
           grep -vE '^\s*$' build.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=build::${l}"; done
