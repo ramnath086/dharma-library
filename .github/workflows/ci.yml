@@ -91,7 +91,12 @@ jobs:
         if: always()
         with: { name: flutter-logs, path: app/*.txt, if-no-files-found: ignore }
       - name: Build release APK (bundle mode, unsigned)
-        run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
+        shell: bash
+        run: |
+          flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} > build.txt 2>&1 || status=$?
+          cat build.txt
+          grep -vE '^\s*$' build.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=build::${l}"; done
+          exit ${status:-0}
       - uses: actions/upload-artifact@v4
         with:
           name: dharma-library-apk
