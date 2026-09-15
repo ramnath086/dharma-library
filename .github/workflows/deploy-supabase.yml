@@ -29,7 +29,13 @@ jobs:
           psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f supabase/seed.sql
           psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f content/generated/bhagavata-purana.sql
         env:
-          DB_URL: postgresql://postgres:${{ secrets.SUPABASE_DB_PASSWORD }}@db.${{ secrets.SUPABASE_PROJECT_REF }}.supabase.co:5432/postgres
+          # The password is passed via PGPASSWORD rather than interpolated into
+          # the connection URI: Supabase passwords routinely contain URI-special
+          # characters (@ / : # ? %) that truncate the host or break parsing when
+          # embedded in postgres://user:pw@host. libpq reads PGPASSWORD whenever
+          # the URI omits a password.
+          PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          DB_URL: postgresql://postgres@db.${{ secrets.SUPABASE_PROJECT_REF }}.supabase.co:5432/postgres
       - run: supabase functions deploy ask
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
