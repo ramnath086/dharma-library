@@ -25,8 +25,17 @@
 ## 2. AI Q&A
 ```
 supabase secrets set OPENAI_API_KEY=sk-... AI_MODEL=gpt-4o-mini EMBEDDING_MODEL=text-embedding-3-small
-OPENAI_API_KEY=... SUPABASE_DB_URL=postgresql://postgres:<pw>@db.<ref>.supabase.co:5432/postgres python3 scripts/embed_contents.py
+export PGPASSWORD='<db password>'
+OPENAI_API_KEY=... SUPABASE_DB_URL=postgresql://postgres@db.<ref>.supabase.co:5432/postgres \
+  python3 scripts/embed_contents.py
 ```
+Pass the DB password through `PGPASSWORD` (or `SUPABASE_DB_PASSWORD`) rather
+than inlining it into the URI — Supabase passwords routinely contain URI-special
+characters (`@ / : # ? %`) that truncate the host or break parsing in
+`postgres://user:pw@host`. The same applies to any direct `psql "$DB_URL"`
+invocation, e.g. the content updates in §4: keep `DB_URL` passwordless and
+export `PGPASSWORD` alongside it.
+
 Any OpenAI-compatible endpoint works via `OPENAI_BASE_URL`. Without a key the
 function returns 503 and the app shows the offline/unavailable message.
 

@@ -2,19 +2,38 @@
 """Backfill content_embeddings for published verse_contents (translations +
 IAST). Requires OPENAI_API_KEY and SUPABASE_DB_URL (service role / direct DB).
 
-    OPENAI_API_KEY=... SUPABASE_DB_URL=postgresql://... python3 scripts/embed_contents.py
+    export PGPASSWORD='<db password>'
+    OPENAI_API_KEY=... SUPABASE_DB_URL=postgresql://postgres@db.<ref>.supabase.co:5432/postgres \
+      python3 scripts/embed_contents.py
+
+The password belongs in PGPASSWORD (or SUPABASE_DB_PASSWORD), not in the URI:
+Supabase passwords routinely contain URI-special characters (@ / : # ? %) that
+truncate the host or break parsing when embedded in postgres://user:pw@host.
+A password already present in SUPABASE_DB_URL is still honoured, but is stripped
+and moved to PGPASSWORD when SUPABASE_DB_PASSWORD is set.
 
 Idempotent: skips rows that already have an embedding for the model.
 Uses only urllib + psql so no extra dependencies are needed.
 """
-import json, os, subprocess, sys, urllib.request
+import json, os, subprocess, sys, urllib.parse, urllib.request
 
 DB = os.environ.get("SUPABASE_DB_URL")
+PW = os.environ.get("SUPABASE_DB_PASSWORD")
 KEY = os.environ.get("OPENAI_API_KEY")
 MODEL = os.environ.get("EMBEDDING_MODEL", "text-embedding-3-small")
 BASE = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
 if not DB or not KEY:
     sys.exit("set SUPABASE_DB_URL and OPENAI_API_KEY")
+
+if PW:
+    parts = urllib.parse.urlsplit(DB)
+    if parts.password is not None:
+        netloc = parts.netloc.rpartition("@")[2]
+        if parts.username:
+            netloc = f"{urllib.parse.quote(parts.username, safe='')}@{netloc}"
+        DB = urllib.parse.urlunsplit((parts.scheme, netloc, parts.path, parts.query, parts.fragment))
+    # libpq picks this up when the URI carries no password; psql() inherits os.environ.
+    os.environ["PGPASSWORD"] = PW
 
 
 def psql(sql):
