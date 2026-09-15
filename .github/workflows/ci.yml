@@ -79,7 +79,7 @@ jobs:
           { echo '### flutter analyze'; echo '```'; cat analyze.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           grep -vE '^\s*$' analyze.txt | head -60 | while IFS= read -r l; do echo "::warning title=analyze::${l}"; done
           if grep -qE 'error •' analyze.txt; then echo "::error title=analyze::analyzer errors"; exit 1; fi
-          if ! grep -qE 'No issues found|issues? found' analyze.txt; then echo "::error title=analyze::analyzer did not complete: $(head -c 800 analyze.txt | tr '\n' ' ')"; exit 1; fi
+          if ! grep -qE 'No issues found|issues? found.' analyze.txt; then echo "::error title=analyze::analyzer did not complete: $(head -c 800 analyze.txt | tr '\n' ' ')"; exit 1; fi
       - name: flutter test
         run: |
           set -o pipefail
