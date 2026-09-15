@@ -10,9 +10,12 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'dart:convert';
 import 'dart:io';
 
+/// sqflite_ffi does real I/O on a background isolate, which never completes
+/// inside the widget test's fake-async zone. Run pumps under [runAsync] so
+/// those futures can resolve, with a bounded number of frames.
 Future<void> _settle(WidgetTester tester) async {
-  // pumpAndSettle can hang on indefinite animations/streams; pump a bounded amount instead.
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 15; i++) {
+    await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 50)));
     await tester.pump(const Duration(milliseconds: 100));
   }
 }
@@ -24,15 +27,15 @@ void main() {
     databaseFactory = databaseFactoryFfi;
   });
 
-  testWidgets('home renders work title and chapter list from bundle; Malayalam locale switches UI', (tester) async {
+  testWidgets('home renders work title and chapter list from bundle; Malayalam locale switches UI', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
     SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
-    final store = await LocalStore.inMemory();
-    await store.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>());
+    final store = await tester.runAsync(() => LocalStore.inMemory());
+    await tester.runAsync(() => store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
 
     await tester.pumpWidget(ProviderScope(
       overrides: [
-        localStoreProvider.overrideWithValue(store),
+        localStoreProvider.overrideWithValue(store!),
         prefsProvider.overrideWithValue(prefs),
         connectivityProvider.overrideWith((ref) => Stream.value(false)),
       ],
