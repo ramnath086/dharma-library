@@ -67,10 +67,13 @@ jobs:
           distribution: temurin
           java-version: "17"
       - name: Regenerate platform boilerplate (non-destructive; Gradle files are not committed)
+        shell: bash
         run: |
-          flutter create . --platforms=android --org org.dharmalibrary --project-name dharma_library
-          # app-level tweaks on top of the generated Gradle file
-          sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 23/' android/app/build.gradle.kts android/app/build.gradle 2>/dev/null || true
+          flutter --version
+          flutter create . --platforms=android --org org.dharmalibrary --project-name dharma_library > create.txt 2>&1 || status=$?
+          cat create.txt
+          grep -vE '^\s*$' create.txt | tail -n 30 | while IFS= read -r l; do echo "::warning title=create::${l}"; done
+          exit ${status:-0}
       - run: flutter pub get
       - run: flutter gen-l10n
       - run: python3 ../scripts/dart_lint_lite.py
