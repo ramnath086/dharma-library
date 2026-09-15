@@ -77,7 +77,7 @@ jobs:
           flutter analyze --no-pub > analyze.txt 2>&1 || true
           cat analyze.txt
           { echo '### flutter analyze'; echo '```'; cat analyze.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
-          grep -E '(error|warning) •' analyze.txt | head -50 | while IFS= read -r l; do echo "::warning title=analyze::${l}"; done
+          grep -vE '^\s*$' analyze.txt | head -60 | while IFS= read -r l; do echo "::warning title=analyze::${l}"; done
           if grep -qE 'error •' analyze.txt; then echo "::error title=analyze::analyzer errors"; exit 1; fi
           if ! grep -qE 'No issues found|issues? found' analyze.txt; then echo "::error title=analyze::analyzer did not complete: $(head -c 800 analyze.txt | tr '\n' ' ')"; exit 1; fi
       - name: flutter test
