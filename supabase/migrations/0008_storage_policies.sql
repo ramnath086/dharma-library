@@ -1,7 +1,8 @@
 -- =============================================================================
 -- Dharma Library — 0008: Storage RLS Policies
 -- =============================================================================
--- Buckets:
+-- Buckets ('audio', 'rights-documents') are configured via config.toml / dashboard.
+-- Policies:
 --   * 'audio' (private):
 --       - READ: public read for objects mapped to published + cleared audio tracks,
 --               or editors/admins.
@@ -9,21 +10,6 @@
 --   * 'rights-documents' (private):
 --       - READ/WRITE/DELETE: admins only (or service_role).
 -- =============================================================================
-
-do $$
-begin
-  -- Ensure buckets exist in storage schema if storage extension is active
-  if exists (select 1 from information_schema.tables where table_schema = 'storage' and table_name = 'buckets') then
-    insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
-    values
-      ('audio', 'audio', false, 209715200, array['audio/mpeg', 'audio/mp4', 'audio/aac', 'audio/ogg', 'audio/opus', 'audio/flac']::text[]),
-      ('rights-documents', 'rights-documents', false, 20971520, array['application/pdf', 'image/png', 'image/jpeg']::text[])
-    on conflict (id) do update set
-      public = excluded.public,
-      file_size_limit = excluded.file_size_limit,
-      allowed_mime_types = excluded.allowed_mime_types;
-  end if;
-end $$;
 
 -- ---------------------------------------------------------------------------
 -- Storage Objects Policies
