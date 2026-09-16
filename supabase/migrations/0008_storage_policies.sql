@@ -1,4 +1,4 @@
-﻿-- =============================================================================
+-- =============================================================================
 -- Dharma Library — 0008: Storage RLS Policies
 -- =============================================================================
 -- Buckets:
@@ -10,7 +10,7 @@
 --       - READ/WRITE/DELETE: admins only (or service_role).
 -- =============================================================================
 
-do 
+do $$
 begin
   -- Ensure buckets exist in storage schema if storage extension is active
   if exists (select 1 from information_schema.tables where table_schema = 'storage' and table_name = 'buckets') then
@@ -23,12 +23,12 @@ begin
       file_size_limit = excluded.file_size_limit,
       allowed_mime_types = excluded.allowed_mime_types;
   end if;
-end ;
+end $$;
 
 -- ---------------------------------------------------------------------------
 -- Storage Objects Policies
 -- ---------------------------------------------------------------------------
-do 
+do $$
 begin
   if exists (select 1 from information_schema.tables where table_schema = 'storage' and table_name = 'objects') then
     execute 'alter table storage.objects enable row level security';
@@ -41,7 +41,7 @@ begin
     drop policy if exists "rights-documents: admin all" on storage.objects;
 
     -- Audio Bucket Policies
-    execute $
+    execute $p$
       create policy "audio: public read cleared" on storage.objects for select
       using (
         bucket_id = 'audio'
@@ -56,17 +56,17 @@ begin
           )
         )
       )
-    $;
+    $p$;
 
-    execute $
+    execute $p$
       create policy "audio: editor write" on storage.objects for insert
       with check (
         bucket_id = 'audio'
         and public.is_editor()
       )
-    $;
+    $p$;
 
-    execute $
+    execute $p$
       create policy "audio: editor update" on storage.objects for update
       using (
         bucket_id = 'audio'
@@ -76,18 +76,18 @@ begin
         bucket_id = 'audio'
         and public.is_editor()
       )
-    $;
+    $p$;
 
-    execute $
+    execute $p$
       create policy "audio: editor delete" on storage.objects for delete
       using (
         bucket_id = 'audio'
         and public.is_editor()
       )
-    $;
+    $p$;
 
     -- Rights Documents Bucket Policies (Admins only)
-    execute $
+    execute $p$
       create policy "rights-documents: admin all" on storage.objects for all
       using (
         bucket_id = 'rights-documents'
@@ -97,6 +97,6 @@ begin
         bucket_id = 'rights-documents'
         and public.is_admin()
       )
-    $;
+    $p$;
   end if;
-end ;
+end $$;
