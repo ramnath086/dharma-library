@@ -9,8 +9,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 APP = ROOT / 'app'
 errs = []
 
-en = json.loads((APP / 'l10n/app_en.arb').read_text())
-ml = json.loads((APP / 'l10n/app_ml.arb').read_text())
+en = json.loads((APP / 'l10n/app_en.arb').read_text(encoding='utf-8'))
+ml = json.loads((APP / 'l10n/app_ml.arb').read_text(encoding='utf-8'))
 en_keys = {k for k in en if not k.startswith('@')}
 ml_keys = {k for k in ml if not k.startswith('@')}
 for k in en_keys - ml_keys: errs.append(f'l10n: key {k} missing in app_ml.arb')
@@ -31,7 +31,7 @@ def strip_strings(src):
 
 for f in sorted(APP.rglob('*.dart')):
     if 'generated' in f.parts: continue
-    src = f.read_text()
+    src = f.read_text(encoding='utf-8')
     code = strip_strings(src)
     for o, c in (('(', ')'), ('{', '}'), ('[', ']')):
         if code.count(o) != code.count(c):

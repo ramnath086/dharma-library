@@ -22,9 +22,9 @@ class TranslitTests(unittest.TestCase):
     def test_dart_tables_in_sync(self):
         import subprocess
         root = pathlib.Path(__file__).resolve().parent.parent.parent
-        before = (root / 'app/lib/core/translit/tables.g.dart').read_text()
+        before = (root / 'app/lib/core/translit/tables.g.dart').read_text(encoding='utf-8')
         subprocess.run([sys.executable, str(root / 'scripts/gen_dart_translit.py')], check=True, capture_output=True)
-        after = (root / 'app/lib/core/translit/tables.g.dart').read_text()
+        after = (root / 'app/lib/core/translit/tables.g.dart').read_text(encoding='utf-8')
         self.assertEqual(before, after, 'run scripts/gen_dart_translit.py and commit')
 
 
@@ -32,13 +32,13 @@ class IngestTests(unittest.TestCase):
     def test_pilot_content_shape(self):
         import json
         root = pathlib.Path(__file__).resolve().parent.parent.parent
-        d = json.loads((root / 'content/bhagavata-purana/1/1/verses.json').read_text())
+        d = json.loads((root / 'content/bhagavata-purana/1/1/verses.json').read_text(encoding='utf-8'))
         refs = [v['ref'] for v in d['verses']]
         self.assertEqual(refs, [f'1.1.{i}' for i in range(1, 11)])
         for v in d['verses']:
             for k in ('deva', 'iast', 'en', 'ml', 'word_meanings'):
                 self.assertTrue(v.get(k), f"{v['ref']} missing {k}")
-        w = json.loads((root / 'content/bhagavata-purana/work.json').read_text())
+        w = json.loads((root / 'content/bhagavata-purana/work.json').read_text(encoding='utf-8'))
         keys = {r['key'] for r in w['rights']}
         for e in w['editions']:
             self.assertIn(e['rights'], keys, f"edition {e['slug']} has no rights")

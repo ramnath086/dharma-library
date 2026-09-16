@@ -51,10 +51,12 @@ jobs:
             *)       cloud=aws;   short=$region ;;
           esac
           echo "host=${cloud}-0-${short}.pooler.supabase.com" >> "$GITHUB_OUTPUT"
+      - name: Install psql
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
       - name: Seed + content
         run: |
-          python3 scripts/ingest.py
           psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f supabase/seed.sql
+          python3 scripts/ingest.py
           psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f content/generated/bhagavata-purana.sql
         env:
           # The password is passed via PGPASSWORD rather than interpolated into
@@ -69,3 +71,10 @@ jobs:
       - run: supabase functions deploy ask
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      - name: Generate embeddings (optional)
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
+        run: python3 scripts/embed_contents.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          SUPABASE_DB_URL: postgresql://postgres.${{ secrets.SUPABASE_PROJECT_REF }}@${{ steps.dbhost.outputs.host }}:5432/postgres

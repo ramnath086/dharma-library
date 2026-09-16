@@ -43,5 +43,5 @@ const Map<String, String> kMatras = {dmap(T.MATRAS)};
 const Map<String, String> kConsonants = {dmap(T.CONS)};
 const Map<String, String> kOther = {dmap(T.OTHER)};
 '''
-(ROOT / 'app/lib/core/translit/tables.g.dart').write_text(out)
+(ROOT / 'app/lib/core/translit/tables.g.dart').write_text(out, encoding='utf-8')
 print('wrote app/lib/core/translit/tables.g.dart')
