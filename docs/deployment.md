@@ -8,7 +8,9 @@
    `SUPABASE_DB_PASSWORD`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`.
 3. Run **Actions → Deploy Supabase → Run workflow**. This pushes migrations
    0001–0007, seeds languages/scripts/config, loads the pilot content and
-   deploys the `ask` function.
+   deploys the `ask` function. The seed/content steps connect through the
+   Supavisor session pooler, not the direct host — see
+   [Direct connections and IPv6](#direct-connections-and-ipv6).
 4. Storage buckets `audio` and `rights-documents` are declared in
    `supabase/config.toml` (private). Storage policies: allow `select` on
    `audio` objects to `authenticated`+`anon` **only via signed URLs** (default
@@ -37,7 +39,10 @@ invocation, e.g. the content updates in §4: keep `DB_URL` passwordless and
 export `PGPASSWORD` alongside it.
 
 Any OpenAI-compatible endpoint works via `OPENAI_BASE_URL`. Without a key the
-function returns 503 and the app shows the offline/unavailable message.
+function returns 503 and the app shows the offline/unavailable message. If the
+machine running the backfill has no IPv6 route, swap the `db.<ref>` host in
+`SUPABASE_DB_URL` for the pooler host described in
+[Direct connections and IPv6](#direct-connections-and-ipv6).
 
 ## 3. Mobile builds
 * `env.json` (git-ignored): `{"SUPABASE_URL":"…","SUPABASE_ANON_KEY":"…"}`
@@ -52,4 +57,39 @@ Edit JSON under `content/`, run `python3 scripts/ingest.py` (commit the
 generated SQL), `python3 scripts/export_bundle.py` (commit the bundle), open a
 PR. CI re-runs migrations, RLS tests and verifies the bundle is rights-clean.
 Apply to production with `psql "$DB_URL" -f content/generated/<work>.sql`
-(the SQL is idempotent).
+(the SQL is idempotent). From a network without IPv6, `$DB_URL` has to be the
+pooler URL — see
+[Direct connections and IPv6](#direct-connections-and-ipv6).
+
+## Direct connections and IPv6
+
+Supabase retired IPv4 for the **direct** database host: `db.<ref>.supabase.co`
+now resolves to IPv6 only, so any raw `psql`/`libpq` connection from a network
+without an IPv6 route fails with
+
+```
+psql: error: connection to server at "db.<ref>.supabase.co" (2606:...) port 5432 failed: Network is unreachable
+```
+
+That hits CI runners and plenty of office networks, not user devices — the app
+and the `ask` function talk to `*.<ref>.supabase.co` (the API host), which still
+serves IPv4. Only the `db.` host moved.
+
+Where a direct connection is needed (the embed backfill in §2, the content
+updates in §4), use the Supavisor pooler, which is dual-stack:
+
+```
+export PGPASSWORD='<db password>'
+psql "postgresql://postgres.<ref>@aws-0-<region>.pooler.supabase.com:5432/postgres" -f content/generated/bhagavata-purana.sql
+```
+
+Two things differ from the direct host: the user is `postgres.<ref>` (the ref is
+what tells Supavisor which project to route to) and the host carries the
+project's cloud region, e.g. `ap-south-1` — read it with
+`curl -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" https://api.supabase.com/v1/projects/<ref> | jq -r .region`.
+Keep **session mode**, port `5432`: it behaves like a direct connection, so
+multi-statement `psql -f` files, `SET` state and prepared statements keep
+working. Transaction mode (`6543`) rejects session state and would break those
+scripts. `supabase link` and `supabase db push` need no change at all — the CLI
+pools through Supavisor by itself, which is why the *Deploy Supabase* workflow
+fails at the seed step and not at `db push`.
