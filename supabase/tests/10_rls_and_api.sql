@@ -139,7 +139,7 @@ begin
   insert into public.qa_sessions (user_id, language, title)
     values ('00000000-0000-0000-0000-000000000001', 'en', 'test qa') returning id into sid;
   insert into public.qa_messages (session_id, role, content, grounded) values
-    (sid, 'user', 'who recited the text in the test?'),
+    (sid, 'user', 'who recited the text in the test?', null),
     (sid, 'assistant', 'A test assistant answer citing [SB 1.1.2].', true);
   perform pg_temp.assert_eq((select count(*) from public.qa_sessions), 1::bigint, 'reader sees only own qa sessions');
   perform pg_temp.assert_eq((select count(*) from public.qa_messages), 2::bigint, 'reader sees own qa messages');
