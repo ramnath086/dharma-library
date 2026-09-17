@@ -280,10 +280,43 @@ class QaAnswer {
   final String answer;
   final List<Citation> citations;
   final bool grounded;
-  final String? model;
+  final String? model, sessionId, messageId;
   QaAnswer.fromJson(Map<String, dynamic> j)
       : answer = j['answer'] ?? '',
         citations = (j['citations'] as List? ?? []).map((c) => Citation.fromJson((c as Map).cast<String, dynamic>())).toList(),
         grounded = j['grounded'] ?? false,
-        model = j['model'];
+        model = j['model'],
+        sessionId = j['session_id'],
+        messageId = j['message_id'];
+}
+
+/// A stored Ask Dharma conversation (qa_sessions row).
+class QaSession {
+  final String id, language;
+  final String? title;
+  final DateTime? createdAt;
+  QaSession.fromJson(Map<String, dynamic> j)
+      : id = j['id'],
+        language = j['language'] ?? 'en',
+        title = j['title'],
+        createdAt = j['created_at'] == null ? null : DateTime.tryParse(j['created_at']);
+}
+
+/// A stored Ask Dharma message (qa_messages row).
+class QaMessage {
+  final String id, role, content;
+  final List<Citation> citations;
+  final bool? grounded;
+  final int? feedback;
+  final DateTime? createdAt;
+  QaMessage.fromJson(Map<String, dynamic> j)
+      : id = j['id'],
+        role = j['role'] ?? 'user',
+        content = j['content'] ?? '',
+        citations = (j['citations'] as List? ?? []).map((c) => Citation.fromJson((c as Map).cast<String, dynamic>())).toList(),
+        grounded = j['grounded'],
+        feedback = j['feedback'],
+        createdAt = j['created_at'] == null ? null : DateTime.tryParse(j['created_at']);
+
+  bool get isUser => role == 'user';
 }

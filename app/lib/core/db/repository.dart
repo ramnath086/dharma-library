@@ -296,15 +296,72 @@ class Repository {
     }
   }
 
-  // ---------------------------------------------------------------- QA
+  // ---------------------------------------------------------------- QA (Ask Dharma)
   Future<QaAnswer> ask(String question, {String language = 'en', String? workSlug, String? sessionId}) async {
     final c = _client;
     if (c == null || !_online) throw RepositoryException('offline');
     final res = await c.functions.invoke('ask', body: {
       'question': question, 'language': language, 'work_slug': workSlug ?? workSlugDefault, 'session_id': sessionId,
     });
+    if (res.status == 429) {
+      final data = res.data;
+      final cap = data is Map ? data['daily_cap'] : null;
+      throw QaLimitException(cap is int ? cap : null);
+    }
     if (res.status != 200) throw RepositoryException('ask failed: ${res.status} ${res.data}');
     return QaAnswer.fromJson((res.data as Map).cast<String, dynamic>());
+  }
+
+  /// Past conversations of the signed-in user, newest first. Empty when
+  /// signed out or offline (sessions live only server-side).
+  Future<List<QaSession>> qaSessions({int limit = 30}) async {
+    final c = _client;
+    if (c == null || !_online || !isSignedIn) return const [];
+    try {
+      final rows = await c.from('qa_sessions').select('id, language, title, created_at').order('created_at', ascending: false).limit(limit);
+      return rows.map((r) => QaSession.fromJson((r as Map).cast<String, dynamic>())).toList();
+    } catch (_) {
+      return const [];
+    }
+  }
+
+  /// Messages of one conversation, oldest first. RLS guarantees the caller
+  /// can only read their own sessions.
+  Future<List<QaMessage>> qaMessages(String sessionId) async {
+    final c = _client;
+    if (c == null || !_online || !isSignedIn) return const [];
+    try {
+      final rows = await c.from('qa_messages').select('id, role, content, citations, grounded, feedback, created_at')
+          .eq('session_id', sessionId).order('created_at');
+      return rows.map((r) => QaMessage.fromJson((r as Map).cast<String, dynamic>())).toList();
+    } catch (_) {
+      return const [];
+    }
+  }
+
+  /// Record a thumb up/down on a stored assistant message.
+  Future<void> submitQaFeedback(String messageId, int value) async {
+    assert(value == 1 || value == -1, 'feedback must be +1 or -1');
+    final c = _client;
+    if (c == null || !_online || !isSignedIn) return;
+    await c.from('qa_messages').update({'feedback': value}).eq('id', messageId);
+  }
+
+  /// Question starters shown on the empty Ask thread, from
+  /// app_config['ask.suggested_questions'] ({en: [...], ml: [...]}). Falls
+  /// back to English, then to nothing.
+  Future<List<String>> askSuggestedQuestions(String locale) async {
+    final c = _client;
+    if (c == null || !_online) return const [];
+    try {
+      final row = await c.from('app_config').select('value').eq('key', 'ask.suggested_questions').maybeSingle();
+      final v = row?['value'];
+      if (v is! Map) return const [];
+      final list = (v[locale] ?? v['en']) as List? ?? const [];
+      return list.whereType<String>().toList();
+    } catch (_) {
+      return const [];
+    }
   }
 
   // ------------------------------------------------------------- audio
@@ -343,4 +400,11 @@ class RepositoryException implements Exception {
   final String message;
   @override
   String toString() => 'RepositoryException: $message';
+}
+
+/// Thrown when the `ask` Edge Function refuses the request because the
+/// signed-in user reached their daily answer cap (HTTP 429).
+class QaLimitException extends RepositoryException {
+  QaLimitException(this.dailyCap) : super('daily answer cap reached');
+  final int? dailyCap;
 }
