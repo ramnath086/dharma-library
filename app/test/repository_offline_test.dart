@@ -113,4 +113,24 @@ void main() {
     expect(Repository.fold('krishna'), 'krsna');
     expect(Repository.fold('Śrī'), 'sr');
   });
+
+  test('diagnostics error log: newest first, capped, clearable', () async {
+    await store.appendErrorLog('flutter', 'a'.padRight(500, 'a'));
+    await store.appendErrorLog('platform', 'small error');
+    final log = await store.errorLog();
+    expect(log.first.contains('small error'), isTrue);
+    expect(log.first.startsWith('2'), isTrue); // ISO timestamp prefix
+    expect(log[1].length < 500, isTrue); // long messages are truncated
+    for (var i = 0; i < 60; i++) {
+      await store.appendErrorLog('x', 'msg$i');
+    }
+    expect((await store.errorLog()).length, 50);
+    await store.clearErrorLog();
+    expect(await store.errorLog(), isEmpty);
+  });
+
+  test('analytics guard: no client / signed-out logs nothing and throws nothing', () async {
+    await repo.logAnalytics('daily_open');
+    await repo.logAnalytics('search', {'hits': 3, 'offline': true});
+  });
 }

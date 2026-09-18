@@ -412,6 +412,19 @@ class Repository {
   Future<Map<String, dynamic>?> bundleMeta(String workSlug) async =>
       (await store.get('bundle_meta:$workSlug')) as Map<String, dynamic>?;
 
+  // -------------------------------------------------------- analytics
+  /// Log an opt-in usage event. Callers gate on the analytics opt-in; this
+  /// adds hard guards (signed-in, online) and swallows all failures —
+  /// telemetry must never break the app. Events carry counts/facts only,
+  /// never what was read, searched, or asked.
+  Future<void> logAnalytics(String event, [Map<String, dynamic> payload = const {}]) async {
+    final c = _client;
+    if (c == null || !_online || !isSignedIn) return;
+    try {
+      await c.from('analytics_events').insert({'user_id': c.auth.currentUser!.id, 'event': event, 'payload': payload});
+    } catch (_) {/* ignore */}
+  }
+
   Future<bool> isDownloaded(String workSlug) => store.hasBundle(workSlug);
   Future<void> removeDownload(String workSlug) async {
     await store.deletePrefix('chapter:');

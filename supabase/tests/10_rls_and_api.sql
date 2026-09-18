@@ -19,6 +19,7 @@ delete from public.bookmarks where user_id = '00000000-0000-0000-0000-0000000000
 delete from public.reading_progress where user_id = '00000000-0000-0000-0000-000000000001';
 delete from public.verse_reads where user_id = '00000000-0000-0000-0000-000000000001';
 delete from public.qa_sessions where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
+delete from public.analytics_events where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
 delete from public.editions where slug like 'test-%';
 delete from public.rights where id in ('11111111-1111-1111-1111-111111111111','11111111-1111-1111-1111-111111111112');
 delete from public.sources where slug = 'test-restricted-src';
@@ -81,6 +82,13 @@ do $$ begin
     insert into public.qa_sessions (user_id) values (null);
     raise exception 'ASSERT FAILED: anon could open a qa session';
   exception when insufficient_privilege or check_violation then raise notice 'ok — anon cannot open qa sessions'; end;
+end $$;
+
+do $$ begin
+  begin
+    insert into public.analytics_events (user_id, event) values ('00000000-0000-0000-0000-000000000001', 'daily_open');
+    raise exception 'ASSERT FAILED: anon could log an analytics event';
+  exception when insufficient_privilege or check_violation then raise notice 'ok — anon cannot log analytics events'; end;
 end $$;
 
 -- anon cannot write
@@ -154,6 +162,23 @@ begin
   exception when insufficient_privilege or check_violation then raise notice 'ok — cannot forge qa session owner'; end;
 end $$;
 
+-- Analytics: opt-in events are insert-only and invisible to their own owner
+do $$
+begin
+  insert into public.analytics_events (user_id, event, payload) values
+    ('00000000-0000-0000-0000-000000000001', 'daily_open', '{}'),
+    ('00000000-0000-0000-0000-000000000001', 'search', '{"hits": 3, "offline": true}');
+  perform pg_temp.assert_eq((select count(*) from public.analytics_events), 0::bigint, 'events are write-only for their owner');
+  begin
+    insert into public.analytics_events (user_id, event) values ('00000000-0000-0000-0000-000000000002', 'daily_open');
+    raise exception 'ASSERT FAILED: reader forged analytics owner';
+  exception when insufficient_privilege or check_violation then raise notice 'ok — cannot forge analytics owner'; end;
+  begin
+    insert into public.analytics_events (user_id, event) values ('00000000-0000-0000-0000-000000000001', 'Free text, not snake_case!');
+    raise exception 'ASSERT FAILED: analytics accepted a non-snake_case event';
+  exception when check_violation then raise notice 'ok — analytics events must be snake_case'; end;
+end $$;
+
 -- ---------------------------------------------------------------------------
 -- editor
 -- ---------------------------------------------------------------------------
@@ -184,10 +209,12 @@ select pg_temp.assert_eq(public.is_admin(), true, 'admin role resolves');
 select pg_temp.assert_eq((select count(*) > 0 from public.audit_log), true, 'admin reads audit log');
 select pg_temp.assert_eq((select count(*) from public.audit_log where table_name='verse_contents' and action='UPDATE' and actor_id='00000000-0000-0000-0000-000000000002' and new_data->>'notes' = 'editor note') >= 1, true, 'audit captured editor update with actor');
 select pg_temp.assert_eq((select count(*) from public.profiles), 3::bigint, 'admin sees all profiles');
+select pg_temp.assert_eq((select count(*) from public.analytics_events), 2::bigint, 'admin reads analytics events (reader logged 2)');
 
 reset role;
 -- cleanup fixtures
 delete from public.qa_sessions where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
+delete from public.analytics_events where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
 delete from public.editions where slug like 'test-%';
 delete from public.rights where id in ('11111111-1111-1111-1111-111111111111','11111111-1111-1111-1111-111111111112');
 delete from public.sources where slug = 'test-restricted-src';

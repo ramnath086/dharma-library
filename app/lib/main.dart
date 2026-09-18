@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -41,6 +44,17 @@ Future<void> main() async {
       await store.importAssetBundle(AppConfig.defaultWorkSlug);
     } catch (_) {/* bundle optional */}
   }
+
+  // On-device diagnostics: keep a small local log of framework/platform
+  // errors for Settings → Diagnostics. Never sends anything anywhere.
+  FlutterError.onError = (details) {
+    unawaited(store.appendErrorLog('flutter', details.exceptionAsString()));
+    FlutterError.presentError(details);
+  };
+  PlatformDispatcher.instance.onError = (error, stack) {
+    unawaited(store.appendErrorLog('platform', error.toString()));
+    return false;
+  };
 
   runApp(ProviderScope(
     overrides: [localStoreProvider.overrideWithValue(store), prefsProvider.overrideWithValue(prefs)],

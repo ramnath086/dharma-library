@@ -185,5 +185,27 @@ class LocalStore {
     await _db.delete('outbox');
   }
 
+  // -------------------------------------------------------- diagnostics
+  static const _errorLogKey = 'error_log';
+  static const _errorLogCap = 50;
+  static const _errorEntryMaxLen = 400;
+
+  /// Append a crash/error entry to the on-device diagnostics log (capped,
+  /// newest first). Never throws — diagnostics must not crash the app.
+  Future<void> appendErrorLog(String kind, String message) async {
+    try {
+      final cur = await errorLog();
+      final trimmed = message.length > _errorEntryMaxLen ? message.substring(0, _errorEntryMaxLen) : message;
+      await put(_errorLogKey, ['${DateTime.now().toIso8601String()} [$kind] $trimmed', ...cur].take(_errorLogCap).toList());
+    } catch (_) {/* ignore */}
+  }
+
+  Future<List<String>> errorLog() async {
+    final raw = await get<List>(_errorLogKey);
+    return raw == null ? const [] : raw.map((e) => e.toString()).toList();
+  }
+
+  Future<void> clearErrorLog() => _db.delete('kv', where: 'k = ?', whereArgs: [_errorLogKey]);
+
   Future<void> close() => _db.close();
 }

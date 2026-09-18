@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -126,6 +128,7 @@ class _DailyVerseCard extends ConsumerWidget {
         trailing: streak > 0 ? Chip(visualDensity: VisualDensity.compact, label: Text(l.dailyStreak(streak))) : null,
         onTap: () {
           ref.read(dailyReadsProvider.notifier).markToday();
+          if (ref.read(analyticsOptInProvider)) unawaited(ref.read(repositoryProvider).logAnalytics('daily_open'));
           context.push('/read/$slug/verse/${v.ref}');
         },
       ),

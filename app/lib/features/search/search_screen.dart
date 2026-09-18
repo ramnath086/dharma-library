@@ -77,6 +77,12 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       _loading = false;
     });
     if (_hits.isNotEmpty || _entities.isNotEmpty) _remember(q);
+    if (mounted && ref.read(analyticsOptInProvider)) {
+      unawaited(ref.read(repositoryProvider).logAnalytics(
+            'search',
+            {'hits': _hits.length + _entities.length, 'offline': !ref.read(isOnlineProvider)},
+          ));
+    }
   }
 
   @override

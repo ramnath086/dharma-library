@@ -206,5 +206,10 @@ final dailyReadsProvider = NotifierProvider<DailyReadsNotifier, Set<String>>(Dai
 /// this pref is what that wiring will read.
 final dailyReminderProvider = StateProvider<bool>((ref) => ref.watch(prefsProvider).getBool('dailyReminder') ?? false);
 
+// ------------------------------------------------------------ analytics
+/// Opt-in usage analytics (default OFF). When on, the app logs content-free
+/// action counts to analytics_events; see migration 0010.
+final analyticsOptInProvider = StateProvider<bool>((ref) => ref.watch(prefsProvider).getBool('analyticsOptIn') ?? false);
+
 /// Increment to invalidate user-data providers after a local write.
 final userDataVersionProvider = StateProvider<int>((_) => 0);

@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -82,7 +85,11 @@ class SettingsScreen extends ConsumerWidget {
               subtitle: FutureBuilder<int>(future: repo.store.sizeBytes(), builder: (_, sn) => Text(l.storageUsed(((sn.data ?? 0) / 1e6).toStringAsFixed(1)))),
               trailing: isDl
                   ? TextButton(onPressed: () async { await repo.removeDownload(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.removeDownload))
-                  : FilledButton.tonal(onPressed: () async { await repo.downloadWork(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.downloadForOffline)),
+                  : FilledButton.tonal(onPressed: () async {
+                      await repo.downloadWork(slug);
+                      ref.invalidate(downloadedProvider(slug));
+                      if (ref.read(analyticsOptInProvider)) unawaited(repo.logAnalytics('offline_download'));
+                    }, child: Text(l.downloadForOffline)),
             ),
             if (isDl)
               FutureBuilder<Map<String, dynamic>?>(
@@ -100,6 +107,27 @@ class SettingsScreen extends ConsumerWidget {
         ),
         const Divider(),
 
+        // ---- privacy
+        ListTile(title: Text(l.privacyTitle)),
+        SwitchListTile(
+          secondary: const Icon(Icons.query_stats),
+          title: Text(l.analyticsOptIn),
+          subtitle: Text(l.analyticsOptInHint),
+          value: ref.watch(analyticsOptInProvider),
+          onChanged: (v) async {
+            ref.read(analyticsOptInProvider.notifier).state = v;
+            await ref.read(prefsProvider).setBool('analyticsOptIn', v);
+          },
+        ),
+        ListTile(
+          leading: const Icon(Icons.troubleshoot),
+          title: Text(l.diagnosticsTitle),
+          subtitle: Text(l.diagnosticsHint),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => _showDiagnostics(context, ref, l),
+        ),
+        const Divider(),
+
         // ---- about
         AboutListTile(
           icon: const Icon(Icons.info_outline),
@@ -109,6 +137,45 @@ class SettingsScreen extends ConsumerWidget {
           child: Text(l.about),
         ),
       ]),
+    );
+  }
+
+  /// On-device diagnostics: view, copy, or clear the local error log.
+  Future<void> _showDiagnostics(BuildContext context, WidgetRef ref, AppLocalizations l) async {
+    final repo = ref.read(repositoryProvider);
+    await showDialog<void>(
+      context: context,
+      builder: (d) => AlertDialog(
+        title: Text(l.diagnosticsTitle),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: FutureBuilder<List<String>>(
+            future: repo.store.errorLog(),
+            builder: (_, sn) {
+              final log = sn.data ?? const <String>[];
+              if (log.isEmpty) return Text(l.diagnosticsEmpty);
+              return ConstrainedBox(
+                constraints: const BoxConstraints(maxHeight: 320),
+                child: ListView(shrinkWrap: true, children: [
+                  for (final e in log) Padding(padding: const EdgeInsets.only(bottom: 6), child: Text(e, style: const TextStyle(fontSize: 11, fontFamily: 'monospace'))),
+                ]),
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(onPressed: () async { await repo.store.clearErrorLog(); if (d.mounted) Navigator.pop(d); }, child: Text(l.diagnosticsClear)),
+          TextButton(
+            onPressed: () async {
+              final log = await repo.store.errorLog();
+              await Clipboard.setData(ClipboardData(text: log.join('\n')));
+              if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.diagnosticsCopied)));
+            },
+            child: Text(l.diagnosticsCopy),
+          ),
+          FilledButton(onPressed: () => Navigator.pop(d), child: Text(l.genericOk)),
+        ],
+      ),
     );
   }
 }
