@@ -89,7 +89,10 @@ void main() {
     expect(find.widgetWithText(ActionChip, 'Bookmarks'), findsOneWidget);
 
     // quick action chips switch shell branches (find the chip, not the nav label)
-    await tester.tap(find.widgetWithText(ActionChip, 'Ask'));
+    final askChip = find.widgetWithText(ActionChip, 'Ask');
+    await tester.ensureVisible(askChip);
+    await _settle(tester);
+    await tester.tap(askChip);
     await _settle(tester);
     expect(find.text('Ask the Bhāgavatam'), findsOneWidget);
   });

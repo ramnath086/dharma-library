@@ -41,7 +41,7 @@ void main() {
       expect(computeStreak({'2026-09-16'}, today: today), 0);
     });
     test('duplicates do not inflate', () {
-      expect(computeStreak({'2026-09-18', '2026-09-18', '2026-09-17'}, today: today), 2);
+      expect(computeStreak(['2026-09-18', '2026-09-18', '2026-09-17'], today: today), 2);
     });
   });
 }
