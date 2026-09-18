@@ -8,6 +8,8 @@
   "tabSettings": "ക്രമീകരണങ്ങൾ",
   "continueReading": "വായന തുടരുക",
   "startReading": "വായന തുടങ്ങുക",
+  "homeVersesRead": "{total} ശ്ലോകങ്ങളിൽ {read} എണ്ണം പര്യവേക്ഷണം ചെയ്തു",
+  "@homeVersesRead": {"placeholders": {"read": {"type": "int"}, "total": {"type": "int"}}},
   "canto": "സ്കന്ധം {n}",
   "chapter": "അധ്യായം {n}",
   "verse": "ശ്ലോകം {ref}",

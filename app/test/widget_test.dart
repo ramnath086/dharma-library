@@ -1,3 +1,4 @@
+import 'package:dharma_library/core/db/repository.dart';
 import 'package:dharma_library/core/providers.dart';
 import 'package:dharma_library/core/theme/app_theme.dart';
 import 'package:dharma_library/main.dart';
@@ -53,5 +54,43 @@ void main() {
     await tester.tap(find.text('മലയാളം'));
     await _settle(tester);
     expect(find.text('ഗ്രന്ഥശാല'), findsWidgets);
+  });
+
+  testWidgets('dashboard: study progress reflects reading history; quick actions switch tabs', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
+    final store = await tester.runAsync(() => LocalStore.inMemory());
+    await tester.runAsync(() => store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
+
+    // read three verses first so the dashboard has something to report
+    final repo = Repository(store: store!);
+    await tester.runAsync(() async {
+      final toc = await repo.toc('bhagavata-purana');
+      final ch = await repo.chapter(toc.chapters.first.id);
+      for (var i = 0; i < 3; i++) {
+        await repo.recordProgress(workId: toc.work.id, verse: ch.verses[i], sectionId: ch.id, totalVerses: 10, position: i + 1);
+      }
+    });
+
+    await tester.pumpWidget(ProviderScope(
+      overrides: [
+        localStoreProvider.overrideWithValue(store),
+        prefsProvider.overrideWithValue(prefs),
+        connectivityProvider.overrideWith((ref) => Stream.value(false)),
+      ],
+      child: const DharmaLibraryApp(),
+    ));
+    await _settle(tester);
+
+    expect(find.text('3 of 10 verses explored'), findsOneWidget);
+    expect(find.byType(LinearProgressIndicator), findsWidgets);
+    expect(find.text('Search'), findsWidgets);
+    expect(find.text('Ask'), findsWidgets);
+    expect(find.text('Bookmarks'), findsWidgets);
+
+    // quick action chips switch shell branches
+    await tester.tap(find.text('Ask'));
+    await _settle(tester);
+    expect(find.text('Ask the Bhāgavatam'), findsOneWidget);
   });
 }

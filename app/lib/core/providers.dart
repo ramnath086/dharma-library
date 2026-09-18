@@ -146,5 +146,11 @@ final bookmarksProvider = FutureProvider<List<Bookmark>>((ref) => ref.watch(repo
 final progressProvider = FutureProvider.family<ReadingProgress?, String>((ref, workId) => ref.watch(repositoryProvider).progress(workId));
 final downloadedProvider = FutureProvider.family<bool, String>((ref, slug) => ref.watch(repositoryProvider).isDownloaded(slug));
 
+/// How many distinct verses the reader has opened (local reading history).
+final versesReadCountProvider = FutureProvider<int>((ref) async {
+  ref.watch(userDataVersionProvider);
+  return (await ref.watch(repositoryProvider).store.readVerseIds()).length;
+});
+
 /// Increment to invalidate user-data providers after a local write.
 final userDataVersionProvider = StateProvider<int>((_) => 0);

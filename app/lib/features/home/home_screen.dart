@@ -37,6 +37,10 @@ class HomeScreen extends ConsumerWidget {
                   data: (p) => _ContinueCard(toc: t, progress: p),
                   orElse: () => const SizedBox.shrink(),
                 ),
+                const SizedBox(height: 8),
+                _StudyProgressCard(toc: t),
+                const SizedBox(height: 8),
+                const _QuickActions(),
                 const SizedBox(height: 16),
                 for (final canto in t.sections) ...[
                   Padding(
@@ -87,6 +91,48 @@ class _WorkHeader extends StatelessWidget {
         ],
       ]),
     );
+  }
+}
+
+/// Reading footprint on this work: verses explored out of the total, with a
+/// compact progress bar. Local-only stat (uses reading history).
+class _StudyProgressCard extends ConsumerWidget {
+  const _StudyProgressCard({required this.toc});
+  final Toc toc;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final total = toc.chapters.fold<int>(0, (n, c) => n + c.verseCount);
+    final read = ref.watch(versesReadCountProvider).value ?? 0;
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(l.homeVersesRead(read, total), style: Theme.of(context).textTheme.bodyMedium),
+          const SizedBox(height: 8),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: LinearProgressIndicator(value: total == 0 ? 0 : (read / total).clamp(0.0, 1.0), minHeight: 8),
+          ),
+        ]),
+      ),
+    );
+  }
+}
+
+/// One-tap jumps to the app's other main sections (shell branches).
+class _QuickActions extends ConsumerWidget {
+  const _QuickActions();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    return Wrap(spacing: 8, runSpacing: 8, children: [
+      ActionChip(avatar: const Icon(Icons.search, size: 18), label: Text(l.tabSearch), onPressed: () => context.go('/search')),
+      ActionChip(avatar: const Icon(Icons.auto_awesome_outlined, size: 18), label: Text(l.tabAsk), onPressed: () => context.go('/ask')),
+      ActionChip(avatar: const Icon(Icons.bookmark_outline, size: 18), label: Text(l.tabBookmarks), onPressed: () => context.go('/bookmarks')),
+    ]);
   }
 }
 

@@ -8,6 +8,8 @@
   "tabSettings": "Settings",
   "continueReading": "Continue reading",
   "startReading": "Start reading",
+  "homeVersesRead": "{read} of {total} verses explored",
+  "@homeVersesRead": {"placeholders": {"read": {"type": "int"}, "total": {"type": "int"}}},
   "canto": "Canto {n}",
   "@canto": {"placeholders": {"n": {"type": "String"}}},
   "chapter": "Chapter {n}",
