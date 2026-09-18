@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'config/app_config.dart';
+import 'daily/daily.dart';
 import 'db/models.dart';
 import 'db/repository.dart';
 import 'offline/local_store.dart';
@@ -160,6 +161,50 @@ final readingHistoryProvider = FutureProvider<List<Map<String, dynamic>>>((ref) 
 
 /// Transient bookmark tag filter (null = all).
 final bookmarkTagFilterProvider = StateProvider<String?>((_) => null);
+
+// ------------------------------------------------------------ daily verse
+/// A verse picked deterministically from the published corpus for today.
+typedef DailyPick = ({Chapter chapter, Verse verse});
+
+final dailyVerseProvider = FutureProvider<DailyPick?>((ref) async {
+  final repo = ref.watch(repositoryProvider);
+  final slug = ref.watch(workSlugProvider);
+  try {
+    final toc = await repo.toc(slug);
+    final total = toc.chapters.fold<int>(0, (n, c) => n + c.verseCount);
+    var idx = dailyVerseIndex(DateTime.now(), total);
+    for (final ch in toc.chapters) {
+      if (idx < ch.verseCount) {
+        final chapter = await repo.chapter(ch.id);
+        if (chapter.verses.isEmpty) return null;
+        return (chapter: chapter, verse: chapter.verses[idx.clamp(0, chapter.verses.length - 1)]);
+      }
+      idx -= ch.verseCount;
+    }
+  } catch (_) {/* content not cached yet */}
+  return null;
+});
+
+/// Dates (yyyy-MM-dd) on which the reader opened the daily verse; powers
+/// the current streak. Persisted in prefs.
+class DailyReadsNotifier extends Notifier<Set<String>> {
+  static const _key = 'dailyReadDates';
+  @override
+  Set<String> build() => {...ref.watch(prefsProvider).getStringList(_key) ?? const <String>[]};
+
+  Future<void> markToday() async {
+    final next = {...state, isoDay(DateTime.now())};
+    state = next;
+    await ref.read(prefsProvider).setStringList(_key, next.toList()..sort());
+  }
+}
+
+final dailyReadsProvider = NotifierProvider<DailyReadsNotifier, Set<String>>(DailyReadsNotifier.new);
+
+/// Whether the daily-verse reminder is opted in (persisted immediately).
+/// The actual system-notification scheduling lands with the store build;
+/// this pref is what that wiring will read.
+final dailyReminderProvider = StateProvider<bool>((ref) => ref.watch(prefsProvider).getBool('dailyReminder') ?? false);
 
 /// Increment to invalidate user-data providers after a local write.
 final userDataVersionProvider = StateProvider<int>((_) => 0);

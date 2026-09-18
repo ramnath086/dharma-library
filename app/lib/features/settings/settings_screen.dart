@@ -61,6 +61,16 @@ class SettingsScreen extends ConsumerWidget {
           ),
         ),
         ListTile(title: Text(l.fontSize), subtitle: Slider(value: s.fontScale, min: .8, max: 1.6, divisions: 8, label: '${(s.fontScale * 100).round()}%', onChanged: (v) => n.update((x) => x.copyWith(fontScale: v)))),
+        SwitchListTile(
+          secondary: const Icon(Icons.notifications_outlined),
+          title: Text(l.dailyReminder),
+          subtitle: Text(l.dailyReminderHint),
+          value: ref.watch(dailyReminderProvider),
+          onChanged: (v) async {
+            ref.read(dailyReminderProvider.notifier).state = v;
+            await ref.read(prefsProvider).setBool('dailyReminder', v);
+          },
+        ),
         const Divider(),
 
         // ---- offline

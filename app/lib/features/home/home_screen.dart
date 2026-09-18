@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/daily/daily.dart';
 import '../../core/db/models.dart';
 import '../../core/providers.dart';
 import '../../core/theme/app_theme.dart';
@@ -33,6 +34,7 @@ class HomeScreen extends ConsumerWidget {
               children: [
                 _WorkHeader(work: t.work, script: settings.script),
                 const SizedBox(height: 12),
+                const _DailyVerseCard(),
                 progress.maybeWhen(
                   data: (p) => _ContinueCard(toc: t, progress: p),
                   orElse: () => const SizedBox.shrink(),
@@ -92,6 +94,41 @@ class _WorkHeader extends StatelessWidget {
           Text(work.tradition!, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.white60)),
         ],
       ]),
+    );
+  }
+}
+
+/// The daily verse: a deterministic pick from the published corpus (chosen by
+/// day-of-year), shown with its translation in the reader's language, plus
+/// the current daily streak. Tapping records today's streak day and opens
+/// the verse.
+class _DailyVerseCard extends ConsumerWidget {
+  const _DailyVerseCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final settings = ref.watch(settingsProvider);
+    final slug = ref.watch(workSlugProvider);
+    final pick = ref.watch(dailyVerseProvider).value;
+    if (pick == null) return const SizedBox.shrink();
+    final streak = computeStreak(ref.watch(dailyReadsProvider));
+    final v = pick.verse;
+    final tr = v.renderings.firstWhereOrNull((r) => r.kind == 'translation' && r.languageCode == settings.effectiveTranslationLang) ??
+        v.renderings.firstWhereOrNull((r) => r.kind == 'translation') ??
+        v.renderings.firstOrNull;
+    return Card(
+      color: Theme.of(context).colorScheme.secondaryContainer,
+      child: ListTile(
+        leading: const Icon(Icons.wb_sunny_outlined),
+        title: Text('${l.dailyTitle} · SB ${v.ref}', style: Theme.of(context).textTheme.labelLarge),
+        subtitle: tr == null ? null : Text(tr.body, maxLines: 3, overflow: TextOverflow.ellipsis),
+        trailing: streak > 0 ? Chip(visualDensity: VisualDensity.compact, label: Text(l.dailyStreak(streak))) : null,
+        onTap: () {
+          ref.read(dailyReadsProvider.notifier).markToday();
+          context.push('/read/$slug/verse/${v.ref}');
+        },
+      ),
     );
   }
 }

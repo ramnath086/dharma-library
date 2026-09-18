@@ -93,4 +93,33 @@ void main() {
     await _settle(tester);
     expect(find.text('Ask the Bhāgavatam'), findsOneWidget);
   });
+
+  testWidgets('daily verse card shows a corpus verse; tapping records the streak day', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
+    final store = await tester.runAsync(() => LocalStore.inMemory());
+    await tester.runAsync(() => store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
+
+    await tester.pumpWidget(ProviderScope(
+      overrides: [
+        localStoreProvider.overrideWithValue(store!),
+        prefsProvider.overrideWithValue(prefs),
+        connectivityProvider.overrideWith((ref) => Stream.value(false)),
+      ],
+      child: const DharmaLibraryApp(),
+    ));
+    await _settle(tester);
+
+    // the card shows today's pick from the published corpus (any SB ref)
+    expect(find.textContaining('Daily verse · SB '), findsOneWidget);
+    expect(prefs.getStringList('dailyReadDates'), isNull);
+
+    // tapping it records today and navigates to the verse
+    await tester.tap(find.textContaining('Daily verse · SB '));
+    await _settle(tester);
+    final days = prefs.getStringList('dailyReadDates');
+    expect(days, isNotNull);
+    expect(days!.length, 1);
+    expect(days.single, isNotEmpty);
+  });
 }
