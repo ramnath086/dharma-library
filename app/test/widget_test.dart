@@ -84,12 +84,12 @@ void main() {
 
     expect(find.text('3 of 10 verses explored'), findsOneWidget);
     expect(find.byType(LinearProgressIndicator), findsWidgets);
-    expect(find.text('Search'), findsWidgets);
-    expect(find.text('Ask'), findsWidgets);
-    expect(find.text('Bookmarks'), findsWidgets);
+    expect(find.widgetWithText(ActionChip, 'Search'), findsOneWidget);
+    expect(find.widgetWithText(ActionChip, 'Ask'), findsOneWidget);
+    expect(find.widgetWithText(ActionChip, 'Bookmarks'), findsOneWidget);
 
-    // quick action chips switch shell branches
-    await tester.tap(find.text('Ask'));
+    // quick action chips switch shell branches (find the chip, not the nav label)
+    await tester.tap(find.widgetWithText(ActionChip, 'Ask'));
     await _settle(tester);
     expect(find.text('Ask the Bhāgavatam'), findsOneWidget);
   });
