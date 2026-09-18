@@ -71,6 +71,8 @@
   "relations": "Relations",
   "otpCodeLabel": "Code (6 digits)",
   "verifyCode": "Verify",
+  "bundleImported": "Offline bundle imported {date}",
+  "@bundleImported": {"placeholders": {"date": {"type": "String"}}},
   "searchHint": "Search verses, people, places, topics…",
   "searchNoResults": "No results for “{q}”",
   "@searchNoResults": {"placeholders": {"q": {"type": "String"}}},

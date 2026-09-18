@@ -66,6 +66,8 @@
   "relations": "ബന്ധങ്ങൾ",
   "otpCodeLabel": "കോഡ് (6 അക്കങ്ങൾ)",
   "verifyCode": "പരിശോധിക്കുക",
+  "bundleImported": "ഓഫ്‌ലൈൻ ബണ്ടിൽ {date}-ൽ ഇറക്കുമതി ചെയ്തു",
+  "@bundleImported": {"placeholders": {"date": {"type": "String"}}},
   "searchHint": "ശ്ലോകങ്ങൾ, വ്യക്തികൾ, സ്ഥലങ്ങൾ, വിഷയങ്ങൾ തിരയുക…",
   "searchNoResults": "“{q}” എന്നതിന് ഫലങ്ങളില്ല",
   "searchTip": "സൂചന: “krishna”, “kṛṣṇa”, “കൃഷ്ണ”, “कृष्ण” — ഏതും ഉപയോഗിക്കാം.",

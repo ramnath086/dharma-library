@@ -75,14 +75,26 @@ class SettingsScreen extends ConsumerWidget {
 
         // ---- offline
         downloaded.when(
-          data: (isDl) => ListTile(
-            leading: Icon(isDl ? Icons.offline_pin : Icons.download_for_offline_outlined),
-            title: Text(isDl ? l.downloaded : l.downloadForOffline),
-            subtitle: FutureBuilder<int>(future: repo.store.sizeBytes(), builder: (_, sn) => Text(l.storageUsed(((sn.data ?? 0) / 1e6).toStringAsFixed(1)))),
-            trailing: isDl
-                ? TextButton(onPressed: () async { await repo.removeDownload(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.removeDownload))
-                : FilledButton.tonal(onPressed: () async { await repo.downloadWork(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.downloadForOffline)),
-          ),
+          data: (isDl) => Column(children: [
+            ListTile(
+              leading: Icon(isDl ? Icons.offline_pin : Icons.download_for_offline_outlined),
+              title: Text(isDl ? l.downloaded : l.downloadForOffline),
+              subtitle: FutureBuilder<int>(future: repo.store.sizeBytes(), builder: (_, sn) => Text(l.storageUsed(((sn.data ?? 0) / 1e6).toStringAsFixed(1)))),
+              trailing: isDl
+                  ? TextButton(onPressed: () async { await repo.removeDownload(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.removeDownload))
+                  : FilledButton.tonal(onPressed: () async { await repo.downloadWork(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.downloadForOffline)),
+            ),
+            if (isDl)
+              FutureBuilder<Map<String, dynamic>?>(
+                future: repo.bundleMeta(slug),
+                builder: (_, sn) {
+                  final at = (sn.data?['imported_at'] as String?)?.substring(0, 10);
+                  return at == null
+                      ? const SizedBox.shrink()
+                      : ListTile(dense: true, leading: const Icon(Icons.inventory_2_outlined), title: Text(l.bundleImported(at)));
+                },
+              ),
+          ]),
           loading: () => const ListTile(title: LinearProgressIndicator()),
           error: (_, __) => const SizedBox.shrink(),
         ),

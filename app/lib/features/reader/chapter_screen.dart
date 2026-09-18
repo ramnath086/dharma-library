@@ -31,6 +31,7 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
   String? _lastRecordedRef;
   String? _lastFollowVerseId;
   bool _didInitialScroll = false;
+  bool _didPrefetch = false;
 
   @override
   void dispose() {
@@ -118,6 +119,10 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
         builder: (ch) {
           for (final v in ch.verses) {
             _keys.putIfAbsent(v.ref, GlobalKey.new);
+          }
+          if (!_didPrefetch) {
+            _didPrefetch = true;
+            unawaited(ref.read(repositoryProvider).prefetchAround(widget.workSlug, widget.sectionId));
           }
           if (!_didInitialScroll && widget.scrollToRef != null) {
             _didInitialScroll = true;

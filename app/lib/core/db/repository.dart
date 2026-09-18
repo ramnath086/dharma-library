@@ -6,6 +6,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:uuid/uuid.dart';
 
 import '../offline/local_store.dart';
+import '../offline/prefetch.dart';
 import 'models.dart';
 
 /// Single data-access layer for the app.
@@ -391,6 +392,25 @@ class Repository {
     await store.importBundle((bundle as Map).cast<String, dynamic>());
     onProgress?.call(1);
   }
+
+  /// Warm the kv cache with the chapters adjacent to [sectionId] so moving
+  /// between chapters stays instant and works offline. Opportunistic: no-op
+  /// without backend/connectivity, failures are ignored.
+  Future<void> prefetchAround(String workSlug, String sectionId) async {
+    if (_client == null || !_online) return;
+    try {
+      final toc = await store.get('toc:$workSlug');
+      if (toc == null) return;
+      final chapters = Toc.fromJson((toc as Map).cast<String, dynamic>()).chapters;
+      for (final id in adjacentChapterIds(chapters, sectionId)) {
+        unawaited(chapter(id));
+      }
+    } catch (_) {/* prefetch is opportunistic */}
+  }
+
+  /// Metadata about the offline bundle in the cache (generation/import times).
+  Future<Map<String, dynamic>?> bundleMeta(String workSlug) async =>
+      (await store.get('bundle_meta:$workSlug')) as Map<String, dynamic>?;
 
   Future<bool> isDownloaded(String workSlug) => store.hasBundle(workSlug);
   Future<void> removeDownload(String workSlug) async {
