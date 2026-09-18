@@ -59,7 +59,7 @@ class EntityScreen extends ConsumerWidget {
             ],
             if (relOut.isNotEmpty || relIn.isNotEmpty) ...[
               const SizedBox(height: 16),
-              Text('Relations', style: Theme.of(context).textTheme.titleSmall),
+              Text(l.relations, style: Theme.of(context).textTheme.titleSmall),
               for (final r in relOut) _RelationTile(label: '${r['relation']} →', kind: r['to_kind'], id: r['to_id'], note: r['note']),
               for (final r in relIn) _RelationTile(label: '← ${r['relation']}', kind: r['from_kind'], id: r['from_id'], note: r['note']),
             ],

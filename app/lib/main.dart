@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'core/config/app_config.dart';
+import 'core/locale.dart';
 import 'core/offline/local_store.dart';
 import 'core/providers.dart';
 import 'core/router/app_router.dart';
@@ -25,6 +26,13 @@ Future<void> main() async {
 
   final store = await LocalStore.open();
   final prefs = await SharedPreferences.getInstance();
+
+  // First launch: Malayalam-first — follow the device language when no UI
+  // language preference has been saved yet (nested locales like ml_IN count).
+  if (!prefs.containsKey('locale')) {
+    final device = WidgetsBinding.instance.platformDispatcher.locale;
+    await prefs.setString('locale', firstRunLocale(null, device.languageCode));
+  }
 
   // First launch: seed the cache from the bundled pilot content so the app is
   // readable immediately (and entirely offline when no backend is configured).

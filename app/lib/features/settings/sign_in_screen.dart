@@ -62,9 +62,9 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           if (_sent) ...[
             Text(l.magicLinkSent),
             const SizedBox(height: 12),
-            TextField(controller: _otp, keyboardType: TextInputType.number, decoration: const InputDecoration(labelText: 'Code (6 digits)', border: OutlineInputBorder())),
+            TextField(controller: _otp, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: l.otpCodeLabel, border: const OutlineInputBorder())),
             const SizedBox(height: 12),
-            FilledButton(onPressed: _busy ? null : _verify, child: const Text('Verify')),
+            FilledButton(onPressed: _busy ? null : _verify, child: Text(l.verifyCode)),
           ],
           if (_error != null) Padding(padding: const EdgeInsets.only(top: 12), child: Text(_error!, style: TextStyle(color: Theme.of(context).colorScheme.error))),
         ]),
