@@ -17,16 +17,20 @@ class SearchScreen extends ConsumerStatefulWidget {
 }
 
 class _SearchScreenState extends ConsumerState<SearchScreen> {
+  static const _recentKey = 'recentSearches';
+
   late final _ctrl = TextEditingController(text: widget.initialQuery ?? '');
   Timer? _debounce;
   List<SearchHit> _hits = [];
   List<EntityHit> _entities = [];
+  List<String> _recent = [];
   bool _loading = false;
   String? _lang; // null = all languages
 
   @override
   void initState() {
     super.initState();
+    _recent = [...ref.read(prefsProvider).getStringList(_recentKey) ?? const <String>[]];
     if ((widget.initialQuery ?? '').isNotEmpty) _run(widget.initialQuery!);
   }
 
@@ -40,6 +44,18 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   void _onChanged(String q) {
     _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 350), () => _run(q));
+  }
+
+  /// Keep the last eight successful searches (queries that found something);
+  /// most recent first, no duplicates. Persisted device-wide in prefs.
+  void _remember(String q) {
+    setState(() => _recent = [q, ..._recent.where((e) => e != q)].take(8).toList());
+    ref.read(prefsProvider).setStringList(_recentKey, _recent);
+  }
+
+  void _clearRecent() {
+    setState(() => _recent = []);
+    ref.read(prefsProvider).remove(_recentKey);
   }
 
   Future<void> _run(String q) async {
@@ -60,6 +76,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       _entities = results[1] as List<EntityHit>;
       _loading = false;
     });
+    if (_hits.isNotEmpty || _entities.isNotEmpty) _remember(q);
   }
 
   @override
@@ -87,7 +104,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(children: [
-              for (final e in [(null, 'All'), ('sa', 'संस्कृतम्'), ('en', 'English'), ('ml', 'മലയാളം')])
+              for (final e in [(null, l.searchFilterAll), ('sa', 'संस्कृतम्'), ('en', 'English'), ('ml', 'മലയാളം')])
                 Padding(
                   padding: const EdgeInsets.only(right: 8, bottom: 8),
                   child: ChoiceChip(label: Text(e.$2), selected: _lang == e.$1, onSelected: (_) { setState(() => _lang = e.$1); _run(_ctrl.text); }),
@@ -99,7 +116,25 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       body: _loading
           ? const LinearProgressIndicator()
           : _ctrl.text.trim().length < 2
-              ? Center(child: Padding(padding: const EdgeInsets.all(32), child: Text(l.searchTip, textAlign: TextAlign.center, style: Theme.of(context).textTheme.bodyMedium)))
+              ? (_recent.isEmpty
+                  ? Center(child: Padding(padding: const EdgeInsets.all(32), child: Text(l.searchTip, textAlign: TextAlign.center, style: Theme.of(context).textTheme.bodyMedium)))
+                  : ListView(padding: const EdgeInsets.all(16), children: [
+                      Row(children: [
+                        Text(l.searchRecent, style: Theme.of(context).textTheme.titleSmall),
+                        const Spacer(),
+                        IconButton(icon: const Icon(Icons.clear_all), tooltip: l.searchClearRecent, onPressed: _clearRecent),
+                      ]),
+                      Wrap(spacing: 8, runSpacing: 4, children: [
+                        for (final q in _recent)
+                          InputChip(
+                            avatar: const Icon(Icons.history, size: 16),
+                            label: Text(q),
+                            onPressed: () { _ctrl.text = q; _run(q); },
+                          ),
+                      ]),
+                      const SizedBox(height: 24),
+                      Text(l.searchTip, style: Theme.of(context).textTheme.bodySmall),
+                    ]))
               : (_hits.isEmpty && _entities.isEmpty)
                   ? Center(child: Text(l.searchNoResults(_ctrl.text)))
                   : ListView(
