@@ -41,6 +41,8 @@ class HomeScreen extends ConsumerWidget {
                 _StudyProgressCard(toc: t),
                 const SizedBox(height: 8),
                 const _QuickActions(),
+                const SizedBox(height: 8),
+                _RecentReadsStrip(workSlug: slug),
                 const SizedBox(height: 16),
                 for (final canto in t.sections) ...[
                   Padding(
@@ -118,6 +120,45 @@ class _StudyProgressCard extends ConsumerWidget {
         ]),
       ),
     );
+  }
+}
+
+/// Last five verses read (local history) as compact chips, with a "See all"
+/// link to the full reading-history screen.
+class _RecentReadsStrip extends ConsumerWidget {
+  const _RecentReadsStrip({required this.workSlug});
+  final String workSlug;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final rows = ref.watch(readingHistoryProvider).value ?? const [];
+    if (rows.isEmpty) return const SizedBox.shrink();
+    final recent = rows.where((h) => h['verse_ref'] != null).take(5).toList();
+    if (recent.isEmpty) return const SizedBox.shrink();
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Row(children: [
+        Text(l.recentlyRead, style: Theme.of(context).textTheme.titleSmall),
+        const Spacer(),
+        TextButton(onPressed: () => context.push('/history'), child: Text(l.seeAll)),
+      ]),
+      SizedBox(
+        height: 40,
+        child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemCount: recent.length,
+          separatorBuilder: (_, __) => const SizedBox(width: 8),
+          itemBuilder: (context, i) {
+            final ref_ = recent[i]['verse_ref'] as String;
+            return ActionChip(
+              avatar: const Icon(Icons.history, size: 16),
+              label: Text('SB $ref_'),
+              onPressed: () => context.push('/read/$workSlug/verse/$ref_'),
+            );
+          },
+        ),
+      ),
+    ]);
   }
 }
 

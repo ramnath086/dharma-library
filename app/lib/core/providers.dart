@@ -152,5 +152,14 @@ final versesReadCountProvider = FutureProvider<int>((ref) async {
   return (await ref.watch(repositoryProvider).store.readVerseIds()).length;
 });
 
+/// Full reading history, newest first. Rows: {verse_id, verse_ref, read_at}.
+final readingHistoryProvider = FutureProvider<List<Map<String, dynamic>>>((ref) async {
+  ref.watch(userDataVersionProvider);
+  return ref.watch(repositoryProvider).store.readingHistory();
+});
+
+/// Transient bookmark tag filter (null = all).
+final bookmarkTagFilterProvider = StateProvider<String?>((_) => null);
+
 /// Increment to invalidate user-data providers after a local write.
 final userDataVersionProvider = StateProvider<int>((_) => 0);

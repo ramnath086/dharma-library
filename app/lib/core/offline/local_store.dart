@@ -23,15 +23,26 @@ class LocalStore {
   static Future<LocalStore> open({String? pathOverride}) async {
     final dir = await getApplicationSupportDirectory();
     final path = pathOverride ?? p.join(dir.path, 'dharma_library.db');
-    final db = await openDatabase(path, version: 2, onCreate: _create, onUpgrade: (db, from, to) async {
-      if (from < 2) await _create(db, to);
-    });
+    final db = await openDatabase(path, version: 3, onCreate: _create, onUpgrade: _upgrade);
     return LocalStore._(db);
   }
 
   static Future<LocalStore> inMemory() async {
-    final db = await openDatabase(inMemoryDatabasePath, version: 2, onCreate: _create);
+    final db = await openDatabase(inMemoryDatabasePath, version: 3, onCreate: _create);
     return LocalStore._(db);
+  }
+
+  static Future<void> _upgrade(Database db, int from, int to) async {
+    if (from < 2) await _create(db, to);
+    // v3: reading history keeps the verse ref so the history screen needs no join
+    if (from < 3 && !await _hasColumn(db, 'verse_reads', 'verse_ref')) {
+      await db.execute('alter table verse_reads add column verse_ref text');
+    }
+  }
+
+  static Future<bool> _hasColumn(Database db, String table, String column) async {
+    final rows = await db.rawQuery('pragma table_info($table)');
+    return rows.any((r) => r['name'] == column);
   }
 
   static Future<void> _create(Database db, int v) async {
@@ -45,7 +56,7 @@ class LocalStore {
       last_read_at text not null, dirty integer not null default 0)''');
     await db.execute('''create table if not exists outbox (
       id integer primary key autoincrement, kind text not null, payload text not null, created_at integer not null)''');
-    await db.execute('create table if not exists verse_reads (verse_id text primary key, read_at text not null, dirty integer not null default 1)');
+    await db.execute('create table if not exists verse_reads (verse_id text primary key, verse_ref text, read_at text not null, dirty integer not null default 1)');
   }
 
   // ---------------------------------------------------------------- kv
@@ -155,9 +166,17 @@ class LocalStore {
   Future<List<Map<String, dynamic>>> dirtyProgress() => _db.query('progress', where: 'dirty = 1');
   Future<void> markProgressClean(String workId) => _db.update('progress', {'dirty': 0}, where: 'work_id = ?', whereArgs: [workId]);
 
-  Future<void> markRead(String verseId) => _db.insert('verse_reads', {'verse_id': verseId, 'read_at': DateTime.now().toIso8601String(), 'dirty': 1},
-      conflictAlgorithm: ConflictAlgorithm.ignore);
+  Future<void> markRead(String verseId, {String? verseRef}) => _db.insert(
+      'verse_reads',
+      {'verse_id': verseId, 'verse_ref': verseRef, 'read_at': DateTime.now().toIso8601String(), 'dirty': 1},
+      conflictAlgorithm: ConflictAlgorithm.replace);
   Future<Set<String>> readVerseIds() async => (await _db.query('verse_reads')).map((r) => r['verse_id'] as String).toSet();
+
+  /// Reading history, newest first: {verse_id, verse_ref, read_at}.
+  Future<List<Map<String, dynamic>>> readingHistory({int limit = 200}) =>
+      _db.query('verse_reads', orderBy: 'read_at desc', limit: limit);
+
+  Future<void> clearVerseReads() => _db.delete('verse_reads');
 
   Future<void> clearUserData() async {
     await _db.delete('bookmarks');

@@ -219,11 +219,16 @@ class Repository {
     unawaited(syncUserData());
   }
 
-  Future<void> updateBookmarkNote(String verseId, String? note) async {
+  Future<void> updateBookmarkNote(String verseId, String? note, {List<String>? tags}) async {
     final rows = await store.bookmarks();
     final b = rows.where((r) => r['verse_id'] == verseId).firstOrNull;
     if (b == null) return;
-    await store.upsertBookmark({...b, 'tags': _decodeTags(b['tags']), 'note': note, 'updated_at': DateTime.now().toUtc().toIso8601String()});
+    await store.upsertBookmark({
+      ...b,
+      'tags': tags?.where((t) => t.trim().isNotEmpty).map((t) => t.trim()).toList() ?? _decodeTags(b['tags']),
+      'note': note,
+      'updated_at': DateTime.now().toUtc().toIso8601String(),
+    });
     unawaited(syncUserData());
   }
 
@@ -239,7 +244,7 @@ class Repository {
       'work_id': workId, 'verse_id': verse.id, 'section_id': sectionId, 'verse_ref': verse.ref,
       'percent': double.parse(pct.toStringAsFixed(2)), 'last_read_at': DateTime.now().toUtc().toIso8601String(),
     });
-    await store.markRead(verse.id);
+    await store.markRead(verse.id, verseRef: verse.ref);
   }
 
   // --------------------------------------------------------------- sync

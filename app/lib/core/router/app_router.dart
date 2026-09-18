@@ -10,6 +10,7 @@ import '../../features/home/shell_scaffold.dart';
 import '../../features/qa/ask_screen.dart';
 import '../../features/qa/qa_history_screen.dart';
 import '../../features/reader/chapter_screen.dart';
+import '../../features/reader/history_screen.dart';
 import '../../features/reader/verse_screen.dart';
 import '../../features/search/search_screen.dart';
 import '../../features/settings/settings_screen.dart';
@@ -47,6 +48,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/entity/:kind/:slug',
         builder: (_, s) => EntityScreen(kind: s.pathParameters['kind']!, slug: s.pathParameters['slug']!),
       ),
+      GoRoute(parentNavigatorKey: _rootKey, path: '/history', builder: (_, __) => const ReadingHistoryScreen()),
       GoRoute(parentNavigatorKey: _rootKey, path: '/ask/history', builder: (_, __) => const QaHistoryScreen()),
       GoRoute(parentNavigatorKey: _rootKey, path: '/sign-in', builder: (_, __) => const SignInScreen()),
       GoRoute(parentNavigatorKey: _rootKey, path: '/admin', builder: (_, __) => const AdminScreen()),
