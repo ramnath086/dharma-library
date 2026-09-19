@@ -172,8 +172,10 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
           const { data: inserted } = await sb.from("qa_messages").insert([
             { session_id: sid, role: "user", content: question },
             { session_id: sid, role: "assistant", content: answer, citations, model: MODEL, prompt_tokens: usage.prompt_tokens, output_tokens: usage.completion_tokens, grounded },
-          ]).select("id").order("role", { ascending: true }); // 'assistant' sorts before 'user'
-          messageId = inserted?.[0]?.id ?? null;
+          ]).select("id, role");
+          // Do NOT rely on PostgREST ordering of an insert-returning: pick the
+          // assistant row explicitly or feedback would attach to the question.
+          messageId = inserted?.find((r) => r.role === "assistant")?.id ?? null;
         }
       }
     } catch (_) { /* logging is best-effort */ }
