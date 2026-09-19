@@ -114,6 +114,17 @@ jobs:
         with:
           name: dharma-library-apk
           path: app/build/app/outputs/flutter-apk/app-release.apk
+      - name: Build release AAB (unsigned smoke build; Play uploads use the owner's keystore)
+        shell: bash
+        run: |
+          flutter build appbundle --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} > aab.txt 2>&1 || status=$?
+          cat aab.txt
+          grep -vE '^\s*$' aab.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=aab::${l}"; done
+          exit ${status:-0}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dharma-library-aab
+          path: app/build/app/outputs/bundle/release/app-release.aab
 
   edge-functions:
     name: Edge functions (deno check)

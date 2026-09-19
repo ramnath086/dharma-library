@@ -8,7 +8,8 @@ owned by the project owner (never automated from CI).
 
 | Area | State | Verify |
 | ---- | ----- | ------ |
-| App builds | debug APK built on every PR (`app-debug-apk` artifact) | Actions → CI → artifacts |
+| App builds | release APK + release AAB smoke-built on every PR (`dharma-library-apk` / `dharma-library-aab` artifacts, debug-signed — rebuild with the owner keystore for upload) | Actions → CI → artifacts |
+| Launcher config | `MainActivity` package matches applicationId `org.dharmalibrary.dharma_library` (fixed 2026-09: was `org.dharmalibrary.app`, which would crash on device); app label "Dharma Library"; release internet/network/wake-lock permissions; supabase auth deep link `dharmalibrary://auth-callback` | `app/android/app/src/main/AndroidManifest.xml` |
 | Tests | 40+ widget/unit tests (navigation, search, daily verse, transliteration, offline repository, chant helpers, prefetch, diagnostics, QA) | `flutter test` (CI) |
 | Lint | `flutter analyze` clean | CI |
 | Database | migrations apply cleanly from 0001→0010; 80+ RLS/API SQL assertions | CI db job |

@@ -1,4 +1,4 @@
-package org.dharmalibrary.app
+package org.dharmalibrary.dharma_library
 
 import io.flutter.embedding.android.FlutterActivity
 

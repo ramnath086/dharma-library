@@ -21,7 +21,7 @@ supabase/
                      AI-ask sessions, opt-in analytics events
   seed.sql           languages, scripts, app config
   tests/             RLS + API regression tests (plain SQL asserts)
-  functions/         Edge Functions: ask (grounded Q&A), tts (audio segments), embed-sync
+  functions/         Edge Function: ask — grounded Q&A with verse citations (Deno tests in CI)
   config.toml        Supabase CLI config (buckets, auth, functions)
 content/
   bhagavata-purana/  work.json (editions, sources, RIGHTS), graph.json, 1/1/verses.json,
