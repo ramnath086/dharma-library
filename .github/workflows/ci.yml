@@ -33,7 +33,7 @@ jobs:
         run: |
           psql "$PGURI" -v ON_ERROR_STOP=1 -q -f supabase/seed.sql
           python3 scripts/ingest.py
-          psql "$PGURI" -v ON_ERROR_STOP=1 -q -f content/generated/bhagavata-purana.sql
+          for f in $(ls -1 content/generated/*.sql | sort); do echo "== $f"; psql "$PGURI" -v ON_ERROR_STOP=1 -q -f "$f"; done
       - name: RLS / API tests
         run: psql "$PGURI" -v ON_ERROR_STOP=1 -q -f supabase/tests/10_rls_and_api.sql
       - name: Bundle export matches committed asset
