@@ -1,88 +1,29 @@
 -- =============================================================================
--- Dharma Library — 0008: Storage RLS Policies
+-- Dharma Library — 0008: Storage RLS Policies (intentionally no-op)
 -- =============================================================================
--- Buckets ('audio', 'rights-documents') are configured via config.toml / dashboard.
--- Policies:
---   * 'audio' (private):
---       - READ: public read for objects mapped to published + cleared audio tracks,
---               or editors/admins.
---       - WRITE/DELETE: editors/admins only (or service_role).
---   * 'rights-documents' (private):
---       - READ/WRITE/DELETE: admins only (or service_role).
+-- Historical note:
+--   Earlier versions of this migration mutated the Supabase-owned `storage`
+--   schema: they inserted into `storage.buckets` and did
+--   `ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY` plus 5 policies
+--   on `storage.objects`. The `storage` schema is owned by Supabase and is
+--   managed declaratively via `supabase/config.toml` (`[storage.buckets.*]`)
+--   and the Storage API — not via migrations. `supabase db push` fails (and
+--   should not) when a migration tries to take ownership of `storage.objects`.
+--
+-- Current approach:
+--   * Buckets ('audio', 'rights-documents') are declared in
+--     `supabase/config.toml` and created by `supabase start` / `supabase db
+--     push`'s declarative storage config.
+--   * Storage RLS policies, if customisation is needed, should be managed
+--     outside migrations (Supabase dashboard / Storage API) or via the
+--     declarative storage config — never by `ALTER TABLE storage.objects` in
+--     a migration.
+--
+-- This file is kept as a no-op to preserve migration history linearity.
+-- `supabase db push` and the CI harness (`psql -f supabase/migrations/*.sql`)
+-- both require every `*.sql` in this directory to be valid SQL.
 -- =============================================================================
 
--- ---------------------------------------------------------------------------
--- Storage Objects Policies
--- ---------------------------------------------------------------------------
-do $$
-begin
-  if exists (select 1 from information_schema.tables where table_schema = 'storage' and table_name = 'objects') then
-    execute 'alter table storage.objects enable row level security';
-
-    -- Drop existing policies if any to ensure clean idempotent state
-    drop policy if exists "audio: public read cleared" on storage.objects;
-    drop policy if exists "audio: editor write" on storage.objects;
-    drop policy if exists "audio: editor update" on storage.objects;
-    drop policy if exists "audio: editor delete" on storage.objects;
-    drop policy if exists "rights-documents: admin all" on storage.objects;
-
-    -- Audio Bucket Policies
-    execute $p$
-      create policy "audio: public read cleared" on storage.objects for select
-      using (
-        bucket_id = 'audio'
-        and (
-          public.is_editor()
-          or exists (
-            select 1 from public.audio_tracks t
-             where t.storage_bucket = 'audio'
-               and t.storage_path = name
-               and t.status = 'published'
-               and public.edition_is_public(t.edition_id)
-          )
-        )
-      )
-    $p$;
-
-    execute $p$
-      create policy "audio: editor write" on storage.objects for insert
-      with check (
-        bucket_id = 'audio'
-        and public.is_editor()
-      )
-    $p$;
-
-    execute $p$
-      create policy "audio: editor update" on storage.objects for update
-      using (
-        bucket_id = 'audio'
-        and public.is_editor()
-      )
-      with check (
-        bucket_id = 'audio'
-        and public.is_editor()
-      )
-    $p$;
-
-    execute $p$
-      create policy "audio: editor delete" on storage.objects for delete
-      using (
-        bucket_id = 'audio'
-        and public.is_editor()
-      )
-    $p$;
-
-    -- Rights Documents Bucket Policies (Admins only)
-    execute $p$
-      create policy "rights-documents: admin all" on storage.objects for all
-      using (
-        bucket_id = 'rights-documents'
-        and public.is_admin()
-      )
-      with check (
-        bucket_id = 'rights-documents'
-        and public.is_admin()
-      )
-    $p$;
-  end if;
-end $$;
+-- No-op: intentionally does NOT alter Supabase-owned `storage.objects` or
+-- `storage.buckets`. See `supabase/config.toml` for bucket declarations.
+SELECT 1;
