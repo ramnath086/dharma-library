@@ -57,7 +57,7 @@ class Emitter:
 
 
 def ingest_work(work_dir: pathlib.Path, em: Emitter):
-    work = json.loads((work_dir / "work.json").read_text())
+    work = json.loads((work_dir / "work.json").read_text(encoding="utf-8"))
     slug = work["slug"]
 
     # -- sources
@@ -115,7 +115,7 @@ on conflict (slug) do update set kind=excluded.kind, language_code=excluded.lang
 
     # -- graph entities (before verses, so speakers resolve)
     gpath = work_dir / "graph.json"
-    graph = json.loads(gpath.read_text()) if gpath.exists() else {}
+    graph = json.loads(gpath.read_text(encoding="utf-8")) if gpath.exists() else {}
     for p in graph.get("people", []):
         em.add(f"""
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
@@ -139,7 +139,7 @@ on conflict (slug) do update set name_iast=excluded.name_iast, name_sa=excluded.
     verse_files = sorted(glob.glob(str(work_dir / "**" / "verses.json"), recursive=True))
     all_xrefs = []
     for vf in verse_files:
-        data = json.loads(pathlib.Path(vf).read_text())
+        data = json.loads(pathlib.Path(vf).read_text(encoding="utf-8"))
         sec = data["section"]
         canto, chap = sec["canto"], sec["chapter"]
         em.add(f"""
@@ -214,7 +214,7 @@ on conflict (slug) do update set title_iast=excluded.title_iast, title_sa=exclud
   end_verse_id=excluded.end_verse_id, narrator_id=excluded.narrator_id, place_id=excluded.place_id, status='published'""")
         emit_names(em, "story", "stories", s)
     for vf in verse_files:
-        data = json.loads(pathlib.Path(vf).read_text())
+        data = json.loads(pathlib.Path(vf).read_text(encoding="utf-8"))
         for v in data["verses"]:
             for m in v.get("mentions", []):
                 if m["kind"] != "story":
@@ -297,7 +297,7 @@ def main():
         print("== ingest", wd.name)
         ingest_work(wd, em)
         outp = OUT / f"{wd.name}.sql"
-        outp.write_text(em.dump())
+        outp.write_text(em.dump(), encoding="utf-8")
         print("   wrote", outp.relative_to(ROOT))
         if a.apply:
             uri = a.db

@@ -7,6 +7,15 @@
 -- =============================================================================
 
 -- ---------------------------------------------------------------------------
+-- Helper: deterministic uuid for rights rows keyed by '<work>:<key>'
+-- ---------------------------------------------------------------------------
+create or replace function public.rights_key_uuid(k text)
+returns uuid language sql immutable as $$
+  select md5('dharma-library:rights:' || k)::uuid;
+$$;
+grant execute on function public.rights_key_uuid(text) to anon, authenticated, service_role;
+
+-- ---------------------------------------------------------------------------
 -- View: editions with resolved rights (what the app shows in the layout picker)
 -- ---------------------------------------------------------------------------
 create or replace view public.v_editions

@@ -30,5 +30,5 @@ for e in bundle['editions']:
     assert e['rights_status'] in ('public_domain', 'open_license', 'permission_granted', 'original'), e
 out = ROOT / 'app' / 'assets' / 'bundles' / f'{a.work}.json'
 out.parent.mkdir(parents=True, exist_ok=True)
-out.write_text(json.dumps(bundle, ensure_ascii=False, separators=(',', ':')))
+out.write_text(json.dumps(bundle, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 print(f"wrote {out.relative_to(ROOT)} ({out.stat().st_size/1024:.0f} KB, {len(bundle['sections'])} sections, {len(bundle['editions'])} editions)")
