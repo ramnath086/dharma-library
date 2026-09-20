@@ -72,8 +72,15 @@ jobs:
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       - name: Generate embeddings (optional)
-        if: ${{ secrets.OPENAI_API_KEY != '' }}
-        run: python3 scripts/embed_contents.py
+        run: |
+          # The `secrets` context is not available in a step-level `if:` (GitHub
+          # rejects the workflow file), so the optional key is passed in via env
+          # and the guard lives here: an unset secret arrives as an empty string.
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "::notice title=embeddings::OPENAI_API_KEY secret is not set; skipping embedding generation"
+            exit 0
+          fi
+          python3 scripts/embed_contents.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
