@@ -1,8 +1,22 @@
 # Play Store release checklist
 
-Status at Phase 11 completion. Everything under "Done in repo" is verifiable in
-CI; everything under "Owner actions" needs an interactive session and accounts
-owned by the project owner (never automated from CI).
+Status verified in Phase 13 (CI tip `e4dc6dc`, all jobs green on push + PR).
+Everything under "Done in repo" is verifiable in CI; everything under
+"Owner actions" needs an interactive session and accounts owned by the
+project owner (never automated from CI).
+
+## Phase 13 verification record
+
+| Item | Verification |
+| ---- | ------------ |
+| Version | `app/pubspec.yaml` → `version: 1.0.0+2` (versionName 1.0.0, versionCode 2) |
+| Application ID | `org.dharmalibrary.dharma_library` (generated from `flutter create --org org.dharmalibrary --project-name dharma_library`); `MainActivity` package matches (`app/android/app/src/main/kotlin/org/dharmalibrary/dharma_library/MainActivity.kt`) |
+| Signing hygiene | No keystore/key.properties/env.json anywhere in git; `.gitignore` covers `app/android/key.properties`, `app/android/app/*.jks`/`*.keystore`, `env.json` at any depth; `key.properties.template` + `env.json.example` provide the shapes |
+| Production env | `AppConfig` reads `--dart-define` values only; `.env.example` separates public app keys from server-only secrets (`SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_DB_URL`, `OPENAI_API_KEY` — Supabase secrets, never the app) |
+| Android manifest | label "Dharma Library"; INTERNET/ACCESS_NETWORK_STATE/WAKE_LOCK/FOREGROUND_SERVICE(+MEDIA_PLAYBACK); no notification-permission claims (in-app reminder pref only); deep link `dharmalibrary://auth-callback` BROWSABLE; matches `supabase/config.toml` `site_url` + `additional_redirect_urls` |
+| Release builds in CI | Every push: unsigned **release APK** (`dharma-library-apk`) and **release AAB** (`dharma-library-aab`) artifacts; Flutter analyze + 51 tests + build on CI tip green |
+| Database/backend | Migrations 0001→0010 + seed + pilot content + RLS/API assertions green; edge `ask` deno check+tests green; storage `audio` bucket private with policies via PR #4 (`0008_storage_policies.sql`) |
+| Release command | `./scripts/build_release_aab.sh` (checks for key.properties + env.json, runs analyze+tests, builds `app-release.aab`, warns if the debug signing config is still in place) |
 
 ## Done in repo
 
@@ -28,8 +42,12 @@ owned by the project owner (never automated from CI).
    store the password in a password manager; follow
    <https://docs.flutter.dev/deployment/android#signing-the-app> and commit
    only `key.properties` placeholders — never the `.jks`.
-3. **Release build** — `cd app && flutter build appbundle --dart-define-from-
-   file=../env.json` → `build/app/outputs/bundle/release/app-release.aab`.
+3. **Release build** — `./scripts/build_release_aab.sh` (or directly:
+   `cd app && flutter build appbundle --release --dart-define-from-file=
+   ../env.json`) → `app/build/app/outputs/bundle/release/app-release.aab`.
+   Wire `key.properties` into `app/android/app/build.gradle(.kts)` first per
+   <https://docs.flutter.dev/deployment/android#signing-the-app> (the file is
+   generated locally/CI and intentionally not committed).
 4. **Console setup** — create app `org.dharmalibrary.dharma_library`, internal
    testing track, add testers by email.
 5. **Store listing assets** —

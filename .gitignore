@@ -27,6 +27,9 @@ app/ios/.symlinks/
 app/android/.gradle/
 app/android/local.properties
 app/android/key.properties
+# --dart-define-from-file payloads may contain real project keys
+env.json
+**/env.json
 app/android/app/*.jks
 app/android/app/*.keystore
 app/lib/l10n/generated/
