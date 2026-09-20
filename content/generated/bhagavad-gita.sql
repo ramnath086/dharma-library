@@ -455,7 +455,7 @@ māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya||1.1||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Dhritarashtra said, "What did my people and the sons of Pandu do when they had assembled together, eager for battle, on the holy plain of Kurukshetra, O Sanjaya?"', null, null, 'published')
+        'Tell me, O Sanjaya! Assembled on Kurukshetra, the centre of religious activity, desirous to fight, what indeed did my people and the Pândavas do?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -534,7 +534,7 @@ dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā|
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said: Having seen the army of the Pandavas drawn up in battle array, King Duryodhana approached his teacher, Drona, and spoke these words.', null, null, 'published')
+        'But then King Duryodhana, having seen the Pândava forces in battle-array, approached his teacher Drona, and spoke these words:', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -609,7 +609,7 @@ vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā||1.3||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Behold, O Teacher! This mighty army of the sons of Pandu, arrayed by the son of Drupada, thy wise disciple.', null, null, 'published')
+        '"Behold, O Teacher! this mighty army of the sons of Pându, arrayed by the son of Drupada, thy gifted pupil.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -673,7 +673,7 @@ yuyudhāno virāṭaśca drupadaśca mahārathaḥ||1.4||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Here are heroes, mighty archers, equal in battle to Bhima and Arjuna, Yuyudhana (Satyaki), Virata, and Drupada—all mighty warriors.', null, null, 'published')
+        '"Here (are) heroes, mighty archers, the equals in battle of Bhima and Arjuna—the great warriors Yuyudhâna, Virâta, Drupada; the valiant Dhrishtaketu, Chekitâna and the king of Kâshi; the best of men, Purujit, Kunti-Bhoja and Shaivya; the powerful Yudhâmanyu, and the brave Uttamaujas, the son of Subhadrâ, and the sons of Draupadi,—lords of great chariots.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -737,7 +737,7 @@ purujitkuntibhojaśca śaibyaśca narapuṅgavaḥ||1.5||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Dhrishtaketu, Chekitana, the valiant king of Kasi, Purujit, Kuntibhoja, and Saibya—the best of men.', null, null, 'published')
+        '"Here (are) heroes, mighty archers, the equals in battle of Bhima and Arjuna—the great warriors Yuyudhâna, Virâta, Drupada; the valiant Dhrishtaketu, Chekitâna and the king of Kâshi; the best of men, Purujit, Kunti-Bhoja and Shaivya; the powerful Yudhâmanyu, and the brave Uttamaujas, the son of Subhadrâ, and the sons of Draupadi,—lords of great chariots.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -807,7 +807,7 @@ saubhadro draupadeyāśca sarva eva mahārathāḥ||1.6||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The strong Yudhamanyu and the brave Uttamaujas, the son of Subhadra (Abhimanyu, the son of Subhadra and Arjuna), and the sons of Draupadi, all of them great charioteers (great heroes)."', null, null, 'published')
+        '"Here (are) heroes, mighty archers, the equals in battle of Bhima and Arjuna—the great warriors Yuyudhâna, Virâta, Drupada; the valiant Dhrishtaketu, Chekitâna and the king of Kâshi; the best of men, Purujit, Kunti-Bhoja and Shaivya; the powerful Yudhâmanyu, and the brave Uttamaujas, the son of Subhadrâ, and the sons of Draupadi,—lords of great chariots.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -866,7 +866,7 @@ nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te||1.7||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know also, O best among the twice-born! the names of those who are the most distinguished amongst ourselves, the leaders of my army; these I name to you for your information.', null, null, 'published')
+        '"Hear also, O Best of the twice-born! the names of those who (are) distinguished amongst ourselves, the leaders of my army. These I relate (to you) for your information.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -933,7 +933,7 @@ aśvatthāmā vikarṇaśca saumadattistathaiva ca||1.8||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        '"Thou thyself, Bhishma, Karna, Kripa, the victorious in war, Asvatthama, Vikarna, and Bhurisrava, the son of Somadatta—all these are ready for battle."', null, null, 'published')
+        '"Yourself and Bhishma and Karna and Kripa, the victorious in war. Asvatthâmâ and Vikarna and Jayadratha, the son of Somadatta.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1001,7 +1001,7 @@ nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ||1.9||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And also many other heroes, ready to give up their lives for my sake, armed with various weapons and missiles, all well-skilled in battle.', null, null, 'published')
+        '"And many other heroes also, well-skilled in fight, and armed with many kinds of weapons, are here, determined to lay down their lives for my sake.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1063,7 +1063,7 @@ paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam||1.10||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Our army, marshalled by Bhishma, is insufficient, whereas theirs, marshalled by Bhima, is sufficient.', null, null, 'published')
+        '"This our army defended by Bhishma (is) impossible to be counted, but that army of theirs, defended by Bhima (is) easy to number.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1129,7 +1129,7 @@ bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi||1.11||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, do all of you, stationed in your respective positions in the several divisions of the army, protect Bhishma alone.', null, null, 'published')
+        '"(Now) do, being stationed in your proper places in the divisions of the army, support Bhishma alone."', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1193,7 +1193,7 @@ siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān||1.12||', null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'His glorious grandsire, the oldest of the Kauravas, roared like a lion to cheer Duryodhana and blew his conch.', null, null, 'published')
+        'That powerful, oldest of the Kurus, Bhishma the grandsire, in order to cheer Duryodhana, now sounded aloud a lion-roar and blew his conch.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1257,7 +1257,7 @@ sahasaivābhyahanyanta sa śabdastumulo''bhavat||1.13||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then, suddenly, conches, kettledrums, tabors, drums, and cow horns blared forth from the Kaurava side, and the sound was tremendous.', null, null, 'published')
+        'Then following Bhishma, conches and kettle-drums, tabors, trumpets and cowhorns blared forth suddenly from the Kaurava side and the noise was tremendous.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1324,7 +1324,7 @@ mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ||1.14||', null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then, Madhava (Krishna) and the son of Pandu (Arjuna), seated in the magnificent chariot yoked with white horses, blew divine conches.', null, null, 'published')
+        'Then, also, Mâdhava and Pândava, stationed in their magnificent chariot yoked with white horses, blew their divine conches with a furious noise.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1391,7 +1391,7 @@ pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ||1.15||', nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Hrishikesha blew the Panchajanya, Arjuna blew the Devadatta, and Bhima, the wolf-bellied doer of terrible deeds, blew the great conch Paundra.', null, null, 'published')
+        'Hrishikesha blew the Pânchajanya, Dhananjaya, the Devadatta, and Vrikodara, the doer of terrific deeds, his large conch Paundra.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1453,7 +1453,7 @@ nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau||1.16||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'King Yudhishthira, the son of Kunti, blew the Anantavijaya; Nakula and Sahadeva blew the Sughosha and the Manipushpaka.', null, null, 'published')
+        'King Yudhishthira, son of Kunti, blew the conch named Anantavijaya, and Nakula and Sahadeva, their Sughosha and Manipushpaka.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1514,7 +1514,7 @@ dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ||1.17||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The king of Kasi, an excellent archer, Sikhandi, the mighty car-warrior, Dhrishtadyumna, Virata, and Satyaki, the unconquered.', null, null, 'published')
+        'The expert bowman, king of Kâshi, and the great warrior Shikhandi, Dhrishtadyumna and Virâta and the unconquered Sâtyaki;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1579,7 +1579,7 @@ saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak||1.18||', null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Drupada and the sons of Draupadi, O Lord of the Earth, and the son of Subhadra, the mighty-armed, blew their conches each separately.', null, null, 'published')
+        'O Lord of Earth! Drupada and the sons of Draupadi, and the mighty-armed son of Subhadrâ, all, also blew each his own conch.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1643,7 +1643,7 @@ nabhaśca pṛthivīṃ caiva tumulo vyanunādayan||1.19||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The tumultuous sound rent the hearts of Dhritarashtra''s party, reverberating through both heaven and earth.', null, null, 'published')
+        'And the terrific noise resounding throughout heaven and earth rent the hearts of Dhritarâshtra''s party.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1708,7 +1708,7 @@ pravṛtte śastrasaṃpāte dhanurudyamya pāṇḍavaḥ||1.20||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then, seeing the people of Dhritarashtra''s party standing arrayed and the discharge of weapons about to begin, Arjuna, the son of Pandu whose ensign was a monkey, took up his bow and said the following to Krishna, O Lord of the Earth.', null, null, 'published')
+        'Then, O Lord of Earth, seeing Dhritarâshtra''s party standing marshalled and the shooting about to begin, that Pândava whose ensign was the monkey, raising his bow, said the following words to Krishna:', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1781,7 +1781,7 @@ senayorubhayormadhye rathaṃ sthāpaya me''cyuta||1.21||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Krishna, place my chariot in the middle between the two armies, so that I may behold those who stand here, desirous to fight, and know with whom I must fight when the battle is about to commence."', null, null, 'published')
+        'Place my chariot, O Achyuta! between the two armies that I may see those who stand here prepared for war. On this eve of battle (let me know) with whom I have to fight.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1852,7 +1852,7 @@ kairmayā saha yoddhavyamasminraṇasamudyame||1.22||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Krishna, place my chariot in the middle between the two armies, so that I may behold those who stand here, desirous to fight, and know with whom I must fight when the battle is about to commence."', null, null, 'published')
+        'Place my chariot, O Achyuta! between the two armies that I may see those who stand here prepared for war. On this eve of battle (let me know) with whom I have to fight.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1917,7 +1917,7 @@ dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ||1.23||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For I desire to observe those who are assembled here to fight, wishing to please in battle the evil-minded Duryodhana—the son of Dhritarashtra.', null, null, 'published')
+        'For I desire to observe those who are assembled here for fight, wishing to please the evil-minded Duryodhana by taking his side on this battle-field.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -1984,7 +1984,7 @@ senayorubhayormadhye sthāpayitvā rathottamam||1.24||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said, Thus addressed by Arjuna, Krishna stationed the best of chariots, O Dhritarashtra, in the midst of the two armies.', null, null, 'published')
+        'Commanded thus by Gudâkesha, Hrishikesha, O Bhârata, drove that grandest of chariots to a place between the two hosts, facing Bhishma, Drona and all the rulers of the earth, and then spoke thus, "Behold, O Pârtha, all the Kurus gathered together!"', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2058,7 +2058,7 @@ uvāca pārtha paśyaitānsamavetānkurūniti||1.25||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In front of Bhishma and Drona, and all the rulers of the earth, he said: "O Arjuna, son of Pritha, behold these Kurus gathered together."', null, null, 'published')
+        'Commanded thus by Gudâkesha, Hrishikesha, O Bhârata, drove that grandest of chariots to a place between the two hosts, facing Bhishma, Drona and all the rulers of the earth, and then spoke thus, "Behold, O Pârtha, all the Kurus gathered together!"', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2124,7 +2124,7 @@ values ((select id from verses where ref='1.26' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then, Arjuna (son of Pritha) saw there (in the armies) stationed fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons, and friends.', null, null, 'published')
+        'Then saw Pârtha stationed there in both the armies, grandfathers, fathers-in-law and uncles, brothers and cousins, his own and their sons and grandsons, and comrades, teachers, and other friends as well.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2198,7 +2198,7 @@ tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān||1.27||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He saw fathers-in-law and friends in both the armies. The son of Kunti, Arjuna, seeing all those kinsmen thus standing arrayed, spoke sorrowfully, deeply filled with pity.', null, null, 'published')
+        'Then he, the son of Kunti, seeing all those kinsmen stationed in their ranks, spoke thus sorrowfully, filled with deep compassion.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2268,7 +2268,7 @@ dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam||1.28||', null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Krishna, seeing my kinsmen arrayed here, eager to fight,', null, null, 'published')
+        'Arjuna said: Seeing these my kinsmen, O Krishna, eager for fight, my limbs fail and my mouth is parched.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2338,7 +2338,7 @@ vepathuśca śarīre me romaharṣaśca jāyate||1.29||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'My limbs fail, my mouth is parched, my body quivers, and my hair stands on end.', null, null, 'published')
+        'Seeing, O Krishna, these my kinsmen gathered here, eager for fight, my limbs fail me, and my mouth is parched up. I shiver all over, and my hair stands on end. The bow Gândiva slips from my hand, and my skin burns.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2404,7 +2404,7 @@ na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ||1.30||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Gandiva slips from my hand, and my skin burns all over; I am unable to stand, and my mind is reeling, as it were.', null, null, 'published')
+        'Neither, O Keshava, can I stand upright. My mind is in a whirl. And I see adverse omens.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2472,7 +2472,7 @@ na ca śreyo''nupaśyāmi hatvā svajanamāhave||1.31||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And I see ill omens, O Kesava. I do not see any good in slaying my kinsmen in battle.', null, null, 'published')
+        'Neither, O Krishna, do I see any good in killing these my own people in battle. I desire neither victory nor empire, nor yet pleasure.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2537,8 +2537,7 @@ kiṃ no rājyena govinda kiṃ bhogairjīvitena vā||1.32||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I desire not victory, O Krishna, nor kingdom, nor pleasures.
-What use is dominion to us, O Krishna, or pleasures or even life?', null, null, 'published')
+        'Of what avail is dominion to us, of what avail are pleasures and even life, if these, O Govinda! for whose sake it is desired that empire, enjoyment and pleasure should be ours, themselves stand here in battle, having renounced life and wealth—Teachers, uncles, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, besides other kinsmen.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2608,7 +2607,7 @@ ta ime''vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca||1.33||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those for whose sake we desire kingdom, enjoyments, and pleasures stand here in battle, having renounced life and wealth.', null, null, 'published')
+        'Of what avail is dominion to us, of what avail are pleasures and even life, if these, O Govinda! for whose sake it is desired that empire, enjoyment and pleasure should be ours, themselves stand here in battle, having renounced life and wealth—Teachers, uncles, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, besides other kinsmen.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2677,7 +2676,7 @@ mātulāḥ ścaśurāḥ pautrāḥ śyālāḥ sambandhinastathā||1.34||', nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Teachers, fathers, sons, and grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, and other relatives—', null, null, 'published')
+        'Of what avail is dominion to us, of what avail are pleasures and even life, if these, O Govinda! for whose sake it is desired that empire, enjoyment and pleasure should be ours, themselves stand here in battle, having renounced life and wealth—Teachers, uncles, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, besides other kinsmen.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2743,7 +2742,7 @@ api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte||1.35||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'These I do not wish to kill, O Krishna, even though they kill me, for the sake of dominion over the three worlds; leave alone killing them for the sake of the earth."', null, null, 'published')
+        'Even though these were to kill me, O slayer of Madhu, I could not wish to kill them, not even for the sake of dominion over the three worlds, how much less for the sake of the earth!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2808,7 +2807,7 @@ pāpamevāśrayedasmānhatvaitānātatāyinaḥ||1.36||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'By killing these sons of Dhritarashtra, what pleasure could be ours, O Janardana? Only sin would accrue to us from killing these felons.', null, null, 'published')
+        'What pleasure indeed could be ours, O Jnanârdana, from killing these sons of Dhritarâshtra? Sin only could take hold of us by the slaying of these felons.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2875,7 +2874,7 @@ svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava||1.37||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, we should not kill the sons of Dhritarashtra, our relatives; for how can we be happy by killing our own kin, O Madhava (Krishna)?', null, null, 'published')
+        'Therefore ought we not to kill our kindred, the sons of Dhritarâshtra. For how could we, O Mâdhava, gain happiness by the slaying of our own kinsmen?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -2942,7 +2941,7 @@ kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam||1.38||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Though they, with intelligence overpowered by greed, see no evil in the destruction of families and no sin in hostility to friends,', null, null, 'published')
+        'Though these, with understanding overpowered by greed, see no evil due to decay of families, and no sin in hostility to friends, why should we, O Janârdana, who see clearly the evil due to the decay of families, not turn away from this sin?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3007,7 +3006,7 @@ kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana||1.39||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Why should we not, who clearly see the evil in the destruction of families, learn to turn away from this sin, O Janardana (Krishna)?', null, null, 'published')
+        'Though these, with understanding overpowered by greed, see no evil due to decay of families, and no sin in hostility to friends, why should we, O Janârdana, who see clearly the evil due to the decay of families, not turn away from this sin?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3072,7 +3071,7 @@ dharme naṣṭe kulaṃ kṛtsnamadharmo''bhibhavatyuta||1.40||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In the destruction of a family, the immemorial religious rites of that family perish; on the destruction of spirituality, impiety indeed, overwhelms the whole family.', null, null, 'published')
+        'On the decay of a family the immemorial religious rites of that family die out. On the destruction of spirituality, impiety further overwhelms the whole of the family.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3136,7 +3135,7 @@ strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ||1.41||', null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O Krishna, by the prevalence of impiety, the women of the family become corrupt; and, when women are corrupted, O Varshenya (descendant of Vrishni), intermingling of castes arises.', null, null, 'published')
+        'On the prevalence of impiety, O Krishna, the women of the family become corrupt; and women being corrupted, there arises, O Vârshneya, intermingling of castes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3199,7 +3198,7 @@ patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ||1.42||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Confusion of castes leads to hell for the slayers of the family, for their forebears fall, deprived of the offerings of rice-balls and libations of water.', null, null, 'published')
+        'Admixture of castes, indeed, is for the hell of the family and the destroyers of the family; their ancestors fall, deprived of the offerings of rice-ball and water.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3264,7 +3263,7 @@ utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ||1.43||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'By these evil deeds of the destroyers of the family, which cause confusion of castes, the eternal religious rites of the caste and the family are destroyed.', null, null, 'published')
+        'By these misdeeds of the destroyers of the family, bringing about confusion of castes, are the immemorial religious rites of the caste and the family destroyed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3327,7 +3326,7 @@ narake''niyataṃ vāso bhavatītyanuśuśruma||1.44||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'We have heard, O Janardana, that those men in whose families the religious practices have been destroyed are inevitably destined to dwell in hell for an unknown period.', null, null, 'published')
+        'We have heard, O Janârdana, that inevitable is the dwelling in hell of those men in whose families religious practices have been destroyed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3390,7 +3389,7 @@ yadrājyasukhalobhena hantuṃ svajanamudyatāḥ||1.45||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Alas! We are involved in a great sin, for we are prepared to kill our kinsmen, out of greed for the pleasures of a kingdom.', null, null, 'published')
+        'Alas, we are involved in a great sin, in that we are prepared to slay our kinsmen, from greed of the pleasures of a kingdom!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3455,7 +3454,7 @@ dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet||1.46||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If the sons of Dhritarashtra, with weapons in hand, should slay me in battle, unresisting and unarmed, that would be better for me.', null, null, 'published')
+        'Verily, if the sons of Dhritarâshtra, weapons in hand, were to slay me, unresisting and unarmed, in the battle, that would be better for me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3524,7 +3523,7 @@ visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ||1.47||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said, Having thus spoken in the midst of the battlefield, Arjuna cast away his bow and arrow and, his mind overwhelmed with sorrow, sat down on the seat of the chariot.', null, null, 'published')
+        'Speaking thus in the midst of the battle-field, Arjuna casting away his bow and arrows, sank down on the seat of his chariot, with his mind distressed with sorrow.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='1.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3613,7 +3612,7 @@ yatte''haṃ prīyamāṇāya vakṣyāmi hitakāmyayā||10.1||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, Again, O mighty-armed Arjuna, listen to my supreme word which I will declare to you, who are beloved, for your welfare.', null, null, 'published')
+        'Again, O mighty-armed, do thou listen to My supreme word, which I, wishing thy welfare, will tell thee who art delighted (to hear Me).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3690,7 +3689,7 @@ ahamādirhi devānāṃ maharṣīṇāṃ ca sarvaśaḥ||10.2||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Neither the hosts of the gods nor the great sages know My origin; for I am the source of all the gods and the great sages in every way.', null, null, 'published')
+        'Neither the hosts of Devas, nor the great Rishis, know My origin, for in every way I am the source of all the Devas and the great Rishis.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3757,7 +3756,7 @@ asammūḍhaḥ sa martyeṣu sarvapāpaiḥ pramucyate||10.3||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who knows Me as unborn and beginningless, as the great Lord of the worlds, he among mortals is undeluded and is liberated from all sins.', null, null, 'published')
+        'He who knows Me, birthless and beginningless, the great Lord of worlds—he, among mortals, is undeluded, he is freed from all sins.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3823,7 +3822,7 @@ sukhaṃ duḥkhaṃ bhavo''bhāvo bhayaṃ cābhayameva ca||10.4||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Intellect, wisdom, non-delusion, forgiveness, truth, self-restraint, calmness, happiness, pain, existence or birth, non-existence or death, fear, and also fearlessness.', null, null, 'published')
+        'Intellect, knowledge, non-delusion, forbearance, truth, restraint of the external senses, calmness of heart, happiness, misery, birth, death, fear, as well as fearlessness, non-injury, evenness, contentment, austerity, benevolence, good name, (as well as) ill-fame;—(these) different kinds of qualities of beings arise from Me alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3892,7 +3891,7 @@ bhavanti bhāvā bhūtānāṃ matta eva pṛthagvidhāḥ||10.5||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Non-injury, equanimity, contentment, austerity, beneficence, fame, and ill-fame—these different qualities of beings arise from Me alone.', null, null, 'published')
+        'Intellect, knowledge, non-delusion, forbearance, truth, restraint of the external senses, calmness of heart, happiness, misery, birth, death, fear, as well as fearlessness, non-injury, evenness, contentment, austerity, benevolence, good name, (as well as) ill-fame;—(these) different kinds of qualities of beings arise from Me alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -3958,7 +3957,7 @@ madbhāvā mānasā jātā yeṣāṃ loka imāḥ prajāḥ||10.6||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The seven great sages, the ancient four, and the Manus, possessing powers like Mine (due to their minds being fixed on Me), were born from My mind; from them, these creatures have been born in this world.', null, null, 'published')
+        'The seven great Rishis as well as the four ancient Manus, possessed of powers like Me (due to their thoughts being fixed on Me), were born of (My) mind; from them are these creatures in the world.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4024,7 +4023,7 @@ so''vikampena yogena yujyate nātra saṃśayaḥ||10.7||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who truly knows these manifold manifestations of My Being and this Yoga-power of Mine, becomes established in unshakable Yoga; there is no doubt about it.', null, null, 'published')
+        'He who in reality knows these manifold manifestations of My being and (this) Yoga power of Mine, becomes established in the unshakable Yoga; there is no doubt about it.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4092,7 +4091,7 @@ iti matvā bhajante māṃ budhā bhāvasamanvitāḥ||10.8||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the source of all; from me everything evolves; Understanding this, the wise, endowed with meditation, worship me.', null, null, 'published')
+        'l am the origin of all, from Me everything evolves;—thus thinking the wise worship Me with loving consciousness.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4157,7 +4156,7 @@ kathayantaśca māṃ nityaṃ tuṣyanti ca ramanti ca||10.9||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With their minds and lives wholly absorbed in Me, they enlighten each other and ever speak of Me, being satisfied and delighted.', null, null, 'published')
+        'With their minds wholly in Me, with their senses absorbed in Me, enlightening one another, and always speaking of Me, they are satisfied and delighted.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4222,7 +4221,7 @@ dadāmi buddhiyogaṃ taṃ yena māmupayānti te||10.10||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'To those who are ever steadfast, worshipping me with love, I give the yoga of discrimination, by which they come to me.', null, null, 'published')
+        'To them, ever steadfast and serving Me with affection, I give that Buddhi Yoga by which they come unto Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4286,7 +4285,7 @@ nāśayāmyātmabhāvastho jñānadīpena bhāsvatā||10.11||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Out of mere compassion for them, I, dwelling within their selves, destroy the darkness born of ignorance with the luminous lamp of knowledge.', null, null, 'published')
+        'Out of mere compassion for them, I, abiding in their hearts, destroy the darkness (in them) born of ignorance, by the luminous lamp of knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4355,7 +4354,7 @@ puruṣaṃ śāśvataṃ divyamādidevamajaṃ vibhum||10.12||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "You are the Supreme Brahman, the supreme abode, the supreme purifier, eternal, divine Person, the primeval God, unborn, and omnipresent."', null, null, 'published')
+        'The Supreme Brahman, the Supreme Abode, the Supreme Purifier, art Thou. All the Rishis, the Deva-Rishi Nârada as well as Asita, Devala and Vyâsa have declared Thee as the Eternal, the Self-luminous Purusha, the first Deva, Birth-less and All-pervading. So also Thou Thyself sayest to me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4432,7 +4431,7 @@ asito devalo vyāsaḥ svayaṃ caiva bravīṣi me||10.13||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'All the sages have thus declared Thee, as also the divine sage Narada; so also Asita, Devala, and Vyasa; and now Thou Thyself dost say so to me.', null, null, 'published')
+        'The Supreme Brahman, the Supreme Abode, the Supreme Purifier, art Thou. All the Rishis, the Deva-Rishi Nârada as well as Asita, Devala and Vyâsa have declared Thee as the Eternal, the Self-luminous Purusha, the first Deva, Birth-less and All-pervading. So also Thou Thyself sayest to me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4499,7 +4498,7 @@ na hi te bhagavan vyakitaṃ vidurdevā na dānavāḥ||10.14||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I believe all that You have said to me to be true, O Krishna; indeed, O blessed Lord! Neither the gods nor the demons know Your manifestation (origin).', null, null, 'published')
+        'I regard all this that Thou sayest to me as true, O Keshava. Verily, O Bhagavân, neither the Devas nor the Dânavas know Thy manifestation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4569,7 +4568,7 @@ bhūtabhāvana bhūteśa devadeva jagatpate||10.15||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, Thou Thyself knowest Thyself by Thyself, O Supreme Person, O source and Lord of all beings, O God of gods, O ruler of the world!', null, null, 'published')
+        'Verily, Thou Thyself knowest Thyself by Thyself, O Purusha Supreme, O Source of beings, O Lord of beings, O Deva of Devas, O Ruler of the world.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4633,7 +4632,7 @@ yābhirvibhūtibhirlokānimāṃstvaṃ vyāpya tiṣṭhasi||10.16||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'You should indeed tell, without reserve, of your divine glories by which you exist, pervading all these worlds. (No one else can do so.)', null, null, 'published')
+        'Thou shouldst indeed speak, without reserve, of Thy divine attributes by which, filling all these worlds, Thou existest.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4700,7 +4699,7 @@ keṣu keṣu ca bhāveṣu cintyo''si bhagavanmayā||10.17||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'How shall I, ever meditating, know you, O Yogin? In what aspects or things, O blessed Lord, should I think of you?', null, null, 'published')
+        'How shall I, O Yogin, meditate ever to know Thee? In what things, Bhagavân, art Thou to be thought of by me?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4766,7 +4765,7 @@ bhūyaḥ kathaya tṛptirhi śrṛṇvato nāsti me''mṛtam||10.18||', null, n
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Tell me again in detail, O Krishna, of your yogic power and glory; for I am not satiated with what I have heard of your life-giving and nectar-like speech.', null, null, 'published')
+        'Speak to me again in detail, Jnanârdana, of Thy Yoga-powers and attributes; for I am never satiated in hearing the ambrosia (of Thy speech).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4838,7 +4837,7 @@ prādhānyataḥ kuruśreṣṭha nāstyanto vistarasya me||10.19||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "Very well! Now I will declare to you My divine glories in their prominence, O Arjuna; there is no end to their detailed description."', null, null, 'published')
+        'I shall speak to thee now, O best of the Kurus, of My divine attributes, according to their prominence; there is no end to the particulars of My manifestation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4915,7 +4914,7 @@ ahamādiśca madhyaṃ ca bhūtānāmanta eva ca||10.20||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the Self, O Gudakesa, seated in the hearts of all beings; I am the beginning, the middle, and the end of all beings.', null, null, 'published')
+        'I am the Self, O Gudâkesha, existent in the heart of all beings; I am the beginning, the middle, and also the end of all beings.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -4982,7 +4981,7 @@ marīcirmarutāmasmi nakṣatrāṇāmahaṃ śaśī||10.21||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the twelve Adityas, I am Vishnu; among luminaries, the radiant sun; among the seven or forty-nine Maruts, I am Marichi; among stars, I am the moon.', null, null, 'published')
+        'Of the Adityas, I am Vishnu; of luminaries, the radiant Sun; of the winds, I am Marichi; of the asterisms, the Moon.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5047,7 +5046,7 @@ indriyāṇāṃ manaścāsmi bhūtānāmasmi cetanā||10.22||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the Vedas, I am the Sama-Veda; among the gods, I am Vasava; among the senses, I am the mind; and among living beings, I am intelligence.', null, null, 'published')
+        'I am the Sâma-Veda of the Vedas, and Vâsava (Indra) of the gods; of the senses I am Manas, and intelligence in living beings am I.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5113,7 +5112,7 @@ vasūnāṃ pāvakaścāsmi meruḥ śikhariṇāmaham||10.23||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And among the Rudras, I am Sankara; among the Yakshas and Rakshasas, the Lord of Wealth (Kubera); among the Vasus, I am Pavaka (Fire); and among the seven mountains, I am Meru.', null, null, 'published')
+        'And of the Rudras I am Sankara, of the Yakshas and Râkshasas the Lord of wealth (Kuvera), of the Vasus I am Pâvaka, and of mountains, Meru am I.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5180,7 +5179,7 @@ senānīnāmahaṃ skandaḥ sarasāmasmi sāgaraḥ||10.24||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And, among the household priests of kings, O Arjuna, know Me to be the chief, Brihaspati; among the army generals, I am Skanda; among lakes, I am the ocean.', null, null, 'published')
+        'And of priests, O son of Prithâ, know Me the chief, Brihaspati; of generals, I am Skanda; of bodies of water, I am the ocean.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5246,7 +5245,7 @@ yajñānāṃ japayajño''smi sthāvarāṇāṃ himālayaḥ||10.25||', null, n
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the great sages, I am Bhrigu; among words, I am the one syllable (Om); among sacrifices, I am the sacrifice of silent repetition; among the immovable things, I am the Himalayas.', null, null, 'published')
+        'Of the great Rishis I am Bhrigu; of words I am the one syllable "Om"; of Yajnas I am the Yajna of Japa (silent repetition); of immovable things the Himâlaya.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5310,7 +5309,7 @@ gandharvāṇāṃ citrarathaḥ siddhānāṃ kapilo muniḥ||10.26||', null, n
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among all the trees, I am the Peepul; among the divine sages, I am Narada; among the Gandharvas, I am Chitraratha; among the perfected, I am the sage Kapila.', null, null, 'published')
+        'Of all trees (I am) the Ashvattha, and Nârada of Deva-Rishis; Chitraratha of Gandharvas am I, and the Muni Kapila of the perfected ones.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5372,7 +5371,7 @@ airāvataṃ gajendrāṇāṃ narāṇāṃ ca narādhipam||10.27||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know Me as Ucchaisravas, born of nectar, among horses; Airavata among lordly elephants; and the king among men.', null, null, 'published')
+        'Know Me among horses as Uchchaisshravas, Amrita-born; of lordly elephants Airâvata, and of men the king.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5435,7 +5434,7 @@ prajanaścāsmi kandarpaḥ sarpāṇāmasmi vāsukiḥ||10.28||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among weapons, I am the thunderbolt; among cows, I am the wish-fulfilling cow called Kamadhenu; I am the progenitor, the god of love; among serpents, I am Vasuki.', null, null, 'published')
+        'Of weapons I am the thunderbolt, of cows I am Kâmadhuk; I am the Kandarpa, the cause of offspring; of serpents I am Vâsuki.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5501,7 +5500,7 @@ pitṛ़ṇāmaryamā cāsmi yamaḥ saṃyamatāmaham||10.29||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am Ananta among the Nagas; I am Varuna among water-deities; Aryaman among the Manes; I am Yama among the governors.', null, null, 'published')
+        'And Ananta of snakes I am, I am Varuna of water-beings; and Aryaman of Pitris I am, I am Yama of controllers.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5568,7 +5567,7 @@ mṛgāṇāṃ ca mṛgendro''haṃ vainateyaśca pakṣiṇām||10.30||', null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And I am Prahlada among the demons, I am Time among reckoners, I am the lion among beasts, and Vainateya (Garuda) among birds.', null, null, 'published')
+        'And Prahlâda am I of Diti''s progeny, of measurers I am Time; and of beasts I am the lord of beasts, and Garuda of birds.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5635,7 +5634,7 @@ jhaṣāṇāṃ makaraścāsmi srotasāmasmi jāhnavī||10.31||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the purifiers, I am the wind; among the warriors, I am Rama; among the fishes, I am the shark; among the streams, I am the Ganga.', null, null, 'published')
+        'Of purifiers I am the wind, Râma of warriors am I; of fishes I am the shark, of streams I am Jâhnavi (the Ganges).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5701,7 +5700,7 @@ adhyātmavidyā vidyānāṃ vādaḥ pravadatāmaham||10.32||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among creations I am the beginning, the middle, and the end, O Arjuna; among the sciences, I am the science of the Self; and I am the logic among controversialists.', null, null, 'published')
+        'Of manifestations I, am the beginning, the middle and also the end; of all knowledges I am the knowledge of the Self, and Vâda of disputants.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5768,7 +5767,7 @@ ahamevākṣayaḥ kālo dhātā''haṃ viśvatomukhaḥ||10.33||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the letters of the alphabet, I am the letter ''A'' and the dual among compounds. I am verily the inexhaustible and everlasting time; I am the dispenser of the fruits of actions, having faces in all directions.', null, null, 'published')
+        'Of letters the letter A am I, and Dvandva of all compounds; I alone am the inexhaustible Time, I the Sustainer (by dispensing fruits of actions) All-formed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5834,7 +5833,7 @@ kīrtiḥ śrīrvākca nārīṇāṃ smṛtirmedhā dhṛtiḥ kṣamā||10.34|
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And I am the all-devouring Death, and the source of prosperity for those who are to be prosperous; among the feminine qualities, I am fame, prosperity, speech, memory, intelligence, firmness, and forgiveness.', null, null, 'published')
+        'And I am the all-seizing Death, and the prosperity of those who are to be prosperous; of the feminine qualities (I am) Fame, Prosperity (or beauty), Inspiration, Memory, Intelligence, Constancy and Forbearance.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5903,7 +5902,7 @@ māsānāṃ mārgaśīrṣo''hamṛtūnāṃ kusumākaraḥ||10.35||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the hymns, I am the Brihatsaman; among meters, I am Gayatri; among months, I am Margasirsha; among seasons, I am the flowery season.', null, null, 'published')
+        'Of Sâmas also I am the Brihat-Sâma, of metres Gâyatri am I; of months I am Mârgashirsha, of seasons the flowery season.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -5967,7 +5966,7 @@ jayo''smi vyavasāyo''smi sattvaṃ sattvavatāmaham||10.36||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the gambling of the deceitful; I am the splendor of the splendid; I am victory; I am the resolve of the resolute; I am the goodness of the good.', null, null, 'published')
+        'I am the gambling of the fraudulent, I am the power of the powerful; I am victory, I am effort, I am Sattva of the Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6033,7 +6032,7 @@ munīnāmapyahaṃ vyāsaḥ kavīnāmuśanā kaviḥ||10.37||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among the Vrishnis, I am Vaasudeva; among the Pandavas, I am Arjuna; among the sages, I am Vyasa; among the poets, I am Usanas, the poet.', null, null, 'published')
+        'Of the Vrishnis I am Vâsudeva; of the Pândavas, Dhananjaya; and also of the Munis I am Vyâsa; of the sages, Ushanas the sage.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6098,7 +6097,7 @@ maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatāmaham||10.38||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Of those who punish, I am the scepter; among those who seek victory, I am statesmanship; and among secrets, I am silence; I am knowledge among knowers.', null, null, 'published')
+        'Of punishers I am the sceptre; of those who seek to conquer, I am statesmanship; and also of things secret I am silence, and the knowledge of knowers am I.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6165,7 +6164,7 @@ na tadasti vinā yatsyānmayā bhūtaṃ carācaram||10.39||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And whatever is the seed of all beings, that too am I, O Arjuna; there is no being, be it moving or unmoving, that can exist without Me.', null, null, 'published')
+        'And whatsoever is the seed of all beings, that am I, O Arjuna; nor is there aught, living or lifeless, which can exist without Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6235,7 +6234,7 @@ eṣa tūddeśataḥ prokto vibhūtervistaro mayā||10.40||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There is no end to My divine glories, O Arjuna, but this is a brief statement by Me of the particulars of My divine glory.', null, null, 'published')
+        'There is no end of My divine attributes, O scorcher of foes; but this is a brief statement by Me of the particulars of My divine attributes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6302,7 +6301,7 @@ tattadevāvagaccha tvaṃ mama tejoṃ''śasaṃbhavam||10.41||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever being there is glorious, prosperous, or powerful, know that to be a manifestation of a part of My splendor.', null, null, 'published')
+        'Whatever being there is great, prosperous or powerful, that know thou to be a product of a part of My splendour.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6370,7 +6369,7 @@ viṣṭabhyāhamidaṃ kṛtsnamekāṃśena sthito jagat||10.42||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But, of what avail is the knowledge of all these details to you, O Arjuna? I exist, supporting this whole world with one part of Myself.', null, null, 'published')
+        'Or what avails thee to know all this diversity, O Arjuna? (Know thou this,. that) I exist, supporting this whole world by a portion of Myself.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='10.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6451,7 +6450,7 @@ yattvayoktaṃ vacastena moho''yaṃ vigato mama||11.1||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, By this explanation of the highest secret concerning the Self which Thou hast spoken, for the sake of blessing me, my delusion has been dispelled.', null, null, 'published')
+        'By the supremely profound words, on the discrimination of Self, that have been spoken by Thee out of compassion towards me, this my delusion is gone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6528,7 +6527,7 @@ tvattaḥ kamalapatrākṣa māhātmyamapi cāvyayam||11.2||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The origin and destruction of beings have been heard in detail from You, O lotus-eyed Lord, and also Your inexhaustible greatness.', null, null, 'published')
+        'Of Thee, O lotus-eyed, I have heard at length, of the origin and dissolution of beings, as also Thy inexhaustible greatness.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6594,7 +6593,7 @@ draṣṭumicchāmi te rūpamaiśvaraṃ puruṣottama||11.3||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Now, O Supreme Lord, as Thou hast thus described Thyself, O Supreme Person, I wish to behold Thy divine form.', null, null, 'published')
+        'So it is, O Lord Supreme! as Thou hast declared Thyself. (Still) I desire to see Thy Ishvara-Form, O Purusha Supreme.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6660,7 +6659,7 @@ yogeśvara tato me tvaṃ darśayā''tmānamavyayam||11.4||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If Thou, O Lord, thinkest it possible for me to see it, do Thou, then, O Lord of the Yogis, show me Thy imperishable Self.', null, null, 'published')
+        'If, O Lord, Thou thinkest me capable of seeing it, then, O Lord of Yogis, show me Thy immutable Self.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6732,7 +6731,7 @@ nānāvidhāni divyāni nānāvarṇākṛtīni ca||11.5||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "Behold, O Arjuna, forms of Mine, by the hundreds and thousands, of different sorts, divine, and of various colors and shapes."', null, null, 'published')
+        'Behold, O son of Prithâ, by hundreds and thousands, My different forms celestial, of various colours and shapes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6809,7 +6808,7 @@ bahūnyadṛṣṭapūrvāṇi paśyā''ścaryāṇi bhārata||11.6||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Behold the Adityas, the Vasus, the Rudras, the two Asvins, and the Maruts; behold many wonders never before seen, O Arjuna.', null, null, 'published')
+        'Behold the Adityas, the Vasus, the Rudras, the twin Ashvins, and the Maruts; behold, O descendant of Bharata, many wonders never seen before.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6875,7 +6874,7 @@ mama dehe guḍākeśa yaccānyaddraṣṭumicchasi||11.7||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Now, behold, O Arjuna, in this My body, the entire universe centered in one, including the moving and the unmoving, and whatever else you desire to see.', null, null, 'published')
+        'See now, O Gudâkesha, in this My body, the whole universe centred in one,—including the moving and the unmoving,—and all else that thou desirest to see.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -6945,7 +6944,7 @@ divyaṃ dadāmi te cakṣuḥ paśya me yogamaiśvaram||11.8||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But you are not able to behold Me with these your own eyes; I give you the divine eye; behold My lordly Yoga.', null, null, 'published')
+        'But thou canst not see Me with these eyes of thine; I give thee supersensuous sight; behold My Yoga Power Supreme.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7017,7 +7016,7 @@ darśayāmāsa pārthāya paramaṃ rūpamaiśvaram||11.9||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said, Having thus spoken, O king, the great Lord of Yoga, Hari (Krishna), showed Arjuna His supreme form as the Lord.', null, null, 'published')
+        'Having thus spoken, O King, Hari, the Great Lord of Yoga, showed unto the son of Prithâ, His Supreme Ishvara-Form—', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7091,7 +7090,7 @@ anekadivyābharaṇaṃ divyānekodyatāyudham||11.10||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With numerous mouths and eyes, with numerous wondrous sights, with numerous divine adornments, with numerous divine weapons uplifted, such a form He showed.', null, null, 'published')
+        'With numerous mouths and eyes, with numerous wondrous sights, with numerous celestial ornaments, with numerous celestial weapons uplifted;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7157,7 +7156,7 @@ sarvāścaryamayaṃ devamanantaṃ viśvatomukham||11.11||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Wearing divine garlands and apparel, anointed with divine unguents, the all-wonderful, resplendent Being is endless with faces on all sides.', null, null, 'published')
+        'Wearing celestial garlands and apparel, anointed with celestial-scented unguents, the All-wonderful, Resplendent, Boundless and All-formed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7223,7 +7222,7 @@ yadi bhāḥ sadṛśī sā syādbhāsastasya mahātmanaḥ||11.12||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If the splendour of a thousand suns were to blaze out simultaneously in the sky, that would be the splendour of that mighty being.', null, null, 'published')
+        'If the splendour of a thousand suns were to rise up at once in the sky, that would be like the splendour of that Mighty Being.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7290,7 +7289,7 @@ apaśyaddevadevasya śarīre pāṇḍavastadā||11.13||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There, in the body of the God of gods, Arjuna then saw the entire universe resting in one, with its myriad of divisions.', null, null, 'published')
+        'There in the body of the God of gods, the son of Pându then saw the whole universe resting in one, with its manifold divisions.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7354,7 +7353,7 @@ praṇamya śirasā devaṃ kṛtāñjalirabhāṣata||11.14||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then, Arjuna, filled with wonder and his hair standing on end, bowed his head to the God and spoke with palms joined.', null, null, 'published')
+        'Then Dhananjaya, filled with wonder, with his hair standing on end, bending down his head to the Deva in adoration, spoke with joined palms.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7429,7 +7428,7 @@ mṛṣīṃśca sarvānuragāṃśca divyān||11.15||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O God, I see all the gods in Your body, as well as hosts of various classes of beings, Brahma the Lord seated on the lotus, all the sages, and the celestial serpents."', null, null, 'published')
+        'I see all the Devas, O Deva, in Thy body, and hosts of all grades of beings; Brahma, the Lord, seated on the lotus, and all the Rishis and celestial serpents.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7538,7 +7537,7 @@ paśyāmi viśveśvara viśvarūpa||11.16||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I see You with boundless form on every side, with many arms, stomachs, mouths, and eyes; neither the end nor the middle nor the beginning do I see, O Lord of the Universe, O Cosmic Form.', null, null, 'published')
+        'I see Thee of boundless form on every side with manifold arms, stomachs, mouths and eyes; neither the end nor the middle, nor also the beginning of Thee do I see, O Lord of the universe, O Universal Form.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7638,7 +7637,7 @@ ddīptānalārkadyutimaprameyam||11.17||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I see You with the diadem, club, and discus, a mass of radiance shining everywhere, very hard to look at, blazing all around like a burning fire and the sun, and immeasurable.', null, null, 'published')
+        'I see Thee with diadem, club, and discus; a mass of radiance shining everywhere, very hard to look at, all around blazing like burning fire and sun, and immeasurable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7734,7 +7733,7 @@ sanātanastvaṃ puruṣo mato me||11.18||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'You are the Imperishable, the Supreme Being, worthy of being known. You are the great treasure-house of this universe; You are the imperishable protector of the eternal Dharma; You are the Primal Person, I believe.', null, null, 'published')
+        'Thou art the Imperishable, the Supreme Being, the one thing to be known. Thou art the great Refuge of this universe;. Thou art the undying Guardian of the Eternal Dharma, Thou art the Ancient. Purusha, I ween.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7831,7 +7830,7 @@ svatejasā viśvamidaṃ tapantam||11.19||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I see You without beginning, middle, or end, infinite in power, with endless arms, the sun and moon as Your eyes, the burning fire Your mouth, heating the entire universe with Your radiance.', null, null, 'published')
+        'I see Thee without beginning, middle or end, infinite in power, of manifold arms; the sun and the moon Thine eyes, the burning fire Thy mouth; heating the whole universe with Thy radiance.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -7916,7 +7915,7 @@ lokatrayaṃ pravyathitaṃ mahātman||11.20||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This space between the earth and the heavens, and all the quarters, is filled by You alone; having seen this, Your wonderful and terrible form, the three worlds are trembling with fear, O great-souled Being.', null, null, 'published')
+        'The space betwixt heaven and earth and all the quarters are filled by Thee alone; having seen this, Thy marvellous and awful Form, the three worlds are trembling with fear, O Great-souled One.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8017,7 +8016,7 @@ stuvanti tvāṃ stutibhiḥ puṣkalābhiḥ||11.21||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, these hosts of gods enter into Thee; some extol Thee with joined palms in fear, saying, ''May it be well!'' Bands of great sages and perfected ones praise Thee with complete hymns.', null, null, 'published')
+        'Verily, into Thee enter these hosts of Devas; some extol Thee in fear with joined palms; "May it be well!" thus saying, bands of great Rishis and Siddhas praise Thee with splendid hymns.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8116,7 +8115,7 @@ vīkṣante tvāṃ vismitāścaiva sarve||11.22||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Rudras, Adityas, Vasus, Sadhyas, Visvedevas, the two Asvins, Maruts, the Manus, and the hosts of celestial singers, Yakshas, demons, and the perfected ones, all look upon Thee with great amazement.', null, null, 'published')
+        'The Rudras, Adityas, Vasus, Sâdhyas, Vishva-Devas, the two Ashvins, Maruts, Ushmapâs, and hosts of Gandharvas, Yakshas, Asuras, and Siddhas,—all these are looking at Thee, all quite astounded.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8220,7 +8219,7 @@ dṛṣṭvā lokāḥ pravyathitāstathā''ham||11.23||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having seen Your immeasurable form with many mouths and eyes, O mighty-armed one, with many arms, thighs, and feet, with many stomachs and fearsome with many teeth, the worlds are terrified, and so am I.', null, null, 'published')
+        'Having seen Thy immeasurable Form—with many mouths and eyes, O mighty-armed, with many arms, thighs and feet, with many stomachs, and fearful with many tusks,—the worlds are terrified, and so am I.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8320,7 +8319,7 @@ dhṛtiṃ na vindāmi śamaṃ ca viṣṇo||11.24||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'On seeing Thee, touching the sky, shining in many colors, with mouths wide open, with large fiery eyes, I am terrified at heart and find neither courage nor peace, O Vishnu.', null, null, 'published')
+        'On seeing Thee touching the sky, shining in many a colour, with mouths wide open, with large fiery eyes, I am terrified at heart, and find no courage nor peace, O Vishnu.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8420,7 +8419,7 @@ prasīda deveśa jagannivāsa||11.25||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having seen Thy mouths fearful with teeth blazing like the fires of cosmic dissolution, I know not the four quarters, nor do I find peace. Have mercy, O Lord of the gods, O abode of the universe.', null, null, 'published')
+        'Having seen Thy mouths, fearful with tusks, (blazing) like Pralaya-fires, I know not the four quarters, nor do I find peace; have mercy, O Lord of the Devas, O Abode of the universe.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8520,7 +8519,7 @@ sahāsmadīyairapi yodhamukhyaiḥ||11.26||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'All the sons of Dhritarashtra, along with the hosts of kings of the earth, Bhishma, Drona, and Karna, as well as the chief among our warriors.', null, null, 'published')
+        'All these sons of Dhritarâshtra, with hosts of monarchs, Bhishma, Drona, and Sutaputra, with the warrior chiefs of ours, enter precipitately into Thy mouth, terrible with tusks and fearful to behold. Some are found sticking in the interstices of Thy teeth, with their heads crushed to powder.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8633,7 +8632,7 @@ saṃdṛśyante cūrṇitairuttamāṅgaiḥ||11.27||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Some hurry into Your mouths with their terrible teeth, fearful to behold. Some are found stuck in the gaps between the teeth, their heads crushed to powder.', null, null, 'published')
+        'All these sons of Dhritarâshtra, with hosts of monarchs, Bhishma, Drona, and Sutaputra, with the warrior chiefs of ours, enter precipitately into Thy mouth, terrible with tusks and fearful to behold. Some are found sticking in the interstices of Thy teeth, with their heads crushed to powder.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8727,7 +8726,7 @@ viśanti vaktrāṇyabhivijvalanti||11.28||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, just as many torrents of rivers flow towards the ocean, so too these heroes in the world of men enter Thy flaming mouths.', null, null, 'published')
+        'Verily, as the many torrents of rivers flow towards the ocean, so do these heroes in the world of men enter Thy fiercely flaming mouths.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8823,7 +8822,7 @@ stavāpi vaktrāṇi samṛddhavegāḥ||11.29||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As moths hurriedly rush into a blazing fire, leading to their own destruction, so too these creatures hurry into Your mouths, leading to their own destruction.', null, null, 'published')
+        'As moths precipitately rush into a blazing fire only to perish, even so do these creatures also precipitately rush into Thy mouths only to perish.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -8919,7 +8918,7 @@ bhāsastavogrāḥ pratapanti viṣṇo||11.30||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thou lickest up, devouring all the worlds on every side with Thy flaming mouths. Thy fierce rays, filling the whole world with radiance, burn, O Vishnu!', null, null, 'published')
+        'Swallowing all the worlds on every side with Thy flaming mouths, Thou are licking Thy lips. Thy fierce rays, filling the whole world with radiance, are burning, O Vishnu!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9016,7 +9015,7 @@ na hi prajānāmi tava pravṛttim||11.31||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Tell me, who you are, so fierce of form. I offer my salutations to you, O God Supreme; have mercy on me. I desire to know you, the original Being. I do not indeed know your workings.', null, null, 'published')
+        'Tell me who Thou art, fierce in form. Salutation to Thee, O Deva Supreme; have mercy. I desire to know Thee, O Primeval One. I know not indeed Thy purpose.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9119,7 +9118,7 @@ ye''vasthitāḥ pratyanīkeṣu yodhāḥ||11.32||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "I am the full-grown, world-destroying Time, now engaged in destroying the worlds. Even without you, none of the warriors arrayed in the hostile armies will live."', null, null, 'published')
+        'I am the mighty world-destroying Time, here made manifest for the purpose of infolding the world. Even without thee, none of the warriors arrayed in the hostile armies shall live.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9228,7 +9227,7 @@ nimittamātraṃ bhava savyasācin||11.33||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, stand up and obtain fame. Conquer the enemies and enjoy the unparalleled kingdom. Verily, by Me they have already been slain; be thou a mere instrument, O Arjuna.', null, null, 'published')
+        'Therefore do thou arise and acquire fame. Conquer the enemies, and enjoy the unrivalled dominion. Verily by Myself have they been already slain; be thou merely an apparent cause, O Savyasâchin (Arjuna).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9327,7 +9326,7 @@ yudhyasva jetāsi raṇe sapatnān||11.34||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Drona, Bhishma, Jayadratha, Karna, and other brave warriors have already been slain by Me; do not be distressed with fear; fight and you shall conquer your enemies in battle.', null, null, 'published')
+        'Drona, Bhishma, Jayadratha, Karna, as well as other brave warriors,—these already killed by Me, do thou kill. Be not distressed with fear; fight, and thou shalt conquer thy enemies in battle.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9433,7 +9432,7 @@ sagadgadaṃ bhītabhītaḥ praṇamya||11.35||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said, Having heard that speech of Lord Krishna, Arjuna, with joined palms, trembling, prostrated himself, again addressing Krishna in a choked voice, bowing down, overwhelmed with fear.', null, null, 'published')
+        'Having, heard that speech of Keshava, the diademed one (Arjuna), with joined palms, trembling, prostrated himself, and again addressed Krishna in a choked voice, bowing down, overwhelmed with fear.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9544,7 +9543,7 @@ sarve namasyanti ca siddhasaṅghāḥ||11.36||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "It is fitting, O Krishna, that the world delights and rejoices in Your praise; demons fly in fear in all directions and the hosts of the perfected ones bow to You."', null, null, 'published')
+        'It is meet, O Hrishikesha, that the world is delighted and rejoices in Thy praise, that Râkshasas fly in fear to all quarters and all the hosts of Siddhas bow down to Thee in adoration.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9652,7 +9651,7 @@ tvamakṣaraṃ sadasattatparaṃ yat||11.37||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And why should they not, O great Soul, bow to Thee Who art greater than all else, the primal cause even of the Creator (Brahma), O Infinite Being, O Lord of the gods, O Abode of the universe; Thou art the imperishable, the Being, the non-being, and That which is supreme—that which is beyond the Being and the non-being.', null, null, 'published')
+        'And why should they not, O Great-souled One, bow down to Thee, who art the first Creator, greater even than Brahma? O Infinite, O Lord of the Devas, O Abode of the universe, Thou art the Imperishable, the Being and the non-Being, and That which is beyond.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9751,7 +9750,7 @@ tvayā tataṃ viśvamanantarūpa||11.38||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'You are the primal God, the ancient Purusha, the supreme refuge of this universe, the knower, the knowable, and the supreme Abode. Through You, the universe is pervaded, O Being of infinite forms.', null, null, 'published')
+        'Thou art the Primal Deva, the Ancient Purusha; Thou art the Supreme Refuge of this universe, Thou art the Knower, and the One Thing to be known; Thou art the Supreme Goal. By Thee is the universe pervaded, O Boundless Form.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9852,7 +9851,7 @@ punaśca bhūyo''pi namo namaste||11.39||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'You are Vayu, Yama, Agni, Varuna, the moon, the Creator, and the great-grandfather. I offer my salutations to You a thousand times, and again I offer my salutations to You.', null, null, 'published')
+        'Thou art Vâyu, Yama, Agni, Varuna, the Moon, Prajâpati, and the Great-Grandfather. Salutation, salutation to Thee, a thousand times, and again and again salutation, salutation to Thee!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -9952,7 +9951,7 @@ sarvaṃ samāpnoṣi tato''si sarvaḥ||11.40||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Salutations to You in front and behind! Salutations to You on every side! O All! You, infinite in power and prowess, pervade all; therefore You are all.', null, null, 'published')
+        'Salutation to Thee before and behind, salutation to Thee on every side, O All! Thou, infinite in power and infinite in prowess, pervadest all; wherefore Thou art All.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10051,7 +10050,7 @@ mayā pramādātpraṇayena vāpi||11.41||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever I have presumptuously said from carelessness or love, addressing You as O Krishna! O Yadava! O Friend! regarding You merely as a friend, unknowing of Your greatness.', null, null, 'published')
+        'Whatever I have presumptuously said from carelessness or love, addressing Thee as, "O Krishna, O Yâdava, O friend," regarding Thee merely as a friend, unconscious of this Thy greatness—in whatever way I may have been disrespectful to Thee in fun, while walking, reposing, sitting, or at meals, when alone (with Thee), O Achyuta, or in company—I implore Thee, Immeasurable One, to forgive all this.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10150,7 +10149,7 @@ tatkṣāmaye tvāmahamaprameyam||11.42||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In whatever way I may have insulted You for the sake of fun, while at play, reposing, sitting, or at meals, when alone (with You), O Krishna, or in company, that I implore You, immeasurable one, to forgive.', null, null, 'published')
+        'Whatever I have presumptuously said from carelessness or love, addressing Thee as, "O Krishna, O Yâdava, O friend," regarding Thee merely as a friend, unconscious of this Thy greatness—in whatever way I may have been disrespectful to Thee in fun, while walking, reposing, sitting, or at meals, when alone (with Thee), O Achyuta, or in company—I implore Thee, Immeasurable One, to forgive all this.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10250,7 +10249,7 @@ lokatraye''pyapratimaprabhāva||11.43||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thou art the Father of this world, both moving and unmoving. Thou art to be adored by this world; Thou, the greatest Guru; for none exists who is equal to Thee; how then could there be another superior to Thee in the three worlds, O Being of unrivaled power?', null, null, 'published')
+        'Thou art the Father of the world, moving and unmoving; the object of its worship; greater than the great. None there exists who is equal to Thee in the three worlds; who then can excel Thee, O. Thou of power incomparable?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10351,7 +10350,7 @@ priyaḥ priyāyārhasi deva soḍhum||11.44||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, bowing down and prostrating my body, I crave Thy forgiveness, O adorable Lord. As a father forgives his son, a friend his dear friend, a lover his beloved, even so may Thou forgive me, O God.', null, null, 'published')
+        'So prostrating my body in adoration, I crave Thy forgiveness, Lord adorable! As a father forgiveth his son, friend a dear friend, a beloved one his love, even so shouldst Thou forgive me, O Deva.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10452,7 +10451,7 @@ prasīda deveśa jagannivāsa||11.45||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am delighted, having seen something never seen before; yet my mind is distressed with fear. Show me that form only, O God; have mercy, O God of gods, O Abode of the universe.', null, null, 'published')
+        'Overjoyed am I to have seen what I saw never before; yet my mind is distracted with terror. Show me, O Deva, only that Form of Thine. Have mercy, O Lord of Devas, O Abode of the universe.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10551,7 +10550,7 @@ sahasrabāho bhava viśvamūrte||11.46||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I desire to see You as before, crowned, bearing a mace, with the discus in hand, in Your former form only, having four arms, O thousand-armed, Cosmic Being.', null, null, 'published')
+        'Diademed, bearing a mace and a discus, Thee I desire to see as before. Assume that same four-armed Form, O Thou of thousand arms, of universal Form.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10650,7 +10649,7 @@ yanme tvadanyena na dṛṣṭapūrvam||11.47||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "O Arjuna, this Cosmic Form has graciously been shown to you by Me through My own Yogic power. It is full of splendour, primeval, and infinite; this Cosmic Form of Mine has never been seen before by anyone other than you."', null, null, 'published')
+        'Graciously have I shown to thee, O Arjuna, this Form supreme, by My own Yoga power, this resplendent, primeval, infinite, universal Form of Mine, which hath not been seen before by anyone else.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10759,7 +10758,7 @@ draṣṭuṃ tvadanyena kurupravīra||11.48||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.48' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Neither by the study of the Vedas, nor by gifts, nor by sacrifices, nor by severe austerities, can I be seen in this form in the world of men by any other than yourself, O great hero of the Kurus (Arjuna).', null, null, 'published')
+        'Neither by the study of the Veda and Yajna, nor by gifts, nor by rituals, nor by severe austerities, am I in such Form seen, in the world of men, by any other than thee, O great hero of the Kurus.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.48' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10859,7 +10858,7 @@ tadeva me rūpamidaṃ prapaśya||11.49||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.49' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Do not be afraid, nor be bewildered on seeing such a terrible form of Mine; with your fear dispelled and with a gladdened heart, now behold again this former form of Mine.', null, null, 'published')
+        'Be not afraid nor bewildered, having beheld this Form of Mine, so terrific. With thy fears dispelled and with gladdened heart, now see again this (former) form of Mine.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.49' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -10964,7 +10963,7 @@ bhūtvā punaḥ saumyavapurmahātmā||11.50||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.50' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said, Having thus spoken to Arjuna, Krishna again showed His own form. The great Soul, assuming His gentle form, then consoled Arjuna, who was terrified.', null, null, 'published')
+        'So Vâsudeva, having thus spoken to Arjuna, showed again His own Form and the Great-souled One, assuming His gentle Form, pacified him who was terrified.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.50' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11069,7 +11068,7 @@ idānīmasmi saṃvṛttaḥ sacetāḥ prakṛtiṃ gataḥ||11.51||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.51' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "Having seen this Thy gentle human form, O Krishna, now I am composed and have been restored to my own nature."', null, null, 'published')
+        'Having seen this Thy gentle human Form, O Janârdana, my thoughts are now composed and I am restored to my nature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.51' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11150,7 +11149,7 @@ devā apyasya rūpasya nityaṃ darśanakāṅkṣiṇaḥ||11.52||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.52' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "It is very hard indeed to see this form of Mine which thou hast seen; even the gods are ever longing to behold it."', null, null, 'published')
+        'Very hard indeed it is to see this Form of Mine which thou hast seen. Even the Devas ever long to behold this Form.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.52' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11226,7 +11225,7 @@ values ((select id from verses where ref='11.53' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.53' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Neither by the Vedas, nor by austerity, nor by gift, nor by sacrifice can I be seen in this form as thou hast seen Me so easily.', null, null, 'published')
+        'Neither by the Vedas, nor by austerity, nor by gifts, nor by sacrifice can I be seen as thou hast seen Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.53' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11296,7 +11295,7 @@ jñātuṃ dṛṣṭuṃ ca tattvena praveṣṭuṃ ca paraṃtapa||11.54||', 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.54' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But by single-minded devotion, I can be known, seen, and entered into in reality, O Arjuna.', null, null, 'published')
+        'But by the single-minded devotion I may in this Form, be known, O Arjuna, and seen in reality, and also entered into, O scorcher of foes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.54' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11363,7 +11362,7 @@ nirvairaḥ sarvabhūteṣu yaḥ sa māmeti pāṇḍava||11.55||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.55' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who does all actions for Me, who regards Me as the Supreme, who is devoted to Me, who is free from attachment, who bears no enmity towards any creature, he comes to Me, O Arjuna.', null, null, 'published')
+        'He who does work for Me alone and has Me for his goal, is devoted to Me, is freed from attachment, and bears enmity towards no creature—he entereth into Me, O Pândava.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='11.55' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11433,7 +11432,7 @@ values ((select id from verses where ref='12.1' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "Which of them are better versed in Yoga—those who steadfastly worship You, or those who worship the imperishable and the unmanifested?"', null, null, 'published')
+        'Those devotees who, ever-steadfast, thus worship Thee, and those also who worship the Imperishable, the Unmanifested,—which of them are better versed in Yoga?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11488,7 +11487,7 @@ values ((select id from verses where ref='12.2' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "In My opinion, those who fix their minds on Me, worship Me ever steadfastly, and are endowed with supreme faith, are the best in Yoga."', null, null, 'published')
+        'Those who, fixing their mind on Me, worship Me, ever-steadfast, and endowed with supreme Shraddhâ, they in My opinion are the best versed in Yoga.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11542,7 +11541,7 @@ values ((select id from verses where ref='12.3' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who worship the imperishable, the indefinable, the unmanifest, the omnipresent, the unthinkable, the immovable, and the eternal.', null, null, 'published')
+        'But those also, who worship the Imperishable, the Indefinable, the Unmanifested, the Omnipresent, the Unthinkable, the Unchangeable, the Immovable, the Eternal,—having subdued all the senses, even-minded everywhere, engaged in the welfare of all beings, verily, they reach only Myself.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11603,7 +11602,7 @@ values ((select id from verses where ref='12.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having restrained all the senses, being even-minded everywhere, and intent on the welfare of all beings, they verily come unto Me.', null, null, 'published')
+        'But those also, who worship the Imperishable, the Indefinable, the Unmanifested, the Omnipresent, the Unthinkable, the Unchangeable, the Immovable, the Eternal,—having subdued all the senses, even-minded everywhere, engaged in the welfare of all beings, verily, they reach only Myself.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11656,7 +11655,7 @@ avyaktā hi gatirduḥkhaṃ dehavadbhiravāpyate||12.5||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Greater is their trouble whose minds are set on the unmanifested, for the goal of the unmanifested is very hard for the embodied to reach.', null, null, 'published')
+        'Greater is their trouble whose minds are set on the Unmanifested; for the goal of the Unmanifested is very hard for the embodied to reach.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11717,7 +11716,7 @@ values ((select id from verses where ref='12.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But to those who worship Me, renouncing all actions in Me, regarding Me as the supreme goal, meditating on Me with single-minded yoga.', null, null, 'published')
+        'But those who worship Me, resigning all actions in Me, regarding Me as the Supreme Goal, meditating on Me with single-minded Yoga,—to these whose mind is set on Me, verily, I become ere long, O son of Prithâ, the Saviour out of the ocean of the mortal Samsâra.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11769,7 +11768,7 @@ values ((select id from verses where ref='12.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'To those whose minds are set on Me, O Arjuna, verily I soon become the savior out of the ocean of Samsara.', null, null, 'published')
+        'But those who worship Me, resigning all actions in Me, regarding Me as the Supreme Goal, meditating on Me with single-minded Yoga,—to these whose mind is set on Me, verily, I become ere long, O son of Prithâ, the Saviour out of the ocean of the mortal Samsâra.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11818,7 +11817,7 @@ values ((select id from verses where ref='12.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fix your mind on Me, and your intellect in Me. Then you will certainly live in Me alone hereafter.', null, null, 'published')
+        'Fix thy mind on Me only, place thy intellect in Me: (then) thou shalt no doubt live in Me hereafter.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11870,7 +11869,7 @@ values ((select id from verses where ref='12.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If you are unable to fix your mind steadily on Me, then seek to reach Me through the yoga of constant practice, O Arjuna.', null, null, 'published')
+        'If thou art unable to fix thy mind steadily on Me, then by Abhyâsa-Yoga do thou seek to reach Me, O Dhananjaya.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11921,7 +11920,7 @@ values ((select id from verses where ref='12.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If you are unable to practice even this Abhyasa Yoga, be intent on doing actions for My sake; even by doing actions for My sake, you will attain perfection.', null, null, 'published')
+        'If also thou art unable to practise Abhyâsa, be thou intent on doing actions -for My sake. Even by doing actions for My sake, thou shalt attain perfection.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -11972,7 +11971,7 @@ values ((select id from verses where ref='12.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If you are unable to do even this, then, resort to union with Me and renounce the fruits of all actions with self-control.', null, null, 'published')
+        'If thou art unable to do even this, then taking refuge in Me, abandon the fruit of all action, self-controlled.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12024,7 +12023,7 @@ values ((select id from verses where ref='12.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Better indeed is knowledge than practice; better than knowledge is meditation; better than meditation is the renunciation of the fruits of actions: peace immediately follows renunciation.', null, null, 'published')
+        'Better indeed is knowledge than (blind) Abhyâsa; meditation (with knowledge) is more esteemed than (mere) knowledge; than meditation the renunciation of the fruit of action; peace immediately follows renunciation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12075,7 +12074,7 @@ values ((select id from verses where ref='12.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who hates no creature, is friendly and compassionate to all, is free from attachment and egoism, is balanced in pleasure and pain, and is forgiving.', null, null, 'published')
+        'He who hates no creature, and is friendly and compassionate towards all, who is free from the feelings of ''I and mine,'' even-minded in pain and pleasure, forbearing, ever content, steady in meditation, self-controlled, and possessed of firm conviction, with mind and intellect fixed on Me,—he who is thus devoted to Me, is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12126,7 +12125,7 @@ values ((select id from verses where ref='12.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Ever content, steady in meditation, self-controlled, possessing firm conviction, with the mind and intellect dedicated to Me, he, My devotee, is dear to Me.', null, null, 'published')
+        'He who hates no creature, and is friendly and compassionate towards all, who is free from the feelings of ''I and mine,'' even-minded in pain and pleasure, forbearing, ever content, steady in meditation, self-controlled, and possessed of firm conviction, with mind and intellect fixed on Me,—he who is thus devoted to Me, is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12179,7 +12178,7 @@ values ((select id from verses where ref='12.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He whom the world does not agitate, and who cannot be agitated by the world, and who is freed from joy, anger, fear, and anxiety—he is dear to Me.', null, null, 'published')
+        'He by whom the world is not agitated and who cannot be agitated by the world, who is freed from joy, envy, fear and anxiety,—he is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12237,7 +12236,7 @@ values ((select id from verses where ref='12.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is free from wants, pure, expert, unconcerned, and free from pain, renouncing all undertakings and commencements, he who is devoted to Me is dear to Me.', null, null, 'published')
+        'He who is free from dependence, who is pure, prompt, unconcerned, untroubled, renouncing every undertaking,—he who is thus devoted to Me, is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12288,7 +12287,7 @@ values ((select id from verses where ref='12.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who neither rejoices nor hates, nor grieves nor desires, renouncing both good and evil, and who is full of devotion, is dear to Me.', null, null, 'published')
+        'He who neither rejoices, nor hates, nor grieves, nor desires, renouncing good and evil, full of devotion, he is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12342,7 +12341,7 @@ values ((select id from verses where ref='12.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is the same to foe and friend, and also in honor and dishonor, who is the same in cold and heat, in pleasure and pain, and who is free from attachment.', null, null, 'published')
+        'He who is the same to friend and foe, and also in honour and dishonour; who is the same in heat and cold, and in pleasure and pain; who is free from attachment; to whom censure and praise are equal; who is silent, content with anything, homeless, steady-minded, full of devotion,—that man is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12391,7 +12390,7 @@ values ((select id from verses where ref='12.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He to whom censure and praise are equal, who is silent, content with anything, homeless, of a steady mind, and full of devotion; that man is dear to me.', null, null, 'published')
+        'He who is the same to friend and foe, and also in honour and dishonour; who is the same in heat and cold, and in pleasure and pain; who is free from attachment; to whom censure and praise are equal; who is silent, content with anything, homeless, steady-minded, full of devotion,—that man is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12442,7 +12441,7 @@ values ((select id from verses where ref='12.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They who follow this immortal Dharma, endowed with faith and regarding Me as their supreme goal, are exceedingly dear to Me.', null, null, 'published')
+        'And they who follow this Immortal Dharma, as described above, endued with Shraddhâ, regarding Me as the Supreme Goal, and devoted,—they are exceedingly dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='12.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12506,7 +12505,7 @@ values ((select id from verses where ref='13.1' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "O Arjuna, this body is called the field; he who knows it is called the knower of the field by those who know them."', null, null, 'published')
+        'This body, O son of Kunti, is called Kshetra, and he who knows it is called Kshetrajna by those who know of them (Kshetra and Kshetrajna).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12564,7 +12563,7 @@ kṣetrakṣetrajñayorjñānaṃ yattajjñānaṃ mataṃ mama||13.3||', null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Do thou also know Me as the knower of the field in all fields, O Arjuna. Knowledge of both the field and the knower of the field is considered by Me to be the knowledge.', null, null, 'published')
+        'Me do thou also know, O descendant of Bharata, to be Kshetrajna in all Kshetras. The knowledge of Kshetra and Kshetrajna is considered by Me to be the knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12629,7 +12628,7 @@ values ((select id from verses where ref='13.3' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Hear from Me in brief what the field is, of what nature it is, what its modifications are, whence it is, who He is, and what His powers are.', null, null, 'published')
+        'What the Kshetra is, what its properties are, what are its modifications, what effects arise from what causes, and also who He is and what His powers are, that hear from Me in brief.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12687,7 +12686,7 @@ values ((select id from verses where ref='13.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sages have sung in many ways, with various distinctive chants and also with suggestive words indicative of the Absolute, full of reasoning and decisive.', null, null, 'published')
+        '(This truth) has been sung by Rishis in many ways, in various distinctive chants, in passages indicative of Brahman, full of reasoning, and convincing.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12738,7 +12737,7 @@ values ((select id from verses where ref='13.5' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The great elements, egoism, intellect, and also the Unmanifested Nature, the ten senses, and one mind, and the five objects of the senses.', null, null, 'published')
+        'The great Elements, Egoism, Intellect, as also the Unmanifested (Mulâ Prakriti), the ten senses and the one (mind), and the five objects of the senses; desire, hatred, pleasure, pain, the, aggregate, intelligence, fortitude,—the Kshetra has been thus briefly described with its modifications.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12789,7 +12788,7 @@ values ((select id from verses where ref='13.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Desire, hatred, pleasure, pain, the aggregate (body), intelligence, and fortitude—the field has thus been briefly described with its modifications.', null, null, 'published')
+        'The great Elements, Egoism, Intellect, as also the Unmanifested (Mulâ Prakriti), the ten senses and the one (mind), and the five objects of the senses; desire, hatred, pleasure, pain, the, aggregate, intelligence, fortitude,—the Kshetra has been thus briefly described with its modifications.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12840,7 +12839,7 @@ values ((select id from verses where ref='13.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Humility, unpretentiousness, non-injury, forgiveness, uprightness, service to the teacher, purity, steadfastness, and self-control.', null, null, 'published')
+        'Humility, unpretentiousness, non-injury, forbearance, uprightness, service to the teacher, purity, steadiness, self-control;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12888,7 +12887,7 @@ values ((select id from verses where ref='13.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Indifference to the objects of the senses and also absence of egoism; perceiving the evil in birth, death, old age, sickness, and pain.', null, null, 'published')
+        'The renunciation of sense-objects, and also absence of egoism; reflection on the evils of birth, death, old age, sickness and pain;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12938,7 +12937,7 @@ values ((select id from verses where ref='13.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Non-attachment, non-identification of the Self with son, wife, home, and the rest, and constant even-mindedness in the face of the attainment of both desirable and undesirable.', null, null, 'published')
+        'Non-attachment, non-identification of self with son, wife, home, and the rest, and constant even-mindedness in the occurrence of the desirable and the un-undesirable;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -12988,7 +12987,7 @@ values ((select id from verses where ref='13.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Unswerving devotion to Me through the Yoga of non-separation, resorting to solitary places, and a distaste for the company of people.', null, null, 'published')
+        'Unswerving devotion to Me by the Yoga of non-separation, resort to sequestered places, distaste for the society of men;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13037,7 +13036,7 @@ values ((select id from verses where ref='13.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Constancy in Self-knowledge, the perception of the end of true knowledge—this is declared to be knowledge, and what is opposed to it is ignorance.', null, null, 'published')
+        'Constant application to spiritual knowledge, understanding of the end of true knowledge: this is declared to be knowledge, and what is opposed to it is ignorance.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13090,7 +13089,7 @@ values ((select id from verses where ref='13.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I will declare that which is to be known, knowing which one attains immortality; the beginningless Supreme Brahman, which is neither being nor non-being.', null, null, 'published')
+        'I shall describe that which has to be known, knowing which one attains to immortality, the beginningless Supreme Brahman. It is called neither being nor non-being.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13146,7 +13145,7 @@ values ((select id from verses where ref='13.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With hands and feet everywhere, with eyes, heads, and mouths everywhere, with ears everywhere, He exists in the worlds, enveloping all.', null, null, 'published')
+        'With hands and feet everywhere, with eyes, heads and mouths everywhere, with ears everywhere in the universe,—That exists pervading all.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13199,7 +13198,7 @@ values ((select id from verses where ref='13.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Shining by the functions of all the senses, yet without being attached to them; unattached, yet supporting all; devoid of qualities, yet the experiencer of them.', null, null, 'published')
+        'Shining by the functions of all the senses, yet without the senses; Absolute, yet sustaining all; devoid of Gunas, yet their experiencer.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13252,7 +13251,7 @@ values ((select id from verses where ref='13.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'It is within and without all beings, both the unmoving and the moving; It is subtle and unknowable, and It is near and far away.', null, null, 'published')
+        'Without and within (all) beings; the unmoving and also the moving; because of Its subtlety incomprehensible; It is far and near.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13307,7 +13306,7 @@ values ((select id from verses where ref='13.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Undivided yet, It exists as if divided in beings; It is to be known as the supporter of beings; It devours and It generates.', null, null, 'published')
+        'Impartible, yet It exists as if divided in beings: It is to be known as sustaining beings; and devouring, as well as generating (them).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13360,7 +13359,7 @@ values ((select id from verses where ref='13.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That Light of all lights is said to be beyond darkness: knowledge, the knowable, and the goal of knowledge, seated in the hearts of all.', null, null, 'published')
+        'The Light even of lights, It is said to be beyond darkness; Knowledge, and the One Thing to be known, the Goal of'' knowledge, dwelling in the hearts of all.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13412,7 +13411,7 @@ values ((select id from verses where ref='13.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, the field, as well as knowledge and the knowable, have been briefly stated. My devotee, knowing this, enters into My being.', null, null, 'published')
+        'Thus Kshetra, knowledge, and that which has to be known, have been briefly stated. Knowing this, My devotee is fitted for My state.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13464,7 +13463,7 @@ values ((select id from verses where ref='13.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know that Nature (matter) and the Spirit are both beginningless, and know also that all modifications and qualities are born from Nature.', null, null, 'published')
+        'Know thou that Prakriti and Purusha are both beginningless; and know thou also that all modifications and Gunas are born of Prakriti.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13519,7 +13518,7 @@ values ((select id from verses where ref='13.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In the production of the effect and the cause, Nature (matter) is said to be the cause; in the experience of pleasure and pain, the soul is said to be the one responsible.', null, null, 'published')
+        'In the production of the body and the senses, Prakriti is said to be the cause; in the experience of pleasure and pain, Purusha is said to be the cause.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13569,7 +13568,7 @@ values ((select id from verses where ref='13.21' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The soul seated in Nature experiences the qualities born of Nature; attachment to the qualities is the cause of its birth in good and evil wombs.', null, null, 'published')
+        'Purusha seated in Prakriti, experiences the Gunas born of Prakriti; the reason of his birth in good and evil wombs is his attachment to the Gunas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13619,7 +13618,7 @@ values ((select id from verses where ref='13.22' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Supreme Soul in this body is also called the observer, the permitter, the sustainer, the enjoyer, the great Lord, and the Supreme Self.', null, null, 'published')
+        'And the Supreme Purusha in this body is also called the Looker-on, the Permitter, the Supporter, the Experiencer, the Great Lord, and the Highest Self.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13671,7 +13670,7 @@ values ((select id from verses where ref='13.23' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who thus knows the Spirit and Matter together with their qualities, in whatever condition he may be, he is not reborn.', null, null, 'published')
+        'He who thus knows the Purusha and Prakriti together with the Gunas, whatever his life, is not born again.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13725,7 +13724,7 @@ values ((select id from verses where ref='13.24' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Some behold the Self within themselves through meditation, others through the Yoga of knowledge, and still others through the Yoga of action.', null, null, 'published')
+        'Some by meditation behold the Self in their own intelligence by the purified heart, others by the path of knowledge, others again by Karma Yoga.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13776,7 +13775,7 @@ values ((select id from verses where ref='13.25' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Others, too, who do not know thus, worship, having heard of It from others; they, too, cross beyond death, regarding what they have heard as the supreme refuge.', null, null, 'published')
+        'Others again not knowing thus, worship as they have heard from others. Even these go beyond death, regarding what they have heard as the Supreme Refuge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13829,7 +13828,7 @@ values ((select id from verses where ref='13.26' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Wherever a being is born, whether unmoving or moving, know thou, O best of the Bharatas (Arjuna), that it is from the union of the field and its knower.', null, null, 'published')
+        'Whatever being is born, the moving or the unmoving, O bull of the Bhâratas, know it to be from the union of Kshetra and Kshetrajna.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13880,7 +13879,7 @@ values ((select id from verses where ref='13.27' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who sees the Supreme Lord existing truly in all beings, the imperishable within the perishable, sees indeed.', null, null, 'published')
+        'He sees, who sees the Lord Supreme, existing equally in all beings, deathless in the dying.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13930,7 +13929,7 @@ values ((select id from verses where ref='13.28' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For he who truly sees the same Lord dwelling everywhere does not destroy the Self by the self; rather, he attains the highest goal.', null, null, 'published')
+        'Since seeing the Lord equally existent everywhere, he injures not Self by self, and so goes to the highest Goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -13983,7 +13982,7 @@ values ((select id from verses where ref='13.29' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He sees, who sees that all actions are performed solely by Nature and that the Self is without action.', null, null, 'published')
+        'He sees, who sees that all actions are done by Prakriti alone and that the Self is actionless.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14035,7 +14034,7 @@ values ((select id from verses where ref='13.30' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When a person sees all beings as resting in the One and emanating from the One alone, they then become Brahman.', null, null, 'published')
+        'When he sees the separate existence of all beings inherent in the One, and their expansion from That (One) alone, he then becomes Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14086,7 +14085,7 @@ values ((select id from verses where ref='13.31' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Being without beginning, devoid of any qualities, the Supreme Self, imperishable, though dwelling in the body, O Arjuna, neither acts nor is tainted.', null, null, 'published')
+        'Being without beginning and devoid of Gunas, this Supreme Self, immutable, O son of Kunti, though existing in the body neither acts nor is affected.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14138,7 +14137,7 @@ values ((select id from verses where ref='13.32' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As the all-pervading ether is not tainted, due to its subtlety, so the Self seated everywhere in the body is not tainted either.', null, null, 'published')
+        'As the all-pervading Akâsha, because of its subtlety, is not tainted, so the Self existent in the body everywhere is not tainted.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14190,7 +14189,7 @@ values ((select id from verses where ref='13.33' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Just as the one sun illuminates the entire world, so too does the Lord of the field (Supreme Self) illuminate the entire field, O Arjuna.', null, null, 'published')
+        'As the one sun illumines all this world, so does He who abides in the Kshetra, O descendant of Bharata, illumine the whole Kshetra.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14242,7 +14241,7 @@ values ((select id from verses where ref='13.34' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They who, by the eye of knowledge, perceive the distinction between the field and its knower, as well as the liberation from the Nature of being, go to the Supreme.', null, null, 'published')
+        'They who thus with the eye of knowledge perceive the distinction between the Kshetra and the Kshetrajna, and also the emancipation from the Prakriti of beings, they go to the Supreme.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='13.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14304,7 +14303,7 @@ values ((select id from verses where ref='14.1' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "I will again declare to thee that supreme knowledge, the best of all knowledge, having known which all the sages have gone to supreme perfection after this life."', null, null, 'published')
+        'Again shall I tell thee that supreme knowledge which is above all knowledge, having known which all the Munis have attained to high perfection after this life.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14357,7 +14356,7 @@ values ((select id from verses where ref='14.2' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who, having taken refuge in this knowledge, have attained unity with Me, are neither born at the time of creation nor disturbed at the time of dissolution.', null, null, 'published')
+        'They who having devoted themselves to this knowledge, have attained to My Being, are neither born at the time of creation, nor are they troubled at the time of dissolution.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14409,7 +14408,7 @@ values ((select id from verses where ref='14.3' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'My womb is the great Brahma; in it I place the germ; thence, O Arjuna, is the birth of all beings.', null, null, 'published')
+        'My womb is the great Prakriti; in that I place the germ; from thence, O descendant of Bharata, is the birth of all beings.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14460,7 +14459,7 @@ values ((select id from verses where ref='14.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever forms are produced, O Arjuna, in any womb whatsoever, the great Brahma is their womb, and I am the seed-giving father.', null, null, 'published')
+        'Whatever forms are produced, O son of Kunti, in all the wombs, the great Prakriti is their womb, and I the seed-giving Father.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14511,7 +14510,7 @@ values ((select id from verses where ref='14.5' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'These qualities, O Arjuna, born of Nature, bind fast in the body of the embodied, the indestructible: purity, passion, and inertia.', null, null, 'published')
+        'Sattva, Rajas, and Tamas,—these Gunas, O mighty-armed, born of Prakriti, bind fast in the body the indestructible embodied one.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14562,7 +14561,7 @@ values ((select id from verses where ref='14.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Of these, sattva, which is luminous and healthy due to its stainlessness, binds one by attachment to happiness and knowledge, O sinless one.', null, null, 'published')
+        'Of these Sattva, from its stainlessness luminous and free from evil, binds, O sinless one, by attachment to happiness, and by attachment to knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14613,7 +14612,7 @@ values ((select id from verses where ref='14.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know, O Arjuna, that Rajas is of the nature of passion, the source of thirst and attachment; it binds fast the embodied one by attachment to action.', null, null, 'published')
+        'Know Rajas to be of the nature of passion, giving rise to thirst and attachment; it binds fast, O son of Kunti, the embodied one, by attachment to action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14663,7 +14662,7 @@ values ((select id from verses where ref='14.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But know thou Tamas to be born of ignorance, deluding all embodied beings; it binds fast, O Arjuna, through heedlessness, indolence, and sleep.', null, null, 'published')
+        'And know Tamas to be born of ignorance, stupefying all embodied beings; it binds fast, O descendant of Bharata, by miscomprehension, indolence, and sleep.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14714,7 +14713,7 @@ values ((select id from verses where ref='14.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sattva attaches to happiness, Rajas to action, O Arjuna, while Tamas, verily shrouding knowledge, attaches to heedlessness.', null, null, 'published')
+        'Sattva attaches to happiness, and Rajas to action, O descendant of Bharata; while Tamas, verily, shrouding discrimination, attaches to miscomprehension.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14766,7 +14765,7 @@ values ((select id from verses where ref='14.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Now, O Arjuna, Sattva prevails, having overpowered Rajas and Tamas; then Rajas, having overpowered Sattva and Tamas; and then Tamas, having overpowered Sattva and Rajas.', null, null, 'published')
+        'Sattva arises, O descendant of Bharata, predominating over Rajas and ''Tamas; and Rajas over Sattva and Tamas; so, Tamas over Sattva and Rajas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14821,7 +14820,7 @@ values ((select id from verses where ref='14.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When the wisdom-light shines through every gate of this body, then it may be known that Sattva is predominant.', null, null, 'published')
+        'When through every sense in this body, the light of intelligence shines, then it should be known that Sattva is predominant.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14874,7 +14873,7 @@ values ((select id from verses where ref='14.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Greed, activity, the undertaking of actions, restlessness, and longing—these arise when Rajas is predominant, O Arjuna.', null, null, 'published')
+        'Greed, activity, the undertaking of actions, unrest, longing—these arise when Rajas is predominant, O bull of the: Bhâratas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14924,7 +14923,7 @@ values ((select id from verses where ref='14.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Darkness, inertia, carelessness, and delusion—these arise when Tamas is predominant, O Arjuna.', null, null, 'published')
+        'Darkness, inertness, miscomprehension, and delusion,—these arise when Tamas is predominant, O descendant of Kuru.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -14975,7 +14974,7 @@ values ((select id from verses where ref='14.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If the embodied one meets death when Sattva is predominant, then they attain the spotless worlds of the knowers of the Highest.', null, null, 'published')
+        'If the embodied one meets death when Sattva is predominant, then he attains to the spotless regions of the worshippers of the Highest.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15026,7 +15025,7 @@ values ((select id from verses where ref='14.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Meeting death in Rajas, he is born among those who are attached to action; and dying in Tamas, he is born in the womb of the thoughtless.', null, null, 'published')
+        'Meeting death in Rajas he is born among those attached to action; so dying in Tamas, he is born in the wombs of the irrational.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15075,7 +15074,7 @@ values ((select id from verses where ref='14.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They say that the fruit of good action is Sattvic and pure; indeed, the fruit of Rajas is pain, and the fruit of Tamas is ignorance.', null, null, 'published')
+        'The fruit of good action, they say, is Sâttvika and pure; verily, the fruit of Rajas is pain, and ignorance is the fruit of Tamas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15127,7 +15126,7 @@ values ((select id from verses where ref='14.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'From Sattva arises knowledge, and greed from Rajas; heedlessness and delusion arise from Tamas, and also ignorance.', null, null, 'published')
+        'From Sattva arises wisdom, and greed from Rajas; miscomprehension, delusion and ignorance arise from Tamas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15180,7 +15179,7 @@ values ((select id from verses where ref='14.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those seated in Sattva ascend; those of Rajasic nature dwell in the middle; and those of Tamasic nature, abiding in the function of the lowest Guna, descend.', null, null, 'published')
+        'The Sattva-abiding go upwards; the Râjasika dwell in the middle; and the Tâmasika, abiding in the function. of the lowest Guna, go downwards.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15231,7 +15230,7 @@ values ((select id from verses where ref='14.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When the seer beholds no agent other than the Gunas and knows that which is higher than them, he attains to My Being.', null, null, 'published')
+        'When the seer beholds no agent other than the Gunas and knows That which is higher than the Gunas, he attains to My being.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15284,7 +15283,7 @@ values ((select id from verses where ref='14.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The embodied one, having crossed beyond these three Gunas from which the body is evolved, is freed from birth, death, decay, and pain, and attains immortality.', null, null, 'published')
+        'The embodied one having gone beyond these three Gunas out of which the body is evolved, is freed from birth, death, decay and pain, and attains to immortality.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15337,7 +15336,7 @@ values ((select id from verses where ref='14.21' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "What are the marks of one who has transcended the three qualities, O Lord? What is their conduct, and how do they go beyond these three qualities?"', null, null, 'published')
+        'By what marks, O Lord, is he (known) who has gone beyond these three Gunas? What is his conduct, and how does he pass beyond these three Gunas?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15393,7 +15392,7 @@ values ((select id from verses where ref='14.22' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "When light, activity, and delusion are present, he does not hate them, nor does he long for them when they are absent.', null, null, 'published')
+        'He who hates not the appearance of light, (the effect of Sattva), activity (the effect of Rajas), and delusion (the effect of Tamas), (in his own mind), O Pândava, nor longs for them when absent;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15446,7 +15445,7 @@ values ((select id from verses where ref='14.23' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, seated like one unconcerned, is not moved by the dualities, and who, knowing that the dualities are active, is self-centered and does not move.', null, null, 'published')
+        'He who, sitting like one unconcerned, is moved not by the Gunas, who, knowing that the Gunas operate, is Self-centred and swerves not;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15498,7 +15497,7 @@ values ((select id from verses where ref='14.24' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Who is the same in pleasure and pain, who dwells in the Self, to whom a clod of earth, a stone, and gold are all alike, who is the same to the dear and the unfriendly, who is firm, and to whom censure and praise are one and the same.', null, null, 'published')
+        'Alike in pleasure and pain, Self-abiding, regarding a clod of earth, a stone and gold alike; the same to agreeable and disagreeable, firm, the same in censure and, praise;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15552,7 +15551,7 @@ values ((select id from verses where ref='14.25' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Who is the same in honor and dishonor, the same to friend and foe, abandoning all undertakings, he is said to have transcended the dualities.', null, null, 'published')
+        'The same in honour and disgrace, the same to friend and foe, relinquishing all undertakings—he is said to have gone beyond the Gunas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15604,7 +15603,7 @@ values ((select id from verses where ref='14.26' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And he who serves Me with unwavering devotion, he, crossing beyond the dualities, is fit for becoming Brahman.', null, null, 'published')
+        'And he who serves Me with an unswerving devotion, he, going beyond the Gunas, is fitted for becoming Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15655,7 +15654,7 @@ values ((select id from verses where ref='14.27' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For I am the abode of Brahman, the immortal, immutable, and everlasting Dharma, and absolute bliss.', null, null, 'published')
+        'For I am the abode of Brahman, the Immortal and Immutable, of everlasting Dharma and of Absolute Bliss.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='14.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15717,7 +15716,7 @@ values ((select id from verses where ref='15.1' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said: They (the wise) speak of the indestructible peepul tree, with its roots above and branches below, whose leaves are the meters or hymns; he who knows it is a knower of the Vedas.', null, null, 'published')
+        'They speak of an eternal Ashvattha rooted above and branching below, whose leaves are the Vedas; he who knows it, is a Veda-knower.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15771,7 +15770,7 @@ values ((select id from verses where ref='15.2' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Its branches spread below and above, nourished by the Gunas; its buds are sense-objects, and its roots stretch forth below in the world of men, originating action.', null, null, 'published')
+        'Below and above spread its branches, nourished by the Gunas; sense-objects are its buds; and below in the world of man stretch forth the roots, originating action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15827,7 +15826,7 @@ values ((select id from verses where ref='15.3' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Its form is not perceived here as such, nor its end, origin, foundation, or resting place; having cut asunder this firmly rooted peepul tree with the strong axe of non-attachment.', null, null, 'published')
+        'Its form is not here perceived as such, neither its end, nor its origin, nor its existence. Having cut asunder this firm-rooted Ashvattha with the strong axe of non-attachment,—then that Goal is to be sought for, going whither they (the wise) do not return again. I seek refuge in that Primeval Purusha whence streamed forth the Eternal Activity.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15886,7 +15885,7 @@ values ((select id from verses where ref='15.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then, that goal should be sought for, to which, having gone, none returns again. I seek refuge in that Primeval Purusha, from whence streamed forth the ancient activity or energy.', null, null, 'published')
+        'Its form is not here perceived as such, neither its end, nor its origin, nor its existence. Having cut asunder this firm-rooted Ashvattha with the strong axe of non-attachment,—then that Goal is to be sought for, going whither they (the wise) do not return again. I seek refuge in that Primeval Purusha whence streamed forth the Eternal Activity.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -15944,7 +15943,7 @@ values ((select id from verses where ref='15.5' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Free from pride and delusion, victorious over the evil of attachment, dwelling constantly in the Self, their desires having completely turned away, freed from the pairs of opposites known as pleasure and pain, they, the undeluded, reach the eternal goal.', null, null, 'published')
+        'Free from pride and delusion, with the evil of attachment conquered, ever dwelling in the Self, with desires completely receded, liberated from the pairs of opposites known as pleasure and pain, the undeluded reach that Goal Eternal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16001,7 +16000,7 @@ values ((select id from verses where ref='15.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Neither does the sun illuminate there, nor the moon, nor the fire; having gone there, they do not return; that is My supreme abode.', null, null, 'published')
+        'That the sun illumines not, nor the moon, nor fire; that is My Supreme Abode, going whither they return not.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16056,7 +16055,7 @@ values ((select id from verses where ref='15.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'An eternal portion of Myself having become a living soul in the world of life, draws to itself the five senses, with the mind as the sixth, abiding in Nature.', null, null, 'published')
+        'An eternal portion of Myself having become a living soul in the world of life, draws (to itself) the (five) senses with mind for the sixth, abiding in Prakriti.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16106,7 +16105,7 @@ values ((select id from verses where ref='15.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When the Lord, as the individual soul, obtains a body and when He leaves it, He takes these with Him, just as the wind takes the scents from their seats (flowers, etc.).', null, null, 'published')
+        'When the Lord obtains a body and when He leaves it, He takes these and goes, as the wind takes the scents from their seats (the flowers).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16159,7 +16158,7 @@ values ((select id from verses where ref='15.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Presiding over the ears, eyes, touch, taste, smell, and mind, it enjoys the objects of the senses.', null, null, 'published')
+        'Presiding over the ear, the eye, the touch, the taste and the smell, as also the mind, He experiences objects.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16212,7 +16211,7 @@ values ((select id from verses where ref='15.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The deluded do not see Him who departs, stays, and enjoys; but those who possess the eye of knowledge behold Him.', null, null, 'published')
+        'Him while transmigrating from one body to another, or residing (in the same) or experiencing, or when united with the Gunas,—the deluded do not see; but those who have the eye of wisdom behold Him.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16262,7 +16261,7 @@ values ((select id from verses where ref='15.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The yogis striving for perfection behold Him dwelling in the Self; but, the unrefined and unintelligent, even though striving, do not see Him.', null, null, 'published')
+        'The Yogis striving (for perfection) behold Him dwelling in themselves; but the unrefined and unintelligent, even though striving, see Him not.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16315,7 +16314,7 @@ values ((select id from verses where ref='15.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That light which resides in the sun, illuminating the whole world; that which is in the moon and in the fire—know that light to be Mine.', null, null, 'published')
+        'The light which, residing in the sun illumines the whole world, that which is in the moon and in the fire—know that light to be Mine.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16369,7 +16368,7 @@ values ((select id from verses where ref='15.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Permeating the earth, I support all beings with My energy; and having become the watery moon, I nourish all herbs.', null, null, 'published')
+        'Entering the earth with My energy, I support all beings, and I nourish all the herbs, becoming the watery moon.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16422,7 +16421,7 @@ values ((select id from verses where ref='15.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having become the fire Vaisvanara, I abide in the bodies of living beings and, associated with the Prana and the Apana, digest the fourfold food.', null, null, 'published')
+        'Abiding in the body of living beings as (the fire) Vaishvânara, I, associated with Prâna and Apâna, digest the fourfold food.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16472,7 +16471,7 @@ values ((select id from verses where ref='15.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And I am seated in the hearts of all; from Me come memory and knowledge, as well as their absence. I am verily That which has to be known by all the Vedas; I am indeed the author of the Vedanta and the knower of the Vedas.', null, null, 'published')
+        'I am centred in the hearts of all; memory and perception as well as their loss come from Me. I am verily that which has to be known by all the Vedas, I indeed am the Author of the Vedânta, and the Knower of the Veda am I.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16532,7 +16531,7 @@ values ((select id from verses where ref='15.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Two Purushas there are in this world: the perishable and the imperishable. All beings are perishable, and the Kutastha—the unchanging—is called the imperishable.', null, null, 'published')
+        'There are two Purushas in the world,—the Perishable and the Imperishable. All beings are the Perishable; and the Kutastha is called Imperishable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16586,7 +16585,7 @@ values ((select id from verses where ref='15.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But distinct is the Supreme Purusha, called the highest Self, indestructible and Lord, who pervades the three worlds and sustains them.', null, null, 'published')
+        'But (there is) another, the Supreme Purusha, called the Highest Self, the immutable Lord, who pervading the three worlds, sustains them.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16638,7 +16637,7 @@ values ((select id from verses where ref='15.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As I transcend the perishable and am even higher than the imperishable, I am declared to be the highest Purusha in the world and in the Vedas.', null, null, 'published')
+        'As I transcend the Perishable and am above even the Imperishable, therefore am I in the world and in the Veda celebrated as the Purushottama, (the Highest Purusha).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16692,7 +16691,7 @@ values ((select id from verses where ref='15.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, undeluded, knows Me as the highest Purusha, he, knowing all, worships Me with his whole being (heart), O Arjuna.', null, null, 'published')
+        'He who free from delusion thus knows Me, the Highest Spirit, he knowing all, worships Me with all his heart, O descendant of Bharata.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16743,7 +16742,7 @@ values ((select id from verses where ref='15.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, I have imparted to you this most secret science, O sinless one; by knowing this, one becomes wise, and all their duties are accomplished, O Arjuna.', null, null, 'published')
+        'Thus, O sinless one, has this most profound teaching been imparted by Me. Knowing this one attains the highest intelligence and will have accomplished all one''s duties, O descendant of Bharata.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='15.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16814,7 +16813,7 @@ dānaṃ damaśca yajñaśca svādhyāyastapa ārjavam||16.1||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said: Fearlessness, purity of heart, steadfastness in knowledge and yoga, almsgiving, control of the senses, sacrifice, study of scriptures, austerity, and straightforwardness.', null, null, 'published')
+        'Fearlessness, purity of heart, steadfastness in knowledge and Yoga; almsgiving, control of the senses, Yajna, reading of the Shâstras, austerity, uprightness;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16887,7 +16886,7 @@ values ((select id from verses where ref='16.2' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Harmlessness, truth, absence of anger, renunciation, peacefulness, absence of crookedness, compassion for beings, non-covetousness, gentleness, modesty, and absence of fickleness.', null, null, 'published')
+        'Non-injury, truth, absence of anger, renunciation, tranquillity, absence of calumny, compassion to beings, un-covetousness, gentleness, modesty, absence of fickleness;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -16942,7 +16941,7 @@ bhavanti sampadaṃ daivīmabhijātasya bhārata||16.3||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Vigor, forgiveness, fortitude, purity, absence of hatred, absence of pride—these belong to one born for a divine state, O Arjuna.', null, null, 'published')
+        'Boldness, forgiveness, fortitude, purity, absence of hatred, absence of pride; these belong to one born for a divine state, O descendant of Bharata.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17003,7 +17002,7 @@ values ((select id from verses where ref='16.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Hypocrisy, arrogance, and self-conceit, anger, harshness, and ignorance—these belong to one who is born for a demoniacal state, O Partha.', null, null, 'published')
+        'Ostentation, arrogance and self-conceit, anger as also harshness and ignorance, belong to one who is born, O Pârtha, for an Asurika state.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17056,7 +17055,7 @@ values ((select id from verses where ref='16.5' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The divine nature is deemed conducive to liberation, and the demonic to bondage. Grieve not, O Arjuna, for you are born with divine endowments.', null, null, 'published')
+        'The divine state is deemed to make for liberation, the Asurika for bondage; grieve not, O Pândava, thou art born for a divine state.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17108,7 +17107,7 @@ values ((select id from verses where ref='16.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There are two types of beings in this world: the divine and the demoniacal. The divine has been described at length; hear from Me, O Arjuna, about the demoniacal.', null, null, 'published')
+        'There are two types of beings in this world, the divine and the Asurika. The divine have been described at length; hear from Me, O Pârtha, of the Asurika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17162,7 +17161,7 @@ values ((select id from verses where ref='16.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The demoniacal do not know what to do and what to refrain from; they have neither purity, nor right conduct, nor truth.', null, null, 'published')
+        'The persons of Asurika nature know not what to do and what to refrain from; neither is purity found in them nor good conduct, nor truth.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17219,7 +17218,7 @@ values ((select id from verses where ref='16.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They say, "This universe is without truth, without a moral basis, without a God, brought about by mutual union, with lust as its cause; what else?"', null, null, 'published')
+        'They say, "The universe is without truth, without a (moral) basis, without a God, brought about by mutual union, with lust for its cause; what else?"', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17269,7 +17268,7 @@ values ((select id from verses where ref='16.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Holding this view, these ruined souls of small intellect and fierce deeds come forth as enemies of the world, intent on its destruction.', null, null, 'published')
+        'Holding this view, these ruined souls of small intellect and fierce deeds, rise as the enemies of the world for its destruction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17320,7 +17319,7 @@ values ((select id from verses where ref='16.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Filled with insatiable desires, full of hypocrisy, pride, and arrogance, holding evil ideas due to delusion, they work with impure intentions.', null, null, 'published')
+        'Filled with insatiable desires, full of hypocrisy, pride and arrogance, holding evil ideas through delusion, they work with impure resolve.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17371,7 +17370,7 @@ values ((select id from verses where ref='16.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Giving themselves over to immeasurable cares that end only with death, regarding the gratification of lust as their highest aim, and feeling sure that that is all.', null, null, 'published')
+        'Beset with immense cares ending only with death, regarding gratification of lust as the highest, and feeling sure that that is all;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17420,7 +17419,7 @@ values ((select id from verses where ref='16.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Bound by a hundred ties of hope, given over to lust and anger, they strive to obtain hoards of wealth by unlawful means for sensual enjoyment.', null, null, 'published')
+        'Bound by a hundred ties of hope, given over to lust and wrath, they strive to secure by unjust means hoards of wealth for sensual enjoyment.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17472,7 +17471,7 @@ values ((select id from verses where ref='16.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        '"I have gained this today; I will fulfill this desire of mine; this is mine, and this wealth will be mine in the future."', null, null, 'published')
+        '"This to-day has been gained by me; this desire I shall obtain; this is mine, and this wealth also shall be mine in future.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17526,7 +17525,7 @@ values ((select id from verses where ref='16.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        '"I have slain that enemy, and I shall slay others too. I am the Lord; I enjoy, I am perfect, powerful, and happy."', null, null, 'published')
+        '"That enemy has been slain by me, and others also shall I slay. I am the lord, I enjoy, I am successful, powerful and happy.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17581,7 +17580,7 @@ values ((select id from verses where ref='16.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        '"I am wealthy and born into a noble family. Who is my equal? I shall perform sacrifices, give charity, and rejoice," thus deluded by ignorance.', null, null, 'published')
+        '"I am rich and well-born. Who else is equal to me? I will sacrifice, I will give, I will rejoice." Thus deluded by ignorance,', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17645,7 +17644,7 @@ values ((select id from verses where ref='16.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Bewildered by many fancies, entangled in the snare of delusion, addicted to the gratification of lust, they fall into a foul hell.', null, null, 'published')
+        'Bewildered by many a fancy, covered by the meshes of delusion, addicted to the gratification of lust, they fall down into a foul hell.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17695,7 +17694,7 @@ values ((select id from verses where ref='16.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Self-conceited, stubborn, filled with pride and intoxication of wealth, they perform sacrifices in name only for ostentation, contrary to scriptural ordinances.', null, null, 'published')
+        'Self-conceited, haughty, filled with the pride and intoxication of wealth, they perform sacrifices in name, out of ostentation, disregarding ordinance;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17746,7 +17745,7 @@ values ((select id from verses where ref='16.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Given over to egoism, power, haughtiness, lust, and anger, these malicious people hate Me in their own bodies and in the bodies of others.', null, null, 'published')
+        'Possessed of egoism, power, insolence, lust and wrath, these malignant people hate Me (the Self within) in their own bodies and those of others.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17796,7 +17795,7 @@ values ((select id from verses where ref='16.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those cruel haters, the worst among men in the world, I hurl those evil-doers into the wombs of demons only.', null, null, 'published')
+        'These malicious and cruel evildoers, most degraded of men, I hurl perpetually into the wombs of Asuras only, in these worlds.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17847,7 +17846,7 @@ values ((select id from verses where ref='16.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Entering into demoniacal wombs and deluded, birth after birth, they do not attain Me, thus falling, O Arjuna, into a condition still lower than that.', null, null, 'published')
+        'Obtaining the Asurika wombs, and deluded birth after birth, not attaining to Me, they thus fall, O son of Kunti, into a still lower condition.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17899,7 +17898,7 @@ values ((select id from verses where ref='16.21' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There are three gates to this hell, destructive of the self: lust, anger, and greed; therefore, one should abandon these three.', null, null, 'published')
+        'Triple is this gate of hell, destructive of the self,—lust, anger and greed; therefore one should forsake these three.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -17952,7 +17951,7 @@ values ((select id from verses where ref='16.22' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'A person who is liberated from these three gates of darkness, O Arjuna, practices what is beneficial for them and thus goes to the Supreme Goal.', null, null, 'published')
+        'The man who has got beyond these three gates of darkness, O son of Kunti, practises what is good for himself, and thus goes to the Goal Supreme.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18004,7 +18003,7 @@ values ((select id from verses where ref='16.23' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, having cast aside the ordinances of the scriptures, acts under the impulse of desire, does not attain perfection, nor happiness, nor the Supreme Goal.', null, null, 'published')
+        'He who, setting aside the ordinance of the Shâstra, acts under the impulse of desire, attains not to perfection, nor happiness, nor the Goal Supreme.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18057,7 +18056,7 @@ values ((select id from verses where ref='16.24' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, let the scripture be thy authority in determining what ought to be done and what ought not to be done. Having known what is said in the ordinance of the scriptures, thou shouldst act in this world.', null, null, 'published')
+        'So let the Shâstra be thy authority in ascertaining what ought to be done and what ought not to be done. Having known what is said in the ordinance of the Shâstra, thou shouldst act here.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='16.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18121,7 +18120,7 @@ values ((select id from verses where ref='17.1' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "What is the condition of those who, disregarding the injunctions of the scriptures, perform sacrifice with faith—is it Sattva, Rajas, or Tamas, O Krishna?"', null, null, 'published')
+        'Those who setting aside the ordinance of the Shâstra, perform sacrifice with Shraddhâ, what is their condition, O Krishna? (Is it) Sattva, Rajas or Tamas?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18175,7 +18174,7 @@ values ((select id from verses where ref='17.2' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "There are threefold faiths inherent in the nature of the embodied: the sattvic (pure), the rajasic (passionate), and the tamasic (dark). Hear of them."', null, null, 'published')
+        'Threefold is the Shraddhâ of the embodied, which is inherent in their nature,—the Sâttvika, the Râjasika and the Tâmasika. Do thou hear of it.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18230,7 +18229,7 @@ values ((select id from verses where ref='17.3' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The faith of each is in accordance with their nature, O Arjuna. People consist of their faith; as a person''s faith is, so are they.', null, null, 'published')
+        'The Shraddhâ of each is according to his natural disposition, O descendant of Bharata. The man consists of his Shraddhâ; he verily is what his Shraddhâ is.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18282,7 +18281,7 @@ values ((select id from verses where ref='17.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The sattvic, or pure, men worship the gods; the rajasic, or passionate, worship the yakshas and rakshasas; the others, the tamasic or deluded people, worship ghosts and hosts of nature-spirits.', null, null, 'published')
+        'Sâttvika men worship the Devas; Râjasika, the Yakshas and the Râkshasas; the others—the Tâmasika men—the Pretas and the hosts of Bhutas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18333,7 +18332,7 @@ values ((select id from verses where ref='17.5' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those men who practice terrific austerities not prescribed by the scriptures, given to hypocrisy and egoism, driven by the force of lust and attachment.', null, null, 'published')
+        'Those men who practise severe austerities not enjoined by the Shâstras, given to ostentation and egoism, possessed with the power of lust and attachment, torture, senseless as they are, all the organs in the body, and Me dwelling in the body within; know them to be of Asurika resolve.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18385,7 +18384,7 @@ values ((select id from verses where ref='17.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know thou these to be of demonical resolves, senselessly torturing all the elements in the body and Me who dwell in the body.', null, null, 'published')
+        'Those men who practise severe austerities not enjoined by the Shâstras, given to ostentation and egoism, possessed with the power of lust and attachment, torture, senseless as they are, all the organs in the body, and Me dwelling in the body within; know them to be of Asurika resolve.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18436,7 +18435,7 @@ values ((select id from verses where ref='17.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The food that is dear to each is threefold, as well as sacrifice, austerity, and almsgiving. Hear the distinction of these.', null, null, 'published')
+        'The food also which is liked by each of them is threefold, as also Yajna, austerity and almsgiving. Do thou hear this, their distinction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18490,7 +18489,7 @@ values ((select id from verses where ref='17.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The foods that increase life, purity, strength, health, joy, and cheerfulness (good appetite), which are savory, oily, substantial, and agreeable, are dear to the Sattvic (pure) people.', null, null, 'published')
+        'The foods which augment vitality, energy, strength, health, cheerfulness and appetite, which are savoury and oleaginous, substantial and agreeable, are liked by the Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18541,7 +18540,7 @@ values ((select id from verses where ref='17.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The foods that are bitter, sour, salty, overly hot, pungent, dry, and burning are liked by the Rajasic and are productive of pain, grief, and disease.', null, null, 'published')
+        'The foods that are bitter, sour, saline, excessively hot, pungent, dry and burning, are liked by the Râjasika, and are productive of pain, grief and disease.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18594,7 +18593,7 @@ values ((select id from verses where ref='17.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That which is stale, tasteless, putrid, rotten, rejected, and impure is the food liked by the Tamasic.', null, null, 'published')
+        'That which is stale, tasteless, stinking, cooked overnight, refuse and impure, is the food liked by the Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18646,7 +18645,7 @@ values ((select id from verses where ref='17.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That sacrifice which is offered by men without desire for reward, as enjoined by the ordinance (scripture), with a firm faith that doing so is their duty, is Sattvic or pure.', null, null, 'published')
+        'That Yajna is Sâttvika which is performed by men desiring no fruit, as enjoined by ordinance, with their mind fixed on the Yajna only, for its own sake.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18695,7 +18694,7 @@ values ((select id from verses where ref='17.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The sacrifice that is offered, O Arjuna, seeking a reward and for show, know that to be a Rajasic Yajna.', null, null, 'published')
+        'That which is performed, O best of the Bhâratas, seeking for fruit and for ostentation, know it to be a Râjasika Yajna.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18749,7 +18748,7 @@ values ((select id from verses where ref='17.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They declare that sacrifice to be Tamasic which is contrary to the ordinances of the scriptures, in which no food is distributed, and which is devoid of mantras, gifts, and faith.', null, null, 'published')
+        'The Yajna performed without heed to ordinance, in which no food is distributed, which is devoid of Mantras, gifts, and Shraddhâ, is said to be Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18797,7 +18796,7 @@ values ((select id from verses where ref='17.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Worship of the gods, the twice-born, the teachers, and the wise; purity, straightforwardness, celibacy, and non-injury are all called the austerities of the body.', null, null, 'published')
+        'Worship of the Devas, the twice-born, the Gurus and the wise, purity, straightforwardness, continence, and non-injury are called the austerity of the body.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18849,7 +18848,7 @@ values ((select id from verses where ref='17.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Speech that causes no excitement, is truthful, pleasant, and beneficial; the practice of studying the Vedas is called austerity of speech.', null, null, 'published')
+        'Speech which causes no vexation, and is true, as also agreeable and beneficial, and regular study of the Vedas,—these are said to form the austerity of speech.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18899,7 +18898,7 @@ values ((select id from verses where ref='17.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Serenity of mind, good-heartedness, self-control, and purity of nature—this is called mental austerity.', null, null, 'published')
+        'Serenity of mind, kindliness, silence, self-control, honesty of motive,—this is called the mental austerity.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18948,7 +18947,7 @@ values ((select id from verses where ref='17.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This threefold austerity, practiced by steadfast men, with the utmost faith, desiring no reward, is called Sattvic.', null, null, 'published')
+        'This threefold austerity practised by steadfast men, with great Shraddhâ, desiring no fruit, is said to be Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -18998,7 +18997,7 @@ values ((select id from verses where ref='17.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The austerity that is practiced with the aim of gaining good reception, honor, and worship, and with hypocrisy, is said to be Rajasic, unstable, and transient.', null, null, 'published')
+        'That austerity which is practised with the object of gaining welcome, honour and worship, and with ostentation, is here said to be Râjasika, unstable and transitory.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19053,7 +19052,7 @@ values ((select id from verses where ref='17.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That austerity which is practised out of a foolish notion, with self-torture, or for the purpose of destroying another, is declared to be of the Tamasic nature.', null, null, 'published')
+        'That austerity which is practised out of a foolish notion, with self-torture or for the purpose of wining another, is declared to be Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19105,7 +19104,7 @@ values ((select id from verses where ref='17.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That gift which is given to one who does nothing in return, knowing it to be a duty to give in a suitable place and time to a worthy person, is held to be Sattvic.', null, null, 'published')
+        'To give is right, gift given with this idea, to one who does no service in return, in a fit place and to a worthy person, that gift is held to be Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19159,7 +19158,7 @@ values ((select id from verses where ref='17.21' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And, that gift which is given with the intention of receiving something in return, or expecting a reward, or begrudgingly, is considered to be Rajasic.', null, null, 'published')
+        'And what is given with a view to receiving in return, or looking for the fruit, or again reluctantly, that gift is held to be Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19212,7 +19211,7 @@ values ((select id from verses where ref='17.22' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The gift that is given in the wrong place and at the wrong time, to unworthy persons, without respect or with insult, is declared to be of a Tamasic nature.', null, null, 'published')
+        'The gift that is given at the wrong place or time, to unworthy persons, without regard or with disdain, that is declared to be Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19263,7 +19262,7 @@ values ((select id from verses where ref='17.23' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        '"Om Tat Sat": This has been declared to be the triple designation of Brahman. By that, the Brahmanas, the Vedas, and the sacrifices were created formerly.', null, null, 'published')
+        '"Om, Tat, Sat": this has been declared to be the triple designation of Brahman. By that were made of old the Brâhmanas, the Vedas and the Yajnas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19316,7 +19315,7 @@ values ((select id from verses where ref='17.24' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, with the utterance of "Om," the acts of sacrifice, gift, and austerity, as enjoined in the scriptures, are always begun by the students of Brahman.', null, null, 'published')
+        'Therefore, uttering ''Om,'' are the acts of sacrifice, gift and austerity as enjoined in the ordinances, always begun by the followers of the Vedas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19367,7 +19366,7 @@ values ((select id from verses where ref='17.25' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Uttering "Tat," without aiming for the fruits, are the acts of sacrifice, austerity, and the various acts of gifts performed by those seeking liberation.', null, null, 'published')
+        'Uttering Tat, without aiming at fruits, are the various acts of Yajna, austerity and gift performed by the seekers of Moksha.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19419,7 +19418,7 @@ values ((select id from verses where ref='17.26' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The word "Sat" is used to refer to reality and goodness; likewise, O Arjuna, the word "Sat" is used to refer to an auspicious act.', null, null, 'published')
+        'The word Sat is used in the sense of reality and of goodness; and so also, Pârtha, the word Sat is used in the sense of an auspicious act.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19471,7 +19470,7 @@ values ((select id from verses where ref='17.27' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Steadfastness in sacrifice, austerity, and gift is also called ''Sat'', and action in connection with these, or for the sake of the Supreme, is also called ''Sat''.', null, null, 'published')
+        'Steadiness in Yajna, austerity and gift is also called ''Sat'': as also action in connection with these (or, action for the sake of the Lord) is called Sat.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19527,7 +19526,7 @@ values ((select id from verses where ref='17.28' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever is sacrificed, given, or performed, and whatever austerity is practiced without faith, it is called ''Asat'', O Arjuna; it is of no value here or hereafter (after death).', null, null, 'published')
+        'Whatever is sacrificed, given or performed, and whatever austerity is practised without Shraddhâ, it is called Asat, O Pârtha; it is naught here or hereafter.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='17.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19602,7 +19601,7 @@ tyāgasya ca hṛṣīkeśa pṛthakkeśiniṣūdana||18.1||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O mighty-armed Hrishikesa, I desire to know the essence or truth of renunciation and abandonment severally, O slayer of Kesi."', null, null, 'published')
+        'I desire to know severally, O mighty-armed, the truth of Sannyâsa, O Hrishikesha, as also of Tyâga, O slayer of Keshi.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19680,7 +19679,7 @@ sarvakarmaphalatyāgaṃ prāhustyāgaṃ vicakṣaṇāḥ||18.2||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "The sages understand sannyasa to be the renunciation of action with desire; the wise declare the abandonment of the fruits of all actions to be tyaga."', null, null, 'published')
+        'The renunciation of Kâmya actions, the sages understand as. Sannyâsa: the wise declare the abandonment of the fruits of all works as Tyâga.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19756,7 +19755,7 @@ yajñadānatapaḥkarma na tyājyamiti cāpare||18.3||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Some philosophers declare that actions should be abandoned as evil; while others declare that acts of sacrifice, gift, and austerity should not be relinquished.', null, null, 'published')
+        'Some philosophers declare that all action should be relinquished as an evil, whilst others (say) that the work of Yajna, gift and austerity should not be relinquished.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19821,7 +19820,7 @@ values ((select id from verses where ref='18.4' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Hear from Me the conclusion or the final truth about this abandonment, O best of the Bharatas; abandonment, indeed, O best of men, has been declared to be of three kinds.', null, null, 'published')
+        'Hear from Me the final truth about relinquishment, O best of the Bhâratas. For relinquishment has been declared to be of three kinds, O tiger among men.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19871,7 +19870,7 @@ values ((select id from verses where ref='18.5' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Acts of sacrifice, gift, and austerity should not be abandoned, but should be performed; for sacrifice, gift, and austerity are the purifiers of the wise.', null, null, 'published')
+        'The work of Yajna, gift and austerity should not be relinquished, but it should indeed be performed; (for) Yajna, gift and austerity are purifying to the wise.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19925,7 +19924,7 @@ values ((select id from verses where ref='18.6' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But even these actions should be performed, leaving aside attachment and the desire for rewards, O Arjuna; this is my certain and most assured conviction.', null, null, 'published')
+        'But even these works, O Pârtha, should be performed, leaving attachment and the fruits;—such is My best and certain conviction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -19978,7 +19977,7 @@ values ((select id from verses where ref='18.7' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, the renunciation of obligatory action is not proper; the abandonment of the same out of delusion is declared to be Tamasic.', null, null, 'published')
+        'But the renunciation of obligatory action is not proper. Abandonment of the same from delusion is declared to be Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20028,7 +20027,7 @@ values ((select id from verses where ref='18.8' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who abandons action out of fear of bodily trouble (because it is painful), does not obtain the merit of renunciation by performing such Rajasic renunciation.', null, null, 'published')
+        'He who from fear of bodily trouble relinquishes action, because it is painful, thus performing a Râjasika relinquishment, he obtains not the fruit thereof.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20085,7 +20084,7 @@ values ((select id from verses where ref='18.9' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever obligatory action is done, O Arjuna, merely because it ought to be done, abandoning attachment and also the desire for reward, that renunciation is regarded as sattvic (pure).', null, null, 'published')
+        'When obligatory work is performed, O Arjuna, only because it ought to be done, leaving attachment and fruit, such relinquishment is regarded as Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20140,7 +20139,7 @@ values ((select id from verses where ref='18.10' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The man of renunciation, pervaded by purity, intelligent, and with his doubts cut asunder, does not hate an unpleasant task nor is he attached to a pleasant one.', null, null, 'published')
+        'The relinquisher endued with Sattva and a steady understanding and with his doubts dispelled, hates not a disagreeable work nor is attached to an agreeable one.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20191,7 +20190,7 @@ values ((select id from verses where ref='18.11' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Indeed, it is not possible for an embodied being to completely abandon actions; however, he who relinquishes the rewards of actions is truly called a man of renunciation.', null, null, 'published')
+        'Actions cannot be entirely relinquished by an embodied being, but he who relinquishes the fruits of action is called a relinquisher.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20245,7 +20244,7 @@ values ((select id from verses where ref='18.12' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The threefold fruit of action (evil, good, and mixed) accrues after death to those who do not abandon it, but never to those who do.', null, null, 'published')
+        'The threefold fruit of action—disagreeable, agreeable and mixed,—accrues to non-relinquishers after death, but never to relinquishers.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20297,7 +20296,7 @@ values ((select id from verses where ref='18.13' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Learn from Me, O mighty-armed Arjuna, these five causes, as declared in the Sankhya system, for the accomplishment of all actions.', null, null, 'published')
+        'Learn from Me, O mighty-armed, these five causes for the accomplishment of all works as declared in the wisdom which is the end of all action:', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20348,7 +20347,7 @@ values ((select id from verses where ref='18.14' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The body, the doer, the various senses, the different functions of various kinds, and the presiding deity—the fifth.', null, null, 'published')
+        'The body, the agent, the various senses, the different functions of a manifold kind, and the presiding divinity, the fifth of these;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20400,7 +20399,7 @@ values ((select id from verses where ref='18.15' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever action a person performs with their body, speech, and mind, whether right or wrong, these five are its causes.', null, null, 'published')
+        'Whatever action a man performs by his body, speech and mind—whether right or the reverse—these five are its causes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20452,7 +20451,7 @@ values ((select id from verses where ref='18.16' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Now, such being the case, verily he who, owing to an untrained understanding, looks upon his Self, which is isolated, as the agent, he of perverted intelligence does not see.', null, null, 'published')
+        'Such being the case, he who through a non-purified understanding looks upon his Self, the Absolute, as the agent, he of perverted mind sees not.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20504,7 +20503,7 @@ values ((select id from verses where ref='18.17' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is free from the egoistic notion, whose intelligence is not tainted by good or evil, though he slays these people, he does not slay, nor is he bound by the action.', null, null, 'published')
+        'He who is free from the notion of egoism, whose intelligence is not affected (by good or evil), though he kills these people, he kills not, nor is bound (by the action);', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20558,7 +20557,7 @@ values ((select id from verses where ref='18.18' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Knowledge, the knowable, and the knower form the threefold impulse for action; the organ, the action, and the agent form the threefold basis of action.', null, null, 'published')
+        'Knowledge, the known and the knower form the threefold cause of action. The instrument, the object and the agent are the threefold basis of action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20608,7 +20607,7 @@ values ((select id from verses where ref='18.19' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Knowledge, action, and actor are declared in the science of the Gunas (Sankhya philosophy) to be of three kinds only, according to the distinction of the Gunas. Of these, hear duly.', null, null, 'published')
+        'Knowledge, action and agent are declared in the Sânkhya philosophy to be of three kinds only, from the distinction of Gunas: hear them also duly.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20661,7 +20660,7 @@ values ((select id from verses where ref='18.20' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That by which one sees the indestructible Reality in all beings, not separate in any of them—know that knowledge to be Sattvic.', null, null, 'published')
+        'That by which the one indestructible Substance is seen in all beings, inseparate in the separated, know that knowledge to be Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20712,7 +20711,7 @@ values ((select id from verses where ref='18.21' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But that knowledge which sees in all beings various entities of distinct kinds as being distinct from one another, know thou that knowledge to be Rajasic.', null, null, 'published')
+        'But that knowledge which sees in all beings various entities of distinct kinds as different from one another, know thou that knowledge as Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20764,7 +20763,7 @@ values ((select id from verses where ref='18.22' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But that which clings to one single effect as if it were the whole, without reason, without any foundation in Truth, and is trivial—that is declared to be Tamasic.', null, null, 'published')
+        'Whilst that which is confined to one single effect as if it were the whole, without reason, without foundation in truth, and trivial,—that is declared to be Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20816,7 +20815,7 @@ values ((select id from verses where ref='18.23' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'An action that is ordained, free from attachment, done without love or hatred, and without desire for reward is declared to be Sattvic.', null, null, 'published')
+        'An ordained action done without love or hatred by one not desirous of the fruit and free from attachment, is declared to be Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20865,7 +20864,7 @@ values ((select id from verses where ref='18.24' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But that action which is done by one longing for the fulfillment of desires or gain with egotism or with much effort is declared to be Rajasic (passionate).', null, null, 'published')
+        'But the action which is performed desiring desires, or with self-conceit and with much effort, is declared to be Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20916,7 +20915,7 @@ values ((select id from verses where ref='18.25' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That action which is undertaken from delusion, without regard for the consequences, loss, injury, and one''s own ability, is declared to be Tamasic (dark).', null, null, 'published')
+        'That action is declared to be Tâmasika which is undertaken through delusion, without heed to the consequence, loss (of power and wealth), injury (to others) and (one''s own) ability.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -20968,7 +20967,7 @@ values ((select id from verses where ref='18.26' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'An agent who is free from attachment, non-egoistic, endowed with firmness and enthusiasm, and unaffected by success or failure, is considered to be of a Sattvic (pure) nature.', null, null, 'published')
+        'An agent who is free from attachment, non-egotistic, endued with fortitude and enthusiasm and unaffected in success or failure, is called Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21017,7 +21016,7 @@ values ((select id from verses where ref='18.27' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Passionate, desiring to obtain the reward of their actions, greedy, cruel, impure, moved by joy and sorrow, such an agent is said to be Rajasic.', null, null, 'published')
+        'He who is passionate, desirous of the fruits of action, greedy, malignant, impure, easily elated or dejected, such an agent is called Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21066,7 +21065,7 @@ values ((select id from verses where ref='18.28' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Unsteady, vulgar, inflexible, deceitful, malicious, lazy, despondent, and procrastinating—such an agent is called Tamasic.', null, null, 'published')
+        'Unsteady, vulgar, arrogant, dishonest, malicious, indolent, desponding and procrastinating, such an agent is called Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21117,7 +21116,7 @@ values ((select id from verses where ref='18.29' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Hear thou the threefold division of intellect and firmness, according to the Gunas, as I declare them fully and distinctly, O Arjuna.', null, null, 'published')
+        'Hear thou the triple distinction of intellect and fortitude, according to the Gunas, as I declare them exhaustively and severally, O Dhananjaya.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21167,7 +21166,7 @@ values ((select id from verses where ref='18.30' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The intellect which knows the path of work and renunciation, what should be done and what should not be done, fear and fearlessness, bondage and liberation—that intellect is Sattvic (pure), O Arjuna.', null, null, 'published')
+        'That which knows the paths of work and renunciation, right and wrong action, fear and fearlessness, bondage and liberation, that intellect, O Pârtha, is Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21223,7 +21222,7 @@ values ((select id from verses where ref='18.31' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That by which one wrongly understands dharma and adharma, and also what ought to be done and what ought not to be done—that intellect, O Arjuna, is rajasic (passionate).', null, null, 'published')
+        'That which has a distorted apprehension of Dharma and its opposite and also of right action and its opposite, that intellect, O Pârtha, is Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21277,7 +21276,7 @@ values ((select id from verses where ref='18.32' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That intellect, O Arjuna, which is enveloped in darkness and sees Adharma as Dharma and all things perverted, is Tamasic (dark).', null, null, 'published')
+        'That which enveloped in darkness regards Adharma as Dharma and views all things in a perverted light, that intellect, O Pârtha, is Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21329,7 +21328,7 @@ values ((select id from verses where ref='18.33' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The unwavering firmness, through which Yoga restrains the functions of the mind, life-force, and senses—that firmness, O Arjuna, is Sattvic (pure).', null, null, 'published')
+        'The fortitude by which the functions of the mind, the Prâna and the senses, O Pârtha, are regulated, that fortitude, unswerving through Yoga, is Sâttvika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21381,7 +21380,7 @@ values ((select id from verses where ref='18.34' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But that, O Arjuna, by which one holds fast to Dharma (duty), enjoyment of pleasures, and earning of wealth, on account of attachment and desire for reward—that firmness, O Arjuna, is Rajasic (passionate).', null, null, 'published')
+        'But the fortitude by which one regulates (one''s mind) to Dharma, desire and wealth, desirous of the fruit of each from attachment, that fortitude, O Pârtha, is Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21432,7 +21431,7 @@ values ((select id from verses where ref='18.35' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That firmness, O Arjuna, by which a stupid man does not abandon sleep, fear, grief, despair, and conceit, is Tamasic.', null, null, 'published')
+        'That by which a stupid man does not give up sleep, fear, grief, despondency and also overweening conceit, that fortitude, O Pârtha, is Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21486,7 +21485,7 @@ values ((select id from verses where ref='18.36' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And now, O Arjuna, hear from Me of the threefold pleasure, in which one rejoices through practice and surely comes to the end of pain.', null, null, 'published')
+        'And now hear from Me, O bull of the Bhâratas, of the threefold happiness. That happiness which one learns to enjoy by habit, and by which one comes to the end of pain;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21550,7 +21549,7 @@ values ((select id from verses where ref='18.37' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That which is like poison at first but in the end like nectar—that happiness is declared to be sattvic, born of the purity of one''s own mind due to self-realization.', null, null, 'published')
+        'That which is like poison at first, but like nectar at the end; that happiness is declared to be Sâttvika, born of the translucence of intellect due to Self-realisation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21603,7 +21602,7 @@ values ((select id from verses where ref='18.38' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That happiness which arises from the contact of the senses with the objects, which is initially like nectar but eventually like poison, is said to be Rajasic.', null, null, 'published')
+        'That which arises from the contact of object with sense, at first like nectar, but at the end like poison, that happiness is declared to be Râjasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21655,7 +21654,7 @@ values ((select id from verses where ref='18.39' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That happiness which at first, as well as in the end, deludes the self, and which arises from sleep, indolence, and heedlessness—that is declared to be Tamasic.', null, null, 'published')
+        'That happiness which begins and results in self-delusion, arising from sleep, indolence and miscomprehension, that is declared to be Tâmasika.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21709,7 +21708,7 @@ values ((select id from verses where ref='18.40' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There is no being on earth or in heaven among the gods that is liberated from the three qualities born of Nature.', null, null, 'published')
+        'There is no entity on earth, or again in heaven among the Devas, that is devoid of these three Gunas, born of Prakriti.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21765,7 +21764,7 @@ values ((select id from verses where ref='18.41' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Of Brahmanas, Kshatriyas, Vaisyas, and Sudras, O Arjuna, the duties are distributed according to the qualities born of their own nature.', null, null, 'published')
+        'Of Brâhmanas and Kshatriyas and Vaishyas, as also of Sudras, O scorcher of foes, the duties are distributed according to the Gunas born of their own nature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21813,7 +21812,7 @@ values ((select id from verses where ref='18.42' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Serenity, self-restraint, austerity, purity, forgiveness, and uprightness, as well as knowledge, realization, and belief in God, are the duties of Brahmanas, born of their own nature.', null, null, 'published')
+        'The control of the mind and the senses, austerity, purity, forbearance, and also uprightness, knowledge, realisation, belief in a hereafter,—these are the duties of the Brâhmanas, born of (their own) nature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21866,7 +21865,7 @@ values ((select id from verses where ref='18.43' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Prowess, splendor, firmness, dexterity, and not fleeing from battle, generosity, and lordliness are the duties of the Kshatriyas, born of their own nature.', null, null, 'published')
+        'Prowess, boldness, fortitude, dexterity, and also not flying from battle, generosity and sovereignty are the duties of the Kshatriyas, born of (their own) nature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21919,7 +21918,7 @@ values ((select id from verses where ref='18.44' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Agriculture, cattle-rearing, and trade are the duties of the Vaisya (merchant), born of their own nature; and service is the duty of the Sudra (servant-class), born of their own nature.', null, null, 'published')
+        'Agriculture, cattle-rearing and trade are the duties of the Vaishyas, born of (their own) nature; and action consisting of service is the duty of the Sudras, born of (their own) nature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -21970,7 +21969,7 @@ values ((select id from verses where ref='18.45' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Each person devoted to their own duty attains perfection. How they attain perfection while being engaged in their own duty, hear now.', null, null, 'published')
+        'Devoted each to his own duty, man attains the highest perfection. How engaged in his own duty, he attains perfection, that hear.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22022,7 +22021,7 @@ values ((select id from verses where ref='18.46' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He from whom all the beings have evolved and by whom all this is pervaded, worshipping Him with his own duty, one attains perfection.', null, null, 'published')
+        'From whom is the evolution of all beings, by whom all this is pervaded, worshipping Him with his own duty, a man attains perfection.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22074,7 +22073,7 @@ values ((select id from verses where ref='18.47' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Better is one''s own duty, even if it is destitute of merits, than the duty of another well performed. He who does the duty ordained by his own nature incurs no sin.', null, null, 'published')
+        'Better is one''s own Dharma, (though) imperfect, than the Dharma of another well-performed. He who does the duty ordained by his own nature incurs no evil.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22123,7 +22122,7 @@ values ((select id from verses where ref='18.48' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.48' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'One should not, O Arjuna, abandon the duty to which one is born, though it may be faulty; for, all undertakings are enveloped by evil, just as fire is by smoke.', null, null, 'published')
+        'One should not relinquish, O son of Kunti, the duty to which one is born, though it is attended with evil; for, all undertakings are enveloped by evil, as fire by smoke.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.48' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22175,7 +22174,7 @@ values ((select id from verses where ref='18.49' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.49' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He whose intellect is unattached everywhere, who has subdued his self, from whom desire has fled, he attains the supreme state of freedom from action through renunciation.', null, null, 'published')
+        'He whose intellect is unattached everywhere, who has subdued his heart, whose desires have fled, he attains by renunciation to the supreme perfection, consisting of freedom from action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.49' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22222,7 +22221,7 @@ values ((select id from verses where ref='18.50' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.50' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Learn from Me, O Arjuna, in brief how one who has attained perfection reaches Brahman—the Eternal, that supreme state of knowledge.', null, null, 'published')
+        'Learn from Me in brief, O son of Kunti, how reaching such perfection, he attains to Brahman, that supreme consummation of knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.50' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22276,7 +22275,7 @@ values ((select id from verses where ref='18.51' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.51' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Endowed with a pure intellect, controlling the self through firmness, relinquishing sound and other objects and abandoning attraction and hatred.', null, null, 'published')
+        'Endued with a pure intellect, subduing the body and the senses with fortitude, relinquishing sound and such other sense-objects, abandoning attraction and hatred;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.51' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22327,7 +22326,7 @@ values ((select id from verses where ref='18.52' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.52' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Dwelling in solitude, eating sparingly, with speech, body, and mind subdued, always engaged in meditation and concentration, and resorting to dispassion.', null, null, 'published')
+        'Resorting to a sequestered spot, eating but little, body, speech and mind controlled, ever engaged in meditation and concentration, possessed of dispassion;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.52' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22376,7 +22375,7 @@ values ((select id from verses where ref='18.53' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.53' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having abandoned egoism, strength, arrogance, desire, anger, and covetousness, and being free from the notion of ''mine'' and peaceful, he is fit for becoming Brahman.', null, null, 'published')
+        'Forsaking egoism, power, pride, lust, wrath and property, freed from the notion of "mine," and tranquil, he is fit for becoming Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.53' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22426,7 +22425,7 @@ values ((select id from verses where ref='18.54' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.54' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Becoming Brahman, serene in the Self, he neither grieves nor desires; he is the same to all beings, and obtains supreme devotion to Me.', null, null, 'published')
+        'Brahman-become, tranquil-minded, he neither grieves nor desires; the same to all beings, he attains to supreme devotion unto Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.54' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22477,7 +22476,7 @@ values ((select id from verses where ref='18.55' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.55' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'By devotion, he knows Me in truth, who and what I am; then, having known Me in truth, he immediately enters into the Supreme.', null, null, 'published')
+        'By devotion he knows Me in reality, what and who I am; then having known Me in reality, he forthwith enters into Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.55' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22528,7 +22527,7 @@ values ((select id from verses where ref='18.56' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.56' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having taken refuge in Me and doing all actions, by My grace he obtains the eternal, indestructible state of being.', null, null, 'published')
+        'Even doing all actions always, taking refuge in Me,—by My grace he attains to the eternal, immutable State.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.56' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22578,7 +22577,7 @@ values ((select id from verses where ref='18.57' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.57' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Mentally renouncing all actions in Me, having Me as the highest goal, and resorting to the yoga of discrimination, do thou ever fix thy mind on Me.', null, null, 'published')
+        'Resigning mentally all deeds to Me, having Me as the highest goal, resorting to Buddhi-Yoga do thou ever fix thy mind on Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.57' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22627,7 +22626,7 @@ values ((select id from verses where ref='18.58' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.58' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fixing your mind on Me, you shall, by My grace, overcome all obstacles; but if you will not hear Me due to egoism, you shall perish.', null, null, 'published')
+        'Fixing thy mind on Me, thou shalt, by My grace, overcome all obstacles; but if from self-conceit thou wilt not hear Me, thou shalt perish.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.58' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22677,7 +22676,7 @@ values ((select id from verses where ref='18.59' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.59' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'If, filled with egoism, thou thinkest, "I will not fight," then thy resolve is vain; nature will compel thee.', null, null, 'published')
+        'If filled with self-conceit thou thinkest, "I will not fight," vain is this thy resolve; thy Prakriti will constrain thee.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.59' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22728,7 +22727,7 @@ values ((select id from verses where ref='18.60' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.60' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O Arjuna, bound by your own Karma (action) born of your own nature, that which from delusion you wish not to do, even that you shall do helplessly.', null, null, 'published')
+        'Fettered, O son of Kunti, by thy own Karma, born of thy own nature, what thou, from delusion, desirest not to do, thou shalt have to do in spite of thyself.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.60' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22781,7 +22780,7 @@ values ((select id from verses where ref='18.61' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.61' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Lord dwells in the hearts of all beings, O Arjuna, causing all beings, by His illusory power, to revolve as if mounted on a machine.', null, null, 'published')
+        'The Lord, O Arjuna, dwells in the hearts of all beings, causing all beings, by His Mâyâ, to revolve, (as if) mounted on a machine.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.61' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22829,7 +22828,7 @@ values ((select id from verses where ref='18.62' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.62' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fly to Him for refuge with all your being, O Arjuna; by His grace you will obtain supreme peace and the eternal abode.', null, null, 'published')
+        'Take refuge in Him with all thy heart, O Bhârata; by His grace shalt thou attain supreme peace (and) the eternal abode.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.62' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22879,7 +22878,7 @@ values ((select id from verses where ref='18.63' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.63' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, wisdom more secret than secrecy itself has been declared to you by me. Reflect on it fully, then act as you wish.', null, null, 'published')
+        'Thus has wisdom more profound than all profundities, been declared to. thee by Me; reflecting over it fully, act as thou likest.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.63' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22932,7 +22931,7 @@ values ((select id from verses where ref='18.64' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.64' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Hear again My supreme word, most secret of all; for you are dearly beloved of Me, I will tell you what is good.', null, null, 'published')
+        'Hear thou again My supreme word, the profoundest of all; because thou art dearly beloved of Me, therefore will I speak what is good to thee.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.64' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -22985,7 +22984,7 @@ values ((select id from verses where ref='18.65' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.65' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fix your mind on Me, be devoted to Me, sacrifice to Me, bow down to Me. You will come to Me; I truly promise you this, for you are dear to Me.', null, null, 'published')
+        'Occupy thy mind with Me, be devoted to Me, sacrifice to Me, bow down to Me. Thou shalt reach Myself; truly do I promise unto thee, (for) thou art dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.65' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23039,7 +23038,7 @@ values ((select id from verses where ref='18.66' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.66' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Abandon all duties and take refuge in Me alone; I will liberate you from all sins; do not grieve.', null, null, 'published')
+        'Relinquishing all Dharmas take refuge in Me alone; I will liberate thee from all sins; grieve not.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.66' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23091,7 +23090,7 @@ values ((select id from verses where ref='18.67' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.67' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Never speak this to one who is devoid of austerities or devotion, who does not render service, who does not desire to listen, or who cavils at Me.', null, null, 'published')
+        'This is never to be spoken by thee to one who is devoid of austerities or devotion, nor to one who does not render service, nor to one who cavils at Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.67' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23146,7 +23145,7 @@ values ((select id from verses where ref='18.68' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.68' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, with supreme devotion to Me, teaches this supreme secret to My devotees, shall undoubtedly come to Me.', null, null, 'published')
+        'He who with supreme devotion to Me will teach this deeply profound philosophy to My devotees, shall doubtless come to Me alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.68' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23199,7 +23198,7 @@ values ((select id from verses where ref='18.69' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.69' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There is no one among men who does service dearer to Me, nor shall there be anyone on earth dearer to Me than him.', null, null, 'published')
+        'Nor among men is there any who does dearer service to Me, nor shall there be another on earth dearer to Me, than he.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.69' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23253,7 +23252,7 @@ values ((select id from verses where ref='18.70' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.70' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And he who studies this sacred dialogue of ours, by him I shall have been worshipped through the sacrifice of wisdom; such is my conviction.', null, null, 'published')
+        'And he who will study this sacred dialogue of ours, by him shall I have been worshipped by the Yajna of knowledge; such is My conviction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.70' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23307,7 +23306,7 @@ values ((select id from verses where ref='18.71' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.71' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Also, the man who hears this, full of faith and free from malice, shall attain to the happy worlds of those of righteous deeds, and be liberated.', null, null, 'published')
+        'And even that man who hears this, full of Shraddhâ and free from malice, he too, liberated, shall attain to the happy worlds of those of righteous deeds.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.71' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23360,7 +23359,7 @@ values ((select id from verses where ref='18.72' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.72' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Has this been heard, O Arjuna, with one-pointed focus? Has the delusion of your ignorance been destroyed, O Dhananjaya?', null, null, 'published')
+        'Has this been heard by thee, Pârtha, with an attentive mind? Has the delusion of thy ignorance been destroyed, O Dhananjaya?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.72' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23411,7 +23410,7 @@ values ((select id from verses where ref='18.73' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.73' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "My delusion has been destroyed, for I have gained my knowledge (memory) through Your grace, O Krishna. I am now free from doubts. I will act according to Your word."', null, null, 'published')
+        'Destroyed is my delusion, and I have gained my memory through Thy grace, O Achyuta. I am firm; my doubts are gone. I will do Thy word.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.73' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23464,7 +23463,7 @@ values ((select id from verses where ref='18.74' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.74' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said, Thus, I have heard this wonderful dialogue between Krishna and the high-souled Arjuna, which causes one''s hair to stand on end.', null, null, 'published')
+        'Thus have I heard this wonderful dialogue between Vâsudeva and the high-souled Pârtha, causing my hair to stand on end.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.74' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23515,7 +23514,7 @@ values ((select id from verses where ref='18.75' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.75' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Through the grace of Vyasa, I have heard this supreme and most secret Yoga, directly from Krishna, the Lord of Yoga, Himself declaring it.', null, null, 'published')
+        'Through the grace of Vyâsa have I heard this supreme and most profound Yoga, direct from Krishna, the Lord of Yoga, Himself declaring it.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.75' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23566,7 +23565,7 @@ values ((select id from verses where ref='18.76' and work_id=(select id from wor
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.76' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O King, remembering this wonderful and holy dialogue between Krishna and Arjuna, I continually rejoice.', null, null, 'published')
+        'O King, as I remember and remember this wonderful and holy dialogue between Keshava and Arjuna, I rejoice again and again.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.76' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23619,7 +23618,7 @@ vismayo me mahān rājan hṛṣyāmi ca punaḥ punaḥ||18.77||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.77' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And, remembering again and again that most wonderful form of Hari, I am filled with great wonder, O King; and I rejoice again and again.', null, null, 'published')
+        'And as I remember and remember that most wonderful Form of Hari, great is my wonder, O King; and I rejoice again and again.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.77' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23686,7 +23685,7 @@ tatra śrīrvijayo bhūtirdhruvā nītirmatirmama||18.78|', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.78' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Wherever Krishna, the Lord of Yoga, is; and wherever Arjuna, the wielder of the bow, is; there is prosperity, victory, happiness, and a firm policy; this is my conviction.', null, null, 'published')
+        'Wherever is Krishna, the Lord of Yoga, wherever is Pârtha, the wielder of the bow, there are prosperity, victory, expansion, and sound policy: such is my conviction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='18.78' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23766,7 +23765,7 @@ viṣīdantamidaṃ vākyamuvāca madhusūdanaḥ||2.1||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said: To him, who was thus overcome with pity, despondent, with eyes full of tears and agitated, Madhusudana (the destroyer of Madhu) or Krishna spoke these words.', null, null, 'published')
+        'To him who was thus overwhelmed with pity and sorrowing, and whose eyes were dimmed with tears, Madhusudana spoke these words:', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23846,7 +23845,7 @@ anāryajuṣṭamasvargyamakīrtikaramarjuna||2.2||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "From whence has this perilous strait come upon you, this dejection which is unworthy of you, disgraceful, and which will close the gates of heaven upon you, O Arjuna?"', null, null, 'published')
+        'In such a crisis, whence comes upon thee, O Arjuna, this dejection, un-Aryalike, disgraceful and contrary to the attainment of heaven?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23921,7 +23920,7 @@ kṣudraṃ hṛdayadaurbalyaṃ tyaktvottiṣṭha parantapa||2.3||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Do not yield to impotence, O Arjuna, son of Pritha. It does not befit you. Cast off this mean weakness of the heart! Stand up, O conqueror of foes!', null, null, 'published')
+        'Yield not to unmanliness, O son of Prithâ! Ill doth it become thee. Cast off this mean faint-heartedness and arise, O scorcher of thine enemies!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -23992,7 +23991,7 @@ iṣubhiḥ pratiyotsyāmi pūjārhāvarisūdana||2.4||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Madhusudana, how can I fight in battle with arrows against Bhishma and Drona, who are worthy of being worshipped, O destroyer of enemies?"', null, null, 'published')
+        '—But how can I, in battle, O slayer of Madhu, fight with arrows against Bhishma and Drona, who are rather worthy to be worshipped, O destroyer of foes!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24075,7 +24074,7 @@ bhuñjīya bhogān rudhirapradigdhān||2.5||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Better it is, indeed, in this world to accept alms than to slay the most noble teachers. But if I were to kill them, even in this world, all my enjoyments of wealth and fulfilled desires would be stained with their blood.', null, null, 'published')
+        'Surely it would be better even to eat the bread of beggary in this life than to slay these great-souled masters. But if I kill them, even in this world, all my enjoyment of wealth and desires will be stained with blood.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24176,7 +24175,7 @@ ste''vasthitāḥ pramukhe dhārtarāṣṭrāḥ||2.6||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I can hardly tell which would be better, that we should conquer them or that they should conquer us. Even the sons of Dhritarashtra, whom we do not wish to slay, stand facing us.', null, null, 'published')
+        'And indeed I can scarcely tell which will be better, that we should conquer them, or that they should conquer us. The very sons of Dhritarâshtra,—after slaying whom we should not care to live,—stand facing us.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24279,7 +24278,7 @@ yacchreyaḥ syānniśicataṃ brūhi tanme
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'My heart is overpowered by the taint of pity; my mind is confused as to my duty. I ask Thee: Tell me decisively what is good for me. I am Thy disciple; instruct me, who has taken refuge in Thee.', null, null, 'published')
+        'With my nature overpowered by weak commiseration, with a mind in confusion about duty, I supplicate Thee. Say decidedly what is good for me. I am Thy disciple. Instruct me who have taken refuge in Thee.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24382,7 +24381,7 @@ rājyaṃ surāṇāmapi cādhipatyam||2.8||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I do not see that this sorrow that burns up my senses would be removed, even if I were to attain prosperous and unrivaled dominion on earth or lordship over the gods.', null, null, 'published')
+        'I do not see anything to remove this sorrow which blasts my senses, even were I to obtain unrivalled and flourishing dominion over the earth, and mastery over the gods.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24477,7 +24476,7 @@ na yotsya iti govindamuktvā tūṣṇīṃ babhūva ha||2.9||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sanjaya said: Having spoken thus to Hrishikesha, the Lord of the senses, Arjuna, the conqueror of sleep and destroyer of foes, said, "I will not fight," and became silent.', null, null, 'published')
+        'Having spoken thus to the Lord of the senses, Gudâkesha, the scorcher of foes, said to Govinda, "I shall not fight," and became silent.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24552,7 +24551,7 @@ senayorubhayormadhye viṣīdantamidaṃ vacaḥ||2.10||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'To him who was despondent in the midst of the two armies, Krishna, smiling, O Bharata, spoke these words.', null, null, 'published')
+        'To him who was sorrowing in the midst of the two armies, Hrishikesha, as if smiling, O descendant of Bharata! spoke these words.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24621,7 +24620,7 @@ gatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ||2.11||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "You have grieved for those who should not be grieved for; yet, you speak words of wisdom. The wise grieve neither for the living nor for the dead."', null, null, 'published')
+        'Thou hast been mourning for them who should not be mourned for. Yet thou speakest words of wisdom. The (truly) wise grieve neither for the living nor the dead.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24697,7 +24696,7 @@ na caiva na bhaviṣyāmaḥ sarve vayamataḥ param||2.12||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Nor, at any time, was I not, nor thou, nor these rulers of men; nor, verily, shall we ever cease to be hereafter.', null, null, 'published')
+        'It is not that I have never existed, nor thou, nor these kings. Nor is it that we shall cease to exist in the future.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24769,7 +24768,7 @@ tathā dehāntaraprāptirdhīrastatra na muhyati||2.13||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Just as the embodied soul passes through childhood, youth, and old age in this body, so too does it pass into another body; the steadfast one does not grieve over this.', null, null, 'published')
+        'As are childhood, youth, and old age, in this body, to the embodied soul, so also is the attaining of another body. Calm souls are not deluded thereat.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24835,7 +24834,7 @@ values ((select id from verses where ref='2.14' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The contact of the senses with the objects, O son of Kunti, which causes heat and cold, pleasure and pain, has a beginning and an end; they are impermanent; endure them bravely, O Arjuna.', null, null, 'published')
+        'Notions of heat and cold, of pain and pleasure, are born, O son of Kunti, only of the contact of the senses with their objects. They have a beginning and an end. They are impermanent in their nature. Bear them patiently, O descendant of Bharata.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24902,7 +24901,7 @@ samaduḥkhasukhaṃ dhīraṃ so''mṛtatvāya kalpate||2.15||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That firm man, whom surely these afflictions do not, O chief among men, to whom pleasure and pain are the same, is fit for attaining immortality.', null, null, 'published')
+        'That calm man who is the same in pain and pleasure, whom these cannot disturb, alone is able, O great amongst men, to attain to immortality.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -24969,7 +24968,7 @@ ubhayorapi dṛṣṭo''ntastvanayostattvadarśibhiḥ||2.16||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The unreal has no being; there is no non-being of the real; the truth about both has been seen by the knowers of the truth (or the seers of the essence).', null, null, 'published')
+        'The unreal never is. The Real never is not. Men possessed of the knowledge of the Truth fully know both these.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25038,7 +25037,7 @@ vināśamavyayasyāsya na kaścit kartumarhati||2.17||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know that to be indestructible, by which all this is pervaded. No one can cause the destruction of that, the Imperishable.', null, null, 'published')
+        'That by which all this is pervaded,—That know for certain to be indestructible. None has the power to destroy this Immutable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25105,7 +25104,7 @@ anāśino''prameyasya tasmādyudhyasva bhārata||2.18||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'These bodies of the embodied Self, which are eternal, indestructible, and immeasurable, are said to have an end. Therefore, fight, O Arjuna.', null, null, 'published')
+        'Of this indwelling Self, the ever-changeless, the indestructible, the illimitable,—these bodies are said to have an end. Fight therefore, O descendant of Bharata.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25169,7 +25168,7 @@ ubhau tau na vijānīto nāyaṃ hanti na hanyate||2.19||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who takes the Self to be the slayer and he who thinks it is slain, neither of them knows. It does not slay, nor is it slain.', null, null, 'published')
+        'He who takes the Self to be the slayer, he who takes It to be the slain, neither of these knows. It does not slay, nor is It slain.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25248,7 +25247,7 @@ na hanyate hanyamāne śarīre||2.20||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'It is not born, nor does it ever die; after having been, it again does not cease to be; unborn, eternal, changeless, and ancient, it is not killed when the body is killed.', null, null, 'published')
+        'This in never born, nor does It die. It is not that not having been It again comes into being. (Or according to another view: It is not that having been It again ceases to be). This is unborn, eternal, changeless, ever-Itself. It is not killed when the body is killed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25340,7 +25339,7 @@ kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam||2.21||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whoever knows it to be indestructible, eternal, unborn, and inexhaustible, how can that person slay, O Arjuna, or cause to be slain?', null, null, 'published')
+        'He that knows This to be indestructible, changeless, without birth, and immutable, how is he, O son of Prithâ, to slay or cause another to slay?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25416,7 +25415,7 @@ nyanyāni saṃyāti navāni dehī||2.22||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Just as a man casts off worn-out clothes and puts on new ones, so too the embodied Self casts off worn-out bodies and enters others that are new.', null, null, 'published')
+        'Even as a man casts off worn-out clothes, and puts on others which are new, so the embodied casts off worn-out bodies, and enters into others which are new.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25505,7 +25504,7 @@ na cainaṃ kledayantyāpo na śoṣayati mārutaḥ||2.23||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Weapons cannot cut it, fire cannot burn it, water cannot wet it, wind cannot dry it.', null, null, 'published')
+        'This (Self), weapons cut not; This, fire burns not; This, water wets not; and This, wind dries not.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25574,7 +25573,7 @@ nityaḥ sarvagataḥ sthāṇuracalo''yaṃ sanātanaḥ||2.24||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This Self cannot be cut, burned, wetted, nor dried up; it is eternal, all-pervasive, stable, immovable, and ancient.', null, null, 'published')
+        'This Self cannot be cut, nor burnt, nor wetted, nor dried. Changeless, all-pervading, unmoving, immovable, the Self is eternal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25641,7 +25640,7 @@ tasmādevaṃ viditvainaṃ nānuśocitumarhasi||2.25||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This Self is said to be unmanifested, unthinkable, and unchangeable. Therefore, knowing this to be so, you should not grieve.', null, null, 'published')
+        'This (Self) is said to be unmanifested, unthinkable, and unchangeable. Therefore, knowing This to be such, thou oughtest not to mourn.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25708,7 +25707,7 @@ tathāpi tvaṃ mahābāho naivaṃ śocitumarhasi||2.26||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But even if thou thinkest of It as constantly being born and constantly dying, even then, O mighty-armed one, thou shouldst not grieve.', null, null, 'published')
+        'But if thou shouldst take This to have constant birth and death, even in that case, O mighty-armed, thou oughtest not to mourn for This.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25776,7 +25775,7 @@ tasmādaparihārye''rthe na tvaṃ śocitumarhasi||2.27||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For the born, death is certain, and for the dead, birth is certain; therefore, you should not grieve over the inevitable.', null, null, 'published')
+        'Of that which is born, death is certain, of that which is dead, birth is certain. Over the unavoidable, therefore, thou oughtest not to grieve.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25843,7 +25842,7 @@ avyaktanidhanānyeva tatra kā paridevanā||2.28||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Beings are unmanifest in their beginning, manifest in their middle state, O Arjuna, and unmanifest again in their end. What is there to grieve about?', null, null, 'published')
+        'All beings are unmanifested in their beginning, O Bhârata, manifested in their middle state and unmanifested again in their end. What is there then to grieve about?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -25915,7 +25914,7 @@ māścaryavadvadati tathaiva cānyaḥ|
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'One sees this (the Self) as a wonder; another speaks of it as a wonder; another hears of it as a wonder; yet, having heard, none understands it at all.', null, null, 'published')
+        'Some look upon the Self as marvellous. Others speak of It as wonderful. Others again hear of It as a wonder. And still others, though hearing, do not understand It at all.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26011,7 +26010,7 @@ tasmātsarvāṇi bhūtāni na tvaṃ śocitumarhasi||2.30||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This indweller in the body of everyone is ever indestructible, O Arjuna; therefore, you should not grieve for any creature.', null, null, 'published')
+        'This, the Indweller in the bodies of all, is ever indestructible, O descendant of Bharata. Wherefore thou oughtest not to mourn for any creature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26078,7 +26077,7 @@ dharmyāddhi yuddhāchreyo''nyatkṣatriyasya na vidyate||2.31||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Further, having regard to your duty, you should not waver, for there is nothing higher for a Kshatriya than a righteous war.', null, null, 'published')
+        'Looking at thine own Dharma, also, thou oughtest not to waver, for there is nothing higher for a Kshatriya than a righteous war.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26146,7 +26145,7 @@ sukhinaḥ kṣatriyāḥ pārtha labhante yuddhamīdṛśam||2.32||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Happy are the Kshatriyas, O Arjuna! who are called to fight in such a battle that comes of its own accord as an open door to heaven.', null, null, 'published')
+        'Fortunate certainly are the Kshatriyas, O son of Prithâ, who are called to fight in such a battle, that comes unsought as an open gate to heaven.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26211,7 +26210,7 @@ tataḥ svadharmaṃ kīrtiṃ ca hitvā pāpamavāpsyasi||2.33||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But if you will not fight this righteous war, then having abandoned your own duty and reputation, you will incur sin.', null, null, 'published')
+        'But if thou refusest to engage in this righteous warfare, then, forfeiting thine own Dharma and honour, thou shalt incur sin.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26277,7 +26276,7 @@ saṃbhāvitasya cākīrtirmaraṇādatiricyate||2.34||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'People will also recount your everlasting dishonor; and for one who has been honored, dishonor is worse than death.', null, null, 'published')
+        'The world also will ever hold thee in reprobation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26342,7 +26341,7 @@ yeṣāṃ ca tvaṃ bahumato bhūtvā yāsyasi lāghavam||2.35||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The great chariot-warriors will think that you have withdrawn from the battle out of fear, and you will be held in low esteem by those who have held you in high regard.', null, null, 'published')
+        'The great chariot-warriors will believe that thou hast withdrawn from the battle through fear. And thou wilt be lightly esteemed by them who have thought much of thee.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26408,7 +26407,7 @@ nindantastava sāmarthyaṃ tato duḥkhataraṃ nu kim||2.36||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Your enemies, scoffing at your power, will speak many abusive words—what could be more painful than this?', null, null, 'published')
+        'Thine enemies also, cavilling at thy great prowess, will say of thee things that are not to be uttered. What could be more intolerable than this?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26474,7 +26473,7 @@ tasmāduttiṣṭha kaunteya yuddhāya kṛtaniścayaḥ||2.37||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Slain, you will obtain heaven; victorious, you will enjoy the earth; therefore, stand up, O son of Kunti, resolved to fight.', null, null, 'published')
+        'Dying thou gainest heaven; conquering thou enjoyest the earth. Therefore, O son of Kunti, arise, resolved to fight.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26540,7 +26539,7 @@ tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi||2.38||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having made pleasure and pain, gain and loss, victory and defeat equal, engage in battle for the sake of battle; thus, you shall not incur sin.', null, null, 'published')
+        'Having made pain and pleasure, gain and loss, conquest and defeat, the same, engage thou then in battle. So shalt thou incur no sin.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26605,7 +26604,7 @@ buddhyāyukto yayā pārtha karmabandhaṃ prahāsyasi||2.39||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This, which has been taught to you, is wisdom concerning Sankhya. Now listen to wisdom concerning Yoga, endowed with which, O Arjuna, you shall cast off the bonds of action.', null, null, 'published')
+        'The wisdom of Self-realisation has been declared unto thee. Hearken thou now to the wisdom of Yoga, endued with which, O son of Prithâ, thou shalt break through the bonds of Karma.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26672,7 +26671,7 @@ svalpamapyasya dharmasya trāyate mahato bhayāt||2.40||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In this, there is no loss of effort, nor is there any harm produced, nor any transgression. Even a little of this knowledge protects one from great fear.', null, null, 'published')
+        'In this, there is no waste of the unfinished attempt, nor is there production of contrary results. Even very little of this Dharma protects from the great terror.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26740,7 +26739,7 @@ bahuśākhā hyanantāśca buddhayo''vyavasāyinām||2.41||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Here, O joy of the Kurus, there is only one single-pointed determination; many-branched and endless are the thoughts of the indecisive.', null, null, 'published')
+        'In this, O scion of Kuru, there is but a single one-pointed determination. The purposes of the undecided are innumerable and many-branching.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26804,7 +26803,7 @@ vedavādaratāḥ pārtha nānyadastīti vādinaḥ||2.42||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The unwise, taking pleasure in the eulogizing words of the Vedas, utter flowery speech, saying, "There is nothing else," O Arjuna.', null, null, 'published')
+        'O Pârtha, no set determination is formed in the minds of those that are deeply attached to pleasure and power, and whose discrimination is stolen away by the flowery words of the unwise, who are full of desires and look upon heaven as their highest goal and who, taking pleasure in the panegyric words of the Vedas, declare that there is nothing else. Their (flowery) words are exuberant with various specific, rites as the means to pleasure and power and are the causes of (new) births as the result of their works (performed with desire).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26878,7 +26877,7 @@ kriyāviśeṣabahulāṃ bhogaiśvaryagatiṃ prati||2.43||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Full of desires, with heaven as their goal, (they speak words that are directed to ends) leading to new births as the result of their works, and prescribe various methods abounding in specific actions, for the attainment of pleasure and power.', null, null, 'published')
+        'O Pârtha, no set determination is formed in the minds of those that are deeply attached to pleasure and power, and whose discrimination is stolen away by the flowery words of the unwise, who are full of desires and look upon heaven as their highest goal and who, taking pleasure in the panegyric words of the Vedas, declare that there is nothing else. Their (flowery) words are exuberant with various specific, rites as the means to pleasure and power and are the causes of (new) births as the result of their works (performed with desire).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -26940,7 +26939,7 @@ vyavasāyātmikā buddhiḥ samādhau na vidhīyate||2.44||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For those who are attached to pleasure and power, whose minds are drawn away by such teachings, their determinate reason is not formed which is steadily bent on meditation and Samadhi (superconscious state).', null, null, 'published')
+        'O Pârtha, no set determination is formed in the minds of those that are deeply attached to pleasure and power, and whose discrimination is stolen away by the flowery words of the unwise, who are full of desires and look upon heaven as their highest goal and who, taking pleasure in the panegyric words of the Vedas, declare that there is nothing else. Their (flowery) words are exuberant with various specific, rites as the means to pleasure and power and are the causes of (new) births as the result of their works (performed with desire).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27003,7 +27002,7 @@ nirdvandvo nityasattvastho niryogakṣema ātmavān||2.45||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Vedas deal with the three attributes; be thou above these three attributes. O Arjuna, free yourself from the pairs of opposites and ever remain in the quality of Sattva, freed from acquisition and preservation, and be established in the Self.', null, null, 'published')
+        'The Vedas deal with the three Gunas. Be thou free, O Arjuna, from the triad of the Gunas, free from the pairs of opposites, ever-balanced, free from (the thought of) getting and keeping, and established in the Self.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27066,7 +27065,7 @@ tāvānsarveṣu vedeṣu brāhmaṇasya vijānataḥ||2.46||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'To the Brahmana who has known the Self, all the Vedas are of as much use as a reservoir of water would be in a place where there is a flood.', null, null, 'published')
+        'To the Brâhmana who has known the Self, all the Vedas are of so much use as a reservoir is, when there is a flood everywhere.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27129,7 +27128,7 @@ mā karmaphalaheturbhūrmā te saṅgo''stvakarmaṇi||2.47||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Your right is only to work, but not to its results; do not let the results of action be your motive, nor let your attachment be to inaction.', null, null, 'published')
+        'Thy right is to work only; but never to the fruits thereof. Be thou not the producer of the fruits of (thy) actions; neither let thy attachment be towards inaction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27198,7 +27197,7 @@ siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate||2.48||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.48' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Perform action, O Arjuna, being steadfast in Yoga, abandoning attachment and balanced in success and failure; evenness of mind is called Yoga.', null, null, 'published')
+        'Being steadfast in Yoga, Dhananjaya, perform actions, abandoning attachment, remaining unconcerned as regards success and failure. This evenness. of mind (in regard to success and failure) is known as Yoga.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.48' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27263,7 +27262,7 @@ buddhau śaraṇamanviccha kṛpaṇāḥ phalahetavaḥ||2.49||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.49' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Far lower than the Yoga of wisdom is action, O Arjuna. Seek thou refuge in wisdom; wretched are those whose motive is the fruit.', null, null, 'published')
+        'Work (with desire) is verily far inferior to that performed with the mind undisturbed by thoughts of results. O Dhananjaya, seek refuge in this evenness of mind. Wretched are they who act for results.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.49' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27327,7 +27326,7 @@ tasmādyogāya yujyasva yogaḥ karmasu kauśalam||2.50||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.50' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Endowed with wisdom and evenness of mind, one casts off in this life both good and evil deeds; therefore, devote yourself to Yoga; Yoga is skill in action.', null, null, 'published')
+        'Endued with this evenness of mind, one frees oneself in this life, alike from vice and virtue. Devote thyself, therefore, to this Yoga. Yoga is the very dexterity of work.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.50' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27390,7 +27389,7 @@ janmabandhavinirmuktāḥ padaṃ gacchantyanāmayam||2.51||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.51' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The wise, possessing knowledge, having abandoned the fruits of their actions, and being freed from the bonds of birth, go to the place which is beyond all evil.', null, null, 'published')
+        'The wise, possessed of this evenness of mind, abandoning the fruits of their actions, freed for ever from the fetters of birth, go to that state which is beyond all evil.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.51' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27453,7 +27452,7 @@ tadā gantāsi nirvedaṃ śrotavyasya śrutasya ca||2.52||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.52' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When your intellect passes beyond the mire of delusion, then you will attain indifference to what has been heard and what has yet to be heard.', null, null, 'published')
+        'When thy intellect crosses beyond the taint of illusion, then shalt thou attain to indifference, regarding things heard and things yet to be heard.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.52' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27518,7 +27517,7 @@ samādhāvacalā buddhistadā yogamavāpsyasi||2.53||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.53' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When your intellect, which is perplexed by the Vedic texts you have read, stands immovable and steady in the Self, then you will attain Self-realization.', null, null, 'published')
+        'When thy intellect, tossed about by the conflict of opinions—has become immovable and firmly established in the Self, then thou shalt attain Self-realisation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.53' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27586,7 +27585,7 @@ sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim||2.54||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.54' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Krishna, what is the description of one who has steady wisdom and is merged in the superconscious state? How does one of steady wisdom speak, how do they sit, and how do they walk?"', null, null, 'published')
+        'What, O Keshava, is the description of the man of steady wisdom, merged in Samâdhi? How (on the other hand) does the man of steady wisdom speak, how sit, how walk?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.54' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27666,7 +27665,7 @@ prajahāti yadā kāmān sarvān pārtha manogatān|
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.55' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "When a man completely casts off, O Arjuna, all the desires of the mind and is satisfied in the Self by the Self, then he is said to be one of steady wisdom."', null, null, 'published')
+        'When a man completely casts away, O Pârtha, all the desires of the mind, satisfied in the Self alone by the Self, then is he said to be one of steady wisdom.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.55' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27743,7 +27742,7 @@ vītarāgabhayakrodhaḥ sthitadhīrmunirucyate||2.56||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.56' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He whose mind is not shaken by adversity, who does not long for pleasures, and is free from attachment, fear, and anger, is called a sage of steady wisdom.', null, null, 'published')
+        'He whose mind is not shaken by adversity, who does not hanker after happiness, who has become free from affection, fear, and wrath, is indeed the Muni of steady wisdom.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.56' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27807,7 +27806,7 @@ nābhinandati na dveṣṭi tasya prajñā pratiṣṭhitā||2.57||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.57' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is everywhere without attachment, upon encountering anything good or bad, neither rejoices nor hastens; his wisdom is firm.', null, null, 'published')
+        'He who is everywhere unattached, not pleased at receiving good, nor vexed at evil, his wisdom is fixed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.57' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27875,7 +27874,7 @@ indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā||2.58||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.58' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When, like the tortoise which withdraws all its limbs on all sides, he withdraws his senses from the sense-objects, then his wisdom becomes steady.', null, null, 'published')
+        'When also, like the tortoise its limbs, he can completely withdraw the senses from their objects, then his wisdom becomes steady.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.58' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -27941,7 +27940,7 @@ rasavarjaṃ raso''pyasya paraṃ dṛṣṭvā nivartate||2.59||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.59' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The objects of the senses turn away from the abstinent man, leaving the longing behind; but his longing also turns away upon seeing the Supreme.', null, null, 'published')
+        'Objects fall away from the abstinent man, leaving the longing behind. But his longing also ceases, who sees the Supreme.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.59' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28005,7 +28004,7 @@ indriyāṇi pramāthīni haranti prasabhaṃ manaḥ||2.60||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.60' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The turbulent senses, O Arjuna, can violently carry away the mind of a wise person, even though they are striving to control them.', null, null, 'published')
+        'The turbulent senses, O son of Kunti, do violently snatch away the mind of even a wise man, striving after perfection.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.60' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28069,7 +28068,7 @@ vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā||2.61||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.61' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having restrained them all, he should sit steadfast, intent on Me; his wisdom is steady whose senses are under control.', null, null, 'published')
+        'The steadfast, having controlled them all, sits focussed on Me as the Supreme. His wisdom is steady, whose senses are under control.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.61' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28134,7 +28133,7 @@ saṅgāt saṃjāyate kāmaḥ kāmātkrodho''bhijāyate||2.62||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.62' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When one thinks of objects, attachment to them arises; from attachment, desire is born; from desire, anger arises.', null, null, 'published')
+        'Thinking of objects, attachment to them is formed in a man. From attachment longing, and from longing anger grows.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.62' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28199,7 +28198,7 @@ smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati||2.63||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.63' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Anger leads to delusion, which causes loss of memory; this, in turn, leads to the destruction of discrimination, resulting in destruction.', null, null, 'published')
+        'From anger comes delusion, and from delusion loss of memory. From loss of memory comes the ruin of discrimination, and from the ruin of discrimination he perishes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.63' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28262,7 +28261,7 @@ values ((select id from verses where ref='2.64' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.64' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But the self-controlled man, moving among objects with the senses restrained and free from attraction and repulsion, attains peace.', null, null, 'published')
+        'But the self-controlled man, moving among objects with senses under restraint, and free from attraction and aversion, attains to tranquillity.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.64' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28326,7 +28325,7 @@ prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate||2.65||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.65' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In that peace, all pains are destroyed; for the intellect of the tranquil-minded soon becomes steady.', null, null, 'published')
+        'In tranquillity, all sorrow is destroyed. For the intellect of him who is tranquil-minded, is soon established in firmness.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.65' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28390,7 +28389,7 @@ na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham||2.66||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.66' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There is no knowledge of the Self for the unsteady, and no meditation is possible for the unsteady, and no peace for the unmeditative, and how can there be happiness for one who has no peace?', null, null, 'published')
+        'No knowledge (of the Self) has the unsteady. Nor has he meditation. To the unmeditative there is no peace. And how can one without peace have happiness?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.66' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28458,7 +28457,7 @@ tadasya harati prajñāṃ vāyurnāvamivāmbhasi||2.67||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.67' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For the mind, which follows in the wake of the wandering senses, carries away his discrimination, as the wind carries away a boat on the waters.', null, null, 'published')
+        'For, the mind which follows in the wake of the wandering senses, carries away his discrimination, as a wind (carries away from its course) a boat on the waters.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.67' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28525,7 +28524,7 @@ indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā||2.68||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.68' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, O mighty-armed Arjuna, his knowledge is steady whose senses are completely restrained from sense objects.', null, null, 'published')
+        'Therefore, O mighty-armed, his knowledge is steady, whose senses are completely restrained from their objects.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.68' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28588,7 +28587,7 @@ yasyāṃ jāgrati bhūtāni sā niśā paśyato muneḥ||2.69||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.69' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That which is night to all beings, in that the self-controlled man is awake; when all beings are awake, that is night for the sage who sees.', null, null, 'published')
+        'That which is night to all beings, in that the self-controlled man wakes. That in which all beings wake, is night to the Self-seeing Muni.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.69' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28662,7 +28661,7 @@ sa śāntimāpnoti na kāmakāmī||2.70||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.70' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He attains peace into whom all desires enter, just as waters enter the ocean which, filled from all sides, remains unmoved; but not the man who is full of desires.', null, null, 'published')
+        'As into the ocean,—brimful, and still,—flow the waters, even so the Muni into whom enter all desires, he, and not the desirer of desires, attains to peace.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.70' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28751,7 +28750,7 @@ nirmamo nirahaṃkāraḥ sa śāṃtimadhigacchati||2.71||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.71' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That person attains peace who, abandoning all desires, moves about without longing, without the sense of ownership, and without egoism.', null, null, 'published')
+        'That man who lives devoid of longing, abandoning all desires, without the sense of ''I'' and ''mine,'' he attains to peace.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.71' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28816,7 +28815,7 @@ sthitvā''syāmantakāle''pi brahmanirvāṇamṛcchati||2.72||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.72' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O son of Pritha, this is the eternal state, the Brahmic seat. Attaining this, one is not deluded. Being established in it, one attains oneness with Brahman even at the end of life.', null, null, 'published')
+        'This is to have one''s being in Brahman, O son of Prithâ. None, attaining to this, becomes deluded. Being established therein, even at the end of life, a man attains to oneness with Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='2.72' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28896,7 +28895,7 @@ tatkiṃ karmaṇi ghore māṃ niyojayasi keśava||3.1||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said: If Thou thinkest that knowledge is superior to action, O Krishna, why then, O Kesava, doest Thou ask me to engage in this terrible action?', null, null, 'published')
+        'If, O Janârdana, according to Thee, knowledge is superior to action, why then, O Keshava, dost Thou engage me in this terrible action?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -28974,7 +28973,7 @@ tadekaṃ vada niśicatya yena śreyo''hamāpnuyām||3.2||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With this seemingly perplexing speech, you seem to be confusing my understanding; therefore, tell me one certain way by which I may attain bliss.', null, null, 'published')
+        'With these seemingly conflicting words, Thou art, as it were, bewildering my understanding;—tell me that one thing for certain, by which I can attain to the highest.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29045,7 +29044,7 @@ jñānayogena sāṃkhyānāṃ karmayogena yoginām||3.3||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "In this world, there is a twofold path, as I said before, O sinless one: the path of knowledge of the Sankhyas and the path of action of the Yogins."', null, null, 'published')
+        'In the beginning (of creation), O sinless one, the twofold path of devotion was given by Me to this world;—the path of knowledge for the meditative, the path of work for the active.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29121,7 +29120,7 @@ na ca saṃnyasanādeva siddhiṃ samadhigacchati||3.4||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Man does not reach actionlessness by not performing actions; nor does he attain perfection by mere renunciation.', null, null, 'published')
+        'By non-performance of work none reaches worklessness; by merely giving up action no one attains to perfection.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29186,7 +29185,7 @@ kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ||3.5||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, no one can remain for even a moment without performing action; for everyone is made to act helplessly, indeed, by the qualities born of Nature.', null, null, 'published')
+        'Verily none can ever rest for even an instant, without performing action; for all are made to act, helplessly indeed, by the Gunas, born of Prakriti.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29254,7 +29253,7 @@ indriyārthānvimūḍhātmā mithyācāraḥ sa ucyate||3.6||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, restraining the organs of action, sits thinking of the sense-objects in his mind, he of deluded understanding is called a hypocrite.', null, null, 'published')
+        'He, who restraining the organs of action, sits revolving in the mind, thoughts regarding objects of senses, he, of deluded understanding, is called a hypocrite.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29318,7 +29317,7 @@ karmendriyaiḥ karmayogamasaktaḥ sa viśiṣyate||3.7||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But whoever, controlling the senses by the mind, O Arjuna, engages himself in Karma Yoga with the organs of action, without attachment, he excels.', null, null, 'published')
+        'But, who, controlling the senses by the mind, unattached, directs his organs of action to the path of work, he, O Arjuna, excels.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29383,7 +29382,7 @@ values ((select id from verses where ref='3.8' and work_id=(select id from works
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Perform your bounden duty, for action is superior to inaction, and even the maintenance of the body would not be possible for you through inaction.', null, null, 'published')
+        'Do thou perform obligatory action; for action is superior to inaction, and even the bare maintenance of thy body would not be possible if thou art inactive.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29451,7 +29450,7 @@ tadarthaṃ karma kaunteya muktasaṃgaḥ samācara||3.9||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The world is bound by actions other than those performed for the sake of sacrifice; do thou, therefore, O son of Kunti (Arjuna), perform actions for that sake alone, free from attachment.', null, null, 'published')
+        'The world is bound by actions other than those performed for the sake of Yajna; do thou therefore, O son of Kunti, perform action for Yajna alone, devoid of attachment.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29516,7 +29515,7 @@ anena prasaviṣyadhvameṣa vo''stviṣṭakāmadhuk||3.10||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Creator, having in the beginning created mankind together with sacrifice, said, "By this shall you propagate; let this be the milch cow of your desires—the cow that yields all the desired objects."', null, null, 'published')
+        'The Prajâpati, having in the beginning created mankind together with Yajna, said,—"By this shall ye multiply: this shall be the milch cow of your desires.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29582,7 +29581,7 @@ parasparaṃ bhāvayantaḥ śreyaḥ paramavāpsyatha||3.11||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With this, nourish the gods, and may the gods nourish you; thus, nourishing each other, you shall attain the highest good.', null, null, 'published')
+        '"Cherish the Devas with this, and may those Devas cherish you: thus cherishing one another, ye shall gain the highest good.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29647,7 +29646,7 @@ tairdattānapradāyaibhyo yo bhuṅkte stena eva saḥ||3.12||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The gods, nourished by the sacrifice, will give you the desired objects. So, he who enjoys the objects given by the gods without offering anything in return is indeed a thief.', null, null, 'published')
+        '"The Devas, cherished by Yajna, will give you desired-for objects." So, he who enjoys objects given by the Devas without offering (in return) to them, is verily a thief.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29716,7 +29715,7 @@ bhuñjate te tvaghaṃ pāpā ye pacantyātmakāraṇāt||3.13||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The righteous who eat the remnants of the sacrifice are freed from all sins; but those sinful ones who cook food solely for their own sake indeed consume sin.', null, null, 'published')
+        'The good, eating the remnants of Yajna, are freed from all sins: but who cook food (only) for themselves, those sinful ones eat sin.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29783,7 +29782,7 @@ yajñādbhavati parjanyo yajñaḥ karmasamudbhavaḥ||3.14||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'From food come forth beings; from rain, food is produced; from sacrifice arises rain, and sacrifice is born of action.', null, null, 'published')
+        'From food come forth beings: from rain food is produced: from Yajna arises rain and Yajna is born of Karma.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29848,7 +29847,7 @@ tasmātsarvagataṃ brahma nityaṃ yajñe pratiṣṭhitam||3.15||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know that action comes from Brahma, and Brahma comes from the Imperishable. Therefore, the all-pervasive Brahma ever rests in sacrifice.', null, null, 'published')
+        'Know Karma to have risen from the Veda, and the Veda from the Imperishable. Therefore the all-pervading Veda is ever centred in Yajna.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29914,7 +29913,7 @@ aghāyurindriyārāmo moghaṃ pārtha sa jīvati||3.16||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who does not follow the wheel thus set in motion, who is of sinful life, rejoicing in the senses, lives in vain, O Arjuna.', null, null, 'published')
+        'He, who here follows not the wheel thus set revolving, living in sin, and satisfied in the senses, O son of Prithâ,—he lives in vain.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -29980,7 +29979,7 @@ values ((select id from verses where ref='3.17' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But for that man who rejoices only in the Self, who is satisfied with the Self and is content in the Self alone, indeed there is nothing to do.', null, null, 'published')
+        'But the man who is devoted to the Self, and is satisfied with the Self, and content in the Self alone, he has no obligatory duty.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30049,7 +30048,7 @@ na cāsya sarvabhūteṣu kaśicadarthavyapāśrayaḥ||3.18||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For him, there is no interest whatsoever in what is done or not done; nor does he depend on any being for any purpose.', null, null, 'published')
+        'He has no object in this world (to gain) by doing (an action), nor (does he incur any loss) by non-performance of action,—nor has he (need of) depending on any being for any object.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30118,7 +30117,7 @@ asakto hyācarankarma paramāpnoti pūruṣaḥ||3.19||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, without attachment, always perform the actions that should be done; for by performing actions without attachment, one reaches the Supreme.', null, null, 'published')
+        'Therefore, do thou always perform actions which are obligatory, without attachment;—by performing action without attachment, one attains to the highest.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30184,7 +30183,7 @@ lokasaṃgrahamevāpi saṃpaśyankartumarhasi||3.20||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Janaka and others attained perfection indeed through action alone; even with the intention of protecting the masses, you should perform action.', null, null, 'published')
+        'Verily by action alone, Janaka and others attained perfection;—also, simply with the view for the guidance of men, thou shouldst perform action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30248,7 +30247,7 @@ sa yatpramāṇaṃ kurute lokastadanuvartate||3.21||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever a great man does, others also do; whatever he establishes as the standard, the world follows.', null, null, 'published')
+        'Whatsoever the superior person does, that is followed by others. What he demonstrates by action, that, people follow.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30315,7 +30314,7 @@ nānavāptamavāptavyaṃ varta eva ca karmaṇi||3.22||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There is nothing in the three worlds, O Arjuna, that needs to be done by Me, nor is there anything unattained that needs to be attained; yet I engage Myself in action.', null, null, 'published')
+        'I have, O son of Prithâ, no duty, nothing that I have not gained, and nothing that I have to gain, in the three worlds; yet, I continue in action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30383,7 +30382,7 @@ mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ||3.23||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For, should I not ever engage myself in action, unwearied, people would in every way follow my path, O Arjuna.', null, null, 'published')
+        'If ever I did not continue in work, without relaxation, men, O son of Prithâ, would in every way, follow in My wake.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30450,7 +30449,7 @@ saṅkarasya ca kartā syāmupahanyāmimāḥ prajāḥ||3.24||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'These worlds would perish if I did not perform action; I would be the author of confusion of castes and destruction of these beings.', null, null, 'published')
+        'If I did not do work, these worlds would perish. I should be the cause of the admixture of races, and I should ruin these beings.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30518,7 +30517,7 @@ kuryādvidvāṃstathāsaktaśicakīrṣurlokasaṃgraham||3.25||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As the ignorant act out of attachment to action, O Bharata, so should the wise act without attachment, wishing for the welfare of the world.', null, null, 'published')
+        'As do the unwise, attached to work, act, so should the wise act, O descendant of Bharata, (but) without attachment, desirous of the guidance of the world.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30583,7 +30582,7 @@ joṣayetsarvakarmāṇi vidvān yuktaḥ samācaran||3.26||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Let no wise man unsettle the minds of ignorant people who are attached to action; he should engage them in all actions, himself fulfilling them with devotion.', null, null, 'published')
+        'One should not unsettle the understanding of the ignorant, attached to action; the wise, (himself) steadily acting, should engage (the ignorant) in all work.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30647,7 +30646,7 @@ ahaṅkāravimūḍhātmā kartā''hamiti manyate||3.27||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'All actions are wrought in all cases by the qualities of Nature alone. He whose mind is deluded by egoism thinks, "I am the doer."', null, null, 'published')
+        'The Gunas of Prakriti perform all action. With the understanding deluded by egoism, man thinks, "I am the doer."', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30710,7 +30709,7 @@ guṇā guṇeṣu vartanta iti matvā na sajjate||3.28||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But he who knows the Truth, O mighty-armed Arjuna, about the divisions of the qualities and their functions, knowing that the Gunas, as senses, move amidst the Gunas, as the sense-objects, is not attached.', null, null, 'published')
+        'But, one, with true insight into the domains of Guna and Karma, knowing that Gunas as senses merely rest on Gunas as objects, does not become attached.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30775,7 +30774,7 @@ tānakṛtsnavido mandānkṛtsnavinna vicālayet||3.29||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those deluded by the qualities of Nature are attached to the functions of the qualities. The man of perfect knowledge should not unsettle the foolish one who is of imperfect knowledge.', null, null, 'published')
+        'Men of perfect knowledge should not unsettle (the understanding of) people of dull wit and imperfect knowledge, who deluded by the Gunas of Prakriti attach (themselves) to the functions of the Gunas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30838,7 +30837,7 @@ nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ||3.30||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Renouncing all actions in Me, with the mind centered on the Self, free from hope and egoism, and from mental fever, fight thou.', null, null, 'published')
+        'Renouncing all actions to Me, with mind centred on the Self, getting rid of hope and selfishness, fight,—free from (mental) fever.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30901,7 +30900,7 @@ values ((select id from verses where ref='3.31' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who constantly practice this teaching of Mine with faith and without caviling, they too are freed from actions.', null, null, 'published')
+        'Those men who constantly practise this teaching of Mine, full of Shraddhâ and without cavilling, they too, are freed from work.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -30967,7 +30966,7 @@ sarvajñānavimūḍhāṃstānviddhi naṣṭānacetasaḥ||3.32||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But those who criticize My teaching and do not practice it, deprived of all knowledge and lacking discernment, know them to be doomed to destruction.', null, null, 'published')
+        'But those who decrying this teaching of Mine do not practise (it), deluded in all knowledge, and devoid of discrimination, know them to be ruined.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31034,7 +31033,7 @@ prakṛtiṃ yānti bhūtāni nigrahaḥ kiṃ kariṣyati||3.33||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Even a wise man acts in accordance with his own nature; beings will follow their nature; what can restraint do?', null, null, 'published')
+        'Even a wise man acts in accordance with his own nature: beings follow nature: what can restraint do?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31099,7 +31098,7 @@ tayorna vaśamāgacchettau hyasya paripanthinau||3.34||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Attachment and aversion for the objects of the senses abide in the senses; let no one come under their sway; for, they are his enemies.', null, null, 'published')
+        'Attachment and aversion of the senses for their respective objects are natural: let none come under their sway: they are his foes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31165,7 +31164,7 @@ svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ||3.35||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Better is one''s own duty, though devoid of merit, than the duty of another well discharged. Better is death in one''s own duty; the duty of another is fraught with fear.', null, null, 'published')
+        'Better is one''s own Dharma, (though) imperfect, than the Dharma of another well-performed. Better is death in one''s own Dharma: the Dharma of another is fraught with fear.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31232,7 +31231,7 @@ anicchannapi vārṣṇeya balādiva niyojitaḥ||3.36||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "But what compels man to commit sin, even against his wishes, O Varshneya (Krishna), as if constrained by force?"', null, null, 'published')
+        'But by what impelled does man commit sin, though against his wishes, O Vârshneya, constrained as it were, by force?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31313,7 +31312,7 @@ mahāśano mahāpāpmā viddhyenamiha vairiṇam||3.37||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "It is desire and it is anger, both of the quality of Rajas, all-devouring and all-sinful; know this as the foe here in this world."', null, null, 'published')
+        'It is desire—it is anger, born of the Rajo-guna: of great craving, and of great sin; know this as the foe here (in this world).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31389,7 +31388,7 @@ yatholbenāvṛto garbhastathā tenedamāvṛtam||3.38||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As fire is enveloped by smoke, as a mirror is covered by dust, and as an embryo is surrounded by the amniotic sac, so is this enveloped by that.', null, null, 'published')
+        'As fire is enveloped by smoke, as a mirror by dust, as an embryo by the secundine, so is it covered by that.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31457,7 +31456,7 @@ kāmarūpeṇa kaunteya duṣpūreṇānalena ca||3.39||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O Arjuna, wisdom is enveloped by this constant enemy of the wise, in the form of desire, which is insatiable like fire.', null, null, 'published')
+        'Knowledge is covered by this, the constant foe of the wise, O son of Kunt', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31520,7 +31519,7 @@ etairvimohayatyeṣa jñānamāvṛtya dehinam||3.40||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The senses, the mind, and the intellect are said to be its seat; through these, it deludes the embodied one, veiling their wisdom.', null, null, 'published')
+        'The senses, the mind and the intellect are said to be its abode: through these, it deludes the embodied by veiling his wisdom.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31585,7 +31584,7 @@ pāpmānaṃ prajahi hyenaṃ jñānavijñānanāśanam||3.41||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, O best of the Bharatas, control your senses first and then kill this sinful thing, which destroys knowledge and realization.', null, null, 'published')
+        'Therefore, O Bull of the Bharata race, controlling the senses at the outset, kill it,—the sinful, the destroyer of knowledge and realisation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31651,7 +31650,7 @@ manasastu parā buddhiryo buddheḥ paratastu saḥ||3.42||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They say that the senses are superior to the body; the mind is superior to the senses; the intellect is superior to the mind; and He (the Self) is superior even to the intellect.', null, null, 'published')
+        'The senses are said to be superior (to the body); the mind is superior to the senses; the intellect is superior to the mind; and that which is superior to the intellect is He (the Atman).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31719,7 +31718,7 @@ jahi śatruṃ mahābāho kāmarūpaṃ durāsadam||3.43||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, knowing Him who is superior to the intellect and restraining the self by the Self, slay thou, O mighty-armed Arjuna, the enemy in the form of desire, hard to conquer.', null, null, 'published')
+        'Thus, knowing Him who is superior to the intellect, and restraining the self by the Self, destroy, O mighty-armed, that enemy, the unseizable foe, desire.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='3.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31798,7 +31797,7 @@ vivasvān manave prāha manurikṣvākave''bravīt||4.1||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "I taught this imperishable Yoga to Vivasvan; he then told it to Manu; Manu proclaimed it to Ikshvaku.', null, null, 'published')
+        'I told this imperishable Yoga to Vivasvat; Vivasvat told it to Manu; (and) Manu told it to Ikshvâku:', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31874,7 +31873,7 @@ sa kāleneha mahatā yogo naṣṭaḥ parantapa||4.2||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This, handed down in regular succession by the royal sages, was known. This Yoga, however, has been lost here over time, O Parantapa (burner of the foes).', null, null, 'published')
+        'Thus handed down in regular succession, the royal sages knew it. This Yoga, by long lapse of time, declined in this world, O burner of foes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -31940,7 +31939,7 @@ bhakto''si me sakhā ceti rahasyaṃ hyetaduttamam||4.3||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That same ancient yoga has been today taught to you by me, for you are my devotee and my friend; it is the supreme secret.', null, null, 'published')
+        'I have this day told thee that same ancient Yoga, (for) thou art My devotee, and My friend, and this secret is profound indeed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32016,7 +32015,7 @@ kathametadvijānīyāṃ tvamādau proktavāniti||4.4||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "Later was Thy birth, and prior to it was the birth of Vivasvan (the Sun); how am I to understand that Thou hast taught this Yoga from the beginning?"', null, null, 'published')
+        'Later was Thy birth, and that of Vivasvat prior; how then should I understand that Thou toldest this in the beginning?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32097,7 +32096,7 @@ tānyahaṃ veda sarvāṇi na tvaṃ vettha parantapa||4.5||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "Many births of Mine have passed, as well as of thine, O Arjuna; I know them all, but thou knowest not, O Parantapa (scorcher of foes)."', null, null, 'published')
+        'Many are the births that have been passed by Me and thee, O Arjuna. I know them all, whilst thou knowest not, O scorcher of foes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32176,7 +32175,7 @@ prakṛtiṃ svāmadhiṣṭhāya saṃbhavāmyātmamāyayā||4.6||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Though I am unborn and of imperishable nature, and though I am the Lord of all beings, yet, governing my own nature, I am born by my own Maya.', null, null, 'published')
+        'Though I am unborn, of changeless nature and Lord of beings, yet subjugating My Prakriti, I come into being by My own Mâyâ.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32242,7 +32241,7 @@ abhyutthānamadharmasya tadā''''tmānaṃ sṛjāmyaham||4.7||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whenever there is a decline of righteousness and an increase of unrighteousness, O Arjuna, then I manifest Myself.', null, null, 'published')
+        'Whenever, O descendant of Bharata, there is decline of Dharma, and rise of Adharma, then I body Myself forth.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32307,7 +32306,7 @@ dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge||4.8||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For the protection of the good, for the destruction of the wicked, and for the establishment of righteousness, I am born in every age.', null, null, 'published')
+        'For the protection of the good, for the destruction of the wicked, and for the establishment of Dharma, I come into being in every age.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32369,7 +32368,7 @@ tyaktvā dehaṃ punarjanma naiti māmeti so''rjuna||4.9||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who thus knows, in their true light, My divine birth and actions, having abandoned the body, is not born again; he comes to Me, O Arjuna.', null, null, 'published')
+        'He who thus knows, in true light, My divine birth and action, leaving the body, is not born again: he attains to Me, O Arjuna.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32441,7 +32440,7 @@ bahavo jñānatapasā pūtā madbhāvamāgatāḥ||4.10||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Freed from attachment, fear, and anger, absorbed in Me, taking refuge in Me, purified by the fire of knowledge, many have attained My Being.', null, null, 'published')
+        'Freed from attachment, fear and anger, absorbed in Me, taking refuge in Me, purified by the fire of Knowledge, many have attained My Being.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32507,7 +32506,7 @@ mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ||4.11||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In whatever way men approach Me, even so do I reward them; My path do men tread in all ways, O Arjuna.', null, null, 'published')
+        'In whatever way men worship Me, in the same way do I fulfil their desires: (it is) My path, O son of Prithâ, (that) men tread, in all ways.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32575,7 +32574,7 @@ kṣipraṃ hi mānuṣe loke siddhirbhavati karmajā||4.12||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who long for success in action in this world sacrifice to the gods; for success is quickly attained by men through action.', null, null, 'published')
+        'Longing for success in action, in this world, (men) worship the gods. Because success, resulting from action, is, quickly attained in the human world.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32641,7 +32640,7 @@ tasya kartāramapi māṃ viddhyakartāramavyayam||4.13||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The fourfold caste has been created by Me according to the differentiation of Guna and Karma; though I am the author of it, know Me as non-doer and immutable.', null, null, 'published')
+        'The fourfold caste was created by Me, by the differentiation of Guna and Karma. Though I am the author thereof, know Me to be the non-doer, and changeless.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32707,7 +32706,7 @@ iti māṃ yo''bhijānāti karmabhirna sa badhyate||4.14||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Actions do not taint Me, nor do I have a desire for the fruit of actions. He who knows Me thus is not bound by actions.', null, null, 'published')
+        'Actions do not taint Me, nor have I any thirst for the result of action. He who knows Me thus is not fettered by action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32776,7 +32775,7 @@ kuru karmaiva tasmāttvaṃ pūrvaiḥ pūrvataraṃ kṛtam||4.15||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having known this, the ancient seekers of freedom also performed action; therefore, do thou also perform action, as the ancients did in days of yore.', null, null, 'published')
+        'Knowing thus, the ancient seekers after freedom also performed action. Do thou, therefore, perform action, as did the ancients in olden times.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32844,7 +32843,7 @@ tatte karma pravakṣyāmi yajjñātvā mokṣyase''śubhāt||4.16||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'What is action? What is inaction? Even the wise are confused about this. Therefore, I shall teach you the nature of action and inaction, by knowing which you will be liberated from the evil of Samsara, the wheel of birth and death.', null, null, 'published')
+        'Even sages are bewildered, as to what is action and what is inaction. I shall therefore tell you what action is, by knowing which you will be freed from evil.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32914,7 +32913,7 @@ akarmaṇaśca boddhavyaṃ gahanā karmaṇo gatiḥ||4.17||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For verily, the true nature of action enjoined by the scriptures should be known, as well as that of forbidden or unlawful action, and of inaction; the nature of action is hard to understand.', null, null, 'published')
+        'For verily, (the true nature) even of action (enjoined by the Shâstras) should be known, as also, (that) of forbidden action, and of inaction: the nature of Karma is impenetrable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -32980,7 +32979,7 @@ sa buddhimān manuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt||4.18||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who sees inaction in action and action in inaction, he is wise among men; he is a yogi and performer of all actions.', null, null, 'published')
+        'He who sees inaction in action, and action in inaction, he is intelligent among men, he is a Yogi and a doer of all action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33047,7 +33046,7 @@ jñānāgnidagdhakarmāṇaṃ tamāhuḥ paṇḍitaṃ budhāḥ||4.19||', nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He whose undertakings are all devoid of desires and selfish purposes, and whose actions have been burned by the fire of knowledge, the wise call him a sage.', null, null, 'published')
+        'Whose undertakings are all devoid of plan and desire for results, and whose actions are burnt by the fire of knowledge, him, the sages call wise.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33114,7 +33113,7 @@ karmaṇyabhipravṛtto''pi naiva kiñcitkaroti saḥ||4.20||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having abandoned attachment to the fruits of the action, ever content, depending on nothing, he does not do anything even while being engaged in activity.', null, null, 'published')
+        'Forsaking the clinging to fruits of action, ever satisfied, depending on nothing, though engaged in action, he does not do anything.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33180,7 +33179,7 @@ values ((select id from verses where ref='4.21' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Without hope, controlling the mind and the self, having abandoned all covetousness, and performing only bodily actions, one incurs no sin.', null, null, 'published')
+        'Without hope, the body and mind controlled and all possessions relinquished, he does not suffer any evil consequences, by doing mere bodily action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33246,7 +33245,7 @@ samaḥ siddhāvasiddhau ca kṛtvāpi na nibadhyate||4.22||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Content with what comes to him without effort, free from the pairs of opposites and envy, even-minded in success and failure, he acts yet is not bound.', null, null, 'published')
+        'Content with what comes to him without effort, unaffected by the pairs of opposites, free from envy, even-minded in success and failure, though acting, he is not bound.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33313,7 +33312,7 @@ yajñāyācarataḥ karma samagraṃ pravilīyate||4.23||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'To one who is devoid of attachment, who is liberated, whose mind is established in knowledge, and who works for the sake of sacrifice (for the sake of God), the whole action is dissolved.', null, null, 'published')
+        'Devoid of attachment, liberated, with mind centred in knowledge, performing work for Yajna alone, his whole Karma dissolves away.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33375,7 +33374,7 @@ brahmaiva tena gantavyaṃ brahmakarmasamādhinā||4.24||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Brahman is the oblation; Brahman is the melted butter (ghee); by Brahman is the oblation poured into the fire of Brahman; Brahman indeed shall be attained by one who always sees Brahman in action.', null, null, 'published')
+        'The process is Brahman, the clarified butter is Brahman, offered by Brahman in the fire of Brahman; by seeing Brahman in action, he reaches Brahman alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33443,7 +33442,7 @@ brahmāgnāvapare yajñaṃ yajñenaivopajuhvati||4.25||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Some yogis perform sacrifice to the gods alone; while others, who have realized the Self, offer the Self as sacrifice in the fire of Brahman alone.', null, null, 'published')
+        'Some Yogis perform sacrifices to Devas alone, while others offer the self as sacrifice by the self in the fire of Brahman alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33509,7 +33508,7 @@ values ((select id from verses where ref='4.26' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Some again offer the organ of hearing and other senses as a sacrifice in the fire of restraint; others offer sound and other objects of the senses as a sacrifice in the fire of the senses.', null, null, 'published')
+        'Some again offer hearing and other senses as sacrifice in the fire of control, while others offer sound and other sense-objects as sacrifice in the fire of the senses.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33574,7 +33573,7 @@ values ((select id from verses where ref='4.27' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Others again sacrifice all the functions of the senses and those of the breath (vital energy, or Prana) in the fire of the Yoga of self-restraint, kindled by knowledge.', null, null, 'published')
+        'Some again offer all the actions of the senses and the functions of the vital energy, as sacrifice in the fire of control in self, kindled by knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33636,7 +33635,7 @@ svādhyāyajñānayajñāśca yatayaḥ saṃśitavratāḥ||4.28||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Others again offer wealth, austerity, and Yoga as sacrifice, while ascetics of self-restraint and rigid vows offer the study of scriptures and knowledge as sacrifice.', null, null, 'published')
+        'Others again offer wealth, austerity, and Yoga, as sacrifice, while still others, of self-restraint and rigid vows, offer study of the scriptures and knowledge, as sacrifice.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33699,7 +33698,7 @@ prāṇāpānagatī ruddhvā prāṇāyāmaparāyaṇāḥ||4.29||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Others offer as sacrifice the outgoing breath into the incoming, and the incoming into the outgoing, restraining the flow of the outgoing and the incoming breaths, solely absorbed in the restraint of the breath.', null, null, 'published')
+        'Yet some offer as sacrifice, the outgoing into the in-coming breath, and the in-coming into the out-going, stopping the courses of the in-coming and out-going breaths, constantly practising the regulation of the vital energy; while others yet of regulated food, offer in the Prânas the functions thereof.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33777,7 +33776,7 @@ sarve''pyete yajñavido yajñakṣapitakalmaṣāḥ||4.30||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Others who regulate their diet offer life-breaths in each life-breath. All these are knowers of sacrifice, whose sins are destroyed through sacrifice.', null, null, 'published')
+        'All of these are knowers of Yajna, having their sins consumed by Yajna, and eating of the nectar—the remnant of Yajna, they go to the Eternal Brahman. (Even) this world is not for the non-performer of Yajna, how then another, O best of the Kurus?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33843,7 +33842,7 @@ nāyaṃ loko''styayajñasya kuto़''nyaḥ kurusattama||4.31||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who eat the remnants of the sacrifice, which are like nectar, go to the eternal Brahman. This world is not for the one who does not perform sacrifice; how then can they have the other, O Arjuna?', null, null, 'published')
+        'All of these are knowers of Yajna, having their sins consumed by Yajna, and eating of the nectar—the remnant of Yajna, they go to the Eternal Brahman. (Even) this world is not for the non-performer of Yajna, how then another, O best of the Kurus?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33908,7 +33907,7 @@ karmajānviddhi tānsarvānevaṃ jñātvā vimokṣyase||4.32||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, manifold sacrifices are spread out before Brahman at the face of Brahman. Know them all to be born of action, and thus knowing, you shall be liberated.', null, null, 'published')
+        'Various Yajnas, like the above, are strewn in the store-house of the Veda. Know them all to be born of action, and thus knowing, thou shalt be free.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -33974,7 +33973,7 @@ sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate||4.33||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Superior is wisdom-sacrifice to the sacrifice with objects, O Parantapa (scorcher of the foes). All actions in their entirety, O Arjuna, culminate in knowledge.', null, null, 'published')
+        'Knowledge-sacrifice, O scorcher of foes, is superior to sacrifice (performed) with (material) objects. All action in its entirety, O Pârtha, attains its consummation in knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34038,7 +34037,7 @@ upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ||4.34||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know that the wise who have realized the truth will instruct thee in that knowledge through long prostration, supplication, and service.', null, null, 'published')
+        'Know that, by prostrating thyself, by questions, and by service; the wise, those who have realised the Truth, will instruct thee in that knowledge.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34101,7 +34100,7 @@ yena bhūtānyaśeṣeṇa drakṣyasyātmanyatho mayi||4.35||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Knowing that thou shalt not, O Arjuna, again be deluded like this; and by that thou shalt see all beings in thyself and also in me.', null, null, 'published')
+        'Knowing which, thou shalt not, O Pândava, again get deluded like this, and by which thou shalt see the whole of creation in (thy) Self and in Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34169,7 +34168,7 @@ sarvaṃ jñānaplavenaiva vṛjinaṃ santariṣyasi||4.36||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Even if thou art the most sinful of all sinners, yet thou shalt surely cross over all sins by the raft of knowledge.', null, null, 'published')
+        'Even if thou be the most sinful among all the sinful, yet by the raft of knowledge alone thou shalt go across all sin.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34233,7 +34232,7 @@ jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā||4.37||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As the blazing fire reduces fuel to ashes, O Arjuna, so does the fire of knowledge reduce all actions to ash.', null, null, 'published')
+        'As blazing fire reduces wood into ashes, so, O Arjuna, does the fire of knowledge reduce all Karma to ashes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34298,7 +34297,7 @@ tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati||4.38||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, there is no purifier in this world like knowledge. He who is perfected in Yoga finds it within the Self in due time.', null, null, 'published')
+        'Verily there exists nothing in this world purifying like knowledge. In good time, having reached perfection in Yoga, one realises that oneself in one''s own heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34365,7 +34364,7 @@ jñānaṃ labdhvā parāṃ śāntimacireṇādhigacchati||4.39||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The one who is full of faith, devoted to it, and has subdued their senses obtains this knowledge; and upon obtaining the knowledge, they attain the supreme peace immediately.', null, null, 'published')
+        'The man with Shraddhâ, the devoted, the master of one''s senses, attains (this) knowledge. Having attained knowledge one goes at once to the Supreme Peace.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34430,7 +34429,7 @@ nāyaṃ loko''sti na paro na sukhaṃ saṃśayātmanaḥ||4.40||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The ignorant, the faithless, and the doubting self go to destruction; there is neither this world nor the other, nor happiness for the doubting one.', null, null, 'published')
+        'The ignorant, the man without Shraddhâ, the doubting self, goes to destruction. The doubting self has neither this world, nor the next, nor happiness.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34499,7 +34498,7 @@ values ((select id from verses where ref='4.41' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who has renounced actions through Yoga, whose doubts have been dispelled by knowledge, and who is self-possessed—such a one is not bound by actions, O Arjuna.', null, null, 'published')
+        'With work renounced by Yoga and doubts rent asunder by knowledge, O Dhananjaya, actions do not bind him who is poised in the Self.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34561,7 +34560,7 @@ chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata||4.42||', null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, with the sword of knowledge (of the Self), cut asunder the doubt of the self, born of ignorance, residing in your heart, and take refuge in Yoga. Arise, O Arjuna!', null, null, 'published')
+        'Therefore, cutting with the sword of knowledge, this doubt about the Self, born of ignorance, residing in thy heart, take refuge in Yoga. Arise, O Bhârata!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='4.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34641,7 +34640,7 @@ yacchreya etayorekaṃ tanme brūhi suniśicatam||5.1||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Krishna, you praise renunciation of actions and also yoga. Please tell me conclusively which is better of the two."', null, null, 'published')
+        'Renunciation of action, O Krishna, thou commendest, and again, its performance. Which is the better one of these? Do thou tell me decisively.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34724,7 +34723,7 @@ tayostu karmasaṃnyāsātkarmayogo viśiṣyate||5.2||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "Renunciation and the Yoga of action both lead to the highest bliss; but of the two, the Yoga of action is superior to the renunciation of action."', null, null, 'published')
+        'Both renunciation and performance of action lead to freedom: of these, performance of action is superior to the renunciation of action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34798,7 +34797,7 @@ nirdvandvo hi mahābāho sukhaṃ bandhātpramucyate||5.3||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He should be known as a perpetual Sannyasi who neither hates nor desires; for, free from the pairs of opposites, O mighty-armed Arjuna, he is easily freed from bondage.', null, null, 'published')
+        'He should be known a constant Sannyâsi, who neither likes nor dislikes: for, free from the pairs of opposites, mighty-armed, he is easily set free from bondage.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34866,7 +34865,7 @@ ekamapyāsthitaḥ samyagubhayorvindate phalam||5.4||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Children, not the wise, speak of knowledge and the Yoga of action, or the performance of action, as though they are distinct and different; he who is truly established in one, obtains the fruits of both.', null, null, 'published')
+        'Children, not the wise, speak of knowledge and performance of action, as distinct. He who truly lives in one, gains the fruits of both.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -34933,7 +34932,7 @@ ekaṃ sāṃkhyaṃ ca yogaṃ ca yaḥ paśyati sa paśyati||5.5||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That place which is reached by the Sankhyas or the Jnanis is also reached by the Yogis (Karma Yogis). He who sees knowledge and the performance of action (Karma Yoga) as one, sees truly.', null, null, 'published')
+        'The plane which is reached by the Jnânins is also reached by the Karmayogins. Who sees knowledge and performance of action as one, he sees.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35003,7 +35002,7 @@ yogayukto munirbrahma nacireṇādhigacchati||5.6||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But, O mighty-armed Arjuna, renunciation is hard to attain without Yoga; the sage who is in harmony with Yoga quickly goes to Brahman.', null, null, 'published')
+        'Renunciation of action, O mighty-armed, is hard to attain to without performance of action; the man of meditation, purified by devotion to action, quickly goes to Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35067,7 +35066,7 @@ sarvabhūtātmabhūtātmā kurvannapi na lipyate||5.7||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is devoted to the path of action, whose mind is pure, who has conquered the self, who has subdued his senses, and who realizes his Self as the Self in all beings, though acting, is not tainted.', null, null, 'published')
+        'With the mind purified by devotion to performance of action, and the body conquered, and senses subdued, one who realises one''s Self, as the Self in all beings, though acting, is not tainted.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35129,7 +35128,7 @@ paśyan śrṛṇavanspṛśañjighrannaśnangacchansvapan śvasan||5.8||', null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I do nothing at all," thus would the harmonized knower of Truth think, seeing, hearing, touching, smelling, eating, going, sleeping, and breathing.', null, null, 'published')
+        'The knower of Truth, (being) centred (in the Self) should think, "I do nothing at all"—though seeing, hearing, touching, smelling, eating, going, sleeping, breathing, speaking, letting go, holding, opening and closing the eyes—convinced that it is the senses that move among sense-objects.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35209,7 +35208,7 @@ indriyāṇīndriyārtheṣu vartanta iti dhārayan||5.9||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Speaking, letting go, seizing, opening, and closing the eyes, one should be convinced that the senses move among the sense-objects.', null, null, 'published')
+        'The knower of Truth, (being) centred (in the Self) should think, "I do nothing at all"—though seeing, hearing, touching, smelling, eating, going, sleeping, breathing, speaking, letting go, holding, opening and closing the eyes—convinced that it is the senses that move among sense-objects.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35273,7 +35272,7 @@ lipyate na sa pāpena padmapatramivāmbhasā||5.10||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who does actions, offering them to Brahman and abandoning attachment, is not tainted by sin, just as a lotus leaf is not tainted by water.', null, null, 'published')
+        'He who does actions forsaking attachment, resigning them to Brahman, is not soiled by evil, like unto a lotus-leaf by water.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35340,7 +35339,7 @@ yoginaḥ karma kurvanti saṅgaṃ tyaktvā''''tmaśuddhaye||5.11||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Yogis, having abandoned attachment, perform actions only through the body, mind, intellect, and even the senses, for the purification of the self.', null, null, 'published')
+        'Devotees in the path of work perform action, only with body, mind, senses, and intellect, forsaking attachment, for the purification of the heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35406,7 +35405,7 @@ ayuktaḥ kāmakāreṇa phale sakto nibadhyate||5.12||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The one who is united (the well-poised or harmonized) having abandoned the fruit of action attains eternal peace; whereas the one who is not united (the unsteady or unbalanced), impelled by desire and attached to the fruit, is bound.', null, null, 'published')
+        'The well-poised, forsaking the fruit of action, attains peace, born of steadfastness; the unbalanced one, led by desire, is bound by being attached to the fruit (of action).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35470,7 +35469,7 @@ navadvāre pure dehī naiva kurvanna kārayan||5.13||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Mentally renouncing all actions and being self-controlled, the embodied one happily rests in the nine-gated city, neither acting nor causing others (body and senses) to act.', null, null, 'published')
+        'The subduer (of the senses), having renounced all actions by discrimination, rests happily in the city of the nine gates, neither acting, nor causing (others) to act.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35538,7 +35537,7 @@ na karmaphalasaṃyogaṃ svabhāvastu pravartate||5.14||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Neither does the Lord create agency nor actions for the world, nor union with the fruits of actions; rather, it is Nature that acts.', null, null, 'published')
+        'Neither agency, nor actions does the Lord create for the world, nor (does He bring about) the union with the fruit of action. It is universal ignorance that does. (it all).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35604,7 +35603,7 @@ ajñānenāvṛtaṃ jñānaṃ tena muhyanti jantavaḥ||5.15||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Lord takes neither the demerit nor the merit of any; knowledge is enveloped by ignorance, and beings are deluded.', null, null, 'published')
+        'The Omnipresent takes note of the merit or demerit of none. Knowledge is enveloped in ignorance, hence do beings get deluded.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35672,7 +35671,7 @@ teṣāmādityavajjñānaṃ prakāśayati tatparam||5.16||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But to those whose ignorance is destroyed by knowledge of the Self, like the sun, knowledge reveals the Supreme Brahman.', null, null, 'published')
+        'But whose ignorance is destroyed by the knowledge of Self,—that knowledge of theirs, like the sun, reveals the Supreme (Brahman).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35738,7 +35737,7 @@ gacchantyapunarāvṛttiṃ jñānanirdhūtakalmaṣāḥ||5.17||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Their intellect absorbed in That, their self being That, established in That, with That as their supreme goal, they go whence there is no return, their sins dispelled by knowledge.', null, null, 'published')
+        'Those who have their intellect absorbed in That, whose self is That, whose steadfastness is in That, whose consummation is That, their impurities cleansed by knowledge, they attain to Non-return (Moksha).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35800,7 +35799,7 @@ values ((select id from verses where ref='5.18' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Sages look with an equal eye on a Brahmana endowed with learning and humility, on a cow, an elephant, a dog, and even an outcaste.', null, null, 'published')
+        'The knowers of the Self look with an equal eye on a Brâhmana endowed with learning and humility, a cow, an elephant, a dog, and a pariah.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35866,7 +35865,7 @@ nirdoṣaṃ hi samaṃ brahma tasmādbrahmaṇi te sthitāḥ||5.19||', null, n
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Even here in this world, those whose minds rest in reality overcome birth; Brahman is indeed spotless and real; therefore they are established in Brahman.', null, null, 'published')
+        '(Relative) existence has been conquered by them, even in this world, whose mind rests in evenness, since Brahman is even and without imperfection: therefore they indeed rest in Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -35935,7 +35934,7 @@ sthirabuddhirasammūḍho brahmavidbrahmaṇi sthitaḥ||5.20||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Resting in Brahman, with a steady intellect and undeluded, the knower of Brahman neither rejoices upon obtaining what is pleasant nor grieves upon obtaining what is unpleasant.', null, null, 'published')
+        'Resting in Brahman, with intellect steady, and without delusion, the knower of Brahman neither rejoiceth on receiving what is pleasant, nor grieveth on receiving what is unpleasant.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36002,7 +36001,7 @@ sa brahmayogayuktātmā sukhamakṣayamaśnute||5.21||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With the self unattached to external contacts, he finds happiness in the Self; with the self engaged in the meditation of Brahman, he attains endless happiness.', null, null, 'published')
+        'With the heart unattached to external objects, he realises the joy that is in the Self. With the heart devoted to the meditation of Brahman, he attains un-decaying happiness.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36066,7 +36065,7 @@ values ((select id from verses where ref='5.22' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The enjoyments that arise from contact are only sources of pain, for they have a beginning and an end, O Arjuna; the wise do not rejoice in them.', null, null, 'published')
+        'Since enjoyments that are contact-born are parents of misery alone, and with beginning and end, O son of Kunti, a wise man does not seek pleasure in them.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36133,7 +36132,7 @@ kāmakrodhodbhavaṃ vegaṃ sa yuktaḥ sa sukhī naraḥ||5.23||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is able, while still here in this world, to withstand the impulse born out of desire and anger before the liberation from the body, he is a Yogi, and he is a happy man.', null, null, 'published')
+        'He who can withstand in this world, before the liberation from the body, the impulse arising from lust and anger, he is steadfast (in Yoga), he is a happy man.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36202,7 +36201,7 @@ sa yogī brahmanirvāṇaṃ brahmabhūto''dhigacchati||5.24||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is happy within, who rejoices within, and who is illuminated within, that Yogi attains absolute freedom, or Moksha, becoming Brahman himself.', null, null, 'published')
+        'Whose happiness is within, whose relaxation is within, whose light is within, that Yogi alone, becoming Brahman, gains absolute freedom.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36265,7 +36264,7 @@ chinnadvaidhā yatātmānaḥ sarvabhūtahite ratāḥ||5.25||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The sages obtain absolute freedom or Moksha when their sins have been destroyed, their dualities have been torn asunder, they are self-controlled, and they are intent on the welfare of all beings.', null, null, 'published')
+        'With imperfections exhausted, doubts dispelled, senses controlled, engaged in the good of all beings, the Rishis obtain absolute freedom.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36328,7 +36327,7 @@ abhito brahmanirvāṇaṃ vartate viditātmanām||5.26||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Absolute freedom exists on all sides for those self-controlled ascetics who are free from desire and anger, who have controlled their thoughts, and who have realized the Self.', null, null, 'published')
+        'Released from lust and anger, the heart controlled, the Self realised, absolute freedom is for such Sannyâsis, both here and hereafter.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36391,7 +36390,7 @@ prāṇāpānau samau kṛtvā nāsābhyantaracāriṇau||5.27||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Shutting out all external contacts and fixing the gaze between the eyebrows, realizing the outgoing and incoming breaths moving within the nostrils.', null, null, 'published')
+        'Shutting out external objects, steadying the eyes between the eyebrows, restricting the even currents of Prâna and Apâna inside the nostrils; the senses, mind, and intellect controlled, with Moksha as the supreme goal, freed from desire, fear and anger: such a man of meditation is verily free for ever.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36474,7 +36473,7 @@ vigatecchābhayakrodho yaḥ sadā mukta eva saḥ||5.28||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With the senses, mind, and intellect ever controlled, having liberation as their supreme goal, free from desire, fear, and anger, the sage is truly liberated forever.', null, null, 'published')
+        'Shutting out external objects, steadying the eyes between the eyebrows, restricting the even currents of Prâna and Apâna inside the nostrils; the senses, mind, and intellect controlled, with Moksha as the supreme goal, freed from desire, fear and anger: such a man of meditation is verily free for ever.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36543,7 +36542,7 @@ suhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati||5.29||', null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who knows Me as the enjoyer of sacrifices and austerities, the great Lord of all the worlds, and the friend of all beings, attains peace.', null, null, 'published')
+        'Knowing Me as the dispenser of Yajnas and asceticisms, as the Great Lord of all worlds, as the friend of all beings, he attains Peace.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='5.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36622,7 +36621,7 @@ sa saṃnyāsī ca yogī ca na niragnirna cākriyaḥ||6.1||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said: He who performs his bounden duty without depending on the fruits of his actions—he is a sannyasi and a yogi, not he who is without fire and without action.', null, null, 'published')
+        'He who performs his bounden duty without leaning to the fruit of action —he is a renouncer of action as well as of steadfast mind: not he who is without fire, nor he who is without action.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36703,7 +36702,7 @@ na hyasaṃnyastasaṅkalpo yogī bhavati kaścana||6.2||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Do you, O Arjuna, know that Yoga is what they call renunciation; no one indeed becomes a Yogi who has not renounced their thoughts.', null, null, 'published')
+        'Know that to be devotion to action, which is called renunciation, O Pândava, for none becomes a devotee to action without forsaking Sankalpa.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36771,7 +36770,7 @@ yogārūḍhasya tasyaiva śamaḥ kāraṇamucyate||6.3||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For a sage who wishes to attain to Yoga, action is said to be the means; for the same sage who has attained Yoga, inaction is said to be the means.', null, null, 'published')
+        'For the man of meditation wishing to attain purification of heart leading to concentration, work is said to be the way: For him, when he has attained such (concentration), inaction is said to be the way.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36836,7 +36835,7 @@ sarvasaṅkalpasaṃnyāsī yogārūḍhastadocyate||6.4||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When a person is not attached to the sense-objects or to actions, having renounced all thoughts, then they are said to have attained Yoga.', null, null, 'published')
+        'Verily, when there is no attachment, either to sense-objects, or to actions, having renounced all Sankalpas, then is one said to have attained concentration.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36901,7 +36900,7 @@ values ((select id from verses where ref='6.5' and work_id=(select id from works
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'One should raise oneself by one''s own self alone; let not one lower oneself; for the self alone is one''s own friend, and the self alone is one''s own enemy.', null, null, 'published')
+        'A man should uplift himself by his own self, so let him not weaken this self. For this self is the friend of oneself, and this self is the enemy of oneself.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -36969,7 +36968,7 @@ anātmanastu śatrutve vartetātmaiva śatruvat||6.6||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Self is the friend of the self of him by whom the Self has been conquered; but to the unconquered self, this Self stands in the position of an enemy, like an external foe.', null, null, 'published')
+        'The self (the active part of our nature) is the friend of the self, for him who has conquered himself by this self. But to the unconquered self, this self is inimical, (and behaves) like (an external) foe.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37038,7 +37037,7 @@ values ((select id from verses where ref='6.7' and work_id=(select id from works
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Supreme Self of him who is self-controlled and peaceful remains balanced in cold and heat, pleasure and pain, as well as in honor and dishonor.', null, null, 'published')
+        'To the self-controlled and serene, the Supreme Self is, the object of constant, realisation, in cold and heat, pleasure and pain, as well as in honour and dishonour.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37102,7 +37101,7 @@ yukta ityucyate yogī samaloṣṭāśmakāñcanaḥ||6.8||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Yogi who is satisfied with the knowledge and wisdom of the Self, who has conquered the senses, and to whom a clod of earth, a piece of stone, and gold are all the same, is said to have attained Nirvikalpa Samadhi.', null, null, 'published')
+        'Whose heart is filled with satisfaction by wisdom and realisation, and is changeless, whose senses are conquered, and to whom a lump of earth, stone, and gold are the same: that Yogi is called steadfast.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37168,7 +37167,7 @@ sādhuṣvapi ca pāpeṣu samabuddhirviśiṣyate||6.9||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who is of the same mind towards the good-hearted, friends, enemies, the indifferent, the neutral, the hateful, the relatives, the righteous, and the unrighteous, excels.', null, null, 'published')
+        'He attains excellence who looks with equal regard upon well-wishers, friends, foes, neutrals, arbiters, the hateful, the relatives, and upon the righteous and the unrighteous alike.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37234,7 +37233,7 @@ ekākī yatacittātmā nirāśīraparigrahaḥ||6.10||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Let the yogi constantly strive to keep the mind steady, remaining in solitude, alone, with the body and mind controlled, and free from hope and greed.', null, null, 'published')
+        'The Yogi should constantly practise concentration of the heart, retiring into solitude, alone, with the mind and body subdued, and free from hope and possession.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37297,7 +37296,7 @@ nātyucchritaṃ nātinīcaṃ cailājinakuśottaram||6.11||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'In a clean spot, having established a firm seat of his own, neither too high nor too low, made of cloth, skin, and kusha grass layered one over the other.', null, null, 'published')
+        'Having in a cleanly spot established his seat, firm, neither too high nor too low, made of a cloth, a skin, and Kusha-grass, arranged in consecution:', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37366,7 +37365,7 @@ upaviśyāsane yuñjyādyogamātmaviśuddhaye||6.12||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There, having made the mind one-pointed, with the actions of the mind and senses controlled, let him, seated on the seat, practice Yoga for the purification of the self.', null, null, 'published')
+        'There, seated on that seat, making the mind one-pointed and subduing the action of the imaging faculty and the senses, let him practise Yoga for the purification of the heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37430,7 +37429,7 @@ saṃprekṣya nāsikāgraṃ svaṃ diśaścānavalokayan||6.13||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Let him firmly hold his body, head, and neck erect and still, gazing at the tip of his nose without looking around.', null, null, 'published')
+        'Let him firmly hold his body, head and neck erect and still, (with the eye-balls fixed, as if) gazing at the tip of his nose, and not looking around.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37496,7 +37495,7 @@ manaḥ saṃyamya maccitto yukta āsīta matparaḥ||6.14||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Serene-minded, fearless, firm in the vow of a Brahmachari, having controlled their mind, thinking of Me and balanced in mind, let them sit, having Me as their supreme goal.', null, null, 'published')
+        'With the heart serene and fearless, firm in the vow of a Brahmachâri, with the mind controlled, and ever thinking of Me, let him sit (in Yoga) having Me as his supreme goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37560,7 +37559,7 @@ values ((select id from verses where ref='6.15' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, always keeping the mind balanced, the yogi, with the mind controlled, attains the peace abiding in Me, culminating in liberation.', null, null, 'published')
+        'Thus always keeping the mind steadfast, the Yogi of subdued mind attains the peace residing in Me,—the peace which culminates in Nirvâna (Moksha).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37624,7 +37623,7 @@ na cātisvapnaśīlasya jāgrato naiva cārjuna||6.16||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, Yoga is not possible for him who eats too much, nor for him who does not eat at all, nor for him who sleeps too much, nor for him who is always awake, O Arjuna.', null, null, 'published')
+        '(Success in) Yoga is not for him who eats too much or too little—nor, O Arjuna, for him who sleeps too much or too little.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37696,7 +37695,7 @@ yuktasvapnāvabodhasya yogo bhavati duḥkhahā||6.17||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Yoga becomes the destroyer of pain for him who is moderate in eating and recreation (such as walking, etc.), who exercises moderation in action, and who is moderate in sleep and wakefulness.', null, null, 'published')
+        'To him who is temperate in eating and recreation, in his effort for work, and in sleep and wakefulness, Yoga becomes the destroyer of misery.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37758,7 +37757,7 @@ niḥspṛhaḥ sarvakāmebhyo yukta ityucyate tadā||6.18||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When the perfectly controlled mind rests in the Self alone, free from longing for any of the objects of desire, then it is said, ''He is united''.', null, null, 'published')
+        'When the completely controlled mind rests serenely in the Self alone, free from longing after all desires, then is one called steadfast, (in the Self).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37823,7 +37822,7 @@ yogino yatacittasya yuñjato yogamātmanaḥ||6.19||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As a lamp placed in a windless spot does not flicker, so is the Yogi of a controlled mind, who practices Yoga in the Self, compared.', null, null, 'published')
+        '"As a lamp in a spot sheltered from the wind does not flicker,"—even such has been the simile used for a Yogi of subdued mind, practising concentration in the Self.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37889,7 +37888,7 @@ yatra caivātmanā''''tmānaṃ paśyannātmani tuṣyati||6.20||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When the mind, restrained by the practice of yoga, attains quietude, and when one sees the Self by the Self, they are satisfied in their own Self.', null, null, 'published')
+        'When the mind, absolutely restrained by the practice of concentration, attains quietude, and when seeing the Self by the self, one is satisfied in his own Self; when he feels that infinite bliss—which is perceived by the (purified) intellect and which transcends the senses, and established wherein he never departs from his real state; and having obtained which, regards no other acquisition superior to that, and where established, he is not moved even by heavy sorrow;—let that be known as the state, called by the name of Yoga,—a state of severance from the contact of pain. This Yoga should be practised with perseverance, undisturbed by depression of heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -37955,7 +37954,7 @@ vetti yatra na caivāyaṃ sthitaścalati tattvataḥ||6.21||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'When he (the Yogi) feels that infinite bliss which can be grasped by the pure intellect and which transcends the senses, and is established therein, never moving away from the reality.', null, null, 'published')
+        'When the mind, absolutely restrained by the practice of concentration, attains quietude, and when seeing the Self by the self, one is satisfied in his own Self; when he feels that infinite bliss—which is perceived by the (purified) intellect and which transcends the senses, and established wherein he never departs from his real state; and having obtained which, regards no other acquisition superior to that, and where established, he is not moved even by heavy sorrow;—let that be known as the state, called by the name of Yoga,—a state of severance from the contact of pain. This Yoga should be practised with perseverance, undisturbed by depression of heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38024,7 +38023,7 @@ yasminsthito na duḥkhena guruṇāpi vicālyate||6.22||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having obtained it, he thinks there is no other gain superior to it; established in it, he is not moved even by heavy sorrow.', null, null, 'published')
+        'When the mind, absolutely restrained by the practice of concentration, attains quietude, and when seeing the Self by the self, one is satisfied in his own Self; when he feels that infinite bliss—which is perceived by the (purified) intellect and which transcends the senses, and established wherein he never departs from his real state; and having obtained which, regards no other acquisition superior to that, and where established, he is not moved even by heavy sorrow;—let that be known as the state, called by the name of Yoga,—a state of severance from the contact of pain. This Yoga should be practised with perseverance, undisturbed by depression of heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38093,7 +38092,7 @@ sa niścayena yoktavyo yogo''nirviṇṇacetasā||6.23||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Let this be known by the name of Yoga, the severance from union with pain. This Yoga should be practiced with determination and with an undespairing mind.', null, null, 'published')
+        'When the mind, absolutely restrained by the practice of concentration, attains quietude, and when seeing the Self by the self, one is satisfied in his own Self; when he feels that infinite bliss—which is perceived by the (purified) intellect and which transcends the senses, and established wherein he never departs from his real state; and having obtained which, regards no other acquisition superior to that, and where established, he is not moved even by heavy sorrow;—let that be known as the state, called by the name of Yoga,—a state of severance from the contact of pain. This Yoga should be practised with perseverance, undisturbed by depression of heart.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38155,7 +38154,7 @@ manasaivendriyagrāmaṃ viniyamya samantataḥ||6.24||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Abandoning unreservedly all desires born of Sankalpa (thought and imagination) and completely restraining the whole group of senses by the mind from all sides.', null, null, 'published')
+        'Abandoning without reserve all desires born of Sankalpa, and completely restraining, by the mind alone, the whole group of senses from their objects in all directions;', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38219,7 +38218,7 @@ values ((select id from verses where ref='6.25' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Little by little, let him attain steadiness of the intellect by holding it firmly; having made the mind establish itself in the Self, let him not think of anything else.', null, null, 'published')
+        'With the intellect set in patience, with the mind fastened on the Self, let him attain quietude by degrees: let him not think of anything.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38284,7 +38283,7 @@ tatastato niyamyaitadātmanyeva vaśaṃ nayet||6.26||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'From whatever cause the restless and unsteady mind wanders away, let him restrain it from that and bring it under the control of the Self alone.', null, null, 'published')
+        'Through whatever reason the restless, unsteady mind wanders away, let him curbing it from that, bring it under the subjugation of the Self alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38349,7 +38348,7 @@ upaiti śāntarajasaṃ brahmabhūtamakalmaṣam||6.27||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Supreme Bliss indeed comes to this Yogi whose mind is made peaceful, whose passion is quelled, who has become Brahman, and who is free from sin.', null, null, 'published')
+        'Verily, the supreme bliss comes to that Yogi, of perfectly tranquil mind, with passions quieted, Brahman-become, and freed from taint.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38412,7 +38411,7 @@ sukhena brahmasaṃsparśamatyantaṃ sukhamaśnute||6.28||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The yogi, always engaging the mind thus (in the practice of yoga), is freed from sins and easily enjoys the infinite bliss of contact with Brahman (the Eternal).', null, null, 'published')
+        'The Yogi freed from taint (of good and evil), constantly engaging the mind thus, with ease attains the infinite bliss of contact with Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38477,7 +38476,7 @@ values ((select id from verses where ref='6.29' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With the mind harmonized by Yoga, he sees the Self abiding in all beings and all beings in the Self; he sees the same everywhere.', null, null, 'published')
+        'With the heart concentrated by Yoga, with the eye of evenness for all things, he beholds the Self in all beings and all beings in the Self.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38540,7 +38539,7 @@ tasyāhaṃ na praṇaśyāmi sa ca me na praṇaśyati||6.30||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who sees Me everywhere and sees everything in Me, never becomes separated from Me, nor do I from him.', null, null, 'published')
+        'He who sees Me in all things, and sees all things in Me, he never becomes separated from Me, nor do I become separated from him.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38610,7 +38609,7 @@ sarvathā vartamāno''pi sa yogī mayi vartate||6.31||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, being established in unity, worships Me, who dwells in all beings, that yogi abides in Me, whatever their mode of living may be.', null, null, 'published')
+        'He who being established in unity, worships Me, who am dwelling in all beings, whatever his mode of life, that Yogi abides in Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38676,7 +38675,7 @@ sukhaṃ vā yadi vā duḥkhaṃ saḥ yogī paramo mataḥ||6.32||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'He who, through the likeness of the Self, O Arjuna, sees reality everywhere, be it pleasure or pain, is regarded as the highest Yogi.', null, null, 'published')
+        'He who judges of pleasure or pain everywhere, by the same standard as he applies to himself, that Yogi, O Arjuna, is regarded as the highest.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38748,7 +38747,7 @@ etasyāhaṃ na paśyāmi cañcalatvāt sthitiṃ sthirām||6.33||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "O Krishna, I do not see how this Yoga of equanimity, which you have taught me, can be maintained steadily, due to the restlessness of the mind."', null, null, 'published')
+        'This Yoga which has been taught by Thee, O slayer of Madhu, as characterised by evenness, I do not see (the possibility of) its lasting endurance, owing to restlessness (of the mind).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38826,7 +38825,7 @@ tasyāhaṃ nigrahaṃ manye vāyoriva suduṣkaram||6.34||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The mind is indeed restless, turbulent, strong, and unyielding, O Krishna; I consider it as difficult to control as controlling the wind.', null, null, 'published')
+        'Verily, the mind, O Krishna, is restless, turbulent, strong, and unyielding;. I regard it quite as hard to achieve its control, as that of the wind.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38897,7 +38896,7 @@ abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate||6.35||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "Undoubtedly, O mighty-armed Arjuna, the mind is difficult to control and restless; but with practice and dispassion, it can be restrained."', null, null, 'published')
+        'Without doubt, O mighty-armed, the mind is restless, and difficult to control; but through practice and renunciation, O son of Kunti, it may be governed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.35' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -38972,7 +38971,7 @@ vaśyātmanā tu yatatā śakyo''vāptumupāyataḥ||6.36||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I think Yoga is hard to be attained by one with an uncontrolled self, but the self-controlled and striving one can attain it by the appropriate means.', null, null, 'published')
+        'Yoga is hard to be attained by one of uncontrolled self: such is My conviction; but by him who has controlled himself, it can be attained by striving through proper means. This is My conviction.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.36' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39041,7 +39040,7 @@ aprāpya yogasaṃsiddhiṃ kāṃ gatiṃ kṛṣṇa gacchati||6.37||', null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "He who is unable to control himself, even though he has faith, and whose mind wanders away from Yoga, what end does he meet, having failed to attain perfection in Yoga, O Krishna?"', null, null, 'published')
+        'Though possessed of Shraddhâ but unable to control himself, with the mind wandering away from Yoga, what end does one, failing to gain perfection in Yoga, meet, O Krishna?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.37' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39116,7 +39115,7 @@ apratiṣṭho mahābāho vimūḍho brahmaṇaḥ pathi||6.38||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fallen from both, does he not perish like a rent cloud, supportless, O mighty-armed one, deluded on the path of Brahman?', null, null, 'published')
+        'Does he not, fallen from both, perish, without support, like a rent cloud, O mighty-armed, deluded in the path of Brahman?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.38' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39182,7 +39181,7 @@ tvadanyaḥ saṃśayasyāsya chettā na hyupapadyate||6.39||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O Krishna, please completely dispel this doubt of mine, for it is not possible for anyone but You to do so.', null, null, 'published')
+        'This doubt of mine, O Krishna, Thou shouldst completely dispel; for it is not possible for any but Thee to dispel this doubt.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.39' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39254,7 +39253,7 @@ nahi kalyāṇakṛtkaśicaddurgatiṃ tāta gacchati||6.40||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "O Arjuna, neither in this world nor in the next will there be destruction for him; none, indeed, who does good, O my son, ever comes to grief."', null, null, 'published')
+        'Verily, O son of Prithâ, there is destruction for him, neither here nor hereafter: for, the doer of good, O my son, never comes to grief.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.40' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39333,7 +39332,7 @@ values ((select id from verses where ref='6.41' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having attained to the worlds of the righteous and having dwelt there for everlasting years, he who fell from Yoga is born in a house of the pure and wealthy.', null, null, 'published')
+        'Having attained to the worlds of the righteous, and dwelling there for everlasting years, one fallen from Yoga reincarnates in the home of the pure and the prosperous.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.41' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39397,7 +39396,7 @@ etaddhi durlabhataraṃ loke janma yadīdṛśam||6.42||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Or he is born in a family of even the wisest of yogis; verily, such a birth is very difficult to obtain in this world.', null, null, 'published')
+        'Or else he is born into a family of wise Yogis only; verily, a birth such as that is very rare to obtain in this world.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.42' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39463,7 +39462,7 @@ yatate ca tato bhūyaḥ saṃsiddhau kurunandana||6.43||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Then he comes into contact with the knowledge acquired in his former body and strives even more for perfection, O Arjuna.', null, null, 'published')
+        'There he is united with the intelligence acquired in his former body, and strives more than before, for perfection, O son of the Kurus.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.43' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39527,7 +39526,7 @@ jijñāsurapi yogasya śabdabrahmātivartate||6.44||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'By that same former practice, he is borne on in spite of himself. Even he who merely wishes to know Yoga goes beyond the Brahmanic word.', null, null, 'published')
+        'By that previous practice alone, he is borne on in spite of himself. Even the enquirer after Yoga rises superior to the performer of Vedic actions.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.44' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39594,7 +39593,7 @@ anekajanmasaṃsiddhastato yāti parāṃ gatim||6.45||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But the Yogi who strives assiduously, purified of sins and perfected gradually over many births, reaches the highest goal.', null, null, 'published')
+        'The Yogi, striving assiduously, purified of taint, gradually gaining perfection through many births, then reaches the highest goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.45' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39660,7 +39659,7 @@ karmibhyaścādhiko yogī tasmādyogī bhavārjuna||6.46||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The yogi is thought to be superior to the ascetics, even superior to those who have knowledge obtained through the study of scriptures; he is also superior to men of action; therefore, be thou a yogi, O Arjuna.', null, null, 'published')
+        'The Yogi is regarded as superior to those who practise asceticism, also to those who have obtained wisdom (through the Shâstras). He is also superior to the performers of action, (enjoined in the Vedas). Therefore, be thou a Yogi, O Arjuna!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.46' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39728,7 +39727,7 @@ values ((select id from verses where ref='6.47' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And among all the Yogis, he who, full of faith and with his inner self merged in Me, worships Me is deemed by Me to be the most devoted.', null, null, 'published')
+        'And of all Yogis, he who with the inner self merged in Me, with Shraddhâ devotes himself to Me, is considered by Me the most steadfast.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='6.47' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39809,7 +39808,7 @@ asaṃśayaṃ samagraṃ māṃ yathā jñāsyasi tacchṛṇu||7.1||', null, n
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "O Arjuna, hear how you shall, without doubt, know Me fully, with your mind intent on Me, practicing Yoga and taking refuge in Me."', null, null, 'published')
+        'With the mind intent on Me, O son of Prithâ, taking refuge in Me, and practising Yoga, how thou shalt without doubt know Me fully, that do thou hear.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39886,7 +39885,7 @@ yajjñātvā neha bhūyo''nyajjñātavyamavaśiṣyate||7.2||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I will declare to you in full this knowledge combined with realization, after knowing which nothing else remains to be known here.', null, null, 'published')
+        'I shall tell you in full, of knowledge, speculative and practical, knowing which, nothing more here remains to be known.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -39955,7 +39954,7 @@ yatatāmapi siddhānāṃ kaśicanmāṃ vetti tattvataḥ||7.3||', null, null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Among thousands of men, one may perchance strive for perfection; even among those successful strivers, only one may perchance know Me in essence.', null, null, 'published')
+        'One, perchance, in thousands of men, strives for perfection; and one perchance, among the blessed ones, striving thus, knows Me in reality.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40020,7 +40019,7 @@ ahaṅkāra itīyaṃ me bhinnā prakṛtiraṣṭadhā||7.4||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Earth, water, fire, air, ether, mind, intellect, and egoism—thus is My Nature divided eightfold.', null, null, 'published')
+        'Bhumi (earth), Ap (water), Anala (fire), Vâyu (air), Kha (ether), mind, intellect, and egoism: thus is My Prakriti divided eight-fold.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40089,7 +40088,7 @@ jīvabhūtāṃ mahābāho yayedaṃ dhāryate jagat||7.5||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O mighty-armed Arjuna, this is the inferior Prakriti; know it as distinct from My higher Prakriti, the very life-element, by which this world is upheld.', null, null, 'published')
+        'This is the lower (Prakriti). But different from it, know thou, O mighty-armed, My higher Prakriti—the principle of self-consciousness, by which this universe is sustained.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40157,7 +40156,7 @@ ahaṃ kṛtsnasya jagataḥ prabhavaḥ pralayastathā||7.6||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know that these two are the womb of all beings; thus, I am the source and dissolution of the whole universe.', null, null, 'published')
+        'Know that these (two Prakritis) are the womb of all beings. I am the origin and dissolution of the whole universe.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40221,7 +40220,7 @@ mayi sarvamidaṃ protaṃ sūtre maṇigaṇā iva||7.7||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'There is nothing higher than Me, O Arjuna. All this is strung on Me, like clusters of gems on a string.', null, null, 'published')
+        'Beyond Me, O Dhananjaya, there is naught. All this is strung in Me, as a row of jewels on a thread.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40287,7 +40286,7 @@ praṇavaḥ sarvavedeṣu śabdaḥ khe pauruṣaṃ nṛṣu||7.8||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the flavor in water, O Arjuna; I am the light in the moon and the sun; I am the syllable Om in all the Vedas, sound in the ether and virility in men.', null, null, 'published')
+        'I am the sapidity in waters, O son of Kunti; I, the radiance in the moon and the sun; I am the Om in all the Vedas, sound in Akâsha, and manhood in men.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40354,7 +40353,7 @@ jīvanaṃ sarvabhūteṣu tapaścāsmi tapasviṣu||7.9||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the sweet fragrance in the earth and the brilliance in the fire, the life in all beings, and I am the austerity of ascetics.', null, null, 'published')
+        'I am the sweet fragrance in earth, and the brilliance in fire am I; the life in all beings, and the austerity am I in ascetics.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40422,7 +40421,7 @@ buddhirbuddhimatāmasmi tejastejasvināmaham||7.10||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Know Me, O Arjuna, as the eternal seed of all beings; I am the intelligence of the intelligent, and the splendour of the splendid objects.', null, null, 'published')
+        'Know Me, O son of Prithâ, as the eternal seed of all beings. I am the intellect of the intelligent, and the heroism of the heroic.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40487,7 +40486,7 @@ dharmāviruddho bhūteṣu kāmo''smi bharatarṣabha||7.11||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Of the strong, I am the strength devoid of desire and attachment, and in all beings, I am the desire in accordance with Dharma, O Arjuna.', null, null, 'published')
+        'Of the strong, I am the strength devoid of desire and attachment. I am, O bull among the Bhâratas, desire in beings, unopposed to Dharma.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40552,7 +40551,7 @@ matta eveti tānviddhi natvahaṃ teṣu te mayi||7.12||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever beings (and objects) that are pure, active, and inert, know that they proceed from Me. They are in Me, yet I am not in them.', null, null, 'published')
+        'And whatever states pertaining to Sattva, and those pertaining to Rajas, and to Tamas, know them to proceed from Me alone; still I am not in them, but they are in Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40625,7 +40624,7 @@ mohitaṃ nābhijānāti māmebhyaḥ paramavyayam||7.13||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Deluded by these Natures, composed of the three qualities of Nature, all this world does not know Me as distinct from them and immutable.', null, null, 'published')
+        'Deluded by these states, the modifications of the three Gunas (of Prakriti), all this world does not know Me, beyond them, and immutable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40692,7 +40691,7 @@ māmeva ye prapadyante māyāmetāṃ taranti te||7.14||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, this divine illusion of Mine, composed of the three qualities, is difficult to cross over; those who take refuge in Me alone, can cross over this illusion.', null, null, 'published')
+        'Verily, this divine illusion of Mine, constituted of the Gunas, is difficult to cross over; those who devote themselves to Me alone, cross over this illusion.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40759,7 +40758,7 @@ māyayāpahṛtajñānā āsuraṃ bhāvamāśritāḥ||7.15||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The evil-doers and the deluded, who are the lowest of men, do not seek Me; those whose knowledge is destroyed by illusion follow the ways of demons.', null, null, 'published')
+        'They do not devote themselves to Me,—the evil-doers, the deluded, the lowest of men, deprived of discrimination by Mâyâ, and following the way of the Asuras.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40823,7 +40822,7 @@ values ((select id from verses where ref='7.16' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Four kinds of virtuous men worship Me, O Arjuna, and they are the distressed, the seekers of knowledge, the seekers of wealth, and the wise, O Lord of the Bharatas.', null, null, 'published')
+        'Four kinds of virtuous men worship Me, O Arjuna,—the distressed, the seeker of knowledge, the seeker of enjoyment, and the wise, O bull among the Bhâratas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40888,7 +40887,7 @@ priyo hi jñānino''tyarthamahaṃ sa ca mama priyaḥ||7.17||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Of them, the wise who are ever steadfast and devoted to the One, excel; for I am exceedingly dear to the wise, and they are dear to Me.', null, null, 'published')
+        'Of them, the wise man, ever-steadfast, (and fired) with devotion to the One, excels; for supremely dear am I to the wise, and he is dear to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -40956,7 +40955,7 @@ values ((select id from verses where ref='7.18' and work_id=(select id from work
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Indeed, all these are noble; however, I consider the wise man as My very Self; for, he is steadfast in mind and established in Me alone as the supreme goal.', null, null, 'published')
+        'Noble indeed are they all, but the wise man I regard as My very Self; for with the mind steadfast, he is established in Me alone, as the supreme goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41026,7 +41025,7 @@ vāsudevaḥ sarvamiti sa mahātmā sudurlabhaḥ||7.19||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'At the end of many births, the wise man comes to Me, realizing that all this is Vaasudeva (the innermost Self); such a great soul (Mahatma) is very hard to find.', null, null, 'published')
+        'At the end of many births, the man of wisdom takes refuge in Me, realising that all this is Vâsudeva (the innermost Self). Very rare is that great soul.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41091,7 +41090,7 @@ taṃ taṃ niyamamāsthāya prakṛtyā niyatāḥ svayā||7.20||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those whose wisdom has been taken away by this or that desire, go to other gods, following this or that rite, led by their own nature.', null, null, 'published')
+        'Others again, deprived of discrimination by this or that desire, following this or that rite, devote themselves to other gods, led by their own natures.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41156,7 +41155,7 @@ tasya tasyācalāṃ śraddhāṃ tāmeva vidadhāmyaham||7.21||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever form any devotee desires to worship with faith, I make that same faith of his firm and unflinching.', null, null, 'published')
+        'Whatsoever form any devotee seeks to worship with Shraddhâ,—that Shraddhâ of his do I make unwavering.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41223,7 +41222,7 @@ labhate ca tataḥ kāmānmayaiva vihitān hi tān||7.22||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Endowed with that faith, he engages in the worship of that form and obtains his desired outcome, which is ordained by Me alone.', null, null, 'published')
+        'Endued with that Shraddhâ, he engages in the worship of that, and from it, gains his desires,—these being verily dispensed by Me alone.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41292,7 +41291,7 @@ devāndevayajo yānti madbhaktā yānti māmapi||7.23||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Verily, the reward (fruit) that accrues to those men of small intelligence is finite. The worshippers of the gods go to them, whereas My devotees come to Me.', null, null, 'published')
+        'But the fruit (accruing) to these men of little understanding is limited. The worshippers of the Devas go to the Devas; My devotees too come to me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41360,7 +41359,7 @@ paraṃ bhāvamajānanto mamāvyayamanuttamam||7.24||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The foolish think of Me, the Unmanifest, as having manifestation, not knowing My higher, immutable, and most excellent nature.', null, null, 'published')
+        'The foolish regard Me, the un-manifested, as come into manifestation, not knowing My supreme state,—immutable and transcendental.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41425,7 +41424,7 @@ mūḍho''yaṃ nābhijānāti loko māmajamavyayam||7.25||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am not manifest to all, veiled as I am by the Yoga-Maya. This deluded world does not know Me, who am unborn and imperishable.', null, null, 'published')
+        'Veiled by the illusion born of the congress of the Gunas, I am not manifest to all. This deluded world knows Me not, the Unborn, the Immutable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41492,7 +41491,7 @@ bhaviṣyāṇi ca bhūtāni māṃ tu veda na kaścana||7.26||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I know, O Arjuna, the beings of the past, the present, and the future; however, no one knows Me.', null, null, 'published')
+        'I know, O Arjuna, the beings of the whole past, and the present, and the future, but Me none knoweth.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41558,7 +41557,7 @@ sarvabhūtāni saṃmohaṃ sarge yānti parantapa||7.27||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'O Bharata, all beings are subject to delusion at birth due to the delusion of the pairs of opposites arising from desire and aversion, O Parantapa.', null, null, 'published')
+        'By the delusion of the pairs of opposites, arising from desire and aversion, O descendant of Bharata, all beings fall into delusion at birth, O scorcher of foes.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41623,7 +41622,7 @@ te dvandvamohanirmuktā bhajante māṃ dṛḍhavratāḥ||7.28||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But those men of virtuous deeds, whose sins have come to an end and who are freed from the delusion of the pairs of opposites, worship Me steadfastly, with their vows.', null, null, 'published')
+        'Those men of virtuous deeds, whose sin has come to an end,—they, freed from the delusion of the pairs of opposites, worship Me with firm resolve.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41689,7 +41688,7 @@ te brahma tadviduḥ kṛtsnamadhyātmaṃ karma cākhilam||7.29||', null, null,
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who strive for liberation from old age and death, taking refuge in Me, realize in full that Brahman, the whole knowledge of the Self, and all action.', null, null, 'published')
+        'Those who strive for freedom from old age and death, taking refuge in Me, they know. Brahman, the whole of Adhyâtma, and Karma in its entirety.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41758,7 +41757,7 @@ prayāṇakāle''pi ca māṃ te viduryuktacetasaḥ||7.30||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who know Me with the Adhibhuta (pertaining to the elements), Adhidaiva (pertaining to the gods), and the Adhiyajna (pertaining to the sacrifice) know Me even at the time of death, remaining steadfast in mind.', null, null, 'published')
+        'Those who know Me with the Adhibhuta, the Adhidaiva, and the Adhiyajna, (continue to) know Me even at the time of death, steadfast in mind.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='7.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41840,7 +41839,7 @@ adhibhūtaṃ ca kiṃ proktamadhidaivaṃ kimucyate||8.1||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Arjuna said, "What is Brahman? What is Adhyatma? What is action, O best among men? What is Adhibhuta declared to be? And, what is Adhidaiva said to be?"', null, null, 'published')
+        'What is that Brahman, what is Adhyâtma, what is Karma, O best of Purushas? What is called Adhibhuta, and what Adhidaiva?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41919,7 +41918,7 @@ prayāṇakāle ca kathaṃ jñeyo''si niyatātmabhiḥ||8.2||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Who and how is Adhiyajna here in this body, O destroyer of Madhu? And how, at the time of death, are You to be known by the self-controlled?', null, null, 'published')
+        'Who, and in what way, is Adhiyajna here in this body, O destroyer of Madhu? And how art Thou known at the time of death, by the self-controlled?', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -41989,7 +41988,7 @@ bhūtabhāvodbhavakaro visargaḥ karmasaṃjñitaḥ||8.3||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "Brahman is the Imperishable, the Supreme; its essential nature is called Self-knowledge; the offering (to the gods) that causes the existence and manifestation of beings and sustains them is called action."', null, null, 'published')
+        'The Imperishable is the Supreme Brahman. Its dwelling in each individual body is called Adhyâtma; the offering in sacrifice which causes the genesis and support of beings, is called Karma.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42063,7 +42062,7 @@ adhiyajño''hamevātra dehe dehabhṛtāṃ vara||8.4||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Adhibhuta—knowledge of the elements—pertains to My perishable nature, and the Purusha, or the Soul, is the Adhidaiva; I alone am the Adhiyajna here in this body, O best among the embodied.', null, null, 'published')
+        'The perishable adjunct is the Adhibhuta, and the Indweller is the Adhidaivata; I alone am the Adhiyajna here in this body, O best of the embodied.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42129,7 +42128,7 @@ yaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ||8.5||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'And whoever, leaving their body, goes forth remembering Me alone at the time of death, they will attain My Being; there is no doubt about this.', null, null, 'published')
+        'And he, who at the time of death, meditating on Me alone, goes forth, leaving the body, attains My Being: there is no doubt about this.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42198,7 +42197,7 @@ taṃ tamevaiti kaunteya sadā tadbhāvabhāvitaḥ||8.6||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whoever at the end leaves the body, thinking of any being, to that being only does he go, O son of Kunti (Arjuna), due to his constant thought of that being.', null, null, 'published')
+        'Remembering whatever object, at the end, he leaves the body, that alone is reached by him, O son of Kunti, (because) of his constant thought of that object.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42267,7 +42266,7 @@ mayyarpitamanobuddhirmāmevaiṣyasyasaṃśayam||8.7||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Therefore, at all times, remember Me only and fight. With your mind and intellect fixed on Me, you will undoubtedly come to Me alone.', null, null, 'published')
+        'Therefore, at all times, constantly remember Me, and fight. With mind and intellect absorbed, in Me, thou shalt doubtless come to Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42335,7 +42334,7 @@ paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan||8.8||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'With the mind not moving towards any other thing, made steadfast through the practice of habitual meditation, and constantly meditating, one goes to the Supreme Person, the Resplendent, O Arjuna.', null, null, 'published')
+        'With the mind not moving towards anything else, made steadfast by the method of habitual meditation, and dwelling on the Supreme, Resplendent Purusha, O son of Prithâ, one goes to Him.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42405,7 +42404,7 @@ mādityavarṇaṃ tamasaḥ parastāt||8.9||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whosoever meditates on the Omniscient, the Ancient, the Ruler of the whole world, minuter than an atom, the supporter of all, of inconceivable form, effulgent like the sun and beyond the darkness of ignorance.', null, null, 'published')
+        'The Omniscient, the Ancient, the Overruler, minuter than an atom, the Sustainer of all, of form inconceivable, self-luminous like the sun, and beyond the darkness of Mâyâ—he who meditates on Him thus, at the time of death, full of devotion, with the mind unmoving, and also by the power of Yoga, fixing the whole Prâna betwixt the eye-brows, he goes to that Supreme, Resplendent Purusha.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42500,7 +42499,7 @@ sa taṃ paraṃ puruṣamupaiti divyam||8.10||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'At the time of death, with an unwavering mind, endowed with devotion, by the power of Yoga, fixing the whole life-breath in the middle of the two eyebrows, he reaches that resplendent Supreme Person.', null, null, 'published')
+        'The Omniscient, the Ancient, the Overruler, minuter than an atom, the Sustainer of all, of form inconceivable, self-luminous like the sun, and beyond the darkness of Mâyâ—he who meditates on Him thus, at the time of death, full of devotion, with the mind unmoving, and also by the power of Yoga, fixing the whole Prâna betwixt the eye-brows, he goes to that Supreme, Resplendent Purusha.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42599,7 +42598,7 @@ tatte padaṃ saṃgraheṇa pravakṣye||8.11||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That which is declared to be Imperishable by those who know the Vedas, that which the self-controlled (ascetics or Sannyasins) and passion-free enter, that goal, desiring which celibacy is practised, I will declare to thee in brief.', null, null, 'published')
+        'What the knowers of the Veda speak of as Imperishable, what the self-controlled (Sannyâsins), freed from attachment enter, and to gain which goal they live the life of a Brahmachârin, that I shall declare unto thee in brief.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42689,7 +42688,7 @@ mūrdhnyādhāyātmanaḥ prāṇamāsthito yogadhāraṇām||8.12||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having closed all the gates, confined the mind in the heart, and fixed the life-breath in the head, engage in the practice of concentration.', null, null, 'published')
+        'Controlling all the senses, confining the mind in the heart, drawing the Prâna into the head, occupied in the practice of concentration, uttering the one-syllabled "Om"—the Brahman, and meditating on Me;—he who so departs, leaving the body, attains the Supreme Goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42754,7 +42753,7 @@ yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim||8.13||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Uttering the one-syllabled Om, the Brahman, and remembering Me, he who departs, leaving the body, attains the Supreme Goal.', null, null, 'published')
+        'Controlling all the senses, confining the mind in the heart, drawing the Prâna into the head, occupied in the practice of concentration, uttering the one-syllabled "Om"—the Brahman, and meditating on Me;—he who so departs, leaving the body, attains the Supreme Goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42822,7 +42821,7 @@ tasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ||8.14||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am easily attainable by that ever-steadfast yogi who constantly and daily remembers me for a long time, not thinking of anything else with a single-minded or one-pointed focus, O Partha.', null, null, 'published')
+        'I am easily attainable by that ever-steadfast Yogin who remembers Me constantly and daily, with a single mind, O son of Prithâ.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42888,7 +42887,7 @@ nāpnuvanti mahātmānaḥ saṃsiddhiṃ paramāṃ gatāḥ||8.15||', null, nu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Having attained Me, these great souls do not take birth again here—a place of pain and impermanence—but have reached the highest perfection of liberation.', null, null, 'published')
+        'Reaching the highest perfection, and having attained Me, the great-souled ones are no more subject to re-birth—which is the home of pain, and ephemeral.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -42953,7 +42952,7 @@ māmupetya tu kaunteya punarjanma na vidyate||8.16||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'All the worlds, including the world of Brahma, are subject to return again, O Arjuna; but he who reaches Me, O son of Kunti, has no rebirth.', null, null, 'published')
+        'All the worlds, O Arjuna, including the realm of Brahmâ, are subject to return, but after attaining Me, O son of Kunti, there is no re-birth.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43017,7 +43016,7 @@ rātriṃ yugasahasrāntāṃ te''horātravido janāḥ||8.17||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who know the day of Brahma, which lasts a thousand Yugas, and the night, which also lasts a thousand Yugas, know day and night.', null, null, 'published')
+        'They who know (the true measure of) day and night, know the day of Brahmâ, which ends in a thousand Yugas, and the night which (also) ends in a thousand Yugas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43082,7 +43081,7 @@ rātryāgame pralīyante tatraivāvyaktasaṃjñake||8.18||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'From the Unmanifested, all the manifested worlds proceed upon the arrival of the ''day''; upon the arrival of the ''night'', they dissolve indeed into that which is known as the Unmanifested.', null, null, 'published')
+        'At the approach of (Brahmâ''s) day, all manifestations proceed from the unmanifested state; at the approach of night, they merge verily into that alone, which is called the unmanifested.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43145,7 +43144,7 @@ rātryāgame''vaśaḥ pārtha prabhavatyaharāgame||8.19||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This same multitude of beings, being born again and again, helplessly dissolves, O Arjuna, into the Unmanifested at the coming of the night and comes forth at the coming of the day.', null, null, 'published')
+        'The very same multitude of beings (that existed in the preceding day of Brahmâ), being born again and again, merge, in spite of themselves, O son of Prithâ, (into the unmanifested), at the approach of night, and re-manifest at the approach of day.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43209,7 +43208,7 @@ yaḥ sa sarveṣu bhūteṣu naśyatsu na vinaśyati||8.20||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But verily, there exists higher than this Unmanifested, another Unmanifested Eternal, which is not destroyed even when all beings are destroyed.', null, null, 'published')
+        'But beyond this unmanifested, there is that other Unmanifested, Eternal Existence—That which is not destroyed at the destruction of all beings.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43277,7 +43276,7 @@ yaṃ prāpya na nivartante taddhāma paramaṃ mama||8.21||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'What is known as the Unmanifested and the Imperishable, That is said to be the highest goal. Those who reach It do not return (to this Samsara). That is My supreme abode (place or state).', null, null, 'published')
+        'What has been called Unmanifested and Imperishable, has been described as the Goal Supreme. That is My highest state, having attained which, there is no return.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43346,7 +43345,7 @@ yasyāntaḥsthāni bhūtāni yena sarvamidaṃ tatam||8.22||', null, null, 'pub
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'That highest Purusha, O Arjuna, is attainable by unswerving devotion to Him alone, within Whom all beings dwell and by Whom all this is pervaded.', null, null, 'published')
+        'And that Supreme Purusha is attainable, O son of Prithâ, by whole-souled devotion to Him alone, in Whom all beings dwell, and by Whom all this is pervaded.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43414,7 +43413,7 @@ prayātā yānti taṃ kālaṃ vakṣyāmi bharatarṣabha||8.23||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Now I will tell you, O chief of the Bharatas, the times of departure at which the Yogis will return or not return.', null, null, 'published')
+        'Now I shall tell thee, O bull of the Bhâratas, of the time (path) travelling in which, the Yogis return, (and again of that, taking which) they do not return.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43481,7 +43480,7 @@ tatra prayātā gacchanti brahma brahmavido janāḥ||8.24||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fire, light, daytime, the bright fortnight, the six months of the northern path of the sun (the northern solstice) departing, then men who know Brahman go to Brahman.', null, null, 'published')
+        'Fire, flame, day-time, the bright fortnight, the six months of the Northern passage of the sun, taking this path, the knowers of Brahman go to Brahman.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43546,7 +43545,7 @@ tatra cāndramasaṃ jyotiryogī prāpya nivartate||8.25||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Attaining the lunar light through smoke, night time, the dark fortnight, and the six months of the southern path of the sun (the southern solstice), the yogi returns.', null, null, 'published')
+        'Smoke, night-time, the dark fortnight, the six months of the Southern passage of the sun—taking this path the Yogi, attaining the lunar light, returns.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43611,7 +43610,7 @@ ekayā yātyanāvṛttimanyayā''''vartate punaḥ||8.26||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The bright and dark paths of the world are thought to be eternal; one leads to no return, and the other leads to return.', null, null, 'published')
+        'Truly are these bright and dark paths of the world considered eternal: one leads to non-return; by the other, one returns.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43678,7 +43677,7 @@ tasmātsarveṣu kāleṣu yogayukto bhavārjuna||8.27||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Knowing these paths, O Arjuna, no yogi is deluded; therefore, at all times, be steadfast in yoga.', null, null, 'published')
+        'No Yogi, O son of Prithâ, is deluded after knowing these paths. Therefore, O Arjuna, be thou steadfast in Yoga, at all times.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43752,7 +43751,7 @@ yogī paraṃ sthānamupaiti cādyam||8.28||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever fruit of merit is declared (in the scriptures) to accrue from (the study of) the Vedas, (the performance of) sacrifices, (the practice of) austerities, and gifts, beyond all this goes the Yogi, having known this; and he attains to the Supreme, Primeval (first or ancient) Abode.', null, null, 'published')
+        'Whatever meritorious effect is declared (in the Scriptures) to accrue from (the study of) the Vedas, (the performance of) Yajnas, (the practice of) austerities and gifts,—above all this rises the Yogi, having known this, and attains to the primeval, supreme Abode.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='8.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43858,7 +43857,7 @@ jñānaṃ vijñānasahitaṃ yajjñātvā mokṣyase''śubhāt||9.1||', null, n
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The Blessed Lord said, "I shall now declare to thee, who does not cavil, the greatest secret—the knowledge combined with experience (Self-realisation). Having known this, thou shalt be free from evil."', null, null, 'published')
+        'To thee, who dost not carp, verily shall I now declare this, the most profound knowledge, united with realisation, having known which, thou shalt be free from evil (Samsâra).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.1' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43935,7 +43934,7 @@ pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartumavyayam||9.2||', null, null, '
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'This is the royal science, the royal secret, the supreme purifier, realizable by direct intuitive knowledge, according to righteousness, very easy to perform and imperishable.', null, null, 'published')
+        'Of sciences, the highest; of profundities, the deepest; of purifiers, the supreme, is this; realisable by direct perception, endowed with (immense) merit, very easy to perform, and of an imperishable nature.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.2' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -43999,7 +43998,7 @@ aprāpya māṃ nivartante mṛtyusaṃsāravartmani||9.3||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Those who have no faith in this Dharma, O Parantapa, return to the path of this world without attaining Me.', null, null, 'published')
+        'Persons without Shraddhâ for this Dharma, return, O scorcher of foes, without attaining Me, to the path of re-birth fraught with death.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.3' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44063,7 +44062,7 @@ matsthāni sarvabhūtāni na cāhaṃ teṣvavasthitaḥ||9.4||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'All of this world is pervaded by Me in My unmanifest aspect; all beings exist within Me, but I do not dwell within them.', null, null, 'published')
+        'All this world is pervaded by me in My unmanifested form: all beings exist in Me, but I do not dwell in them.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.4' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44129,7 +44128,7 @@ bhūtabhṛnna ca bhūtastho mamātmā bhūtabhāvanaḥ||9.5||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Nor do beings exist in Me (in reality); behold, My divine Yoga, which supports all beings, but does not dwell in them, is My Self, the efficient cause of beings.', null, null, 'published')
+        'Nor do beings exist in Me (in reality), behold My Divine Yoga! Bringing forth and supporting the beings, My Self does not dwell in them.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.5' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44196,7 +44195,7 @@ tathā sarvāṇi bhūtāni matsthānītyupadhāraya||9.6||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As the mighty wind, moving everywhere, always rests in the ether, so too, know that all beings rest in Me.', null, null, 'published')
+        'As the mighty wind, moving always everywhere, rests ever in the Akâsha, know thou, that even so do all beings rest in Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.6' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44260,7 +44259,7 @@ kalpakṣaye punastāni kalpādau visṛjāmyaham||9.7||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'All beings, O Arjuna, go into My Nature at the end of a Kalpa; I send them forth again at the beginning of the next Kalpa.', null, null, 'published')
+        'At the end of a Kalpa, O son of Kunti, all beings go back to My Prakriti: at the beginning of (another) Kalpa, I send them forth again.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.7' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44324,7 +44323,7 @@ bhūtagrāmamimaṃ kṛtsnamavaśaṃ prakṛtervaśāt||9.8||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Animating My Nature, I again and again send forth all this multitude of beings, helpless under the force of Nature.', null, null, 'published')
+        'Animating My Prakriti, I project again and again this whole multitude of beings, helpless under the sway of Prakriti.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.8' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44388,7 +44387,7 @@ udāsīnavadāsīnamasaktaṃ teṣu karmasu||9.9||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'These acts do not bind Me, O Arjuna, sitting as one indifferent, unattached to those acts.', null, null, 'published')
+        'These acts do not bind Me, sitting as one neutral, unattached to them, O Dhananjaya.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.9' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44453,7 +44452,7 @@ hetunā''nena kaunteya jagadviparivartate||9.10||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Under Me, as supervisor, Nature produces the moving and the unmoving; therefore, O Arjuna, the world revolves.', null, null, 'published')
+        'By reason of My proximity, Prakriti produces all this, the moving and the unmoving; the world wheels round and round, O son of Kunti, because of this.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.10' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44517,7 +44516,7 @@ paraṃ bhāvamajānanto mama bhūtamaheśvaram||9.11||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fools disregard Me, clad in human form, not knowing My higher Being as the great Lord of all beings.', null, null, 'published')
+        'Unaware of My higher state, as the great Lord of beings, fools disregard Me, dwelling in the human form.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.11' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44582,7 +44581,7 @@ rākṣasīmāsurīṃ caiva prakṛtiṃ mohinīṃ śritāḥ||9.12||', null, 
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They are possessed of the deceitful nature of demons and undivine beings, filled with vain hopes, vain actions, and vain knowledge that is senseless.', null, null, 'published')
+        'Of vain hopes, of vain works, of vain knowledge, and senseless, they verily are possessed of the delusive nature of Râkshasas and Asuras.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.12' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44646,7 +44645,7 @@ bhajantyananyamanaso jñātvā bhūtādimavyayam||9.13||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'But the great souls, O Arjuna, partaking of My divine nature, worship Me with a single-minded devotion, knowing Me as the imperishable source of all beings.', null, null, 'published')
+        'But the great-souled ones, O son of Prithâ, possessed of the Divine Prakriti, knowing Me to be the origin of beings, and immutable, worship Me with a single mind.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.13' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44711,7 +44710,7 @@ namasyantaśca māṃ bhaktyā nityayuktā upāsate||9.14||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Always glorifying Me, striving, firm in their vows, prostrating themselves before Me, they worship Me with steadfast devotion.', null, null, 'published')
+        'Glorifying Me always and striving with firm resolve, bowing down to Me in devotion, always steadfast, they worship Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.14' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44776,7 +44775,7 @@ ekatvena pṛthaktvena bahudhā viśvatomukham||9.15||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Others also, sacrificing with the wisdom-sacrifice, worship Me, the All-Faced, as one, distinct, and manifold.', null, null, 'published')
+        'Others, too, sacrificing by the Yajna of knowledge ( _i.e._, seeing the Self in all), worship Me the All-Formed, as one, as distinct, as manifold.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.15' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44840,7 +44839,7 @@ maṃtro''hamahamevājyamahamagnirahaṃ hutam||9.16||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am Kratu; I am Yajna; I am the offering to the manes; I am the medicinal herbs and all plants; I am the Mantra; I am also the ghee or melted butter; I am the fire; I am the oblation.', null, null, 'published')
+        'I am the Kratu, I the Yajna, I the Svadhâ, I the Aushadham, I the Mantra, I the Ajyam, I the fire, and I the oblation.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.16' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44910,7 +44909,7 @@ vedyaṃ pavitramoṃkāra ṛk sāma yajureva ca||9.17||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the father of this world, the mother, the dispenser of the fruits of actions, and the grandfather; the one thing to be known, the purifier, the sacred monosyllable (Om), and also the Rik, Sama, and Yajur Vedas.', null, null, 'published')
+        'I am the Father of this world, the Mother, the Sustainer, the Grandfather; the Purifier, the (one) thing to be known, (the syllable) Om, and also the Rik, Sâman and Yajus.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.17' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -44978,7 +44977,7 @@ prabhavaḥ pralayaḥ sthānaṃ nidhānaṃ bījamavyayam||9.18||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the goal, the supporter, the Lord, the witness, the abode, the shelter, the friend, the origin, the dissolution, the foundation, the treasure-house, and the imperishable seed.', null, null, 'published')
+        'The Goal, the Supporter, the Lord, the Witness, the Abode, the Refuge, the Friend, the Origin, the Dissolution, the Substratum, the Storehouse, the Seed immutable.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.18' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45044,7 +45043,7 @@ amṛtaṃ caiva mṛtyuśca sadasaccāhamarjuna||9.19||', null, null, 'publishe
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'As the sun, I give heat; I withhold and send forth the rain; I am immortality and also death, existence and non-existence, O Arjuna.', null, null, 'published')
+        '(As sun) I give heat: I withhold and send forth rain; I am immortality and also death; being and non-being am I, O Arjuna!', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.19' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45122,7 +45121,7 @@ maśnanti divyāndivi devabhogān||9.20||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The knowers of the three Vedas, the drinkers of Soma, purified of all sins, worshipping Me through sacrifices, pray for the way to heaven; they reach the holy world of the Lord of the gods and enjoy the divine pleasures of the gods in heaven.', null, null, 'published')
+        'The knowers of the three Vedas, worshipping Me by Yajna, drinking the Soma, and (thus) being purified from sin, pray for passage to heaven; reaching the holy world of the Lord of the Devas, they enjoy in heaven the divine pleasures of the Devas.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.20' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45221,7 +45220,7 @@ gatāgataṃ kāmakāmā labhante||9.21||', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'They, having enjoyed the vast heaven, enter the world of mortals when their merit is exhausted; thus abiding by the injunctions of the three (Vedas) and desiring objects of desires, they attain to the state of coming and going.', null, null, 'published')
+        'Having enjoyed the vast Swarga-world, they enter the mortal world, on the exhaustion of their merit: Thus, abiding by the injunctions of the three (Vedas), desiring desires, they (constantly) come and go.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.21' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45309,7 +45308,7 @@ teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmyaham||9.22||', null, null
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For those men who worship Me alone, thinking of no one else, for those ever-united, I secure what they have not already possessed and preserve what they already possess.', null, null, 'published')
+        'Persons who, meditating on Me as non-separate, worship Me in all beings, to them thus ever jealously engaged, I carry what they lack and preserve what they already have.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.22' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45374,7 +45373,7 @@ te''pi māmeva kaunteya yajantyavidhipūrvakam||9.23||', null, null, 'published'
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Even those devotees who, endowed with faith, worship other gods, worship Me alone, O Arjuna, but by the wrong method.', null, null, 'published')
+        'Even those devotees, who endued with Shraddhâ, worship other gods, they too worship Me alone, O son of Kunti, (but) by the wrong method.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.23' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45441,7 +45440,7 @@ na tu māmabhijānanti tattvenātaścyavanti te||9.24||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For I alone am the enjoyer and Lord of all sacrifices; but they do not know Me in reality, and thus they return to this mortal world.', null, null, 'published')
+        'For I alone am the Enjoyer, and Lord of all Yajnas; but because they do not know Me in reality, they return, (to the mortal world).', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.24' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45511,7 +45510,7 @@ bhūtāni yānti bhūtejyā yānti madyājino''pi mām||9.25||', null, null, 'pu
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'The worshippers of the gods go to them; the ancestor-worshippers go to the manes; the worshippers of the deities who preside over the elements go to them; but My devotees come to Me.', null, null, 'published')
+        'Votaries of the Devas go to the Devas; to the Pitris, go their votaries; to the Bhutas, go the Bhuta worshippers; My votaries too come unto Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.25' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45578,7 +45577,7 @@ tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ||9.26||', null, null, 'publi
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whoever offers Me with devotion a leaf, a flower, a fruit, or a little water, that, so offered devotedly by the pure-minded, I accept.', null, null, 'published')
+        'Whoever with devotion offers Me a leaf, a flower, a fruit, or water, that I accept—the devout gift of the pure-minded.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.26' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45644,7 +45643,7 @@ yattapasyasi kaunteya tatkuruṣva madarpaṇam||9.27||', null, null, 'published
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Whatever you do, whatever you eat, whatever you offer in sacrifice, whatever you give, whatever austerity you practice, O Arjuna, do it as an offering to Me.', null, null, 'published')
+        'Whatever thou doest, whatever thou eatest, whatever thou offerest in sacrifice, whatever thou givest away, whatever austerity thou practisest, O son of Kunti, do that as an offering unto Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.27' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45711,7 +45710,7 @@ saṃnyāsayogayuktātmā vimukto māmupaiṣyasi||9.28||', null, null, 'publish
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Thus, you shall be freed from the bonds of actions yielding good and evil fruits; with the mind steadfast in the Yoga of renunciation, and liberated, you shall come to Me.', null, null, 'published')
+        'Thus shalt thou be freed from the bondages of actions, bearing good and evil results: with the heart steadfast in the Yoga of renunciation, and liberated, thou shalt come unto Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.28' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45774,7 +45773,7 @@ ye bhajanti tu māṃ bhaktyā mayi te teṣu cāpyaham||9.29||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'I am the same to all beings; there is none hateful or dear to Me; but those who worship Me with devotion are in Me, and I am also in them.', null, null, 'published')
+        'I am the same to all beings: to Me there is none hateful or dear. But those who worship Me with devotion, are in Me, and I too am in them.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.29' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45847,7 +45846,7 @@ sādhureva sa mantavyaḥ samyagvyavasito hi saḥ||9.30||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Even if the most sinful worships Me, with devotion to no one else, he should indeed be regarded as righteous, for he has rightly resolved.', null, null, 'published')
+        'If even a very wicked person worships Me, with devotion to none else, he should be regarded as good, for he has rightly resolved.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.30' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45914,7 +45913,7 @@ kaunteya pratijānīhi na me bhaktaḥ praṇaśyati||9.31||', null, null, 'publ
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Soon he becomes righteous and attains eternal peace; O Arjuna, proclaim thou for certain that My devotee never perishes.', null, null, 'published')
+        'Soon does he become righteous, and attain eternal Peace, O son of Kunti boldly canst thou proclaim, that My devotee is never destroyed.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.31' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -45978,7 +45977,7 @@ striyo vaiśyāstathā śūdrāste''pi yānti parāṃ gatim||9.32||', null, nul
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'For, taking refuge in Me, they who, O Arjuna, may be of a sinful birth—women, Vaisyas, and Sudras—attain the Supreme Goal.', null, null, 'published')
+        'For, taking refuge in Me, they also, O son of Prithâ, who might be of inferior birth,—women, Vaishyas, as well as Sudras,—even they attain to the Supreme Goal.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.32' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -46047,7 +46046,7 @@ anityamasukhaṃ lokamimaṃ prāpya bhajasva mām||9.33||', null, null, 'publis
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'How much more easily, then, do Brahmins and devoted royal saints attain the goal? Having come to this impermanent and unhappy world, do thou worship Me.', null, null, 'published')
+        'What need to mention holy Brâhmanas, and devoted Râjarshis! Having obtained this transient, joyless world, worship thou Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.33' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
@@ -46114,7 +46113,7 @@ māmevaiṣyasi yuktvaivamātmānaṃ matparāyaṇaḥ||9.34||', null, null, 'p
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-en-sw'),
-        'Fix your mind on Me; be devoted to Me; sacrifice to Me; bow down to Me; having thus united your whole self to Me, taking Me as the supreme goal, you will come to Me.', null, null, 'published')
+        'Fill thy mind with Me, be My devotee, sacrifice unto Me, bow down to Me; thus having made thy heart steadfast in Me, taking Me as the Supreme Goal, thou shalt come unto Me.', null, null, 'published')
 on conflict (verse_id, edition_id) do update set body=excluded.body, word_meanings=excluded.word_meanings, notes=excluded.notes, status='published';
 insert into verse_contents (verse_id, edition_id, body, word_meanings, notes, status)
 values ((select id from verses where ref='9.34' and work_id=(select id from works where slug='bhagavad-gita')), (select id from editions where slug='bg-mula-mlym'),
