@@ -34,10 +34,15 @@
 6. **Offline**: `get_work_bundle(work)` returns everything public for a work; the
    same JSON is shipped as an asset (`app/assets/bundles/`) so first launch works
    without network.
-7. **AI Q&A**: Edge Function retrieves passages (`retrieve_for_qa` + optional
-   pgvector `match_verse_contents`), prompts the model with those passages only,
-   then validates citations with `grounding.ts`. Unsupported answers return
-   `grounded=false` and the UI shows an honest "no reliable answer".
+7. **AI Q&A** ("Ask Dharma"): Edge Function retrieves passages (`retrieve_for_qa`
+   + optional pgvector `match_verse_contents`), prompts the model with those
+   passages only, then validates citations with `grounding.ts`. Unsupported
+   answers return `grounded=false` and the UI shows an honest "no reliable
+   answer". Foundations: signed-in users get conversation continuity (prior
+   turns replayed from `qa_messages`, pure logic in `context.ts`), a daily
+   answer cap (`qa_answers_today()` + `ASK_DAILY_CAP`, HTTP 429 when reached),
+   answer feedback (`qa_messages.feedback`, ±1), and a history screen backed by
+   `qa_sessions`. Starter questions come from `app_config['ask.suggested_questions']`.
 8. **Audio**: `audio_tracks` (per chapter) + `audio_segments` (time → verse). Private
    bucket; signed URL only for tracks visible under RLS. `LockCachingAudioSource`
    caches files for offline replay.

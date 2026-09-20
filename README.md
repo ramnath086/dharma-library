@@ -5,30 +5,38 @@ A production-grade, multilingual reader for Hindu scripture — starting with th
 
 **Pilot scope:** Bhāgavatam 1.1.1 – 1.1.10 in Sanskrit (Devanagari, IAST and
 seven Indic scripts), English and Malayalam, with word-by-word glosses, a
-people/places/stories/topics knowledge graph, search, bookmarks, reading
-progress, offline support, an admin CMS, audio architecture and grounded AI Q&A.
+people/places/stories/topics knowledge graph, search with recent-query memory,
+bookmarks with notes/tags, reading progress & history, a daily-verse home
+screen with reminder preference, grounded AI Q&A (Ask Dharma), audio playback
+with chant practice (per-verse loop / 0.5×–1.5× speed / text following),
+Malayalam-first multilingual UI, offline bundle + adjacent-chapter prefetch,
+privacy-first opt-in usage analytics, on-device error diagnostics, an admin
+CMS, and edge-function lessons/audio pipelines.
 
 ## Repository layout
 
 ```
 supabase/
-  migrations/        0001…0007 — schema, knowledge graph, user data, RLS, API RPCs, pgvector
+  migrations/        0001…0010 — schema, knowledge graph, user data, RLS, API RPCs, pgvector,
+                     AI-ask sessions, opt-in analytics events
   seed.sql           languages, scripts, app config
   tests/             RLS + API regression tests (plain SQL asserts)
-  functions/ask/     Edge Function: grounded Q&A with verse citations
+  functions/         Edge Function: ask — grounded Q&A with verse citations (Deno tests in CI)
   config.toml        Supabase CLI config (buckets, auth, functions)
 content/
-  bhagavata-purana/  work.json (editions, sources, RIGHTS), graph.json, 1/1/verses.json
+  bhagavata-purana/  work.json (editions, sources, RIGHTS), graph.json, 1/1/verses.json,
+                     lessons/, audio/ (Canto 1 Chapter 1 audio manifest)
   generated/         SQL emitted by scripts/ingest.py (committed, reproducible)
 scripts/
   localdb.py         embedded Postgres harness: reset / migrate / seed / test
   ingest.py          content JSON → idempotent SQL (+ machine transliterations)
+  ingest_lessons.py  lessons JSON → pgvector lessons SQL
   translit.py        Devanagari → IAST / Malayalam / Kannada / Telugu / Bengali / Gujarati / Gurmukhi / Odia / Tamil
   gen_dart_translit.py  keeps the Dart port in sync with translit.py
   export_bundle.py   offline bundle (anon-role, rights-filtered) → app/assets/bundles/
   embed_contents.py  pgvector backfill for AI retrieval
 app/                 Flutter app (Riverpod, go_router, supabase_flutter, sqflite, just_audio)
-docs/                architecture, content model, rights policy, deployment
+docs/                architecture, content model, rights, deployment, playstore checklist
 .github/workflows/   CI (db tests, flutter analyze/test/build, deno check) + manual Supabase deploy
 ```
 
@@ -51,6 +59,8 @@ flutter pub get && flutter gen-l10n && flutter test
 flutter run                                    # bundle mode (offline, no backend)
 flutter run --dart-define-from-file=../env.json   # with Supabase (see .env.example)
 ```
+
+For Play-Store release steps see [docs/playstore-checklist.md](docs/playstore-checklist.md).
 
 ### Deploy to Supabase
 See [docs/deployment.md](docs/deployment.md). In short: create a project, set

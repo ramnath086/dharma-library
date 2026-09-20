@@ -27,6 +27,8 @@
 ## 2. AI Q&A
 ```
 supabase secrets set OPENAI_API_KEY=sk-... AI_MODEL=gpt-4o-mini EMBEDDING_MODEL=text-embedding-3-small
+# optional knobs for Ask Dharma (defaults: 30/day, 0 disables the cap)
+supabase secrets set ASK_DAILY_CAP=30
 export PGPASSWORD='<db password>'
 OPENAI_API_KEY=... SUPABASE_DB_URL=postgresql://postgres@db.<ref>.supabase.co:5432/postgres \
   python3 scripts/embed_contents.py

@@ -1,0 +1,8 @@
+# Copy this file to app/android/key.properties and fill in the values for the
+# upload keystore you generated with keytool. key.properties is git-ignored —
+# NEVER commit it. Keep the .jks outside the repository or ensure it matches a
+# git-ignored path (app/android/app/*.jks is already ignored).
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=upload
+storeFile=app/dharma-upload.jks

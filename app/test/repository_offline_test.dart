@@ -77,9 +77,60 @@ void main() {
     expect(p.verseRef, '1.1.5');
   });
 
+  test('bookmark tags: set, preserved on note edit, filtered decode', () async {
+    final toc = await repo.toc('bhagavata-purana');
+    final ch = await repo.chapter(toc.chapters.first.id);
+    await repo.toggleBookmark(ch.verses[3]);
+    await repo.updateBookmarkNote(ch.verses[3].id, null, tags: ['bhakti', 'naimisha']);
+    expect((await repo.bookmarks()).single.tags, ['bhakti', 'naimisha']);
+    // editing the note without tags keeps them
+    await repo.updateBookmarkNote(ch.verses[3].id, 'deep');
+    final b = (await repo.bookmarks()).single;
+    expect(b.note, 'deep');
+    expect(b.tags, ['bhakti', 'naimisha']);
+    // whitespace/empty tags are discarded
+    await repo.updateBookmarkNote(ch.verses[3].id, null, tags: [' x ', '', 'y']);
+    expect((await repo.bookmarks()).single.tags, ['x', 'y']);
+  });
+
+  test('reading history records refs, newest first, and clears', () async {
+    final toc = await repo.toc('bhagavata-purana');
+    final ch = await repo.chapter(toc.chapters.first.id);
+    for (final i in [1, 5, 2]) {
+      await repo.recordProgress(workId: toc.work.id, verse: ch.verses[i], sectionId: ch.id, totalVerses: 10, position: i + 1);
+    }
+    final hist = await store.readingHistory();
+    expect(hist, hasLength(3));
+    expect(hist.map((h) => h['verse_ref']).toSet(), {'1.1.3', '1.1.6', '1.1.2'});
+    expect((await store.readVerseIds()).length, 3);
+    await store.clearVerseReads();
+    expect(await store.readingHistory(), isEmpty);
+    expect(await store.readVerseIds(), isEmpty);
+  });
+
   test('iast fold', () {
     expect(Repository.fold('Kṛṣṇa'), 'krsna');
     expect(Repository.fold('krishna'), 'krsna');
     expect(Repository.fold('Śrī'), 'sr');
+  });
+
+  test('diagnostics error log: newest first, capped, clearable', () async {
+    await store.appendErrorLog('flutter', 'a'.padRight(500, 'a'));
+    await store.appendErrorLog('platform', 'small error');
+    final log = await store.errorLog();
+    expect(log.first.contains('small error'), isTrue);
+    expect(log.first.startsWith('2'), isTrue); // ISO timestamp prefix
+    expect(log[1].length < 500, isTrue); // long messages are truncated
+    for (var i = 0; i < 60; i++) {
+      await store.appendErrorLog('x', 'msg$i');
+    }
+    expect((await store.errorLog()).length, 50);
+    await store.clearErrorLog();
+    expect(await store.errorLog(), isEmpty);
+  });
+
+  test('analytics guard: no client / signed-out logs nothing and throws nothing', () async {
+    await repo.logAnalytics('daily_open');
+    await repo.logAnalytics('search', {'hits': 3, 'offline': true});
   });
 }

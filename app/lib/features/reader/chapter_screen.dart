@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -28,7 +29,9 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
   final _keys = <String, GlobalKey>{};
   Timer? _progressDebounce;
   String? _lastRecordedRef;
+  String? _lastFollowVerseId;
   bool _didInitialScroll = false;
+  bool _didPrefetch = false;
 
   @override
   void dispose() {
@@ -81,6 +84,21 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
     final toc = ref.watch(tocProvider(widget.workSlug));
     final audio = ref.watch(audioControllerProvider);
 
+    // Chant practice: auto-scroll as the recitation advances through verses.
+    String? followTo;
+    if (audio.followText) followTo = audio.currentVerseId;
+    if (followTo != null && followTo != _lastFollowVerseId) {
+      _lastFollowVerseId = followTo;
+      final ch = chapter.value;
+      final v = ch?.verses.where((x) => x.id == followTo).firstOrNull;
+      final ctx = v == null ? null : _keys[v.ref]?.currentContext;
+      if (ctx != null) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          Scrollable.ensureVisible(ctx, duration: const Duration(milliseconds: 350), alignment: .25);
+        });
+      }
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: chapter.maybeWhen(data: (c) => Text(c.title(settings.locale), maxLines: 1, overflow: TextOverflow.ellipsis), orElse: () => Text(l.loading)),
@@ -101,6 +119,10 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
         builder: (ch) {
           for (final v in ch.verses) {
             _keys.putIfAbsent(v.ref, GlobalKey.new);
+          }
+          if (!_didPrefetch) {
+            _didPrefetch = true;
+            unawaited(ref.read(repositoryProvider).prefetchAround(widget.workSlug, widget.sectionId));
           }
           if (!_didInitialScroll && widget.scrollToRef != null) {
             _didInitialScroll = true;

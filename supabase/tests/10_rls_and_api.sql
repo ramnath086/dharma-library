@@ -18,6 +18,8 @@ end $$;
 delete from public.bookmarks where user_id = '00000000-0000-0000-0000-000000000001';
 delete from public.reading_progress where user_id = '00000000-0000-0000-0000-000000000001';
 delete from public.verse_reads where user_id = '00000000-0000-0000-0000-000000000001';
+delete from public.qa_sessions where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
+delete from public.analytics_events where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
 delete from public.editions where slug like 'test-%';
 delete from public.rights where id in ('11111111-1111-1111-1111-111111111111','11111111-1111-1111-1111-111111111112');
 delete from public.sources where slug = 'test-restricted-src';
@@ -72,6 +74,23 @@ select pg_temp.assert_eq((select count(*) > 0 from public.search_entities('vyasa
 select pg_temp.assert_eq((select public.get_entity('person','suta')->'entity'->>'slug'), 'suta', 'get_entity');
 select pg_temp.assert_eq((select jsonb_array_length(public.get_entity('person','suta')->'verses') >= 5), true, 'suta mentioned in >=5 verses');
 
+-- Ask Dharma: anonymous callers have no personal counter, and no sessions
+select pg_temp.assert_eq(public.qa_answers_today(), 0::bigint, 'anon: qa_answers_today is 0');
+select pg_temp.assert_eq((select jsonb_array_length(value->'en') from public.app_config where key = 'ask.suggested_questions') >= 3, true, 'anon reads suggested questions');
+do $$ begin
+  begin
+    insert into public.qa_sessions (user_id) values (null);
+    raise exception 'ASSERT FAILED: anon could open a qa session';
+  exception when insufficient_privilege or check_violation then raise notice 'ok — anon cannot open qa sessions'; end;
+end $$;
+
+do $$ begin
+  begin
+    insert into public.analytics_events (user_id, event) values ('00000000-0000-0000-0000-000000000001', 'daily_open');
+    raise exception 'ASSERT FAILED: anon could log an analytics event';
+  exception when insufficient_privilege or check_violation then raise notice 'ok — anon cannot log analytics events'; end;
+end $$;
+
 -- anon cannot write
 do $$ begin
   begin
@@ -121,12 +140,55 @@ do $$ begin
   exception when insufficient_privilege then raise notice 'ok — reader cannot edit content'; end;
 end $$;
 
+-- Ask Dharma: own conversations, the daily answer counter, and feedback
+do $$
+declare sid uuid;
+begin
+  insert into public.qa_sessions (user_id, language, title)
+    values ('00000000-0000-0000-0000-000000000001', 'en', 'test qa') returning id into sid;
+  insert into public.qa_messages (session_id, role, content, grounded) values
+    (sid, 'user', 'who recited the text in the test?', null),
+    (sid, 'assistant', 'A test assistant answer citing [SB 1.1.2].', true);
+  perform pg_temp.assert_eq((select count(*) from public.qa_sessions), 1::bigint, 'reader sees only own qa sessions');
+  perform pg_temp.assert_eq((select count(*) from public.qa_messages), 2::bigint, 'reader sees own qa messages');
+  perform pg_temp.assert_eq(public.qa_answers_today(), 1::bigint, 'qa_answers_today counts today''s assistant answers');
+
+  update public.qa_messages set feedback = 1 where session_id = sid and role = 'assistant';
+  perform pg_temp.assert_eq((select count(*) from public.qa_messages where feedback = 1), 1::bigint, 'reader can rate own answer');
+
+  begin
+    insert into public.qa_sessions (user_id) values ('00000000-0000-0000-0000-000000000002');
+    raise exception 'ASSERT FAILED: reader forged qa session owner';
+  exception when insufficient_privilege or check_violation then raise notice 'ok — cannot forge qa session owner'; end;
+end $$;
+
+-- Analytics: opt-in events are insert-only and invisible to their own owner
+do $$
+begin
+  insert into public.analytics_events (user_id, event, payload) values
+    ('00000000-0000-0000-0000-000000000001', 'daily_open', '{}'),
+    ('00000000-0000-0000-0000-000000000001', 'search', '{"hits": 3, "offline": true}');
+  perform pg_temp.assert_eq((select count(*) from public.analytics_events), 0::bigint, 'events are write-only for their owner');
+  begin
+    insert into public.analytics_events (user_id, event) values ('00000000-0000-0000-0000-000000000002', 'daily_open');
+    raise exception 'ASSERT FAILED: reader forged analytics owner';
+  exception when insufficient_privilege or check_violation then raise notice 'ok — cannot forge analytics owner'; end;
+  begin
+    insert into public.analytics_events (user_id, event) values ('00000000-0000-0000-0000-000000000001', 'Free text, not snake_case!');
+    raise exception 'ASSERT FAILED: analytics accepted a non-snake_case event';
+  exception when check_violation then raise notice 'ok — analytics events must be snake_case'; end;
+end $$;
+
 -- ---------------------------------------------------------------------------
 -- editor
 -- ---------------------------------------------------------------------------
 select set_config('request.jwt.claim.sub', '00000000-0000-0000-0000-000000000002', false);
 select pg_temp.assert_eq(public.is_editor(), true, 'editor role resolves');
 select pg_temp.assert_eq((select count(*) from public.editions where slug like 'test-%'), 2::bigint, 'editor sees restricted editions (for CMS)');
+select pg_temp.assert_eq((select count(*) from public.qa_sessions), 0::bigint, 'editor cannot see reader qa sessions');
+select pg_temp.assert_eq(public.qa_answers_today(), 0::bigint, 'editor counter excludes reader answers');
+update public.qa_messages set feedback = -1;
+select pg_temp.assert_eq((select count(*) from public.qa_messages), 0::bigint, 'editor cannot see or rate reader qa messages');
 update public.verse_contents set notes = 'editor note' where verse_id = (select id from verses where ref='1.1.1') and edition_id = (select id from editions where slug='sb-en-dl');
 select pg_temp.assert_eq((select notes from public.verse_contents where verse_id = (select id from verses where ref='1.1.1') and edition_id = (select id from editions where slug='sb-en-dl')), 'editor note', 'editor can edit content');
 select pg_temp.assert_eq((select count(*) from public.bookmarks), 0::bigint, 'editor cannot see reader bookmarks');
@@ -147,9 +209,12 @@ select pg_temp.assert_eq(public.is_admin(), true, 'admin role resolves');
 select pg_temp.assert_eq((select count(*) > 0 from public.audit_log), true, 'admin reads audit log');
 select pg_temp.assert_eq((select count(*) from public.audit_log where table_name='verse_contents' and action='UPDATE' and actor_id='00000000-0000-0000-0000-000000000002' and new_data->>'notes' = 'editor note') >= 1, true, 'audit captured editor update with actor');
 select pg_temp.assert_eq((select count(*) from public.profiles), 3::bigint, 'admin sees all profiles');
+select pg_temp.assert_eq((select count(*) from public.analytics_events), 2::bigint, 'admin reads analytics events (reader logged 2)');
 
 reset role;
 -- cleanup fixtures
+delete from public.qa_sessions where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
+delete from public.analytics_events where user_id in ('00000000-0000-0000-0000-000000000001','00000000-0000-0000-0000-000000000002','00000000-0000-0000-0000-000000000003');
 delete from public.editions where slug like 'test-%';
 delete from public.rights where id in ('11111111-1111-1111-1111-111111111111','11111111-1111-1111-1111-111111111112');
 delete from public.sources where slug = 'test-restricted-src';
