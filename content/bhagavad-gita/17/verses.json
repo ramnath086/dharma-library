@@ -1,0 +1,1838 @@
+{
+  "_note": "Bhagavad Gītā 17 — 28 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "17",
+      "ordinal": 17,
+      "title_iast": "Śraddhā-traya-vibhāga-yoga",
+      "title_sa": "श्रद्धात्रयविभागयोगः",
+      "title_en": "The Yoga of Discrimination of the Threefold Faith",
+      "title_ml": "ശ്രദ്ധാത്രയവിഭാഗയോഗം",
+      "summary_en": "Chapter 17: The Yoga of Discrimination of the Threefold Faith — 28 verses",
+      "summary_ml": "അധ്യായം 17: ശ്രദ്ധാത്രയവിഭാഗയോഗം — 28 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे श्रद्धात्रयविभागयोगः नाम 17ोऽध्यायः ॥ 17 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "17.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाचये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयाऽन्विताः।तेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः।।17.1।।",
+      "iast": "arjuna uvācaye śāstravidhimutsṛjya yajante śraddhayā'nvitāḥ|teṣāṃ niṣṭhā tu kā kṛṣṇa sattvamāho rajastamaḥ||17.1||",
+      "en": "Arjuna said, \"What is the condition of those who, disregarding the injunctions of the scriptures, perform sacrifice with faith—is it Sattva, Rajas, or Tamas, O Krishna?\"",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "ye",
+          "meaning": "who"
+        },
+        {
+          "word": "śhāstra-vidhim",
+          "meaning": "scriptural injunctions"
+        },
+        {
+          "word": "utsṛijya",
+          "meaning": "disregard"
+        },
+        {
+          "word": "yajante",
+          "meaning": "worship"
+        },
+        {
+          "word": "śhraddhayā-anvitāḥ",
+          "meaning": "with faith"
+        },
+        {
+          "word": "teṣhām",
+          "meaning": "their"
+        },
+        {
+          "word": "niṣhṭhā",
+          "meaning": "faith"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "kā",
+          "meaning": "what"
+        },
+        {
+          "word": "kṛiṣhṇa",
+          "meaning": "Krishna"
+        },
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "āho",
+          "meaning": "or"
+        },
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        }
+      ]
+    },
+    {
+      "ref": "17.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाचत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा।सात्त्विकी राजसी चैव तामसी चेति तां श्रृणु।।17.2।।",
+      "iast": "śrī bhagavānuvācatrividhā bhavati śraddhā dehināṃ sā svabhāvajā|sāttvikī rājasī caiva tāmasī ceti tāṃ śrṛṇu||17.2||",
+      "en": "The Blessed Lord said, \"There are threefold faiths inherent in the nature of the embodied: the sattvic (pure), the rajasic (passionate), and the tamasic (dark). Hear of them.\"",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Personality said"
+        },
+        {
+          "word": "tri-vidhā",
+          "meaning": "of three kinds"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "is"
+        },
+        {
+          "word": "śhraddhā",
+          "meaning": "faith"
+        },
+        {
+          "word": "dehinām",
+          "meaning": "embodied beings"
+        },
+        {
+          "word": "sā",
+          "meaning": "which"
+        },
+        {
+          "word": "sva-bhāva-jā",
+          "meaning": "born of one’s innate nature"
+        },
+        {
+          "word": "sāttvikī",
+          "meaning": "of the mode of goodness"
+        },
+        {
+          "word": "rājasī",
+          "meaning": "of the mode of passion"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "tāmasī",
+          "meaning": "of the mode of ignorance"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "tām",
+          "meaning": "about this"
+        },
+        {
+          "word": "śhṛiṇu",
+          "meaning": "hear"
+        }
+      ]
+    },
+    {
+      "ref": "17.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत।श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः।।17.3।।",
+      "iast": "sattvānurūpā sarvasya śraddhā bhavati bhārata|śraddhāmayo'yaṃ puruṣo yo yacchraddhaḥ sa eva saḥ||17.3||",
+      "en": "The faith of each is in accordance with their nature, O Arjuna. People consist of their faith; as a person's faith is, so are they.",
+      "word_meanings": [
+        {
+          "word": "sattva-anurūpā",
+          "meaning": "conforming to the nature of one’s mind"
+        },
+        {
+          "word": "sarvasya",
+          "meaning": "all"
+        },
+        {
+          "word": "śhraddhā",
+          "meaning": "faith"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "is"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, the scion of Bharat"
+        },
+        {
+          "word": "śhraddhāmayaḥ",
+          "meaning": "possessing faith"
+        },
+        {
+          "word": "ayam",
+          "meaning": "that"
+        },
+        {
+          "word": "puruṣhaḥ",
+          "meaning": "human being"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "yat-śhraddhaḥ",
+          "meaning": "whatever the nature of their faith"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "their"
+        },
+        {
+          "word": "eva",
+          "meaning": "verily"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "they"
+        }
+      ]
+    },
+    {
+      "ref": "17.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः।प्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः।।17.4।।",
+      "iast": "yajante sāttvikā devānyakṣarakṣāṃsi rājasāḥ|pretānbhūtagaṇāṃścānye yajante tāmasā janāḥ||17.4||",
+      "en": "The sattvic, or pure, men worship the gods; the rajasic, or passionate, worship the yakshas and rakshasas; the others, the tamasic or deluded people, worship ghosts and hosts of nature-spirits.",
+      "word_meanings": [
+        {
+          "word": "yajante",
+          "meaning": "worship"
+        },
+        {
+          "word": "sāttvikāḥ",
+          "meaning": "those in the mode of goodness"
+        },
+        {
+          "word": "devān",
+          "meaning": "celestial gods"
+        },
+        {
+          "word": "yakṣha",
+          "meaning": "semi-celestial beings who exude power and wealth"
+        },
+        {
+          "word": "rakṣhānsi",
+          "meaning": "powerful beings who embody sensual enjoyment, revenge, and wrath"
+        },
+        {
+          "word": "rājasāḥ",
+          "meaning": "those in the mode of passion"
+        },
+        {
+          "word": "pretān-bhūta-gaṇān",
+          "meaning": "ghosts and spirits"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "anye",
+          "meaning": "others"
+        },
+        {
+          "word": "yajante",
+          "meaning": "worship"
+        },
+        {
+          "word": "tāmasāḥ",
+          "meaning": "those in the mode of ignorance"
+        },
+        {
+          "word": "janāḥ",
+          "meaning": "persons"
+        }
+      ]
+    },
+    {
+      "ref": "17.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः।दम्भाहङ्कारसंयुक्ताः कामरागबलान्विताः।।17.5।।",
+      "iast": "aśāstravihitaṃ ghoraṃ tapyante ye tapo janāḥ|dambhāhaṅkārasaṃyuktāḥ kāmarāgabalānvitāḥ||17.5||",
+      "en": "Those men who practice terrific austerities not prescribed by the scriptures, given to hypocrisy and egoism, driven by the force of lust and attachment.",
+      "word_meanings": [
+        {
+          "word": "aśhāstra-vihitam",
+          "meaning": "not enjoined by the scriptures"
+        },
+        {
+          "word": "ghoram",
+          "meaning": "stern"
+        },
+        {
+          "word": "tapyante",
+          "meaning": "perform"
+        },
+        {
+          "word": "ye",
+          "meaning": "who"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerities"
+        },
+        {
+          "word": "janāḥ",
+          "meaning": "people"
+        },
+        {
+          "word": "dambha",
+          "meaning": "hypocrisy"
+        },
+        {
+          "word": "ahankāra",
+          "meaning": "egotism"
+        },
+        {
+          "word": "sanyuktāḥ",
+          "meaning": "possessed of"
+        },
+        {
+          "word": "kāma",
+          "meaning": "desire"
+        },
+        {
+          "word": "rāga",
+          "meaning": "attachment"
+        },
+        {
+          "word": "bala",
+          "meaning": "force"
+        },
+        {
+          "word": "anvitāḥ",
+          "meaning": "impelled by"
+        }
+      ]
+    },
+    {
+      "ref": "17.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः।मां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान्।।17.6।।",
+      "iast": "karṣayantaḥ śarīrasthaṃ bhūtagrāmamacetasaḥ|māṃ caivāntaḥśarīrasthaṃ tānviddhyāsuraniścayān||17.6||",
+      "en": "Know thou these to be of demonical resolves, senselessly torturing all the elements in the body and Me who dwell in the body.",
+      "word_meanings": [
+        {
+          "word": "karṣhayantaḥ",
+          "meaning": "torment"
+        },
+        {
+          "word": "śharīra-stham",
+          "meaning": "within the body"
+        },
+        {
+          "word": "bhūta-grāmam",
+          "meaning": "elements of the body"
+        },
+        {
+          "word": "achetasaḥ",
+          "meaning": "senseless"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "even"
+        },
+        {
+          "word": "antaḥ",
+          "meaning": "within"
+        },
+        {
+          "word": "śharīra-stham",
+          "meaning": "dwelling in the body"
+        },
+        {
+          "word": "tān",
+          "meaning": "them"
+        },
+        {
+          "word": "viddhi",
+          "meaning": "know"
+        },
+        {
+          "word": "āsura-niśhchayān",
+          "meaning": "of demoniacal resolves"
+        }
+      ]
+    },
+    {
+      "ref": "17.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः।यज्ञस्तपस्तथा दानं तेषां भेदमिमं श्रृणु।।17.7।।",
+      "iast": "āhārastvapi sarvasya trividho bhavati priyaḥ|yajñastapastathā dānaṃ teṣāṃ bhedamimaṃ śrṛṇu||17.7||",
+      "en": "The food that is dear to each is threefold, as well as sacrifice, austerity, and almsgiving. Hear the distinction of these.",
+      "word_meanings": [
+        {
+          "word": "āhāraḥ",
+          "meaning": "food"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "sarvasya",
+          "meaning": "of all"
+        },
+        {
+          "word": "tri-vidhaḥ",
+          "meaning": "of three kinds"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "is"
+        },
+        {
+          "word": "priyaḥ",
+          "meaning": "dear"
+        },
+        {
+          "word": "yajñaḥ",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "tathā",
+          "meaning": "and"
+        },
+        {
+          "word": "dānam",
+          "meaning": "charity"
+        },
+        {
+          "word": "teṣhām",
+          "meaning": "of them"
+        },
+        {
+          "word": "bhedam",
+          "meaning": "distinctions"
+        },
+        {
+          "word": "imam",
+          "meaning": "this"
+        },
+        {
+          "word": "śhṛiṇu",
+          "meaning": "hear"
+        }
+      ]
+    },
+    {
+      "ref": "17.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः।रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः।।17.8।।",
+      "iast": "āyuḥsattvabalārogyasukhaprītivivardhanāḥ|rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvikapriyāḥ||17.8||",
+      "en": "The foods that increase life, purity, strength, health, joy, and cheerfulness (good appetite), which are savory, oily, substantial, and agreeable, are dear to the Sattvic (pure) people.",
+      "word_meanings": [
+        {
+          "word": "āyuḥ sattva",
+          "meaning": "which promote longevity"
+        },
+        {
+          "word": "bala",
+          "meaning": "strength"
+        },
+        {
+          "word": "ārogya",
+          "meaning": "health"
+        },
+        {
+          "word": "sukha",
+          "meaning": "happiness"
+        },
+        {
+          "word": "prīti",
+          "meaning": "satisfaction"
+        },
+        {
+          "word": "vivardhanāḥ",
+          "meaning": "increase"
+        },
+        {
+          "word": "rasyāḥ",
+          "meaning": "juicy"
+        },
+        {
+          "word": "snigdhāḥ",
+          "meaning": "succulent"
+        },
+        {
+          "word": "sthirāḥ",
+          "meaning": "nourishing"
+        },
+        {
+          "word": "hṛidyāḥ",
+          "meaning": "pleasing to the heart"
+        },
+        {
+          "word": "āhārāḥ",
+          "meaning": "food"
+        },
+        {
+          "word": "sāttvika-priyāḥ",
+          "meaning": "dear to those in the mode of goodness"
+        }
+      ]
+    },
+    {
+      "ref": "17.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः।आहारा राजसस्येष्टा दुःखशोकामयप्रदाः।।17.9।।",
+      "iast": "kaṭvamlalavaṇātyuṣṇatīkṣṇarūkṣavidāhinaḥ|āhārā rājasasyeṣṭā duḥkhaśokāmayapradāḥ||17.9||",
+      "en": "The foods that are bitter, sour, salty, overly hot, pungent, dry, and burning are liked by the Rajasic and are productive of pain, grief, and disease.",
+      "word_meanings": [
+        {
+          "word": "kaṭu",
+          "meaning": "bitter"
+        },
+        {
+          "word": "amla",
+          "meaning": "sour"
+        },
+        {
+          "word": "lavaṇa",
+          "meaning": "salty"
+        },
+        {
+          "word": "ati-uṣhṇa",
+          "meaning": "very hot"
+        },
+        {
+          "word": "tīkṣhṇa",
+          "meaning": "pungent"
+        },
+        {
+          "word": "rūkṣha",
+          "meaning": "dry"
+        },
+        {
+          "word": "vidāhinaḥ",
+          "meaning": "chiliful"
+        },
+        {
+          "word": "āhārāḥ",
+          "meaning": "food"
+        },
+        {
+          "word": "rājasasya",
+          "meaning": "to persons in the mode of passion"
+        },
+        {
+          "word": "iṣhṭāḥ",
+          "meaning": "dear"
+        },
+        {
+          "word": "duḥkha",
+          "meaning": "pain"
+        },
+        {
+          "word": "śhoka",
+          "meaning": "grief"
+        },
+        {
+          "word": "āmaya",
+          "meaning": "disease"
+        },
+        {
+          "word": "pradāḥ",
+          "meaning": "produce"
+        }
+      ]
+    },
+    {
+      "ref": "17.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यातयामं गतरसं पूति पर्युषितं च यत्।उच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम्।।17.10।।",
+      "iast": "yātayāmaṃ gatarasaṃ pūti paryuṣitaṃ ca yat|ucchiṣṭamapi cāmedhyaṃ bhojanaṃ tāmasapriyam||17.10||",
+      "en": "That which is stale, tasteless, putrid, rotten, rejected, and impure is the food liked by the Tamasic.",
+      "word_meanings": [
+        {
+          "word": "yāta-yāmam",
+          "meaning": "stale foods"
+        },
+        {
+          "word": "gata-rasam",
+          "meaning": "tasteless"
+        },
+        {
+          "word": "pūti",
+          "meaning": "putrid"
+        },
+        {
+          "word": "paryuṣhitam",
+          "meaning": "polluted"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "uchchhiṣhṭam",
+          "meaning": "left over"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "amedhyam",
+          "meaning": "impure"
+        },
+        {
+          "word": "bhojanam",
+          "meaning": "foods"
+        },
+        {
+          "word": "tāmasa",
+          "meaning": "to persons in the mode of ignorance"
+        },
+        {
+          "word": "priyam",
+          "meaning": "dear"
+        }
+      ]
+    },
+    {
+      "ref": "17.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते।यष्टव्यमेवेति मनः समाधाय स सात्त्विकः।।17.11।।",
+      "iast": "aphalākāṅkṣibhiryajño vidhidṛṣṭo ya ijyate|yaṣṭavyameveti manaḥ samādhāya sa sāttvikaḥ||17.11||",
+      "en": "That sacrifice which is offered by men without desire for reward, as enjoined by the ordinance (scripture), with a firm faith that doing so is their duty, is Sattvic or pure.",
+      "word_meanings": [
+        {
+          "word": "aphala-ākāṅkṣhibhiḥ",
+          "meaning": "without expectation of any reward"
+        },
+        {
+          "word": "yajñaḥ",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "vidhi-driṣhṭaḥ",
+          "meaning": "that is in accordance with the scriptural injunctions"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "which"
+        },
+        {
+          "word": "ijyate",
+          "meaning": "is performed"
+        },
+        {
+          "word": "yaṣhṭavyam-eva-iti",
+          "meaning": "ought to be offered"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        },
+        {
+          "word": "samādhāya",
+          "meaning": "with conviction"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that"
+        },
+        {
+          "word": "sāttvikaḥ",
+          "meaning": "of the nature of goodness"
+        }
+      ]
+    },
+    {
+      "ref": "17.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अभिसंधाय तु फलं दम्भार्थमपि चैव यत्।इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम्।।17.12।।",
+      "iast": "abhisaṃdhāya tu phalaṃ dambhārthamapi caiva yat|ijyate bharataśreṣṭha taṃ yajñaṃ viddhi rājasam||17.12||",
+      "en": "The sacrifice that is offered, O Arjuna, seeking a reward and for show, know that to be a Rajasic Yajna.",
+      "word_meanings": [
+        {
+          "word": "abhisandhāya",
+          "meaning": "motivated by"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "phalam",
+          "meaning": "the result"
+        },
+        {
+          "word": "dambha",
+          "meaning": "pride"
+        },
+        {
+          "word": "artham",
+          "meaning": "for the sake of"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "yat",
+          "meaning": "that which"
+        },
+        {
+          "word": "ijyate",
+          "meaning": "is performed"
+        },
+        {
+          "word": "bharata-śhreṣhṭha",
+          "meaning": "Arjun, the best of the Bharatas"
+        },
+        {
+          "word": "tam",
+          "meaning": "that"
+        },
+        {
+          "word": "yajñam",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "viddhi",
+          "meaning": "know"
+        },
+        {
+          "word": "rājasam",
+          "meaning": "in the mode of passion"
+        }
+      ]
+    },
+    {
+      "ref": "17.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम्।श्रद्धाविरहितं यज्ञं तामसं परिचक्षते।।17.13।।",
+      "iast": "vidhihīnamasṛṣṭānnaṃ mantrahīnamadakṣiṇam|śraddhāvirahitaṃ yajñaṃ tāmasaṃ paricakṣate||17.13||",
+      "en": "They declare that sacrifice to be Tamasic which is contrary to the ordinances of the scriptures, in which no food is distributed, and which is devoid of mantras, gifts, and faith.",
+      "word_meanings": [
+        {
+          "word": "vidhi-hīnam",
+          "meaning": "without scriptural direction"
+        },
+        {
+          "word": "asṛiṣhṭa-annam",
+          "meaning": "without distribution of prasādam"
+        },
+        {
+          "word": "mantra-hīnam",
+          "meaning": "with no chanting of the Vedic hymns"
+        },
+        {
+          "word": "adakṣhiṇam",
+          "meaning": "with no remunerations to the priests"
+        },
+        {
+          "word": "śhraddhā",
+          "meaning": "faith"
+        },
+        {
+          "word": "virahitam",
+          "meaning": "without"
+        },
+        {
+          "word": "yajñam",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "tāmasam",
+          "meaning": "in the mode of ignorance"
+        },
+        {
+          "word": "parichakṣhate",
+          "meaning": "is to be considered"
+        }
+      ]
+    },
+    {
+      "ref": "17.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम्।ब्रह्मचर्यमहिंसा च शारीरं तप उच्यते।।17.14।।",
+      "iast": "devadvijaguruprājñapūjanaṃ śaucamārjavam|brahmacaryamahiṃsā ca śārīraṃ tapa ucyate||17.14||",
+      "en": "Worship of the gods, the twice-born, the teachers, and the wise; purity, straightforwardness, celibacy, and non-injury are all called the austerities of the body.",
+      "word_meanings": [
+        {
+          "word": "deva",
+          "meaning": "the Supreme Lord"
+        },
+        {
+          "word": "dwija",
+          "meaning": "the Brahmins"
+        },
+        {
+          "word": "guru",
+          "meaning": "the spiritual master"
+        },
+        {
+          "word": "prājña",
+          "meaning": "the elders"
+        },
+        {
+          "word": "pūjanam",
+          "meaning": "worship"
+        },
+        {
+          "word": "śhaucham",
+          "meaning": "cleanliness"
+        },
+        {
+          "word": "ārjavam",
+          "meaning": "simplicity"
+        },
+        {
+          "word": "brahmacharyam",
+          "meaning": "celibacy"
+        },
+        {
+          "word": "ahinsā",
+          "meaning": "non-violence"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śhārīram",
+          "meaning": "of the body"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is declared as"
+        }
+      ]
+    },
+    {
+      "ref": "17.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्।स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते।।17.15।।",
+      "iast": "anudvegakaraṃ vākyaṃ satyaṃ priyahitaṃ ca yat|svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate||17.15||",
+      "en": "Speech that causes no excitement, is truthful, pleasant, and beneficial; the practice of studying the Vedas is called austerity of speech.",
+      "word_meanings": [
+        {
+          "word": "anudvega-karam",
+          "meaning": "not causing distress"
+        },
+        {
+          "word": "vākyam",
+          "meaning": "words"
+        },
+        {
+          "word": "satyam",
+          "meaning": "truthful"
+        },
+        {
+          "word": "priya- hitam",
+          "meaning": "beneficial"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "svādhyāya-abhyasanam",
+          "meaning": "recitation of the Vedic scriptures"
+        },
+        {
+          "word": "cha eva",
+          "meaning": "as well as"
+        },
+        {
+          "word": "vāṅ-mayam",
+          "meaning": "of speech"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "are declared as"
+        }
+      ]
+    },
+    {
+      "ref": "17.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः।भावसंशुद्धिरित्येतत्तपो मानसमुच्यते।।17.16।।",
+      "iast": "manaḥprasādaḥ saumyatvaṃ maunamātmavinigrahaḥ|bhāvasaṃśuddhirityetattapo mānasamucyate||17.16||",
+      "en": "Serenity of mind, good-heartedness, self-control, and purity of nature—this is called mental austerity.",
+      "word_meanings": [
+        {
+          "word": "manaḥ-prasādaḥ",
+          "meaning": "serenity of thought"
+        },
+        {
+          "word": "saumyatvam",
+          "meaning": "gentleness"
+        },
+        {
+          "word": "maunam",
+          "meaning": "silence"
+        },
+        {
+          "word": "ātma-vinigrahaḥ",
+          "meaning": "self-control"
+        },
+        {
+          "word": "bhāva-sanśhuddhiḥ",
+          "meaning": "purity of purpose"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "etat",
+          "meaning": "these"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "mānasam",
+          "meaning": "of the mind"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "are declared as"
+        }
+      ]
+    },
+    {
+      "ref": "17.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "श्रद्धया परया तप्तं तपस्तत्ित्रविधं नरैः।अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते।।17.17।।",
+      "iast": "śraddhayā parayā taptaṃ tapastatitravidhaṃ naraiḥ|aphalākāṅkṣibhiryuktaiḥ sāttvikaṃ paricakṣate||17.17||",
+      "en": "This threefold austerity, practiced by steadfast men, with the utmost faith, desiring no reward, is called Sattvic.",
+      "word_meanings": [
+        {
+          "word": "śhraddhayā",
+          "meaning": "with faith"
+        },
+        {
+          "word": "parayā",
+          "meaning": "transcendental"
+        },
+        {
+          "word": "taptam",
+          "meaning": "practiced"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "tri-vidham",
+          "meaning": "three-fold"
+        },
+        {
+          "word": "naraiḥ",
+          "meaning": "by persons"
+        },
+        {
+          "word": "aphala-ākāṅkṣhibhiḥ",
+          "meaning": "without yearning for material rewards"
+        },
+        {
+          "word": "yuktaiḥ",
+          "meaning": "steadfast"
+        },
+        {
+          "word": "sāttvikam",
+          "meaning": "in the mode of goodness"
+        },
+        {
+          "word": "parichakṣhate",
+          "meaning": "are designated"
+        }
+      ]
+    },
+    {
+      "ref": "17.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत्।क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम्।।17.18।।",
+      "iast": "satkāramānapūjārthaṃ tapo dambhena caiva yat|kriyate tadiha proktaṃ rājasaṃ calamadhruvam||17.18||",
+      "en": "The austerity that is practiced with the aim of gaining good reception, honor, and worship, and with hypocrisy, is said to be Rajasic, unstable, and transient.",
+      "word_meanings": [
+        {
+          "word": "sat-kāra",
+          "meaning": "respect"
+        },
+        {
+          "word": "māna",
+          "meaning": "honor"
+        },
+        {
+          "word": "pūjā",
+          "meaning": "adoration"
+        },
+        {
+          "word": "artham",
+          "meaning": "for the sake of"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "dambhena",
+          "meaning": "with ostentation"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "kriyate",
+          "meaning": "is performed"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "iha",
+          "meaning": "in this world"
+        },
+        {
+          "word": "proktam",
+          "meaning": "is said"
+        },
+        {
+          "word": "rājasam",
+          "meaning": "in the mode of passion"
+        },
+        {
+          "word": "chalam",
+          "meaning": "flickering"
+        },
+        {
+          "word": "adhruvam",
+          "meaning": "temporary"
+        }
+      ]
+    },
+    {
+      "ref": "17.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः।परस्योत्सादनार्थं वा तत्तामसमुदाहृतम्।।17.19।।",
+      "iast": "mūḍhagrāheṇātmano yatpīḍayā kriyate tapaḥ|parasyotsādanārthaṃ vā tattāmasamudāhṛtam||17.19||",
+      "en": "That austerity which is practised out of a foolish notion, with self-torture, or for the purpose of destroying another, is declared to be of the Tamasic nature.",
+      "word_meanings": [
+        {
+          "word": "mūḍha",
+          "meaning": "those with confused notions"
+        },
+        {
+          "word": "grāheṇa",
+          "meaning": "with endeavor"
+        },
+        {
+          "word": "ātmanaḥ",
+          "meaning": "one’s own self"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "pīḍayā",
+          "meaning": "torturing"
+        },
+        {
+          "word": "kriyate",
+          "meaning": "is performed"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "parasya",
+          "meaning": "of others"
+        },
+        {
+          "word": "utsādana-artham",
+          "meaning": "for harming"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "tāmasam",
+          "meaning": "in the mode of ignorance"
+        },
+        {
+          "word": "udāhṛitam",
+          "meaning": "is described to be"
+        }
+      ]
+    },
+    {
+      "ref": "17.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे।देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम्।।17.20।।",
+      "iast": "dātavyamiti yaddānaṃ dīyate'nupakāriṇe|deśe kāle ca pātre ca taddānaṃ sāttvikaṃ smṛtam||17.20||",
+      "en": "That gift which is given to one who does nothing in return, knowing it to be a duty to give in a suitable place and time to a worthy person, is held to be Sattvic.",
+      "word_meanings": [
+        {
+          "word": "dātavyam",
+          "meaning": "worthy of charity"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "dānam",
+          "meaning": "charity"
+        },
+        {
+          "word": "dīyate",
+          "meaning": "is given"
+        },
+        {
+          "word": "anupakāriṇe",
+          "meaning": "to one who cannot give in return"
+        },
+        {
+          "word": "deśhe",
+          "meaning": "in the proper place"
+        },
+        {
+          "word": "kāle",
+          "meaning": "at the proper time"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pātre",
+          "meaning": "to a worthy person"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "dānam",
+          "meaning": "charity"
+        },
+        {
+          "word": "sāttvikam",
+          "meaning": "in the mode of goodness"
+        },
+        {
+          "word": "smṛitam",
+          "meaning": "is stated to be"
+        }
+      ]
+    },
+    {
+      "ref": "17.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः।दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम्।।17.21।।",
+      "iast": "yattu pratyupakārārthaṃ phalamuddiśya vā punaḥ|dīyate ca parikliṣṭaṃ taddānaṃ rājasaṃ smṛtam||17.21||",
+      "en": "And, that gift which is given with the intention of receiving something in return, or expecting a reward, or begrudgingly, is considered to be Rajasic.",
+      "word_meanings": [
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "prati-upakāra-artham",
+          "meaning": "with the hope of a return"
+        },
+        {
+          "word": "phalam",
+          "meaning": "reward"
+        },
+        {
+          "word": "uddiśhya",
+          "meaning": "expectation"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "dīyate",
+          "meaning": "is given"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "parikliṣhṭam",
+          "meaning": "reluctantly"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "dānam",
+          "meaning": "charity"
+        },
+        {
+          "word": "rājasam",
+          "meaning": "in the mode of passion"
+        },
+        {
+          "word": "smṛitam",
+          "meaning": "is said to be"
+        }
+      ]
+    },
+    {
+      "ref": "17.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते।असत्कृतमवज्ञातं तत्तामसमुदाहृतम्।।17.22।।",
+      "iast": "adeśakāle yaddānamapātrebhyaśca dīyate|asatkṛtamavajñātaṃ tattāmasamudāhṛtam||17.22||",
+      "en": "The gift that is given in the wrong place and at the wrong time, to unworthy persons, without respect or with insult, is declared to be of a Tamasic nature.",
+      "word_meanings": [
+        {
+          "word": "adeśha",
+          "meaning": "at the wrong place"
+        },
+        {
+          "word": "kāle",
+          "meaning": "at the wrong time"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "dānam",
+          "meaning": "charity"
+        },
+        {
+          "word": "apātrebhyaḥ",
+          "meaning": "to unworthy persons"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "dīyate",
+          "meaning": "is given"
+        },
+        {
+          "word": "asat-kṛitam",
+          "meaning": "without respect"
+        },
+        {
+          "word": "avajñātam",
+          "meaning": "with contempt"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "tāmasam",
+          "meaning": "of the nature of nescience"
+        },
+        {
+          "word": "udāhṛitam",
+          "meaning": "is held to be"
+        }
+      ]
+    },
+    {
+      "ref": "17.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः।ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा।।17.23।।",
+      "iast": "tatsaditi nirdeśo brahmaṇastrividhaḥ smṛtaḥ|brāhmaṇāstena vedāśca yajñāśca vihitāḥ purā||17.23||",
+      "en": "\"Om Tat Sat\": This has been declared to be the triple designation of Brahman. By that, the Brahmanas, the Vedas, and the sacrifices were created formerly.",
+      "word_meanings": [
+        {
+          "word": "om tat sat",
+          "meaning": "syllables representing aspects of transcendence"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "nirdeśhaḥ",
+          "meaning": "symbolic representatives"
+        },
+        {
+          "word": "brahmaṇaḥ",
+          "meaning": "the Supreme Absolute Truth"
+        },
+        {
+          "word": "tri-vidhaḥ",
+          "meaning": "of three kinds"
+        },
+        {
+          "word": "smṛitaḥ",
+          "meaning": "have been declared"
+        },
+        {
+          "word": "brāhmaṇāḥ",
+          "meaning": "the priests"
+        },
+        {
+          "word": "tena",
+          "meaning": "from them"
+        },
+        {
+          "word": "vedāḥ",
+          "meaning": "scriptures"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "yajñāḥ",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "vihitāḥ",
+          "meaning": "came about"
+        },
+        {
+          "word": "purā",
+          "meaning": "from the beginning of creation"
+        }
+      ]
+    },
+    {
+      "ref": "17.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः।प्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम्।।17.24।।",
+      "iast": "tasmādomityudāhṛtya yajñadānatapaḥkriyāḥ|pravartante vidhānoktāḥ satataṃ brahmavādinām||17.24||",
+      "en": "Therefore, with the utterance of \"Om,\" the acts of sacrifice, gift, and austerity, as enjoined in the scriptures, are always begun by the students of Brahman.",
+      "word_meanings": [
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "om",
+          "meaning": "sacred syllable om"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "udāhṛitya",
+          "meaning": "by uttering"
+        },
+        {
+          "word": "yajña",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "dāna",
+          "meaning": "charity"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "penance"
+        },
+        {
+          "word": "kriyāḥ",
+          "meaning": "performing"
+        },
+        {
+          "word": "pravartante",
+          "meaning": "begin"
+        },
+        {
+          "word": "vidhāna-uktāḥ",
+          "meaning": "according to the prescriptions of Vedic injunctions"
+        },
+        {
+          "word": "satatam",
+          "meaning": "always"
+        },
+        {
+          "word": "brahma-vādinām",
+          "meaning": "expounders of the Vedas"
+        }
+      ]
+    },
+    {
+      "ref": "17.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः।दानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षि।।17.25।।",
+      "iast": "tadityanabhisandhāya phalaṃ yajñatapaḥkriyāḥ|dānakriyāśca vividhāḥ kriyante mokṣakāṅkṣi||17.25||",
+      "en": "Uttering \"Tat,\" without aiming for the fruits, are the acts of sacrifice, austerity, and the various acts of gifts performed by those seeking liberation.",
+      "word_meanings": [
+        {
+          "word": "tat",
+          "meaning": "the syllable Tat"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "anabhisandhāya",
+          "meaning": "without desiring"
+        },
+        {
+          "word": "phalam",
+          "meaning": "fruitive rewards"
+        },
+        {
+          "word": "yajña",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "austerity"
+        },
+        {
+          "word": "kriyāḥ",
+          "meaning": "acts"
+        },
+        {
+          "word": "dāna",
+          "meaning": "charity"
+        },
+        {
+          "word": "kriyāḥ",
+          "meaning": "acts"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "vividhāḥ",
+          "meaning": "various"
+        },
+        {
+          "word": "kriyante",
+          "meaning": "are done"
+        },
+        {
+          "word": "mokṣha-kāṅkṣhibhiḥ",
+          "meaning": "by seekers of freedom from material entanglements"
+        }
+      ]
+    },
+    {
+      "ref": "17.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते।प्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते।।17.26।।",
+      "iast": "sadbhāve sādhubhāve ca sadityetatprayujyate|praśaste karmaṇi tathā sacchabdaḥ pārtha yujyate||17.26||",
+      "en": "The word \"Sat\" is used to refer to reality and goodness; likewise, O Arjuna, the word \"Sat\" is used to refer to an auspicious act.",
+      "word_meanings": [
+        {
+          "word": "sat-bhāve",
+          "meaning": "with the intention of eternal existence and goodness"
+        },
+        {
+          "word": "sādhu-bhāve",
+          "meaning": "with auspicious intention"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "sat",
+          "meaning": "the syllable Sat"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "etat",
+          "meaning": "this"
+        },
+        {
+          "word": "prayujyate",
+          "meaning": "is used"
+        },
+        {
+          "word": "praśhaste",
+          "meaning": "auspicious"
+        },
+        {
+          "word": "karmaṇi",
+          "meaning": "action"
+        },
+        {
+          "word": "tathā",
+          "meaning": "also"
+        },
+        {
+          "word": "sat-śhabdaḥ",
+          "meaning": "the word “Sat”"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "yujyate",
+          "meaning": "is used"
+        }
+      ]
+    },
+    {
+      "ref": "17.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते।कर्म चैव तदर्थीयं सदित्येवाभिधीयते।।17.27।।",
+      "iast": "yajñe tapasi dāne ca sthitiḥ saditi cocyate|karma caiva tadarthīyaṃ sadityevābhidhīyate||17.27||",
+      "en": "Steadfastness in sacrifice, austerity, and gift is also called 'Sat', and action in connection with these, or for the sake of the Supreme, is also called 'Sat'.",
+      "word_meanings": [
+        {
+          "word": "yajñe",
+          "meaning": "in sacrifice"
+        },
+        {
+          "word": "tapasi",
+          "meaning": "in penance"
+        },
+        {
+          "word": "dāne",
+          "meaning": "in charity"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sthitiḥ",
+          "meaning": "established in steadiness"
+        },
+        {
+          "word": "sat",
+          "meaning": "the syllable Sat"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is pronounced"
+        },
+        {
+          "word": "karma",
+          "meaning": "action"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "tat-arthīyam",
+          "meaning": "for such purposes"
+        },
+        {
+          "word": "sat",
+          "meaning": "the syllable Sat"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "abhidhīyate",
+          "meaning": "is described"
+        }
+      ]
+    },
+    {
+      "ref": "17.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत्।असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह।।17.28।।",
+      "iast": "aśraddhayā hutaṃ dattaṃ tapastaptaṃ kṛtaṃ ca yat|asadityucyate pārtha na ca tatpretya no iha||17.28||",
+      "en": "Whatever is sacrificed, given, or performed, and whatever austerity is practiced without faith, it is called 'Asat', O Arjuna; it is of no value here or hereafter (after death).",
+      "word_meanings": [
+        {
+          "word": "aśhraddhayā",
+          "meaning": "without faith"
+        },
+        {
+          "word": "hutam",
+          "meaning": "sacrifice"
+        },
+        {
+          "word": "dattam",
+          "meaning": "charity"
+        },
+        {
+          "word": "tapaḥ",
+          "meaning": "penance"
+        },
+        {
+          "word": "taptam",
+          "meaning": "practiced"
+        },
+        {
+          "word": "kṛitam",
+          "meaning": "done"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "asat",
+          "meaning": "perishable"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "are termed as"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "pretya",
+          "meaning": "in the next world"
+        },
+        {
+          "word": "na u",
+          "meaning": "not"
+        },
+        {
+          "word": "iha",
+          "meaning": "in this world"
+        }
+      ]
+    }
+  ]
+}

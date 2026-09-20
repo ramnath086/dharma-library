@@ -1,0 +1,1990 @@
+{
+  "_note": "Bhagavad Gītā 5 — 29 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "5",
+      "ordinal": 5,
+      "title_iast": "Karma-sannyāsa-yoga",
+      "title_sa": "कर्मसंन्यासयोगः",
+      "title_en": "The Yoga of Renunciation of Action",
+      "title_ml": "കർമ്മസന്യാസയോഗം",
+      "summary_en": "Chapter 5: The Yoga of Renunciation of Action — 29 verses",
+      "summary_ml": "അധ്യായം 5: കർമ്മസന്യാസയോഗം — 29 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे कर्मसंन्यासयोगः नाम 5ोऽध्यायः ॥ 5 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "5.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nसंन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि।\n\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्िचतम्।।5.1।।",
+      "iast": "arjuna uvāca\n\nsaṃnyāsaṃ karmaṇāṃ kṛṣṇa punaryogaṃ ca śaṃsasi|\n\nyacchreya etayorekaṃ tanme brūhi suniśicatam||5.1||",
+      "en": "Arjuna said, \"O Krishna, you praise renunciation of actions and also yoga. Please tell me conclusively which is better of the two.\"",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "sanyāsam",
+          "meaning": "renunciation"
+        },
+        {
+          "word": "karmaṇām",
+          "meaning": "of actions"
+        },
+        {
+          "word": "kṛiṣhṇa",
+          "meaning": "Shree Krishna"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "yogam",
+          "meaning": "about karm yog"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "śhansasi",
+          "meaning": "you praise"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "śhreyaḥ",
+          "meaning": "more beneficial"
+        },
+        {
+          "word": "etayoḥ",
+          "meaning": "of the two"
+        },
+        {
+          "word": "ekam",
+          "meaning": "one"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "me",
+          "meaning": "unto me"
+        },
+        {
+          "word": "brūhi",
+          "meaning": "please tell"
+        },
+        {
+          "word": "su-niśhchitam",
+          "meaning": "conclusively"
+        }
+      ]
+    },
+    {
+      "ref": "5.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nसंन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ।\n\nतयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते।।5.2।।",
+      "iast": "śrī bhagavānuvāca\n\nsaṃnyāsaḥ karmayogaśca niḥśreyasakarāvubhau|\n\ntayostu karmasaṃnyāsātkarmayogo viśiṣyate||5.2||",
+      "en": "The Blessed Lord said, \"Renunciation and the Yoga of action both lead to the highest bliss; but of the two, the Yoga of action is superior to the renunciation of action.\"",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Lord said"
+        },
+        {
+          "word": "sanyāsaḥ",
+          "meaning": "renunciation"
+        },
+        {
+          "word": "karma-yogaḥ",
+          "meaning": "working in devotion"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "niḥśhreyasa-karau",
+          "meaning": "lead to the supreme goal"
+        },
+        {
+          "word": "ubhau",
+          "meaning": "both"
+        },
+        {
+          "word": "tayoḥ",
+          "meaning": "of the two"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "karma-sanyāsāt",
+          "meaning": "renunciation of actions"
+        },
+        {
+          "word": "karma-yogaḥ",
+          "meaning": "working in devotion"
+        },
+        {
+          "word": "viśhiṣhyate",
+          "meaning": "is superior"
+        }
+      ]
+    },
+    {
+      "ref": "5.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति।\n\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते।।5.3।।",
+      "iast": "jñeyaḥ sa nityasaṃnyāsī yo na dveṣṭi na kāṅkṣati|\n\nnirdvandvo hi mahābāho sukhaṃ bandhātpramucyate||5.3||",
+      "en": "He should be known as a perpetual Sannyasi who neither hates nor desires; for, free from the pairs of opposites, O mighty-armed Arjuna, he is easily freed from bondage.",
+      "word_meanings": [
+        {
+          "word": "jñeyaḥ",
+          "meaning": "should be considered"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "nitya",
+          "meaning": "always"
+        },
+        {
+          "word": "sanyāsī",
+          "meaning": "practising renunciation"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "dveṣhṭi",
+          "meaning": "hate"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "kāṅkṣhati",
+          "meaning": "desire"
+        },
+        {
+          "word": "nirdvandvaḥ",
+          "meaning": "free from all dualities"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "mahā-bāho",
+          "meaning": "mighty-armed one"
+        },
+        {
+          "word": "sukham",
+          "meaning": "easily"
+        },
+        {
+          "word": "bandhāt",
+          "meaning": "from bondage"
+        },
+        {
+          "word": "pramuchyate",
+          "meaning": "is liberated"
+        }
+      ]
+    },
+    {
+      "ref": "5.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः।\n\nएकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्।।5.4।।",
+      "iast": "sāṃkhyayogau pṛthagbālāḥ pravadanti na paṇḍitāḥ|\n\nekamapyāsthitaḥ samyagubhayorvindate phalam||5.4||",
+      "en": "Children, not the wise, speak of knowledge and the Yoga of action, or the performance of action, as though they are distinct and different; he who is truly established in one, obtains the fruits of both.",
+      "word_meanings": [
+        {
+          "word": "sānkhya",
+          "meaning": "renunciation of actions"
+        },
+        {
+          "word": "yogau",
+          "meaning": "karm yog"
+        },
+        {
+          "word": "pṛithak",
+          "meaning": "different"
+        },
+        {
+          "word": "bālāḥ",
+          "meaning": "the ignorant"
+        },
+        {
+          "word": "pravadanti",
+          "meaning": "say"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "paṇḍitāḥ",
+          "meaning": "the learned"
+        },
+        {
+          "word": "ekam",
+          "meaning": "in one"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "āsthitaḥ",
+          "meaning": "being situated"
+        },
+        {
+          "word": "samyak",
+          "meaning": "completely"
+        },
+        {
+          "word": "ubhayoḥ",
+          "meaning": "of both"
+        },
+        {
+          "word": "vindate",
+          "meaning": "achieve"
+        },
+        {
+          "word": "phalam",
+          "meaning": "the result"
+        }
+      ]
+    },
+    {
+      "ref": "5.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते।\n\nएकं सांख्यं च योगं च यः पश्यति स पश्यति।।5.5।।",
+      "iast": "yatsāṃkhyaiḥ prāpyate sthānaṃ tadyogairapi gamyate|\n\nekaṃ sāṃkhyaṃ ca yogaṃ ca yaḥ paśyati sa paśyati||5.5||",
+      "en": "That place which is reached by the Sankhyas or the Jnanis is also reached by the Yogis (Karma Yogis). He who sees knowledge and the performance of action (Karma Yoga) as one, sees truly.",
+      "word_meanings": [
+        {
+          "word": "yat",
+          "meaning": "what"
+        },
+        {
+          "word": "sānkhyaiḥ",
+          "meaning": "by means of karm sanyās"
+        },
+        {
+          "word": "prāpyate",
+          "meaning": "is attained"
+        },
+        {
+          "word": "sthānam",
+          "meaning": "place"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "yogaiḥ",
+          "meaning": "by working in devotion"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "gamyate",
+          "meaning": "is attained"
+        },
+        {
+          "word": "ekam",
+          "meaning": "one"
+        },
+        {
+          "word": "sānkhyam",
+          "meaning": "renunciation of actions"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "yogam",
+          "meaning": "karm yog"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "paśhyati",
+          "meaning": "sees"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "paśhyati",
+          "meaning": "actually sees"
+        }
+      ]
+    },
+    {
+      "ref": "5.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः।\n\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति।।5.6।।",
+      "iast": "saṃnyāsastu mahābāho duḥkhamāptumayogataḥ|\n\nyogayukto munirbrahma nacireṇādhigacchati||5.6||",
+      "en": "But, O mighty-armed Arjuna, renunciation is hard to attain without Yoga; the sage who is in harmony with Yoga quickly goes to Brahman.",
+      "word_meanings": [
+        {
+          "word": "sanyāsaḥ",
+          "meaning": "renunciation"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "mahā-bāho",
+          "meaning": "mighty-armed one"
+        },
+        {
+          "word": "duḥkham",
+          "meaning": "distress"
+        },
+        {
+          "word": "āptum",
+          "meaning": "attains"
+        },
+        {
+          "word": "ayogataḥ",
+          "meaning": "without karm yog"
+        },
+        {
+          "word": "yoga-yuktaḥ",
+          "meaning": "one who is adept in karm yog"
+        },
+        {
+          "word": "muniḥ",
+          "meaning": "a sage"
+        },
+        {
+          "word": "brahma",
+          "meaning": "Brahman"
+        },
+        {
+          "word": "na chireṇa",
+          "meaning": "quickly"
+        },
+        {
+          "word": "adhigachchhati",
+          "meaning": "goes"
+        }
+      ]
+    },
+    {
+      "ref": "5.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।\n\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते।।5.7।।",
+      "iast": "yogayukto viśuddhātmā vijitātmā jitendriyaḥ|\n\nsarvabhūtātmabhūtātmā kurvannapi na lipyate||5.7||",
+      "en": "He who is devoted to the path of action, whose mind is pure, who has conquered the self, who has subdued his senses, and who realizes his Self as the Self in all beings, though acting, is not tainted.",
+      "word_meanings": [
+        {
+          "word": "yoga-yuktaḥ",
+          "meaning": "united in consciousness with God"
+        },
+        {
+          "word": "viśhuddha-ātmā",
+          "meaning": "one with purified intellect"
+        },
+        {
+          "word": "vijita-ātmā",
+          "meaning": "one who has conquered the mind"
+        },
+        {
+          "word": "jita-indriyaḥ",
+          "meaning": "having conquered the senses"
+        },
+        {
+          "word": "sarva-bhūta-ātma-bhūta-ātmā",
+          "meaning": "one who sees the Soul of all souls in every living being"
+        },
+        {
+          "word": "kurvan",
+          "meaning": "performing"
+        },
+        {
+          "word": "api",
+          "meaning": "although"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "lipyate",
+          "meaning": "entangled"
+        }
+      ]
+    },
+    {
+      "ref": "5.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नैव किंचित्करोमीति युक्तो मन्येत तत्त्ववित्।\n\nपश्यन् श्रृणवन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्।।5.8।।",
+      "iast": "naiva kiṃcitkaromīti yukto manyeta tattvavit|\n\npaśyan śrṛṇavanspṛśañjighrannaśnangacchansvapan śvasan||5.8||",
+      "en": "I do nothing at all,\" thus would the harmonized knower of Truth think, seeing, hearing, touching, smelling, eating, going, sleeping, and breathing.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "kiñchit",
+          "meaning": "anything"
+        },
+        {
+          "word": "karomi",
+          "meaning": "I do"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "yuktaḥ",
+          "meaning": "steadfast in karm yog"
+        },
+        {
+          "word": "manyeta",
+          "meaning": "thinks"
+        },
+        {
+          "word": "tattva-vit",
+          "meaning": "one who knows the truth"
+        },
+        {
+          "word": "paśhyan",
+          "meaning": "seeing"
+        },
+        {
+          "word": "śhṛiṇvan",
+          "meaning": "hearing"
+        },
+        {
+          "word": "spṛiśhan",
+          "meaning": "touching"
+        },
+        {
+          "word": "jighran",
+          "meaning": "smelling"
+        },
+        {
+          "word": "aśhnan",
+          "meaning": "eating"
+        },
+        {
+          "word": "gachchhan",
+          "meaning": "moving"
+        },
+        {
+          "word": "svapan",
+          "meaning": "sleeping"
+        },
+        {
+          "word": "śhvasan",
+          "meaning": "breathing"
+        },
+        {
+          "word": "pralapan",
+          "meaning": "talking"
+        },
+        {
+          "word": "visṛijan",
+          "meaning": "giving up"
+        },
+        {
+          "word": "gṛihṇan",
+          "meaning": "accepting"
+        },
+        {
+          "word": "unmiṣhan",
+          "meaning": "opening (the eyes)"
+        },
+        {
+          "word": "nimiṣhan",
+          "meaning": "closing (the eyes)"
+        },
+        {
+          "word": "api",
+          "meaning": "although"
+        },
+        {
+          "word": "indriyāṇi",
+          "meaning": "the senses"
+        },
+        {
+          "word": "indriya-artheṣhu",
+          "meaning": "in sense-objects"
+        },
+        {
+          "word": "vartante",
+          "meaning": "moving"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "dhārayan",
+          "meaning": "convinced"
+        }
+      ]
+    },
+    {
+      "ref": "5.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि।\n\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्।।5.9।।",
+      "iast": "pralapanvisṛjangṛhṇannunmiṣannimiṣannapi|\n\nindriyāṇīndriyārtheṣu vartanta iti dhārayan||5.9||",
+      "en": "Speaking, letting go, seizing, opening, and closing the eyes, one should be convinced that the senses move among the sense-objects.",
+      "word_meanings": [
+        {
+          "word": "pralapan",
+          "meaning": "by talking"
+        },
+        {
+          "word": "visṛjan",
+          "meaning": "by giving up"
+        },
+        {
+          "word": "gṛhṇan",
+          "meaning": "by accepting"
+        },
+        {
+          "word": "unmiṣan",
+          "meaning": "opening"
+        },
+        {
+          "word": "nimiṣan",
+          "meaning": "closing"
+        },
+        {
+          "word": "api",
+          "meaning": "in spite of"
+        },
+        {
+          "word": "indriyāṇi",
+          "meaning": "the senses"
+        },
+        {
+          "word": "indriya-artheṣu",
+          "meaning": "in sense gratification"
+        },
+        {
+          "word": "vartante",
+          "meaning": "let    them be so engaged"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "dhārayan",
+          "meaning": "considering."
+        }
+      ]
+    },
+    {
+      "ref": "5.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः।\n\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा।।5.10।।",
+      "iast": "brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ|\n\nlipyate na sa pāpena padmapatramivāmbhasā||5.10||",
+      "en": "He who does actions, offering them to Brahman and abandoning attachment, is not tainted by sin, just as a lotus leaf is not tainted by water.",
+      "word_meanings": [
+        {
+          "word": "brahmaṇi",
+          "meaning": "to God"
+        },
+        {
+          "word": "ādhāya",
+          "meaning": "dedicating"
+        },
+        {
+          "word": "karmāṇi",
+          "meaning": "all actions"
+        },
+        {
+          "word": "saṅgam",
+          "meaning": "attachment"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "abandoning"
+        },
+        {
+          "word": "karoti",
+          "meaning": "performs"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "lipyate",
+          "meaning": "is affected"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "pāpena",
+          "meaning": "by sin"
+        },
+        {
+          "word": "padma-patram",
+          "meaning": "a lotus leaf"
+        },
+        {
+          "word": "iva",
+          "meaning": "like"
+        },
+        {
+          "word": "ambhasā",
+          "meaning": "by water"
+        }
+      ]
+    },
+    {
+      "ref": "5.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि।\n\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये।।5.11।।",
+      "iast": "kāyena manasā buddhyā kevalairindriyairapi|\n\nyoginaḥ karma kurvanti saṅgaṃ tyaktvā''tmaśuddhaye||5.11||",
+      "en": "Yogis, having abandoned attachment, perform actions only through the body, mind, intellect, and even the senses, for the purification of the self.",
+      "word_meanings": [
+        {
+          "word": "kāyena",
+          "meaning": "with the body"
+        },
+        {
+          "word": "manasā",
+          "meaning": "with the mind"
+        },
+        {
+          "word": "buddhyā",
+          "meaning": "with the intellect"
+        },
+        {
+          "word": "kevalaiḥ",
+          "meaning": "only"
+        },
+        {
+          "word": "indriyaiḥ",
+          "meaning": "with the senses"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "yoginaḥ",
+          "meaning": "the yogis"
+        },
+        {
+          "word": "karma",
+          "meaning": "actions"
+        },
+        {
+          "word": "kurvanti",
+          "meaning": "perform"
+        },
+        {
+          "word": "saṅgam",
+          "meaning": "attachment"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "giving up"
+        },
+        {
+          "word": "ātma",
+          "meaning": "of the self"
+        },
+        {
+          "word": "śhuddhaye",
+          "meaning": "for the purification"
+        }
+      ]
+    },
+    {
+      "ref": "5.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्।\n\nअयुक्तः कामकारेण फले सक्तो निबध्यते।।5.12।।",
+      "iast": "yuktaḥ karmaphalaṃ tyaktvā śāntimāpnoti naiṣṭhikīm|\n\nayuktaḥ kāmakāreṇa phale sakto nibadhyate||5.12||",
+      "en": "The one who is united (the well-poised or harmonized) having abandoned the fruit of action attains eternal peace; whereas the one who is not united (the unsteady or unbalanced), impelled by desire and attached to the fruit, is bound.",
+      "word_meanings": [
+        {
+          "word": "yuktaḥ",
+          "meaning": "one who is united in consciousness with God"
+        },
+        {
+          "word": "karma-phalam",
+          "meaning": "the results of all activities"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "giving up"
+        },
+        {
+          "word": "śhāntim",
+          "meaning": "peace"
+        },
+        {
+          "word": "āpnoti",
+          "meaning": "attains"
+        },
+        {
+          "word": "naiṣhṭhikīm",
+          "meaning": "everlasting"
+        },
+        {
+          "word": "ayuktaḥ",
+          "meaning": "one who is not united with God in consciousness"
+        },
+        {
+          "word": "kāma-kāreṇa",
+          "meaning": "impelled by desires"
+        },
+        {
+          "word": "phale",
+          "meaning": "in the result"
+        },
+        {
+          "word": "saktaḥ",
+          "meaning": "attached"
+        },
+        {
+          "word": "nibadhyate",
+          "meaning": "becomes entangled"
+        }
+      ]
+    },
+    {
+      "ref": "5.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी।\n\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन्।।5.13।।",
+      "iast": "sarvakarmāṇi manasā saṃnyasyāste sukhaṃ vaśī|\n\nnavadvāre pure dehī naiva kurvanna kārayan||5.13||",
+      "en": "Mentally renouncing all actions and being self-controlled, the embodied one happily rests in the nine-gated city, neither acting nor causing others (body and senses) to act.",
+      "word_meanings": [
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "karmāṇi",
+          "meaning": "activities"
+        },
+        {
+          "word": "manasā",
+          "meaning": "by the mind"
+        },
+        {
+          "word": "sannyasya",
+          "meaning": "having renounced"
+        },
+        {
+          "word": "āste",
+          "meaning": "remains"
+        },
+        {
+          "word": "sukham",
+          "meaning": "happily"
+        },
+        {
+          "word": "vaśhī",
+          "meaning": "the self-controlled"
+        },
+        {
+          "word": "nava-dvāre",
+          "meaning": "of nine gates"
+        },
+        {
+          "word": "pure",
+          "meaning": "in the city"
+        },
+        {
+          "word": "dehī",
+          "meaning": "the embodied being"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "kurvan",
+          "meaning": "doing anything"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "kārayan",
+          "meaning": "causing to be done"
+        }
+      ]
+    },
+    {
+      "ref": "5.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः।\n\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते।।5.14।।",
+      "iast": "na kartṛtvaṃ na karmāṇi lokasya sṛjati prabhuḥ|\n\nna karmaphalasaṃyogaṃ svabhāvastu pravartate||5.14||",
+      "en": "Neither does the Lord create agency nor actions for the world, nor union with the fruits of actions; rather, it is Nature that acts.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "neither"
+        },
+        {
+          "word": "kartṛitvam",
+          "meaning": "sense of doership"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "karmāṇi",
+          "meaning": "actions"
+        },
+        {
+          "word": "lokasya",
+          "meaning": "of the people"
+        },
+        {
+          "word": "sṛijati",
+          "meaning": "creates"
+        },
+        {
+          "word": "prabhuḥ",
+          "meaning": "God"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "karma-phala",
+          "meaning": "fruits of actions"
+        },
+        {
+          "word": "sanyogam",
+          "meaning": "connection"
+        },
+        {
+          "word": "svabhāvaḥ",
+          "meaning": "one’s nature"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "pravartate",
+          "meaning": "is enacted"
+        }
+      ]
+    },
+    {
+      "ref": "5.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः।\n\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः।।5.15।।",
+      "iast": "nādatte kasyacitpāpaṃ na caiva sukṛtaṃ vibhuḥ|\n\najñānenāvṛtaṃ jñānaṃ tena muhyanti jantavaḥ||5.15||",
+      "en": "The Lord takes neither the demerit nor the merit of any; knowledge is enveloped by ignorance, and beings are deluded.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "ādatte",
+          "meaning": "accepts"
+        },
+        {
+          "word": "kasyachit",
+          "meaning": "anyone’s"
+        },
+        {
+          "word": "pāpam",
+          "meaning": "sin"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "su-kṛitam",
+          "meaning": "virtuous deeds"
+        },
+        {
+          "word": "vibhuḥ",
+          "meaning": "the omnipresent God"
+        },
+        {
+          "word": "ajñānena",
+          "meaning": "by ignorance"
+        },
+        {
+          "word": "āvṛitam",
+          "meaning": "covered"
+        },
+        {
+          "word": "jñānam",
+          "meaning": "knowledge"
+        },
+        {
+          "word": "tena",
+          "meaning": "by that"
+        },
+        {
+          "word": "muhyanti",
+          "meaning": "are deluded"
+        },
+        {
+          "word": "jantavaḥ",
+          "meaning": "the living entities"
+        }
+      ]
+    },
+    {
+      "ref": "5.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः।\n\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्।।5.16।।",
+      "iast": "jñānena tu tadajñānaṃ yeṣāṃ nāśitamātmanaḥ|\n\nteṣāmādityavajjñānaṃ prakāśayati tatparam||5.16||",
+      "en": "But to those whose ignorance is destroyed by knowledge of the Self, like the sun, knowledge reveals the Supreme Brahman.",
+      "word_meanings": [
+        {
+          "word": "jñānena",
+          "meaning": "by divine knowledge"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "ajñānam",
+          "meaning": "ignorance"
+        },
+        {
+          "word": "yeṣhām",
+          "meaning": "whose"
+        },
+        {
+          "word": "nāśhitam",
+          "meaning": "has been destroyed"
+        },
+        {
+          "word": "ātmanaḥ",
+          "meaning": "of the self"
+        },
+        {
+          "word": "teṣhām",
+          "meaning": "their"
+        },
+        {
+          "word": "āditya-vat",
+          "meaning": "like the sun"
+        },
+        {
+          "word": "jñānam",
+          "meaning": "knowledge"
+        },
+        {
+          "word": "prakāśhayati",
+          "meaning": "illumines"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "param",
+          "meaning": "Supreme Entity"
+        }
+      ]
+    },
+    {
+      "ref": "5.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः।\n\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः।।5.17।।",
+      "iast": "tadbuddhayastadātmānastanniṣṭhāstatparāyaṇāḥ|\n\ngacchantyapunarāvṛttiṃ jñānanirdhūtakalmaṣāḥ||5.17||",
+      "en": "Their intellect absorbed in That, their self being That, established in That, with That as their supreme goal, they go whence there is no return, their sins dispelled by knowledge.",
+      "word_meanings": [
+        {
+          "word": "tat-buddhayaḥ",
+          "meaning": "those whose intellect is directed toward God"
+        },
+        {
+          "word": "tat-ātmānaḥ",
+          "meaning": "those whose heart (mind and intellect) is solely absorbed in God"
+        },
+        {
+          "word": "tat-niṣhṭhāḥ",
+          "meaning": "those whose intellect has firm faith in God"
+        },
+        {
+          "word": "tat-parāyaṇāḥ",
+          "meaning": "those who strive after God as the supreme goal and refuge"
+        },
+        {
+          "word": "gachchhanti",
+          "meaning": "go"
+        },
+        {
+          "word": "apunaḥ-āvṛittim",
+          "meaning": "not returning"
+        },
+        {
+          "word": "jñāna",
+          "meaning": "by knowledge"
+        },
+        {
+          "word": "nirdhūta",
+          "meaning": "dispelled"
+        },
+        {
+          "word": "kalmaṣhāḥ",
+          "meaning": "sins"
+        }
+      ]
+    },
+    {
+      "ref": "5.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि।\n\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः।।5.18।।",
+      "iast": "vidyāvinayasaṃpanne brāhmaṇe gavi hastini|\n\nśuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ||5.18||",
+      "en": "Sages look with an equal eye on a Brahmana endowed with learning and humility, on a cow, an elephant, a dog, and even an outcaste.",
+      "word_meanings": [
+        {
+          "word": "vidyā",
+          "meaning": "divine knowledge"
+        },
+        {
+          "word": "vinaya",
+          "meaning": "humbleness"
+        },
+        {
+          "word": "sampanne",
+          "meaning": "equipped with"
+        },
+        {
+          "word": "brāhmaṇe",
+          "meaning": "a Brahmin"
+        },
+        {
+          "word": "gavi",
+          "meaning": "a cow"
+        },
+        {
+          "word": "hastini",
+          "meaning": "an elephant"
+        },
+        {
+          "word": "śhuni",
+          "meaning": "a dog"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "śhva-pāke",
+          "meaning": "a dog-eater"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "paṇḍitāḥ",
+          "meaning": "the learned"
+        },
+        {
+          "word": "sama-darśhinaḥ",
+          "meaning": "see with equal vision"
+        }
+      ]
+    },
+    {
+      "ref": "5.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः।\n\nनिर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः।।5.19।।",
+      "iast": "ihaiva tairjitaḥ sargo yeṣāṃ sāmye sthitaṃ manaḥ|\n\nnirdoṣaṃ hi samaṃ brahma tasmādbrahmaṇi te sthitāḥ||5.19||",
+      "en": "Even here in this world, those whose minds rest in reality overcome birth; Brahman is indeed spotless and real; therefore they are established in Brahman.",
+      "word_meanings": [
+        {
+          "word": "iha eva",
+          "meaning": "in this very life"
+        },
+        {
+          "word": "taiḥ",
+          "meaning": "by them"
+        },
+        {
+          "word": "jitaḥ",
+          "meaning": "conquer"
+        },
+        {
+          "word": "sargaḥ",
+          "meaning": "the creation"
+        },
+        {
+          "word": "yeṣhām",
+          "meaning": "whose"
+        },
+        {
+          "word": "sāmye",
+          "meaning": "in equanimity"
+        },
+        {
+          "word": "sthitam",
+          "meaning": "situated"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        },
+        {
+          "word": "nirdoṣham",
+          "meaning": "flawless"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "samam",
+          "meaning": "in equality"
+        },
+        {
+          "word": "brahma",
+          "meaning": "God"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "brahmaṇi",
+          "meaning": "in the Absolute Truth"
+        },
+        {
+          "word": "te",
+          "meaning": "they"
+        },
+        {
+          "word": "sthitāḥ",
+          "meaning": "are seated"
+        }
+      ]
+    },
+    {
+      "ref": "5.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्।\n\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः।।5.20।।",
+      "iast": "na prahṛṣyetpriyaṃ prāpya nodvijetprāpya cāpriyam|\n\nsthirabuddhirasammūḍho brahmavidbrahmaṇi sthitaḥ||5.20||",
+      "en": "Resting in Brahman, with a steady intellect and undeluded, the knower of Brahman neither rejoices upon obtaining what is pleasant nor grieves upon obtaining what is unpleasant.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "neither"
+        },
+        {
+          "word": "prahṛiṣhyet",
+          "meaning": "rejoice"
+        },
+        {
+          "word": "priyam",
+          "meaning": "the pleasant"
+        },
+        {
+          "word": "prāpya",
+          "meaning": "obtaining"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "udvijet",
+          "meaning": "become disturbed"
+        },
+        {
+          "word": "prāpya",
+          "meaning": "attaining"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "apriyam",
+          "meaning": "the unpleasant"
+        },
+        {
+          "word": "sthira-buddhiḥ",
+          "meaning": "steady intellect"
+        },
+        {
+          "word": "asammūḍhaḥ",
+          "meaning": "firmly situated"
+        },
+        {
+          "word": "brahma-vit",
+          "meaning": "having a firm understanding of divine knowledge"
+        },
+        {
+          "word": "brahmaṇi",
+          "meaning": "established in God"
+        },
+        {
+          "word": "sthitaḥ",
+          "meaning": "situated"
+        }
+      ]
+    },
+    {
+      "ref": "5.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्।\n\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते।।5.21।।",
+      "iast": "bāhyasparśeṣvasaktātmā vindatyātmani yatsukham|\n\nsa brahmayogayuktātmā sukhamakṣayamaśnute||5.21||",
+      "en": "With the self unattached to external contacts, he finds happiness in the Self; with the self engaged in the meditation of Brahman, he attains endless happiness.",
+      "word_meanings": [
+        {
+          "word": "bāhya-sparśheṣhu",
+          "meaning": "external sense pleasure"
+        },
+        {
+          "word": "asakta-ātmā",
+          "meaning": "those who are unattached"
+        },
+        {
+          "word": "vindati",
+          "meaning": "find"
+        },
+        {
+          "word": "ātmani",
+          "meaning": "in the self"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "sukham",
+          "meaning": "bliss"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "brahma-yoga yukta-ātmā",
+          "meaning": "those who are united with God through yog"
+        },
+        {
+          "word": "sukham",
+          "meaning": "happiness"
+        },
+        {
+          "word": "akṣhayam",
+          "meaning": "unlimited"
+        },
+        {
+          "word": "aśhnute",
+          "meaning": "experiences"
+        }
+      ]
+    },
+    {
+      "ref": "5.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।\n\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः।।5.22।।",
+      "iast": "ye hi saṃsparśajā bhogā duḥkhayonaya eva te|\n\nādyantavantaḥ kaunteya na teṣu ramate budhaḥ||5.22||",
+      "en": "The enjoyments that arise from contact are only sources of pain, for they have a beginning and an end, O Arjuna; the wise do not rejoice in them.",
+      "word_meanings": [
+        {
+          "word": "ye",
+          "meaning": "which"
+        },
+        {
+          "word": "hi",
+          "meaning": "verily"
+        },
+        {
+          "word": "sansparśha-jāḥ",
+          "meaning": "born of contact with the sense objects"
+        },
+        {
+          "word": "bhogāḥ",
+          "meaning": "pleasures"
+        },
+        {
+          "word": "duḥkha",
+          "meaning": "misery"
+        },
+        {
+          "word": "yonayaḥ",
+          "meaning": "source of"
+        },
+        {
+          "word": "eva",
+          "meaning": "verily"
+        },
+        {
+          "word": "te",
+          "meaning": "they are"
+        },
+        {
+          "word": "ādya-antavantaḥ",
+          "meaning": "having beginning and end"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "teṣhu",
+          "meaning": "in those"
+        },
+        {
+          "word": "ramate",
+          "meaning": "takes delight"
+        },
+        {
+          "word": "budhaḥ",
+          "meaning": "the wise"
+        }
+      ]
+    },
+    {
+      "ref": "5.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्।\n\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः।।5.23।।",
+      "iast": "śaknotīhaiva yaḥ soḍhuṃ prākśarīravimokṣaṇāt|\n\nkāmakrodhodbhavaṃ vegaṃ sa yuktaḥ sa sukhī naraḥ||5.23||",
+      "en": "He who is able, while still here in this world, to withstand the impulse born out of desire and anger before the liberation from the body, he is a Yogi, and he is a happy man.",
+      "word_meanings": [
+        {
+          "word": "śhaknoti",
+          "meaning": "is able"
+        },
+        {
+          "word": "iha eva",
+          "meaning": "in the present body"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "soḍhum",
+          "meaning": "to withstand"
+        },
+        {
+          "word": "prāk",
+          "meaning": "before"
+        },
+        {
+          "word": "śharīra",
+          "meaning": "the body"
+        },
+        {
+          "word": "vimokṣhaṇāt",
+          "meaning": "giving up"
+        },
+        {
+          "word": "kāma",
+          "meaning": "desire"
+        },
+        {
+          "word": "krodha",
+          "meaning": "anger"
+        },
+        {
+          "word": "udbhavam",
+          "meaning": "generated from"
+        },
+        {
+          "word": "vegam",
+          "meaning": "forces"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "yuktaḥ",
+          "meaning": "yogi"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "sukhī",
+          "meaning": "happy"
+        },
+        {
+          "word": "naraḥ",
+          "meaning": "person"
+        }
+      ]
+    },
+    {
+      "ref": "5.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः।\n\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति।।5.24।।",
+      "iast": "yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ|\n\nsa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati||5.24||",
+      "en": "He who is happy within, who rejoices within, and who is illuminated within, that Yogi attains absolute freedom, or Moksha, becoming Brahman himself.",
+      "word_meanings": [
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "antaḥ-sukhaḥ",
+          "meaning": "happy within the self"
+        },
+        {
+          "word": "antaḥ-ārāmaḥ",
+          "meaning": "enjoying within the self"
+        },
+        {
+          "word": "antaḥ-jyotiḥ",
+          "meaning": "illumined by the inner light"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "yogī",
+          "meaning": "yogi"
+        },
+        {
+          "word": "brahma-nirvāṇam",
+          "meaning": "liberation from material existence"
+        },
+        {
+          "word": "brahmabhūtaḥ",
+          "meaning": "united with the Lord"
+        },
+        {
+          "word": "adhigachchhati",
+          "meaning": "attains"
+        }
+      ]
+    },
+    {
+      "ref": "5.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः।\n\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः।।5.25।।",
+      "iast": "labhante brahmanirvāṇamṛṣayaḥ kṣīṇakalmaṣāḥ|\n\nchinnadvaidhā yatātmānaḥ sarvabhūtahite ratāḥ||5.25||",
+      "en": "The sages obtain absolute freedom or Moksha when their sins have been destroyed, their dualities have been torn asunder, they are self-controlled, and they are intent on the welfare of all beings.",
+      "word_meanings": [
+        {
+          "word": "labhante",
+          "meaning": "achieve"
+        },
+        {
+          "word": "brahma-nirvāṇam",
+          "meaning": "liberation from material existence"
+        },
+        {
+          "word": "ṛiṣhayaḥ",
+          "meaning": "holy persons"
+        },
+        {
+          "word": "kṣhīṇa-kalmaṣhāḥ",
+          "meaning": "whose sins have been purged"
+        },
+        {
+          "word": "chhinna",
+          "meaning": "annihilated"
+        },
+        {
+          "word": "dvaidhāḥ",
+          "meaning": "doubts"
+        },
+        {
+          "word": "yata-ātmānaḥ",
+          "meaning": "whose minds are disciplined"
+        },
+        {
+          "word": "sarva-bhūta",
+          "meaning": "for all living entities"
+        },
+        {
+          "word": "hite",
+          "meaning": "in welfare work"
+        },
+        {
+          "word": "ratāḥ",
+          "meaning": "rejoice"
+        }
+      ]
+    },
+    {
+      "ref": "5.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कामक्रोधवियुक्तानां यतीनां यतचेतसाम्।\n\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्।।5.26।।",
+      "iast": "kāmakrodhaviyuktānāṃ yatīnāṃ yatacetasām|\n\nabhito brahmanirvāṇaṃ vartate viditātmanām||5.26||",
+      "en": "Absolute freedom exists on all sides for those self-controlled ascetics who are free from desire and anger, who have controlled their thoughts, and who have realized the Self.",
+      "word_meanings": [
+        {
+          "word": "kāma",
+          "meaning": "desires"
+        },
+        {
+          "word": "krodha",
+          "meaning": "anger"
+        },
+        {
+          "word": "vimuktānām",
+          "meaning": "of those who are liberated"
+        },
+        {
+          "word": "yatīnām",
+          "meaning": "of the saintly persons"
+        },
+        {
+          "word": "yata-chetasām",
+          "meaning": "those self-realized persons who have subdued their mind"
+        },
+        {
+          "word": "abhitaḥ",
+          "meaning": "from every side"
+        },
+        {
+          "word": "brahma",
+          "meaning": "spiritual"
+        },
+        {
+          "word": "nirvāṇam",
+          "meaning": "liberation from material existence"
+        },
+        {
+          "word": "vartate",
+          "meaning": "exists"
+        },
+        {
+          "word": "vidita-ātmanām",
+          "meaning": "of those who are self-realized"
+        }
+      ]
+    },
+    {
+      "ref": "5.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः।\n\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ।।5.27।।",
+      "iast": "sparśānkṛtvā bahirbāhyāṃścakṣuścaivāntare bhruvoḥ|\n\nprāṇāpānau samau kṛtvā nāsābhyantaracāriṇau||5.27||",
+      "en": "Shutting out all external contacts and fixing the gaze between the eyebrows, realizing the outgoing and incoming breaths moving within the nostrils.",
+      "word_meanings": [
+        {
+          "word": "sparśhān",
+          "meaning": "contacts (through senses)"
+        },
+        {
+          "word": "kṛitvā",
+          "meaning": "keeping"
+        },
+        {
+          "word": "bahiḥ",
+          "meaning": "outside"
+        },
+        {
+          "word": "bāhyān",
+          "meaning": "external"
+        },
+        {
+          "word": "chakṣhuḥ",
+          "meaning": "eyes"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "antare",
+          "meaning": "between"
+        },
+        {
+          "word": "bhruvoḥ",
+          "meaning": "of the eyebrows"
+        },
+        {
+          "word": "prāṇa-apānau",
+          "meaning": "the outgoing and incoming breaths"
+        },
+        {
+          "word": "samau",
+          "meaning": "equal"
+        },
+        {
+          "word": "kṛitvā",
+          "meaning": "keeping"
+        },
+        {
+          "word": "nāsa-abhyantara",
+          "meaning": "within the nostrils"
+        },
+        {
+          "word": "chāriṇau",
+          "meaning": "moving"
+        },
+        {
+          "word": "yata",
+          "meaning": "controlled"
+        },
+        {
+          "word": "indriya",
+          "meaning": "senses"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "muniḥ",
+          "meaning": "the sage"
+        },
+        {
+          "word": "mokṣha",
+          "meaning": "liberation"
+        },
+        {
+          "word": "parāyaṇaḥ",
+          "meaning": "dedicated"
+        },
+        {
+          "word": "vigata",
+          "meaning": "free"
+        },
+        {
+          "word": "ichchhā",
+          "meaning": "desires"
+        },
+        {
+          "word": "bhaya",
+          "meaning": "fear"
+        },
+        {
+          "word": "krodhaḥ",
+          "meaning": "anger"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "sadā",
+          "meaning": "always"
+        },
+        {
+          "word": "muktaḥ",
+          "meaning": "liberated"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        }
+      ]
+    },
+    {
+      "ref": "5.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः।\n\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः।।5.28।।",
+      "iast": "yatendriyamanobuddhirmunirmokṣaparāyaṇaḥ|\n\nvigatecchābhayakrodho yaḥ sadā mukta eva saḥ||5.28||",
+      "en": "With the senses, mind, and intellect ever controlled, having liberation as their supreme goal, free from desire, fear, and anger, the sage is truly liberated forever.",
+      "word_meanings": [
+        {
+          "word": "yata",
+          "meaning": "controlled"
+        },
+        {
+          "word": "indriya",
+          "meaning": "senses"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intelligence"
+        },
+        {
+          "word": "muniḥ",
+          "meaning": "the   transcendentalist"
+        },
+        {
+          "word": "mokṣa",
+          "meaning": "liberation"
+        },
+        {
+          "word": "parāyaṇaḥ",
+          "meaning": "being so  destined"
+        },
+        {
+          "word": "vigata",
+          "meaning": "discarded"
+        },
+        {
+          "word": "icchā",
+          "meaning": "wishes"
+        },
+        {
+          "word": "bhaya",
+          "meaning": "fear"
+        },
+        {
+          "word": "krodhaḥ",
+          "meaning": "anger"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "one who"
+        },
+        {
+          "word": "sadā",
+          "meaning": "always"
+        },
+        {
+          "word": "muktaḥ",
+          "meaning": "liberated"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he  is"
+        }
+      ]
+    },
+    {
+      "ref": "5.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्।\n\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।।5.29।।",
+      "iast": "bhoktāraṃ yajñatapasāṃ sarvalokamaheśvaram|\n\nsuhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati||5.29||",
+      "en": "He who knows Me as the enjoyer of sacrifices and austerities, the great Lord of all the worlds, and the friend of all beings, attains peace.",
+      "word_meanings": [
+        {
+          "word": "bhoktāram",
+          "meaning": "the enjoyer"
+        },
+        {
+          "word": "yajña",
+          "meaning": "sacrifices"
+        },
+        {
+          "word": "tapasām",
+          "meaning": "austerities"
+        },
+        {
+          "word": "sarva-loka",
+          "meaning": "of all worlds"
+        },
+        {
+          "word": "mahā-īśhvaram",
+          "meaning": "the Supreme Lord"
+        },
+        {
+          "word": "su-hṛidam",
+          "meaning": "the selfless Friend"
+        },
+        {
+          "word": "sarva",
+          "meaning": "of all"
+        },
+        {
+          "word": "bhūtānām",
+          "meaning": "the living beings"
+        },
+        {
+          "word": "jñātvā",
+          "meaning": "having realized"
+        },
+        {
+          "word": "mām",
+          "meaning": "me (Lord Krishna)"
+        },
+        {
+          "word": "śhāntim",
+          "meaning": "peace"
+        },
+        {
+          "word": "ṛichchhati",
+          "meaning": "attains"
+        }
+      ]
+    }
+  ]
+}
