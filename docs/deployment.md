@@ -58,7 +58,7 @@ machine running the backfill has no IPv6 route, swap the `db.<ref>` host in
 Edit JSON under `content/`, run `python3 scripts/ingest.py` (commit the
 generated SQL), `python3 scripts/export_bundle.py` (commit the bundle), open a
 PR. CI re-runs migrations, RLS tests and verifies the bundle is rights-clean.
-Apply to production with `psql "$DB_URL" -f content/generated/<work>.sql`
+Apply to production with `psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f content/generated/<work>.sql` (or loop `for f in content/generated/*.sql; do psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f "$f"; done` for all works)
 (the SQL is idempotent). From a network without IPv6, `$DB_URL` has to be the
 pooler URL — see
 [Direct connections and IPv6](#direct-connections-and-ipv6).
@@ -82,7 +82,7 @@ updates in §4), use the Supavisor pooler, which is dual-stack:
 
 ```
 export PGPASSWORD='<db password>'
-psql "postgresql://postgres.<ref>@aws-0-<region>.pooler.supabase.com:5432/postgres" -f content/generated/bhagavata-purana.sql
+for f in content/generated/*.sql; do psql "postgresql://postgres.<ref>@aws-0-<region>.pooler.supabase.com:5432/postgres" -v ON_ERROR_STOP=1 -q -f "$f"; done  # deterministic, sorted; applies all works (Bhāgavatam, Gita, …)
 ```
 
 Two things differ from the direct host: the user is `postgres.<ref>` (the ref is

@@ -57,7 +57,7 @@ jobs:
         run: |
           psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f supabase/seed.sql
           python3 scripts/ingest.py
-          psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f content/generated/bhagavata-purana.sql
+          for f in $(ls -1 content/generated/*.sql | sort); do echo "== $f"; psql "$DB_URL" -v ON_ERROR_STOP=1 -q -f "$f"; done
         env:
           # The password is passed via PGPASSWORD rather than interpolated into
           # the connection URI: Supabase passwords routinely contain URI-special
