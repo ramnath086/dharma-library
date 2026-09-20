@@ -20,7 +20,7 @@ jobs:
     env:
       PGURI: postgresql://postgres:postgres@localhost:5432/postgres
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install psql
         run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
       - name: Auth stub + migrations
@@ -56,13 +56,13 @@ jobs:
       run:
         working-directory: app
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
           flutter-version: 3.x
           cache: true
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
@@ -93,7 +93,7 @@ jobs:
           { echo '### flutter test'; echo '```'; tail -n 200 test.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           grep -vE '^\s*$' test.txt | grep -vE '^\s*(✅|\+[0-9]+)' | tr -d '\r' | tail -n 80 | while IFS= read -r l; do echo "::warning title=test::${l}"; done
           exit ${status:-0}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with: { name: flutter-logs, path: app/*.txt, if-no-files-found: ignore }
       - name: Build release APK (bundle mode, unsigned)
@@ -110,7 +110,7 @@ jobs:
           cat build.txt
           grep -vE '^\s*$' build.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=build::${l}"; done
           exit ${status:-0}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: dharma-library-apk
           path: app/build/app/outputs/flutter-apk/app-release.apk
@@ -121,7 +121,7 @@ jobs:
           cat aab.txt
           grep -vE '^\s*$' aab.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=aab::${l}"; done
           exit ${status:-0}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: dharma-library-aab
           path: app/build/app/outputs/bundle/release/app-release.aab
@@ -130,8 +130,8 @@ jobs:
     name: Edge functions (deno check)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: denoland/setup-deno@v1
+      - uses: actions/checkout@v7
+      - uses: denoland/setup-deno@v2
         with:
           deno-version: v1.x
       - run: deno check supabase/functions/ask/index.ts
