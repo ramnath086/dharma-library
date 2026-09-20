@@ -25,6 +25,30 @@ OUT = CONTENT / "generated"
 
 CLEARED = {"public_domain", "open_license", "permission_granted", "original"}
 
+# Valid enum values from supabase/migrations/0001_extensions_and_types.sql
+VALID_PERSON_KIND = {"deity", "avatara", "sage", "king", "queen", "devotee", "demon", "author", "narrator", "other"}
+VALID_PLACE_KIND = {"forest", "city", "river", "mountain", "tirtha", "loka", "kingdom", "other"}
+
+def normalize_person_kind(k: str | None) -> str:
+    k = k or "other"
+    if k in VALID_PERSON_KIND:
+        return k
+    # Legacy bug: entity_kind 'person' was written as person_kind
+    if k == "person":
+        return "other"
+    print(f"  ! unknown person_kind '{k}' -> 'other'", file=sys.stderr)
+    return "other"
+
+def normalize_place_kind(k: str | None) -> str:
+    k = k or "other"
+    if k in VALID_PLACE_KIND:
+        return k
+    # Legacy bug: 'field' is not a valid place_kind (Kurukshetra)
+    if k == "field":
+        return "tirtha"
+    print(f"  ! unknown place_kind '{k}' -> 'other'", file=sys.stderr)
+    return "other"
+
 
 def q(v):
     """SQL literal."""
@@ -119,13 +143,13 @@ on conflict (slug) do update set kind=excluded.kind, language_code=excluded.lang
     for p in graph.get("people", []):
         em.add(f"""
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ({q(p['slug'])}, {q(p.get('kind','other'))}::person_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('epithets', []))}, {q(p.get('gender'))}, {q(p.get('description'))}, 'published')
+values ({q(p['slug'])}, {q(normalize_person_kind(p.get('kind')))}::person_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('epithets', []))}, {q(p.get('gender'))}, {q(p.get('description'))}, 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published'""")
         emit_names(em, "person", "people", p)
     for p in graph.get("places", []):
         em.add(f"""
 insert into places (slug, kind, name_iast, name_sa, alt_names, description, modern_name, latitude, longitude, status)
-values ({q(p['slug'])}, {q(p.get('kind','other'))}::place_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('alt_names', []))}, {q(p.get('description'))}, {q(p.get('modern_name'))}, {q(p.get('latitude'))}, {q(p.get('longitude'))}, 'published')
+values ({q(p['slug'])}, {q(normalize_place_kind(p.get('kind')))}::place_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('alt_names', []))}, {q(p.get('description'))}, {q(p.get('modern_name'))}, {q(p.get('latitude'))}, {q(p.get('longitude'))}, 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, alt_names=excluded.alt_names, description=excluded.description, modern_name=excluded.modern_name, latitude=excluded.latitude, longitude=excluded.longitude, status='published'""")
         emit_names(em, "place", "places", p)
     for t in graph.get("topics", []):

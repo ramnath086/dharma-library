@@ -6,112 +6,304 @@
       "kind": "deity",
       "name_iast": "Śrī Kṛṣṇa",
       "name_sa": "श्रीकृष्णः",
-      "epithets": ["Vāsudeva", "Bhagavān", "Keśava", "Madhusūdana", "Hrishikesha", "Achyuta", "Janārdana", "Govinda", "Mādhava", "Pārthasārathi"],
+      "epithets": [
+        "Vāsudeva",
+        "Bhagavān",
+        "Keśava",
+        "Madhusūdana",
+        "Hrishikesha",
+        "Achyuta",
+        "Janārdana",
+        "Govinda",
+        "Mādhava",
+        "Pārthasārathi"
+      ],
       "gender": "m",
       "description": "The supreme Lord, speaker of the Gītā, charioteer of Arjuna; addressed as Śrībhagavān throughout the text.",
-      "names": { "en": "Krishna", "ml": "ശ്രീകൃഷ്ണൻ", "hi": "श्रीकृष्ण" }
+      "names": {
+        "en": "Krishna",
+        "ml": "ശ്രീകൃഷ്ണൻ",
+        "hi": "श्रीकृष्ण"
+      }
     },
     {
       "slug": "arjuna",
-      "kind": "person",
+      "kind": "king",
       "name_iast": "Arjuna",
       "name_sa": "अर्जुनः",
-      "epithets": ["Pārtha", "Kaunteya", "Dhanagñjaya", "Gudākeśa", "Bhārata", "Parantapa"],
+      "epithets": [
+        "Pārtha",
+        "Kaunteya",
+        "Dhanagñjaya",
+        "Gudākeśa",
+        "Bhārata",
+        "Parantapa"
+      ],
       "gender": "m",
       "description": "Pāṇḍava prince, protagonist and interlocutor of Kṛṣṇa; speaker of the Gītā's questions.",
-      "names": { "en": "Arjuna", "ml": "അർജുനൻ", "hi": "अर्जुन" }
+      "names": {
+        "en": "Arjuna",
+        "ml": "അർജുനൻ",
+        "hi": "अर्जुन"
+      }
     },
     {
       "slug": "sanjaya",
-      "kind": "person",
+      "kind": "narrator",
       "name_iast": "Sañjaya",
       "name_sa": "सञ्जयः",
       "epithets": [],
       "gender": "m",
       "description": "Bard and counsellor of Dhṛtarāṣṭra; narrator of the Gītā to the blind king, having received divine sight from Vyāsa.",
-      "names": { "en": "Sanjaya", "ml": "സഞ്ജയൻ", "hi": "संजय" }
+      "names": {
+        "en": "Sanjaya",
+        "ml": "സഞ്ജയൻ",
+        "hi": "संजय"
+      }
     },
     {
       "slug": "dhritarashtra",
-      "kind": "person",
+      "kind": "king",
       "name_iast": "Dhṛtarāṣṭra",
       "name_sa": "धृतराष्ट्रः",
-      "epithets": ["Kururāja"],
+      "epithets": [
+        "Kururāja"
+      ],
       "gender": "m",
       "description": "Blind king of the Kurus, father of the Kauravas; questioner at Gītā 1.1.",
-      "names": { "en": "Dhritarashtra", "ml": "ധൃതരാഷ്ട്രർ", "hi": "धृतराष्ट्र" }
+      "names": {
+        "en": "Dhritarashtra",
+        "ml": "ധൃതരാഷ്ട്രർ",
+        "hi": "धृतराष्ट्र"
+      }
     },
     {
       "slug": "vyasa",
       "kind": "sage",
       "name_iast": "Vyāsa",
       "name_sa": "व्यासः",
-      "epithets": ["Kṛṣṇa Dvaipāyana", "Bādarāyaṇa", "Veda-vyāsa"],
+      "epithets": [
+        "Kṛṣṇa Dvaipāyana",
+        "Bādarāyaṇa",
+        "Veda-vyāsa"
+      ],
       "gender": "m",
       "description": "Compiler of the Mahābhārata and the Vedas; composer of the Gītā as embedded in Bhīṣma-parvan.",
-      "names": { "en": "Vyasa", "ml": "വേദവ്യാസൻ", "hi": "वेदव्यास" }
+      "names": {
+        "en": "Vyasa",
+        "ml": "വേദവ്യാസൻ",
+        "hi": "वेदव्यास"
+      }
     },
     {
       "slug": "bhishma",
-      "kind": "person",
+      "kind": "king",
       "name_iast": "Bhīṣma",
       "name_sa": "भीष्मः",
-      "epithets": ["Devavrata", "Pitāmaha"],
+      "epithets": [
+        "Devavrata",
+        "Pitāmaha"
+      ],
       "gender": "m",
       "description": "Grandsire of the Kurus, commander of the Kaurava army.",
-      "names": { "en": "Bhishma", "ml": "ഭീഷ്മർ", "hi": "भीष्म" }
+      "names": {
+        "en": "Bhishma",
+        "ml": "ഭീഷ്മർ",
+        "hi": "भीष्म"
+      }
     },
     {
       "slug": "drona",
-      "kind": "person",
+      "kind": "sage",
       "name_iast": "Droṇa",
       "name_sa": "द्रोणः",
-      "epithets": ["Ācārya"],
+      "epithets": [
+        "Ācārya"
+      ],
       "gender": "m",
       "description": "Military preceptor of the Kauravas and Pāṇḍavas.",
-      "names": { "en": "Drona", "ml": "ദ്രോണർ", "hi": "द्रोण" }
+      "names": {
+        "en": "Drona",
+        "ml": "ദ്രോണർ",
+        "hi": "द्रोण"
+      }
     },
     {
       "slug": "duryodhana",
-      "kind": "person",
+      "kind": "king",
       "name_iast": "Duryodhana",
       "name_sa": "दुर्योधनः",
-      "epithets": ["Suyodhana"],
+      "epithets": [
+        "Suyodhana"
+      ],
       "gender": "m",
       "description": "Eldest Kaurava, son of Dhṛtarāṣṭra.",
-      "names": { "en": "Duryodhana", "ml": "ദുര്യോധനൻ", "hi": "दुर्योधन" }
+      "names": {
+        "en": "Duryodhana",
+        "ml": "ദുര്യോധനൻ",
+        "hi": "दुर्योधन"
+      }
     }
   ],
   "places": [
     {
       "slug": "kurukshetra",
-      "kind": "field",
+      "kind": "tirtha",
       "name_iast": "Kurukṣetra",
       "name_sa": "कुरुक्षेत्रम्",
-      "alt_names": ["Dharmakṣetra", "Samantapañcaka"],
+      "alt_names": [
+        "Dharmakṣetra",
+        "Samantapañcaka"
+      ],
       "description": "The sacred field of the Kurus, also called Dharmakṣetra, where the Mahābhārata war and the Gītā discourse took place.",
       "modern_name": "Kurukshetra, Haryana, India",
       "latitude": 29.9695,
       "longitude": 76.8783,
-      "names": { "en": "Kurukshetra", "ml": "കുരുക്ഷേത്രം", "hi": "कुरुक्षेत्र" }
+      "names": {
+        "en": "Kurukshetra",
+        "ml": "കുരുക്ഷേത്രം",
+        "hi": "कुरुक्षेत्र"
+      }
     }
   ],
   "topics": [
-    { "slug": "dharma", "name_iast": "Dharma", "name_sa": "धर्मः", "description": "Righteous duty, law, and order; central theme from Gītā 1.1 (dharmakṣetre).", "names": { "en": "Dharma", "ml": "ധർമ്മം" } },
-    { "slug": "yoga", "name_iast": "Yoga", "name_sa": "योगः", "description": "Discipline, union, and the paths of action, knowledge and devotion.", "names": { "en": "Yoga", "ml": "യോഗം" } },
-    { "slug": "karma-yoga", "name_iast": "Karma-yoga", "name_sa": "कर्मयोगः", "description": "The yoga of selfless action (Gītā chapters 3–5).", "names": { "en": "Karma-yoga", "ml": "കർമ്മയോഗം" } },
-    { "slug": "jnana-yoga", "name_iast": "Jñāna-yoga", "name_sa": "ज्ञानयोगः", "description": "The yoga of knowledge and discernment.", "names": { "en": "Jnana-yoga", "ml": "ജ്ഞാനയോഗം" } },
-    { "slug": "bhakti-yoga", "name_iast": "Bhakti-yoga", "name_sa": "भक्तियोगः", "description": "The yoga of devotion (Gītā chapters 12, etc.).", "names": { "en": "Bhakti-yoga", "ml": "ഭക്തിയോഗം" } },
-    { "slug": "atman", "name_iast": "Ātman — the Self", "name_sa": "आत्मा", "description": "The imperishable Self, distinct from the body (Gītā chapter 2).", "names": { "en": "The Self (Atman)", "ml": "ആത്മാവ്" } },
-    { "slug": "moksha", "name_iast": "Mokṣa — liberation", "name_sa": "मोक्षः", "description": "Liberation from saṃsāra, the goal of the Gītā's teaching.", "names": { "en": "Liberation", "ml": "മോക്ഷം" } },
-    { "slug": "sankhya", "name_iast": "Sāṅkhya", "name_sa": "सांख्यम्", "description": "Analytical knowledge of prakṛti and puruṣa.", "names": { "en": "Sankhya", "ml": "സാംഖ്യം" } }
+    {
+      "slug": "dharma",
+      "name_iast": "Dharma",
+      "name_sa": "धर्मः",
+      "description": "Righteous duty, law, and order; central theme from Gītā 1.1 (dharmakṣetre).",
+      "names": {
+        "en": "Dharma",
+        "ml": "ധർമ്മം"
+      }
+    },
+    {
+      "slug": "yoga",
+      "name_iast": "Yoga",
+      "name_sa": "योगः",
+      "description": "Discipline, union, and the paths of action, knowledge and devotion.",
+      "names": {
+        "en": "Yoga",
+        "ml": "യോഗം"
+      }
+    },
+    {
+      "slug": "karma-yoga",
+      "name_iast": "Karma-yoga",
+      "name_sa": "कर्मयोगः",
+      "description": "The yoga of selfless action (Gītā chapters 3–5).",
+      "names": {
+        "en": "Karma-yoga",
+        "ml": "കർമ്മയോഗം"
+      }
+    },
+    {
+      "slug": "jnana-yoga",
+      "name_iast": "Jñāna-yoga",
+      "name_sa": "ज्ञानयोगः",
+      "description": "The yoga of knowledge and discernment.",
+      "names": {
+        "en": "Jnana-yoga",
+        "ml": "ജ്ഞാനയോഗം"
+      }
+    },
+    {
+      "slug": "bhakti-yoga",
+      "name_iast": "Bhakti-yoga",
+      "name_sa": "भक्तियोगः",
+      "description": "The yoga of devotion (Gītā chapters 12, etc.).",
+      "names": {
+        "en": "Bhakti-yoga",
+        "ml": "ഭക്തിയോഗം"
+      }
+    },
+    {
+      "slug": "atman",
+      "name_iast": "Ātman — the Self",
+      "name_sa": "आत्मा",
+      "description": "The imperishable Self, distinct from the body (Gītā chapter 2).",
+      "names": {
+        "en": "The Self (Atman)",
+        "ml": "ആത്മാവ്"
+      }
+    },
+    {
+      "slug": "moksha",
+      "name_iast": "Mokṣa — liberation",
+      "name_sa": "मोक्षः",
+      "description": "Liberation from saṃsāra, the goal of the Gītā's teaching.",
+      "names": {
+        "en": "Liberation",
+        "ml": "മോക്ഷം"
+      }
+    },
+    {
+      "slug": "sankhya",
+      "name_iast": "Sāṅkhya",
+      "name_sa": "सांख्यम्",
+      "description": "Analytical knowledge of prakṛti and puruṣa.",
+      "names": {
+        "en": "Sankhya",
+        "ml": "സാംഖ്യം"
+      }
+    }
   ],
   "stories": [],
   "relations": [
-    { "from": ["person", "krishna"], "relation": "charioteer_of", "to": ["person", "arjuna"] },
-    { "from": ["person", "sanjaya"], "relation": "disciple_of", "to": ["person", "vyasa"] },
-    { "from": ["person", "arjuna"], "relation": "student_of", "to": ["person", "krishna"] },
-    { "from": ["person", "vyasa"], "relation": "author_of", "to": ["work", "bhagavad-gita"] },
-    { "from": ["person", "dhritarashtra"], "relation": "father_of", "to": ["person", "duryodhana"] }
+    {
+      "from": [
+        "person",
+        "krishna"
+      ],
+      "relation": "charioteer_of",
+      "to": [
+        "person",
+        "arjuna"
+      ]
+    },
+    {
+      "from": [
+        "person",
+        "sanjaya"
+      ],
+      "relation": "disciple_of",
+      "to": [
+        "person",
+        "vyasa"
+      ]
+    },
+    {
+      "from": [
+        "person",
+        "arjuna"
+      ],
+      "relation": "student_of",
+      "to": [
+        "person",
+        "krishna"
+      ]
+    },
+    {
+      "from": [
+        "person",
+        "vyasa"
+      ],
+      "relation": "author_of",
+      "to": [
+        "work",
+        "bhagavad-gita"
+      ]
+    },
+    {
+      "from": [
+        "person",
+        "dhritarashtra"
+      ],
+      "relation": "father_of",
+      "to": [
+        "person",
+        "duryodhana"
+      ]
+    }
   ]
 }

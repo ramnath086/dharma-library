@@ -162,7 +162,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='krishna'), 'sa', 'Deva', 'श्रीकृष्णः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ('arjuna', 'person'::person_kind, 'Arjuna', 'अर्जुनः', array['Pārtha','Kaunteya','Dhanagñjaya','Gudākeśa','Bhārata','Parantapa']::text[], 'm', 'Pāṇḍava prince, protagonist and interlocutor of Kṛṣṇa; speaker of the Gītā''s questions.', 'published')
+values ('arjuna', 'king'::person_kind, 'Arjuna', 'अर्जुनः', array['Pārtha','Kaunteya','Dhanagñjaya','Gudākeśa','Bhārata','Parantapa']::text[], 'm', 'Pāṇḍava prince, protagonist and interlocutor of Kṛṣṇa; speaker of the Gītā''s questions.', 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('person'::entity_kind, (select id from people where slug='arjuna'), 'en', 'Latn', 'Arjuna', true)
@@ -180,7 +180,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='arjuna'), 'sa', 'Deva', 'अर्जुनः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ('sanjaya', 'person'::person_kind, 'Sañjaya', 'सञ्जयः', '{}'::text[], 'm', 'Bard and counsellor of Dhṛtarāṣṭra; narrator of the Gītā to the blind king, having received divine sight from Vyāsa.', 'published')
+values ('sanjaya', 'narrator'::person_kind, 'Sañjaya', 'सञ्जयः', '{}'::text[], 'm', 'Bard and counsellor of Dhṛtarāṣṭra; narrator of the Gītā to the blind king, having received divine sight from Vyāsa.', 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('person'::entity_kind, (select id from people where slug='sanjaya'), 'en', 'Latn', 'Sanjaya', true)
@@ -198,7 +198,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='sanjaya'), 'sa', 'Deva', 'सञ्जयः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ('dhritarashtra', 'person'::person_kind, 'Dhṛtarāṣṭra', 'धृतराष्ट्रः', array['Kururāja']::text[], 'm', 'Blind king of the Kurus, father of the Kauravas; questioner at Gītā 1.1.', 'published')
+values ('dhritarashtra', 'king'::person_kind, 'Dhṛtarāṣṭra', 'धृतराष्ट्रः', array['Kururāja']::text[], 'm', 'Blind king of the Kurus, father of the Kauravas; questioner at Gītā 1.1.', 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('person'::entity_kind, (select id from people where slug='dhritarashtra'), 'en', 'Latn', 'Dhritarashtra', true)
@@ -234,7 +234,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='vyasa'), 'sa', 'Deva', 'व्यासः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ('bhishma', 'person'::person_kind, 'Bhīṣma', 'भीष्मः', array['Devavrata','Pitāmaha']::text[], 'm', 'Grandsire of the Kurus, commander of the Kaurava army.', 'published')
+values ('bhishma', 'king'::person_kind, 'Bhīṣma', 'भीष्मः', array['Devavrata','Pitāmaha']::text[], 'm', 'Grandsire of the Kurus, commander of the Kaurava army.', 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('person'::entity_kind, (select id from people where slug='bhishma'), 'en', 'Latn', 'Bhishma', true)
@@ -252,7 +252,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='bhishma'), 'sa', 'Deva', 'भीष्मः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ('drona', 'person'::person_kind, 'Droṇa', 'द्रोणः', array['Ācārya']::text[], 'm', 'Military preceptor of the Kauravas and Pāṇḍavas.', 'published')
+values ('drona', 'sage'::person_kind, 'Droṇa', 'द्रोणः', array['Ācārya']::text[], 'm', 'Military preceptor of the Kauravas and Pāṇḍavas.', 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('person'::entity_kind, (select id from people where slug='drona'), 'en', 'Latn', 'Drona', true)
@@ -270,7 +270,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='drona'), 'sa', 'Deva', 'द्रोणः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ('duryodhana', 'person'::person_kind, 'Duryodhana', 'दुर्योधनः', array['Suyodhana']::text[], 'm', 'Eldest Kaurava, son of Dhṛtarāṣṭra.', 'published')
+values ('duryodhana', 'king'::person_kind, 'Duryodhana', 'दुर्योधनः', array['Suyodhana']::text[], 'm', 'Eldest Kaurava, son of Dhṛtarāṣṭra.', 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('person'::entity_kind, (select id from people where slug='duryodhana'), 'en', 'Latn', 'Duryodhana', true)
@@ -288,7 +288,7 @@ insert into entity_names (entity_kind, entity_id, language_code, script_code, na
 values ('person'::entity_kind, (select id from people where slug='duryodhana'), 'sa', 'Deva', 'दुर्योधनः', true)
 on conflict (entity_kind, entity_id, language_code, script_code, name) do nothing;
 insert into places (slug, kind, name_iast, name_sa, alt_names, description, modern_name, latitude, longitude, status)
-values ('kurukshetra', 'field'::place_kind, 'Kurukṣetra', 'कुरुक्षेत्रम्', array['Dharmakṣetra','Samantapañcaka']::text[], 'The sacred field of the Kurus, also called Dharmakṣetra, where the Mahābhārata war and the Gītā discourse took place.', 'Kurukshetra, Haryana, India', 29.9695, 76.8783, 'published')
+values ('kurukshetra', 'tirtha'::place_kind, 'Kurukṣetra', 'कुरुक्षेत्रम्', array['Dharmakṣetra','Samantapañcaka']::text[], 'The sacred field of the Kurus, also called Dharmakṣetra, where the Mahābhārata war and the Gītā discourse took place.', 'Kurukshetra, Haryana, India', 29.9695, 76.8783, 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, alt_names=excluded.alt_names, description=excluded.description, modern_name=excluded.modern_name, latitude=excluded.latitude, longitude=excluded.longitude, status='published';
 insert into entity_names (entity_kind, entity_id, language_code, script_code, name, is_primary)
 values ('place'::entity_kind, (select id from places where slug='kurukshetra'), 'en', 'Latn', 'Kurukshetra', true)
