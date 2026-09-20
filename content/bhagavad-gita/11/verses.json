@@ -1,0 +1,4278 @@
+{
+  "_note": "Bhagavad Gītā 11 — 55 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "11",
+      "ordinal": 11,
+      "title_iast": "Viśvarūpa-darśana-yoga",
+      "title_sa": "विश्वरूपदर्शनयोगः",
+      "title_en": "The Yoga of the Vision of the Universal Form",
+      "title_ml": "വിശ്വരൂപദർശനയോഗം",
+      "summary_en": "Chapter 11: The Yoga of the Vision of the Universal Form — 55 verses",
+      "summary_ml": "അധ്യായം 11: വിശ്വരൂപദർശനയോഗം — 55 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे विश्वरूपदर्शनयोगः नाम 11ोऽध्यायः ॥ 11 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "11.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम्।\n\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम।।11.1।।",
+      "iast": "arjuna uvāca\n\nmadanugrahāya paramaṃ guhyamadhyātmasaṃjñitam|\n\nyattvayoktaṃ vacastena moho'yaṃ vigato mama||11.1||",
+      "en": "By the supremely profound words, on the discrimination of Self, that have been spoken by Thee out of compassion towards me, this my delusion is gone.",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "mat-anugrahāya",
+          "meaning": "out of compassion to me"
+        },
+        {
+          "word": "paramam",
+          "meaning": "supreme"
+        },
+        {
+          "word": "guhyam",
+          "meaning": "confidential"
+        },
+        {
+          "word": "adhyātma-sanjñitam",
+          "meaning": "about spiritual knowledge"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "tvayā",
+          "meaning": "by you"
+        },
+        {
+          "word": "uktam",
+          "meaning": "spoken"
+        },
+        {
+          "word": "vachaḥ",
+          "meaning": "words"
+        },
+        {
+          "word": "tena",
+          "meaning": "by that"
+        },
+        {
+          "word": "mohaḥ",
+          "meaning": "illusion"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this"
+        },
+        {
+          "word": "vigataḥ",
+          "meaning": "is dispelled"
+        },
+        {
+          "word": "mama",
+          "meaning": "my"
+        }
+      ]
+    },
+    {
+      "ref": "11.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया।\n\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्।।11.2।।",
+      "iast": "bhavāpyayau hi bhūtānāṃ śrutau vistaraśo mayā|\n\ntvattaḥ kamalapatrākṣa māhātmyamapi cāvyayam||11.2||",
+      "en": "Of Thee, O lotus-eyed, I have heard at length, of the origin and dissolution of beings, as also Thy inexhaustible greatness.",
+      "word_meanings": [
+        {
+          "word": "bhava",
+          "meaning": "appearance"
+        },
+        {
+          "word": "apyayau",
+          "meaning": "disappearance"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "bhūtānām",
+          "meaning": "of all living beings"
+        },
+        {
+          "word": "śhrutau",
+          "meaning": "have heard"
+        },
+        {
+          "word": "vistaraśhaḥ",
+          "meaning": "in detail"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "tvattaḥ",
+          "meaning": "from you"
+        },
+        {
+          "word": "kamala-patra-akṣha",
+          "meaning": "lotus-eyed one"
+        },
+        {
+          "word": "māhātmyam",
+          "meaning": "greatness"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "avyayam",
+          "meaning": "eternal"
+        }
+      ]
+    },
+    {
+      "ref": "11.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर।\n\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम।।11.3।।",
+      "iast": "evametadyathāttha tvamātmānaṃ parameśvara|\n\ndraṣṭumicchāmi te rūpamaiśvaraṃ puruṣottama||11.3||",
+      "en": "So it is, O Lord Supreme! as Thou hast declared Thyself. (Still) I desire to see Thy Ishvara-Form, O Purusha Supreme.",
+      "word_meanings": [
+        {
+          "word": "evam",
+          "meaning": "thus"
+        },
+        {
+          "word": "etat",
+          "meaning": "this"
+        },
+        {
+          "word": "yathā",
+          "meaning": "as"
+        },
+        {
+          "word": "āttha",
+          "meaning": "have spoken"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "ātmānam",
+          "meaning": "yourself"
+        },
+        {
+          "word": "parama-īśhvara",
+          "meaning": "Supreme Lord"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to see"
+        },
+        {
+          "word": "ichchhāmi",
+          "meaning": "I desire"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "aiśhwaram",
+          "meaning": "divine"
+        },
+        {
+          "word": "puruṣha-uttama",
+          "meaning": "Shree Krishna, the Supreme Divine Personality"
+        }
+      ]
+    },
+    {
+      "ref": "11.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो।\n\nयोगेश्वर ततो मे त्वं दर्शयाऽत्मानमव्ययम्।।11.4।।",
+      "iast": "manyase yadi tacchakyaṃ mayā draṣṭumiti prabho|\n\nyogeśvara tato me tvaṃ darśayā'tmānamavyayam||11.4||",
+      "en": "If, O Lord, Thou thinkest me capable of seeing it, then, O Lord of Yogis, show me Thy immutable Self.",
+      "word_meanings": [
+        {
+          "word": "manyase",
+          "meaning": "you think"
+        },
+        {
+          "word": "yadi",
+          "meaning": "if"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "śhakyam",
+          "meaning": "possible"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to behold"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "prabho",
+          "meaning": "Lord"
+        },
+        {
+          "word": "yoga-īśhvara",
+          "meaning": "Lord of all mystic powers"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "then"
+        },
+        {
+          "word": "me",
+          "meaning": "to me"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "darśhaya",
+          "meaning": "reveal"
+        },
+        {
+          "word": "ātmānam",
+          "meaning": "yourself"
+        },
+        {
+          "word": "avyayam",
+          "meaning": "imperishable"
+        }
+      ]
+    },
+    {
+      "ref": "11.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः।\n\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च।।11.5।।",
+      "iast": "śrī bhagavānuvāca\n\npaśya me pārtha rūpāṇi śataśo'tha sahasraśaḥ|\n\nnānāvidhāni divyāni nānāvarṇākṛtīni ca||11.5||",
+      "en": "Behold, O son of Prithâ, by hundreds and thousands, My different forms celestial, of various colours and shapes.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Lord said"
+        },
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "rūpāṇi",
+          "meaning": "forms"
+        },
+        {
+          "word": "śhataśhaḥ",
+          "meaning": "by the hundreds"
+        },
+        {
+          "word": "atha",
+          "meaning": "and"
+        },
+        {
+          "word": "sahasraśhaḥ",
+          "meaning": "thousands"
+        },
+        {
+          "word": "nānā-vidhāni",
+          "meaning": "various"
+        },
+        {
+          "word": "divyāni",
+          "meaning": "divine"
+        },
+        {
+          "word": "nānā",
+          "meaning": "various"
+        },
+        {
+          "word": "varṇa",
+          "meaning": "colors"
+        },
+        {
+          "word": "ākṛitīni",
+          "meaning": "shapes"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        }
+      ]
+    },
+    {
+      "ref": "11.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "पश्यादित्यान्वसून्रुद्रानश्िवनौ मरुतस्तथा।\n\nबहून्यदृष्टपूर्वाणि पश्याऽश्चर्याणि भारत।।11.6।।",
+      "iast": "paśyādityānvasūnrudrānaśivanau marutastathā|\n\nbahūnyadṛṣṭapūrvāṇi paśyā'ścaryāṇi bhārata||11.6||",
+      "en": "Behold the Adityas, the Vasus, the Rudras, the twin Ashvins, and the Maruts; behold, O descendant of Bharata, many wonders never seen before.",
+      "word_meanings": [
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "ādityān",
+          "meaning": "the (twelve) sons of Aditi"
+        },
+        {
+          "word": "vasūn",
+          "meaning": "the (eight) Vasus"
+        },
+        {
+          "word": "rudrān",
+          "meaning": "the (eleven) Rudras"
+        },
+        {
+          "word": "aśhvinau",
+          "meaning": "the (twin) Ashvini Kumars"
+        },
+        {
+          "word": "marutaḥ",
+          "meaning": "the (forty-nine) Maruts"
+        },
+        {
+          "word": "tathā",
+          "meaning": "and"
+        },
+        {
+          "word": "bahūni",
+          "meaning": "many"
+        },
+        {
+          "word": "adṛiṣhṭa",
+          "meaning": "never revealed"
+        },
+        {
+          "word": "pūrvāṇi",
+          "meaning": "before"
+        },
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "āśhcharyāṇi",
+          "meaning": "marvels"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, scion of the Bharatas"
+        }
+      ]
+    },
+    {
+      "ref": "11.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम्।\n\nमम देहे गुडाकेश यच्चान्यद्द्रष्टुमिच्छसि।।11.7।।",
+      "iast": "ihaikasthaṃ jagatkṛtsnaṃ paśyādya sacarācaram|\n\nmama dehe guḍākeśa yaccānyaddraṣṭumicchasi||11.7||",
+      "en": "See now, O Gudâkesha, in this My body, the whole universe centred in one,—including the moving and the unmoving,—and all else that thou desirest to see.",
+      "word_meanings": [
+        {
+          "word": "iha",
+          "meaning": "here"
+        },
+        {
+          "word": "eka-stham",
+          "meaning": "assembled together"
+        },
+        {
+          "word": "jagat",
+          "meaning": "the universe"
+        },
+        {
+          "word": "kṛitsnam",
+          "meaning": "entire"
+        },
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "adya",
+          "meaning": "now"
+        },
+        {
+          "word": "sa",
+          "meaning": "with"
+        },
+        {
+          "word": "chara",
+          "meaning": "the moving"
+        },
+        {
+          "word": "acharam",
+          "meaning": "the non- moving"
+        },
+        {
+          "word": "mama",
+          "meaning": "my"
+        },
+        {
+          "word": "dehe",
+          "meaning": "in this form"
+        },
+        {
+          "word": "guḍākeśha",
+          "meaning": "Arjun, the conqueror of sleep"
+        },
+        {
+          "word": "yat",
+          "meaning": "whatever"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "anyat",
+          "meaning": "else"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to see"
+        },
+        {
+          "word": "ichchhasi",
+          "meaning": "you wish"
+        }
+      ]
+    },
+    {
+      "ref": "11.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा।\n\nदिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम्।।11.8।।",
+      "iast": "na tu māṃ śakyase draṣṭumanenaiva svacakṣuṣā|\n\ndivyaṃ dadāmi te cakṣuḥ paśya me yogamaiśvaram||11.8||",
+      "en": "But thou canst not see Me with these eyes of thine; I give thee supersensuous sight; behold My Yoga Power Supreme.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "śhakyase",
+          "meaning": "you can"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to see"
+        },
+        {
+          "word": "anena",
+          "meaning": "with these"
+        },
+        {
+          "word": "eva",
+          "meaning": "even"
+        },
+        {
+          "word": "sva-chakṣhuṣhā",
+          "meaning": "with your physical eyes"
+        },
+        {
+          "word": "divyam",
+          "meaning": "divine"
+        },
+        {
+          "word": "dadāmi",
+          "meaning": "I give"
+        },
+        {
+          "word": "te",
+          "meaning": "to you"
+        },
+        {
+          "word": "chakṣhuḥ",
+          "meaning": "eyes"
+        },
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "yogam aiśhwaram",
+          "meaning": "majestic opulence"
+        }
+      ]
+    },
+    {
+      "ref": "11.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः।\n\nदर्शयामास पार्थाय परमं रूपमैश्वरम्।।11.9।।",
+      "iast": "sañjaya uvāca\n\nevamuktvā tato rājanmahāyogeśvaro hariḥ|\n\ndarśayāmāsa pārthāya paramaṃ rūpamaiśvaram||11.9||",
+      "en": "Having thus spoken, O King, Hari, the Great Lord of Yoga, showed unto the son of Prithâ, His Supreme Ishvara-Form—",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "evam",
+          "meaning": "thus"
+        },
+        {
+          "word": "uktvā",
+          "meaning": "having spoken"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "then"
+        },
+        {
+          "word": "rājan",
+          "meaning": "King"
+        },
+        {
+          "word": "mahā-yoga-īśhvaraḥ",
+          "meaning": "the Supreme Lord of Yog"
+        },
+        {
+          "word": "hariḥ",
+          "meaning": "Shree Krishna"
+        },
+        {
+          "word": "darśhayām āsa",
+          "meaning": "displayed"
+        },
+        {
+          "word": "pārthāya",
+          "meaning": "to Arjun"
+        },
+        {
+          "word": "paramam",
+          "meaning": "divine"
+        },
+        {
+          "word": "rūpam aiśhwaram",
+          "meaning": "opulence"
+        }
+      ]
+    },
+    {
+      "ref": "11.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अनेकवक्त्रनयनमनेकाद्भुतदर्शनम्।\n\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्।।11.10।।",
+      "iast": "anekavaktranayanamanekādbhutadarśanam|\n\nanekadivyābharaṇaṃ divyānekodyatāyudham||11.10||",
+      "en": "With numerous mouths and eyes, with numerous wondrous sights, with numerous celestial ornaments, with numerous celestial weapons uplifted;",
+      "word_meanings": [
+        {
+          "word": "aneka",
+          "meaning": "many"
+        },
+        {
+          "word": "vaktra",
+          "meaning": "faces"
+        },
+        {
+          "word": "nayanam",
+          "meaning": "eyes"
+        },
+        {
+          "word": "aneka",
+          "meaning": "many"
+        },
+        {
+          "word": "adbhuta",
+          "meaning": "wonderful"
+        },
+        {
+          "word": "darśhanam",
+          "meaning": "had a vision of"
+        },
+        {
+          "word": "aneka",
+          "meaning": "many"
+        },
+        {
+          "word": "divya",
+          "meaning": "divine"
+        },
+        {
+          "word": "ābharaṇam",
+          "meaning": "ornaments"
+        },
+        {
+          "word": "divya",
+          "meaning": "divine"
+        },
+        {
+          "word": "aneka",
+          "meaning": "many"
+        },
+        {
+          "word": "udyata",
+          "meaning": "uplifted"
+        },
+        {
+          "word": "āyudham",
+          "meaning": "weapons"
+        }
+      ]
+    },
+    {
+      "ref": "11.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम्।\n\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्।।11.11।।",
+      "iast": "divyamālyāmbaradharaṃ divyagandhānulepanam|\n\nsarvāścaryamayaṃ devamanantaṃ viśvatomukham||11.11||",
+      "en": "Wearing celestial garlands and apparel, anointed with celestial-scented unguents, the All-wonderful, Resplendent, Boundless and All-formed.",
+      "word_meanings": [
+        {
+          "word": "divya",
+          "meaning": "divine"
+        },
+        {
+          "word": "mālya",
+          "meaning": "garlands"
+        },
+        {
+          "word": "āmbara",
+          "meaning": "garments"
+        },
+        {
+          "word": "dharam",
+          "meaning": "wearing"
+        },
+        {
+          "word": "divya",
+          "meaning": "divine"
+        },
+        {
+          "word": "gandha",
+          "meaning": "fragrances"
+        },
+        {
+          "word": "anulepanam",
+          "meaning": "anointed with"
+        },
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "āśhcharya-mayam",
+          "meaning": "wonderful"
+        },
+        {
+          "word": "devam",
+          "meaning": "Lord"
+        },
+        {
+          "word": "anantam",
+          "meaning": "unlimited"
+        },
+        {
+          "word": "viśhwataḥ",
+          "meaning": "all sides"
+        },
+        {
+          "word": "mukham",
+          "meaning": "face"
+        }
+      ]
+    },
+    {
+      "ref": "11.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता।\n\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः।।11.12।।",
+      "iast": "divi sūryasahasrasya bhavedyugapadutthitā|\n\nyadi bhāḥ sadṛśī sā syādbhāsastasya mahātmanaḥ||11.12||",
+      "en": "If the splendour of a thousand suns were to rise up at once in the sky, that would be like the splendour of that Mighty Being.",
+      "word_meanings": [
+        {
+          "word": "divi",
+          "meaning": "in the sky"
+        },
+        {
+          "word": "sūrya",
+          "meaning": "suns"
+        },
+        {
+          "word": "sahasrasya",
+          "meaning": "thousand"
+        },
+        {
+          "word": "bhavet",
+          "meaning": "were"
+        },
+        {
+          "word": "yugapat",
+          "meaning": "simultaneously"
+        },
+        {
+          "word": "utthitā",
+          "meaning": "rising"
+        },
+        {
+          "word": "yadi",
+          "meaning": "if"
+        },
+        {
+          "word": "bhāḥ",
+          "meaning": "splendor"
+        },
+        {
+          "word": "sadṛiśhī",
+          "meaning": "like"
+        },
+        {
+          "word": "sā",
+          "meaning": "that"
+        },
+        {
+          "word": "syāt",
+          "meaning": "would be"
+        },
+        {
+          "word": "bhāsaḥ",
+          "meaning": "splendor"
+        },
+        {
+          "word": "tasya",
+          "meaning": "of them"
+        },
+        {
+          "word": "mahā-ātmanaḥ",
+          "meaning": "the great personality"
+        }
+      ]
+    },
+    {
+      "ref": "11.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा।\n\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा।।11.13।।",
+      "iast": "tatraikasthaṃ jagatkṛtsnaṃ pravibhaktamanekadhā|\n\napaśyaddevadevasya śarīre pāṇḍavastadā||11.13||",
+      "en": "There in the body of the God of gods, the son of Pându then saw the whole universe resting in one, with its manifold divisions.",
+      "word_meanings": [
+        {
+          "word": "tatra",
+          "meaning": "there"
+        },
+        {
+          "word": "eka-stham",
+          "meaning": "established in one place"
+        },
+        {
+          "word": "jagat",
+          "meaning": "the universe"
+        },
+        {
+          "word": "kṛitsnam",
+          "meaning": "entire"
+        },
+        {
+          "word": "pravibhaktam",
+          "meaning": "divided"
+        },
+        {
+          "word": "anekadhā",
+          "meaning": "many"
+        },
+        {
+          "word": "apaśhyat",
+          "meaning": "could see"
+        },
+        {
+          "word": "deva-devasya",
+          "meaning": "of the God of gods"
+        },
+        {
+          "word": "śharīre",
+          "meaning": "in the body"
+        },
+        {
+          "word": "pāṇḍavaḥ",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "tadā",
+          "meaning": "at that time"
+        }
+      ]
+    },
+    {
+      "ref": "11.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः।\n\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत।।11.14।।",
+      "iast": "tataḥ sa vismayāviṣṭo hṛṣṭaromā dhanañjayaḥ|\n\npraṇamya śirasā devaṃ kṛtāñjalirabhāṣata||11.14||",
+      "en": "Then Dhananjaya, filled with wonder, with his hair standing on end, bending down his head to the Deva in adoration, spoke with joined palms.",
+      "word_meanings": [
+        {
+          "word": "tataḥ",
+          "meaning": "then"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he"
+        },
+        {
+          "word": "vismaya-āviṣhṭaḥ",
+          "meaning": "full of wonder"
+        },
+        {
+          "word": "hṛiṣhṭa-romā",
+          "meaning": "with hair standing on end"
+        },
+        {
+          "word": "dhanañjayaḥ",
+          "meaning": "Arjun, the conqueror of wealth"
+        },
+        {
+          "word": "praṇamya",
+          "meaning": "bow down"
+        },
+        {
+          "word": "śhirasā",
+          "meaning": "with (his) head"
+        },
+        {
+          "word": "devam",
+          "meaning": "the Lord"
+        },
+        {
+          "word": "kṛita-añjaliḥ",
+          "meaning": "with folded hands"
+        },
+        {
+          "word": "abhāṣhata",
+          "meaning": "he addressed"
+        }
+      ]
+    },
+    {
+      "ref": "11.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nपश्यामि देवांस्तव देव देहे\n\nसर्वांस्तथा भूतविशेषसङ्घान्।\n\nब्रह्माणमीशं कमलासनस्थ\n\nमृषींश्च सर्वानुरगांश्च दिव्यान्।।11.15।।",
+      "iast": "arjuna uvāca\n\npaśyāmi devāṃstava deva dehe\n\nsarvāṃstathā bhūtaviśeṣasaṅghān|\n\nbrahmāṇamīśaṃ kamalāsanastha\n\nmṛṣīṃśca sarvānuragāṃśca divyān||11.15||",
+      "en": "I see all the Devas, O Deva, in Thy body, and hosts of all grades of beings; Brahma, the Lord, seated on the lotus, and all the Rishis and celestial serpents.",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "paśhyāmi",
+          "meaning": "I behold"
+        },
+        {
+          "word": "devān",
+          "meaning": "all the gods"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "deva",
+          "meaning": "Lord"
+        },
+        {
+          "word": "dehe",
+          "meaning": "within the body"
+        },
+        {
+          "word": "sarvān",
+          "meaning": "all"
+        },
+        {
+          "word": "tathā",
+          "meaning": "as well as"
+        },
+        {
+          "word": "bhūta viśheṣha-saṅghān",
+          "meaning": "hosts of different beings"
+        },
+        {
+          "word": "brahmāṇam",
+          "meaning": "Lord Brahma"
+        },
+        {
+          "word": "īśham",
+          "meaning": "Shiv"
+        },
+        {
+          "word": "kamala-āsana-stham",
+          "meaning": "seated on the lotus flower"
+        },
+        {
+          "word": "ṛiṣhīn",
+          "meaning": "sages"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sarvān",
+          "meaning": "all"
+        },
+        {
+          "word": "uragān",
+          "meaning": "serpents"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "divyān",
+          "meaning": "divine"
+        }
+      ]
+    },
+    {
+      "ref": "11.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अनेकबाहूदरवक्त्रनेत्रं\n\nपश्यामि त्वां सर्वतोऽनन्तरूपम्।\n\nनान्तं न मध्यं न पुनस्तवादिं\n\nपश्यामि विश्वेश्वर विश्वरूप।।11.16।।",
+      "iast": "anekabāhūdaravaktranetraṃ\n\npaśyāmi tvāṃ sarvato'nantarūpam|\n\nnāntaṃ na madhyaṃ na punastavādiṃ\n\npaśyāmi viśveśvara viśvarūpa||11.16||",
+      "en": "I see Thee of boundless form on every side with manifold arms, stomachs, mouths and eyes; neither the end nor the middle, nor also the beginning of Thee do I see, O Lord of the universe, O Universal Form.",
+      "word_meanings": [
+        {
+          "word": "aneka",
+          "meaning": "infinite"
+        },
+        {
+          "word": "bāhu",
+          "meaning": "arms"
+        },
+        {
+          "word": "udara",
+          "meaning": "stomachs"
+        },
+        {
+          "word": "vaktra",
+          "meaning": "faces"
+        },
+        {
+          "word": "netram",
+          "meaning": "eyes"
+        },
+        {
+          "word": "paśhyāmi",
+          "meaning": "I see"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "sarvataḥ",
+          "meaning": "in every direction"
+        },
+        {
+          "word": "ananta-rūpam",
+          "meaning": "inifinite forms"
+        },
+        {
+          "word": "na antam",
+          "meaning": "without end"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "madhyam",
+          "meaning": "middle"
+        },
+        {
+          "word": "na",
+          "meaning": "no"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "ādim",
+          "meaning": "beginning"
+        },
+        {
+          "word": "paśhyāmi",
+          "meaning": "I see"
+        },
+        {
+          "word": "viśhwa-īśhwara",
+          "meaning": "The Lord of the universe"
+        },
+        {
+          "word": "viśhwa-rūpa",
+          "meaning": "universal form"
+        }
+      ]
+    },
+    {
+      "ref": "11.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "किरीटिनं गदिनं चक्रिणं च\n\nतेजोराशिं सर्वतोदीप्तिमन्तम्।\n\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ता\n\nद्दीप्तानलार्कद्युतिमप्रमेयम्।।11.17।।",
+      "iast": "kirīṭinaṃ gadinaṃ cakriṇaṃ ca\n\ntejorāśiṃ sarvatodīptimantam|\n\npaśyāmi tvāṃ durnirīkṣyaṃ samantā\n\nddīptānalārkadyutimaprameyam||11.17||",
+      "en": "I see Thee with diadem, club, and discus; a mass of radiance shining everywhere, very hard to look at, all around blazing like burning fire and sun, and immeasurable.",
+      "word_meanings": [
+        {
+          "word": "kirīṭinam",
+          "meaning": "adorned with a crown"
+        },
+        {
+          "word": "gadinam",
+          "meaning": "with club"
+        },
+        {
+          "word": "chakriṇam",
+          "meaning": "with discs"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tejaḥ-rāśhim",
+          "meaning": "abode of splendor"
+        },
+        {
+          "word": "sarvataḥ",
+          "meaning": "everywhere"
+        },
+        {
+          "word": "dīpti-mantam",
+          "meaning": "shining"
+        },
+        {
+          "word": "paśhyāmi",
+          "meaning": "I see"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "durnirīkṣhyam",
+          "meaning": "difficult to look upon"
+        },
+        {
+          "word": "samantāt",
+          "meaning": "in all directions"
+        },
+        {
+          "word": "dīpta-anala",
+          "meaning": "blazing fire"
+        },
+        {
+          "word": "arka",
+          "meaning": "like the sun"
+        },
+        {
+          "word": "dyutim",
+          "meaning": "effulgence"
+        },
+        {
+          "word": "aprameyam",
+          "meaning": "immeasurable"
+        }
+      ]
+    },
+    {
+      "ref": "11.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "त्वमक्षरं परमं वेदितव्यं\n\nत्वमस्य विश्वस्य परं निधानम्।\n\nत्वमव्ययः शाश्वतधर्मगोप्ता\n\nसनातनस्त्वं पुरुषो मतो मे।।11.18।।",
+      "iast": "tvamakṣaraṃ paramaṃ veditavyaṃ\n\ntvamasya viśvasya paraṃ nidhānam|\n\ntvamavyayaḥ śāśvatadharmagoptā\n\nsanātanastvaṃ puruṣo mato me||11.18||",
+      "en": "Thou art the Imperishable, the Supreme Being, the one thing to be known. Thou art the great Refuge of this universe;. Thou art the undying Guardian of the Eternal Dharma, Thou art the Ancient. Purusha, I ween.",
+      "word_meanings": [
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "akṣharam",
+          "meaning": "the imperishable"
+        },
+        {
+          "word": "paramam",
+          "meaning": "the supreme being"
+        },
+        {
+          "word": "veditavyam",
+          "meaning": "worthy of being known"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "asya",
+          "meaning": "of this"
+        },
+        {
+          "word": "viśhwasya",
+          "meaning": "of the creation"
+        },
+        {
+          "word": "param",
+          "meaning": "supreme"
+        },
+        {
+          "word": "nidhānam",
+          "meaning": "support"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "avyayaḥ",
+          "meaning": "eternal"
+        },
+        {
+          "word": "śhāśhvata-dharma-goptā",
+          "meaning": "protector of the eternal religion"
+        },
+        {
+          "word": "sanātanaḥ",
+          "meaning": "everlasting"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "puruṣhaḥ",
+          "meaning": "the Supreme Divine Person"
+        },
+        {
+          "word": "mataḥ me",
+          "meaning": "my opinion"
+        }
+      ]
+    },
+    {
+      "ref": "11.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अनादिमध्यान्तमनन्तवीर्य\n\nमनन्तबाहुं शशिसूर्यनेत्रम्।\n\nपश्यामि त्वां दीप्तहुताशवक्त्रम्\n\nस्वतेजसा विश्वमिदं तपन्तम्।।11.19।।",
+      "iast": "anādimadhyāntamanantavīrya\n\nmanantabāhuṃ śaśisūryanetram|\n\npaśyāmi tvāṃ dīptahutāśavaktram\n\nsvatejasā viśvamidaṃ tapantam||11.19||",
+      "en": "I see Thee without beginning, middle or end, infinite in power, of manifold arms; the sun and the moon Thine eyes, the burning fire Thy mouth; heating the whole universe with Thy radiance.",
+      "word_meanings": [
+        {
+          "word": "anādi-madhyāntam ananta-vīryam\nananta-bāhuṁ śhaśhi-sūrya-netram\npaśhyāmi tvāṁ dīpta-hutāśha-vaktraṁ\nsva-tejasā viśhvam idaṁ tapantam",
+          "meaning": ""
+        }
+      ]
+    },
+    {
+      "ref": "11.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "द्यावापृथिव्योरिदमन्तरं हि\n\nव्याप्तं त्वयैकेन दिशश्च सर्वाः।\n\nदृष्ट्वाऽद्भुतं रूपमुग्रं तवेदं\n\nलोकत्रयं प्रव्यथितं महात्मन्।।11.20।।",
+      "iast": "dyāvāpṛthivyoridamantaraṃ hi\n\nvyāptaṃ tvayaikena diśaśca sarvāḥ|\n\ndṛṣṭvā'dbhutaṃ rūpamugraṃ tavedaṃ\n\nlokatrayaṃ pravyathitaṃ mahātman||11.20||",
+      "en": "The space betwixt heaven and earth and all the quarters are filled by Thee alone; having seen this, Thy marvellous and awful Form, the three worlds are trembling with fear, O Great-souled One.",
+      "word_meanings": [
+        {
+          "word": "dyau-ā-pṛithivyoḥ",
+          "meaning": "between heaven and earth"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "antaram",
+          "meaning": "space between"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "vyāptam",
+          "meaning": "pervaded"
+        },
+        {
+          "word": "tvayā",
+          "meaning": "by you"
+        },
+        {
+          "word": "ekena",
+          "meaning": "alone"
+        },
+        {
+          "word": "diśhaḥ",
+          "meaning": "directions"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sarvāḥ",
+          "meaning": "all"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "seeing"
+        },
+        {
+          "word": "adbhutam",
+          "meaning": "wondrous"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "ugram",
+          "meaning": "terrible"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "loka",
+          "meaning": "worlds"
+        },
+        {
+          "word": "trayam",
+          "meaning": "three"
+        },
+        {
+          "word": "pravyathitam",
+          "meaning": "trembling"
+        },
+        {
+          "word": "mahā-ātman",
+          "meaning": "The greatest of all beings"
+        }
+      ]
+    },
+    {
+      "ref": "11.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अमी हि त्वां सुरसङ्घाः विशन्ति\n\nकेचिद्भीताः प्राञ्जलयो गृणन्ति।\n\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\n\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः।।11.21।।",
+      "iast": "amī hi tvāṃ surasaṅghāḥ viśanti\n\nkecidbhītāḥ prāñjalayo gṛṇanti|\n\nsvastītyuktvā maharṣisiddhasaṅghāḥ\n\nstuvanti tvāṃ stutibhiḥ puṣkalābhiḥ||11.21||",
+      "en": "Verily, into Thee enter these hosts of Devas; some extol Thee in fear with joined palms; \"May it be well!\" thus saying, bands of great Rishis and Siddhas praise Thee with splendid hymns.",
+      "word_meanings": [
+        {
+          "word": "amī",
+          "meaning": "these"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "sura-saṅghāḥ",
+          "meaning": "assembly of celestial gods"
+        },
+        {
+          "word": "viśhanti",
+          "meaning": "are entering"
+        },
+        {
+          "word": "kechit",
+          "meaning": "some"
+        },
+        {
+          "word": "bhītāḥ",
+          "meaning": "in fear"
+        },
+        {
+          "word": "prāñjalayaḥ",
+          "meaning": "with folded hands"
+        },
+        {
+          "word": "gṛiṇanti",
+          "meaning": "praise"
+        },
+        {
+          "word": "svasti",
+          "meaning": "auspicious"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "uktvā",
+          "meaning": "reciting"
+        },
+        {
+          "word": "mahā-ṛiṣhi",
+          "meaning": "great sages"
+        },
+        {
+          "word": "siddha-saṅghāḥ",
+          "meaning": "perfect beings"
+        },
+        {
+          "word": "stuvanti",
+          "meaning": "are extolling"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "stutibhiḥ",
+          "meaning": "with prayers"
+        },
+        {
+          "word": "puṣhkalābhiḥ",
+          "meaning": "hymns"
+        }
+      ]
+    },
+    {
+      "ref": "11.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "रुद्रादित्या वसवो ये च साध्या\n\nविश्वेऽश्िवनौ मरुतश्चोष्मपाश्च।\n\nगन्धर्वयक्षासुरसिद्धसङ्घा\n\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे।।11.22।।",
+      "iast": "rudrādityā vasavo ye ca sādhyā\n\nviśve'śivanau marutaścoṣmapāśca|\n\ngandharvayakṣāsurasiddhasaṅghā\n\nvīkṣante tvāṃ vismitāścaiva sarve||11.22||",
+      "en": "The Rudras, Adityas, Vasus, Sâdhyas, Vishva-Devas, the two Ashvins, Maruts, Ushmapâs, and hosts of Gandharvas, Yakshas, Asuras, and Siddhas,—all these are looking at Thee, all quite astounded.",
+      "word_meanings": [
+        {
+          "word": "rudra",
+          "meaning": "a form of Lord Shiv"
+        },
+        {
+          "word": "ādityāḥ",
+          "meaning": "the Adityas"
+        },
+        {
+          "word": "vasavaḥ",
+          "meaning": "the Vasus"
+        },
+        {
+          "word": "ye",
+          "meaning": "these"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sādhyāḥ",
+          "meaning": "the Sadhyas"
+        },
+        {
+          "word": "viśhve",
+          "meaning": "the Vishvadevas"
+        },
+        {
+          "word": "aśhvinau",
+          "meaning": "the Ashvini kumars"
+        },
+        {
+          "word": "marutaḥ",
+          "meaning": "the Maruts"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "uṣhma-pāḥ",
+          "meaning": "the ancestors"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "gandharva",
+          "meaning": "Gandharvas"
+        },
+        {
+          "word": "yakṣha",
+          "meaning": "the Yakshas"
+        },
+        {
+          "word": "asura",
+          "meaning": "the demons"
+        },
+        {
+          "word": "siddha",
+          "meaning": "the perfected beings"
+        },
+        {
+          "word": "saṅghāḥ",
+          "meaning": "the assemblies"
+        },
+        {
+          "word": "vīkṣhante",
+          "meaning": "are beholding"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "vismitāḥ",
+          "meaning": "in wonder"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "verily"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        }
+      ]
+    },
+    {
+      "ref": "11.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "रूपं महत्ते बहुवक्त्रनेत्रं\n\nमहाबाहो बहुबाहूरुपादम्।\n\nबहूदरं बहुदंष्ट्राकरालं\n\nदृष्ट्वा लोकाः प्रव्यथितास्तथाऽहम्।।11.23।।",
+      "iast": "rūpaṃ mahatte bahuvaktranetraṃ\n\nmahābāho bahubāhūrupādam|\n\nbahūdaraṃ bahudaṃṣṭrākarālaṃ\n\ndṛṣṭvā lokāḥ pravyathitāstathā'ham||11.23||",
+      "en": "Having seen Thy immeasurable Form—with many mouths and eyes, O mighty-armed, with many arms, thighs and feet, with many stomachs, and fearful with many tusks,—the worlds are terrified, and so am I.",
+      "word_meanings": [
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "mahat",
+          "meaning": "magnificent"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "bahu",
+          "meaning": "many"
+        },
+        {
+          "word": "vaktra",
+          "meaning": "mouths"
+        },
+        {
+          "word": "netram",
+          "meaning": "eyes"
+        },
+        {
+          "word": "mahā-bāho",
+          "meaning": "mighty-armed Lord"
+        },
+        {
+          "word": "bahu",
+          "meaning": "many"
+        },
+        {
+          "word": "bāhu",
+          "meaning": "arms"
+        },
+        {
+          "word": "ūru",
+          "meaning": "thighs"
+        },
+        {
+          "word": "pādam",
+          "meaning": "legs"
+        },
+        {
+          "word": "bahu-udaram",
+          "meaning": "many stomachs"
+        },
+        {
+          "word": "bahu-danṣhṭrā",
+          "meaning": "many teeth"
+        },
+        {
+          "word": "karālam",
+          "meaning": "terrifying"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "seeing"
+        },
+        {
+          "word": "lokāḥ",
+          "meaning": "all the worlds"
+        },
+        {
+          "word": "pravyathitāḥ",
+          "meaning": "terror-stricken"
+        },
+        {
+          "word": "tathā",
+          "meaning": "so also"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        }
+      ]
+    },
+    {
+      "ref": "11.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नभःस्पृशं दीप्तमनेकवर्णं\n\nव्यात्ताननं दीप्तविशालनेत्रम्।\n\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\n\nधृतिं न विन्दामि शमं च विष्णो।।11.24।।",
+      "iast": "nabhaḥspṛśaṃ dīptamanekavarṇaṃ\n\nvyāttānanaṃ dīptaviśālanetram|\n\ndṛṣṭvā hi tvāṃ pravyathitāntarātmā\n\ndhṛtiṃ na vindāmi śamaṃ ca viṣṇo||11.24||",
+      "en": "On seeing Thee touching the sky, shining in many a colour, with mouths wide open, with large fiery eyes, I am terrified at heart, and find no courage nor peace, O Vishnu.",
+      "word_meanings": [
+        {
+          "word": "nabhaḥ-spṛiśham",
+          "meaning": "touching the sky"
+        },
+        {
+          "word": "dīptam",
+          "meaning": "effulgent"
+        },
+        {
+          "word": "aneka",
+          "meaning": "many"
+        },
+        {
+          "word": "varṇam",
+          "meaning": "colors"
+        },
+        {
+          "word": "vyātta",
+          "meaning": "open"
+        },
+        {
+          "word": "ānanam",
+          "meaning": "mouths"
+        },
+        {
+          "word": "dīpta",
+          "meaning": "blazing"
+        },
+        {
+          "word": "viśhāla",
+          "meaning": "enormous"
+        },
+        {
+          "word": "netram",
+          "meaning": "eyes"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "seeing"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "pravyathitāntar-ātmā",
+          "meaning": "my heart is trembling with fear"
+        },
+        {
+          "word": "dhṛitim",
+          "meaning": "firmness"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vindāmi",
+          "meaning": "I find"
+        },
+        {
+          "word": "śhamam",
+          "meaning": "mental peace"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "viṣhṇo",
+          "meaning": "Lord Vishnu"
+        }
+      ]
+    },
+    {
+      "ref": "11.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दंष्ट्राकरालानि च ते मुखानि\n\nदृष्ट्वैव कालानलसन्निभानि।\n\nदिशो न जाने न लभे च शर्म\n\nप्रसीद देवेश जगन्निवास।।11.25।।",
+      "iast": "daṃṣṭrākarālāni ca te mukhāni\n\ndṛṣṭvaiva kālānalasannibhāni|\n\ndiśo na jāne na labhe ca śarma\n\nprasīda deveśa jagannivāsa||11.25||",
+      "en": "Having seen Thy mouths, fearful with tusks, (blazing) like Pralaya-fires, I know not the four quarters, nor do I find peace; have mercy, O Lord of the Devas, O Abode of the universe.",
+      "word_meanings": [
+        {
+          "word": "danṣhṭrā",
+          "meaning": "teeth"
+        },
+        {
+          "word": "karālāni",
+          "meaning": "terrible"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "mukhāni",
+          "meaning": "mouths"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "having seen"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "kāla-anala",
+          "meaning": "the fire of annihilation"
+        },
+        {
+          "word": "sannibhāni",
+          "meaning": "resembling"
+        },
+        {
+          "word": "diśhaḥ",
+          "meaning": "the directions"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "jāne",
+          "meaning": "know"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "labhe",
+          "meaning": "I obtain"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śharma",
+          "meaning": "peace"
+        },
+        {
+          "word": "prasīda",
+          "meaning": "have mercy"
+        },
+        {
+          "word": "deva-īśha",
+          "meaning": "The Lord of lords"
+        },
+        {
+          "word": "jagat-nivāsa",
+          "meaning": "The shelter of the universe"
+        }
+      ]
+    },
+    {
+      "ref": "11.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "dhritarashtra",
+      "deva": "अमी च त्वां धृतराष्ट्रस्य पुत्राः\n\nसर्वे सहैवावनिपालसङ्घैः।\n\nभीष्मो द्रोणः सूतपुत्रस्तथाऽसौ\n\nसहास्मदीयैरपि योधमुख्यैः।।11.26।।",
+      "iast": "amī ca tvāṃ dhṛtarāṣṭrasya putrāḥ\n\nsarve sahaivāvanipālasaṅghaiḥ|\n\nbhīṣmo droṇaḥ sūtaputrastathā'sau\n\nsahāsmadīyairapi yodhamukhyaiḥ||11.26||",
+      "en": "All these sons of Dhritarâshtra, with hosts of monarchs, Bhishma, Drona, and Sutaputra, with the warrior chiefs of ours, enter precipitately into Thy mouth, terrible with tusks and fearful to behold. Some are found sticking in the interstices of Thy teeth, with their heads crushed to powder.",
+      "word_meanings": [
+        {
+          "word": "amī",
+          "meaning": "these"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "dhṛitarāśhtrasya",
+          "meaning": "of Dhritarashtra"
+        },
+        {
+          "word": "putrāḥ",
+          "meaning": "sons"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "saha",
+          "meaning": "with"
+        },
+        {
+          "word": "eva",
+          "meaning": "even"
+        },
+        {
+          "word": "avani-pāla",
+          "meaning": "their allied kings"
+        },
+        {
+          "word": "sanghaiḥ",
+          "meaning": "assembly"
+        },
+        {
+          "word": "bhīṣhmaḥ",
+          "meaning": "Bheeshma"
+        },
+        {
+          "word": "droṇaḥ",
+          "meaning": "Dronacharya"
+        },
+        {
+          "word": "sūta-putraḥ",
+          "meaning": "Karna"
+        },
+        {
+          "word": "tathā",
+          "meaning": "and also"
+        },
+        {
+          "word": "asau",
+          "meaning": "this"
+        },
+        {
+          "word": "saha",
+          "meaning": "with"
+        },
+        {
+          "word": "asmadīyaiḥ",
+          "meaning": "from our side"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "yodha-mukhyaiḥ",
+          "meaning": "generals"
+        },
+        {
+          "word": "vaktrāṇi",
+          "meaning": "mouths"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "tvaramāṇāḥ",
+          "meaning": "rushing"
+        },
+        {
+          "word": "viśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "danṣhṭrā",
+          "meaning": "teeth"
+        },
+        {
+          "word": "karālāni",
+          "meaning": "terrible"
+        },
+        {
+          "word": "bhayānakāni",
+          "meaning": "fearsome"
+        },
+        {
+          "word": "kechit",
+          "meaning": "some"
+        },
+        {
+          "word": "vilagnāḥ",
+          "meaning": "getting stuck"
+        },
+        {
+          "word": "daśhana-antareṣhu",
+          "meaning": "between the teeth"
+        },
+        {
+          "word": "sandṛiśhyante",
+          "meaning": "are seen"
+        },
+        {
+          "word": "chūrṇitaiḥ",
+          "meaning": "getting smashed"
+        },
+        {
+          "word": "uttama-aṅgaiḥ",
+          "meaning": "heads"
+        }
+      ]
+    },
+    {
+      "ref": "11.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "वक्त्राणि ते त्वरमाणा विशन्ति\n\nदंष्ट्राकरालानि भयानकानि।\n\nकेचिद्विलग्ना दशनान्तरेषु\n\nसंदृश्यन्ते चूर्णितैरुत्तमाङ्गैः।।11.27।।",
+      "iast": "vaktrāṇi te tvaramāṇā viśanti\n\ndaṃṣṭrākarālāni bhayānakāni|\n\nkecidvilagnā daśanāntareṣu\n\nsaṃdṛśyante cūrṇitairuttamāṅgaiḥ||11.27||",
+      "en": "All these sons of Dhritarâshtra, with hosts of monarchs, Bhishma, Drona, and Sutaputra, with the warrior chiefs of ours, enter precipitately into Thy mouth, terrible with tusks and fearful to behold. Some are found sticking in the interstices of Thy teeth, with their heads crushed to powder.",
+      "word_meanings": [
+        {
+          "word": "vaktrāṇi",
+          "meaning": "mouths"
+        },
+        {
+          "word": "te",
+          "meaning": "Your"
+        },
+        {
+          "word": "tvaramāṇāḥ",
+          "meaning": "fearful"
+        },
+        {
+          "word": "viśanti",
+          "meaning": "entering"
+        },
+        {
+          "word": "daṁṣṭrā",
+          "meaning": "teeth"
+        },
+        {
+          "word": "karālāni",
+          "meaning": "terrible"
+        },
+        {
+          "word": "bhayānakāni",
+          "meaning": "very    fearful"
+        },
+        {
+          "word": "kecit",
+          "meaning": "some  of  them"
+        },
+        {
+          "word": "vilagnāḥ",
+          "meaning": "being  attacked"
+        },
+        {
+          "word": "daśanāntareṣu",
+          "meaning": "between   the teeth"
+        },
+        {
+          "word": "sandṛśyante",
+          "meaning": "being   seen"
+        },
+        {
+          "word": "cūrṇitaiḥ",
+          "meaning": "smashed"
+        },
+        {
+          "word": "uttama-aṅgaiḥ",
+          "meaning": "by    the head"
+        }
+      ]
+    },
+    {
+      "ref": "11.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यथा नदीनां बहवोऽम्बुवेगाः\n\nसमुद्रमेवाभिमुखाः द्रवन्ति।\n\nतथा तवामी नरलोकवीरा\n\nविशन्ति वक्त्राण्यभिविज्वलन्ति।।11.28।।",
+      "iast": "yathā nadīnāṃ bahavo'mbuvegāḥ\n\nsamudramevābhimukhāḥ dravanti|\n\ntathā tavāmī naralokavīrā\n\nviśanti vaktrāṇyabhivijvalanti||11.28||",
+      "en": "Verily, as the many torrents of rivers flow towards the ocean, so do these heroes in the world of men enter Thy fiercely flaming mouths.",
+      "word_meanings": [
+        {
+          "word": "yathā",
+          "meaning": "as"
+        },
+        {
+          "word": "nadīnām",
+          "meaning": "of the rivers"
+        },
+        {
+          "word": "bahavaḥ",
+          "meaning": "many"
+        },
+        {
+          "word": "ambu-vegāḥ",
+          "meaning": "water waves"
+        },
+        {
+          "word": "samudram",
+          "meaning": "the ocean"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "abhimukhāḥ",
+          "meaning": "toward"
+        },
+        {
+          "word": "dravanti",
+          "meaning": "flowing rapidly"
+        },
+        {
+          "word": "tathā",
+          "meaning": "similarly"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "amī",
+          "meaning": "these"
+        },
+        {
+          "word": "nara-loka-vīrāḥ",
+          "meaning": "kings of human society"
+        },
+        {
+          "word": "viśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "vaktrāṇi",
+          "meaning": "mouths"
+        },
+        {
+          "word": "abhivijvalanti",
+          "meaning": "blazing"
+        }
+      ]
+    },
+    {
+      "ref": "11.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यथा प्रदीप्तं ज्वलनं पतङ्गा\n\nविशन्ति नाशाय समृद्धवेगाः।\n\nतथैव नाशाय विशन्ति लोका\n\nस्तवापि वक्त्राणि समृद्धवेगाः।।11.29।।",
+      "iast": "yathā pradīptaṃ jvalanaṃ pataṅgā\n\nviśanti nāśāya samṛddhavegāḥ|\n\ntathaiva nāśāya viśanti lokā\n\nstavāpi vaktrāṇi samṛddhavegāḥ||11.29||",
+      "en": "As moths precipitately rush into a blazing fire only to perish, even so do these creatures also precipitately rush into Thy mouths only to perish.",
+      "word_meanings": [
+        {
+          "word": "yathā",
+          "meaning": "as"
+        },
+        {
+          "word": "pradīptam",
+          "meaning": "blazing"
+        },
+        {
+          "word": "jvalanam",
+          "meaning": "fire"
+        },
+        {
+          "word": "pataṅgāḥ",
+          "meaning": "moths"
+        },
+        {
+          "word": "viśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "nāśhāya",
+          "meaning": "to be perished"
+        },
+        {
+          "word": "samṛiddha vegāḥ",
+          "meaning": "with great speed"
+        },
+        {
+          "word": "tathā eva",
+          "meaning": "similarly"
+        },
+        {
+          "word": "nāśhāya",
+          "meaning": "to be perished"
+        },
+        {
+          "word": "viśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "lokāḥ",
+          "meaning": "these people"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "vaktrāṇi",
+          "meaning": "mouths"
+        },
+        {
+          "word": "samṛiddha-vegāḥ",
+          "meaning": "with great speed"
+        }
+      ]
+    },
+    {
+      "ref": "11.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "लेलिह्यसे ग्रसमानः समन्ता\n\nल्लोकान्समग्रान्वदनैर्ज्वलद्भिः।\n\nतेजोभिरापूर्य जगत्समग्रं\n\nभासस्तवोग्राः प्रतपन्ति विष्णो।।11.30।।",
+      "iast": "lelihyase grasamānaḥ samantā\n\nllokānsamagrānvadanairjvaladbhiḥ|\n\ntejobhirāpūrya jagatsamagraṃ\n\nbhāsastavogrāḥ pratapanti viṣṇo||11.30||",
+      "en": "Swallowing all the worlds on every side with Thy flaming mouths, Thou are licking Thy lips. Thy fierce rays, filling the whole world with radiance, are burning, O Vishnu!",
+      "word_meanings": [
+        {
+          "word": "lelihyase",
+          "meaning": "you are licking"
+        },
+        {
+          "word": "grasamānaḥ",
+          "meaning": "devouring"
+        },
+        {
+          "word": "samantāt",
+          "meaning": "on all sides"
+        },
+        {
+          "word": "lokān",
+          "meaning": "worlds"
+        },
+        {
+          "word": "samagrān",
+          "meaning": "all"
+        },
+        {
+          "word": "vadanaiḥ",
+          "meaning": "with mouths"
+        },
+        {
+          "word": "jvaladbhiḥ",
+          "meaning": "blazing"
+        },
+        {
+          "word": "tejobhiḥ",
+          "meaning": "by effulgence"
+        },
+        {
+          "word": "āpūrya",
+          "meaning": "filled with"
+        },
+        {
+          "word": "jagat",
+          "meaning": "the universe"
+        },
+        {
+          "word": "samagram",
+          "meaning": "all"
+        },
+        {
+          "word": "bhāsaḥ",
+          "meaning": "rays"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "ugrāḥ",
+          "meaning": "fierce"
+        },
+        {
+          "word": "pratapanti",
+          "meaning": "scorching"
+        },
+        {
+          "word": "viṣhṇo",
+          "meaning": "Lord Vishnu"
+        }
+      ]
+    },
+    {
+      "ref": "11.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आख्याहि मे को भवानुग्ररूपो\n\nनमोऽस्तु ते देववर प्रसीद।\n\nविज्ञातुमिच्छामि भवन्तमाद्यं\n\nन हि प्रजानामि तव प्रवृत्तिम्।।11.31।।",
+      "iast": "ākhyāhi me ko bhavānugrarūpo\n\nnamo'stu te devavara prasīda|\n\nvijñātumicchāmi bhavantamādyaṃ\n\nna hi prajānāmi tava pravṛttim||11.31||",
+      "en": "Tell me who Thou art, fierce in form. Salutation to Thee, O Deva Supreme; have mercy. I desire to know Thee, O Primeval One. I know not indeed Thy purpose.",
+      "word_meanings": [
+        {
+          "word": "ākhyāhi",
+          "meaning": "tell"
+        },
+        {
+          "word": "me",
+          "meaning": "me"
+        },
+        {
+          "word": "kaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "bhavān",
+          "meaning": "you"
+        },
+        {
+          "word": "ugra-rūpaḥ",
+          "meaning": "fierce form"
+        },
+        {
+          "word": "namaḥ astu",
+          "meaning": "I bow"
+        },
+        {
+          "word": "te",
+          "meaning": "to you"
+        },
+        {
+          "word": "deva-vara",
+          "meaning": "God of gods"
+        },
+        {
+          "word": "prasīda",
+          "meaning": "be merciful"
+        },
+        {
+          "word": "vijñātum",
+          "meaning": "to know"
+        },
+        {
+          "word": "ichchhāmi",
+          "meaning": "I wish"
+        },
+        {
+          "word": "bhavantam",
+          "meaning": "you"
+        },
+        {
+          "word": "ādyam",
+          "meaning": "the primeval"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "hi",
+          "meaning": "because"
+        },
+        {
+          "word": "prajānāmi",
+          "meaning": "comprehend"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "pravṛittim",
+          "meaning": "workings"
+        }
+      ]
+    },
+    {
+      "ref": "11.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\n\nलोकान्समाहर्तुमिह प्रवृत्तः।\n\nऋतेऽपि त्वां न भविष्यन्ति सर्वे\n\nयेऽवस्थिताः प्रत्यनीकेषु योधाः।।11.32।।",
+      "iast": "śrī bhagavānuvāca\n\nkālo'smi lokakṣayakṛtpravṛddho\n\nlokānsamāhartumiha pravṛttaḥ|\n\nṛte'pi tvāṃ na bhaviṣyanti sarve\n\nye'vasthitāḥ pratyanīkeṣu yodhāḥ||11.32||",
+      "en": "I am the mighty world-destroying Time, here made manifest for the purpose of infolding the world. Even without thee, none of the warriors arrayed in the hostile armies shall live.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Lord said"
+        },
+        {
+          "word": "kālaḥ",
+          "meaning": "time"
+        },
+        {
+          "word": "asmi",
+          "meaning": "I am"
+        },
+        {
+          "word": "loka-kṣhaya-kṛit",
+          "meaning": "the source of destruction of the worlds"
+        },
+        {
+          "word": "pravṛiddhaḥ",
+          "meaning": "mighty"
+        },
+        {
+          "word": "lokān",
+          "meaning": "the worlds"
+        },
+        {
+          "word": "samāhartum",
+          "meaning": "annihilation"
+        },
+        {
+          "word": "iha",
+          "meaning": "this world"
+        },
+        {
+          "word": "pravṛittaḥ",
+          "meaning": "participation"
+        },
+        {
+          "word": "ṛite",
+          "meaning": "without"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "na bhaviṣhyanti",
+          "meaning": "shall cease to exist"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "ye",
+          "meaning": "who"
+        },
+        {
+          "word": "avasthitāḥ",
+          "meaning": "arrayed"
+        },
+        {
+          "word": "prati-anīkeṣhu",
+          "meaning": "in the opposing army"
+        },
+        {
+          "word": "yodhāḥ",
+          "meaning": "the warriors"
+        }
+      ]
+    },
+    {
+      "ref": "11.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\n\nजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्।\n\nमयैवैते निहताः पूर्वमेव\n\nनिमित्तमात्रं भव सव्यसाचिन्।।11.33।।",
+      "iast": "tasmāttvamuttiṣṭha yaśo labhasva\n\njitvā śatrūn bhuṅkṣva rājyaṃ samṛddham|\n\nmayaivaite nihatāḥ pūrvameva\n\nnimittamātraṃ bhava savyasācin||11.33||",
+      "en": "Therefore do thou arise and acquire fame. Conquer the enemies, and enjoy the unrivalled dominion. Verily by Myself have they been already slain; be thou merely an apparent cause, O Savyasâchin (Arjuna).",
+      "word_meanings": [
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "uttiṣhṭha",
+          "meaning": "arise"
+        },
+        {
+          "word": "yaśhaḥ",
+          "meaning": "honor"
+        },
+        {
+          "word": "labhasva",
+          "meaning": "attain"
+        },
+        {
+          "word": "jitvā",
+          "meaning": "conquer"
+        },
+        {
+          "word": "śhatrūn",
+          "meaning": "foes"
+        },
+        {
+          "word": "bhuṅkṣhva",
+          "meaning": "enjoy"
+        },
+        {
+          "word": "rājyam",
+          "meaning": "kingdom"
+        },
+        {
+          "word": "samṛiddham",
+          "meaning": "prosperous"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "ete",
+          "meaning": "these"
+        },
+        {
+          "word": "nihatāḥ",
+          "meaning": "slain"
+        },
+        {
+          "word": "pūrvam",
+          "meaning": "already"
+        },
+        {
+          "word": "eva nimitta-mātram",
+          "meaning": "only an instrument"
+        },
+        {
+          "word": "bhava",
+          "meaning": "become"
+        },
+        {
+          "word": "savya-sāchin",
+          "meaning": "Arjun, the one who can shoot arrows with both hands"
+        }
+      ]
+    },
+    {
+      "ref": "11.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "द्रोणं च भीष्मं च जयद्रथं च\n\nकर्णं तथाऽन्यानपि योधवीरान्।\n\nमया हतांस्त्वं जहि मा व्यथिष्ठा\n\nयुध्यस्व जेतासि रणे सपत्नान्।।11.34।।",
+      "iast": "droṇaṃ ca bhīṣmaṃ ca jayadrathaṃ ca\n\nkarṇaṃ tathā'nyānapi yodhavīrān|\n\nmayā hatāṃstvaṃ jahi mā vyathiṣṭhā\n\nyudhyasva jetāsi raṇe sapatnān||11.34||",
+      "en": "Drona, Bhishma, Jayadratha, Karna, as well as other brave warriors,—these already killed by Me, do thou kill. Be not distressed with fear; fight, and thou shalt conquer thy enemies in battle.",
+      "word_meanings": [
+        {
+          "word": "droṇam",
+          "meaning": "Dronacharya"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "bhīṣhmam",
+          "meaning": "Bheeshma"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "jayadratham",
+          "meaning": "Jayadratha"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "karṇam",
+          "meaning": "Karn"
+        },
+        {
+          "word": "tathā",
+          "meaning": "also"
+        },
+        {
+          "word": "anyān",
+          "meaning": "others"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "yodha-vīrān",
+          "meaning": "brave warriors"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "hatān",
+          "meaning": "already killed"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "jahi",
+          "meaning": "slay"
+        },
+        {
+          "word": "mā",
+          "meaning": "not"
+        },
+        {
+          "word": "vyathiṣhṭhāḥ",
+          "meaning": "be disturbed"
+        },
+        {
+          "word": "yudhyasva",
+          "meaning": "fight"
+        },
+        {
+          "word": "jetā asi",
+          "meaning": "you shall be victorious"
+        },
+        {
+          "word": "raṇe",
+          "meaning": "in battle"
+        },
+        {
+          "word": "sapatnān",
+          "meaning": "enemies"
+        }
+      ]
+    },
+    {
+      "ref": "11.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nएतच्छ्रुत्वा वचनं केशवस्य\n\nकृताञ्जलिर्वेपमानः किरीटी।\n\nनमस्कृत्वा भूय एवाह कृष्णं\n\nसगद्गदं भीतभीतः प्रणम्य।।11.35।।",
+      "iast": "sañjaya uvāca\n\netacchrutvā vacanaṃ keśavasya\n\nkṛtāñjalirvepamānaḥ kirīṭī|\n\nnamaskṛtvā bhūya evāha kṛṣṇaṃ\n\nsagadgadaṃ bhītabhītaḥ praṇamya||11.35||",
+      "en": "Having, heard that speech of Keshava, the diademed one (Arjuna), with joined palms, trembling, prostrated himself, and again addressed Krishna in a choked voice, bowing down, overwhelmed with fear.",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "etat",
+          "meaning": "thus"
+        },
+        {
+          "word": "śhrutvā",
+          "meaning": "hearing"
+        },
+        {
+          "word": "vachanam",
+          "meaning": "words"
+        },
+        {
+          "word": "keśhavasya",
+          "meaning": "of Shree Krishna"
+        },
+        {
+          "word": "kṛita-añjaliḥ",
+          "meaning": "with joined palms"
+        },
+        {
+          "word": "vepamānaḥ",
+          "meaning": "trembling"
+        },
+        {
+          "word": "kirītī",
+          "meaning": "the crowned one, Arjun"
+        },
+        {
+          "word": "namaskṛitvā",
+          "meaning": "with palms joined"
+        },
+        {
+          "word": "bhūyaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "āha",
+          "meaning": "spoke"
+        },
+        {
+          "word": "kṛiṣhṇam",
+          "meaning": "to Shree Krishna"
+        },
+        {
+          "word": "sa-gadgadam",
+          "meaning": "in a faltering voice"
+        },
+        {
+          "word": "bhīta-bhītaḥ",
+          "meaning": "overwhelmed with fear"
+        },
+        {
+          "word": "praṇamya",
+          "meaning": "bowed down"
+        }
+      ]
+    },
+    {
+      "ref": "11.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nस्थाने हृषीकेश तव प्रकीर्त्या\n\nजगत् प्रहृष्यत्यनुरज्यते च।\n\nरक्षांसि भीतानि दिशो द्रवन्ति\n\nसर्वे नमस्यन्ति च सिद्धसङ्घाः।।11.36।।",
+      "iast": "arjuna uvāca\n\nsthāne hṛṣīkeśa tava prakīrtyā\n\njagat prahṛṣyatyanurajyate ca|\n\nrakṣāṃsi bhītāni diśo dravanti\n\nsarve namasyanti ca siddhasaṅghāḥ||11.36||",
+      "en": "It is meet, O Hrishikesha, that the world is delighted and rejoices in Thy praise, that Râkshasas fly in fear to all quarters and all the hosts of Siddhas bow down to Thee in adoration.",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "sthāne",
+          "meaning": "it is but apt"
+        },
+        {
+          "word": "hṛiṣhīka-īśha",
+          "meaning": "Shree Krishna, the master of the senses"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "prakīrtyā",
+          "meaning": "in praise"
+        },
+        {
+          "word": "jagat",
+          "meaning": "the universe"
+        },
+        {
+          "word": "prahṛiṣhyati",
+          "meaning": "rejoices"
+        },
+        {
+          "word": "anurajyate",
+          "meaning": "be enamored"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "rakṣhānsi",
+          "meaning": "the demons"
+        },
+        {
+          "word": "bhītāni",
+          "meaning": "fearfully"
+        },
+        {
+          "word": "diśhaḥ",
+          "meaning": "in all directions"
+        },
+        {
+          "word": "dravanti",
+          "meaning": "flee"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "namasyanti",
+          "meaning": "bow down"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "siddha-saṅghāḥ",
+          "meaning": "hosts of perfected saints"
+        }
+      ]
+    },
+    {
+      "ref": "11.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कस्माच्च ते न नमेरन्महात्मन्\n\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे।\n\nअनन्त देवेश जगन्निवास\n\nत्वमक्षरं सदसत्तत्परं यत्।।11.37।।",
+      "iast": "kasmācca te na nameranmahātman\n\ngarīyase brahmaṇo'pyādikartre|\n\nananta deveśa jagannivāsa\n\ntvamakṣaraṃ sadasattatparaṃ yat||11.37||",
+      "en": "And why should they not, O Great-souled One, bow down to Thee, who art the first Creator, greater even than Brahma? O Infinite, O Lord of the Devas, O Abode of the universe, Thou art the Imperishable, the Being and the non-Being, and That which is beyond.",
+      "word_meanings": [
+        {
+          "word": "kasmāt",
+          "meaning": "why"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "te",
+          "meaning": "you"
+        },
+        {
+          "word": "na nameran",
+          "meaning": "should they not bow down"
+        },
+        {
+          "word": "mahā-ātman",
+          "meaning": "The Great one"
+        },
+        {
+          "word": "garīyase",
+          "meaning": "who are greater"
+        },
+        {
+          "word": "brahmaṇaḥ",
+          "meaning": "than Brahma"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "ādi-kartre",
+          "meaning": "to the original creator"
+        },
+        {
+          "word": "ananta",
+          "meaning": "The limitless One"
+        },
+        {
+          "word": "deva-īśha",
+          "meaning": "Lord of the devatās"
+        },
+        {
+          "word": "jagat-nivāsa",
+          "meaning": "Refuge of the universe"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "akṣharam",
+          "meaning": "the imperishable"
+        },
+        {
+          "word": "sat-asat",
+          "meaning": "manifest and non-manifest"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "param",
+          "meaning": "beyond"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        }
+      ]
+    },
+    {
+      "ref": "11.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "त्वमादिदेवः पुरुषः पुराण\n\nस्त्वमस्य विश्वस्य परं निधानम्।\n\nवेत्तासि वेद्यं च परं च धाम\n\nत्वया ततं विश्वमनन्तरूप।।11.38।।",
+      "iast": "tvamādidevaḥ puruṣaḥ purāṇa\n\nstvamasya viśvasya paraṃ nidhānam|\n\nvettāsi vedyaṃ ca paraṃ ca dhāma\n\ntvayā tataṃ viśvamanantarūpa||11.38||",
+      "en": "Thou art the Primal Deva, the Ancient Purusha; Thou art the Supreme Refuge of this universe, Thou art the Knower, and the One Thing to be known; Thou art the Supreme Goal. By Thee is the universe pervaded, O Boundless Form.",
+      "word_meanings": [
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "ādi-devaḥ",
+          "meaning": "the original Divine God"
+        },
+        {
+          "word": "puruṣhaḥ",
+          "meaning": "personality"
+        },
+        {
+          "word": "purāṇaḥ",
+          "meaning": "primeval"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "asya",
+          "meaning": "of (this)"
+        },
+        {
+          "word": "viśhwasya",
+          "meaning": "universe"
+        },
+        {
+          "word": "param",
+          "meaning": "Supreme"
+        },
+        {
+          "word": "nidhānam",
+          "meaning": "resting place"
+        },
+        {
+          "word": "vettā",
+          "meaning": "the knower"
+        },
+        {
+          "word": "asi",
+          "meaning": "you are"
+        },
+        {
+          "word": "vedyam",
+          "meaning": "the object of knowledge"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "param",
+          "meaning": "Supreme"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "dhāma",
+          "meaning": "Abode"
+        },
+        {
+          "word": "tvayā",
+          "meaning": "by you"
+        },
+        {
+          "word": "tatam",
+          "meaning": "pervaded"
+        },
+        {
+          "word": "viśhwam",
+          "meaning": "the universe"
+        },
+        {
+          "word": "ananta-rūpa",
+          "meaning": "posessor of infinite forms"
+        }
+      ]
+    },
+    {
+      "ref": "11.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\n\nप्रजापतिस्त्वं प्रपितामहश्च।\n\nनमो नमस्तेऽस्तु सहस्रकृत्वः\n\nपुनश्च भूयोऽपि नमो नमस्ते।।11.39।।",
+      "iast": "vāyuryamo'gnirvaruṇaḥ śaśāṅkaḥ\n\nprajāpatistvaṃ prapitāmahaśca|\n\nnamo namaste'stu sahasrakṛtvaḥ\n\npunaśca bhūyo'pi namo namaste||11.39||",
+      "en": "Thou art Vâyu, Yama, Agni, Varuna, the Moon, Prajâpati, and the Great-Grandfather. Salutation, salutation to Thee, a thousand times, and again and again salutation, salutation to Thee!",
+      "word_meanings": [
+        {
+          "word": "vāyuḥ",
+          "meaning": "the god of wind"
+        },
+        {
+          "word": "yamaḥ",
+          "meaning": "the god of death"
+        },
+        {
+          "word": "agniḥ",
+          "meaning": "the god of fire"
+        },
+        {
+          "word": "varuṇaḥ",
+          "meaning": "the god of water"
+        },
+        {
+          "word": "śhaśha-aṅkaḥ",
+          "meaning": "the moon-God"
+        },
+        {
+          "word": "prajāpatiḥ",
+          "meaning": "Brahma"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "prapitāmahaḥ",
+          "meaning": "the great-grandfather"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "namaḥ",
+          "meaning": "my salutations"
+        },
+        {
+          "word": "namaḥ",
+          "meaning": "my salutations"
+        },
+        {
+          "word": "te",
+          "meaning": "unto you"
+        },
+        {
+          "word": "astu",
+          "meaning": "let there be"
+        },
+        {
+          "word": "sahasra-kṛitvaḥ",
+          "meaning": "a thousand times"
+        },
+        {
+          "word": "punaḥ cha",
+          "meaning": "and again"
+        },
+        {
+          "word": "bhūyaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "namaḥ",
+          "meaning": "(offering) my salutations"
+        },
+        {
+          "word": "namaḥ te",
+          "meaning": "offering my salutations unto you"
+        }
+      ]
+    },
+    {
+      "ref": "11.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नमः पुरस्तादथ पृष्ठतस्ते\n\nनमोऽस्तु ते सर्वत एव सर्व।\n\nअनन्तवीर्यामितविक्रमस्त्वं\n\nसर्वं समाप्नोषि ततोऽसि सर्वः।।11.40।।",
+      "iast": "namaḥ purastādatha pṛṣṭhataste\n\nnamo'stu te sarvata eva sarva|\n\nanantavīryāmitavikramastvaṃ\n\nsarvaṃ samāpnoṣi tato'si sarvaḥ||11.40||",
+      "en": "Salutation to Thee before and behind, salutation to Thee on every side, O All! Thou, infinite in power and infinite in prowess, pervadest all; wherefore Thou art All.",
+      "word_meanings": [
+        {
+          "word": "namaḥ",
+          "meaning": "offering salutations"
+        },
+        {
+          "word": "purastāt",
+          "meaning": "from the front"
+        },
+        {
+          "word": "atha",
+          "meaning": "and"
+        },
+        {
+          "word": "pṛiṣhṭhataḥ",
+          "meaning": "the rear"
+        },
+        {
+          "word": "te",
+          "meaning": "to you"
+        },
+        {
+          "word": "namaḥ astu",
+          "meaning": "I offer my salutations"
+        },
+        {
+          "word": "te",
+          "meaning": "to you"
+        },
+        {
+          "word": "sarvataḥ",
+          "meaning": "from all sides"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "ananta-vīrya",
+          "meaning": "infinite power"
+        },
+        {
+          "word": "amita-vikramaḥ",
+          "meaning": "infinite valor and might"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "sarvam",
+          "meaning": "everything"
+        },
+        {
+          "word": "samāpnoṣhi",
+          "meaning": "pervade"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "thus"
+        },
+        {
+          "word": "asi",
+          "meaning": "(you) are"
+        },
+        {
+          "word": "sarvaḥ",
+          "meaning": "everything"
+        }
+      ]
+    },
+    {
+      "ref": "11.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सखेति मत्वा प्रसभं यदुक्तं\n\nहे कृष्ण हे यादव हे सखेति।\n\nअजानता महिमानं तवेदं\n\nमया प्रमादात्प्रणयेन वापि।।11.41।।",
+      "iast": "sakheti matvā prasabhaṃ yaduktaṃ\n\nhe kṛṣṇa he yādava he sakheti|\n\najānatā mahimānaṃ tavedaṃ\n\nmayā pramādātpraṇayena vāpi||11.41||",
+      "en": "Whatever I have presumptuously said from carelessness or love, addressing Thee as, \"O Krishna, O Yâdava, O friend,\" regarding Thee merely as a friend, unconscious of this Thy greatness—in whatever way I may have been disrespectful to Thee in fun, while walking, reposing, sitting, or at meals, when alone (with Thee), O Achyuta, or in company—I implore Thee, Immeasurable One, to forgive all this.",
+      "word_meanings": [
+        {
+          "word": "sakhā",
+          "meaning": "friend"
+        },
+        {
+          "word": "iti",
+          "meaning": "as"
+        },
+        {
+          "word": "matvā",
+          "meaning": "thinking"
+        },
+        {
+          "word": "prasabham",
+          "meaning": "presumptuously"
+        },
+        {
+          "word": "yat",
+          "meaning": "whatever"
+        },
+        {
+          "word": "uktam",
+          "meaning": "addressed"
+        },
+        {
+          "word": "he kṛiṣhṇa",
+          "meaning": "O Shree Krishna"
+        },
+        {
+          "word": "he yādava",
+          "meaning": "O Shree Krishna, who was born in the Yadu clan"
+        },
+        {
+          "word": "he sakhe",
+          "meaning": "O my dear mate"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "ajānatā",
+          "meaning": "in ignorance"
+        },
+        {
+          "word": "mahimānam",
+          "meaning": "majesty"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "pramādāt",
+          "meaning": "out of negligence"
+        },
+        {
+          "word": "praṇayena",
+          "meaning": "out of affection"
+        },
+        {
+          "word": "vā api",
+          "meaning": "or else"
+        }
+      ]
+    },
+    {
+      "ref": "11.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यच्चावहासार्थमसत्कृतोऽसि\n\nविहारशय्यासनभोजनेषु।\n\nएकोऽथवाप्यच्युत तत्समक्षं\n\nतत्क्षामये त्वामहमप्रमेयम्।।11.42।।",
+      "iast": "yaccāvahāsārthamasatkṛto'si\n\nvihāraśayyāsanabhojaneṣu|\n\neko'thavāpyacyuta tatsamakṣaṃ\n\ntatkṣāmaye tvāmahamaprameyam||11.42||",
+      "en": "Whatever I have presumptuously said from carelessness or love, addressing Thee as, \"O Krishna, O Yâdava, O friend,\" regarding Thee merely as a friend, unconscious of this Thy greatness—in whatever way I may have been disrespectful to Thee in fun, while walking, reposing, sitting, or at meals, when alone (with Thee), O Achyuta, or in company—I implore Thee, Immeasurable One, to forgive all this.",
+      "word_meanings": [
+        {
+          "word": "yat",
+          "meaning": "whatever"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "avahāsa-artham",
+          "meaning": "humorously"
+        },
+        {
+          "word": "asat-kṛitaḥ",
+          "meaning": "disrespectfully"
+        },
+        {
+          "word": "asi",
+          "meaning": "you were"
+        },
+        {
+          "word": "vihāra",
+          "meaning": "while at play"
+        },
+        {
+          "word": "śhayyā",
+          "meaning": "while resting"
+        },
+        {
+          "word": "āsana",
+          "meaning": "while sitting"
+        },
+        {
+          "word": "bhojaneṣhu",
+          "meaning": "while eating"
+        },
+        {
+          "word": "ekaḥ",
+          "meaning": "(when) alone"
+        },
+        {
+          "word": "athavā",
+          "meaning": "or"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "achyuta",
+          "meaning": "Krishna, the infallible one"
+        },
+        {
+          "word": "tat-samakṣham",
+          "meaning": "before others"
+        },
+        {
+          "word": "tat",
+          "meaning": "all that"
+        },
+        {
+          "word": "kṣhāmaye",
+          "meaning": "beg for forgiveness"
+        },
+        {
+          "word": "tvām",
+          "meaning": "from you"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "aprameyam",
+          "meaning": "immeasurable"
+        }
+      ]
+    },
+    {
+      "ref": "11.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "पितासि लोकस्य चराचरस्य\n\nत्वमस्य पूज्यश्च गुरुर्गरीयान्।\n\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\n\nलोकत्रयेऽप्यप्रतिमप्रभाव।।11.43।।",
+      "iast": "pitāsi lokasya carācarasya\n\ntvamasya pūjyaśca gururgarīyān|\n\nna tvatsamo'styabhyadhikaḥ kuto'nyo\n\nlokatraye'pyapratimaprabhāva||11.43||",
+      "en": "Thou art the Father of the world, moving and unmoving; the object of its worship; greater than the great. None there exists who is equal to Thee in the three worlds; who then can excel Thee, O. Thou of power incomparable?",
+      "word_meanings": [
+        {
+          "word": "pitā",
+          "meaning": "the father"
+        },
+        {
+          "word": "asi",
+          "meaning": "you are"
+        },
+        {
+          "word": "lokasya",
+          "meaning": "of the entire universe"
+        },
+        {
+          "word": "chara",
+          "meaning": "moving"
+        },
+        {
+          "word": "acharasya",
+          "meaning": "nonmoving"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "asya",
+          "meaning": "of this"
+        },
+        {
+          "word": "pūjyaḥ",
+          "meaning": "worshipable"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "guruḥ",
+          "meaning": "spiritual master"
+        },
+        {
+          "word": "garīyān",
+          "meaning": "glorious"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "tvat-samaḥ",
+          "meaning": "equal to you"
+        },
+        {
+          "word": "asti",
+          "meaning": "is"
+        },
+        {
+          "word": "abhyadhikaḥ",
+          "meaning": "greater"
+        },
+        {
+          "word": "kutaḥ",
+          "meaning": "who is?"
+        },
+        {
+          "word": "anyaḥ",
+          "meaning": "other"
+        },
+        {
+          "word": "loka-traye",
+          "meaning": "in the three worlds"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "apratima-prabhāva",
+          "meaning": "possessor of incomparable power"
+        }
+      ]
+    },
+    {
+      "ref": "11.44",
+      "ordinal": 44,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्मात्प्रणम्य प्रणिधाय कायं\n\nप्रसादये त्वामहमीशमीड्यम्।\n\nपितेव पुत्रस्य सखेव सख्युः\n\nप्रियः प्रियायार्हसि देव सोढुम्।।11.44।।",
+      "iast": "tasmātpraṇamya praṇidhāya kāyaṃ\n\nprasādaye tvāmahamīśamīḍyam|\n\npiteva putrasya sakheva sakhyuḥ\n\npriyaḥ priyāyārhasi deva soḍhum||11.44||",
+      "en": "So prostrating my body in adoration, I crave Thy forgiveness, Lord adorable! As a father forgiveth his son, friend a dear friend, a beloved one his love, even so shouldst Thou forgive me, O Deva.",
+      "word_meanings": [
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "praṇamya",
+          "meaning": "bowing down"
+        },
+        {
+          "word": "praṇidhāya",
+          "meaning": "prostrating"
+        },
+        {
+          "word": "kāyam",
+          "meaning": "the body"
+        },
+        {
+          "word": "prasādaye",
+          "meaning": "to implore grace"
+        },
+        {
+          "word": "tvām",
+          "meaning": "your"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "īśham",
+          "meaning": "the Supreme Lord"
+        },
+        {
+          "word": "īḍyam",
+          "meaning": "adorable"
+        },
+        {
+          "word": "pitā",
+          "meaning": "father"
+        },
+        {
+          "word": "iva",
+          "meaning": "as"
+        },
+        {
+          "word": "putrasya",
+          "meaning": "with a son"
+        },
+        {
+          "word": "sakhā",
+          "meaning": "friend"
+        },
+        {
+          "word": "iva",
+          "meaning": "as"
+        },
+        {
+          "word": "sakhyuḥ",
+          "meaning": "with a friend"
+        },
+        {
+          "word": "priyaḥ",
+          "meaning": "a lover"
+        },
+        {
+          "word": "priyāyāḥ",
+          "meaning": "with the beloved"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "you should"
+        },
+        {
+          "word": "deva",
+          "meaning": "Lord"
+        },
+        {
+          "word": "soḍhum",
+          "meaning": "forgive"
+        }
+      ]
+    },
+    {
+      "ref": "11.45",
+      "ordinal": 45,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\n\nभयेन च प्रव्यथितं मनो मे।\n\nतदेव मे दर्शय देव रूपं\n\nप्रसीद देवेश जगन्निवास।।11.45।।",
+      "iast": "adṛṣṭapūrvaṃ hṛṣito'smi dṛṣṭvā\n\nbhayena ca pravyathitaṃ mano me|\n\ntadeva me darśaya deva rūpaṃ\n\nprasīda deveśa jagannivāsa||11.45||",
+      "en": "Overjoyed am I to have seen what I saw never before; yet my mind is distracted with terror. Show me, O Deva, only that Form of Thine. Have mercy, O Lord of Devas, O Abode of the universe.",
+      "word_meanings": [
+        {
+          "word": "adṛiṣhṭa-pūrvam",
+          "meaning": "that which has not been seen before"
+        },
+        {
+          "word": "hṛiṣhitaḥ",
+          "meaning": "great joy"
+        },
+        {
+          "word": "asmi",
+          "meaning": "I am"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "having seen"
+        },
+        {
+          "word": "bhayena",
+          "meaning": "with fear"
+        },
+        {
+          "word": "cha",
+          "meaning": "yet"
+        },
+        {
+          "word": "pravyathitam",
+          "meaning": "trembles"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "me",
+          "meaning": "to me"
+        },
+        {
+          "word": "darśhaya",
+          "meaning": "show"
+        },
+        {
+          "word": "deva",
+          "meaning": "Lord"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "prasīda",
+          "meaning": "please have mercy"
+        },
+        {
+          "word": "deva-īśha",
+          "meaning": "God of gods"
+        },
+        {
+          "word": "jagat-nivāsa",
+          "meaning": "abode of the universe"
+        }
+      ]
+    },
+    {
+      "ref": "11.46",
+      "ordinal": 46,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "किरीटिनं गदिनं चक्रहस्त\n\nमिच्छामि त्वां द्रष्टुमहं तथैव।\n\nतेनैव रूपेण चतुर्भुजेन\n\nसहस्रबाहो भव विश्वमूर्ते।।11.46।।",
+      "iast": "kirīṭinaṃ gadinaṃ cakrahasta\n\nmicchāmi tvāṃ draṣṭumahaṃ tathaiva|\n\ntenaiva rūpeṇa caturbhujena\n\nsahasrabāho bhava viśvamūrte||11.46||",
+      "en": "Diademed, bearing a mace and a discus, Thee I desire to see as before. Assume that same four-armed Form, O Thou of thousand arms, of universal Form.",
+      "word_meanings": [
+        {
+          "word": "kirīṭinam",
+          "meaning": "wearing the crown"
+        },
+        {
+          "word": "gadinam",
+          "meaning": "carrying the mace"
+        },
+        {
+          "word": "chakra-hastam",
+          "meaning": "disc in hand"
+        },
+        {
+          "word": "ichchhāmi",
+          "meaning": "I wish"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to see"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "tathā eva",
+          "meaning": "similarly"
+        },
+        {
+          "word": "tena eva",
+          "meaning": "in that"
+        },
+        {
+          "word": "rūpeṇa",
+          "meaning": "form"
+        },
+        {
+          "word": "chatuḥ-bhujena",
+          "meaning": "four-armed"
+        },
+        {
+          "word": "sahasra-bāho",
+          "meaning": "thousand-armed one"
+        },
+        {
+          "word": "bhava",
+          "meaning": "be"
+        },
+        {
+          "word": "viśhwa-mūrte",
+          "meaning": "universal form"
+        }
+      ]
+    },
+    {
+      "ref": "11.47",
+      "ordinal": 47,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nमया प्रसन्नेन तवार्जुनेदं\n\nरूपं परं दर्शितमात्मयोगात्।\n\nतेजोमयं विश्वमनन्तमाद्यं\n\nयन्मे त्वदन्येन न दृष्टपूर्वम्।।11.47।।",
+      "iast": "śrī bhagavānuvāca\n\nmayā prasannena tavārjunedaṃ\n\nrūpaṃ paraṃ darśitamātmayogāt|\n\ntejomayaṃ viśvamanantamādyaṃ\n\nyanme tvadanyena na dṛṣṭapūrvam||11.47||",
+      "en": "Graciously have I shown to thee, O Arjuna, this Form supreme, by My own Yoga power, this resplendent, primeval, infinite, universal Form of Mine, which hath not been seen before by anyone else.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Blessed Lord said"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "prasannena",
+          "meaning": "being pleased"
+        },
+        {
+          "word": "tava",
+          "meaning": "with you"
+        },
+        {
+          "word": "arjuna",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "param",
+          "meaning": "divine"
+        },
+        {
+          "word": "darśhitam",
+          "meaning": "shown"
+        },
+        {
+          "word": "ātma-yogāt",
+          "meaning": "by my Yogmaya power"
+        },
+        {
+          "word": "tejaḥ-mayam",
+          "meaning": "resplendent"
+        },
+        {
+          "word": "viśhwam",
+          "meaning": "cosmic"
+        },
+        {
+          "word": "anantam",
+          "meaning": "unlimited"
+        },
+        {
+          "word": "ādyam",
+          "meaning": "primeval"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "tvat anyena",
+          "meaning": "other than you"
+        },
+        {
+          "word": "na dṛiṣhṭa-pūrvam",
+          "meaning": "no one has ever seen"
+        }
+      ]
+    },
+    {
+      "ref": "11.48",
+      "ordinal": 48,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न वेदयज्ञाध्ययनैर्न दानै\n\nर्न च क्रियाभिर्न तपोभिरुग्रैः।\n\nएवंरूपः शक्य अहं नृलोके\n\nद्रष्टुं त्वदन्येन कुरुप्रवीर।।11.48।।",
+      "iast": "na vedayajñādhyayanairna dānai\n\nrna ca kriyābhirna tapobhirugraiḥ|\n\nevaṃrūpaḥ śakya ahaṃ nṛloke\n\ndraṣṭuṃ tvadanyena kurupravīra||11.48||",
+      "en": "Neither by the study of the Veda and Yajna, nor by gifts, nor by rituals, nor by severe austerities, am I in such Form seen, in the world of men, by any other than thee, O great hero of the Kurus.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "veda-yajña",
+          "meaning": "by performance of sacrifice"
+        },
+        {
+          "word": "adhyayanaiḥ",
+          "meaning": "by study of the Vedas"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "dānaiḥ",
+          "meaning": "by charity"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "kriyābhiḥ",
+          "meaning": "by rituals"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "tapobhiḥ",
+          "meaning": "by austerities"
+        },
+        {
+          "word": "ugraiḥ",
+          "meaning": "severe"
+        },
+        {
+          "word": "evam-rūpaḥ",
+          "meaning": "in this form"
+        },
+        {
+          "word": "śhakyaḥ",
+          "meaning": "possible"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "nṛi-loke",
+          "meaning": "in the world of the mortals"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to be seen"
+        },
+        {
+          "word": "tvat",
+          "meaning": "than you"
+        },
+        {
+          "word": "anyena",
+          "meaning": "by another"
+        },
+        {
+          "word": "kuru-pravīra",
+          "meaning": "the best of the Kuru warriors"
+        }
+      ]
+    },
+    {
+      "ref": "11.49",
+      "ordinal": 49,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मा ते व्यथा मा च विमूढभावो\n\nदृष्ट्वा रूपं घोरमीदृङ्ममेदम्।\n\nव्यपेतभीः प्रीतमनाः पुनस्त्वं\n\nतदेव मे रूपमिदं प्रपश्य।।11.49।।",
+      "iast": "mā te vyathā mā ca vimūḍhabhāvo\n\ndṛṣṭvā rūpaṃ ghoramīdṛṅmamedam|\n\nvyapetabhīḥ prītamanāḥ punastvaṃ\n\ntadeva me rūpamidaṃ prapaśya||11.49||",
+      "en": "Be not afraid nor bewildered, having beheld this Form of Mine, so terrific. With thy fears dispelled and with gladdened heart, now see again this (former) form of Mine.",
+      "word_meanings": [
+        {
+          "word": "mā te",
+          "meaning": "you shout not be"
+        },
+        {
+          "word": "vyathā",
+          "meaning": "afraid"
+        },
+        {
+          "word": "mā",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "vimūḍha-bhāvaḥ",
+          "meaning": "bewildered state"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "on seeing"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "ghoram",
+          "meaning": "terrible"
+        },
+        {
+          "word": "īdṛik",
+          "meaning": "such"
+        },
+        {
+          "word": "mama",
+          "meaning": "of mine"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "vyapeta-bhīḥ",
+          "meaning": "free from fear"
+        },
+        {
+          "word": "prīta-manāḥ",
+          "meaning": "cheerful mind"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "tat eva",
+          "meaning": "that very"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "prapaśhya",
+          "meaning": "behold"
+        }
+      ]
+    },
+    {
+      "ref": "11.50",
+      "ordinal": 50,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\n\nस्वकं रूपं दर्शयामास भूयः।\n\nआश्वासयामास च भीतमेनं\n\nभूत्वा पुनः सौम्यवपुर्महात्मा।।11.50।।",
+      "iast": "sañjaya uvāca\n\nityarjunaṃ vāsudevastathoktvā\n\nsvakaṃ rūpaṃ darśayāmāsa bhūyaḥ|\n\nāśvāsayāmāsa ca bhītamenaṃ\n\nbhūtvā punaḥ saumyavapurmahātmā||11.50||",
+      "en": "So Vâsudeva, having thus spoken to Arjuna, showed again His own Form and the Great-souled One, assuming His gentle Form, pacified him who was terrified.",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "arjunam",
+          "meaning": "to Arjun"
+        },
+        {
+          "word": "vāsudevaḥ",
+          "meaning": "Krishna, the son of Vasudev"
+        },
+        {
+          "word": "tathā",
+          "meaning": "in that way"
+        },
+        {
+          "word": "uktvā",
+          "meaning": "having spoken"
+        },
+        {
+          "word": "svakam",
+          "meaning": "his personal"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "darśhayām āsa",
+          "meaning": "displayed"
+        },
+        {
+          "word": "bhūyaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "āśhvāsayām āsa",
+          "meaning": "consoled"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "bhītam",
+          "meaning": "frightened"
+        },
+        {
+          "word": "enam",
+          "meaning": "him"
+        },
+        {
+          "word": "bhūtvā",
+          "meaning": "becoming"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "saumya-vapuḥ",
+          "meaning": "the gentle (two-armed) form"
+        },
+        {
+          "word": "mahā-ātmā",
+          "meaning": "the compassionate"
+        }
+      ]
+    },
+    {
+      "ref": "11.51",
+      "ordinal": 51,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nदृष्ट्वेदं मानुषं रूपं तवसौम्यं जनार्दन।\n\nइदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः।।11.51।।",
+      "iast": "arjuna uvāca\n\ndṛṣṭvedaṃ mānuṣaṃ rūpaṃ tavasaumyaṃ janārdana|\n\nidānīmasmi saṃvṛttaḥ sacetāḥ prakṛtiṃ gataḥ||11.51||",
+      "en": "Having seen this Thy gentle human Form, O Janârdana, my thoughts are now composed and I am restored to my nature.",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "seeing"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "mānuṣham",
+          "meaning": "human"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "saumyam",
+          "meaning": "gentle"
+        },
+        {
+          "word": "janārdana",
+          "meaning": "he who looks after the public, Krishna"
+        },
+        {
+          "word": "idānīm",
+          "meaning": "now"
+        },
+        {
+          "word": "asmi",
+          "meaning": "I am"
+        },
+        {
+          "word": "saṁvṛittaḥ",
+          "meaning": "composed"
+        },
+        {
+          "word": "sa-chetāḥ",
+          "meaning": "in my mind"
+        },
+        {
+          "word": "prakṛitim",
+          "meaning": "to normality"
+        },
+        {
+          "word": "gataḥ",
+          "meaning": "have become"
+        }
+      ]
+    },
+    {
+      "ref": "11.52",
+      "ordinal": 52,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nसुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम।\n\nदेवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्क्षिणः।।11.52।।",
+      "iast": "śrī bhagavānuvāca\n\nsudurdarśamidaṃ rūpaṃ dṛṣṭavānasi yanmama|\n\ndevā apyasya rūpasya nityaṃ darśanakāṅkṣiṇaḥ||11.52||",
+      "en": "Very hard indeed it is to see this Form of Mine which thou hast seen. Even the Devas ever long to behold this Form.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Lord said"
+        },
+        {
+          "word": "su-durdarśham",
+          "meaning": "exceedingly difficult to behold"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "form"
+        },
+        {
+          "word": "dṛiṣhṭavān asi",
+          "meaning": "that you are seeing"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "mama",
+          "meaning": "of mine"
+        },
+        {
+          "word": "devāḥ",
+          "meaning": "the celestial gods"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "asya",
+          "meaning": "this"
+        },
+        {
+          "word": "rūpasya",
+          "meaning": "form"
+        },
+        {
+          "word": "nityam",
+          "meaning": "eternally"
+        },
+        {
+          "word": "darśhana-kāṅkṣhiṇaḥ",
+          "meaning": "aspiring to see"
+        }
+      ]
+    },
+    {
+      "ref": "11.53",
+      "ordinal": 53,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नाहं वेदैर्न तपसा न दानेन न चेज्यया।\n\nशक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा।।11.53।।",
+      "iast": "nāhaṃ vedairna tapasā na dānena na cejyayā|\n\nśakya evaṃvidho draṣṭuṃ dṛṣṭavānasi māṃ yathā||11.53||",
+      "en": "Neither by the Vedas, nor by austerity, nor by gifts, nor by sacrifice can I be seen as thou hast seen Me.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "vedaiḥ",
+          "meaning": "by study of the Vedas"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "tapasā",
+          "meaning": "by serious penances"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "dānena",
+          "meaning": "by charity"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "ijyayā",
+          "meaning": "by worship"
+        },
+        {
+          "word": "śhakyaḥ",
+          "meaning": "it is possible"
+        },
+        {
+          "word": "evam-vidhaḥ",
+          "meaning": "like this"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to see"
+        },
+        {
+          "word": "dṛiṣhṭavān",
+          "meaning": "seeing"
+        },
+        {
+          "word": "asi",
+          "meaning": "you are"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "yathā",
+          "meaning": "as"
+        }
+      ]
+    },
+    {
+      "ref": "11.54",
+      "ordinal": 54,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भक्त्या त्वनन्यया शक्यमहमेवंविधोऽर्जुन।\n\nज्ञातुं दृष्टुं च तत्त्वेन प्रवेष्टुं च परंतप।।11.54।।",
+      "iast": "bhaktyā tvananyayā śakyamahamevaṃvidho'rjuna|\n\njñātuṃ dṛṣṭuṃ ca tattvena praveṣṭuṃ ca paraṃtapa||11.54||",
+      "en": "But by the single-minded devotion I may in this Form, be known, O Arjuna, and seen in reality, and also entered into, O scorcher of foes.",
+      "word_meanings": [
+        {
+          "word": "bhaktyā",
+          "meaning": "by devotion"
+        },
+        {
+          "word": "tu",
+          "meaning": "alone"
+        },
+        {
+          "word": "ananyayā",
+          "meaning": "unalloyed"
+        },
+        {
+          "word": "śhakyaḥ",
+          "meaning": "possible"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "evam-vidhaḥ",
+          "meaning": "like this"
+        },
+        {
+          "word": "arjuna",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "jñātum",
+          "meaning": "to be known"
+        },
+        {
+          "word": "draṣhṭum",
+          "meaning": "to be seen"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tattvena",
+          "meaning": "truly"
+        },
+        {
+          "word": "praveṣhṭum",
+          "meaning": "to enter into (union with me)"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "parantapa",
+          "meaning": "scorcher of foes"
+        }
+      ]
+    },
+    {
+      "ref": "11.55",
+      "ordinal": 55,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः।\n\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव।।11.55।।",
+      "iast": "matkarmakṛnmatparamo madbhaktaḥ saṅgavarjitaḥ|\n\nnirvairaḥ sarvabhūteṣu yaḥ sa māmeti pāṇḍava||11.55||",
+      "en": "He who does work for Me alone and has Me for his goal, is devoted to Me, is freed from attachment, and bears enmity towards no creature—he entereth into Me, O Pândava.",
+      "word_meanings": [
+        {
+          "word": "mat-karma-kṛit",
+          "meaning": "perform duties for my sake"
+        },
+        {
+          "word": "mat-paramaḥ",
+          "meaning": "considering me the Supreme"
+        },
+        {
+          "word": "mat-bhaktaḥ",
+          "meaning": "devoted to me"
+        },
+        {
+          "word": "saṅga-varjitaḥ",
+          "meaning": "free from attachment"
+        },
+        {
+          "word": "nirvairaḥ",
+          "meaning": "without malice"
+        },
+        {
+          "word": "sarva-bhūteṣhu",
+          "meaning": "toward all entities"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he"
+        },
+        {
+          "word": "mām",
+          "meaning": "to me"
+        },
+        {
+          "word": "eti",
+          "meaning": "comes"
+        },
+        {
+          "word": "pāṇḍava",
+          "meaning": "Arjun, the son of Pandu"
+        }
+      ]
+    }
+  ]
+}

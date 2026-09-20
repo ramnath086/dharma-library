@@ -1,0 +1,1742 @@
+{
+  "_note": "Bhagavad Gītā 14 — 27 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "14",
+      "ordinal": 14,
+      "title_iast": "Guṇa-traya-vibhāga-yoga",
+      "title_sa": "गुणत्रयविभागयोगः",
+      "title_en": "The Yoga of Discrimination of the Three Guṇas",
+      "title_ml": "ഗുണത്രയവിഭാഗയോഗം",
+      "summary_en": "Chapter 14: The Yoga of Discrimination of the Three Guṇas — 27 verses",
+      "summary_ml": "അധ്യായം 14: ഗുണത്രയവിഭാഗയോഗം — 27 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे गुणत्रयविभागयोगः नाम 14ोऽध्यायः ॥ 14 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "14.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाचपरं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम्।यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः।।14.1।।",
+      "iast": "śrī bhagavānuvācaparaṃ bhūyaḥ pravakṣyāmi jñānānāṃ jñānamuttamam|yajjñātvā munayaḥ sarve parāṃ siddhimito gatāḥ||14.1||",
+      "en": "Again shall I tell thee that supreme knowledge which is above all knowledge, having known which all the Munis have attained to high perfection after this life.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Divine Lord said"
+        },
+        {
+          "word": "param",
+          "meaning": "supreme"
+        },
+        {
+          "word": "bhūyaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "pravakṣhyāmi",
+          "meaning": "I shall explain"
+        },
+        {
+          "word": "jñānānām",
+          "meaning": "of all knowledge"
+        },
+        {
+          "word": "jñānam uttamam",
+          "meaning": "the supreme wisdom"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "jñātvā",
+          "meaning": "knowing"
+        },
+        {
+          "word": "munayaḥ",
+          "meaning": "saints"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "parām",
+          "meaning": "highest"
+        },
+        {
+          "word": "siddhim",
+          "meaning": "perfection"
+        },
+        {
+          "word": "itaḥ",
+          "meaning": "through this"
+        },
+        {
+          "word": "gatāḥ",
+          "meaning": "attained"
+        }
+      ]
+    },
+    {
+      "ref": "14.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः।सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च।।14.2।।",
+      "iast": "idaṃ jñānamupāśritya mama sādharmyamāgatāḥ|sarge'pi nopajāyante pralaye na vyathanti ca||14.2||",
+      "en": "They who having devoted themselves to this knowledge, have attained to My Being, are neither born at the time of creation, nor are they troubled at the time of dissolution.",
+      "word_meanings": [
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "jñānam",
+          "meaning": "wisdom"
+        },
+        {
+          "word": "upāśhritya",
+          "meaning": "take refuge in"
+        },
+        {
+          "word": "mama",
+          "meaning": "mine"
+        },
+        {
+          "word": "sādharmyam",
+          "meaning": "of similar nature"
+        },
+        {
+          "word": "āgatāḥ",
+          "meaning": "having attained"
+        },
+        {
+          "word": "sarge",
+          "meaning": "at the time of creation"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "upajāyante",
+          "meaning": "are born"
+        },
+        {
+          "word": "pralaye",
+          "meaning": "at the time of dissolution"
+        },
+        {
+          "word": "na-vyathanti",
+          "meaning": "they will not experience misery"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        }
+      ]
+    },
+    {
+      "ref": "14.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मम योनिर्महद्ब्रह्म तस्मिन् गर्भं दधाम्यहम्।संभवः सर्वभूतानां ततो भवति भारत।।14.3।।",
+      "iast": "mama yonirmahadbrahma tasmin garbhaṃ dadhāmyaham|saṃbhavaḥ sarvabhūtānāṃ tato bhavati bhārata||14.3||",
+      "en": "My womb is the great Prakriti; in that I place the germ; from thence, O descendant of Bharata, is the birth of all beings.",
+      "word_meanings": [
+        {
+          "word": "mama",
+          "meaning": "my"
+        },
+        {
+          "word": "yoniḥ",
+          "meaning": "womb"
+        },
+        {
+          "word": "mahat brahma",
+          "meaning": "the total material substance, prakṛiti"
+        },
+        {
+          "word": "tasmin",
+          "meaning": "in that"
+        },
+        {
+          "word": "garbham",
+          "meaning": "womb"
+        },
+        {
+          "word": "dadhāmi",
+          "meaning": "impregnate"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "sambhavaḥ",
+          "meaning": "birth"
+        },
+        {
+          "word": "sarva-bhūtānām",
+          "meaning": "of all living beings"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "thereby"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "becomes"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, the son of Bharat"
+        }
+      ]
+    },
+    {
+      "ref": "14.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः।तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता।।14.4।।",
+      "iast": "sarvayoniṣu kaunteya mūrtayaḥ sambhavanti yāḥ|tāsāṃ brahma mahadyonirahaṃ bījapradaḥ pitā||14.4||",
+      "en": "Whatever forms are produced, O son of Kunti, in all the wombs, the great Prakriti is their womb, and I the seed-giving Father.",
+      "word_meanings": [
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "yoniṣhu",
+          "meaning": "species of life"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "mūrtayaḥ",
+          "meaning": "forms"
+        },
+        {
+          "word": "sambhavanti",
+          "meaning": "are produced"
+        },
+        {
+          "word": "yāḥ",
+          "meaning": "which"
+        },
+        {
+          "word": "tāsām",
+          "meaning": "of all of them"
+        },
+        {
+          "word": "brahma-mahat",
+          "meaning": "great material nature"
+        },
+        {
+          "word": "yoniḥ",
+          "meaning": "womb"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "bīja-pradaḥ",
+          "meaning": "seed-giving"
+        },
+        {
+          "word": "pitā",
+          "meaning": "Father"
+        }
+      ]
+    },
+    {
+      "ref": "14.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः।निबध्नन्ति महाबाहो देहे देहिनमव्ययम्।।14.5।।",
+      "iast": "sattvaṃ rajastama iti guṇāḥ prakṛtisaṃbhavāḥ|nibadhnanti mahābāho dehe dehinamavyayam||14.5||",
+      "en": "Sattva, Rajas, and Tamas,—these Gunas, O mighty-armed, born of Prakriti, bind fast in the body the indestructible embodied one.",
+      "word_meanings": [
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "guṇāḥ",
+          "meaning": "modes"
+        },
+        {
+          "word": "prakṛiti",
+          "meaning": "material nature"
+        },
+        {
+          "word": "sambhavāḥ",
+          "meaning": "consists of"
+        },
+        {
+          "word": "nibadhnanti",
+          "meaning": "bind"
+        },
+        {
+          "word": "mahā-bāho",
+          "meaning": "mighty-armed one"
+        },
+        {
+          "word": "dehe",
+          "meaning": "in the body"
+        },
+        {
+          "word": "dehinam",
+          "meaning": "the embodied soul"
+        },
+        {
+          "word": "avyayam",
+          "meaning": "eternal"
+        }
+      ]
+    },
+    {
+      "ref": "14.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम्।सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ।।14.6।।",
+      "iast": "tatra sattvaṃ nirmalatvātprakāśakamanāmayam|sukhasaṅgena badhnāti jñānasaṅgena cānagha||14.6||",
+      "en": "Of these Sattva, from its stainlessness luminous and free from evil, binds, O sinless one, by attachment to happiness, and by attachment to knowledge.",
+      "word_meanings": [
+        {
+          "word": "tatra",
+          "meaning": "amongst these"
+        },
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "nirmalatvāt",
+          "meaning": "being purest"
+        },
+        {
+          "word": "prakāśhakam",
+          "meaning": "illuminating"
+        },
+        {
+          "word": "anāmayam",
+          "meaning": "healthy and full of well-being"
+        },
+        {
+          "word": "sukha",
+          "meaning": "happiness"
+        },
+        {
+          "word": "saṅgena",
+          "meaning": "attachment"
+        },
+        {
+          "word": "badhnāti",
+          "meaning": "binds"
+        },
+        {
+          "word": "jñāna",
+          "meaning": "knowledge"
+        },
+        {
+          "word": "saṅgena",
+          "meaning": "attachment"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "anagha",
+          "meaning": "Arjun, the sinless one"
+        }
+      ]
+    },
+    {
+      "ref": "14.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम्।तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्।।14.7।।",
+      "iast": "rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam|tannibadhnāti kaunteya karmasaṅgena dehinam||14.7||",
+      "en": "Know Rajas to be of the nature of passion, giving rise to thirst and attachment; it binds fast, O son of Kunti, the embodied one, by attachment to action.",
+      "word_meanings": [
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "rāga-ātmakam",
+          "meaning": "of the nature of passion"
+        },
+        {
+          "word": "viddhi",
+          "meaning": "know"
+        },
+        {
+          "word": "tṛiṣhṇā",
+          "meaning": "desires"
+        },
+        {
+          "word": "saṅga",
+          "meaning": "association"
+        },
+        {
+          "word": "samudbhavam",
+          "meaning": "arises from"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "nibadhnāti",
+          "meaning": "binds"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "karma-saṅgena",
+          "meaning": "through attachment to fruitive actions"
+        },
+        {
+          "word": "dehinam",
+          "meaning": "the embodied soul"
+        }
+      ]
+    },
+    {
+      "ref": "14.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्।प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत।।14.8।।",
+      "iast": "tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām|pramādālasyanidrābhistannibadhnāti bhārata||14.8||",
+      "en": "And know Tamas to be born of ignorance, stupefying all embodied beings; it binds fast, O descendant of Bharata, by miscomprehension, indolence, and sleep.",
+      "word_meanings": [
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "ajñāna-jam",
+          "meaning": "born of ignorance"
+        },
+        {
+          "word": "viddhi",
+          "meaning": "know"
+        },
+        {
+          "word": "mohanam",
+          "meaning": "illusion"
+        },
+        {
+          "word": "sarva-dehinām",
+          "meaning": "for all the embodied souls"
+        },
+        {
+          "word": "pramāda",
+          "meaning": "negligence"
+        },
+        {
+          "word": "ālasya",
+          "meaning": "laziness"
+        },
+        {
+          "word": "nidrābhiḥ",
+          "meaning": "and sleep"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "nibadhnāti",
+          "meaning": "binds"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, the son of Bharat"
+        }
+      ]
+    },
+    {
+      "ref": "14.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत।ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत।।14.9।।",
+      "iast": "sattvaṃ sukhe sañjayati rajaḥ karmaṇi bhārata|jñānamāvṛtya tu tamaḥ pramāde sañjayatyuta||14.9||",
+      "en": "Sattva attaches to happiness, and Rajas to action, O descendant of Bharata; while Tamas, verily, shrouding discrimination, attaches to miscomprehension.",
+      "word_meanings": [
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "sukhe",
+          "meaning": "to happiness"
+        },
+        {
+          "word": "sañjayati",
+          "meaning": "binds"
+        },
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "karmaṇi",
+          "meaning": "toward actions"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, the son of Bharat"
+        },
+        {
+          "word": "jñānam",
+          "meaning": "wisdom"
+        },
+        {
+          "word": "āvṛitya",
+          "meaning": "clouds"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "pramāde",
+          "meaning": "to delusion"
+        },
+        {
+          "word": "sañjayati",
+          "meaning": "binds"
+        },
+        {
+          "word": "uta",
+          "meaning": "indeed"
+        }
+      ]
+    },
+    {
+      "ref": "14.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "रजस्तमश्चाभिभूय सत्त्वं भवति भारत।रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा।।14.10।।",
+      "iast": "rajastamaścābhibhūya sattvaṃ bhavati bhārata|rajaḥ sattvaṃ tamaścaiva tamaḥ sattvaṃ rajastathā||14.10||",
+      "en": "Sattva arises, O descendant of Bharata, predominating over Rajas and 'Tamas; and Rajas over Sattva and Tamas; so, Tamas over Sattva and Rajas.",
+      "word_meanings": [
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "abhibhūya",
+          "meaning": "prevails"
+        },
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "becomes"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, the son of Bharat"
+        },
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "tamaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "rajaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "tathā",
+          "meaning": "also"
+        }
+      ]
+    },
+    {
+      "ref": "14.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते।ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत।।14.11।।",
+      "iast": "sarvadvāreṣu dehe'sminprakāśa upajāyate|jñānaṃ yadā tadā vidyādvivṛddhaṃ sattvamityuta||14.11||",
+      "en": "When through every sense in this body, the light of intelligence shines, then it should be known that Sattva is predominant.",
+      "word_meanings": [
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "dvāreṣhu",
+          "meaning": "through the gates"
+        },
+        {
+          "word": "dehe",
+          "meaning": "body"
+        },
+        {
+          "word": "asmin",
+          "meaning": "in this"
+        },
+        {
+          "word": "prakāśhaḥ",
+          "meaning": "illumination"
+        },
+        {
+          "word": "upajāyate",
+          "meaning": "manifest"
+        },
+        {
+          "word": "jñānam",
+          "meaning": "knowledge"
+        },
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "tadā",
+          "meaning": "then"
+        },
+        {
+          "word": "vidyāt",
+          "meaning": "know"
+        },
+        {
+          "word": "vivṛiddham",
+          "meaning": "predominates"
+        },
+        {
+          "word": "sattvam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "uta",
+          "meaning": "certainly"
+        }
+      ]
+    },
+    {
+      "ref": "14.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा।रजस्येतानि जायन्ते विवृद्धे भरतर्षभ।।14.12।।",
+      "iast": "lobhaḥ pravṛttirārambhaḥ karmaṇāmaśamaḥ spṛhā|rajasyetāni jāyante vivṛddhe bharatarṣabha||14.12||",
+      "en": "Greed, activity, the undertaking of actions, unrest, longing—these arise when Rajas is predominant, O bull of the: Bhâratas.",
+      "word_meanings": [
+        {
+          "word": "lobhaḥ",
+          "meaning": "greed"
+        },
+        {
+          "word": "pravṛittiḥ",
+          "meaning": "activity"
+        },
+        {
+          "word": "ārambhaḥ",
+          "meaning": "exertion"
+        },
+        {
+          "word": "karmaṇām",
+          "meaning": "for fruitive actions"
+        },
+        {
+          "word": "aśhamaḥ",
+          "meaning": "restlessness"
+        },
+        {
+          "word": "spṛihā",
+          "meaning": "craving"
+        },
+        {
+          "word": "rajasi",
+          "meaning": "of the mode of passion"
+        },
+        {
+          "word": "etāni",
+          "meaning": "these"
+        },
+        {
+          "word": "jāyante",
+          "meaning": "develop"
+        },
+        {
+          "word": "vivṛiddhe",
+          "meaning": "when predominates"
+        },
+        {
+          "word": "bharata-ṛiṣhabha",
+          "meaning": "the best of the Bharatas, Arjun"
+        }
+      ]
+    },
+    {
+      "ref": "14.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च।तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन।।14.13।।",
+      "iast": "aprakāśo'pravṛttiśca pramādo moha eva ca|tamasyetāni jāyante vivṛddhe kurunandana||14.13||",
+      "en": "Darkness, inertness, miscomprehension, and delusion,—these arise when Tamas is predominant, O descendant of Kuru.",
+      "word_meanings": [
+        {
+          "word": "aprakāśhaḥ",
+          "meaning": "nescience"
+        },
+        {
+          "word": "apravṛittiḥ",
+          "meaning": "inertia"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pramādaḥ",
+          "meaning": "negligence"
+        },
+        {
+          "word": "mohaḥ",
+          "meaning": "delusion"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "tamasi",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "etāni",
+          "meaning": "these"
+        },
+        {
+          "word": "jāyante",
+          "meaning": "manifest"
+        },
+        {
+          "word": "vivṛiddhe",
+          "meaning": "when dominates"
+        },
+        {
+          "word": "kuru-nandana",
+          "meaning": "the joy of the Kurus, Arjun"
+        }
+      ]
+    },
+    {
+      "ref": "14.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत्।तदोत्तमविदां लोकानमलान्प्रतिपद्यते।।14.14।।",
+      "iast": "yadā sattve pravṛddhe tu pralayaṃ yāti dehabhṛt|tadottamavidāṃ lokānamalānpratipadyate||14.14||",
+      "en": "If the embodied one meets death when Sattva is predominant, then he attains to the spotless regions of the worshippers of the Highest.",
+      "word_meanings": [
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "sattve",
+          "meaning": "in the mode of goodness"
+        },
+        {
+          "word": "pravṛiddhe",
+          "meaning": "when premodinates"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "pralayam",
+          "meaning": "death"
+        },
+        {
+          "word": "yāti",
+          "meaning": "reach"
+        },
+        {
+          "word": "deha-bhṛit",
+          "meaning": "the embodied"
+        },
+        {
+          "word": "tadā",
+          "meaning": "then"
+        },
+        {
+          "word": "uttama-vidām",
+          "meaning": "of the learned"
+        },
+        {
+          "word": "lokān",
+          "meaning": "abodes"
+        },
+        {
+          "word": "amalān",
+          "meaning": "pure"
+        },
+        {
+          "word": "pratipadyate",
+          "meaning": "attains"
+        }
+      ]
+    },
+    {
+      "ref": "14.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते।तथा प्रलीनस्तमसि मूढयोनिषु जायते।।14.15।।",
+      "iast": "rajasi pralayaṃ gatvā karmasaṅgiṣu jāyate|tathā pralīnastamasi mūḍhayoniṣu jāyate||14.15||",
+      "en": "Meeting death in Rajas he is born among those attached to action; so dying in Tamas, he is born in the wombs of the irrational.",
+      "word_meanings": [
+        {
+          "word": "rajasi",
+          "meaning": "in the mode of passion"
+        },
+        {
+          "word": "pralayam",
+          "meaning": "death"
+        },
+        {
+          "word": "gatvā",
+          "meaning": "attaining"
+        },
+        {
+          "word": "karma-saṅgiṣhu",
+          "meaning": "among people driven by work"
+        },
+        {
+          "word": "jāyate",
+          "meaning": "are born"
+        },
+        {
+          "word": "tathā",
+          "meaning": "likewise"
+        },
+        {
+          "word": "pralīnaḥ",
+          "meaning": "dying"
+        },
+        {
+          "word": "tamasi",
+          "meaning": "in the mode of ignorance"
+        },
+        {
+          "word": "mūḍha-yoniṣhu",
+          "meaning": "in the animal kingdom"
+        },
+        {
+          "word": "jāyate",
+          "meaning": "takes birth"
+        }
+      ]
+    },
+    {
+      "ref": "14.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम्।रजसस्तु फलं दुःखमज्ञानं तमसः फलम्।।14.16।।",
+      "iast": "karmaṇaḥ sukṛtasyāhuḥ sāttvikaṃ nirmalaṃ phalam|rajasastu phalaṃ duḥkhamajñānaṃ tamasaḥ phalam||14.16||",
+      "en": "The fruit of good action, they say, is Sâttvika and pure; verily, the fruit of Rajas is pain, and ignorance is the fruit of Tamas.",
+      "word_meanings": [
+        {
+          "word": "karmaṇaḥ",
+          "meaning": "of action"
+        },
+        {
+          "word": "su-kṛitasya",
+          "meaning": "pure"
+        },
+        {
+          "word": "āhuḥ",
+          "meaning": "is said"
+        },
+        {
+          "word": "sāttvikam",
+          "meaning": "mode of goodness"
+        },
+        {
+          "word": "nirmalam",
+          "meaning": "pure"
+        },
+        {
+          "word": "phalam",
+          "meaning": "result"
+        },
+        {
+          "word": "rajasaḥ",
+          "meaning": "mode of passion"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "phalam",
+          "meaning": "result"
+        },
+        {
+          "word": "duḥkham",
+          "meaning": "pain"
+        },
+        {
+          "word": "ajñānam",
+          "meaning": "ignorance"
+        },
+        {
+          "word": "tamasaḥ",
+          "meaning": "mode of ignorance"
+        },
+        {
+          "word": "phalam",
+          "meaning": "result"
+        }
+      ]
+    },
+    {
+      "ref": "14.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च।प्रमादमोहौ तमसो भवतोऽज्ञानमेव च।।14.17।।",
+      "iast": "sattvātsañjāyate jñānaṃ rajaso lobha eva ca|pramādamohau tamaso bhavato'jñānameva ca||14.17||",
+      "en": "From Sattva arises wisdom, and greed from Rajas; miscomprehension, delusion and ignorance arise from Tamas.",
+      "word_meanings": [
+        {
+          "word": "sattvāt",
+          "meaning": "from the mode of goodness"
+        },
+        {
+          "word": "sañjāyate",
+          "meaning": "arises"
+        },
+        {
+          "word": "jñānam",
+          "meaning": "knowledge"
+        },
+        {
+          "word": "rajasaḥ",
+          "meaning": "from the mode of passion"
+        },
+        {
+          "word": "lobhaḥ",
+          "meaning": "greed"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pramāda",
+          "meaning": "negligence"
+        },
+        {
+          "word": "mohau",
+          "meaning": "delusion"
+        },
+        {
+          "word": "tamasaḥ",
+          "meaning": "from the mode of ignorance"
+        },
+        {
+          "word": "bhavataḥ",
+          "meaning": "arise"
+        },
+        {
+          "word": "ajñānam",
+          "meaning": "ignorance"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        }
+      ]
+    },
+    {
+      "ref": "14.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः।जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः।।14.18।।",
+      "iast": "ūrdhvaṃ gacchanti sattvasthā madhye tiṣṭhanti rājasāḥ|jaghanyaguṇavṛttisthā adho gacchanti tāmasāḥ||14.18||",
+      "en": "The Sattva-abiding go upwards; the Râjasika dwell in the middle; and the Tâmasika, abiding in the function. of the lowest Guna, go downwards.",
+      "word_meanings": [
+        {
+          "word": "ūrdhvam",
+          "meaning": "upward"
+        },
+        {
+          "word": "gachchhanti",
+          "meaning": "rise"
+        },
+        {
+          "word": "sattva-sthāḥ",
+          "meaning": "those situated in the mode of goodness"
+        },
+        {
+          "word": "madhye",
+          "meaning": "in the middle"
+        },
+        {
+          "word": "tiṣhṭhanti",
+          "meaning": "stay"
+        },
+        {
+          "word": "rājasāḥ",
+          "meaning": "those in the mode of passion"
+        },
+        {
+          "word": "jaghanya",
+          "meaning": "abominable"
+        },
+        {
+          "word": "guṇa",
+          "meaning": "quality"
+        },
+        {
+          "word": "vṛitti-sthāḥ",
+          "meaning": "engaged in activities"
+        },
+        {
+          "word": "adhaḥ",
+          "meaning": "down"
+        },
+        {
+          "word": "gachchhanti",
+          "meaning": "go"
+        },
+        {
+          "word": "tāmasāḥ",
+          "meaning": "those in the mode of ignorance"
+        }
+      ]
+    },
+    {
+      "ref": "14.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति।गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति।।14.19।।",
+      "iast": "nānyaṃ guṇebhyaḥ kartāraṃ yadā draṣṭānupaśyati|guṇebhyaśca paraṃ vetti madbhāvaṃ so'dhigacchati||14.19||",
+      "en": "When the seer beholds no agent other than the Gunas and knows That which is higher than the Gunas, he attains to My being.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "no"
+        },
+        {
+          "word": "anyam",
+          "meaning": "other"
+        },
+        {
+          "word": "guṇebhyaḥ",
+          "meaning": "of the guṇas"
+        },
+        {
+          "word": "kartāram",
+          "meaning": "agents of action"
+        },
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "draṣhṭā",
+          "meaning": "the seer"
+        },
+        {
+          "word": "anupaśhyati",
+          "meaning": "see"
+        },
+        {
+          "word": "guṇebhyaḥ",
+          "meaning": "to the modes of nature"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "param",
+          "meaning": "transcendental"
+        },
+        {
+          "word": "vetti",
+          "meaning": "know"
+        },
+        {
+          "word": "mat-bhāvam",
+          "meaning": "my divine nature"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "they"
+        },
+        {
+          "word": "adhigachchhati",
+          "meaning": "attain"
+        }
+      ]
+    },
+    {
+      "ref": "14.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान्।जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते।।14.20।।",
+      "iast": "guṇānetānatītya trīndehī dehasamudbhavān|janmamṛtyujarāduḥkhairvimukto'mṛtamaśnute||14.20||",
+      "en": "The embodied one having gone beyond these three Gunas out of which the body is evolved, is freed from birth, death, decay and pain, and attains to immortality.",
+      "word_meanings": [
+        {
+          "word": "guṇān",
+          "meaning": "the three modes of material nature"
+        },
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "atītya",
+          "meaning": "transcending"
+        },
+        {
+          "word": "trīn",
+          "meaning": "three"
+        },
+        {
+          "word": "dehī",
+          "meaning": "the embodied"
+        },
+        {
+          "word": "deha",
+          "meaning": "body"
+        },
+        {
+          "word": "samudbhavān",
+          "meaning": "produced of"
+        },
+        {
+          "word": "janma",
+          "meaning": "birth"
+        },
+        {
+          "word": "mṛityu",
+          "meaning": "death"
+        },
+        {
+          "word": "jarā",
+          "meaning": "old age"
+        },
+        {
+          "word": "duḥkhaiḥ",
+          "meaning": "misery"
+        },
+        {
+          "word": "vimuktaḥ",
+          "meaning": "freed from"
+        },
+        {
+          "word": "amṛitam",
+          "meaning": "immortality"
+        },
+        {
+          "word": "aśhnute",
+          "meaning": "attains"
+        }
+      ]
+    },
+    {
+      "ref": "14.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाचकैर्लिंगैस्त्रीन्गुणानेतानतीतो भवति प्रभो।किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते।।14.21।।",
+      "iast": "arjuna uvācakairliṃgaistrīnguṇānetānatīto bhavati prabho|kimācāraḥ kathaṃ caitāṃstrīnguṇānativartate||14.21||",
+      "en": "By what marks, O Lord, is he (known) who has gone beyond these three Gunas? What is his conduct, and how does he pass beyond these three Gunas?",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun inquired"
+        },
+        {
+          "word": "kaiḥ",
+          "meaning": "by what"
+        },
+        {
+          "word": "liṅgaiḥ",
+          "meaning": "symptoms"
+        },
+        {
+          "word": "trīn",
+          "meaning": "three"
+        },
+        {
+          "word": "guṇān",
+          "meaning": "modes of material nature"
+        },
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "atītaḥ",
+          "meaning": "having transcended"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "is"
+        },
+        {
+          "word": "prabho",
+          "meaning": "Lord"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "āchāraḥ",
+          "meaning": "conduct"
+        },
+        {
+          "word": "katham",
+          "meaning": "how"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "trīn",
+          "meaning": "three"
+        },
+        {
+          "word": "guṇān",
+          "meaning": "modes of material nature"
+        },
+        {
+          "word": "ativartate",
+          "meaning": "transcend"
+        }
+      ]
+    },
+    {
+      "ref": "14.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाचप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव।न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति।।14.22।।",
+      "iast": "śrī bhagavānuvācaprakāśaṃ ca pravṛttiṃ ca mohameva ca pāṇḍava|na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati||14.22||",
+      "en": "He who hates not the appearance of light, (the effect of Sattva), activity (the effect of Rajas), and delusion (the effect of Tamas), (in his own mind), O Pândava, nor longs for them when absent;",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Divine Personality said"
+        },
+        {
+          "word": "prakāśham",
+          "meaning": "illumination"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pravṛittim",
+          "meaning": "activity"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "moham",
+          "meaning": "delusion"
+        },
+        {
+          "word": "eva",
+          "meaning": "even"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pāṇḍava",
+          "meaning": "Arjun, the son of Pandu"
+        },
+        {
+          "word": "na dveṣhṭi",
+          "meaning": "do not hate"
+        },
+        {
+          "word": "sampravṛittāni",
+          "meaning": "when present"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "nivṛittāni",
+          "meaning": "when absent"
+        },
+        {
+          "word": "kāṅkṣhati",
+          "meaning": "longs"
+        }
+      ]
+    },
+    {
+      "ref": "14.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "उदासीनवदासीनो गुणैर्यो न विचाल्यते।गुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते।।14.23।।",
+      "iast": "udāsīnavadāsīno guṇairyo na vicālyate|guṇā vartanta ityeva yo'vatiṣṭhati neṅgate||14.23||",
+      "en": "He who, sitting like one unconcerned, is moved not by the Gunas, who, knowing that the Gunas operate, is Self-centred and swerves not;",
+      "word_meanings": [
+        {
+          "word": "udāsīna-vat",
+          "meaning": "neutral"
+        },
+        {
+          "word": "āsīnaḥ",
+          "meaning": "situated"
+        },
+        {
+          "word": "guṇaiḥ",
+          "meaning": "to the modes of material nature"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vichālyate",
+          "meaning": "are disturbed"
+        },
+        {
+          "word": "guṇāḥ",
+          "meaning": "modes of material nature"
+        },
+        {
+          "word": "vartante",
+          "meaning": "act"
+        },
+        {
+          "word": "iti-evam",
+          "meaning": "knowing it in this way"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "avatiṣhṭhati",
+          "meaning": "established in the self"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "iṅgate",
+          "meaning": "wavering"
+        }
+      ]
+    },
+    {
+      "ref": "14.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः।तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः।।14.24।।",
+      "iast": "samaduḥkhasukhaḥ svasthaḥ samaloṣṭāśmakāñcanaḥ|tulyapriyāpriyo dhīrastulyanindātmasaṃstutiḥ||14.24||",
+      "en": "Alike in pleasure and pain, Self-abiding, regarding a clod of earth, a stone and gold alike; the same to agreeable and disagreeable, firm, the same in censure and, praise;",
+      "word_meanings": [
+        {
+          "word": "sama",
+          "meaning": "alike"
+        },
+        {
+          "word": "duḥkha",
+          "meaning": "distress"
+        },
+        {
+          "word": "sukhaḥ",
+          "meaning": "happiness"
+        },
+        {
+          "word": "sva-sthaḥ",
+          "meaning": "established in the self"
+        },
+        {
+          "word": "sama",
+          "meaning": "equally"
+        },
+        {
+          "word": "loṣhṭa",
+          "meaning": "a clod"
+        },
+        {
+          "word": "aśhma",
+          "meaning": "stone"
+        },
+        {
+          "word": "kāñchanaḥ",
+          "meaning": "gold"
+        },
+        {
+          "word": "tulya",
+          "meaning": "of equal value"
+        },
+        {
+          "word": "priya",
+          "meaning": "pleasant"
+        },
+        {
+          "word": "apriyaḥ",
+          "meaning": "unpleasant"
+        },
+        {
+          "word": "dhīraḥ",
+          "meaning": "steady"
+        },
+        {
+          "word": "tulya",
+          "meaning": "the same"
+        },
+        {
+          "word": "nindā",
+          "meaning": "blame"
+        },
+        {
+          "word": "ātma-sanstutiḥ",
+          "meaning": "praise"
+        }
+      ]
+    },
+    {
+      "ref": "14.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः।सर्वारम्भपरित्यागी गुणातीतः स उच्यते।।14.25।।",
+      "iast": "mānāpamānayostulyastulyo mitrāripakṣayoḥ|sarvārambhaparityāgī guṇātītaḥ sa ucyate||14.25||",
+      "en": "The same in honour and disgrace, the same to friend and foe, relinquishing all undertakings—he is said to have gone beyond the Gunas.",
+      "word_meanings": [
+        {
+          "word": "māna",
+          "meaning": "honor"
+        },
+        {
+          "word": "apamānayoḥ",
+          "meaning": "dishonor"
+        },
+        {
+          "word": "tulyaḥ",
+          "meaning": "equal"
+        },
+        {
+          "word": "tulyaḥ",
+          "meaning": "equal"
+        },
+        {
+          "word": "mitra",
+          "meaning": "friend"
+        },
+        {
+          "word": "ari",
+          "meaning": "foe"
+        },
+        {
+          "word": "pakṣhayoḥ",
+          "meaning": "to the parties"
+        },
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "ārambha",
+          "meaning": "enterprises"
+        },
+        {
+          "word": "parityāgī",
+          "meaning": "renouncer"
+        },
+        {
+          "word": "guṇa-atītaḥ",
+          "meaning": "risen above the three modes of material nature"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "they"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "are said to have"
+        }
+      ]
+    },
+    {
+      "ref": "14.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मां च योऽव्यभिचारेण भक्ितयोगेन सेवते।स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते।।14.26।।",
+      "iast": "māṃ ca yo'vyabhicāreṇa bhakitayogena sevate|sa guṇānsamatītyaitān brahmabhūyāya kalpate||14.26||",
+      "en": "And he who serves Me with an unswerving devotion, he, going beyond the Gunas, is fitted for becoming Brahman.",
+      "word_meanings": [
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "cha",
+          "meaning": "only"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "avyabhichāreṇa",
+          "meaning": "unalloyed"
+        },
+        {
+          "word": "bhakti-yogena",
+          "meaning": "through devotion"
+        },
+        {
+          "word": "sevate",
+          "meaning": "serve"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "they"
+        },
+        {
+          "word": "guṇān",
+          "meaning": "the three modes of material nature"
+        },
+        {
+          "word": "samatītya",
+          "meaning": "rise above"
+        },
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "brahma-bhūyāya",
+          "meaning": "level of Brahman"
+        },
+        {
+          "word": "kalpate",
+          "meaning": "comes to"
+        }
+      ]
+    },
+    {
+      "ref": "14.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ब्रह्मणो हि प्रतिष्ठाऽहममृतस्याव्ययस्य च।शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च।।14.27।।",
+      "iast": "brahmaṇo hi pratiṣṭhā'hamamṛtasyāvyayasya ca|śāśvatasya ca dharmasya sukhasyaikāntikasya ca||14.27||",
+      "en": "For I am the abode of Brahman, the Immortal and Immutable, of everlasting Dharma and of Absolute Bliss.",
+      "word_meanings": [
+        {
+          "word": "brahmaṇaḥ",
+          "meaning": "of Brahman"
+        },
+        {
+          "word": "hi",
+          "meaning": "only"
+        },
+        {
+          "word": "pratiṣhṭhā",
+          "meaning": "the basis"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "amṛitasya",
+          "meaning": "of the immortal"
+        },
+        {
+          "word": "avyayasya",
+          "meaning": "of the imperishable"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śhāśhvatasya",
+          "meaning": "of the eternal"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "dharmasya",
+          "meaning": "of the dharma"
+        },
+        {
+          "word": "sukhasya",
+          "meaning": "of bliss"
+        },
+        {
+          "word": "aikāntikasya",
+          "meaning": "unending"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        }
+      ]
+    }
+  ]
+}

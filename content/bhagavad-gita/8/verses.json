@@ -1,0 +1,1890 @@
+{
+  "_note": "Bhagavad Gītā 8 — 28 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "8",
+      "ordinal": 8,
+      "title_iast": "Akṣara-brahma-yoga",
+      "title_sa": "अक्षरब्रह्मयोगः",
+      "title_en": "The Yoga of the Imperishable Brahman",
+      "title_ml": "അക്ഷരബ്രഹ്മയോഗം",
+      "summary_en": "Chapter 8: The Yoga of the Imperishable Brahman — 28 verses",
+      "summary_ml": "അധ്യായം 8: അക്ഷരബ്രഹ്മയോഗം — 28 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे अक्षरब्रह्मयोगः नाम 8ोऽध्यायः ॥ 8 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "8.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nकिं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम।\n\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते।।8.1।।",
+      "iast": "arjuna uvāca\n\nkiṃ tadbrahma kimadhyātmaṃ kiṃ karma puruṣottama|\n\nadhibhūtaṃ ca kiṃ proktamadhidaivaṃ kimucyate||8.1||",
+      "en": "What is that Brahman, what is Adhyâtma, what is Karma, O best of Purushas? What is called Adhibhuta, and what Adhidaiva?",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "brahma",
+          "meaning": "Brahman"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "adhyātmam",
+          "meaning": "the individual soul"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "karma",
+          "meaning": "the principle of karma"
+        },
+        {
+          "word": "puruṣha-uttama",
+          "meaning": "Shree Krishna, the Supreme Divine Personality"
+        },
+        {
+          "word": "adhibhūtam",
+          "meaning": "the material manifestation"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "proktam",
+          "meaning": "is called"
+        },
+        {
+          "word": "adhidaivam",
+          "meaning": "the Lord of the celestial gods"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is called"
+        }
+      ]
+    },
+    {
+      "ref": "8.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।\n\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः।।8.2।।",
+      "iast": "adhiyajñaḥ kathaṃ ko'tra dehe'sminmadhusūdana|\n\nprayāṇakāle ca kathaṃ jñeyo'si niyatātmabhiḥ||8.2||",
+      "en": "Who, and in what way, is Adhiyajna here in this body, O destroyer of Madhu? And how art Thou known at the time of death, by the self-controlled?",
+      "word_meanings": [
+        {
+          "word": "adhiyajñaḥ",
+          "meaning": "the Lord all sacrificial performances"
+        },
+        {
+          "word": "katham",
+          "meaning": "how"
+        },
+        {
+          "word": "kaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "atra",
+          "meaning": "here"
+        },
+        {
+          "word": "dehe",
+          "meaning": "in body"
+        },
+        {
+          "word": "asmin",
+          "meaning": "this"
+        },
+        {
+          "word": "madhusūdana",
+          "meaning": "Shree Krishna, the killer of the demon named Madhu"
+        },
+        {
+          "word": "prayāṇa-kāle",
+          "meaning": "at the time of death"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "katham",
+          "meaning": "how"
+        },
+        {
+          "word": "jñeyaḥ",
+          "meaning": "to be known"
+        },
+        {
+          "word": "asi",
+          "meaning": "are (you)"
+        },
+        {
+          "word": "niyata-ātmabhiḥ",
+          "meaning": "by those of steadfast mind"
+        }
+      ]
+    },
+    {
+      "ref": "8.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते।\n\nभूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः।।8.3।।",
+      "iast": "śrī bhagavānuvāca\n\nakṣaraṃ brahma paramaṃ svabhāvo'dhyātmamucyate|\n\nbhūtabhāvodbhavakaro visargaḥ karmasaṃjñitaḥ||8.3||",
+      "en": "The Imperishable is the Supreme Brahman. Its dwelling in each individual body is called Adhyâtma; the offering in sacrifice which causes the genesis and support of beings, is called Karma.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Blessed Lord said"
+        },
+        {
+          "word": "akṣharam",
+          "meaning": "indestructible"
+        },
+        {
+          "word": "brahma",
+          "meaning": "Brahman"
+        },
+        {
+          "word": "paramam",
+          "meaning": "the Supreme"
+        },
+        {
+          "word": "svabhāvaḥ",
+          "meaning": "nature"
+        },
+        {
+          "word": "adhyātmam",
+          "meaning": "one’s own self"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is called"
+        },
+        {
+          "word": "bhūta-bhāva-udbhava-karaḥ",
+          "meaning": "Actions pertaining to the material personality of living beings, and its development"
+        },
+        {
+          "word": "visargaḥ",
+          "meaning": "creation"
+        },
+        {
+          "word": "karma",
+          "meaning": "fruitive activities"
+        },
+        {
+          "word": "sanjñitaḥ",
+          "meaning": "are called"
+        }
+      ]
+    },
+    {
+      "ref": "8.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।\n\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर।।8.4।।",
+      "iast": "adhibhūtaṃ kṣaro bhāvaḥ puruṣaścādhidaivatam|\n\nadhiyajño'hamevātra dehe dehabhṛtāṃ vara||8.4||",
+      "en": "The perishable adjunct is the Adhibhuta, and the Indweller is the Adhidaivata; I alone am the Adhiyajna here in this body, O best of the embodied.",
+      "word_meanings": [
+        {
+          "word": "adhibhūtam",
+          "meaning": "the ever changing physical manifestation"
+        },
+        {
+          "word": "kṣharaḥ",
+          "meaning": "perishable"
+        },
+        {
+          "word": "bhāvaḥ",
+          "meaning": "nature"
+        },
+        {
+          "word": "puruṣhaḥ",
+          "meaning": "the cosmic personality of God, encompassing the material creation"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "adhidaivatam",
+          "meaning": "the Lord of the celestial gods"
+        },
+        {
+          "word": "adhiyajñaḥ",
+          "meaning": "the Lord of all sacrifices"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "atra",
+          "meaning": "here"
+        },
+        {
+          "word": "dehe",
+          "meaning": "in the body"
+        },
+        {
+          "word": "deha-bhṛitām",
+          "meaning": "of the embodied"
+        },
+        {
+          "word": "vara",
+          "meaning": "O best"
+        }
+      ]
+    },
+    {
+      "ref": "8.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।\n\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः।।8.5।।",
+      "iast": "antakāle ca māmeva smaranmuktvā kalevaram|\n\nyaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ||8.5||",
+      "en": "And he, who at the time of death, meditating on Me alone, goes forth, leaving the body, attains My Being: there is no doubt about this.",
+      "word_meanings": [
+        {
+          "word": "anta-kāle",
+          "meaning": "at the time of death"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "eva",
+          "meaning": "alone"
+        },
+        {
+          "word": "smaran",
+          "meaning": "remembering"
+        },
+        {
+          "word": "muktvā",
+          "meaning": "relinquish"
+        },
+        {
+          "word": "kalevaram",
+          "meaning": "the body"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "prayāti",
+          "meaning": "goes"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he"
+        },
+        {
+          "word": "mat-bhāvam",
+          "meaning": "Godlike nature"
+        },
+        {
+          "word": "yāti",
+          "meaning": "achieves"
+        },
+        {
+          "word": "na",
+          "meaning": "no"
+        },
+        {
+          "word": "asti",
+          "meaning": "there is"
+        },
+        {
+          "word": "atra",
+          "meaning": "here"
+        },
+        {
+          "word": "sanśhayaḥ",
+          "meaning": "doubt"
+        }
+      ]
+    },
+    {
+      "ref": "8.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।\n\nतं तमेवैति कौन्तेय सदा तद्भावभावितः।।8.6।।",
+      "iast": "yaṃ yaṃ vāpi smaranbhāvaṃ tyajatyante kalevaram|\n\ntaṃ tamevaiti kaunteya sadā tadbhāvabhāvitaḥ||8.6||",
+      "en": "Remembering whatever object, at the end, he leaves the body, that alone is reached by him, O son of Kunti, (because) of his constant thought of that object.",
+      "word_meanings": [
+        {
+          "word": "yam yam",
+          "meaning": "whatever"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "smaran",
+          "meaning": "remembering"
+        },
+        {
+          "word": "bhāvam",
+          "meaning": "remembrance"
+        },
+        {
+          "word": "tyajati",
+          "meaning": "gives up"
+        },
+        {
+          "word": "ante",
+          "meaning": "in the end"
+        },
+        {
+          "word": "kalevaram",
+          "meaning": "the body"
+        },
+        {
+          "word": "tam",
+          "meaning": "to that"
+        },
+        {
+          "word": "tam",
+          "meaning": "to that"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "eti",
+          "meaning": "gets"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "sadā",
+          "meaning": "always"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "bhāva-bhāvitaḥ",
+          "meaning": "absorbed in contemplation"
+        }
+      ]
+    },
+    {
+      "ref": "8.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।\n\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्।।8.7।।",
+      "iast": "tasmātsarveṣu kāleṣu māmanusmara yudhya ca|\n\nmayyarpitamanobuddhirmāmevaiṣyasyasaṃśayam||8.7||",
+      "en": "Therefore, at all times, constantly remember Me, and fight. With mind and intellect absorbed, in Me, thou shalt doubtless come to Me.",
+      "word_meanings": [
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "sarveṣhu",
+          "meaning": "in all"
+        },
+        {
+          "word": "kāleṣhu",
+          "meaning": "times"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "anusmara",
+          "meaning": "remember"
+        },
+        {
+          "word": "yudhya",
+          "meaning": "fight"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "mayi",
+          "meaning": "to me"
+        },
+        {
+          "word": "arpita",
+          "meaning": "surrender"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "mām",
+          "meaning": "to me"
+        },
+        {
+          "word": "eva",
+          "meaning": "surely"
+        },
+        {
+          "word": "eṣhyasi",
+          "meaning": "you shall attain"
+        },
+        {
+          "word": "asanśhayaḥ",
+          "meaning": "without a doubt"
+        }
+      ]
+    },
+    {
+      "ref": "8.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।\n\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्।।8.8।।",
+      "iast": "abhyāsayogayuktena cetasā nānyagāminā|\n\nparamaṃ puruṣaṃ divyaṃ yāti pārthānucintayan||8.8||",
+      "en": "With the mind not moving towards anything else, made steadfast by the method of habitual meditation, and dwelling on the Supreme, Resplendent Purusha, O son of Prithâ, one goes to Him.",
+      "word_meanings": [
+        {
+          "word": "abhyāsa-yoga",
+          "meaning": "by practice of yog"
+        },
+        {
+          "word": "yuktena",
+          "meaning": "being constantly engaged in remembrance"
+        },
+        {
+          "word": "chetasā",
+          "meaning": "by the mind"
+        },
+        {
+          "word": "na anya-gāminā",
+          "meaning": "without deviating"
+        },
+        {
+          "word": "paramam puruṣham",
+          "meaning": "the Supreme Divine Personality"
+        },
+        {
+          "word": "divyam",
+          "meaning": "divine"
+        },
+        {
+          "word": "yāti",
+          "meaning": "one attains"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "anuchintayan",
+          "meaning": "constant remembrance"
+        }
+      ]
+    },
+    {
+      "ref": "8.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कविं पुराणमनुशासितार\n\nमणोरणीयांसमनुस्मरेद्यः।\n\nसर्वस्य धातारमचिन्त्यरूप\n\nमादित्यवर्णं तमसः परस्तात्।।8.9।।",
+      "iast": "kaviṃ purāṇamanuśāsitāra\n\nmaṇoraṇīyāṃsamanusmaredyaḥ|\n\nsarvasya dhātāramacintyarūpa\n\nmādityavarṇaṃ tamasaḥ parastāt||8.9||",
+      "en": "The Omniscient, the Ancient, the Overruler, minuter than an atom, the Sustainer of all, of form inconceivable, self-luminous like the sun, and beyond the darkness of Mâyâ—he who meditates on Him thus, at the time of death, full of devotion, with the mind unmoving, and also by the power of Yoga, fixing the whole Prâna betwixt the eye-brows, he goes to that Supreme, Resplendent Purusha.",
+      "word_meanings": [
+        {
+          "word": "kavim",
+          "meaning": "poet"
+        },
+        {
+          "word": "purāṇam",
+          "meaning": "ancient"
+        },
+        {
+          "word": "anuśhāsitāram",
+          "meaning": "the controller"
+        },
+        {
+          "word": "aṇoḥ",
+          "meaning": "than the atom"
+        },
+        {
+          "word": "aṇīyānsam",
+          "meaning": "smaller"
+        },
+        {
+          "word": "anusmaret",
+          "meaning": "always remembers"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "sarvasya",
+          "meaning": "of everything"
+        },
+        {
+          "word": "dhātāram",
+          "meaning": "the support"
+        },
+        {
+          "word": "achintya",
+          "meaning": "inconceivable"
+        },
+        {
+          "word": "rūpam",
+          "meaning": "divine form"
+        },
+        {
+          "word": "āditya-varṇam",
+          "meaning": "effulgent like the sun"
+        },
+        {
+          "word": "tamasaḥ",
+          "meaning": "to the darkness of ignorance"
+        },
+        {
+          "word": "parastāt",
+          "meaning": "beyond"
+        }
+      ]
+    },
+    {
+      "ref": "8.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "प्रयाणकाले मनसाऽचलेन\n\nभक्त्या युक्तो योगबलेन चैव।\n\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\n\nस तं परं पुरुषमुपैति दिव्यम्।।8.10।।",
+      "iast": "prayāṇakāle manasā'calena\n\nbhaktyā yukto yogabalena caiva|\n\nbhruvormadhye prāṇamāveśya samyak\n\nsa taṃ paraṃ puruṣamupaiti divyam||8.10||",
+      "en": "The Omniscient, the Ancient, the Overruler, minuter than an atom, the Sustainer of all, of form inconceivable, self-luminous like the sun, and beyond the darkness of Mâyâ—he who meditates on Him thus, at the time of death, full of devotion, with the mind unmoving, and also by the power of Yoga, fixing the whole Prâna betwixt the eye-brows, he goes to that Supreme, Resplendent Purusha.",
+      "word_meanings": [
+        {
+          "word": "prayāṇa-kāle",
+          "meaning": "at the time of death"
+        },
+        {
+          "word": "manasā",
+          "meaning": "mind"
+        },
+        {
+          "word": "achalena",
+          "meaning": "steadily"
+        },
+        {
+          "word": "bhaktyā",
+          "meaning": "remembering with great devotion"
+        },
+        {
+          "word": "yuktaḥ",
+          "meaning": "united"
+        },
+        {
+          "word": "yoga-balena",
+          "meaning": "through the power of yog"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "bhruvoḥ",
+          "meaning": "the two eyebrows"
+        },
+        {
+          "word": "madhye",
+          "meaning": "between"
+        },
+        {
+          "word": "prāṇam",
+          "meaning": "life airs"
+        },
+        {
+          "word": "āveśhya",
+          "meaning": "fixing"
+        },
+        {
+          "word": "samyak",
+          "meaning": "completely"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he"
+        },
+        {
+          "word": "tam",
+          "meaning": "him"
+        },
+        {
+          "word": "param puruṣham",
+          "meaning": "the Supreme Divine Lord"
+        },
+        {
+          "word": "upaiti",
+          "meaning": "attains"
+        },
+        {
+          "word": "divyam",
+          "meaning": "divine"
+        }
+      ]
+    },
+    {
+      "ref": "8.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यदक्षरं वेदविदो वदन्ति\n\nविशन्ति यद्यतयो वीतरागाः।\n\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\n\nतत्ते पदं संग्रहेण प्रवक्ष्ये।।8.11।।",
+      "iast": "yadakṣaraṃ vedavido vadanti\n\nviśanti yadyatayo vītarāgāḥ|\n\nyadicchanto brahmacaryaṃ caranti\n\ntatte padaṃ saṃgraheṇa pravakṣye||8.11||",
+      "en": "What the knowers of the Veda speak of as Imperishable, what the self-controlled (Sannyâsins), freed from attachment enter, and to gain which goal they live the life of a Brahmachârin, that I shall declare unto thee in brief.",
+      "word_meanings": [
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "akṣharam",
+          "meaning": "Imperishable"
+        },
+        {
+          "word": "veda-vidaḥ",
+          "meaning": "scholars of the Vedas"
+        },
+        {
+          "word": "vadanti",
+          "meaning": "describe"
+        },
+        {
+          "word": "viśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "yatayaḥ",
+          "meaning": "great ascetics"
+        },
+        {
+          "word": "vīta-rāgāḥ",
+          "meaning": "free from attachment"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "ichchhantaḥ",
+          "meaning": "desiring"
+        },
+        {
+          "word": "brahmacharyam",
+          "meaning": "celibacy"
+        },
+        {
+          "word": "charanti",
+          "meaning": "practice"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "te",
+          "meaning": "to you"
+        },
+        {
+          "word": "padam",
+          "meaning": "goal"
+        },
+        {
+          "word": "saṅgraheṇa",
+          "meaning": "briefly"
+        },
+        {
+          "word": "pravakṣhye",
+          "meaning": "I shall explain"
+        }
+      ]
+    },
+    {
+      "ref": "8.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।\n\nमूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्।।8.12।।",
+      "iast": "sarvadvārāṇi saṃyamya mano hṛdi nirudhya ca|\n\nmūrdhnyādhāyātmanaḥ prāṇamāsthito yogadhāraṇām||8.12||",
+      "en": "Controlling all the senses, confining the mind in the heart, drawing the Prâna into the head, occupied in the practice of concentration, uttering the one-syllabled \"Om\"—the Brahman, and meditating on Me;—he who so departs, leaving the body, attains the Supreme Goal.",
+      "word_meanings": [
+        {
+          "word": "sarva-dvārāṇi",
+          "meaning": "all gates"
+        },
+        {
+          "word": "sanyamya",
+          "meaning": "restraining"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "the mind"
+        },
+        {
+          "word": "hṛidi",
+          "meaning": "in the heart region"
+        },
+        {
+          "word": "nirudhya",
+          "meaning": "confining"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "mūrdhni",
+          "meaning": "in the head"
+        },
+        {
+          "word": "ādhāya",
+          "meaning": "establish"
+        },
+        {
+          "word": "ātmanaḥ",
+          "meaning": "of the self"
+        },
+        {
+          "word": "prāṇam",
+          "meaning": "the life breath"
+        },
+        {
+          "word": "āsthitaḥ",
+          "meaning": "situated (in)"
+        },
+        {
+          "word": "yoga-dhāraṇām",
+          "meaning": "the yogic concentration"
+        }
+      ]
+    },
+    {
+      "ref": "8.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।\n\nयः प्रयाति त्यजन्देहं स याति परमां गतिम्।।8.13।।",
+      "iast": "omityekākṣaraṃ brahma vyāharanmāmanusmaran|\n\nyaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim||8.13||",
+      "en": "Controlling all the senses, confining the mind in the heart, drawing the Prâna into the head, occupied in the practice of concentration, uttering the one-syllabled \"Om\"—the Brahman, and meditating on Me;—he who so departs, leaving the body, attains the Supreme Goal.",
+      "word_meanings": [
+        {
+          "word": "om",
+          "meaning": "sacred syllable representing the formless aspect of God"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "eka-akṣharam",
+          "meaning": "one syllabled"
+        },
+        {
+          "word": "brahma",
+          "meaning": "the Absolute Truth"
+        },
+        {
+          "word": "vyāharan",
+          "meaning": "chanting"
+        },
+        {
+          "word": "mām",
+          "meaning": "me (Shree Krishna)"
+        },
+        {
+          "word": "anusmaran",
+          "meaning": "remembering"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "prayāti",
+          "meaning": "departs"
+        },
+        {
+          "word": "tyajan",
+          "meaning": "quitting"
+        },
+        {
+          "word": "deham",
+          "meaning": "the body"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he"
+        },
+        {
+          "word": "yāti",
+          "meaning": "attains"
+        },
+        {
+          "word": "paramām",
+          "meaning": "the supreme"
+        },
+        {
+          "word": "gatim",
+          "meaning": "goal"
+        }
+      ]
+    },
+    {
+      "ref": "8.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अनन्यचेताः सततं यो मां स्मरति नित्यशः।\n\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः।।8.14।।",
+      "iast": "ananyacetāḥ satataṃ yo māṃ smarati nityaśaḥ|\n\ntasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ||8.14||",
+      "en": "I am easily attainable by that ever-steadfast Yogin who remembers Me constantly and daily, with a single mind, O son of Prithâ.",
+      "word_meanings": [
+        {
+          "word": "ananya-chetāḥ",
+          "meaning": "without deviation of the mind"
+        },
+        {
+          "word": "satatam",
+          "meaning": "always"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "smarati",
+          "meaning": "remembers"
+        },
+        {
+          "word": "nityaśhaḥ",
+          "meaning": "regularly"
+        },
+        {
+          "word": "tasya",
+          "meaning": "to him"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "su-labhaḥ",
+          "meaning": "easily attainable"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "nitya",
+          "meaning": "constantly"
+        },
+        {
+          "word": "yuktasya",
+          "meaning": "engaged"
+        },
+        {
+          "word": "yoginaḥ",
+          "meaning": "of the yogis"
+        }
+      ]
+    },
+    {
+      "ref": "8.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।\n\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः।।8.15।।",
+      "iast": "māmupetya punarjanma duḥkhālayamaśāśvatam|\n\nnāpnuvanti mahātmānaḥ saṃsiddhiṃ paramāṃ gatāḥ||8.15||",
+      "en": "Reaching the highest perfection, and having attained Me, the great-souled ones are no more subject to re-birth—which is the home of pain, and ephemeral.",
+      "word_meanings": [
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "upetya",
+          "meaning": "having attained"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        },
+        {
+          "word": "janma",
+          "meaning": "birth"
+        },
+        {
+          "word": "duḥkha-ālayam",
+          "meaning": "place full of miseries"
+        },
+        {
+          "word": "aśhāśhvatam",
+          "meaning": "temporary"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "āpnuvanti",
+          "meaning": "attain"
+        },
+        {
+          "word": "mahā-ātmānaḥ",
+          "meaning": "the great souls"
+        },
+        {
+          "word": "sansiddhim",
+          "meaning": "perfection"
+        },
+        {
+          "word": "paramām",
+          "meaning": "highest"
+        },
+        {
+          "word": "gatāḥ",
+          "meaning": "having achieved"
+        }
+      ]
+    },
+    {
+      "ref": "8.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।\n\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते।।8.16।।",
+      "iast": "ābrahmabhuvanāllokāḥ punarāvartino'rjuna|\n\nmāmupetya tu kaunteya punarjanma na vidyate||8.16||",
+      "en": "All the worlds, O Arjuna, including the realm of Brahmâ, are subject to return, but after attaining Me, O son of Kunti, there is no re-birth.",
+      "word_meanings": [
+        {
+          "word": "ā-brahma-bhuvanāt",
+          "meaning": "up to the abode of Brahma"
+        },
+        {
+          "word": "lokāḥ",
+          "meaning": "worlds"
+        },
+        {
+          "word": "punaḥ āvartinaḥ",
+          "meaning": "subject to rebirth"
+        },
+        {
+          "word": "arjuna",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "mām",
+          "meaning": "mine"
+        },
+        {
+          "word": "upetya",
+          "meaning": "having attained"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "punaḥ janma",
+          "meaning": "rebirth"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "vidyate",
+          "meaning": "is"
+        }
+      ]
+    },
+    {
+      "ref": "8.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।\n\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः।।8.17।।",
+      "iast": "sahasrayugaparyantamaharyadbrahmaṇo viduḥ|\n\nrātriṃ yugasahasrāntāṃ te'horātravido janāḥ||8.17||",
+      "en": "They who know (the true measure of) day and night, know the day of Brahmâ, which ends in a thousand Yugas, and the night which (also) ends in a thousand Yugas.",
+      "word_meanings": [
+        {
+          "word": "sahasra",
+          "meaning": "one thousand"
+        },
+        {
+          "word": "yuga",
+          "meaning": "age"
+        },
+        {
+          "word": "paryantam",
+          "meaning": "until"
+        },
+        {
+          "word": "ahaḥ",
+          "meaning": "one day"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "brahmaṇaḥ",
+          "meaning": "of Brahma"
+        },
+        {
+          "word": "viduḥ",
+          "meaning": "know"
+        },
+        {
+          "word": "rātrim",
+          "meaning": "night"
+        },
+        {
+          "word": "yuga-sahasra-antām",
+          "meaning": "lasts one thousand yugas"
+        },
+        {
+          "word": "te",
+          "meaning": "they"
+        },
+        {
+          "word": "ahaḥ-rātra-vidaḥ",
+          "meaning": "those who know his day and night"
+        },
+        {
+          "word": "janāḥ",
+          "meaning": "people"
+        }
+      ]
+    },
+    {
+      "ref": "8.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।\n\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके।।8.18।।",
+      "iast": "avyaktādvyaktayaḥ sarvāḥ prabhavantyaharāgame|\n\nrātryāgame pralīyante tatraivāvyaktasaṃjñake||8.18||",
+      "en": "At the approach of (Brahmâ's) day, all manifestations proceed from the unmanifested state; at the approach of night, they merge verily into that alone, which is called the unmanifested.",
+      "word_meanings": [
+        {
+          "word": "avyaktāt",
+          "meaning": "from the unmanifested"
+        },
+        {
+          "word": "vyaktayaḥ",
+          "meaning": "the manifested"
+        },
+        {
+          "word": "sarvāḥ",
+          "meaning": "all"
+        },
+        {
+          "word": "prabhavanti",
+          "meaning": "emanate"
+        },
+        {
+          "word": "ahaḥ-āgame",
+          "meaning": "at the advent of Brahma’s day"
+        },
+        {
+          "word": "rātri-āgame",
+          "meaning": "at the fall of Brahma’s night"
+        },
+        {
+          "word": "pralīyante",
+          "meaning": "they dissolve"
+        },
+        {
+          "word": "tatra",
+          "meaning": "into that"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "avyakta-sanjñake",
+          "meaning": "in that which is called the unmanifest"
+        }
+      ]
+    },
+    {
+      "ref": "8.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।\n\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे।।8.19।।",
+      "iast": "bhūtagrāmaḥ sa evāyaṃ bhūtvā bhūtvā pralīyate|\n\nrātryāgame'vaśaḥ pārtha prabhavatyaharāgame||8.19||",
+      "en": "The very same multitude of beings (that existed in the preceding day of Brahmâ), being born again and again, merge, in spite of themselves, O son of Prithâ, (into the unmanifested), at the approach of night, and re-manifest at the approach of day.",
+      "word_meanings": [
+        {
+          "word": "bhūta-grāmaḥ",
+          "meaning": "the multitude of beings"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "these"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this"
+        },
+        {
+          "word": "bhūtvā bhūtvā",
+          "meaning": "repeatedly taking birth"
+        },
+        {
+          "word": "pralīyate",
+          "meaning": "dissolves"
+        },
+        {
+          "word": "rātri-āgame",
+          "meaning": "with the advent of night"
+        },
+        {
+          "word": "avaśhaḥ",
+          "meaning": "helpless"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "prabhavati",
+          "meaning": "become manifest"
+        },
+        {
+          "word": "ahaḥ-āgame",
+          "meaning": "with the advent of day"
+        }
+      ]
+    },
+    {
+      "ref": "8.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।\n\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति।।8.20।।",
+      "iast": "parastasmāttu bhāvo'nyo'vyakto'vyaktātsanātanaḥ|\n\nyaḥ sa sarveṣu bhūteṣu naśyatsu na vinaśyati||8.20||",
+      "en": "But beyond this unmanifested, there is that other Unmanifested, Eternal Existence—That which is not destroyed at the destruction of all beings.",
+      "word_meanings": [
+        {
+          "word": "paraḥ",
+          "meaning": "transcendental"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "than that"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "bhāvaḥ",
+          "meaning": "creation"
+        },
+        {
+          "word": "anyaḥ",
+          "meaning": "another"
+        },
+        {
+          "word": "avyaktaḥ",
+          "meaning": "unmanifest"
+        },
+        {
+          "word": "avyaktāt",
+          "meaning": "to the unmanifest"
+        },
+        {
+          "word": "sanātanaḥ",
+          "meaning": "eternal"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that"
+        },
+        {
+          "word": "sarveṣhu",
+          "meaning": "all"
+        },
+        {
+          "word": "bhūteṣhu",
+          "meaning": "in beings"
+        },
+        {
+          "word": "naśhyatsu",
+          "meaning": "cease to exist"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "vinaśhyati",
+          "meaning": "is annihilated"
+        }
+      ]
+    },
+    {
+      "ref": "8.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।\n\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम।।8.21।।",
+      "iast": "avyakto'kṣara ityuktastamāhuḥ paramāṃ gatim|\n\nyaṃ prāpya na nivartante taddhāma paramaṃ mama||8.21||",
+      "en": "What has been called Unmanifested and Imperishable, has been described as the Goal Supreme. That is My highest state, having attained which, there is no return.",
+      "word_meanings": [
+        {
+          "word": "avyaktaḥ",
+          "meaning": "unmanifest"
+        },
+        {
+          "word": "akṣharaḥ",
+          "meaning": "imperishable"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "uktaḥ",
+          "meaning": "is said"
+        },
+        {
+          "word": "tam",
+          "meaning": "that"
+        },
+        {
+          "word": "āhuḥ",
+          "meaning": "is called"
+        },
+        {
+          "word": "paramām",
+          "meaning": "the supreme"
+        },
+        {
+          "word": "gatim",
+          "meaning": "destination"
+        },
+        {
+          "word": "yam",
+          "meaning": "which"
+        },
+        {
+          "word": "prāpya",
+          "meaning": "having reached"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "nivartante",
+          "meaning": "come back"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "dhāma",
+          "meaning": "abode"
+        },
+        {
+          "word": "paramam",
+          "meaning": "the supreme"
+        },
+        {
+          "word": "mama",
+          "meaning": "my"
+        }
+      ]
+    },
+    {
+      "ref": "8.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।\n\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्।।8.22।।",
+      "iast": "puruṣaḥ sa paraḥ pārtha bhaktyā labhyastvananyayā|\n\nyasyāntaḥsthāni bhūtāni yena sarvamidaṃ tatam||8.22||",
+      "en": "And that Supreme Purusha is attainable, O son of Prithâ, by whole-souled devotion to Him alone, in Whom all beings dwell, and by Whom all this is pervaded.",
+      "word_meanings": [
+        {
+          "word": "puruṣhaḥ",
+          "meaning": "the Supreme Divine Personality"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "he"
+        },
+        {
+          "word": "paraḥ",
+          "meaning": "greatest"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "bhaktyā",
+          "meaning": "through devotion"
+        },
+        {
+          "word": "labhyaḥ",
+          "meaning": "is attainable"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "ananyayā",
+          "meaning": "without another"
+        },
+        {
+          "word": "yasya",
+          "meaning": "of whom"
+        },
+        {
+          "word": "antaḥ-sthāni",
+          "meaning": "situated within"
+        },
+        {
+          "word": "bhūtāni",
+          "meaning": "beings"
+        },
+        {
+          "word": "yena",
+          "meaning": "by whom"
+        },
+        {
+          "word": "sarvam",
+          "meaning": "all"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "tatam",
+          "meaning": "is pervaded"
+        }
+      ]
+    },
+    {
+      "ref": "8.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।\n\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ।।8.23।।",
+      "iast": "yatra kāle tvanāvṛttimāvṛttiṃ caiva yoginaḥ|\n\nprayātā yānti taṃ kālaṃ vakṣyāmi bharatarṣabha||8.23||",
+      "en": "Now I shall tell thee, O bull of the Bhâratas, of the time (path) travelling in which, the Yogis return, (and again of that, taking which) they do not return.",
+      "word_meanings": [
+        {
+          "word": "yatra",
+          "meaning": "where"
+        },
+        {
+          "word": "kāle",
+          "meaning": "time"
+        },
+        {
+          "word": "tu",
+          "meaning": "certainly"
+        },
+        {
+          "word": "anāvṛittim",
+          "meaning": "no return"
+        },
+        {
+          "word": "āvṛittim",
+          "meaning": "return"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "yoginaḥ",
+          "meaning": "a yogi"
+        },
+        {
+          "word": "prayātāḥ",
+          "meaning": "having departed"
+        },
+        {
+          "word": "yānti",
+          "meaning": "attain"
+        },
+        {
+          "word": "tam",
+          "meaning": "that"
+        },
+        {
+          "word": "kālam",
+          "meaning": "time"
+        },
+        {
+          "word": "vakṣhyāmi",
+          "meaning": "I shall describe"
+        },
+        {
+          "word": "bharata-ṛiṣhabha",
+          "meaning": "Arjun, the best of the Bharatas"
+        }
+      ]
+    },
+    {
+      "ref": "8.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।\n\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः।।8.24।।",
+      "iast": "agnirjyotirahaḥ śuklaḥ ṣaṇmāsā uttarāyaṇam|\n\ntatra prayātā gacchanti brahma brahmavido janāḥ||8.24||",
+      "en": "Fire, flame, day-time, the bright fortnight, the six months of the Northern passage of the sun, taking this path, the knowers of Brahman go to Brahman.",
+      "word_meanings": [
+        {
+          "word": "agniḥ",
+          "meaning": "fire"
+        },
+        {
+          "word": "jyotiḥ",
+          "meaning": "light"
+        },
+        {
+          "word": "ahaḥ",
+          "meaning": "day"
+        },
+        {
+          "word": "śhuklaḥ",
+          "meaning": "the bright fortnight of the moon"
+        },
+        {
+          "word": "ṣhaṭ-māsāḥ",
+          "meaning": "six months"
+        },
+        {
+          "word": "uttara-ayanam",
+          "meaning": "the sun’s northern course"
+        },
+        {
+          "word": "tatra",
+          "meaning": "there"
+        },
+        {
+          "word": "prayātāḥ",
+          "meaning": "departed"
+        },
+        {
+          "word": "gachchhanti",
+          "meaning": "go"
+        },
+        {
+          "word": "brahma",
+          "meaning": "Brahman"
+        },
+        {
+          "word": "brahma-vidaḥ",
+          "meaning": "those who know the Brahman"
+        },
+        {
+          "word": "janāḥ",
+          "meaning": "persons"
+        }
+      ]
+    },
+    {
+      "ref": "8.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।\n\nतत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते।।8.25।।",
+      "iast": "dhūmo rātristathā kṛṣṇaḥ ṣaṇmāsā dakṣiṇāyanam|\n\ntatra cāndramasaṃ jyotiryogī prāpya nivartate||8.25||",
+      "en": "Smoke, night-time, the dark fortnight, the six months of the Southern passage of the sun—taking this path the Yogi, attaining the lunar light, returns.",
+      "word_meanings": [
+        {
+          "word": "dhūmaḥ",
+          "meaning": "smoke"
+        },
+        {
+          "word": "rātriḥ",
+          "meaning": "night"
+        },
+        {
+          "word": "tathā",
+          "meaning": "and"
+        },
+        {
+          "word": "kṛiṣhṇaḥ",
+          "meaning": "the dark fortnight of the moon"
+        },
+        {
+          "word": "ṣhaṭ-māsāḥ",
+          "meaning": "six months"
+        },
+        {
+          "word": "dakṣhiṇa-ayanam",
+          "meaning": "the sun’s southern course"
+        },
+        {
+          "word": "tatra",
+          "meaning": "there"
+        },
+        {
+          "word": "chāndra-masam",
+          "meaning": "lunar"
+        },
+        {
+          "word": "jyotiḥ",
+          "meaning": "light"
+        },
+        {
+          "word": "yogī",
+          "meaning": "a yogi"
+        },
+        {
+          "word": "prāpya",
+          "meaning": "attain"
+        },
+        {
+          "word": "nivartate",
+          "meaning": "comes back"
+        }
+      ]
+    },
+    {
+      "ref": "8.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।\n\nएकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः।।8.26।।",
+      "iast": "śuklakṛṣṇe gatī hyete jagataḥ śāśvate mate|\n\nekayā yātyanāvṛttimanyayā''vartate punaḥ||8.26||",
+      "en": "Truly are these bright and dark paths of the world considered eternal: one leads to non-return; by the other, one returns.",
+      "word_meanings": [
+        {
+          "word": "śhukla",
+          "meaning": "bright"
+        },
+        {
+          "word": "kṛiṣhṇe",
+          "meaning": "dark"
+        },
+        {
+          "word": "gatī",
+          "meaning": "paths"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "ete",
+          "meaning": "these"
+        },
+        {
+          "word": "jagataḥ",
+          "meaning": "of the material world"
+        },
+        {
+          "word": "śhāśhvate",
+          "meaning": "eternal"
+        },
+        {
+          "word": "mate",
+          "meaning": "opinion"
+        },
+        {
+          "word": "ekayā",
+          "meaning": "by one"
+        },
+        {
+          "word": "yāti",
+          "meaning": "goes"
+        },
+        {
+          "word": "anāvṛittim",
+          "meaning": "to non return"
+        },
+        {
+          "word": "anyayā",
+          "meaning": "by the other"
+        },
+        {
+          "word": "āvartate",
+          "meaning": "comes back"
+        },
+        {
+          "word": "punaḥ",
+          "meaning": "again"
+        }
+      ]
+    },
+    {
+      "ref": "8.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।\n\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन।।8.27।।",
+      "iast": "naite sṛtī pārtha jānanyogī muhyati kaścana|\n\ntasmātsarveṣu kāleṣu yogayukto bhavārjuna||8.27||",
+      "en": "No Yogi, O son of Prithâ, is deluded after knowing these paths. Therefore, O Arjuna, be thou steadfast in Yoga, at all times.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "ete",
+          "meaning": "these two"
+        },
+        {
+          "word": "sṛitī",
+          "meaning": "paths"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "jānan",
+          "meaning": "knowing"
+        },
+        {
+          "word": "yogī",
+          "meaning": "a yogi"
+        },
+        {
+          "word": "muhyati",
+          "meaning": "bewildered"
+        },
+        {
+          "word": "kaśhchana",
+          "meaning": "any"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "sarveṣhu kāleṣhu",
+          "meaning": "always"
+        },
+        {
+          "word": "yoga-yuktaḥ",
+          "meaning": "situated in Yog"
+        },
+        {
+          "word": "bhava",
+          "meaning": "be"
+        },
+        {
+          "word": "arjuna",
+          "meaning": "Arjun"
+        }
+      ]
+    },
+    {
+      "ref": "8.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "वेदेषु यज्ञेषु तपःसु चैव\n\nदानेषु यत्पुण्यफलं प्रदिष्टम्।\n\nअत्येति तत्सर्वमिदं विदित्वा\n\nयोगी परं स्थानमुपैति चाद्यम्।।8.28।।",
+      "iast": "vedeṣu yajñeṣu tapaḥsu caiva\n\ndāneṣu yatpuṇyaphalaṃ pradiṣṭam|\n\natyeti tatsarvamidaṃ viditvā\n\nyogī paraṃ sthānamupaiti cādyam||8.28||",
+      "en": "Whatever meritorious effect is declared (in the Scriptures) to accrue from (the study of) the Vedas, (the performance of) Yajnas, (the practice of) austerities and gifts,—above all this rises the Yogi, having known this, and attains to the primeval, supreme Abode.",
+      "word_meanings": [
+        {
+          "word": "vedeṣhu",
+          "meaning": "in the study of the Vedas"
+        },
+        {
+          "word": "yajñeṣhu",
+          "meaning": "in performance of sacrifices"
+        },
+        {
+          "word": "tapaḥsu",
+          "meaning": "in austerities"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "dāneṣhu",
+          "meaning": "in giving charities"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "puṇya-phalam",
+          "meaning": "fruit of merit"
+        },
+        {
+          "word": "pradiṣhṭam",
+          "meaning": "is gained"
+        },
+        {
+          "word": "atyeti",
+          "meaning": "surpasses"
+        },
+        {
+          "word": "tat sarvam",
+          "meaning": "all"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "viditvā",
+          "meaning": "having known"
+        },
+        {
+          "word": "yogī",
+          "meaning": "a yogi"
+        },
+        {
+          "word": "param",
+          "meaning": "Supreme"
+        },
+        {
+          "word": "sthānam",
+          "meaning": "Abode"
+        },
+        {
+          "word": "upaiti",
+          "meaning": "achieves"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "ādyam",
+          "meaning": "original"
+        }
+      ]
+    }
+  ]
+}

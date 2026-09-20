@@ -25,6 +25,30 @@ OUT = CONTENT / "generated"
 
 CLEARED = {"public_domain", "open_license", "permission_granted", "original"}
 
+# Valid enum values from supabase/migrations/0001_extensions_and_types.sql
+VALID_PERSON_KIND = {"deity", "avatara", "sage", "king", "queen", "devotee", "demon", "author", "narrator", "other"}
+VALID_PLACE_KIND = {"forest", "city", "river", "mountain", "tirtha", "loka", "kingdom", "other"}
+
+def normalize_person_kind(k: str | None) -> str:
+    k = k or "other"
+    if k in VALID_PERSON_KIND:
+        return k
+    # Legacy bug: entity_kind 'person' was written as person_kind
+    if k == "person":
+        return "other"
+    print(f"  ! unknown person_kind '{k}' -> 'other'", file=sys.stderr)
+    return "other"
+
+def normalize_place_kind(k: str | None) -> str:
+    k = k or "other"
+    if k in VALID_PLACE_KIND:
+        return k
+    # Legacy bug: 'field' is not a valid place_kind (Kurukshetra)
+    if k == "field":
+        return "tirtha"
+    print(f"  ! unknown place_kind '{k}' -> 'other'", file=sys.stderr)
+    return "other"
+
 
 def q(v):
     """SQL literal."""
@@ -119,13 +143,13 @@ on conflict (slug) do update set kind=excluded.kind, language_code=excluded.lang
     for p in graph.get("people", []):
         em.add(f"""
 insert into people (slug, kind, name_iast, name_sa, epithets, gender, description, status)
-values ({q(p['slug'])}, {q(p.get('kind','other'))}::person_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('epithets', []))}, {q(p.get('gender'))}, {q(p.get('description'))}, 'published')
+values ({q(p['slug'])}, {q(normalize_person_kind(p.get('kind')))}::person_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('epithets', []))}, {q(p.get('gender'))}, {q(p.get('description'))}, 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, epithets=excluded.epithets, gender=excluded.gender, description=excluded.description, status='published'""")
         emit_names(em, "person", "people", p)
     for p in graph.get("places", []):
         em.add(f"""
 insert into places (slug, kind, name_iast, name_sa, alt_names, description, modern_name, latitude, longitude, status)
-values ({q(p['slug'])}, {q(p.get('kind','other'))}::place_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('alt_names', []))}, {q(p.get('description'))}, {q(p.get('modern_name'))}, {q(p.get('latitude'))}, {q(p.get('longitude'))}, 'published')
+values ({q(p['slug'])}, {q(normalize_place_kind(p.get('kind')))}::place_kind, {q(p['name_iast'])}, {q(p['name_sa'])}, {q(p.get('alt_names', []))}, {q(p.get('description'))}, {q(p.get('modern_name'))}, {q(p.get('latitude'))}, {q(p.get('longitude'))}, 'published')
 on conflict (slug) do update set kind=excluded.kind, name_iast=excluded.name_iast, name_sa=excluded.name_sa, alt_names=excluded.alt_names, description=excluded.description, modern_name=excluded.modern_name, latitude=excluded.latitude, longitude=excluded.longitude, status='published'""")
         emit_names(em, "place", "places", p)
     for t in graph.get("topics", []):
@@ -135,58 +159,98 @@ values ({q(t['slug'])}, {q(t['name_iast'])}, {q(t.get('name_sa'))}, {q(t.get('de
 on conflict (slug) do update set name_iast=excluded.name_iast, name_sa=excluded.name_sa, description=excluded.description, status='published'""")
         emit_names(em, "topic", "topics", t)
 
-    # -- sections + verses
+    # -- sections + verses (generic: supports Bhāgavata 2-level canto→chapter and Gītā 1-level chapter)
     verse_files = sorted(glob.glob(str(work_dir / "**" / "verses.json"), recursive=True))
+    # Pre-compute generic edition slugs for rendering (per-work, not hardcoded sb-*)
+    def _find_edition(pred):
+        for eslug, e in editions.items():
+            if pred(e):
+                return eslug
+        return None
+    base_deva_slug = _find_edition(lambda e: e.get("kind") == "base_text" and e.get("language_code") == "sa" and e.get("script_code") == "Deva")
+    iast_slug = _find_edition(lambda e: e.get("kind") == "transliteration" and e.get("language_code") == "sa" and e.get("script_code") == "Latn" and not e.get("is_machine"))
+    en_slug = _find_edition(lambda e: e.get("kind") == "translation" and e.get("language_code") == "en")
+    ml_slug = _find_edition(lambda e: e.get("kind") == "translation" and e.get("language_code") == "ml")
+    wm_slug = _find_edition(lambda e: e.get("kind") == "word_meanings")
     all_xrefs = []
     for vf in verse_files:
         data = json.loads(pathlib.Path(vf).read_text(encoding="utf-8"))
         sec = data["section"]
-        canto, chap = sec["canto"], sec["chapter"]
-        em.add(f"""
+        # Determine section handling: 2-level (canto+chapter) vs 1-level (chapter only)
+        if "canto" in sec and "chapter" in sec:
+            canto, chap = sec["canto"], sec["chapter"]
+            em.add(f"""
 insert into sections (work_id, parent_id, level, ordinal, ref, title_iast, title_sa, status)
 values ((select id from works where slug={q(slug)}), null, 1, {canto['ordinal']}, {q(canto['ref'])}, {q(canto.get('title_iast'))}, {q(canto.get('title_sa'))}, 'published')
 on conflict (work_id, ref) do update set title_iast=excluded.title_iast, title_sa=excluded.title_sa, ordinal=excluded.ordinal, status='published'""")
-        em.add(f"""
+            em.add(f"""
 insert into sections (work_id, parent_id, level, ordinal, ref, title_iast, title_sa, summary, status, metadata)
 values ((select id from works where slug={q(slug)}), (select id from sections where work_id=(select id from works where slug={q(slug)}) and ref={q(canto['ref'])}),
         2, {chap['ordinal']}, {q(chap['ref'])}, {q(chap.get('title_iast'))}, {q(chap.get('title_sa'))}, {q(chap.get('summary_en'))}, 'published',
         {jq({k: v for k, v in chap.items() if k not in ('ref', 'ordinal')})})
 on conflict (work_id, ref) do update set title_iast=excluded.title_iast, title_sa=excluded.title_sa, summary=excluded.summary, ordinal=excluded.ordinal, parent_id=excluded.parent_id, status='published', metadata=excluded.metadata""")
-        # section-level localized titles
+            chapter_ref = chap["ref"]
+            chapter_obj = chap
+        elif "chapter" in sec and "canto" not in sec:
+            chap = sec["chapter"]
+            em.add(f"""
+insert into sections (work_id, parent_id, level, ordinal, ref, title_iast, title_sa, summary, status, metadata)
+values ((select id from works where slug={q(slug)}), null,
+        1, {chap['ordinal']}, {q(chap['ref'])}, {q(chap.get('title_iast'))}, {q(chap.get('title_sa'))}, {q(chap.get('summary_en'))}, 'published',
+        {jq({k: v for k, v in chap.items() if k not in ('ref', 'ordinal')})})
+on conflict (work_id, ref) do update set title_iast=excluded.title_iast, title_sa=excluded.title_sa, summary=excluded.summary, ordinal=excluded.ordinal, parent_id=excluded.parent_id, status='published', metadata=excluded.metadata""")
+            chapter_ref = chap["ref"]
+            chapter_obj = chap
+        else:
+            raise SystemExit(f"section structure not recognised in {vf}: {list(sec.keys())} — expected canto+chapter (Bhāgavata) or chapter only (Gītā)")
+        # section-level localized titles (generic: find translation editions by language)
         for lang, key in (("en", "title_en"), ("ml", "title_ml")):
-            if chap.get(key):
-                ed = {"en": "sb-en-dl", "ml": "sb-ml-dl"}[lang]
-                em.add(f"""
+            if chapter_obj.get(key):
+                ed = en_slug if lang == "en" else ml_slug
+                if ed:
+                    em.add(f"""
 insert into section_contents (section_id, edition_id, title, summary, status)
-values ((select id from sections where ref={q(chap['ref'])} and work_id=(select id from works where slug={q(slug)})), (select id from editions where slug={q(ed)}), {q(chap[key])}, {q(chap.get('summary_' + lang))}, 'published')
+values ((select id from sections where ref={q(chapter_ref)} and work_id=(select id from works where slug={q(slug)})), (select id from editions where slug={q(ed)}), {q(chapter_obj[key])}, {q(chapter_obj.get('summary_' + lang))}, 'published')
 on conflict (section_id, edition_id) do update set title=excluded.title, summary=excluded.summary, status='published'""")
 
         prev = 0
         for v in data["verses"]:
-            assert v["ref"].startswith(chap["ref"] + "."), f"{v['ref']} not in {chap['ref']}"
-            assert v["ordinal"] == prev + 1, f"non-dense ordinal at {v['ref']}"
+            assert v["ref"].startswith(chapter_ref + "."), f"{v['ref']} not in {chapter_ref} (file {vf})"
+            assert v["ordinal"] == prev + 1, f"non-dense ordinal at {v['ref']} (expected {prev+1})"
             prev = v["ordinal"]
             assert v["deva"].strip() and v["iast"].strip(), f"empty base text at {v['ref']}"
             em.add(f"""
 insert into verses (work_id, section_id, ordinal, ref, kind, meter, speaker_id, status)
-values ((select id from works where slug={q(slug)}), (select id from sections where ref={q(chap['ref'])} and work_id=(select id from works where slug={q(slug)})),
+values ((select id from works where slug={q(slug)}), (select id from sections where ref={q(chapter_ref)} and work_id=(select id from works where slug={q(slug)})),
         {v['ordinal']}, {q(v['ref'])}, {q(v.get('kind','verse'))}::verse_kind, {q(v.get('meter'))}, (select id from people where slug={q(v.get('speaker'))}), 'published')
 on conflict (work_id, ref) do update set ordinal=excluded.ordinal, kind=excluded.kind, meter=excluded.meter, speaker_id=excluded.speaker_id, section_id=excluded.section_id, status='published'""")
 
-            renderings = {"sb-mula-deva": v["deva"], "sb-iast": v["iast"], "sb-en-dl": v.get("en"), "sb-ml-dl": v.get("ml")}
+            # Generic renderings: map deva/iast/en/ml via discovered edition slugs (not hardcoded sb-*)
+            renderings = {}
+            if base_deva_slug:
+                renderings[base_deva_slug] = v["deva"]
+            if iast_slug:
+                renderings[iast_slug] = v["iast"]
+            if en_slug and v.get("en"):
+                renderings[en_slug] = v["en"]
+            if ml_slug and v.get("ml"):
+                renderings[ml_slug] = v["ml"]
             # machine transliterations of the Devanagari base into other Indic scripts
             for eslug, e in editions.items():
-                if e.get("is_machine") and e["kind"] == "transliteration" and e.get("derived_from") == "sb-mula-deva":
-                    renderings[eslug] = deva_to_script(v["deva"], e["script_code"])
+                if e.get("is_machine") and e["kind"] == "transliteration" and e.get("derived_from"):
+                    if e["derived_from"] == base_deva_slug:
+                        renderings[eslug] = deva_to_script(v["deva"], e["script_code"])
             for eslug, body in renderings.items():
                 if not body:
                     continue
-                notes = v.get("notes_en") if eslug == "sb-en-dl" else None
+                notes = v.get("notes_en") if eslug == en_slug else None
                 if eslug in editions and editions[eslug].get("is_machine") and editions[eslug]["script_code"] in LOSSY:
                     notes = "Automatic conversion; this script cannot represent every Sanskrit sound distinctly."
                 emit_content(em, slug, v["ref"], eslug, body, notes=notes)
             if v.get("word_meanings"):
-                emit_content(em, slug, v["ref"], "sb-wm-en", "\n".join(f"{w['word']} — {w['meaning']}" for w in v["word_meanings"]), word_meanings=v["word_meanings"])
+                target_wm = wm_slug or "sb-wm-en"
+                if target_wm in editions or slug == "bhagavata-purana":
+                    emit_content(em, slug, v["ref"], target_wm, "\n".join(f"{w['word']} — {w['meaning']}" for w in v["word_meanings"]), word_meanings=v["word_meanings"])
 
             for m in v.get("mentions", []):
                 table = {"person": "people", "place": "places", "topic": "topics", "story": "stories"}[m["kind"]]

@@ -1,0 +1,2866 @@
+{
+  "_note": "Bhagavad Gītā 1 — 47 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "1",
+      "ordinal": 1,
+      "title_iast": "Arjuna-viṣāda-yoga",
+      "title_sa": "अर्जुनविषादयोगः",
+      "title_en": "Arjuna's Dejection",
+      "title_ml": "അർജുനവിഷാദയോഗം",
+      "summary_en": "Chapter 1: Arjuna's Dejection — 47 verses",
+      "summary_ml": "അധ്യായം 1: അർജുനവിഷാദയോഗം — 47 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे अर्जुनविषादयोगः नाम 1ोऽध्यायः ॥ 1 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "1.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "dhritarashtra",
+      "deva": "धृतराष्ट्र उवाच\n\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\n\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।",
+      "iast": "dhṛtarāṣṭra uvāca\n\ndharmakṣetre kurukṣetre samavetā yuyutsavaḥ|\n\nmāmakāḥ pāṇḍavāścaiva kimakurvata sañjaya||1.1||",
+      "en": "Tell me, O Sanjaya! Assembled on Kurukshetra, the centre of religious activity, desirous to fight, what indeed did my people and the Pândavas do?",
+      "word_meanings": [
+        {
+          "word": "dhṛitarāśhtraḥ uvācha",
+          "meaning": "Dhritarashtra said"
+        },
+        {
+          "word": "dharma-kṣhetre",
+          "meaning": "the land of dharma"
+        },
+        {
+          "word": "kuru-kṣhetre",
+          "meaning": "at Kurukshetra"
+        },
+        {
+          "word": "samavetāḥ",
+          "meaning": "having gathered"
+        },
+        {
+          "word": "yuyutsavaḥ",
+          "meaning": "desiring to fight"
+        },
+        {
+          "word": "māmakāḥ",
+          "meaning": "my sons"
+        },
+        {
+          "word": "pāṇḍavāḥ",
+          "meaning": "the sons of Pandu"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "akurvata",
+          "meaning": "did they do"
+        },
+        {
+          "word": "sañjaya",
+          "meaning": "Sanjay"
+        }
+      ]
+    },
+    {
+      "ref": "1.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।\n\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।1.2।।",
+      "iast": "sañjaya uvāca\n\ndṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā|\n\nācāryamupasaṅgamya rājā vacanamabravīt||1.2||",
+      "en": "But then King Duryodhana, having seen the Pândava forces in battle-array, approached his teacher Drona, and spoke these words:",
+      "word_meanings": [
+        {
+          "word": "sanjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "on observing"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "pāṇḍava-anīkam",
+          "meaning": "the Pandava army"
+        },
+        {
+          "word": "vyūḍham",
+          "meaning": "standing in a military formation"
+        },
+        {
+          "word": "duryodhanaḥ",
+          "meaning": "King Duryodhan"
+        },
+        {
+          "word": "tadā",
+          "meaning": "then"
+        },
+        {
+          "word": "āchāryam",
+          "meaning": "teacher"
+        },
+        {
+          "word": "upasaṅgamya",
+          "meaning": "approached"
+        },
+        {
+          "word": "rājā",
+          "meaning": "the king"
+        },
+        {
+          "word": "vachanam",
+          "meaning": "words"
+        },
+        {
+          "word": "abravīt",
+          "meaning": "spoke"
+        }
+      ]
+    },
+    {
+      "ref": "1.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।\n\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।1.3।।",
+      "iast": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm|\n\nvyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā||1.3||",
+      "en": "\"Behold, O Teacher! this mighty army of the sons of Pându, arrayed by the son of Drupada, thy gifted pupil.",
+      "word_meanings": [
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "etām",
+          "meaning": "this"
+        },
+        {
+          "word": "pāṇḍu-putrāṇām",
+          "meaning": "of the sons of Pandu"
+        },
+        {
+          "word": "āchārya",
+          "meaning": "respected teacher"
+        },
+        {
+          "word": "mahatīm",
+          "meaning": "mighty"
+        },
+        {
+          "word": "chamūm",
+          "meaning": "army"
+        },
+        {
+          "word": "vyūḍhām",
+          "meaning": "arrayed in a military formation"
+        },
+        {
+          "word": "drupada-putreṇa",
+          "meaning": "son of Drupad, Dhrishtadyumna"
+        },
+        {
+          "word": "tava",
+          "meaning": "by your"
+        },
+        {
+          "word": "śhiṣhyeṇa",
+          "meaning": "disciple"
+        },
+        {
+          "word": "dhī-matā",
+          "meaning": "intelligent"
+        }
+      ]
+    },
+    {
+      "ref": "1.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।\n\nयुयुधानो विराटश्च द्रुपदश्च महारथः।।1.4।।",
+      "iast": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi|\n\nyuyudhāno virāṭaśca drupadaśca mahārathaḥ||1.4||",
+      "en": "\"Here (are) heroes, mighty archers, the equals in battle of Bhima and Arjuna—the great warriors Yuyudhâna, Virâta, Drupada; the valiant Dhrishtaketu, Chekitâna and the king of Kâshi; the best of men, Purujit, Kunti-Bhoja and Shaivya; the powerful Yudhâmanyu, and the brave Uttamaujas, the son of Subhadrâ, and the sons of Draupadi,—lords of great chariots.",
+      "word_meanings": [
+        {
+          "word": "atra",
+          "meaning": "here"
+        },
+        {
+          "word": "śhūrāḥ",
+          "meaning": "powerful warriors"
+        },
+        {
+          "word": "mahā-iṣhu-āsāḥ",
+          "meaning": "great bowmen"
+        },
+        {
+          "word": "bhīma-arjuna-samāḥ",
+          "meaning": "equal to Bheem and Arjun"
+        },
+        {
+          "word": "yudhi",
+          "meaning": "in military prowess"
+        },
+        {
+          "word": "yuyudhānaḥ",
+          "meaning": "Yuyudhan"
+        },
+        {
+          "word": "virāṭaḥ",
+          "meaning": "Virat"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "drupadaḥ",
+          "meaning": "Drupad"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "mahā-rathaḥ",
+          "meaning": "warriors who could single handedly match the strength of ten thousand ordinary warriors"
+        }
+      ]
+    },
+    {
+      "ref": "1.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।\n\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः।।1.5।।",
+      "iast": "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān|\n\npurujitkuntibhojaśca śaibyaśca narapuṅgavaḥ||1.5||",
+      "en": "\"Here (are) heroes, mighty archers, the equals in battle of Bhima and Arjuna—the great warriors Yuyudhâna, Virâta, Drupada; the valiant Dhrishtaketu, Chekitâna and the king of Kâshi; the best of men, Purujit, Kunti-Bhoja and Shaivya; the powerful Yudhâmanyu, and the brave Uttamaujas, the son of Subhadrâ, and the sons of Draupadi,—lords of great chariots.",
+      "word_meanings": [
+        {
+          "word": "dhṛiṣhṭaketuḥ",
+          "meaning": "Dhrishtaketu"
+        },
+        {
+          "word": "chekitānaḥ",
+          "meaning": "Chekitan"
+        },
+        {
+          "word": "kāśhirājaḥ",
+          "meaning": "Kashiraj"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "vīrya-vān",
+          "meaning": "heroic"
+        },
+        {
+          "word": "purujit",
+          "meaning": "Purujit"
+        },
+        {
+          "word": "kuntibhojaḥ",
+          "meaning": "Kuntibhoj"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śhaibyaḥ",
+          "meaning": "Shaibya"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "nara-puṅgavaḥ",
+          "meaning": "best of men"
+        },
+        {
+          "word": "yudhāmanyuḥ",
+          "meaning": "Yudhamanyu"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "vikrāntaḥ",
+          "meaning": "courageous"
+        },
+        {
+          "word": "uttamaujāḥ",
+          "meaning": "Uttamauja"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "vīrya-vān",
+          "meaning": "gallant"
+        }
+      ]
+    },
+    {
+      "ref": "1.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।\n\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः।।1.6।।",
+      "iast": "yudhāmanyuśca vikrānta uttamaujāśca vīryavān|\n\nsaubhadro draupadeyāśca sarva eva mahārathāḥ||1.6||",
+      "en": "\"Here (are) heroes, mighty archers, the equals in battle of Bhima and Arjuna—the great warriors Yuyudhâna, Virâta, Drupada; the valiant Dhrishtaketu, Chekitâna and the king of Kâshi; the best of men, Purujit, Kunti-Bhoja and Shaivya; the powerful Yudhâmanyu, and the brave Uttamaujas, the son of Subhadrâ, and the sons of Draupadi,—lords of great chariots.",
+      "word_meanings": [
+        {
+          "word": "saubhadraḥ",
+          "meaning": "the son of Subhadra"
+        },
+        {
+          "word": "draupadeyāḥ",
+          "meaning": "the sons of Draupadi"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "mahā-rathāḥ",
+          "meaning": "warriors who could single handedly match the strength of ten thousand ordinary warriors"
+        }
+      ]
+    },
+    {
+      "ref": "1.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।\n\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते।।1.7।।",
+      "iast": "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama|\n\nnāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te||1.7||",
+      "en": "\"Hear also, O Best of the twice-born! the names of those who (are) distinguished amongst ourselves, the leaders of my army. These I relate (to you) for your information.",
+      "word_meanings": [
+        {
+          "word": "asmākam",
+          "meaning": "ours"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "viśhiṣhṭāḥ",
+          "meaning": "special"
+        },
+        {
+          "word": "ye",
+          "meaning": "who"
+        },
+        {
+          "word": "tān",
+          "meaning": "them"
+        },
+        {
+          "word": "nibodha",
+          "meaning": "be informed"
+        },
+        {
+          "word": "dwija-uttama",
+          "meaning": "best of Brahmnis"
+        },
+        {
+          "word": "nāyakāḥ",
+          "meaning": "principal generals"
+        },
+        {
+          "word": "mama",
+          "meaning": "our"
+        },
+        {
+          "word": "sainyasya",
+          "meaning": "of army"
+        },
+        {
+          "word": "sanjñā-artham",
+          "meaning": "for information"
+        },
+        {
+          "word": "tān",
+          "meaning": "them"
+        },
+        {
+          "word": "bravīmi",
+          "meaning": "I recount"
+        },
+        {
+          "word": "te",
+          "meaning": "unto you"
+        }
+      ]
+    },
+    {
+      "ref": "1.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।\n\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।1.8।।",
+      "iast": "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ|\n\naśvatthāmā vikarṇaśca saumadattistathaiva ca||1.8||",
+      "en": "\"Yourself and Bhishma and Karna and Kripa, the victorious in war. Asvatthâmâ and Vikarna and Jayadratha, the son of Somadatta.",
+      "word_meanings": [
+        {
+          "word": "bhavān",
+          "meaning": "yourself"
+        },
+        {
+          "word": "bhīṣhmaḥ",
+          "meaning": "Bheeshma"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "karṇaḥ",
+          "meaning": "Karna"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "kṛipaḥ",
+          "meaning": "Kripa"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "samitim-jayaḥ",
+          "meaning": "victorious in battle"
+        },
+        {
+          "word": "aśhvatthāmā",
+          "meaning": "Ashvatthama"
+        },
+        {
+          "word": "vikarṇaḥ",
+          "meaning": "Vikarna"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "saumadattiḥ",
+          "meaning": "Bhurishrava"
+        },
+        {
+          "word": "tathā",
+          "meaning": "thus"
+        },
+        {
+          "word": "eva",
+          "meaning": "even"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        }
+      ]
+    },
+    {
+      "ref": "1.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।\n\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः।।1.9।।",
+      "iast": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ|\n\nnānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ||1.9||",
+      "en": "\"And many other heroes also, well-skilled in fight, and armed with many kinds of weapons, are here, determined to lay down their lives for my sake.",
+      "word_meanings": [
+        {
+          "word": "anye",
+          "meaning": "others"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "bahavaḥ",
+          "meaning": "many"
+        },
+        {
+          "word": "śhūrāḥ",
+          "meaning": "heroic warriors"
+        },
+        {
+          "word": "mat-arthe",
+          "meaning": "for my sake"
+        },
+        {
+          "word": "tyakta-jīvitāḥ",
+          "meaning": "prepared to lay down their lives"
+        },
+        {
+          "word": "nānā-śhastra-praharaṇāḥ",
+          "meaning": "equipped with various kinds of weapons"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "yuddha-viśhāradāḥ",
+          "meaning": "skilled in the art of warfare"
+        }
+      ]
+    },
+    {
+      "ref": "1.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।\n\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्।।1.10।।",
+      "iast": "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam|\n\nparyāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam||1.10||",
+      "en": "\"This our army defended by Bhishma (is) impossible to be counted, but that army of theirs, defended by Bhima (is) easy to number.",
+      "word_meanings": [
+        {
+          "word": "aparyāptam",
+          "meaning": "unlimited"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "asmākam",
+          "meaning": "ours"
+        },
+        {
+          "word": "balam",
+          "meaning": "strength"
+        },
+        {
+          "word": "bhīṣhma",
+          "meaning": "by Grandsire Bheeshma"
+        },
+        {
+          "word": "abhirakṣhitam",
+          "meaning": "safely marshalled"
+        },
+        {
+          "word": "paryāptam",
+          "meaning": "limited"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "eteṣhām",
+          "meaning": "their"
+        },
+        {
+          "word": "balam",
+          "meaning": "strength"
+        },
+        {
+          "word": "bhīma",
+          "meaning": "Bheem"
+        },
+        {
+          "word": "abhirakṣhitam",
+          "meaning": "carefully marshalled"
+        }
+      ]
+    },
+    {
+      "ref": "1.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अयनेषु च सर्वेषु यथाभागमवस्थिताः।\n\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि।।1.11।।",
+      "iast": "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ|\n\nbhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi||1.11||",
+      "en": "\"(Now) do, being stationed in your proper places in the divisions of the army, support Bhishma alone.\"",
+      "word_meanings": [
+        {
+          "word": "ayaneṣhu",
+          "meaning": "at the strategic points"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "sarveṣhu",
+          "meaning": "all"
+        },
+        {
+          "word": "yathā-bhāgam",
+          "meaning": "in respective position"
+        },
+        {
+          "word": "avasthitāḥ",
+          "meaning": "situated"
+        },
+        {
+          "word": "bhīṣhmam",
+          "meaning": "to Grandsire Bheeshma"
+        },
+        {
+          "word": "eva",
+          "meaning": "only"
+        },
+        {
+          "word": "abhirakṣhantu",
+          "meaning": "defend"
+        },
+        {
+          "word": "bhavantaḥ",
+          "meaning": "you"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "eva hi",
+          "meaning": "even as"
+        }
+      ]
+    },
+    {
+      "ref": "1.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः।\n\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्।।1.12।।",
+      "iast": "tasya saṃjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ|\n\nsiṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān||1.12||",
+      "en": "That powerful, oldest of the Kurus, Bhishma the grandsire, in order to cheer Duryodhana, now sounded aloud a lion-roar and blew his conch.",
+      "word_meanings": [
+        {
+          "word": "tasya",
+          "meaning": "his"
+        },
+        {
+          "word": "sañjanayan",
+          "meaning": "causing"
+        },
+        {
+          "word": "harṣham",
+          "meaning": "joy"
+        },
+        {
+          "word": "kuru-vṛiddhaḥ",
+          "meaning": "the grand old man of the Kuru dynasty (Bheeshma)"
+        },
+        {
+          "word": "pitāmahaḥ",
+          "meaning": "grandfather"
+        },
+        {
+          "word": "sinha-nādam",
+          "meaning": "lion’s roar"
+        },
+        {
+          "word": "vinadya",
+          "meaning": "sounding"
+        },
+        {
+          "word": "uchchaiḥ",
+          "meaning": "very loudly"
+        },
+        {
+          "word": "śhaṅkham",
+          "meaning": "conch shell"
+        },
+        {
+          "word": "dadhmau",
+          "meaning": "blew"
+        },
+        {
+          "word": "pratāpa-vān",
+          "meaning": "the glorious"
+        }
+      ]
+    },
+    {
+      "ref": "1.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः।\n\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्।।1.13।।",
+      "iast": "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ|\n\nsahasaivābhyahanyanta sa śabdastumulo'bhavat||1.13||",
+      "en": "Then following Bhishma, conches and kettle-drums, tabors, trumpets and cowhorns blared forth suddenly from the Kaurava side and the noise was tremendous.",
+      "word_meanings": [
+        {
+          "word": "tataḥ",
+          "meaning": "thereafter"
+        },
+        {
+          "word": "śhaṅkhāḥ",
+          "meaning": "conches"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "bheryaḥ",
+          "meaning": "bugles"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "paṇava-ānaka",
+          "meaning": "drums and kettledrums"
+        },
+        {
+          "word": "go-mukhāḥ",
+          "meaning": "trumpets"
+        },
+        {
+          "word": "sahasā",
+          "meaning": "suddenly"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "abhyahanyanta",
+          "meaning": "blared forth"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that"
+        },
+        {
+          "word": "śhabdaḥ",
+          "meaning": "sound"
+        },
+        {
+          "word": "tumulaḥ",
+          "meaning": "overwhelming"
+        },
+        {
+          "word": "abhavat",
+          "meaning": "was"
+        }
+      ]
+    },
+    {
+      "ref": "1.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ।\n\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः।।1.14।।",
+      "iast": "tataḥ śvetairhayairyukte mahati syandane sthitau|\n\nmādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ||1.14||",
+      "en": "Then, also, Mâdhava and Pândava, stationed in their magnificent chariot yoked with white horses, blew their divine conches with a furious noise.",
+      "word_meanings": [
+        {
+          "word": "tataḥ",
+          "meaning": "then"
+        },
+        {
+          "word": "śhvetaiḥ",
+          "meaning": "by white"
+        },
+        {
+          "word": "hayaiḥ",
+          "meaning": "horses"
+        },
+        {
+          "word": "yukte",
+          "meaning": "yoked"
+        },
+        {
+          "word": "mahati",
+          "meaning": "glorious"
+        },
+        {
+          "word": "syandane",
+          "meaning": "chariot"
+        },
+        {
+          "word": "sthitau",
+          "meaning": "seated"
+        },
+        {
+          "word": "mādhavaḥ",
+          "meaning": "Shree Krishna, the husband of the goddess of fortune, Lakshmi"
+        },
+        {
+          "word": "pāṇḍavaḥ",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "also"
+        },
+        {
+          "word": "divyau",
+          "meaning": "Divine"
+        },
+        {
+          "word": "śhaṅkhau",
+          "meaning": "conch shells"
+        },
+        {
+          "word": "pradadhmatuḥ",
+          "meaning": "blew"
+        }
+      ]
+    },
+    {
+      "ref": "1.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः।\n\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः।।1.15।।",
+      "iast": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanaṃjayaḥ|\n\npauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ||1.15||",
+      "en": "Hrishikesha blew the Pânchajanya, Dhananjaya, the Devadatta, and Vrikodara, the doer of terrific deeds, his large conch Paundra.",
+      "word_meanings": [
+        {
+          "word": "pāñchajanyam",
+          "meaning": "the conch shell named Panchajanya"
+        },
+        {
+          "word": "hṛiṣhīka-īśhaḥ",
+          "meaning": "Shree Krishna, the Lord of the mind and senses"
+        },
+        {
+          "word": "devadattam",
+          "meaning": "the conch shell named Devadutta"
+        },
+        {
+          "word": "dhanam-jayaḥ",
+          "meaning": "Arjun, the winner of wealth"
+        },
+        {
+          "word": "pauṇḍram",
+          "meaning": "the conch named Paundra"
+        },
+        {
+          "word": "dadhmau",
+          "meaning": "blew"
+        },
+        {
+          "word": "mahā-śhaṅkham",
+          "meaning": "mighty conch"
+        },
+        {
+          "word": "bhīma-karmā",
+          "meaning": "one who performs herculean tasks"
+        },
+        {
+          "word": "vṛika-udaraḥ",
+          "meaning": "Bheem, the voracious eater"
+        }
+      ]
+    },
+    {
+      "ref": "1.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।\n\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ।।1.16।।",
+      "iast": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ|\n\nnakulaḥ sahadevaśca sughoṣamaṇipuṣpakau||1.16||",
+      "en": "King Yudhishthira, son of Kunti, blew the conch named Anantavijaya, and Nakula and Sahadeva, their Sughosha and Manipushpaka.",
+      "word_meanings": [
+        {
+          "word": "ananta-vijayam",
+          "meaning": "the conch named Anantavijay"
+        },
+        {
+          "word": "rājā",
+          "meaning": "king"
+        },
+        {
+          "word": "kuntī-putraḥ",
+          "meaning": "son of Kunti"
+        },
+        {
+          "word": "yudhiṣhṭhiraḥ",
+          "meaning": "Yudhishthir"
+        },
+        {
+          "word": "nakulaḥ",
+          "meaning": "Nakul"
+        },
+        {
+          "word": "sahadevaḥ",
+          "meaning": "Sahadev"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sughoṣha-maṇipuṣhpakau",
+          "meaning": "the conche shells named Sughosh and Manipushpak"
+        }
+      ]
+    },
+    {
+      "ref": "1.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "काश्यश्च परमेष्वासः शिखण्डी च महारथः।\n\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।।1.17।।",
+      "iast": "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ|\n\ndhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ||1.17||",
+      "en": "The expert bowman, king of Kâshi, and the great warrior Shikhandi, Dhrishtadyumna and Virâta and the unconquered Sâtyaki;",
+      "word_meanings": [
+        {
+          "word": "kāśhyaḥ",
+          "meaning": "King of Kashi"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "parama-iṣhu-āsaḥ",
+          "meaning": "the excellent archer"
+        },
+        {
+          "word": "śhikhaṇḍī",
+          "meaning": "Shikhandi"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "mahā-rathaḥ",
+          "meaning": "warriors who could single handedly match the strength of ten thousand ordinary warriors"
+        },
+        {
+          "word": "dhṛiṣhṭadyumnaḥ",
+          "meaning": "Dhrishtadyumna"
+        },
+        {
+          "word": "virāṭaḥ",
+          "meaning": "Virat"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sātyakiḥ",
+          "meaning": "Satyaki"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "aparājitaḥ",
+          "meaning": "invincible"
+        }
+      ]
+    },
+    {
+      "ref": "1.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।\n\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्।।1.18।।",
+      "iast": "drupado draupadeyāśca sarvaśaḥ pṛthivīpate|\n\nsaubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak||1.18||",
+      "en": "O Lord of Earth! Drupada and the sons of Draupadi, and the mighty-armed son of Subhadrâ, all, also blew each his own conch.",
+      "word_meanings": [
+        {
+          "word": "drupadaḥ",
+          "meaning": "Drupad"
+        },
+        {
+          "word": "draupadeyāḥ",
+          "meaning": "the five sons of Draupadi"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "sarvaśhaḥ",
+          "meaning": "all"
+        },
+        {
+          "word": "pṛithivī-pate",
+          "meaning": "Ruler of the earth"
+        },
+        {
+          "word": "saubhadraḥ",
+          "meaning": "Abhimanyu, the son of Subhadra"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "mahā-bāhuḥ",
+          "meaning": "the mighty-armed"
+        },
+        {
+          "word": "śhaṅkhān",
+          "meaning": "conch shells"
+        },
+        {
+          "word": "dadhmuḥ",
+          "meaning": "blew"
+        },
+        {
+          "word": "pṛithak pṛithak",
+          "meaning": "individually"
+        }
+      ]
+    },
+    {
+      "ref": "1.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।\n\nनभश्च पृथिवीं चैव तुमुलो व्यनुनादयन्।।1.19।।",
+      "iast": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat|\n\nnabhaśca pṛthivīṃ caiva tumulo vyanunādayan||1.19||",
+      "en": "And the terrific noise resounding throughout heaven and earth rent the hearts of Dhritarâshtra's party.",
+      "word_meanings": [
+        {
+          "word": "saḥ",
+          "meaning": "that"
+        },
+        {
+          "word": "ghoṣhaḥ",
+          "meaning": "sound"
+        },
+        {
+          "word": "dhārtarāṣhṭrāṇām",
+          "meaning": "of Dhritarashtra’s sons"
+        },
+        {
+          "word": "hṛidayāni",
+          "meaning": "hearts"
+        },
+        {
+          "word": "vyadārayat",
+          "meaning": "shattered"
+        },
+        {
+          "word": "nabhaḥ",
+          "meaning": "the sky"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pṛithivīm",
+          "meaning": "the earth"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "tumulaḥ",
+          "meaning": "terrific sound"
+        },
+        {
+          "word": "abhyanunādayan",
+          "meaning": "thundering"
+        }
+      ]
+    },
+    {
+      "ref": "1.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः।\n\nप्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः।।1.20।।",
+      "iast": "atha vyavasthitān dṛṣṭvā dhārtarāṣṭrānkapidhvajaḥ|\n\npravṛtte śastrasaṃpāte dhanurudyamya pāṇḍavaḥ||1.20||",
+      "en": "Then, O Lord of Earth, seeing Dhritarâshtra's party standing marshalled and the shooting about to begin, that Pândava whose ensign was the monkey, raising his bow, said the following words to Krishna:",
+      "word_meanings": [
+        {
+          "word": "atha",
+          "meaning": "thereupon"
+        },
+        {
+          "word": "vyavasthitān",
+          "meaning": "arrayed"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "seeing"
+        },
+        {
+          "word": "dhārtarāṣhṭrān",
+          "meaning": "Dhritarashtra’s sons"
+        },
+        {
+          "word": "kapi-dwajaḥ",
+          "meaning": "the Monkey Bannered"
+        },
+        {
+          "word": "pravṛitte",
+          "meaning": "about to commence"
+        },
+        {
+          "word": "śhastra-sampāte",
+          "meaning": "to use the weapons"
+        },
+        {
+          "word": "dhanuḥ",
+          "meaning": "bow"
+        },
+        {
+          "word": "udyamya",
+          "meaning": "taking up"
+        },
+        {
+          "word": "pāṇḍavaḥ",
+          "meaning": "Arjun, the son of Pandu"
+        },
+        {
+          "word": "hṛiṣhīkeśham",
+          "meaning": "to Shree Krishna"
+        },
+        {
+          "word": "tadā",
+          "meaning": "at that time"
+        },
+        {
+          "word": "vākyam",
+          "meaning": "words"
+        },
+        {
+          "word": "idam",
+          "meaning": "these"
+        },
+        {
+          "word": "āha",
+          "meaning": "said"
+        },
+        {
+          "word": "mahī-pate",
+          "meaning": "King"
+        }
+      ]
+    },
+    {
+      "ref": "1.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nहृषीकेशं तदा वाक्यमिदमाह महीपते।\n\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत।।1.21।।",
+      "iast": "arjuna uvāca\n\nhṛṣīkeśaṃ tadā vākyamidamāha mahīpate|\n\nsenayorubhayormadhye rathaṃ sthāpaya me'cyuta||1.21||",
+      "en": "Place my chariot, O Achyuta! between the two armies that I may see those who stand here prepared for war. On this eve of battle (let me know) with whom I have to fight.",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "senayoḥ",
+          "meaning": "armies"
+        },
+        {
+          "word": "ubhayoḥ",
+          "meaning": "both"
+        },
+        {
+          "word": "madhye",
+          "meaning": "in the middle"
+        },
+        {
+          "word": "ratham",
+          "meaning": "chariot"
+        },
+        {
+          "word": "sthāpaya",
+          "meaning": "place"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "achyuta",
+          "meaning": "Shree Krishna, the infallible One"
+        }
+      ]
+    },
+    {
+      "ref": "1.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्।\n\nकैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे।।1.22।।",
+      "iast": "yāvadetānnirīkṣe'haṃ yoddhukāmānavasthitān|\n\nkairmayā saha yoddhavyamasminraṇasamudyame||1.22||",
+      "en": "Place my chariot, O Achyuta! between the two armies that I may see those who stand here prepared for war. On this eve of battle (let me know) with whom I have to fight.",
+      "word_meanings": [
+        {
+          "word": "yāvat",
+          "meaning": "as many as"
+        },
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "nirīkṣhe",
+          "meaning": "look"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "yoddhu-kāmān",
+          "meaning": "for the battle"
+        },
+        {
+          "word": "avasthitān",
+          "meaning": "arrayed"
+        },
+        {
+          "word": "kaiḥ",
+          "meaning": "with whom"
+        },
+        {
+          "word": "mayā",
+          "meaning": "by me"
+        },
+        {
+          "word": "saha",
+          "meaning": "together"
+        },
+        {
+          "word": "yoddhavyam",
+          "meaning": "must fight"
+        },
+        {
+          "word": "asmin",
+          "meaning": "in this"
+        },
+        {
+          "word": "raṇa-samudyame",
+          "meaning": "great combat"
+        }
+      ]
+    },
+    {
+      "ref": "1.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।\n\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः।।1.23।।",
+      "iast": "yotsyamānānavekṣe'haṃ ya ete'tra samāgatāḥ|\n\ndhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ||1.23||",
+      "en": "For I desire to observe those who are assembled here for fight, wishing to please the evil-minded Duryodhana by taking his side on this battle-field.",
+      "word_meanings": [
+        {
+          "word": "yotsyamānān",
+          "meaning": "those who have come to fight"
+        },
+        {
+          "word": "avekṣhe aham",
+          "meaning": "I desire to see"
+        },
+        {
+          "word": "ye",
+          "meaning": "who"
+        },
+        {
+          "word": "ete",
+          "meaning": "those"
+        },
+        {
+          "word": "atra",
+          "meaning": "here"
+        },
+        {
+          "word": "samāgatāḥ",
+          "meaning": "assembled"
+        },
+        {
+          "word": "dhārtarāṣhṭrasya",
+          "meaning": "of Dhritarashtra’s son"
+        },
+        {
+          "word": "durbuddheḥ",
+          "meaning": "evil-minded"
+        },
+        {
+          "word": "yuddhe",
+          "meaning": "in the fight"
+        },
+        {
+          "word": "priya-chikīrṣhavaḥ",
+          "meaning": "wishing to please"
+        }
+      ]
+    },
+    {
+      "ref": "1.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "संजय उवाच\n\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत।\n\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्।।1.24।।",
+      "iast": "saṃjaya uvāca\n\nevamukto hṛṣīkeśo guḍākeśena bhārata|\n\nsenayorubhayormadhye sthāpayitvā rathottamam||1.24||",
+      "en": "Commanded thus by Gudâkesha, Hrishikesha, O Bhârata, drove that grandest of chariots to a place between the two hosts, facing Bhishma, Drona and all the rulers of the earth, and then spoke thus, \"Behold, O Pârtha, all the Kurus gathered together!\"",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "evam",
+          "meaning": "thus"
+        },
+        {
+          "word": "uktaḥ",
+          "meaning": "addressed"
+        },
+        {
+          "word": "hṛiṣhīkeśhaḥ",
+          "meaning": "Shree Krishna, the Lord of the senses"
+        },
+        {
+          "word": "guḍākeśhena",
+          "meaning": "by Arjun, the conqueror of sleep"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "descendant of Bharat"
+        },
+        {
+          "word": "senayoḥ",
+          "meaning": "armies"
+        },
+        {
+          "word": "ubhayoḥ",
+          "meaning": "the two"
+        },
+        {
+          "word": "madhye",
+          "meaning": "between"
+        },
+        {
+          "word": "sthāpayitvā",
+          "meaning": "having drawn"
+        },
+        {
+          "word": "ratha-uttamam",
+          "meaning": "magnificent chariot"
+        }
+      ]
+    },
+    {
+      "ref": "1.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।\n\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति।।1.25।।",
+      "iast": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām|\n\nuvāca pārtha paśyaitānsamavetānkurūniti||1.25||",
+      "en": "Commanded thus by Gudâkesha, Hrishikesha, O Bhârata, drove that grandest of chariots to a place between the two hosts, facing Bhishma, Drona and all the rulers of the earth, and then spoke thus, \"Behold, O Pârtha, all the Kurus gathered together!\"",
+      "word_meanings": [
+        {
+          "word": "bhīṣhma",
+          "meaning": "Grandsire Bheeshma"
+        },
+        {
+          "word": "droṇa",
+          "meaning": "Dronacharya"
+        },
+        {
+          "word": "pramukhataḥ",
+          "meaning": "in the presence"
+        },
+        {
+          "word": "sarveṣhām",
+          "meaning": "all"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "mahī-kṣhitām",
+          "meaning": "other kings"
+        },
+        {
+          "word": "uvācha",
+          "meaning": "said"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "paśhya",
+          "meaning": "behold"
+        },
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "samavetān",
+          "meaning": "gathered"
+        },
+        {
+          "word": "kurūn",
+          "meaning": "descendants of Kuru"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        }
+      ]
+    },
+    {
+      "ref": "1.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान्।\n\nआचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा।।1.26।।",
+      "iast": "tatrāpaśyatsthitānpārthaḥ pitṛ़natha pitāmahān|\n\nācāryānmātulānbhrātṛ़nputrānpautrānsakhīṃstathā||1.26||",
+      "en": "Then saw Pârtha stationed there in both the armies, grandfathers, fathers-in-law and uncles, brothers and cousins, his own and their sons and grandsons, and comrades, teachers, and other friends as well.",
+      "word_meanings": [
+        {
+          "word": "tatra",
+          "meaning": "there"
+        },
+        {
+          "word": "apaśhyat",
+          "meaning": "saw"
+        },
+        {
+          "word": "sthitān",
+          "meaning": "stationed"
+        },
+        {
+          "word": "pārthaḥ",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "pitṝīn",
+          "meaning": "fathers"
+        },
+        {
+          "word": "atha",
+          "meaning": "thereafter"
+        },
+        {
+          "word": "pitāmahān",
+          "meaning": "grandfathers"
+        },
+        {
+          "word": "āchāryān",
+          "meaning": "teachers"
+        },
+        {
+          "word": "mātulān",
+          "meaning": "maternal uncles"
+        },
+        {
+          "word": "bhrātṝīn",
+          "meaning": "brothers"
+        },
+        {
+          "word": "putrān",
+          "meaning": "sons"
+        },
+        {
+          "word": "pautrān",
+          "meaning": "grandsons"
+        },
+        {
+          "word": "sakhīn",
+          "meaning": "friends"
+        },
+        {
+          "word": "tathā",
+          "meaning": "also"
+        },
+        {
+          "word": "śhvaśhurān",
+          "meaning": "fathers-in-law"
+        },
+        {
+          "word": "suhṛidaḥ",
+          "meaning": "well-wishers"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "senayoḥ",
+          "meaning": "armies"
+        },
+        {
+          "word": "ubhayoḥ",
+          "meaning": "in both armies"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        }
+      ]
+    },
+    {
+      "ref": "1.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।\n\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्।।1.27।।",
+      "iast": "śvaśurānsuhṛdaścaiva senayorubhayorapi|\n\ntānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān||1.27||",
+      "en": "Then he, the son of Kunti, seeing all those kinsmen stationed in their ranks, spoke thus sorrowfully, filled with deep compassion.",
+      "word_meanings": [
+        {
+          "word": "tān",
+          "meaning": "these"
+        },
+        {
+          "word": "samīkṣhya",
+          "meaning": "on seeing"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "they"
+        },
+        {
+          "word": "kaunteyaḥ",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "sarvān",
+          "meaning": "all"
+        },
+        {
+          "word": "bandhūn",
+          "meaning": "relatives"
+        },
+        {
+          "word": "avasthitān",
+          "meaning": "present"
+        },
+        {
+          "word": "kṛipayā",
+          "meaning": "by compassion"
+        },
+        {
+          "word": "parayā",
+          "meaning": "great"
+        },
+        {
+          "word": "āviṣhṭaḥ",
+          "meaning": "overwhelmed"
+        },
+        {
+          "word": "viṣhīdan",
+          "meaning": "deep sorrow"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "abravīt",
+          "meaning": "spoke"
+        }
+      ]
+    },
+    {
+      "ref": "1.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nकृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत्।\n\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्।।1.28।।",
+      "iast": "arjuna uvāca\n\nkṛpayā parayā''viṣṭo viṣīdannidamabravīt|\n\ndṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam||1.28||",
+      "en": "Arjuna said: Seeing these my kinsmen, O Krishna, eager for fight, my limbs fail and my mouth is parched.",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "on seeing"
+        },
+        {
+          "word": "imam",
+          "meaning": "these"
+        },
+        {
+          "word": "sva-janam",
+          "meaning": "kinsmen"
+        },
+        {
+          "word": "kṛiṣhṇa",
+          "meaning": "Krishna"
+        },
+        {
+          "word": "yuyutsum",
+          "meaning": "eager to fight"
+        },
+        {
+          "word": "samupasthitam",
+          "meaning": "present"
+        }
+      ]
+    },
+    {
+      "ref": "1.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति।\n\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते।।1.29।।",
+      "iast": "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati|\n\nvepathuśca śarīre me romaharṣaśca jāyate||1.29||",
+      "en": "Seeing, O Krishna, these my kinsmen gathered here, eager for fight, my limbs fail me, and my mouth is parched up. I shiver all over, and my hair stands on end. The bow Gândiva slips from my hand, and my skin burns.",
+      "word_meanings": [
+        {
+          "word": "sīdanti",
+          "meaning": "quivering"
+        },
+        {
+          "word": "mama",
+          "meaning": "my"
+        },
+        {
+          "word": "gātrāṇi",
+          "meaning": "limbs"
+        },
+        {
+          "word": "mukham",
+          "meaning": "mouth"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pariśhuṣhyati",
+          "meaning": "is drying up\nvepathuḥ—shuddering"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śharīre",
+          "meaning": "on the body"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "roma-harṣhaḥ",
+          "meaning": "standing of bodily hair on end"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "jāyate",
+          "meaning": "is happening"
+        }
+      ]
+    },
+    {
+      "ref": "1.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।\n\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः।।1.30।।",
+      "iast": "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate|\n\nna ca śaknomyavasthātuṃ bhramatīva ca me manaḥ||1.30||",
+      "en": "Neither, O Keshava, can I stand upright. My mind is in a whirl. And I see adverse omens.",
+      "word_meanings": [
+        {
+          "word": "gāṇḍīvam",
+          "meaning": "Arjun’s bow"
+        },
+        {
+          "word": "sraṁsate",
+          "meaning": "is slipping"
+        },
+        {
+          "word": "hastāt",
+          "meaning": "from (my) hand"
+        },
+        {
+          "word": "tvak",
+          "meaning": "skin"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "paridahyate",
+          "meaning": "is burning all over"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śhaknomi",
+          "meaning": "am able"
+        },
+        {
+          "word": "avasthātum",
+          "meaning": "remain steady"
+        },
+        {
+          "word": "bhramati iva",
+          "meaning": "whirling like"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "me",
+          "meaning": "my"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "mind"
+        }
+      ]
+    },
+    {
+      "ref": "1.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "निमित्तानि च पश्यामि विपरीतानि केशव।\n\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे।।1.31।।",
+      "iast": "nimittāni ca paśyāmi viparītāni keśava|\n\nna ca śreyo'nupaśyāmi hatvā svajanamāhave||1.31||",
+      "en": "Neither, O Krishna, do I see any good in killing these my own people in battle. I desire neither victory nor empire, nor yet pleasure.",
+      "word_meanings": [
+        {
+          "word": "nimittāni",
+          "meaning": "omens"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "paśhyāmi",
+          "meaning": "I see"
+        },
+        {
+          "word": "viparītāni",
+          "meaning": "misfortune"
+        },
+        {
+          "word": "keśhava",
+          "meaning": "Shree Krishna, killer of the Keshi demon"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "śhreyaḥ",
+          "meaning": "good"
+        },
+        {
+          "word": "anupaśhyāmi",
+          "meaning": "I foresee"
+        },
+        {
+          "word": "hatvā",
+          "meaning": "from killing"
+        },
+        {
+          "word": "sva-janam",
+          "meaning": "kinsmen"
+        },
+        {
+          "word": "āhave",
+          "meaning": "in battle"
+        }
+      ]
+    },
+    {
+      "ref": "1.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।\n\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा।।1.32।।",
+      "iast": "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca|\n\nkiṃ no rājyena govinda kiṃ bhogairjīvitena vā||1.32||",
+      "en": "Of what avail is dominion to us, of what avail are pleasures and even life, if these, O Govinda! for whose sake it is desired that empire, enjoyment and pleasure should be ours, themselves stand here in battle, having renounced life and wealth—Teachers, uncles, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, besides other kinsmen.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "kāṅkṣhe",
+          "meaning": "do I desire"
+        },
+        {
+          "word": "vijayam",
+          "meaning": "victory"
+        },
+        {
+          "word": "kṛiṣhṇa",
+          "meaning": "Krishna"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "cha",
+          "meaning": "as well"
+        },
+        {
+          "word": "rājyam",
+          "meaning": "kingdom"
+        },
+        {
+          "word": "sukhāni",
+          "meaning": "happiness"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "to us"
+        },
+        {
+          "word": "rājyena",
+          "meaning": "by kingdom"
+        },
+        {
+          "word": "govinda",
+          "meaning": "Krishna, he who gives pleasure to the senses, he who is fond of cows"
+        },
+        {
+          "word": "kim",
+          "meaning": "what?"
+        },
+        {
+          "word": "bhogaiḥ",
+          "meaning": "pleasures"
+        },
+        {
+          "word": "jīvitena",
+          "meaning": "life"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        }
+      ]
+    },
+    {
+      "ref": "1.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।\n\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च।।1.33।।",
+      "iast": "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca|\n\nta ime'vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca||1.33||",
+      "en": "Of what avail is dominion to us, of what avail are pleasures and even life, if these, O Govinda! for whose sake it is desired that empire, enjoyment and pleasure should be ours, themselves stand here in battle, having renounced life and wealth—Teachers, uncles, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, besides other kinsmen.",
+      "word_meanings": [
+        {
+          "word": "yeṣhām",
+          "meaning": "for whose"
+        },
+        {
+          "word": "arthe",
+          "meaning": "sake"
+        },
+        {
+          "word": "kāṅkṣhitam",
+          "meaning": "coveted for"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "by us"
+        },
+        {
+          "word": "rājyam",
+          "meaning": "kingdom"
+        },
+        {
+          "word": "bhogāḥ",
+          "meaning": "pleasures"
+        },
+        {
+          "word": "sukhāni",
+          "meaning": "happiness"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "te",
+          "meaning": "they"
+        },
+        {
+          "word": "ime",
+          "meaning": "these"
+        },
+        {
+          "word": "avasthitāḥ",
+          "meaning": "situated"
+        },
+        {
+          "word": "yuddhe",
+          "meaning": "for battle"
+        },
+        {
+          "word": "prāṇān",
+          "meaning": "lives"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "giving up"
+        },
+        {
+          "word": "dhanāni",
+          "meaning": "wealth"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        }
+      ]
+    },
+    {
+      "ref": "1.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः।\n\nमातुलाः श्चशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा।।1.34।।",
+      "iast": "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ|\n\nmātulāḥ ścaśurāḥ pautrāḥ śyālāḥ sambandhinastathā||1.34||",
+      "en": "Of what avail is dominion to us, of what avail are pleasures and even life, if these, O Govinda! for whose sake it is desired that empire, enjoyment and pleasure should be ours, themselves stand here in battle, having renounced life and wealth—Teachers, uncles, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, besides other kinsmen.",
+      "word_meanings": [
+        {
+          "word": "āchāryāḥ",
+          "meaning": "teachers"
+        },
+        {
+          "word": "pitaraḥ",
+          "meaning": "fathers"
+        },
+        {
+          "word": "putrāḥ",
+          "meaning": "sons"
+        },
+        {
+          "word": "tathā",
+          "meaning": "as well"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "pitāmahāḥ",
+          "meaning": "grandfathers"
+        },
+        {
+          "word": "mātulāḥ",
+          "meaning": "maternal uncles"
+        },
+        {
+          "word": "śhvaśhurāḥ",
+          "meaning": "fathers-in-law"
+        },
+        {
+          "word": "pautrāḥ",
+          "meaning": "grandsons"
+        },
+        {
+          "word": "śhyālāḥ",
+          "meaning": "brothers-in-law"
+        },
+        {
+          "word": "sambandhinaḥ",
+          "meaning": "kinsmen"
+        },
+        {
+          "word": "tathā",
+          "meaning": "as well"
+        }
+      ]
+    },
+    {
+      "ref": "1.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।\n\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते।।1.35।।",
+      "iast": "etānna hantumicchāmi ghnato'pi madhusūdana|\n\napi trailokyarājyasya hetoḥ kiṃ nu mahīkṛte||1.35||",
+      "en": "Even though these were to kill me, O slayer of Madhu, I could not wish to kill them, not even for the sake of dominion over the three worlds, how much less for the sake of the earth!",
+      "word_meanings": [
+        {
+          "word": "etān",
+          "meaning": "these"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "hantum",
+          "meaning": "to slay"
+        },
+        {
+          "word": "ichchhāmi",
+          "meaning": "I wish"
+        },
+        {
+          "word": "ghnataḥ",
+          "meaning": "killed"
+        },
+        {
+          "word": "api",
+          "meaning": "even though"
+        },
+        {
+          "word": "madhusūdana",
+          "meaning": "Shree Krishna, killer of the demon Madhu"
+        },
+        {
+          "word": "api",
+          "meaning": "even though"
+        },
+        {
+          "word": "trai-lokya-rājyasya",
+          "meaning": "dominion over three worlds"
+        },
+        {
+          "word": "hetoḥ",
+          "meaning": "for the sake of"
+        },
+        {
+          "word": "kim nu",
+          "meaning": "what to speak of"
+        },
+        {
+          "word": "mahī-kṛite",
+          "meaning": "for the earth"
+        }
+      ]
+    },
+    {
+      "ref": "1.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।\n\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः।।1.36।।",
+      "iast": "nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana|\n\npāpamevāśrayedasmānhatvaitānātatāyinaḥ||1.36||",
+      "en": "What pleasure indeed could be ours, O Jnanârdana, from killing these sons of Dhritarâshtra? Sin only could take hold of us by the slaying of these felons.",
+      "word_meanings": [
+        {
+          "word": "nihatya",
+          "meaning": "by killing"
+        },
+        {
+          "word": "dhārtarāṣhṭrān",
+          "meaning": "the sons of Dhritarashtra"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "our"
+        },
+        {
+          "word": "kā",
+          "meaning": "what"
+        },
+        {
+          "word": "prītiḥ",
+          "meaning": "pleasure"
+        },
+        {
+          "word": "syāt",
+          "meaning": "will there be"
+        },
+        {
+          "word": "janārdana",
+          "meaning": "he who looks after the public, Shree Krishna"
+        },
+        {
+          "word": "pāpam",
+          "meaning": "vices"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "āśhrayet",
+          "meaning": "must come upon"
+        },
+        {
+          "word": "asmān",
+          "meaning": "us"
+        },
+        {
+          "word": "hatvā",
+          "meaning": "by killing"
+        },
+        {
+          "word": "etān",
+          "meaning": "all these"
+        },
+        {
+          "word": "ātatāyinaḥ",
+          "meaning": "aggressors"
+        }
+      ]
+    },
+    {
+      "ref": "1.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।\n\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव।।1.37।।",
+      "iast": "tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrānsvabāndhavān|\n\nsvajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava||1.37||",
+      "en": "Therefore ought we not to kill our kindred, the sons of Dhritarâshtra. For how could we, O Mâdhava, gain happiness by the slaying of our own kinsmen?",
+      "word_meanings": [
+        {
+          "word": "tasmāt",
+          "meaning": "hence"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "arhāḥ",
+          "meaning": "behoove"
+        },
+        {
+          "word": "vayam",
+          "meaning": "we"
+        },
+        {
+          "word": "hantum",
+          "meaning": "to kill"
+        },
+        {
+          "word": "dhārtarāṣhṭrān",
+          "meaning": "the sons of Dhritarashtra"
+        },
+        {
+          "word": "sva-bāndhavān",
+          "meaning": "along with friends"
+        },
+        {
+          "word": "sva-janam",
+          "meaning": "kinsmen"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "katham",
+          "meaning": "how"
+        },
+        {
+          "word": "hatvā",
+          "meaning": "by killing"
+        },
+        {
+          "word": "sukhinaḥ",
+          "meaning": "happy"
+        },
+        {
+          "word": "syāma",
+          "meaning": "will we become"
+        },
+        {
+          "word": "mādhava",
+          "meaning": "Shree Krishna, the husband of Yogmaya"
+        }
+      ]
+    },
+    {
+      "ref": "1.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।\n\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्।।1.38।।",
+      "iast": "yadyapyete na paśyanti lobhopahatacetasaḥ|\n\nkulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam||1.38||",
+      "en": "Though these, with understanding overpowered by greed, see no evil due to decay of families, and no sin in hostility to friends, why should we, O Janârdana, who see clearly the evil due to the decay of families, not turn away from this sin?",
+      "word_meanings": [
+        {
+          "word": "yadi api",
+          "meaning": "even though"
+        },
+        {
+          "word": "ete",
+          "meaning": "they"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "paśhyanti",
+          "meaning": "see"
+        },
+        {
+          "word": "lobha",
+          "meaning": "greed"
+        },
+        {
+          "word": "upahata",
+          "meaning": "overpowered"
+        },
+        {
+          "word": "chetasaḥ",
+          "meaning": "thoughts"
+        },
+        {
+          "word": "kula-kṣhaya-kṛitam",
+          "meaning": "in annihilating their relatives"
+        },
+        {
+          "word": "doṣham",
+          "meaning": "fault"
+        },
+        {
+          "word": "mitra-drohe",
+          "meaning": "to wreak treachery upon friends"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "pātakam",
+          "meaning": "sin"
+        }
+      ]
+    },
+    {
+      "ref": "1.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।\n\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन।।1.39।।",
+      "iast": "kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum|\n\nkulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana||1.39||",
+      "en": "Though these, with understanding overpowered by greed, see no evil due to decay of families, and no sin in hostility to friends, why should we, O Janârdana, who see clearly the evil due to the decay of families, not turn away from this sin?",
+      "word_meanings": [
+        {
+          "word": "katham",
+          "meaning": "why"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "jñeyam",
+          "meaning": "should be known"
+        },
+        {
+          "word": "asmābhiḥ",
+          "meaning": "we"
+        },
+        {
+          "word": "pāpāt",
+          "meaning": "from sin"
+        },
+        {
+          "word": "asmāt",
+          "meaning": "these"
+        },
+        {
+          "word": "nivartitum",
+          "meaning": "to turn away"
+        },
+        {
+          "word": "kula-kṣhaya",
+          "meaning": "killing the kindered"
+        },
+        {
+          "word": "kṛitam",
+          "meaning": "done"
+        },
+        {
+          "word": "doṣham",
+          "meaning": "crime"
+        },
+        {
+          "word": "prapaśhyadbhiḥ",
+          "meaning": "who can see"
+        },
+        {
+          "word": "janārdana",
+          "meaning": "he who looks after the public, Shree Krishna"
+        }
+      ]
+    },
+    {
+      "ref": "1.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।\n\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत।।1.40।।",
+      "iast": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ|\n\ndharme naṣṭe kulaṃ kṛtsnamadharmo'bhibhavatyuta||1.40||",
+      "en": "On the decay of a family the immemorial religious rites of that family die out. On the destruction of spirituality, impiety further overwhelms the whole of the family.",
+      "word_meanings": [
+        {
+          "word": "kula-kṣhaye",
+          "meaning": "in the destruction of a dynasty"
+        },
+        {
+          "word": "praṇaśhyanti",
+          "meaning": "are vanquished"
+        },
+        {
+          "word": "kula-dharmāḥ",
+          "meaning": "family traditions"
+        },
+        {
+          "word": "sanātanāḥ",
+          "meaning": "eternal"
+        },
+        {
+          "word": "dharme",
+          "meaning": "religion"
+        },
+        {
+          "word": "naṣhṭe",
+          "meaning": "is destroyed"
+        },
+        {
+          "word": "kulam",
+          "meaning": "family"
+        },
+        {
+          "word": "kṛitsnam",
+          "meaning": "the whole"
+        },
+        {
+          "word": "adharmaḥ",
+          "meaning": "irreligion"
+        },
+        {
+          "word": "abhibhavati",
+          "meaning": "overcome"
+        },
+        {
+          "word": "uta",
+          "meaning": "indeed"
+        }
+      ]
+    },
+    {
+      "ref": "1.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।\n\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः।।1.41।।",
+      "iast": "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ|\n\nstrīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ||1.41||",
+      "en": "On the prevalence of impiety, O Krishna, the women of the family become corrupt; and women being corrupted, there arises, O Vârshneya, intermingling of castes.",
+      "word_meanings": [
+        {
+          "word": "adharma",
+          "meaning": "irreligion"
+        },
+        {
+          "word": "abhibhavāt",
+          "meaning": "preponderance"
+        },
+        {
+          "word": "kṛiṣhṇa",
+          "meaning": "Shree Krishna"
+        },
+        {
+          "word": "praduṣhyanti",
+          "meaning": "become immoral"
+        },
+        {
+          "word": "kula-striyaḥ",
+          "meaning": "women of the family"
+        },
+        {
+          "word": "strīṣhu",
+          "meaning": "of women"
+        },
+        {
+          "word": "duṣhṭāsu",
+          "meaning": "become immoral"
+        },
+        {
+          "word": "vārṣhṇeya",
+          "meaning": "descendant of Vrishni"
+        },
+        {
+          "word": "jāyate",
+          "meaning": "are born"
+        },
+        {
+          "word": "varṇa-saṅkaraḥ",
+          "meaning": "unwanted progeny"
+        }
+      ]
+    },
+    {
+      "ref": "1.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च।\n\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः।।1.42।।",
+      "iast": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca|\n\npatanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ||1.42||",
+      "en": "Admixture of castes, indeed, is for the hell of the family and the destroyers of the family; their ancestors fall, deprived of the offerings of rice-ball and water.",
+      "word_meanings": [
+        {
+          "word": "saṅkaraḥ",
+          "meaning": "unwanted children"
+        },
+        {
+          "word": "narakāya",
+          "meaning": "hellish"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "kula-ghnānām",
+          "meaning": "for those who destroy the family"
+        },
+        {
+          "word": "kulasya",
+          "meaning": "of the family"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "patanti",
+          "meaning": "fall"
+        },
+        {
+          "word": "pitaraḥ",
+          "meaning": "ancestors"
+        },
+        {
+          "word": "hi",
+          "meaning": "verily"
+        },
+        {
+          "word": "eṣhām",
+          "meaning": "their"
+        },
+        {
+          "word": "lupta",
+          "meaning": "deprived of"
+        },
+        {
+          "word": "piṇḍodaka-kriyāḥ",
+          "meaning": "performances of sacrificial offerings"
+        }
+      ]
+    },
+    {
+      "ref": "1.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।\n\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः।।1.43।।",
+      "iast": "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ|\n\nutsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ||1.43||",
+      "en": "By these misdeeds of the destroyers of the family, bringing about confusion of castes, are the immemorial religious rites of the caste and the family destroyed.",
+      "word_meanings": [
+        {
+          "word": "doṣhaiḥ",
+          "meaning": "through evil deeds"
+        },
+        {
+          "word": "etaiḥ",
+          "meaning": "these"
+        },
+        {
+          "word": "kula-ghnānām",
+          "meaning": "of those who destroy the family"
+        },
+        {
+          "word": "varṇa-saṅkara",
+          "meaning": "unwanted progeny"
+        },
+        {
+          "word": "kārakaiḥ",
+          "meaning": "causing"
+        },
+        {
+          "word": "utsādyante",
+          "meaning": "are ruined"
+        },
+        {
+          "word": "jāti-dharmāḥ",
+          "meaning": "social and family welfare activities"
+        },
+        {
+          "word": "kula-dharmāḥ",
+          "meaning": "family traditions"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "śhāśhvatāḥ",
+          "meaning": "eternal"
+        }
+      ]
+    },
+    {
+      "ref": "1.44",
+      "ordinal": 44,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।\n\nनरकेऽनियतं वासो भवतीत्यनुशुश्रुम।।1.44।।",
+      "iast": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana|\n\nnarake'niyataṃ vāso bhavatītyanuśuśruma||1.44||",
+      "en": "We have heard, O Janârdana, that inevitable is the dwelling in hell of those men in whose families religious practices have been destroyed.",
+      "word_meanings": [
+        {
+          "word": "utsanna",
+          "meaning": "destroyed"
+        },
+        {
+          "word": "kula-dharmāṇām",
+          "meaning": "whose family traditions"
+        },
+        {
+          "word": "manuṣhyāṇām",
+          "meaning": "of such human beings"
+        },
+        {
+          "word": "janārdana",
+          "meaning": "he who looks after the public, Shree Krishna"
+        },
+        {
+          "word": "narake",
+          "meaning": "in hell"
+        },
+        {
+          "word": "aniyatam",
+          "meaning": "indefinite"
+        },
+        {
+          "word": "vāsaḥ",
+          "meaning": "dwell"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "is"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "anuśhuśhruma",
+          "meaning": "I have heard from the learned"
+        }
+      ]
+    },
+    {
+      "ref": "1.45",
+      "ordinal": 45,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अहो बत महत्पापं कर्तुं व्यवसिता वयम्।\n\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः।।1.45।।",
+      "iast": "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam|\n\nyadrājyasukhalobhena hantuṃ svajanamudyatāḥ||1.45||",
+      "en": "Alas, we are involved in a great sin, in that we are prepared to slay our kinsmen, from greed of the pleasures of a kingdom!",
+      "word_meanings": [
+        {
+          "word": "aho",
+          "meaning": "alas"
+        },
+        {
+          "word": "bata",
+          "meaning": "how"
+        },
+        {
+          "word": "mahat",
+          "meaning": "great"
+        },
+        {
+          "word": "pāpam",
+          "meaning": "sins"
+        },
+        {
+          "word": "kartum",
+          "meaning": "to perform"
+        },
+        {
+          "word": "vyavasitāḥ",
+          "meaning": "have decided"
+        },
+        {
+          "word": "vayam",
+          "meaning": "we"
+        },
+        {
+          "word": "yat",
+          "meaning": "because"
+        },
+        {
+          "word": "rājya-sukha-lobhena",
+          "meaning": "driven by the desire for kingly pleasure"
+        },
+        {
+          "word": "hantum",
+          "meaning": "to kill"
+        },
+        {
+          "word": "sva-janam",
+          "meaning": "kinsmen"
+        },
+        {
+          "word": "udyatāḥ",
+          "meaning": "intending"
+        }
+      ]
+    },
+    {
+      "ref": "1.46",
+      "ordinal": 46,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।\n\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्।।1.46।।",
+      "iast": "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ|\n\ndhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet||1.46||",
+      "en": "Verily, if the sons of Dhritarâshtra, weapons in hand, were to slay me, unresisting and unarmed, in the battle, that would be better for me.",
+      "word_meanings": [
+        {
+          "word": "yadi",
+          "meaning": "if"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "apratīkāram",
+          "meaning": "unresisting"
+        },
+        {
+          "word": "aśhastram",
+          "meaning": "unarmed"
+        },
+        {
+          "word": "śhastra-pāṇayaḥ",
+          "meaning": "those with weapons in hand"
+        },
+        {
+          "word": "dhārtarāṣhṭrāḥ",
+          "meaning": "the sons of Dhritarashtra"
+        },
+        {
+          "word": "raṇe",
+          "meaning": "on the battlefield"
+        },
+        {
+          "word": "hanyuḥ",
+          "meaning": "shall kill"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "me",
+          "meaning": "to me"
+        },
+        {
+          "word": "kṣhema-taram",
+          "meaning": "better"
+        },
+        {
+          "word": "bhavet",
+          "meaning": "would be"
+        }
+      ]
+    },
+    {
+      "ref": "1.47",
+      "ordinal": 47,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nएवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत्।\n\nविसृज्य सशरं चापं शोकसंविग्नमानसः।।1.47।।",
+      "iast": "sañjaya uvāca\n\nevamuktvā'rjunaḥ saṃkhye rathopastha upāviśat|\n\nvisṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ||1.47||",
+      "en": "Speaking thus in the midst of the battle-field, Arjuna casting away his bow and arrows, sank down on the seat of his chariot, with his mind distressed with sorrow.",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "evam uktvā",
+          "meaning": "speaking thus"
+        },
+        {
+          "word": "arjunaḥ",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "saṅkhye",
+          "meaning": "in the battlefield"
+        },
+        {
+          "word": "ratha upasthe",
+          "meaning": "on the chariot"
+        },
+        {
+          "word": "upāviśhat",
+          "meaning": "sat"
+        },
+        {
+          "word": "visṛijya",
+          "meaning": "casting aside"
+        },
+        {
+          "word": "sa-śharam",
+          "meaning": "along with arrows"
+        },
+        {
+          "word": "chāpam",
+          "meaning": "the bow"
+        },
+        {
+          "word": "śhoka",
+          "meaning": "with grief"
+        },
+        {
+          "word": "saṁvigna",
+          "meaning": "distressed"
+        },
+        {
+          "word": "mānasaḥ",
+          "meaning": "mind"
+        }
+      ]
+    }
+  ]
+}

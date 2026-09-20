@@ -1,0 +1,4810 @@
+{
+  "_note": "Bhagavad Gītā 2 — 72 verses. Sanskrit from GRETIL/BORI (via gita/gita Unlicense, 700-verse recension, ch13 extra verse removed). IAST via indic_transliteration. English primarily Swami Swarupananda 1909 (sacred-texts.com, PD, verified 1909/1906), fallback to gita/gita Unlicense translations where sacred-texts chunk not yet fetched (flagged).",
+  "section": {
+    "chapter": {
+      "ref": "2",
+      "ordinal": 2,
+      "title_iast": "Sāṅkhya-yoga",
+      "title_sa": "साङ्ख्ययोगः",
+      "title_en": "The Yoga of Knowledge",
+      "title_ml": "സാംഖ്യയോഗം",
+      "summary_en": "Chapter 2: The Yoga of Knowledge — 72 verses",
+      "summary_ml": "അധ്യായം 2: സാംഖ്യയോഗം — 72 ശ്ലോകങ്ങൾ",
+      "colophon_sa": "इति श्रीमद्भगवद्गीतासु उपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे साङ्ख्ययोगः नाम 2ोऽध्यायः ॥ 2 ॥"
+    }
+  },
+  "verses": [
+    {
+      "ref": "2.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nतं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्।\n\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।2.1।।",
+      "iast": "sañjaya uvāca\n\ntaṃ tathā kṛpayā'viṣṭamaśrupūrṇākulekṣaṇam|\n\nviṣīdantamidaṃ vākyamuvāca madhusūdanaḥ||2.1||",
+      "en": "To him who was thus overwhelmed with pity and sorrowing, and whose eyes were dimmed with tears, Madhusudana spoke these words:",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "tam",
+          "meaning": "to him (Arjun)"
+        },
+        {
+          "word": "tathā",
+          "meaning": "thus"
+        },
+        {
+          "word": "kṛipayā",
+          "meaning": "with pity"
+        },
+        {
+          "word": "āviṣhṭam",
+          "meaning": "overwhelmed"
+        },
+        {
+          "word": "aśhru-pūrṇa",
+          "meaning": "full of tears"
+        },
+        {
+          "word": "ākula",
+          "meaning": "distressed"
+        },
+        {
+          "word": "īkṣhaṇam",
+          "meaning": "eyes"
+        },
+        {
+          "word": "viṣhīdantam",
+          "meaning": "grief-stricken"
+        },
+        {
+          "word": "idam",
+          "meaning": "these"
+        },
+        {
+          "word": "vākyam",
+          "meaning": "words"
+        },
+        {
+          "word": "uvācha",
+          "meaning": "said"
+        },
+        {
+          "word": "madhusūdanaḥ",
+          "meaning": "Shree Krishn, slayer of the Madhu demon"
+        }
+      ]
+    },
+    {
+      "ref": "2.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।\n\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन।।2.2।।",
+      "iast": "śrī bhagavānuvāca\n\nkutastvā kaśmalamidaṃ viṣame samupasthitam|\n\nanāryajuṣṭamasvargyamakīrtikaramarjuna||2.2||",
+      "en": "In such a crisis, whence comes upon thee, O Arjuna, this dejection, un-Aryalike, disgraceful and contrary to the attainment of heaven?",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Lord said"
+        },
+        {
+          "word": "kutaḥ",
+          "meaning": "wherefrom"
+        },
+        {
+          "word": "tvā",
+          "meaning": "to you"
+        },
+        {
+          "word": "kaśhmalam",
+          "meaning": "delusion"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "viṣhame",
+          "meaning": "in this hour of peril"
+        },
+        {
+          "word": "samupasthitam",
+          "meaning": "overcome"
+        },
+        {
+          "word": "anārya",
+          "meaning": "crude person"
+        },
+        {
+          "word": "juṣhṭam",
+          "meaning": "practiced"
+        },
+        {
+          "word": "aswargyam",
+          "meaning": "which does not lead to the higher abodes"
+        },
+        {
+          "word": "akīrti-karam",
+          "meaning": "leading to disgrace"
+        },
+        {
+          "word": "arjuna",
+          "meaning": "Arjun"
+        }
+      ]
+    },
+    {
+      "ref": "2.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\n\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप।।2.3।।",
+      "iast": "klaibyaṃ mā sma gamaḥ pārtha naitattvayyupapadyate|\n\nkṣudraṃ hṛdayadaurbalyaṃ tyaktvottiṣṭha parantapa||2.3||",
+      "en": "Yield not to unmanliness, O son of Prithâ! Ill doth it become thee. Cast off this mean faint-heartedness and arise, O scorcher of thine enemies!",
+      "word_meanings": [
+        {
+          "word": "klaibyam",
+          "meaning": "unmanliness"
+        },
+        {
+          "word": "mā sma",
+          "meaning": "do not"
+        },
+        {
+          "word": "gamaḥ",
+          "meaning": "yield to"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "etat",
+          "meaning": "this"
+        },
+        {
+          "word": "tvayi",
+          "meaning": "to you"
+        },
+        {
+          "word": "upapadyate",
+          "meaning": "befitting"
+        },
+        {
+          "word": "kṣhudram",
+          "meaning": "petty"
+        },
+        {
+          "word": "hṛidaya",
+          "meaning": "heart"
+        },
+        {
+          "word": "daurbalyam",
+          "meaning": "weakness"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "giving up"
+        },
+        {
+          "word": "uttiṣhṭha",
+          "meaning": "arise"
+        },
+        {
+          "word": "param-tapa",
+          "meaning": "conqueror of enemies"
+        }
+      ]
+    },
+    {
+      "ref": "2.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन।\n\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन।।2.4।।",
+      "iast": "arjuna uvāca\n\nkathaṃ bhīṣmamahaṃ saṃkhye droṇaṃ ca madhusūdana|\n\niṣubhiḥ pratiyotsyāmi pūjārhāvarisūdana||2.4||",
+      "en": "—But how can I, in battle, O slayer of Madhu, fight with arrows against Bhishma and Drona, who are rather worthy to be worshipped, O destroyer of foes!",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "katham",
+          "meaning": "how"
+        },
+        {
+          "word": "bhīṣhmam",
+          "meaning": "Bheeshma"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "sankhye",
+          "meaning": "in battle"
+        },
+        {
+          "word": "droṇam",
+          "meaning": "Dronacharya"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "madhu-sūdana",
+          "meaning": "Shree Krishn, slayer of the Madhu demon"
+        },
+        {
+          "word": "iṣhubhiḥ",
+          "meaning": "with arrows"
+        },
+        {
+          "word": "pratiyotsyāmi",
+          "meaning": "shall I shoot"
+        },
+        {
+          "word": "pūjā-arhau",
+          "meaning": "worthy of worship"
+        },
+        {
+          "word": "ari-sūdana",
+          "meaning": "destroyer of enemies"
+        }
+      ]
+    },
+    {
+      "ref": "2.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "गुरूनहत्वा हि महानुभावान्\n\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके।\n\nहत्वार्थकामांस्तु गुरूनिहैव\n\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्।।2.5।।",
+      "iast": "gurūnahatvā hi mahānubhāvān\n\nśreyo bhoktuṃ bhaikṣyamapīha loke|\n\nhatvārthakāmāṃstu gurūnihaiva\n\nbhuñjīya bhogān rudhirapradigdhān||2.5||",
+      "en": "Surely it would be better even to eat the bread of beggary in this life than to slay these great-souled masters. But if I kill them, even in this world, all my enjoyment of wealth and desires will be stained with blood.",
+      "word_meanings": [
+        {
+          "word": "gurūn",
+          "meaning": "teachers"
+        },
+        {
+          "word": "ahatvā",
+          "meaning": "not killing"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "mahā-anubhāvān",
+          "meaning": "noble elders"
+        },
+        {
+          "word": "śhreyaḥ",
+          "meaning": "better"
+        },
+        {
+          "word": "bhoktum",
+          "meaning": "to enjoy life"
+        },
+        {
+          "word": "bhaikṣhyam",
+          "meaning": "by begging"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "iha loke",
+          "meaning": "in this world"
+        },
+        {
+          "word": "hatvā",
+          "meaning": "killing"
+        },
+        {
+          "word": "artha",
+          "meaning": "gain"
+        },
+        {
+          "word": "kāmān",
+          "meaning": "desiring"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "gurūn",
+          "meaning": "noble elders"
+        },
+        {
+          "word": "iha",
+          "meaning": "in this world"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "bhuñjīya",
+          "meaning": "enjoy"
+        },
+        {
+          "word": "bhogān",
+          "meaning": "pleasures"
+        },
+        {
+          "word": "rudhira",
+          "meaning": "blood"
+        },
+        {
+          "word": "pradigdhān",
+          "meaning": "tainted with"
+        }
+      ]
+    },
+    {
+      "ref": "2.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न चैतद्विद्मः कतरन्नो गरीयो\n\nयद्वा जयेम यदि वा नो जयेयुः।\n\nयानेव हत्वा न जिजीविषाम\n\nस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।2.6।।",
+      "iast": "na caitadvidmaḥ kataranno garīyo\n\nyadvā jayema yadi vā no jayeyuḥ|\n\nyāneva hatvā na jijīviṣāma\n\nste'vasthitāḥ pramukhe dhārtarāṣṭrāḥ||2.6||",
+      "en": "And indeed I can scarcely tell which will be better, that we should conquer them, or that they should conquer us. The very sons of Dhritarâshtra,—after slaying whom we should not care to live,—stand facing us.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "etat",
+          "meaning": "this"
+        },
+        {
+          "word": "vidmaḥ",
+          "meaning": "we know"
+        },
+        {
+          "word": "katarat",
+          "meaning": "which"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "for us"
+        },
+        {
+          "word": "garīyaḥ",
+          "meaning": "is preferable"
+        },
+        {
+          "word": "yat vā",
+          "meaning": "whether"
+        },
+        {
+          "word": "jayema",
+          "meaning": "we may conquer"
+        },
+        {
+          "word": "yadi",
+          "meaning": "if"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "us"
+        },
+        {
+          "word": "jayeyuḥ",
+          "meaning": "they may conquer"
+        },
+        {
+          "word": "yān",
+          "meaning": "whom"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "hatvā",
+          "meaning": "after killing"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "jijīviṣhāmaḥ",
+          "meaning": "we desire to live"
+        },
+        {
+          "word": "te",
+          "meaning": "they"
+        },
+        {
+          "word": "avasthitāḥ",
+          "meaning": "are standing"
+        },
+        {
+          "word": "pramukhe",
+          "meaning": "before us"
+        },
+        {
+          "word": "dhārtarāṣhṭrāḥ",
+          "meaning": "the sons of Dhritarashtra"
+        }
+      ]
+    },
+    {
+      "ref": "2.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कार्पण्यदोषोपहतस्वभावः\n\nपृच्छामि त्वां धर्मसंमूढचेताः।\n\nयच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे\n\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।2.7।।",
+      "iast": "kārpaṇyadoṣopahatasvabhāvaḥ\n\npṛcchāmi tvāṃ dharmasaṃmūḍhacetāḥ|\n\nyacchreyaḥ syānniśicataṃ brūhi tanme\n\nśiṣyaste'haṃ śādhi māṃ tvāṃ prapannam||2.7||",
+      "en": "With my nature overpowered by weak commiseration, with a mind in confusion about duty, I supplicate Thee. Say decidedly what is good for me. I am Thy disciple. Instruct me who have taken refuge in Thee.",
+      "word_meanings": [
+        {
+          "word": "kārpaṇya-doṣha",
+          "meaning": "the flaw of cowardice"
+        },
+        {
+          "word": "upahata",
+          "meaning": "besieged"
+        },
+        {
+          "word": "sva-bhāvaḥ",
+          "meaning": "nature"
+        },
+        {
+          "word": "pṛichchhāmi",
+          "meaning": "I am asking"
+        },
+        {
+          "word": "tvām",
+          "meaning": "to you"
+        },
+        {
+          "word": "dharma",
+          "meaning": "duty"
+        },
+        {
+          "word": "sammūḍha",
+          "meaning": "confused"
+        },
+        {
+          "word": "chetāḥ",
+          "meaning": "in heart"
+        },
+        {
+          "word": "yat",
+          "meaning": "what"
+        },
+        {
+          "word": "śhreyaḥ",
+          "meaning": "best"
+        },
+        {
+          "word": "syāt",
+          "meaning": "may be"
+        },
+        {
+          "word": "niśhchitam",
+          "meaning": "decisively"
+        },
+        {
+          "word": "brūhi",
+          "meaning": "tell"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "me",
+          "meaning": "to me"
+        },
+        {
+          "word": "śhiṣhyaḥ",
+          "meaning": "disciple"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "śhādhi",
+          "meaning": "please instruct"
+        },
+        {
+          "word": "mām",
+          "meaning": "me"
+        },
+        {
+          "word": "tvām",
+          "meaning": "unto you"
+        },
+        {
+          "word": "prapannam",
+          "meaning": "surrendered"
+        }
+      ]
+    },
+    {
+      "ref": "2.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न हि प्रपश्यामि ममापनुद्या\n\nद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\n\nअवाप्य भूमावसपत्नमृद्धम्\n\nराज्यं सुराणामपि चाधिपत्यम्।।2.8।।",
+      "iast": "na hi prapaśyāmi mamāpanudyā\n\ndyacchokamucchoṣaṇamindriyāṇām|\n\navāpya bhūmāvasapatnamṛddham\n\nrājyaṃ surāṇāmapi cādhipatyam||2.8||",
+      "en": "I do not see anything to remove this sorrow which blasts my senses, even were I to obtain unrivalled and flourishing dominion over the earth, and mastery over the gods.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "prapaśhyāmi",
+          "meaning": "I see"
+        },
+        {
+          "word": "mama",
+          "meaning": "my"
+        },
+        {
+          "word": "apanudyāt",
+          "meaning": "drive away"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "śhokam",
+          "meaning": "anguish"
+        },
+        {
+          "word": "uchchhoṣhaṇam",
+          "meaning": "is drying up"
+        },
+        {
+          "word": "indriyāṇām",
+          "meaning": "of the senses"
+        },
+        {
+          "word": "avāpya",
+          "meaning": "after achieving"
+        },
+        {
+          "word": "bhūmau",
+          "meaning": "on the earth"
+        },
+        {
+          "word": "asapatnam",
+          "meaning": "unrivalled"
+        },
+        {
+          "word": "ṛiddham",
+          "meaning": "prosperous"
+        },
+        {
+          "word": "rājyam",
+          "meaning": "kingdom"
+        },
+        {
+          "word": "surāṇām",
+          "meaning": "like the celestial gods"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "ādhipatyam",
+          "meaning": "sovereignty"
+        }
+      ]
+    },
+    {
+      "ref": "2.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "sanjaya",
+      "deva": "सञ्जय उवाच\n\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।\n\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।2.9।।",
+      "iast": "sañjaya uvāca\n\nevamuktvā hṛṣīkeśaṃ guḍākeśaḥ parantapa|\n\nna yotsya iti govindamuktvā tūṣṇīṃ babhūva ha||2.9||",
+      "en": "Having spoken thus to the Lord of the senses, Gudâkesha, the scorcher of foes, said to Govinda, \"I shall not fight,\" and became silent.",
+      "word_meanings": [
+        {
+          "word": "sañjayaḥ uvācha",
+          "meaning": "Sanjay said"
+        },
+        {
+          "word": "evam",
+          "meaning": "thus"
+        },
+        {
+          "word": "uktvā",
+          "meaning": "having spoken"
+        },
+        {
+          "word": "hṛiṣhīkeśham",
+          "meaning": "to Shree Krishna, the master of the mind and senses"
+        },
+        {
+          "word": "guḍākeśhaḥ",
+          "meaning": "Arjun, the conquerer of sleep"
+        },
+        {
+          "word": "parantapaḥ",
+          "meaning": "Arjun, the chastiser of the enemies"
+        },
+        {
+          "word": "na yotsye",
+          "meaning": "I shall not fight"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "govindam",
+          "meaning": "Krishna, the giver of pleasure to the senses"
+        },
+        {
+          "word": "uktvā",
+          "meaning": "having addressed"
+        },
+        {
+          "word": "tūṣhṇīm",
+          "meaning": "silent"
+        },
+        {
+          "word": "babhūva",
+          "meaning": "became ha"
+        }
+      ]
+    },
+    {
+      "ref": "2.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तमुवाच हृषीकेशः प्रहसन्निव भारत।\n\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।2.10।।",
+      "iast": "tamuvāca hṛṣīkeśaḥ prahasanniva bhārata|\n\nsenayorubhayormadhye viṣīdantamidaṃ vacaḥ||2.10||",
+      "en": "To him who was sorrowing in the midst of the two armies, Hrishikesha, as if smiling, O descendant of Bharata! spoke these words.",
+      "word_meanings": [
+        {
+          "word": "tam",
+          "meaning": "to him"
+        },
+        {
+          "word": "uvācha",
+          "meaning": "said"
+        },
+        {
+          "word": "hṛiṣhīkeśhaḥ",
+          "meaning": "Shree Krishna, the master of mind and senses"
+        },
+        {
+          "word": "prahasan",
+          "meaning": "smilingly"
+        },
+        {
+          "word": "iva",
+          "meaning": "as if"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Dhritarashtra, descendant of Bharat"
+        },
+        {
+          "word": "senayoḥ",
+          "meaning": "of the armies"
+        },
+        {
+          "word": "ubhayoḥ",
+          "meaning": "of both"
+        },
+        {
+          "word": "madhye",
+          "meaning": "in the midst of"
+        },
+        {
+          "word": "viṣhīdantam",
+          "meaning": "to the grief-stricken"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "vachaḥ",
+          "meaning": "words"
+        }
+      ]
+    },
+    {
+      "ref": "2.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।\n\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।।2.11।।",
+      "iast": "śrī bhagavānuvāca\n\naśocyānanvaśocastvaṃ prajñāvādāṃśca bhāṣase|\n\ngatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ||2.11||",
+      "en": "Thou hast been mourning for them who should not be mourned for. Yet thou speakest words of wisdom. The (truly) wise grieve neither for the living nor the dead.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "the Supreme Lord said"
+        },
+        {
+          "word": "aśhochyān",
+          "meaning": "not worthy of grief"
+        },
+        {
+          "word": "anvaśhochaḥ",
+          "meaning": "are mourning"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "prajñā-vādān",
+          "meaning": "words of wisdom"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "bhāṣhase",
+          "meaning": "speaking"
+        },
+        {
+          "word": "gata āsūn",
+          "meaning": "the dead"
+        },
+        {
+          "word": "agata asūn",
+          "meaning": "the living"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "anuśhochanti",
+          "meaning": "lament"
+        },
+        {
+          "word": "paṇḍitāḥ",
+          "meaning": "the wise"
+        }
+      ]
+    },
+    {
+      "ref": "2.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।\n\nन चैव न भविष्यामः सर्वे वयमतः परम्।।2.12।।",
+      "iast": "na tvevāhaṃ jātu nāsaṃ na tvaṃ neme janādhipāḥ|\n\nna caiva na bhaviṣyāmaḥ sarve vayamataḥ param||2.12||",
+      "en": "It is not that I have never existed, nor thou, nor these kings. Nor is it that we shall cease to exist in the future.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "tu",
+          "meaning": "however"
+        },
+        {
+          "word": "eva",
+          "meaning": "certainly"
+        },
+        {
+          "word": "aham",
+          "meaning": "I"
+        },
+        {
+          "word": "jātu",
+          "meaning": "at any time"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "āsam",
+          "meaning": "exist"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "ime",
+          "meaning": "these"
+        },
+        {
+          "word": "jana-adhipāḥ",
+          "meaning": "kings"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "na bhaviṣhyāmaḥ",
+          "meaning": "shall not exist"
+        },
+        {
+          "word": "sarve vayam",
+          "meaning": "all of us"
+        },
+        {
+          "word": "ataḥ",
+          "meaning": "from now"
+        },
+        {
+          "word": "param",
+          "meaning": "after"
+        }
+      ]
+    },
+    {
+      "ref": "2.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।\n\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति।।2.13।।",
+      "iast": "dehino'sminyathā dehe kaumāraṃ yauvanaṃ jarā|\n\ntathā dehāntaraprāptirdhīrastatra na muhyati||2.13||",
+      "en": "As are childhood, youth, and old age, in this body, to the embodied soul, so also is the attaining of another body. Calm souls are not deluded thereat.",
+      "word_meanings": [
+        {
+          "word": "dehinaḥ",
+          "meaning": "of the embodied"
+        },
+        {
+          "word": "asmin",
+          "meaning": "in this"
+        },
+        {
+          "word": "yathā",
+          "meaning": "as"
+        },
+        {
+          "word": "dehe",
+          "meaning": "in the body"
+        },
+        {
+          "word": "kaumāram",
+          "meaning": "childhood"
+        },
+        {
+          "word": "yauvanam",
+          "meaning": "youth"
+        },
+        {
+          "word": "jarā",
+          "meaning": "old age"
+        },
+        {
+          "word": "tathā",
+          "meaning": "similarly"
+        },
+        {
+          "word": "deha-antara",
+          "meaning": "another body"
+        },
+        {
+          "word": "prāptiḥ",
+          "meaning": "achieves"
+        },
+        {
+          "word": "dhīraḥ",
+          "meaning": "the wise"
+        },
+        {
+          "word": "tatra",
+          "meaning": "thereupon"
+        },
+        {
+          "word": "na muhyati",
+          "meaning": "are not deluded"
+        }
+      ]
+    },
+    {
+      "ref": "2.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\n\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत।।2.14।।",
+      "iast": "mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ|\n\nāgamāpāyino'nityāstāṃstitikṣasva bhārata||2.14||",
+      "en": "Notions of heat and cold, of pain and pleasure, are born, O son of Kunti, only of the contact of the senses with their objects. They have a beginning and an end. They are impermanent in their nature. Bear them patiently, O descendant of Bharata.",
+      "word_meanings": [
+        {
+          "word": "mātrā-sparśhāḥ",
+          "meaning": "contact of the senses with the sense objects"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "śhīta",
+          "meaning": "winter"
+        },
+        {
+          "word": "uṣhṇa",
+          "meaning": "summer"
+        },
+        {
+          "word": "sukha",
+          "meaning": "happiness"
+        },
+        {
+          "word": "duḥkha",
+          "meaning": "distress"
+        },
+        {
+          "word": "dāḥ",
+          "meaning": "give"
+        },
+        {
+          "word": "āgama",
+          "meaning": "come"
+        },
+        {
+          "word": "apāyinaḥ",
+          "meaning": "go"
+        },
+        {
+          "word": "anityāḥ",
+          "meaning": "non-permanent"
+        },
+        {
+          "word": "tān",
+          "meaning": "them"
+        },
+        {
+          "word": "titikṣhasva",
+          "meaning": "tolerate"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "descendant of the Bharat"
+        }
+      ]
+    },
+    {
+      "ref": "2.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।\n\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते।।2.15।।",
+      "iast": "yaṃ hi na vyathayantyete puruṣaṃ puruṣarṣabha|\n\nsamaduḥkhasukhaṃ dhīraṃ so'mṛtatvāya kalpate||2.15||",
+      "en": "That calm man who is the same in pain and pleasure, whom these cannot disturb, alone is able, O great amongst men, to attain to immortality.",
+      "word_meanings": [
+        {
+          "word": "yam",
+          "meaning": "whom"
+        },
+        {
+          "word": "hi",
+          "meaning": "verily"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vyathayanti",
+          "meaning": "distressed"
+        },
+        {
+          "word": "ete",
+          "meaning": "these"
+        },
+        {
+          "word": "puruṣham",
+          "meaning": "person"
+        },
+        {
+          "word": "puruṣha-ṛiṣhabha",
+          "meaning": "the noblest amongst men, Arjun"
+        },
+        {
+          "word": "sama",
+          "meaning": "equipoised"
+        },
+        {
+          "word": "duḥkha",
+          "meaning": "distress"
+        },
+        {
+          "word": "sukham",
+          "meaning": "happiness"
+        },
+        {
+          "word": "dhīram",
+          "meaning": "steady"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "amṛitatvāya",
+          "meaning": "for liberation"
+        },
+        {
+          "word": "kalpate",
+          "meaning": "becomes eligible"
+        }
+      ]
+    },
+    {
+      "ref": "2.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नासतो विद्यते भावो नाभावो विद्यते सतः।\n\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः।।2.16।।",
+      "iast": "nāsato vidyate bhāvo nābhāvo vidyate sataḥ|\n\nubhayorapi dṛṣṭo'ntastvanayostattvadarśibhiḥ||2.16||",
+      "en": "The unreal never is. The Real never is not. Men possessed of the knowledge of the Truth fully know both these.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "no"
+        },
+        {
+          "word": "asataḥ",
+          "meaning": "of the temporary"
+        },
+        {
+          "word": "vidyate",
+          "meaning": "there is"
+        },
+        {
+          "word": "bhāvaḥ",
+          "meaning": "is"
+        },
+        {
+          "word": "na",
+          "meaning": "no"
+        },
+        {
+          "word": "abhāvaḥ",
+          "meaning": "cessation"
+        },
+        {
+          "word": "vidyate",
+          "meaning": "is"
+        },
+        {
+          "word": "sataḥ",
+          "meaning": "of the eternal"
+        },
+        {
+          "word": "ubhayoḥ",
+          "meaning": "of the two"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "dṛiṣhṭaḥ",
+          "meaning": "observed"
+        },
+        {
+          "word": "antaḥ",
+          "meaning": "conclusion"
+        },
+        {
+          "word": "tu",
+          "meaning": "verily"
+        },
+        {
+          "word": "anayoḥ",
+          "meaning": "of these"
+        },
+        {
+          "word": "tattva",
+          "meaning": "of the truth"
+        },
+        {
+          "word": "darśhibhiḥ",
+          "meaning": "by the seers"
+        }
+      ]
+    },
+    {
+      "ref": "2.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\n\nविनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति।।2.17।।",
+      "iast": "avināśi tu tadviddhi yena sarvamidaṃ tatam|\n\nvināśamavyayasyāsya na kaścit kartumarhati||2.17||",
+      "en": "That by which all this is pervaded,—That know for certain to be indestructible. None has the power to destroy this Immutable.",
+      "word_meanings": [
+        {
+          "word": "avināśhi",
+          "meaning": "indestructible"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "viddhi",
+          "meaning": "know"
+        },
+        {
+          "word": "yena",
+          "meaning": "by whom"
+        },
+        {
+          "word": "sarvam",
+          "meaning": "entire"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "tatam",
+          "meaning": "pervaded"
+        },
+        {
+          "word": "vināśham",
+          "meaning": "destruction"
+        },
+        {
+          "word": "avyayasya",
+          "meaning": "of the imperishable"
+        },
+        {
+          "word": "asya",
+          "meaning": "of it"
+        },
+        {
+          "word": "na kaśhchit",
+          "meaning": "no one"
+        },
+        {
+          "word": "kartum",
+          "meaning": "to cause"
+        },
+        {
+          "word": "arhati",
+          "meaning": "is able"
+        }
+      ]
+    },
+    {
+      "ref": "2.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।\n\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत।।2.18।।",
+      "iast": "antavanta ime dehā nityasyoktāḥ śarīriṇaḥ|\n\nanāśino'prameyasya tasmādyudhyasva bhārata||2.18||",
+      "en": "Of this indwelling Self, the ever-changeless, the indestructible, the illimitable,—these bodies are said to have an end. Fight therefore, O descendant of Bharata.",
+      "word_meanings": [
+        {
+          "word": "anta-vantaḥ",
+          "meaning": "having an end"
+        },
+        {
+          "word": "ime",
+          "meaning": "these"
+        },
+        {
+          "word": "dehāḥ",
+          "meaning": "material bodies"
+        },
+        {
+          "word": "nityasya",
+          "meaning": "eternally"
+        },
+        {
+          "word": "uktāḥ",
+          "meaning": "are said"
+        },
+        {
+          "word": "śharīriṇaḥ",
+          "meaning": "of the embodied soul"
+        },
+        {
+          "word": "anāśhinaḥ",
+          "meaning": "indestructible"
+        },
+        {
+          "word": "aprameyasya",
+          "meaning": "immeasurable"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "yudhyasva",
+          "meaning": "fight"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "descendant of Bharat, Arjun"
+        }
+      ]
+    },
+    {
+      "ref": "2.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।\n\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते।।2.19।।",
+      "iast": "ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam|\n\nubhau tau na vijānīto nāyaṃ hanti na hanyate||2.19||",
+      "en": "He who takes the Self to be the slayer, he who takes It to be the slain, neither of these knows. It does not slay, nor is It slain.",
+      "word_meanings": [
+        {
+          "word": "yaḥ",
+          "meaning": "one who"
+        },
+        {
+          "word": "enam",
+          "meaning": "this"
+        },
+        {
+          "word": "vetti",
+          "meaning": "knows"
+        },
+        {
+          "word": "hantāram",
+          "meaning": "the slayer"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "one who"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "enam",
+          "meaning": "this"
+        },
+        {
+          "word": "manyate",
+          "meaning": "thinks"
+        },
+        {
+          "word": "hatam",
+          "meaning": "slain"
+        },
+        {
+          "word": "ubhau",
+          "meaning": "both"
+        },
+        {
+          "word": "tau",
+          "meaning": "they"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vijānītaḥ",
+          "meaning": "in knowledge"
+        },
+        {
+          "word": "na",
+          "meaning": "neither"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this"
+        },
+        {
+          "word": "hanti",
+          "meaning": "slays"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "hanyate",
+          "meaning": "is killed"
+        }
+      ]
+    },
+    {
+      "ref": "2.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "न जायते म्रियते वा कदाचि\n\nन्नायं भूत्वा भविता वा न भूयः।\n\nअजो नित्यः शाश्वतोऽयं पुराणो\n\nन हन्यते हन्यमाने शरीरे।।2.20।।",
+      "iast": "na jāyate mriyate vā kadāci\n\nnnāyaṃ bhūtvā bhavitā vā na bhūyaḥ|\n\najo nityaḥ śāśvato'yaṃ purāṇo\n\nna hanyate hanyamāne śarīre||2.20||",
+      "en": "This in never born, nor does It die. It is not that not having been It again comes into being. (Or according to another view: It is not that having been It again ceases to be). This is unborn, eternal, changeless, ever-Itself. It is not killed when the body is killed.",
+      "word_meanings": [
+        {
+          "word": "na jāyate",
+          "meaning": "is not born"
+        },
+        {
+          "word": "mriyate",
+          "meaning": "dies"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "kadāchit",
+          "meaning": "at any time"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this"
+        },
+        {
+          "word": "bhūtvā",
+          "meaning": "having once existed"
+        },
+        {
+          "word": "bhavitā",
+          "meaning": "will be"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "bhūyaḥ",
+          "meaning": "further"
+        },
+        {
+          "word": "ajaḥ",
+          "meaning": "unborn"
+        },
+        {
+          "word": "nityaḥ",
+          "meaning": "eternal"
+        },
+        {
+          "word": "śhāśhvataḥ",
+          "meaning": "immortal"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this"
+        },
+        {
+          "word": "purāṇaḥ",
+          "meaning": "the ancient"
+        },
+        {
+          "word": "na hanyate",
+          "meaning": "is not destroyed"
+        },
+        {
+          "word": "hanyamāne",
+          "meaning": "is destroyed"
+        },
+        {
+          "word": "śharīre",
+          "meaning": "when the body"
+        }
+      ]
+    },
+    {
+      "ref": "2.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "वेदाविनाशिनं नित्यं य एनमजमव्ययम्।\n\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम्।।2.21।।",
+      "iast": "vedāvināśinaṃ nityaṃ ya enamajamavyayam|\n\nkathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam||2.21||",
+      "en": "He that knows This to be indestructible, changeless, without birth, and immutable, how is he, O son of Prithâ, to slay or cause another to slay?",
+      "word_meanings": [
+        {
+          "word": "veda",
+          "meaning": "knows"
+        },
+        {
+          "word": "avināśhinam",
+          "meaning": "imperishable"
+        },
+        {
+          "word": "nityam",
+          "meaning": "eternal"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "enam",
+          "meaning": "this"
+        },
+        {
+          "word": "ajam",
+          "meaning": "unborn"
+        },
+        {
+          "word": "avyayam",
+          "meaning": "immutable"
+        },
+        {
+          "word": "katham",
+          "meaning": "how"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that"
+        },
+        {
+          "word": "puruṣhaḥ",
+          "meaning": "person"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Parth"
+        },
+        {
+          "word": "kam",
+          "meaning": "whom"
+        },
+        {
+          "word": "ghātayati",
+          "meaning": "causes to be killed"
+        },
+        {
+          "word": "hanti",
+          "meaning": "kills"
+        },
+        {
+          "word": "kam",
+          "meaning": "whom"
+        }
+      ]
+    },
+    {
+      "ref": "2.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "वासांसि जीर्णानि यथा विहाय\n\nनवानि गृह्णाति नरोऽपराणि।\n\nतथा शरीराणि विहाय जीर्णा\n\nन्यन्यानि संयाति नवानि देही।।2.22।।",
+      "iast": "vāsāṃsi jīrṇāni yathā vihāya\n\nnavāni gṛhṇāti naro'parāṇi|\n\ntathā śarīrāṇi vihāya jīrṇā\n\nnyanyāni saṃyāti navāni dehī||2.22||",
+      "en": "Even as a man casts off worn-out clothes, and puts on others which are new, so the embodied casts off worn-out bodies, and enters into others which are new.",
+      "word_meanings": [
+        {
+          "word": "vāsānsi",
+          "meaning": "garments"
+        },
+        {
+          "word": "jīrṇāni",
+          "meaning": "worn-out"
+        },
+        {
+          "word": "yathā",
+          "meaning": "as"
+        },
+        {
+          "word": "vihāya",
+          "meaning": "sheds"
+        },
+        {
+          "word": "navāni",
+          "meaning": "new"
+        },
+        {
+          "word": "gṛihṇāti",
+          "meaning": "accepts"
+        },
+        {
+          "word": "naraḥ",
+          "meaning": "a person"
+        },
+        {
+          "word": "aparāṇi",
+          "meaning": "others"
+        },
+        {
+          "word": "tathā",
+          "meaning": "likewise"
+        },
+        {
+          "word": "śharīrāṇi",
+          "meaning": "bodies"
+        },
+        {
+          "word": "vihāya",
+          "meaning": "casting off"
+        },
+        {
+          "word": "jirṇāni",
+          "meaning": "worn-out"
+        },
+        {
+          "word": "anyāni",
+          "meaning": "other"
+        },
+        {
+          "word": "sanyāti",
+          "meaning": "enters"
+        },
+        {
+          "word": "navāni",
+          "meaning": "new"
+        },
+        {
+          "word": "dehī",
+          "meaning": "the embodied soul"
+        }
+      ]
+    },
+    {
+      "ref": "2.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\n\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः।।2.23।।",
+      "iast": "nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ|\n\nna cainaṃ kledayantyāpo na śoṣayati mārutaḥ||2.23||",
+      "en": "This (Self), weapons cut not; This, fire burns not; This, water wets not; and This, wind dries not.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "chhindanti",
+          "meaning": "shred"
+        },
+        {
+          "word": "śhastrāṇi",
+          "meaning": "weapons"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "dahati",
+          "meaning": "burns"
+        },
+        {
+          "word": "pāvakaḥ",
+          "meaning": "fire"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "kledayanti",
+          "meaning": "moisten"
+        },
+        {
+          "word": "āpaḥ",
+          "meaning": "water"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "śhoṣhayati",
+          "meaning": "dry"
+        },
+        {
+          "word": "mārutaḥ",
+          "meaning": "wind"
+        }
+      ]
+    },
+    {
+      "ref": "2.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।\n\nनित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः।।2.24।।",
+      "iast": "acchedyo'yamadāhyo'yamakledyo'śoṣya eva ca|\n\nnityaḥ sarvagataḥ sthāṇuracalo'yaṃ sanātanaḥ||2.24||",
+      "en": "This Self cannot be cut, nor burnt, nor wetted, nor dried. Changeless, all-pervading, unmoving, immovable, the Self is eternal.",
+      "word_meanings": [
+        {
+          "word": "achchhedyaḥ",
+          "meaning": "unbreakable"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "adāhyaḥ",
+          "meaning": "incombustible"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "akledyaḥ",
+          "meaning": "cannot be dampened"
+        },
+        {
+          "word": "aśhoṣhyaḥ",
+          "meaning": "cannot be dried"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "nityaḥ",
+          "meaning": "everlasting"
+        },
+        {
+          "word": "sarva-gataḥ",
+          "meaning": "all-pervading"
+        },
+        {
+          "word": "sthāṇuḥ",
+          "meaning": "unalterable"
+        },
+        {
+          "word": "achalaḥ",
+          "meaning": "immutable"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "sanātanaḥ",
+          "meaning": "primordial"
+        }
+      ]
+    },
+    {
+      "ref": "2.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।\n\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि।।2.25।।",
+      "iast": "avyakto'yamacintyo'yamavikāryo'yamucyate|\n\ntasmādevaṃ viditvainaṃ nānuśocitumarhasi||2.25||",
+      "en": "This (Self) is said to be unmanifested, unthinkable, and unchangeable. Therefore, knowing This to be such, thou oughtest not to mourn.",
+      "word_meanings": [
+        {
+          "word": "avyaktaḥ",
+          "meaning": "unmanifested"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "achintyaḥ",
+          "meaning": "inconceivable"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "avikāryaḥ",
+          "meaning": "unchangeable"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is said"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "evam",
+          "meaning": "thus"
+        },
+        {
+          "word": "viditvā",
+          "meaning": "having known"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "anuśhochitum",
+          "meaning": "to grieve"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "befitting"
+        }
+      ]
+    },
+    {
+      "ref": "2.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।\n\nतथापि त्वं महाबाहो नैवं शोचितुमर्हसि।।2.26।।",
+      "iast": "atha cainaṃ nityajātaṃ nityaṃ vā manyase mṛtam|\n\ntathāpi tvaṃ mahābāho naivaṃ śocitumarhasi||2.26||",
+      "en": "But if thou shouldst take This to have constant birth and death, even in that case, O mighty-armed, thou oughtest not to mourn for This.",
+      "word_meanings": [
+        {
+          "word": "atha",
+          "meaning": "if, however"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "nitya-jātam",
+          "meaning": "taking constant birth"
+        },
+        {
+          "word": "nityam",
+          "meaning": "always"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "manyase",
+          "meaning": "you think"
+        },
+        {
+          "word": "mṛitam",
+          "meaning": "dead"
+        },
+        {
+          "word": "tathā api",
+          "meaning": "even then"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "mahā-bāho",
+          "meaning": "mighty-armed one, Arjun"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "evam",
+          "meaning": "like this"
+        },
+        {
+          "word": "śhochitum",
+          "meaning": "grieve"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "befitting"
+        }
+      ]
+    },
+    {
+      "ref": "2.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।\n\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि।।2.27।।",
+      "iast": "jātasya hi dhruvo mṛtyurdhruvaṃ janma mṛtasya ca|\n\ntasmādaparihārye'rthe na tvaṃ śocitumarhasi||2.27||",
+      "en": "Of that which is born, death is certain, of that which is dead, birth is certain. Over the unavoidable, therefore, thou oughtest not to grieve.",
+      "word_meanings": [
+        {
+          "word": "jātasya",
+          "meaning": "for one who has been born"
+        },
+        {
+          "word": "hi",
+          "meaning": "for"
+        },
+        {
+          "word": "dhruvaḥ",
+          "meaning": "certain"
+        },
+        {
+          "word": "mṛityuḥ",
+          "meaning": "death"
+        },
+        {
+          "word": "dhruvam",
+          "meaning": "certain"
+        },
+        {
+          "word": "janma",
+          "meaning": "birth"
+        },
+        {
+          "word": "mṛitasya",
+          "meaning": "for the dead"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "aparihārye arthe",
+          "meaning": "in this inevitable situation"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "śhochitum",
+          "meaning": "lament"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "befitting"
+        }
+      ]
+    },
+    {
+      "ref": "2.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।\n\nअव्यक्तनिधनान्येव तत्र का परिदेवना।।2.28।।",
+      "iast": "avyaktādīni bhūtāni vyaktamadhyāni bhārata|\n\navyaktanidhanānyeva tatra kā paridevanā||2.28||",
+      "en": "All beings are unmanifested in their beginning, O Bhârata, manifested in their middle state and unmanifested again in their end. What is there then to grieve about?",
+      "word_meanings": [
+        {
+          "word": "avyakta-ādīni",
+          "meaning": "unmanifest before birth"
+        },
+        {
+          "word": "bhūtāni",
+          "meaning": "created beings"
+        },
+        {
+          "word": "vyakta",
+          "meaning": "manifest"
+        },
+        {
+          "word": "madhyāni",
+          "meaning": "in the middle"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "Arjun, scion of Bharat"
+        },
+        {
+          "word": "avyakta",
+          "meaning": "unmanifest"
+        },
+        {
+          "word": "nidhanāni",
+          "meaning": "on death"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "tatra",
+          "meaning": "therefore"
+        },
+        {
+          "word": "kā",
+          "meaning": "why"
+        },
+        {
+          "word": "paridevanā",
+          "meaning": "grieve"
+        }
+      ]
+    },
+    {
+      "ref": "2.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आश्चर्यवत्पश्यति कश्चिदेन\n\nमाश्चर्यवद्वदति तथैव चान्यः।\n\nआश्चर्यवच्चैनमन्यः श्रृणोति\n\nश्रुत्वाप्येनं वेद न चैव कश्चित्।।2.29।।",
+      "iast": "āścaryavatpaśyati kaścidena\n\nmāścaryavadvadati tathaiva cānyaḥ|\n\nāścaryavaccainamanyaḥ śrṛṇoti\n\nśrutvāpyenaṃ veda na caiva kaścit||2.29||",
+      "en": "Some look upon the Self as marvellous. Others speak of It as wonderful. Others again hear of It as a wonder. And still others, though hearing, do not understand It at all.",
+      "word_meanings": [
+        {
+          "word": "āśhcharya-vat",
+          "meaning": "as amazing"
+        },
+        {
+          "word": "paśhyati",
+          "meaning": "see"
+        },
+        {
+          "word": "kaśhchit",
+          "meaning": "someone"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "āśhcharya-vat",
+          "meaning": "as amazing"
+        },
+        {
+          "word": "vadati",
+          "meaning": "speak of"
+        },
+        {
+          "word": "tathā",
+          "meaning": "thus"
+        },
+        {
+          "word": "eva",
+          "meaning": "indeed"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "anyaḥ",
+          "meaning": "other"
+        },
+        {
+          "word": "āśhcharya-vat",
+          "meaning": "similarly amazing"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "anyaḥ",
+          "meaning": "others"
+        },
+        {
+          "word": "śhṛiṇoti",
+          "meaning": "hear"
+        },
+        {
+          "word": "śhrutvā",
+          "meaning": "having heard"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "enam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "veda",
+          "meaning": "understand"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "eva",
+          "meaning": "even"
+        },
+        {
+          "word": "kaśhchit",
+          "meaning": "some"
+        }
+      ]
+    },
+    {
+      "ref": "2.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत।\n\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि।।2.30।।",
+      "iast": "dehī nityamavadhyo'yaṃ dehe sarvasya bhārata|\n\ntasmātsarvāṇi bhūtāni na tvaṃ śocitumarhasi||2.30||",
+      "en": "This, the Indweller in the bodies of all, is ever indestructible, O descendant of Bharata. Wherefore thou oughtest not to mourn for any creature.",
+      "word_meanings": [
+        {
+          "word": "dehī",
+          "meaning": "the soul that dwells within the body"
+        },
+        {
+          "word": "nityam",
+          "meaning": "always"
+        },
+        {
+          "word": "avadhyaḥ",
+          "meaning": "immortal"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this soul"
+        },
+        {
+          "word": "dehe",
+          "meaning": "in the body"
+        },
+        {
+          "word": "sarvasya",
+          "meaning": "of everyone"
+        },
+        {
+          "word": "bhārata",
+          "meaning": "descendant of Bharat, Arjun"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "sarvāṇi",
+          "meaning": "for all"
+        },
+        {
+          "word": "bhūtāni",
+          "meaning": "living entities"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "śhochitum",
+          "meaning": "mourn"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "should"
+        }
+      ]
+    },
+    {
+      "ref": "2.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।\n\nधर्म्याद्धि युद्धाछ्रेयोऽन्यत्क्षत्रियस्य न विद्यते।।2.31।।",
+      "iast": "svadharmamapi cāvekṣya na vikampitumarhasi|\n\ndharmyāddhi yuddhāchreyo'nyatkṣatriyasya na vidyate||2.31||",
+      "en": "Looking at thine own Dharma, also, thou oughtest not to waver, for there is nothing higher for a Kshatriya than a righteous war.",
+      "word_meanings": [
+        {
+          "word": "swa-dharmam",
+          "meaning": "one’s duty in accordance with the Vedas"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "avekṣhya",
+          "meaning": "considering"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vikampitum",
+          "meaning": "to waver"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "should"
+        },
+        {
+          "word": "dharmyāt",
+          "meaning": "for righteousness"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "yuddhāt",
+          "meaning": "than fighting"
+        },
+        {
+          "word": "śhreyaḥ",
+          "meaning": "better"
+        },
+        {
+          "word": "anyat",
+          "meaning": "another"
+        },
+        {
+          "word": "kṣhatriyasya",
+          "meaning": "of a warrior"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vidyate",
+          "meaning": "exists"
+        }
+      ]
+    },
+    {
+      "ref": "2.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।\n\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्।।2.32।।",
+      "iast": "yadṛcchayā copapannaṃ svargadvāramapāvṛtam|\n\nsukhinaḥ kṣatriyāḥ pārtha labhante yuddhamīdṛśam||2.32||",
+      "en": "Fortunate certainly are the Kshatriyas, O son of Prithâ, who are called to fight in such a battle, that comes unsought as an open gate to heaven.",
+      "word_meanings": [
+        {
+          "word": "yadṛichchhayā",
+          "meaning": "unsought"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "upapannam",
+          "meaning": "come"
+        },
+        {
+          "word": "swarga",
+          "meaning": "celestial abodes"
+        },
+        {
+          "word": "dvāram",
+          "meaning": "door"
+        },
+        {
+          "word": "apāvṛitam",
+          "meaning": "wide open"
+        },
+        {
+          "word": "sukhinaḥ",
+          "meaning": "happy"
+        },
+        {
+          "word": "kṣhatriyāḥ",
+          "meaning": "warriors"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "labhante",
+          "meaning": "obtain"
+        },
+        {
+          "word": "yuddham",
+          "meaning": "war"
+        },
+        {
+          "word": "īdṛiśham",
+          "meaning": "such"
+        }
+      ]
+    },
+    {
+      "ref": "2.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि।\n\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि।।2.33।।",
+      "iast": "atha caittvamimaṃ dharmyaṃ saṃgrāmaṃ na kariṣyasi|\n\ntataḥ svadharmaṃ kīrtiṃ ca hitvā pāpamavāpsyasi||2.33||",
+      "en": "But if thou refusest to engage in this righteous warfare, then, forfeiting thine own Dharma and honour, thou shalt incur sin.",
+      "word_meanings": [
+        {
+          "word": "atha chet",
+          "meaning": "if, however"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "imam",
+          "meaning": "this"
+        },
+        {
+          "word": "dharmyam saṅgrāmam",
+          "meaning": "righteous war"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "kariṣhyasi",
+          "meaning": "act"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "then"
+        },
+        {
+          "word": "sva-dharmam",
+          "meaning": "one’s duty in accordance with the Vedas"
+        },
+        {
+          "word": "kīrtim",
+          "meaning": "reputation"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "hitvā",
+          "meaning": "abandoning"
+        },
+        {
+          "word": "pāpam",
+          "meaning": "sin"
+        },
+        {
+          "word": "avāpsyasi",
+          "meaning": "will incur"
+        }
+      ]
+    },
+    {
+      "ref": "2.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।\n\nसंभावितस्य चाकीर्तिर्मरणादतिरिच्यते।।2.34।।",
+      "iast": "akīrtiṃ cāpi bhūtāni kathayiṣyanti te'vyayām|\n\nsaṃbhāvitasya cākīrtirmaraṇādatiricyate||2.34||",
+      "en": "The world also will ever hold thee in reprobation.",
+      "word_meanings": [
+        {
+          "word": "akīrtim",
+          "meaning": "infamy"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "bhūtāni",
+          "meaning": "people"
+        },
+        {
+          "word": "kathayiṣhyanti",
+          "meaning": "will speak"
+        },
+        {
+          "word": "te",
+          "meaning": "of your"
+        },
+        {
+          "word": "avyayām",
+          "meaning": "everlasting"
+        },
+        {
+          "word": "sambhāvitasya",
+          "meaning": "of a respectable person"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "akīrtiḥ",
+          "meaning": "infamy"
+        },
+        {
+          "word": "maraṇāt",
+          "meaning": "than death"
+        },
+        {
+          "word": "atirichyate",
+          "meaning": "is greater"
+        }
+      ]
+    },
+    {
+      "ref": "2.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।\n\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्।।2.35।।",
+      "iast": "bhayādraṇāduparataṃ maṃsyante tvāṃ mahārathāḥ|\n\nyeṣāṃ ca tvaṃ bahumato bhūtvā yāsyasi lāghavam||2.35||",
+      "en": "The great chariot-warriors will believe that thou hast withdrawn from the battle through fear. And thou wilt be lightly esteemed by them who have thought much of thee.",
+      "word_meanings": [
+        {
+          "word": "bhayāt",
+          "meaning": "out of fear"
+        },
+        {
+          "word": "raṇāt",
+          "meaning": "from the battlefield"
+        },
+        {
+          "word": "uparatam",
+          "meaning": "have fled"
+        },
+        {
+          "word": "maṁsyante",
+          "meaning": "will think"
+        },
+        {
+          "word": "tvām",
+          "meaning": "you"
+        },
+        {
+          "word": "mahā-rathāḥ",
+          "meaning": "warriors who could single handedly match the strength of ten thousand ordinary warriors"
+        },
+        {
+          "word": "yeṣhām",
+          "meaning": "for whom"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "bahu-mataḥ",
+          "meaning": "high esteemed"
+        },
+        {
+          "word": "bhūtvā",
+          "meaning": "having been"
+        },
+        {
+          "word": "yāsyasi",
+          "meaning": "you will loose"
+        },
+        {
+          "word": "lāghavam",
+          "meaning": "decreased in value"
+        }
+      ]
+    },
+    {
+      "ref": "2.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।\n\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्।।2.36।।",
+      "iast": "avācyavādāṃśca bahūn vadiṣyanti tavāhitāḥ|\n\nnindantastava sāmarthyaṃ tato duḥkhataraṃ nu kim||2.36||",
+      "en": "Thine enemies also, cavilling at thy great prowess, will say of thee things that are not to be uttered. What could be more intolerable than this?",
+      "word_meanings": [
+        {
+          "word": "avāchya-vādān",
+          "meaning": "using harsh words"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "bahūn",
+          "meaning": "many"
+        },
+        {
+          "word": "vadiṣhyanti",
+          "meaning": "will say"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "ahitāḥ",
+          "meaning": "enemies"
+        },
+        {
+          "word": "nindantaḥ",
+          "meaning": "defame"
+        },
+        {
+          "word": "tava",
+          "meaning": "your"
+        },
+        {
+          "word": "sāmarthyam",
+          "meaning": "might"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "than that"
+        },
+        {
+          "word": "duḥkha-taram",
+          "meaning": "more painful"
+        },
+        {
+          "word": "nu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        }
+      ]
+    },
+    {
+      "ref": "2.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।\n\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः।।2.37।।",
+      "iast": "hato vā prāpsyasi svargaṃ jitvā vā bhokṣyase mahīm|\n\ntasmāduttiṣṭha kaunteya yuddhāya kṛtaniścayaḥ||2.37||",
+      "en": "Dying thou gainest heaven; conquering thou enjoyest the earth. Therefore, O son of Kunti, arise, resolved to fight.",
+      "word_meanings": [
+        {
+          "word": "hataḥ",
+          "meaning": "slain"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "prāpsyasi",
+          "meaning": "you will attain"
+        },
+        {
+          "word": "swargam",
+          "meaning": "celestial abodes"
+        },
+        {
+          "word": "jitvā",
+          "meaning": "by achieving victory"
+        },
+        {
+          "word": "vā",
+          "meaning": "or"
+        },
+        {
+          "word": "bhokṣhyase",
+          "meaning": "you shall enjoy"
+        },
+        {
+          "word": "mahīm",
+          "meaning": "the kingdom on earth"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "uttiṣhṭha",
+          "meaning": "arise"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "yuddhāya",
+          "meaning": "for fight"
+        },
+        {
+          "word": "kṛita-niśhchayaḥ",
+          "meaning": "with determination"
+        }
+      ]
+    },
+    {
+      "ref": "2.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।\n\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।2.38।।",
+      "iast": "sukhaduḥkhe same kṛtvā lābhālābhau jayājayau|\n\ntato yuddhāya yujyasva naivaṃ pāpamavāpsyasi||2.38||",
+      "en": "Having made pain and pleasure, gain and loss, conquest and defeat, the same, engage thou then in battle. So shalt thou incur no sin.",
+      "word_meanings": [
+        {
+          "word": "sukha",
+          "meaning": "happiness"
+        },
+        {
+          "word": "duḥkhe",
+          "meaning": "in distress"
+        },
+        {
+          "word": "same kṛitvā",
+          "meaning": "treating alike"
+        },
+        {
+          "word": "lābha-alābhau",
+          "meaning": "gain and loss"
+        },
+        {
+          "word": "jaya-ajayau",
+          "meaning": "victory and defeat"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "thereafter"
+        },
+        {
+          "word": "yuddhāya",
+          "meaning": "for fighting"
+        },
+        {
+          "word": "yujyasva",
+          "meaning": "engage"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "evam",
+          "meaning": "thus"
+        },
+        {
+          "word": "pāpam",
+          "meaning": "sin"
+        },
+        {
+          "word": "avāpsyasi",
+          "meaning": "shall incur"
+        }
+      ]
+    },
+    {
+      "ref": "2.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु।\n\nबुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि।।2.39।।",
+      "iast": "eṣā te'bhihitā sāṃkhye buddhiryoge tvimāṃ śrṛṇu|\n\nbuddhyāyukto yayā pārtha karmabandhaṃ prahāsyasi||2.39||",
+      "en": "The wisdom of Self-realisation has been declared unto thee. Hearken thou now to the wisdom of Yoga, endued with which, O son of Prithâ, thou shalt break through the bonds of Karma.",
+      "word_meanings": [
+        {
+          "word": "eṣhā",
+          "meaning": "hitherto"
+        },
+        {
+          "word": "te",
+          "meaning": "to you"
+        },
+        {
+          "word": "abhihitā",
+          "meaning": "explained"
+        },
+        {
+          "word": "sānkhye",
+          "meaning": "by analytical knowledge"
+        },
+        {
+          "word": "buddhiḥ yoge",
+          "meaning": "by the yog of intellect"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "imām",
+          "meaning": "this"
+        },
+        {
+          "word": "śhṛiṇu",
+          "meaning": "listen"
+        },
+        {
+          "word": "buddhyā",
+          "meaning": "by understanding"
+        },
+        {
+          "word": "yuktaḥ",
+          "meaning": "united"
+        },
+        {
+          "word": "yayā",
+          "meaning": "by which"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "karma-bandham",
+          "meaning": "bondage of karma"
+        },
+        {
+          "word": "prahāsyasi",
+          "meaning": "you shall be released from"
+        }
+      ]
+    },
+    {
+      "ref": "2.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।\n\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्।।2.40।।",
+      "iast": "nehābhikramanāśo'sti pratyavāyo na vidyate|\n\nsvalpamapyasya dharmasya trāyate mahato bhayāt||2.40||",
+      "en": "In this, there is no waste of the unfinished attempt, nor is there production of contrary results. Even very little of this Dharma protects from the great terror.",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "iha",
+          "meaning": "in this"
+        },
+        {
+          "word": "abhikrama",
+          "meaning": "efforts"
+        },
+        {
+          "word": "nāśhaḥ",
+          "meaning": "loss"
+        },
+        {
+          "word": "asti",
+          "meaning": "there is"
+        },
+        {
+          "word": "pratyavāyaḥ",
+          "meaning": "adverse result"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "vidyate",
+          "meaning": "is"
+        },
+        {
+          "word": "su-alpam",
+          "meaning": "a little"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "asya",
+          "meaning": "of this"
+        },
+        {
+          "word": "dharmasya",
+          "meaning": "occupation"
+        },
+        {
+          "word": "trāyate",
+          "meaning": "saves"
+        },
+        {
+          "word": "mahataḥ",
+          "meaning": "from great"
+        },
+        {
+          "word": "bhayāt",
+          "meaning": "danger"
+        }
+      ]
+    },
+    {
+      "ref": "2.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।\n\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्।।2.41।।",
+      "iast": "vyavasāyātmikā buddhirekeha kurunandana|\n\nbahuśākhā hyanantāśca buddhayo'vyavasāyinām||2.41||",
+      "en": "In this, O scion of Kuru, there is but a single one-pointed determination. The purposes of the undecided are innumerable and many-branching.",
+      "word_meanings": [
+        {
+          "word": "vyavasāya-ātmikā",
+          "meaning": "resolute"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "ekā",
+          "meaning": "single"
+        },
+        {
+          "word": "iha",
+          "meaning": "on this path"
+        },
+        {
+          "word": "kuru-nandana",
+          "meaning": "descendent of the Kurus"
+        },
+        {
+          "word": "bahu-śhākhāḥ",
+          "meaning": "many-branched"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "anantāḥ",
+          "meaning": "endless"
+        },
+        {
+          "word": "cha",
+          "meaning": "also"
+        },
+        {
+          "word": "buddhayaḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "avyavasāyinām",
+          "meaning": "of the irresolute"
+        }
+      ]
+    },
+    {
+      "ref": "2.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः।\n\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः।।2.42।।",
+      "iast": "yāmimāṃ puṣpitāṃ vācaṃ pravadantyavipaścitaḥ|\n\nvedavādaratāḥ pārtha nānyadastīti vādinaḥ||2.42||",
+      "en": "O Pârtha, no set determination is formed in the minds of those that are deeply attached to pleasure and power, and whose discrimination is stolen away by the flowery words of the unwise, who are full of desires and look upon heaven as their highest goal and who, taking pleasure in the panegyric words of the Vedas, declare that there is nothing else. Their (flowery) words are exuberant with various specific, rites as the means to pleasure and power and are the causes of (new) births as the result of their works (performed with desire).",
+      "word_meanings": [
+        {
+          "word": "yām imām",
+          "meaning": "all these"
+        },
+        {
+          "word": "puṣhpitām",
+          "meaning": "flowery"
+        },
+        {
+          "word": "vācham",
+          "meaning": "words"
+        },
+        {
+          "word": "pravadanti",
+          "meaning": "speak"
+        },
+        {
+          "word": "avipaśhchitaḥ",
+          "meaning": "those with limited understanding"
+        },
+        {
+          "word": "veda-vāda-ratāḥ",
+          "meaning": "attached to the flowery words of the Vedas"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "na anyat",
+          "meaning": "no other"
+        },
+        {
+          "word": "asti",
+          "meaning": "is"
+        },
+        {
+          "word": "iti",
+          "meaning": "thus"
+        },
+        {
+          "word": "vādinaḥ",
+          "meaning": "advocate"
+        },
+        {
+          "word": "kāma-ātmānaḥ",
+          "meaning": "desirous of sensual pleasure"
+        },
+        {
+          "word": "swarga-parāḥ",
+          "meaning": "aiming to achieve the heavenly planets"
+        },
+        {
+          "word": "janma-karma-phala",
+          "meaning": "high birth and fruitive results"
+        },
+        {
+          "word": "pradāṁ",
+          "meaning": "awarding"
+        },
+        {
+          "word": "kriyā-viśheṣha",
+          "meaning": "pompous ritualistic ceremonies"
+        },
+        {
+          "word": "bahulām",
+          "meaning": "various"
+        },
+        {
+          "word": "bhoga",
+          "meaning": "gratification"
+        },
+        {
+          "word": "aiśhwarya",
+          "meaning": "luxury"
+        },
+        {
+          "word": "gatim",
+          "meaning": "progress"
+        },
+        {
+          "word": "prati",
+          "meaning": "toward"
+        }
+      ]
+    },
+    {
+      "ref": "2.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।\n\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति।।2.43।।",
+      "iast": "kāmātmānaḥ svargaparā janmakarmaphalapradām|\n\nkriyāviśeṣabahulāṃ bhogaiśvaryagatiṃ prati||2.43||",
+      "en": "O Pârtha, no set determination is formed in the minds of those that are deeply attached to pleasure and power, and whose discrimination is stolen away by the flowery words of the unwise, who are full of desires and look upon heaven as their highest goal and who, taking pleasure in the panegyric words of the Vedas, declare that there is nothing else. Their (flowery) words are exuberant with various specific, rites as the means to pleasure and power and are the causes of (new) births as the result of their works (performed with desire).",
+      "word_meanings": [
+        {
+          "word": "kāmaātmānaḥ",
+          "meaning": "desirous   of  sense   gratification"
+        },
+        {
+          "word": "svarga-parāḥ",
+          "meaning": "aiming to  achieve heavenly    planets"
+        },
+        {
+          "word": "janma-karma-phala-pradām",
+          "meaning": "resulting  in  fruitive    action, good        birth,     etc."
+        },
+        {
+          "word": "kriyā-viśeṣa",
+          "meaning": "pompous       ceremonies"
+        },
+        {
+          "word": "bahulām",
+          "meaning": "various"
+        },
+        {
+          "word": "bhoga",
+          "meaning": "sense       enjoyment"
+        },
+        {
+          "word": "aiśvarya",
+          "meaning": "opulence"
+        },
+        {
+          "word": "gatim",
+          "meaning": "progress"
+        },
+        {
+          "word": "prati",
+          "meaning": "towards."
+        }
+      ]
+    },
+    {
+      "ref": "2.44",
+      "ordinal": 44,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।\n\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते।।2.44।।",
+      "iast": "bhogaiśvaryaprasaktānāṃ tayāpahṛtacetasām|\n\nvyavasāyātmikā buddhiḥ samādhau na vidhīyate||2.44||",
+      "en": "O Pârtha, no set determination is formed in the minds of those that are deeply attached to pleasure and power, and whose discrimination is stolen away by the flowery words of the unwise, who are full of desires and look upon heaven as their highest goal and who, taking pleasure in the panegyric words of the Vedas, declare that there is nothing else. Their (flowery) words are exuberant with various specific, rites as the means to pleasure and power and are the causes of (new) births as the result of their works (performed with desire).",
+      "word_meanings": [
+        {
+          "word": "bhoga",
+          "meaning": "gratification"
+        },
+        {
+          "word": "aiśhwarya",
+          "meaning": "luxury"
+        },
+        {
+          "word": "prasaktānām",
+          "meaning": "whose minds are deeply attached"
+        },
+        {
+          "word": "tayā",
+          "meaning": "by that"
+        },
+        {
+          "word": "apahṛita-chetasām",
+          "meaning": "bewildered in intellect"
+        },
+        {
+          "word": "vyavasāya-ātmikā",
+          "meaning": "resolute"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "samādhau",
+          "meaning": "fulfilment"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "vidhīyate",
+          "meaning": "occurs"
+        }
+      ]
+    },
+    {
+      "ref": "2.45",
+      "ordinal": 45,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।\n\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्।।2.45।।",
+      "iast": "traiguṇyaviṣayā vedā nistraiguṇyo bhavārjuna|\n\nnirdvandvo nityasattvastho niryogakṣema ātmavān||2.45||",
+      "en": "The Vedas deal with the three Gunas. Be thou free, O Arjuna, from the triad of the Gunas, free from the pairs of opposites, ever-balanced, free from (the thought of) getting and keeping, and established in the Self.",
+      "word_meanings": [
+        {
+          "word": "trai-guṇya",
+          "meaning": "of the three modes of material nature"
+        },
+        {
+          "word": "viṣhayāḥ",
+          "meaning": "subject matter"
+        },
+        {
+          "word": "vedāḥ",
+          "meaning": "Vedic scriptures"
+        },
+        {
+          "word": "nistrai-guṇyaḥ",
+          "meaning": "above the three modes of material nature, transcendental"
+        },
+        {
+          "word": "bhava",
+          "meaning": "be"
+        },
+        {
+          "word": "arjuna",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "nirdvandvaḥ",
+          "meaning": "free from dualities"
+        },
+        {
+          "word": "nitya-sattva-sthaḥ",
+          "meaning": "eternally fixed in truth"
+        },
+        {
+          "word": "niryoga-kṣhemaḥ",
+          "meaning": "unconcerned about gain and preservation"
+        },
+        {
+          "word": "ātma-vān",
+          "meaning": "situated in the self"
+        }
+      ]
+    },
+    {
+      "ref": "2.46",
+      "ordinal": 46,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यावानर्थ उदपाने सर्वतः संप्लुतोदके।\n\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः।।2.46।।",
+      "iast": "yāvānartha udapāne sarvataḥ saṃplutodake|\n\ntāvānsarveṣu vedeṣu brāhmaṇasya vijānataḥ||2.46||",
+      "en": "To the Brâhmana who has known the Self, all the Vedas are of so much use as a reservoir is, when there is a flood everywhere.",
+      "word_meanings": [
+        {
+          "word": "yāvān",
+          "meaning": "whatever"
+        },
+        {
+          "word": "arthaḥ",
+          "meaning": "purpose"
+        },
+        {
+          "word": "uda-pāne",
+          "meaning": "a well of water"
+        },
+        {
+          "word": "sarvataḥ",
+          "meaning": "in all respects"
+        },
+        {
+          "word": "sampluta-udake",
+          "meaning": "by a large lake"
+        },
+        {
+          "word": "tāvān",
+          "meaning": "that many"
+        },
+        {
+          "word": "sarveṣhu",
+          "meaning": "in all"
+        },
+        {
+          "word": "vedeṣhu",
+          "meaning": "Vedas"
+        },
+        {
+          "word": "brāhmaṇasya",
+          "meaning": "one who realizes the Absolute Truth"
+        },
+        {
+          "word": "vijānataḥ",
+          "meaning": "who is in complete knowledge"
+        }
+      ]
+    },
+    {
+      "ref": "2.47",
+      "ordinal": 47,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\n\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।2.47।।",
+      "iast": "karmaṇyevādhikāraste mā phaleṣu kadācana|\n\nmā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi||2.47||",
+      "en": "Thy right is to work only; but never to the fruits thereof. Be thou not the producer of the fruits of (thy) actions; neither let thy attachment be towards inaction.",
+      "word_meanings": [
+        {
+          "word": "karmaṇi",
+          "meaning": "in prescribed duties"
+        },
+        {
+          "word": "eva",
+          "meaning": "only"
+        },
+        {
+          "word": "adhikāraḥ",
+          "meaning": "right"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "mā",
+          "meaning": "not"
+        },
+        {
+          "word": "phaleṣhu",
+          "meaning": "in the fruits"
+        },
+        {
+          "word": "kadāchana",
+          "meaning": "at any time"
+        },
+        {
+          "word": "mā",
+          "meaning": "never"
+        },
+        {
+          "word": "karma-phala",
+          "meaning": "results of the activities"
+        },
+        {
+          "word": "hetuḥ",
+          "meaning": "cause"
+        },
+        {
+          "word": "bhūḥ",
+          "meaning": "be"
+        },
+        {
+          "word": "mā",
+          "meaning": "not"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "saṅgaḥ",
+          "meaning": "attachment"
+        },
+        {
+          "word": "astu",
+          "meaning": "must be"
+        },
+        {
+          "word": "akarmaṇi",
+          "meaning": "in inaction"
+        }
+      ]
+    },
+    {
+      "ref": "2.48",
+      "ordinal": 48,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।\n\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।2.48।।",
+      "iast": "yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya|\n\nsiddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate||2.48||",
+      "en": "Being steadfast in Yoga, Dhananjaya, perform actions, abandoning attachment, remaining unconcerned as regards success and failure. This evenness. of mind (in regard to success and failure) is known as Yoga.",
+      "word_meanings": [
+        {
+          "word": "yoga-sthaḥ",
+          "meaning": "being steadfast in yog"
+        },
+        {
+          "word": "kuru",
+          "meaning": "perform"
+        },
+        {
+          "word": "karmāṇi",
+          "meaning": "duties"
+        },
+        {
+          "word": "saṅgam",
+          "meaning": "attachment"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "having abandoned"
+        },
+        {
+          "word": "dhanañjaya",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "siddhi-asiddhyoḥ",
+          "meaning": "in success and failure"
+        },
+        {
+          "word": "samaḥ",
+          "meaning": "equipoised"
+        },
+        {
+          "word": "bhūtvā",
+          "meaning": "becoming"
+        },
+        {
+          "word": "samatvam",
+          "meaning": "equanimity"
+        },
+        {
+          "word": "yogaḥ",
+          "meaning": "Yog"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is called"
+        }
+      ]
+    },
+    {
+      "ref": "2.49",
+      "ordinal": 49,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।\n\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः।।2.49।।",
+      "iast": "dūreṇa hyavaraṃ karma buddhiyogāddhanañjaya|\n\nbuddhau śaraṇamanviccha kṛpaṇāḥ phalahetavaḥ||2.49||",
+      "en": "Work (with desire) is verily far inferior to that performed with the mind undisturbed by thoughts of results. O Dhananjaya, seek refuge in this evenness of mind. Wretched are they who act for results.",
+      "word_meanings": [
+        {
+          "word": "dūreṇa",
+          "meaning": "(discrad) from far away"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "avaram",
+          "meaning": "inferior"
+        },
+        {
+          "word": "karma",
+          "meaning": "reward-seeking actions"
+        },
+        {
+          "word": "buddhi-yogāt",
+          "meaning": "with the intellect established in Divine knowledge"
+        },
+        {
+          "word": "dhanañjaya",
+          "meaning": "Arjun"
+        },
+        {
+          "word": "buddhau",
+          "meaning": "divine knowledge and insight"
+        },
+        {
+          "word": "śharaṇam",
+          "meaning": "refuge"
+        },
+        {
+          "word": "anvichchha",
+          "meaning": "seek"
+        },
+        {
+          "word": "kṛipaṇāḥ",
+          "meaning": "miserly"
+        },
+        {
+          "word": "phala-hetavaḥ",
+          "meaning": "those seeking fruits of their work"
+        }
+      ]
+    },
+    {
+      "ref": "2.50",
+      "ordinal": 50,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।\n\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्।।2.50।।",
+      "iast": "buddhiyukto jahātīha ubhe sukṛtaduṣkṛte|\n\ntasmādyogāya yujyasva yogaḥ karmasu kauśalam||2.50||",
+      "en": "Endued with this evenness of mind, one frees oneself in this life, alike from vice and virtue. Devote thyself, therefore, to this Yoga. Yoga is the very dexterity of work.",
+      "word_meanings": [
+        {
+          "word": "buddhi-yuktaḥ",
+          "meaning": "endowed with wisdom"
+        },
+        {
+          "word": "jahāti",
+          "meaning": "get rid of"
+        },
+        {
+          "word": "iha",
+          "meaning": "in this life"
+        },
+        {
+          "word": "ubhe",
+          "meaning": "both"
+        },
+        {
+          "word": "sukṛita-duṣhkṛite",
+          "meaning": "good and bad deeds"
+        },
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "yogāya",
+          "meaning": "for Yog"
+        },
+        {
+          "word": "yujyasva",
+          "meaning": "strive for"
+        },
+        {
+          "word": "yogaḥ",
+          "meaning": "yog is"
+        },
+        {
+          "word": "karmasu kauśhalam",
+          "meaning": "the art of working skillfully"
+        }
+      ]
+    },
+    {
+      "ref": "2.51",
+      "ordinal": 51,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।\n\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्।।2.51।।",
+      "iast": "karmajaṃ buddhiyuktā hi phalaṃ tyaktvā manīṣiṇaḥ|\n\njanmabandhavinirmuktāḥ padaṃ gacchantyanāmayam||2.51||",
+      "en": "The wise, possessed of this evenness of mind, abandoning the fruits of their actions, freed for ever from the fetters of birth, go to that state which is beyond all evil.",
+      "word_meanings": [
+        {
+          "word": "karma-jam",
+          "meaning": "born of fruitive actions"
+        },
+        {
+          "word": "buddhi-yuktāḥ",
+          "meaning": "endowed with equanimity of intellect"
+        },
+        {
+          "word": "hi",
+          "meaning": "as"
+        },
+        {
+          "word": "phalam",
+          "meaning": "fruits"
+        },
+        {
+          "word": "tyaktvā",
+          "meaning": "abandoning"
+        },
+        {
+          "word": "manīṣhiṇaḥ",
+          "meaning": "the wise"
+        },
+        {
+          "word": "janma-bandha-vinirmuktāḥ",
+          "meaning": "freedom from the bondage of life and death"
+        },
+        {
+          "word": "padam",
+          "meaning": "state"
+        },
+        {
+          "word": "gachchhanti",
+          "meaning": "attain"
+        },
+        {
+          "word": "anāmayam",
+          "meaning": "devoid of sufferings"
+        }
+      ]
+    },
+    {
+      "ref": "2.52",
+      "ordinal": 52,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति।\n\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च।।2.52।।",
+      "iast": "yadā te mohakalilaṃ buddhirvyatitariṣyati|\n\ntadā gantāsi nirvedaṃ śrotavyasya śrutasya ca||2.52||",
+      "en": "When thy intellect crosses beyond the taint of illusion, then shalt thou attain to indifference, regarding things heard and things yet to be heard.",
+      "word_meanings": [
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "moha",
+          "meaning": "delusion"
+        },
+        {
+          "word": "kalilam",
+          "meaning": "quagmire"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "vyatitariṣhyati",
+          "meaning": "crosses"
+        },
+        {
+          "word": "tadā",
+          "meaning": "then"
+        },
+        {
+          "word": "gantāsi",
+          "meaning": "you shall acquire"
+        },
+        {
+          "word": "nirvedam",
+          "meaning": "indifferent"
+        },
+        {
+          "word": "śhrotavyasya",
+          "meaning": "to what is yet to be heard"
+        },
+        {
+          "word": "śhrutasya",
+          "meaning": "to what has been heard"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        }
+      ]
+    },
+    {
+      "ref": "2.53",
+      "ordinal": 53,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।\n\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि।।2.53।।",
+      "iast": "śrutivipratipannā te yadā sthāsyati niścalā|\n\nsamādhāvacalā buddhistadā yogamavāpsyasi||2.53||",
+      "en": "When thy intellect, tossed about by the conflict of opinions—has become immovable and firmly established in the Self, then thou shalt attain Self-realisation.",
+      "word_meanings": [
+        {
+          "word": "śhruti-vipratipannā",
+          "meaning": "not allured by the fruitive sections of the Vedas"
+        },
+        {
+          "word": "te",
+          "meaning": "your"
+        },
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "sthāsyati",
+          "meaning": "remains"
+        },
+        {
+          "word": "niśhchalā",
+          "meaning": "steadfast"
+        },
+        {
+          "word": "samādhau",
+          "meaning": "in divine consciousness"
+        },
+        {
+          "word": "achalā",
+          "meaning": "steadfast"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "tadā",
+          "meaning": "at that time"
+        },
+        {
+          "word": "yogam",
+          "meaning": "Yog"
+        },
+        {
+          "word": "avāpsyasi",
+          "meaning": "you will attain"
+        }
+      ]
+    },
+    {
+      "ref": "2.54",
+      "ordinal": 54,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "arjuna",
+      "deva": "अर्जुन उवाच\n\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।\n\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्।।2.54।।",
+      "iast": "arjuna uvāca\n\nsthitaprajñasya kā bhāṣā samādhisthasya keśava|\n\nsthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim||2.54||",
+      "en": "What, O Keshava, is the description of the man of steady wisdom, merged in Samâdhi? How (on the other hand) does the man of steady wisdom speak, how sit, how walk?",
+      "word_meanings": [
+        {
+          "word": "arjunaḥ uvācha",
+          "meaning": "Arjun said"
+        },
+        {
+          "word": "sthita-prajñasya",
+          "meaning": "one with steady intellect"
+        },
+        {
+          "word": "kā",
+          "meaning": "what"
+        },
+        {
+          "word": "bhāṣhā",
+          "meaning": "talk"
+        },
+        {
+          "word": "samādhi-sthasya",
+          "meaning": "situated in divine consciousness"
+        },
+        {
+          "word": "keśhava",
+          "meaning": "Shree Krishna, killer of the Keshi Demon"
+        },
+        {
+          "word": "sthita-dhīḥ",
+          "meaning": "enlightened person"
+        },
+        {
+          "word": "kim",
+          "meaning": "what"
+        },
+        {
+          "word": "prabhāṣheta",
+          "meaning": "talks"
+        },
+        {
+          "word": "kim",
+          "meaning": "how"
+        },
+        {
+          "word": "āsīta",
+          "meaning": "sits"
+        },
+        {
+          "word": "vrajeta",
+          "meaning": "walks"
+        },
+        {
+          "word": "kim",
+          "meaning": "how"
+        }
+      ]
+    },
+    {
+      "ref": "2.55",
+      "ordinal": 55,
+      "kind": "verse",
+      "meter": null,
+      "speaker": "krishna",
+      "deva": "श्री भगवानुवाच\n\nप्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान्।\n\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते।।2.55।।",
+      "iast": "śrī bhagavānuvāca\n\nprajahāti yadā kāmān sarvān pārtha manogatān|\n\nātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate||2.55||",
+      "en": "When a man completely casts away, O Pârtha, all the desires of the mind, satisfied in the Self alone by the Self, then is he said to be one of steady wisdom.",
+      "word_meanings": [
+        {
+          "word": "śhrī-bhagavān uvācha",
+          "meaning": "The Supreme Lord said"
+        },
+        {
+          "word": "prajahāti",
+          "meaning": "discards"
+        },
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "kāmān",
+          "meaning": "selfish desires"
+        },
+        {
+          "word": "sarvān",
+          "meaning": "all"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "manaḥ-gatān",
+          "meaning": "of the mind"
+        },
+        {
+          "word": "ātmani",
+          "meaning": "of the self"
+        },
+        {
+          "word": "eva",
+          "meaning": "only"
+        },
+        {
+          "word": "ātmanā",
+          "meaning": "by the purified mind"
+        },
+        {
+          "word": "tuṣhṭaḥ",
+          "meaning": "satisfied"
+        },
+        {
+          "word": "sthita-prajñaḥ",
+          "meaning": "one with steady intellect"
+        },
+        {
+          "word": "tadā",
+          "meaning": "at that time"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is said"
+        }
+      ]
+    },
+    {
+      "ref": "2.56",
+      "ordinal": 56,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।\n\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते।।2.56।।",
+      "iast": "duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ|\n\nvītarāgabhayakrodhaḥ sthitadhīrmunirucyate||2.56||",
+      "en": "He whose mind is not shaken by adversity, who does not hanker after happiness, who has become free from affection, fear, and wrath, is indeed the Muni of steady wisdom.",
+      "word_meanings": [
+        {
+          "word": "duḥkheṣhu",
+          "meaning": "amidst miseries"
+        },
+        {
+          "word": "anudvigna-manāḥ",
+          "meaning": "one whose mind is undisturbed"
+        },
+        {
+          "word": "sukheṣhu",
+          "meaning": "in pleasure"
+        },
+        {
+          "word": "vigata-spṛihaḥ",
+          "meaning": "without craving"
+        },
+        {
+          "word": "vīta",
+          "meaning": "free from"
+        },
+        {
+          "word": "rāga",
+          "meaning": "attachment"
+        },
+        {
+          "word": "bhaya",
+          "meaning": "fear"
+        },
+        {
+          "word": "krodhaḥ",
+          "meaning": "anger"
+        },
+        {
+          "word": "sthita-dhīḥ",
+          "meaning": "enlightened person"
+        },
+        {
+          "word": "muniḥ",
+          "meaning": "a sage"
+        },
+        {
+          "word": "uchyate",
+          "meaning": "is called"
+        }
+      ]
+    },
+    {
+      "ref": "2.57",
+      "ordinal": 57,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।\n\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता।।2.57।।",
+      "iast": "yaḥ sarvatrānabhisnehastattatprāpya śubhāśubham|\n\nnābhinandati na dveṣṭi tasya prajñā pratiṣṭhitā||2.57||",
+      "en": "He who is everywhere unattached, not pleased at receiving good, nor vexed at evil, his wisdom is fixed.",
+      "word_meanings": [
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "sarvatra",
+          "meaning": "in all conditions"
+        },
+        {
+          "word": "anabhisnehaḥ",
+          "meaning": "unattached"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "prāpya",
+          "meaning": "attaining"
+        },
+        {
+          "word": "śhubha",
+          "meaning": "good"
+        },
+        {
+          "word": "aśhubham",
+          "meaning": "evil"
+        },
+        {
+          "word": "na",
+          "meaning": "neither"
+        },
+        {
+          "word": "abhinandati",
+          "meaning": "delight in"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "dveṣhṭi",
+          "meaning": "dejected by"
+        },
+        {
+          "word": "tasya",
+          "meaning": "his"
+        },
+        {
+          "word": "prajñā",
+          "meaning": "knowledge"
+        },
+        {
+          "word": "pratiṣhṭhitā",
+          "meaning": "is fixed"
+        }
+      ]
+    },
+    {
+      "ref": "2.58",
+      "ordinal": 58,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.58।।",
+      "iast": "yadā saṃharate cāyaṃ kūrmo'ṅgānīva sarvaśaḥ|\n\nindriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā||2.58||",
+      "en": "When also, like the tortoise its limbs, he can completely withdraw the senses from their objects, then his wisdom becomes steady.",
+      "word_meanings": [
+        {
+          "word": "yadā",
+          "meaning": "when"
+        },
+        {
+          "word": "sanharate",
+          "meaning": "withdraw"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this"
+        },
+        {
+          "word": "kūrmaḥ",
+          "meaning": "tortoise"
+        },
+        {
+          "word": "aṅgāni",
+          "meaning": "limbs"
+        },
+        {
+          "word": "iva",
+          "meaning": "as"
+        },
+        {
+          "word": "sarvaśhaḥ",
+          "meaning": "fully"
+        },
+        {
+          "word": "indriyāṇi",
+          "meaning": "senses"
+        },
+        {
+          "word": "indriya-arthebhyaḥ",
+          "meaning": "from the sense objects"
+        },
+        {
+          "word": "tasya",
+          "meaning": "his"
+        },
+        {
+          "word": "prajñā",
+          "meaning": "divine wisdom"
+        },
+        {
+          "word": "pratiṣhṭhitā",
+          "meaning": "fixed in"
+        }
+      ]
+    },
+    {
+      "ref": "2.59",
+      "ordinal": 59,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "विषया विनिवर्तन्ते निराहारस्य देहिनः।\n\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते।।2.59।।",
+      "iast": "viṣayā vinivartante nirāhārasya dehinaḥ|\n\nrasavarjaṃ raso'pyasya paraṃ dṛṣṭvā nivartate||2.59||",
+      "en": "Objects fall away from the abstinent man, leaving the longing behind. But his longing also ceases, who sees the Supreme.",
+      "word_meanings": [
+        {
+          "word": "viṣhayāḥ",
+          "meaning": "objects for senses"
+        },
+        {
+          "word": "vinivartante",
+          "meaning": "restrain"
+        },
+        {
+          "word": "nirāhārasya",
+          "meaning": "practicing self restraint"
+        },
+        {
+          "word": "dehinaḥ",
+          "meaning": "for the embodied"
+        },
+        {
+          "word": "rasa-varjam",
+          "meaning": "cessation of taste"
+        },
+        {
+          "word": "rasaḥ",
+          "meaning": "taste"
+        },
+        {
+          "word": "api",
+          "meaning": "however"
+        },
+        {
+          "word": "asya",
+          "meaning": "person’s"
+        },
+        {
+          "word": "param",
+          "meaning": "the Supreme"
+        },
+        {
+          "word": "dṛiṣhṭvā",
+          "meaning": "on realization"
+        },
+        {
+          "word": "nivartate",
+          "meaning": "ceases to be"
+        }
+      ]
+    },
+    {
+      "ref": "2.60",
+      "ordinal": 60,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।\n\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः।।2.60।।",
+      "iast": "yatato hyapi kaunteya puruṣasya vipaścitaḥ|\n\nindriyāṇi pramāthīni haranti prasabhaṃ manaḥ||2.60||",
+      "en": "The turbulent senses, O son of Kunti, do violently snatch away the mind of even a wise man, striving after perfection.",
+      "word_meanings": [
+        {
+          "word": "yatataḥ",
+          "meaning": "while practicing self-control"
+        },
+        {
+          "word": "hi",
+          "meaning": "for"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "kaunteya",
+          "meaning": "Arjun, the son of Kunti"
+        },
+        {
+          "word": "puruṣhasya",
+          "meaning": "of a person"
+        },
+        {
+          "word": "vipaśhchitaḥ",
+          "meaning": "one endowed with discrimination"
+        },
+        {
+          "word": "indriyāṇi",
+          "meaning": "the senses"
+        },
+        {
+          "word": "pramāthīni",
+          "meaning": "turbulent"
+        },
+        {
+          "word": "haranti",
+          "meaning": "carry away"
+        },
+        {
+          "word": "prasabham",
+          "meaning": "forcibly"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "the mind"
+        }
+      ]
+    },
+    {
+      "ref": "2.61",
+      "ordinal": 61,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः।\n\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता।।2.61।।",
+      "iast": "tāni sarvāṇi saṃyamya yukta āsīta matparaḥ|\n\nvaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā||2.61||",
+      "en": "The steadfast, having controlled them all, sits focussed on Me as the Supreme. His wisdom is steady, whose senses are under control.",
+      "word_meanings": [
+        {
+          "word": "tāni",
+          "meaning": "them"
+        },
+        {
+          "word": "sarvāṇi",
+          "meaning": "all"
+        },
+        {
+          "word": "sanyamya",
+          "meaning": "subduing"
+        },
+        {
+          "word": "yuktaḥ",
+          "meaning": "united"
+        },
+        {
+          "word": "āsīta",
+          "meaning": "seated"
+        },
+        {
+          "word": "mat-paraḥ",
+          "meaning": "toward me (Shree Krishna)"
+        },
+        {
+          "word": "vaśhe",
+          "meaning": "control"
+        },
+        {
+          "word": "hi",
+          "meaning": "certainly"
+        },
+        {
+          "word": "yasya",
+          "meaning": "whose"
+        },
+        {
+          "word": "indriyāṇi",
+          "meaning": "senses"
+        },
+        {
+          "word": "tasya",
+          "meaning": "their"
+        },
+        {
+          "word": "prajñā",
+          "meaning": "perfect knowledge pratiṣhṭhitā"
+        }
+      ]
+    },
+    {
+      "ref": "2.62",
+      "ordinal": 62,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।\n\nसङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते।।2.62।।",
+      "iast": "dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate|\n\nsaṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate||2.62||",
+      "en": "Thinking of objects, attachment to them is formed in a man. From attachment longing, and from longing anger grows.",
+      "word_meanings": [
+        {
+          "word": "dhyāyataḥ",
+          "meaning": "contemplating"
+        },
+        {
+          "word": "viṣhayān",
+          "meaning": "sense objects"
+        },
+        {
+          "word": "puṁsaḥ",
+          "meaning": "of a person"
+        },
+        {
+          "word": "saṅgaḥ",
+          "meaning": "attachment"
+        },
+        {
+          "word": "teṣhu",
+          "meaning": "to them (sense objects)"
+        },
+        {
+          "word": "upajāyate",
+          "meaning": "arises"
+        },
+        {
+          "word": "saṅgāt",
+          "meaning": "from attachment"
+        },
+        {
+          "word": "sañjāyate",
+          "meaning": "develops"
+        },
+        {
+          "word": "kāmaḥ",
+          "meaning": "desire"
+        },
+        {
+          "word": "kāmāt",
+          "meaning": "from desire"
+        },
+        {
+          "word": "krodhaḥ",
+          "meaning": "anger"
+        },
+        {
+          "word": "abhijāyate",
+          "meaning": "arises"
+        }
+      ]
+    },
+    {
+      "ref": "2.63",
+      "ordinal": 63,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।\n\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।।2.63।।",
+      "iast": "krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ|\n\nsmṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati||2.63||",
+      "en": "From anger comes delusion, and from delusion loss of memory. From loss of memory comes the ruin of discrimination, and from the ruin of discrimination he perishes.",
+      "word_meanings": [
+        {
+          "word": "krodhāt",
+          "meaning": "from anger"
+        },
+        {
+          "word": "bhavati",
+          "meaning": "comes"
+        },
+        {
+          "word": "sammohaḥ",
+          "meaning": "clouding of judgement"
+        },
+        {
+          "word": "sammohāt",
+          "meaning": "from clouding of judgement"
+        },
+        {
+          "word": "smṛiti",
+          "meaning": "memory"
+        },
+        {
+          "word": "vibhramaḥ",
+          "meaning": "bewilderment"
+        },
+        {
+          "word": "smṛiti-bhranśhāt",
+          "meaning": "from bewilderment of memory"
+        },
+        {
+          "word": "buddhi-nāśhaḥ",
+          "meaning": "destruction of intellect"
+        },
+        {
+          "word": "buddhi-nāśhāt",
+          "meaning": "from destruction of intellect"
+        },
+        {
+          "word": "praṇaśhyati",
+          "meaning": "one is ruined"
+        }
+      ]
+    },
+    {
+      "ref": "2.64",
+      "ordinal": 64,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।\n\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति।।2.64।।",
+      "iast": "rāgadveṣaviyuktaistu viṣayānindriyaiścaran|\n\nātmavaśyairvidheyātmā prasādamadhigacchati||2.64||",
+      "en": "But the self-controlled man, moving among objects with senses under restraint, and free from attraction and aversion, attains to tranquillity.",
+      "word_meanings": [
+        {
+          "word": "rāga",
+          "meaning": "attachment"
+        },
+        {
+          "word": "dveṣha",
+          "meaning": "aversion"
+        },
+        {
+          "word": "viyuktaiḥ",
+          "meaning": "free"
+        },
+        {
+          "word": "tu",
+          "meaning": "but"
+        },
+        {
+          "word": "viṣhayān",
+          "meaning": "objects of the senses"
+        },
+        {
+          "word": "indriyaiḥ",
+          "meaning": "by the senses"
+        },
+        {
+          "word": "charan",
+          "meaning": "while using"
+        },
+        {
+          "word": "ātma-vaśhyaiḥ",
+          "meaning": "controlling one’s mind"
+        },
+        {
+          "word": "vidheya-ātmā",
+          "meaning": "one who controls the mind"
+        },
+        {
+          "word": "prasādam",
+          "meaning": "the Grace of God"
+        },
+        {
+          "word": "adhigachchhati",
+          "meaning": "attains"
+        }
+      ]
+    },
+    {
+      "ref": "2.65",
+      "ordinal": 65,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "प्रसादे सर्वदुःखानां हानिरस्योपजायते।\n\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते।।2.65।।",
+      "iast": "prasāde sarvaduḥkhānāṃ hānirasyopajāyate|\n\nprasannacetaso hyāśu buddhiḥ paryavatiṣṭhate||2.65||",
+      "en": "In tranquillity, all sorrow is destroyed. For the intellect of him who is tranquil-minded, is soon established in firmness.",
+      "word_meanings": [
+        {
+          "word": "prasāde",
+          "meaning": "by divine grace"
+        },
+        {
+          "word": "sarva",
+          "meaning": "all"
+        },
+        {
+          "word": "duḥkhānām",
+          "meaning": "of sorrows"
+        },
+        {
+          "word": "hāniḥ",
+          "meaning": "destruction"
+        },
+        {
+          "word": "asya",
+          "meaning": "his"
+        },
+        {
+          "word": "upajāyate",
+          "meaning": "comes"
+        },
+        {
+          "word": "prasanna-chetasaḥ",
+          "meaning": "with a tranquil mind"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "āśhu",
+          "meaning": "soon"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "paryavatiṣhṭhate",
+          "meaning": "becomes firmly established"
+        }
+      ]
+    },
+    {
+      "ref": "2.66",
+      "ordinal": 66,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।\n\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्।।2.66।।",
+      "iast": "nāsti buddhirayuktasya na cāyuktasya bhāvanā|\n\nna cābhāvayataḥ śāntiraśāntasya kutaḥ sukham||2.66||",
+      "en": "No knowledge (of the Self) has the unsteady. Nor has he meditation. To the unmeditative there is no peace. And how can one without peace have happiness?",
+      "word_meanings": [
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "asti",
+          "meaning": "is"
+        },
+        {
+          "word": "buddhiḥ",
+          "meaning": "intellect"
+        },
+        {
+          "word": "ayuktasya",
+          "meaning": "not united"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "ayuktasya",
+          "meaning": "not united"
+        },
+        {
+          "word": "bhāvanā",
+          "meaning": "contemplation"
+        },
+        {
+          "word": "na",
+          "meaning": "nor"
+        },
+        {
+          "word": "cha",
+          "meaning": "and"
+        },
+        {
+          "word": "abhāvayataḥ",
+          "meaning": "for those not united"
+        },
+        {
+          "word": "śhāntiḥ",
+          "meaning": "peace"
+        },
+        {
+          "word": "aśhāntasya",
+          "meaning": "of the unpeaceful"
+        },
+        {
+          "word": "kutaḥ",
+          "meaning": "where"
+        },
+        {
+          "word": "sukham",
+          "meaning": "happiness"
+        }
+      ]
+    },
+    {
+      "ref": "2.67",
+      "ordinal": 67,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।\n\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि।।2.67।।",
+      "iast": "indriyāṇāṃ hi caratāṃ yanmano'nuvidhīyate|\n\ntadasya harati prajñāṃ vāyurnāvamivāmbhasi||2.67||",
+      "en": "For, the mind which follows in the wake of the wandering senses, carries away his discrimination, as a wind (carries away from its course) a boat on the waters.",
+      "word_meanings": [
+        {
+          "word": "indriyāṇām",
+          "meaning": "of the senses"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "charatām",
+          "meaning": "roaming"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "manaḥ",
+          "meaning": "the mind"
+        },
+        {
+          "word": "anuvidhīyate",
+          "meaning": "becomes constantly engaged"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "asya",
+          "meaning": "of that"
+        },
+        {
+          "word": "harati",
+          "meaning": "carries away"
+        },
+        {
+          "word": "prajñām",
+          "meaning": "intellect"
+        },
+        {
+          "word": "vāyuḥ",
+          "meaning": "wind"
+        },
+        {
+          "word": "nāvam",
+          "meaning": "boat"
+        },
+        {
+          "word": "iva",
+          "meaning": "as"
+        },
+        {
+          "word": "ambhasi",
+          "meaning": "on the water"
+        }
+      ]
+    },
+    {
+      "ref": "2.68",
+      "ordinal": 68,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.68।।",
+      "iast": "tasmādyasya mahābāho nigṛhītāni sarvaśaḥ|\n\nindriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā||2.68||",
+      "en": "Therefore, O mighty-armed, his knowledge is steady, whose senses are completely restrained from their objects.",
+      "word_meanings": [
+        {
+          "word": "tasmāt",
+          "meaning": "therefore"
+        },
+        {
+          "word": "yasya",
+          "meaning": "whose"
+        },
+        {
+          "word": "mahā-bāho",
+          "meaning": "mighty-armed one"
+        },
+        {
+          "word": "nigṛihītāni",
+          "meaning": "restrained"
+        },
+        {
+          "word": "sarvaśhaḥ",
+          "meaning": "completely"
+        },
+        {
+          "word": "indriyāṇi",
+          "meaning": "senses"
+        },
+        {
+          "word": "indriya-arthebhyaḥ",
+          "meaning": "from sense objects"
+        },
+        {
+          "word": "tasya",
+          "meaning": "of that person"
+        },
+        {
+          "word": "prajñā",
+          "meaning": "transcendental knowledge"
+        },
+        {
+          "word": "pratiṣhṭhitā",
+          "meaning": "remains fixed"
+        }
+      ]
+    },
+    {
+      "ref": "2.69",
+      "ordinal": 69,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी।\n\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः।।2.69।।",
+      "iast": "yā niśā sarvabhūtānāṃ tasyāṃ jāgarti saṃyamī|\n\nyasyāṃ jāgrati bhūtāni sā niśā paśyato muneḥ||2.69||",
+      "en": "That which is night to all beings, in that the self-controlled man wakes. That in which all beings wake, is night to the Self-seeing Muni.",
+      "word_meanings": [
+        {
+          "word": "yā",
+          "meaning": "which"
+        },
+        {
+          "word": "niśhā",
+          "meaning": "night"
+        },
+        {
+          "word": "sarva-bhūtānām",
+          "meaning": "of all living beings"
+        },
+        {
+          "word": "tasyām",
+          "meaning": "in that"
+        },
+        {
+          "word": "jāgarti",
+          "meaning": "is awake"
+        },
+        {
+          "word": "sanyamī",
+          "meaning": "self-controlled"
+        },
+        {
+          "word": "yasyām",
+          "meaning": "in which"
+        },
+        {
+          "word": "jāgrati",
+          "meaning": "are awake"
+        },
+        {
+          "word": "bhūtāni",
+          "meaning": "creatures"
+        },
+        {
+          "word": "sā",
+          "meaning": "that"
+        },
+        {
+          "word": "niśhā",
+          "meaning": "night"
+        },
+        {
+          "word": "paśhyataḥ",
+          "meaning": "see"
+        },
+        {
+          "word": "muneḥ",
+          "meaning": "sage"
+        }
+      ]
+    },
+    {
+      "ref": "2.70",
+      "ordinal": 70,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "आपूर्यमाणमचलप्रतिष्ठं\n\nसमुद्रमापः प्रविशन्ति यद्वत्।\n\nतद्वत्कामा यं प्रविशन्ति सर्वे\n\nस शान्तिमाप्नोति न कामकामी।।2.70।।",
+      "iast": "āpūryamāṇamacalapratiṣṭhaṃ\n\nsamudramāpaḥ praviśanti yadvat|\n\ntadvatkāmā yaṃ praviśanti sarve\n\nsa śāntimāpnoti na kāmakāmī||2.70||",
+      "en": "As into the ocean,—brimful, and still,—flow the waters, even so the Muni into whom enter all desires, he, and not the desirer of desires, attains to peace.",
+      "word_meanings": [
+        {
+          "word": "āpūryamāṇam",
+          "meaning": "filled from all sides"
+        },
+        {
+          "word": "achala-pratiṣhṭham",
+          "meaning": "undisturbed"
+        },
+        {
+          "word": "samudram",
+          "meaning": "ocean"
+        },
+        {
+          "word": "āpaḥ",
+          "meaning": "waters"
+        },
+        {
+          "word": "praviśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "yadvat",
+          "meaning": "as"
+        },
+        {
+          "word": "tadvat",
+          "meaning": "likewise"
+        },
+        {
+          "word": "kāmāḥ",
+          "meaning": "desires"
+        },
+        {
+          "word": "yam",
+          "meaning": "whom"
+        },
+        {
+          "word": "praviśhanti",
+          "meaning": "enter"
+        },
+        {
+          "word": "sarve",
+          "meaning": "all"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "śhāntim",
+          "meaning": "peace"
+        },
+        {
+          "word": "āpnoti",
+          "meaning": "attains"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "kāma-kāmī",
+          "meaning": "one who strives to satisfy desires"
+        }
+      ]
+    },
+    {
+      "ref": "2.71",
+      "ordinal": 71,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।\n\nनिर्ममो निरहंकारः स शांतिमधिगच्छति।।2.71।।",
+      "iast": "vihāya kāmānyaḥ sarvānpumāṃścarati niḥspṛhaḥ|\n\nnirmamo nirahaṃkāraḥ sa śāṃtimadhigacchati||2.71||",
+      "en": "That man who lives devoid of longing, abandoning all desires, without the sense of 'I' and 'mine,' he attains to peace.",
+      "word_meanings": [
+        {
+          "word": "vihāya",
+          "meaning": "giving up"
+        },
+        {
+          "word": "kāmān",
+          "meaning": "material desires"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "sarvān",
+          "meaning": "all"
+        },
+        {
+          "word": "pumān",
+          "meaning": "a person"
+        },
+        {
+          "word": "charati",
+          "meaning": "lives"
+        },
+        {
+          "word": "niḥspṛihaḥ",
+          "meaning": "free from hankering"
+        },
+        {
+          "word": "nirmamaḥ",
+          "meaning": "without a sense of proprietorship"
+        },
+        {
+          "word": "nirahankāraḥ",
+          "meaning": "without egoism"
+        },
+        {
+          "word": "saḥ",
+          "meaning": "that person"
+        },
+        {
+          "word": "śhāntim",
+          "meaning": "perfect peace"
+        },
+        {
+          "word": "adhigachchhati",
+          "meaning": "attains"
+        }
+      ]
+    },
+    {
+      "ref": "2.72",
+      "ordinal": 72,
+      "kind": "verse",
+      "meter": null,
+      "speaker": null,
+      "deva": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।\n\nस्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति।।2.72।।",
+      "iast": "eṣā brāhmī sthitiḥ pārtha naināṃ prāpya vimuhyati|\n\nsthitvā'syāmantakāle'pi brahmanirvāṇamṛcchati||2.72||",
+      "en": "This is to have one's being in Brahman, O son of Prithâ. None, attaining to this, becomes deluded. Being established therein, even at the end of life, a man attains to oneness with Brahman.",
+      "word_meanings": [
+        {
+          "word": "eṣhā",
+          "meaning": "such"
+        },
+        {
+          "word": "brāhmī sthitiḥ",
+          "meaning": "state of God-realization"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "Arjun, the son of Pritha"
+        },
+        {
+          "word": "na",
+          "meaning": "never"
+        },
+        {
+          "word": "enām",
+          "meaning": "this"
+        },
+        {
+          "word": "prāpya",
+          "meaning": "having attained"
+        },
+        {
+          "word": "vimuhyati",
+          "meaning": "is deluded"
+        },
+        {
+          "word": "sthitvā",
+          "meaning": "being established"
+        },
+        {
+          "word": "asyām",
+          "meaning": "in this"
+        },
+        {
+          "word": "anta-kāle",
+          "meaning": "at the hour of death"
+        },
+        {
+          "word": "api",
+          "meaning": "even"
+        },
+        {
+          "word": "brahma-nirvāṇam",
+          "meaning": "liberation from Maya"
+        },
+        {
+          "word": "ṛichchhati",
+          "meaning": "attains"
+        }
+      ]
+    }
+  ]
+}

@@ -55,7 +55,9 @@ on conflict (slug) do nothing;
 set role anon;
 select set_config('request.jwt.claim.sub', '', false);
 
-select pg_temp.assert_eq((select count(*) from public.verses), 10::bigint, 'anon sees 10 published verses');
+select pg_temp.assert_eq((select count(*) from public.verses where work_id = (select id from works where slug='bhagavata-purana')), 10::bigint, 'anon sees 10 published verses in bhagavata-purana');
+select pg_temp.assert_eq((select count(*) from public.verses where work_id = (select id from works where slug='bhagavad-gita')), 700::bigint, 'anon sees 700 published verses in bhagavad-gita');
+select pg_temp.assert_eq((select count(*) from public.verses), 710::bigint, 'anon sees 710 published verses total');
 select pg_temp.assert_eq((select count(*) from public.editions where slug like 'test-%'), 0::bigint, 'anon cannot see restricted/pending editions');
 select pg_temp.assert_eq((select count(*) from public.verse_contents where body like 'SECRET%'), 0::bigint, 'anon cannot read restricted content');
 select pg_temp.assert_eq((select count(*) from public.v_editions where rights_status in ('restricted','pending')), 0::bigint, 'v_editions hides uncleared editions');
