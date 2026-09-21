@@ -162,6 +162,15 @@ class ParserTests(unittest.TestCase):
         self.assertIn("भवितुमर्हति", verses[1]["deva"])
         self.assertNotIn("प्रियव्रतो", verses[1]["deva"])
 
+    def test_skandha_5_single_space_line_numbers(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_2_single_space_numbers.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 5, 2)
+        self.assertEqual([v["ref"] for v in verses], ["5.2.1", "5.2.2", "5.2.3"])
+        self.assertIn("पर्यगोपायत्", verses[0]["deva"])
+        self.assertIn("तपस्व्याराधयां", verses[1]["deva"])
+
     def test_skandha_7_number_then_danda(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_1_number_then_danda.wiki"

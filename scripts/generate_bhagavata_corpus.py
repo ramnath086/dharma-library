@@ -79,7 +79,7 @@ VERSE_END_CLASSIC = re.compile(
     rf"[।॥]\s*({_DEVA_NUM})\s*[।॥]"
 )
 VERSE_END_BARE = re.compile(
-    rf"(?<=[ \t]{{2}})({_DEVA_NUM})(?=[ \t]{{2}}|[ \t]*$)",
+    rf"(?<=[ \t])({_DEVA_NUM})(?=[ \t]*$|[ \t]{{2}})",
     re.M,
 )
 VERSE_END_NUM_DANDA = re.compile(
