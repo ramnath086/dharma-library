@@ -41,10 +41,53 @@ jobs:
       - uses: actions/checkout@v7
       - name: Install psql
         run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+      - name: Probe Wikimedia from the runner
+        run: |
+          echo '### Wikimedia probe' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          curl -sS -A "DharmaLibraryBot/1.0 (https://github.com/ramnath086/dharma-library)" \
+            --max-time 30 \
+            "https://sa.wikisource.org/w/api.php?action=query&meta=siteinfo&siprop=general&format=json" \
+            | tee wikimedia-probe.json | tail -c 800 | tee -a "$GITHUB_STEP_SUMMARY" || echo "curl probe failed: $?" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
       - name: Fetch Wikisource corpus (CC BY-SA 4.0)
         run: |
           set -o pipefail
-          python3 scripts/generate_bhagavata_corpus.py --delay 0.25 --batch-size 10 | tee ingest-log.txt
+          python3 scripts/generate_bhagavata_corpus.py --delay 0.25 --batch-size 10 > ingest-log.txt 2>&1
+          tail -n 40 ingest-log.txt
+      - name: Publish ingest log on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "### Bhāgavata ingest failed on \`${GITHUB_SHA:0:7}\`"
+            echo
+            echo 'Runner curl/Python could not finish a complete CC BY-SA 4.0 ingest. Log tail:'
+            echo
+            echo '```'
+            tail -n 80 ingest-log.txt 2>/dev/null || echo '(no ingest-log.txt)'
+            echo '```'
+            if [ -f wikimedia-probe.json ]; then
+              echo
+              echo 'curl siteinfo probe:'
+              echo '```'
+              head -c 600 wikimedia-probe.json
+              echo
+              echo '```'
+            fi
+          } > /tmp/ingest-comment.md
+          gh pr comment 12 --body-file /tmp/ingest-comment.md || true
+          cat /tmp/ingest-comment.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: bhagavata-ingest-log
+          path: |
+            ingest-log.txt
+            wikimedia-probe.json
+          if-no-files-found: ignore
       - name: Fail closed if the work is not complete
         run: |
           python3 - <<'PY'

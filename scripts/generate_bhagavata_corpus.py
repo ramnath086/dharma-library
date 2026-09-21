@@ -304,43 +304,61 @@ def apply_speaker_slugs(verses: list[dict]) -> None:
 
 def api_request(params: dict, retries: int = 5) -> dict:
     payload = {**params, "format": "json", "formatversion": "2", "maxlag": "5"}
-    body = urllib.parse.urlencode(payload).encode("utf-8")
+    encoded = urllib.parse.urlencode(payload)
     last: Exception | None = None
     for attempt in range(retries):
-        req = urllib.request.Request(
-            API,
-            data=body,
-            headers={
-                "User-Agent": USER_AGENT,
-                "Accept": "application/json",
-                "Content-Type": "application/x-www-form-urlencoded",
-            },
-            method="POST",
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=90) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-            if isinstance(data, dict) and data.get("error"):
-                err = data["error"]
-                code = err.get("code", "")
-                if code in {"maxlag", "ratelimited"} and attempt + 1 < retries:
-                    time.sleep(2 ** attempt)
-                    continue
-                raise SourceBlocker(f"MediaWiki API error: {err}")
-            return data
-        except SourceBlocker:
-            raise
-        except Exception as e:  # noqa: BLE001 — every transport failure is the blocker
-            last = e
-            if attempt + 1 < retries:
-                time.sleep(2 ** attempt)
+        for method in ("GET", "POST"):
+            try:
+                if method == "GET":
+                    req = urllib.request.Request(
+                        f"{API}?{encoded}",
+                        headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+                        method="GET",
+                    )
+                else:
+                    req = urllib.request.Request(
+                        API,
+                        data=encoded.encode("utf-8"),
+                        headers={
+                            "User-Agent": USER_AGENT,
+                            "Accept": "application/json",
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        method="POST",
+                    )
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    raw = resp.read().decode("utf-8")
+                data = json.loads(raw)
+                if isinstance(data, dict) and data.get("error"):
+                    err = data["error"]
+                    code = err.get("code", "")
+                    if code in {"maxlag", "ratelimited"} and attempt + 1 < retries:
+                        time.sleep(2 ** attempt)
+                        last = SourceBlocker(f"MediaWiki API error: {err}")
+                        break
+                    raise SourceBlocker(f"MediaWiki API error: {err}")
+                return data
+            except SourceBlocker:
+                raise
+            except Exception as e:  # noqa: BLE001 — every transport failure is the blocker
+                last = e
+                print(f"   ! {method} {type(e).__name__}: {e}", flush=True)
                 continue
+        if attempt + 1 < retries:
+            time.sleep(2 ** attempt)
     raise SourceBlocker(
         "SOURCE BLOCKER: cannot reach sa.wikisource.org "
         f"({type(last).__name__}: {last}). Rights-compatible CC BY-SA 4.0 text "
         "exists but this environment cannot download it. Not fabricating "
         "verses. See docs/bhagavata-source-research.md."
     ) from last
+
+
+def probe_api() -> None:
+    print(f"   probing {API} …", flush=True)
+    data = api_request({"action": "query", "meta": "siteinfo", "siprop": "general"})
+    general = (data.get("query") or {}).get("general") or {}
+    print(f"   siteinfo wikiid={general.get('wikiid')} generator={general.get('generator')}", flush=True)
 
 
 def fetch_pages(titles: list[str]) -> dict[str, dict]:
@@ -690,8 +708,9 @@ def main() -> int:
             verses = parse_wikitext(text, a.skandha, a.adhyaya)
             print(json.dumps({"count": len(verses), "refs": [v["ref"] for v in verses]}, ensure_ascii=False, indent=2))
             return 0
-        print(f"== Bhāgavata ingest from {ORIGIN} ({EXPECTED_CHAPTERS} chapters expected)")
-        print("   GRETIL will not be written. Translations will not be invented.")
+        print(f"== Bhāgavata ingest from {ORIGIN} ({EXPECTED_CHAPTERS} chapters expected)", flush=True)
+        print("   GRETIL will not be written. Translations will not be invented.", flush=True)
+        probe_api()
         summary = ingest_all(
             dry_run=a.dry_run,
             delay=a.delay,
