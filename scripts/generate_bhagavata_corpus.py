@@ -213,12 +213,43 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
         num = parse_int(parts[i])
         following = parts[i + 1]
         raw_body = parts[i - 1]
+        recovered_opener = None
+        if expected is None and num == 2:
+            # Wikisource sometimes leaves the opening śloka unnumbered
+            # (e.g. 1.7: Shaunaka's question has no ॥ १ ॥, then ॥। २ ॥).
+            # Split on the last उवाच so verse 2 is not duplicated. Text is from
+            # the page; only the missing *number* is supplied.
+            before, v2_speaker, after = _split_at_last_speaker(raw_body)
+            open_text, _open_lead = _verse_body(before)
+            open_text = open_text.rstrip().rstrip("।॥").strip()
+            if open_text:
+                recovered_opener = (open_text, _last_speaker_in(before))
+                if v2_speaker:
+                    speaker = v2_speaker
+                raw_body = after
         verse_text, leading = _verse_body(raw_body)
         if leading:
             flush_nonverse(leading)
             verse_text, _ = _verse_body(raw_body)
         if not verse_text:
             raise SourceBlocker(f"{skandha}.{adhyaya}.{num}: empty mūla")
+        if recovered_opener:
+            open_text, opener_speaker = recovered_opener
+            verses.append({
+                "ref": f"{skandha}.{adhyaya}.1",
+                "ordinal": 1,
+                "kind": "verse",
+                "speaker": opener_speaker,
+                "deva": f"{open_text} ॥ {deva_int(1)} ॥",
+                "iast": _iast_lines(f"{open_text} ॥ {deva_int(1)} ॥"),
+                "metadata": {
+                    "numbering_note": (
+                        "Opening mūla had no ॥ १ ॥ on Wikisource; "
+                        "kept as verse 1 of this chapter (text from the page, numbering supplied)."
+                    )
+                },
+            })
+            expected = 2
         if expected is None:
             expected = num
         if num != expected:
@@ -244,6 +275,36 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
     if not verses:
         raise SourceBlocker(f"{skandha}.{adhyaya}: parser produced 0 verses")
     return verses
+
+
+def _speaker_from_match(m: re.Match) -> str:
+    return re.sub(r"\s+", " ", m.group(1)).strip(" ।|*")
+
+
+def _last_speaker_in(raw: str) -> str | None:
+    speaker = None
+    for ln in raw.splitlines():
+        m = SPEAKER_LINE.match(ln.strip())
+        if m:
+            speaker = _speaker_from_match(m)
+    return speaker
+
+
+def _split_at_last_speaker(raw: str) -> tuple[str, str | None, str]:
+    """Split ``raw`` on the last उवाच line: (before, speaker, after)."""
+    lines = raw.splitlines()
+    last_i = None
+    last_speaker = None
+    for i, ln in enumerate(lines):
+        m = SPEAKER_LINE.match(ln.strip())
+        if m:
+            last_i = i
+            last_speaker = _speaker_from_match(m)
+    if last_i is None:
+        return raw, None, ""
+    before = "\n".join(lines[:last_i])
+    after = "\n".join(lines[last_i + 1:])
+    return before, last_speaker, after
 
 
 def _split_trailing_speaker(text: str) -> tuple[str | None, str]:

@@ -49,6 +49,19 @@ Sample check (Canto 1, Chapter 1): Wikisource has **23** numbered verses in that
 adhyāya. Expanding that single chapter without the other 334 is not a complete
 Bhāgavata.
 
+Parser notes for this edition (fail closed; no invented Sanskrit):
+
+* Verse ends mix `॥ N ॥`, `। N ॥`, `। ०९ ॥` (leading zero), and `॥। N ॥`
+  (triple danda, e.g. 1.7).
+* Two-line colophons (`इति …` then `प्रथमोऽध्यायः ॥ १ ॥` with avagraha) are
+  dropped, not counted as verses. Meter labels like `(अनुष्टुप्)` are stripped.
+* **Unnumbered opening śloka:** some chapters omit `॥ १ ॥` on the first mūla
+  and start numbering at 2 (confirmed **1.7**, pageid 7996). The unnumbered
+  Devanagari immediately before that marker, split on the last `उवाच`, is kept
+  as verse 1 of that chapter. Text is from the page; only the missing *number*
+  is supplied (`metadata.numbering_note`). If there is no recoverable mūla
+  before verse 2, ingest fails closed.
+
 Text-critical note already in the pilot: 1.1.4 reads `ऋषयः` (Wikisource /
 printed vulgate), not GRETIL’s `īśayaḥ`.
 

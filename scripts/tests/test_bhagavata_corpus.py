@@ -90,6 +90,20 @@ class ParserTests(unittest.TestCase):
         verses = G.parse_wikitext(wiki, 1, 1)
         self.assertEqual([v["ordinal"] for v in verses], [8, 9])
 
+    def test_unnumbered_opener_before_verse_2_is_kept_as_verse_1(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_1_7_unnumbered_opener.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 1, 7)
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2, 3])
+        self.assertIn("निर्गते नारदे", verses[0]["deva"])
+        self.assertIn("शम्याप्रास", verses[1]["deva"])
+        self.assertNotIn("निर्गते", verses[1]["deva"])
+        self.assertNotIn("शम्याप्रास", verses[0]["deva"])
+        self.assertEqual(verses[0]["speaker"], "शौनक")
+        self.assertEqual(verses[1]["speaker"], "सूत")
+        self.assertIn("numbering_note", verses[0]["metadata"])
+
 
 class MergePilotTests(unittest.TestCase):
     def test_keeps_existing_translations_on_overlap_only(self):
