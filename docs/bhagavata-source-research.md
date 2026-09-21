@@ -52,7 +52,9 @@ Bhāgavata.
 Parser notes for this edition (fail closed; no invented Sanskrit):
 
 * Verse ends mix `॥ N ॥`, `। N ॥`, `। ०९ ॥` (leading zero), and `॥। N ॥`
-  (triple danda, e.g. 1.7).
+  (triple danda, e.g. 1.7). Skandha 5 often numbers with two spaces and **no**
+  danda (`पराभवः  १`). Skandha 7 often uses `N।` after the pādas
+  (`यथा १।`).
 * Two-line colophons (`इति …` then `प्रथमोऽध्यायः ॥ १ ॥` with avagraha) are
   dropped, not counted as verses. Meter labels like `(अनुष्टुप्)` are stripped.
 * **Unnumbered opening śloka:** some chapters omit `॥ १ ॥` on the first mūla

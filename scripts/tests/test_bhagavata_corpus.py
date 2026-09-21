@@ -152,6 +152,25 @@ class ParserTests(unittest.TestCase):
         self.assertIn("तारहेम", verses[2]["deva"])
         self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
 
+    def test_skandha_5_bare_line_numbers(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_1_bare_numbers.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 5, 1)
+        self.assertEqual([v["ref"] for v in verses], ["5.1.1", "5.1.2", "5.1.3"])
+        self.assertIn("प्रियव्रतो", verses[0]["deva"])
+        self.assertIn("भवितुमर्हति", verses[1]["deva"])
+        self.assertNotIn("प्रियव्रतो", verses[1]["deva"])
+
+    def test_skandha_7_number_then_danda(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_1_number_then_danda.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 7, 1)
+        self.assertEqual([v["ref"] for v in verses], ["7.1.1", "7.1.2", "7.1.3"])
+        self.assertIn("दैत्यानवधीद्", verses[0]["deva"])
+        self.assertIn("विद्वेषो", verses[1]["deva"])
+
 
 class MergePilotTests(unittest.TestCase):
     def test_keeps_existing_translations_on_overlap_only(self):

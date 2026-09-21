@@ -70,13 +70,24 @@ SKANDHA_10_PURVA_LAST = 49
 DEVA_DIGIT = str.maketrans("0123456789", "०१२३४५६७८९")
 FROM_DEVA_DIGIT = str.maketrans("०१२३४५६७८९", "0123456789")
 
-# Wikisource mixes ॥ N ॥, । N ॥ and । ०९ ॥ (leading zero).
-VERSE_END = re.compile(
-    r"[।॥]\s*([०१२३४५६७८९0-9]+)\s*[।॥]"
+# Three numbering styles on sa.wikisource Bhāgavata pages:
+#   A  ॥ N ॥ / । N ॥ / । ०९ ॥   (skandhas 1–4, 6, 10–12)
+#   B  two-or-more spaces + N    (skandha 5 gadya, no danda)
+#   C  N।  at the end of a line  (skandha 7)
+_DEVA_NUM = r"[०१२३४५६७८९0-9]+"
+VERSE_END_CLASSIC = re.compile(
+    rf"[।॥]\s*({_DEVA_NUM})\s*[।॥]"
 )
-# Split tens/units: «॥ २ ॥ ६ ॥» for 26 (seen in 4.2).
+VERSE_END_BARE = re.compile(
+    rf"(?<=[ \t]{{2}})({_DEVA_NUM})(?=[ \t]{{2}}|[ \t]*$)",
+    re.M,
+)
+VERSE_END_NUM_DANDA = re.compile(
+    rf"[ \t]+({_DEVA_NUM})[।॥]"
+)
+# Split tens/units leftover after a classic split: « ६ ॥» following «॥ २ ॥».
 _SPLIT_REST_DIGIT = re.compile(
-    r"^\s*([०१२३४५६७८९0-9]+)\s*[।॥]"
+    rf"^\s*({_DEVA_NUM})\s*[।॥]"
 )
 SPEAKER_LINE = re.compile(
     r"^[\s\*]*([^\n]{1,80}?)\s+(उवाच|ऊचुः)\s*[।|]?\s*$"
@@ -124,6 +135,50 @@ def deva_int(n: int) -> str:
 
 def parse_int(token: str) -> int:
     return int(token.translate(FROM_DEVA_DIGIT))
+
+
+def _iter_markers(body: str) -> list[tuple[int, int, int]]:
+    """Locate verse-number markers; drop overlaps; join adjacent split digits."""
+    hits: list[tuple[int, int, int]] = []
+    for pat in (VERSE_END_CLASSIC, VERSE_END_BARE, VERSE_END_NUM_DANDA):
+        for m in pat.finditer(body):
+            hits.append((m.start(), m.end(), parse_int(m.group(1))))
+    hits.sort(key=lambda h: (h[0], -(h[1] - h[0])))
+    uniq: list[tuple[int, int, int]] = []
+    last_end = -1
+    for s, e, n in hits:
+        if s < last_end:
+            continue
+        uniq.append((s, e, n))
+        last_end = e
+    merged: list[tuple[int, int, int]] = []
+    i = 0
+    while i < len(uniq):
+        s, e, n = uniq[i]
+        if i + 1 < len(uniq):
+            s2, e2, n2 = uniq[i + 1]
+            if body[e:s2].strip() == "" and n < 100 and n2 < 10:
+                merged.append((s, e2, int(str(n) + str(n2))))
+                i += 2
+                continue
+        merged.append((s, e, n))
+        i += 1
+    return merged
+
+
+def _split_verse_markers(body: str) -> list[str]:
+    """Like ``re.split`` with one capturing group: [pre, num, rest, num, rest, …]."""
+    markers = _iter_markers(body)
+    if not markers:
+        return [body]
+    parts: list[str] = []
+    prev = 0
+    for s, e, n in markers:
+        parts.append(body[prev:s])
+        parts.append(str(n))
+        prev = e
+    parts.append(body[prev:])
+    return parts
 
 
 def chapter_title(skandha: int, adhyaya: int) -> str:
@@ -257,7 +312,7 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
         verses.append(payload)
         last_printed = printed
 
-    parts = VERSE_END.split(body)
+    parts = _split_verse_markers(body)
     # split → [pre, num, rest, num, rest, ...]
     if len(parts) < 3:
         raise SourceBlocker(
