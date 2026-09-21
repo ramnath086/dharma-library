@@ -135,7 +135,36 @@ class SettingsNotifier extends Notifier<Settings> {
 final settingsProvider = NotifierProvider<SettingsNotifier, Settings>(SettingsNotifier.new);
 
 // ------------------------------------------------------------ content
-final workSlugProvider = Provider<String>((_) => AppConfig.defaultWorkSlug);
+/// The work currently shown by the reader.  It is a preference rather than a
+/// compile-time constant so the same app can open any bundled/published work.
+class SelectedWorkSlugNotifier extends Notifier<String> {
+  @override
+  String build() => ref.watch(prefsProvider).getString('selectedWorkSlug') ?? AppConfig.defaultWorkSlug;
+
+  Future<void> select(String slug) async {
+    state = slug;
+    await ref.read(prefsProvider).setString('selectedWorkSlug', slug);
+  }
+}
+
+final selectedWorkSlugProvider = NotifierProvider<SelectedWorkSlugNotifier, String>(SelectedWorkSlugNotifier.new);
+final workSlugProvider = Provider<String>((ref) => ref.watch(selectedWorkSlugProvider));
+
+/// The local library catalogue, populated by LocalStore.importAllAssetBundles.
+/// Network-only works can still be loaded by their slug, but shipped bundles
+/// are what make a work available to offline reading and search.
+final bundledWorksProvider = FutureProvider<List<Toc>>((ref) async {
+  final repo = ref.watch(repositoryProvider);
+  final slugs = await repo.store.bundleSlugs();
+  final works = <Toc>[];
+  for (final slug in slugs) {
+    try {
+      works.add(await repo.toc(slug));
+    } catch (_) {/* ignore a stale or incomplete local entry */}
+  }
+  works.sort((a, b) => a.work.slug.compareTo(b.work.slug));
+  return works;
+});
 
 final tocProvider = FutureProvider.family<Toc, String>((ref, slug) => ref.watch(repositoryProvider).toc(slug));
 final editionsProvider = FutureProvider.family<List<Edition>, String>((ref, slug) => ref.watch(repositoryProvider).editions(slug));

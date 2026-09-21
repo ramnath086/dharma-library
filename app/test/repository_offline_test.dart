@@ -36,6 +36,19 @@ void main() {
     expect(ch.editions.every((e) => e.isCleared), isTrue, reason: 'bundle must only contain rights-cleared editions');
   });
 
+  test('library imports Gita alongside Bhāgavata and searches both works', () async {
+    final gita = jsonDecode(File('assets/bundles/bhagavad-gita.json').readAsStringSync()) as Map<String, dynamic>;
+    await store.importBundle(gita);
+    expect(await store.bundleSlugs(), ['bhagavad-gita', 'bhagavata-purana']);
+
+    final toc = await repo.toc('bhagavad-gita');
+    expect(toc.chapters, hasLength(18));
+    final total = toc.chapters.fold<int>(0, (n, c) => n + c.verseCount);
+    expect(total, 700);
+    expect((await repo.search('Kurukshetra')).any((h) => h.workSlug == 'bhagavad-gita'), isTrue);
+    expect((await repo.search('naimisa')).any((h) => h.workSlug == 'bhagavata-purana'), isTrue);
+  });
+
   test('verse detail has renderings and mentions', () async {
     final v = await repo.verse('bhagavata-purana', '1.1.4');
     expect(v.verse.byKind('base_text')!.body, contains('नैमिषे'));
