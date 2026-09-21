@@ -30,6 +30,17 @@ class InventoryTests(unittest.TestCase):
         self.assertNotIn("स्कन्दः", t)
         self.assertIn("अध्यायः ४", t)
 
+    def test_skandha_10_uses_purva_and_uttara_halves(self):
+        purva = G.chapter_title(10, 1)
+        mid = G.chapter_title(10, 49)
+        uttara = G.chapter_title(10, 50)
+        last = G.chapter_title(10, 90)
+        self.assertEqual(purva, "श्रीमद्भागवतपुराणम्/स्कन्धः १०/पूर्वार्धः/अध्यायः १")
+        self.assertEqual(mid, "श्रीमद्भागवतपुराणम्/स्कन्धः १०/पूर्वार्धः/अध्यायः ४९")
+        self.assertEqual(uttara, "श्रीमद्भागवतपुराणम्/स्कन्धः १०/उत्तरार्धः/अध्यायः ५०")
+        self.assertEqual(last, "श्रीमद्भागवतपुराणम्/स्कन्धः १०/उत्तरार्धः/अध्यायः ९०")
+        self.assertNotIn("स्कन्दः", purva)
+
 
 class ParserTests(unittest.TestCase):
     def setUp(self):
@@ -56,6 +67,13 @@ class ParserTests(unittest.TestCase):
         wiki = "foo ॥ १ ॥\nbar ॥ ३ ॥\n"
         with self.assertRaises(G.SourceBlocker):
             G.parse_wikitext(wiki, 2, 1)
+
+    def test_single_danda_after_number_still_splits(self):
+        wiki = "aaa ॥ १ ॥\nbbb ॥ २ ।\n"
+        verses = G.parse_wikitext(wiki, 2, 8)
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2])
+        self.assertIn("॥ १ ॥", verses[0]["deva"])
+        self.assertIn("॥ २ ॥", verses[1]["deva"])
 
 
 class MergePilotTests(unittest.TestCase):

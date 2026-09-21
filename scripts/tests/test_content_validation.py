@@ -48,25 +48,44 @@ class GitaUnchanged(unittest.TestCase):
 
 
 class BhagavataPilot(unittest.TestCase):
-    def test_only_the_ten_verse_pilot_is_shipped(self):
+    def test_shipped_scope_matches_work_json(self):
+        w = _load(BHAGAVATA / "work.json")
+        meta = w["metadata"]
         files = _verse_files(BHAGAVATA)
-        self.assertEqual(files, [BHAGAVATA / "1" / "1" / "verses.json"])
-        data = _load(files[0])
-        refs = [v["ref"] for v in data["verses"]]
-        self.assertEqual(refs, [f"1.1.{i}" for i in range(1, 11)])
-        for v in data["verses"]:
-            self.assertTrue(v["deva"].strip())
-            self.assertTrue(v["iast"].strip())
+        total = 0
+        for vf in files:
+            data = _load(vf)
+            verses = data["verses"]
+            total += len(verses)
+            self.assertTrue(verses, vf)
+            for i, v in enumerate(verses, 1):
+                self.assertEqual(v["ordinal"], i, v.get("ref"))
+                self.assertTrue(v["deva"].strip(), v["ref"])
+                self.assertTrue(v["iast"].strip(), v["ref"])
+        self.assertEqual(total, meta["imported_verse_count"])
+        self.assertEqual(len(files), meta["imported_chapter_count"])
+        if meta.get("complete"):
+            self.assertEqual(len(files), 335)
+            self.assertEqual(len({vf.parts[-3] for vf in files}), 12)
+            self.assertIsNone(meta.get("pilot_scope"))
+            self.assertNotIn("source_blocker", meta)
+        else:
+            self.assertEqual(files, [BHAGAVATA / "1" / "1" / "verses.json"])
+            self.assertEqual(meta.get("pilot_scope"), "1.1.1–1.1.10")
+            self.assertEqual(meta.get("imported_verse_count"), 10)
+            self.assertFalse(meta.get("complete"))
+
+    def test_pilot_translations_are_not_invented_beyond_1_1_10(self):
+        data = _load(BHAGAVATA / "1" / "1" / "verses.json")
+        verses = data["verses"]
+        self.assertGreaterEqual(len(verses), 10)
+        self.assertEqual([v["ref"] for v in verses[:10]], [f"1.1.{i}" for i in range(1, 11)])
+        for v in verses[:10]:
             self.assertTrue(v["en"].strip())
             self.assertTrue(v["ml"].strip())
-
-    def test_work_json_declares_pilot_scope_not_a_complete_corpus(self):
-        w = _load(BHAGAVATA / "work.json")
-        self.assertEqual(w["slug"], "bhagavata-purana")
-        self.assertEqual(w["metadata"].get("pilot_scope"), "1.1.1–1.1.10")
-        self.assertEqual(w["metadata"].get("imported_verse_count"), 10)
-        self.assertEqual(w["metadata"].get("imported_chapter_count"), 1)
-        self.assertFalse(w["metadata"].get("complete"), "must not claim a complete Bhāgavata")
+        for v in verses[10:]:
+            self.assertFalse(v.get("en"), f"invented English at {v['ref']}")
+            self.assertFalse(v.get("ml"), f"invented Malayalam at {v['ref']}")
 
     def test_gretil_is_collation_only_not_a_commercial_pd_grant(self):
         w = _load(BHAGAVATA / "work.json")

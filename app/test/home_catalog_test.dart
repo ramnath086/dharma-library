@@ -46,7 +46,9 @@ void main() {
 
     expect(find.textContaining('Bhāgavata'), findsWidgets);
     expect(find.textContaining('Bhagavad Gītā'), findsWidgets);
-    expect(find.textContaining('10 verses'), findsWidgets);
+    final nBhagavata = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
+        .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
+    expect(find.textContaining('$nBhagavata verses'), findsWidgets);
     expect(find.textContaining('700 verses'), findsWidgets);
     expect(find.textContaining('18 chapters'), findsWidgets);
     expect(find.textContaining('Published works'), findsOneWidget);

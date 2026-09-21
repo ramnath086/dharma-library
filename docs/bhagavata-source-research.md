@@ -1,11 +1,12 @@
 # Śrīmad Bhāgavata Purāṇa — source research (this pass)
 
-This note records what was verified, what is **not** cleared to ship, and why
-the app still contains the **pilot** (Canto 1, Chapter 1, verses 1.1.1–1.1.10)
-rather than a complete 12-skandha corpus.
+This note records what was verified, what is **not** cleared to ship, and
+whether the app contains a complete 12-skandha corpus or still the **pilot**
+(Canto 1, Chapter 1, verses 1.1.1–1.1.10).
 
 **Do not treat this document as a public-domain certificate.** Rights status is
-per edition, with named witnesses.
+per edition, with named witnesses. Check `content/bhagavata-purana/work.json`
+`metadata.complete` and `imported_verse_count` for what is actually shipped.
 
 ## What “complete” would mean here
 
@@ -26,36 +27,27 @@ approximation, **not** an import target. Verse totals differ by recension
 Index: [श्रीमद्भागवतपुराणम्](https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्)
 
 Canonical page titles use **`स्कन्धः`** (not the duplicate `स्कन्दः` tree, which
-must be ignored) and Devanagari digits:
+must be ignored) and Devanagari digits.
 
-`श्रीमद्भागवतपुराणम्/स्कन्धः N/अध्यायः M`
+Reconfirmed **2026-09-21** via `list=allpages&apprefix=श्रीमद्भागवतपुराणम्/`
+(`batchcomplete`, 500 titles): 335 canonical adhyāya pages.
 
-Skandha 10 is split पूर्वार्धः (1–49) / उत्तरार्धः (50–90) in the printed
-tradition; on Wikisource the adhyāya pages still number 1–90.
+| Skandha | Title pattern | Adhyāya pages |
+|---|---|---|
+| 1–9, 11–12 | `श्रीमद्भागवतपुराणम्/स्कन्धः N/अध्यायः M` | 19, 10, 33, 31, 26, 19, 15, 24, 24, —, 31, 13 |
+| 10 | `…/स्कन्धः १०/पूर्वार्धः/अध्यायः` 1–49 **and** `…/उत्तरार्धः/अध्यायः` 50–90 | 90 |
+| **Total** | | **335** |
 
-| Skandha | Adhyāya pages (स्कन्धः spelling) |
-|---|---|
-| 1 | 19 |
-| 2 | 10 |
-| 3 | 33 |
-| 4 | 31 |
-| 5 | 26 |
-| 6 | 19 |
-| 7 | 15 |
-| 8 | 24 |
-| 9 | 24 |
-| 10 | 90 |
-| 11 | 31 |
-| 12 | 13 |
-| **Total** | **335 chapter pages** |
+Junk titles excluded: `स्कन्धः १२/अध्यायः/अध्यायः २`, `स्कन्धः १२अध्यायः २`,
+`स्कंध १२/अध्यायः ३`. The entire `स्कन्दः` (short-vowel) tree is ignored.
 
-Junk titles spotted and excluded: `स्कन्धः १२/अध्यायः/अध्यायः २`, `स्कन्धः १२अध्यायः २`.
-
-Verse totals are **unknown until each page is parsed**. Do not invent them.
+Work page: id **7950**, Wikidata Q682958, last edit 26 Jun 2023 (Puranastudy);
+423 subpages (33 redirect / 390 non-redirect), of which 335 are the canonical
+adhyāyas above.
 
 Sample check (Canto 1, Chapter 1): Wikisource has **23** numbered verses in that
-adhyāya. The app currently ships **10** (the existing pilot). Expanding that
-single chapter without the other 334 would still not be a complete Bhāgavata.
+adhyāya. Expanding that single chapter without the other 334 is not a complete
+Bhāgavata.
 
 Text-critical note already in the pilot: 1.1.4 reads `ऋषयः` (Wikisource /
 printed vulgate), not GRETIL’s `īśayaḥ`.
@@ -81,19 +73,32 @@ Modern translations and Hindi renderings are **not** cleared. Not used.
 ### 4. sa.wikisource.org `श्रीमद्भागवतपुराणम्`
 
 * Wikimedia terms: **CC BY-SA 4.0** (compatible with this project’s rights
-  model as `open_license`, provided attribution is kept).
+  model as `open_license`, provided attribution is kept). Footer / Terms of Use:
+  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
+  [Wikimedia Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use).
 * This is the only complete electronic candidate identified in this pass that
   is compatible with redistribution **in principle**.
-* MediaWiki API: `action=query&prop=revisions&rvprop=content&rvslots=main&format=json&formatversion=2`
-  with `generator=allpages` / `gapprefix=श्रीमद्भागवतपुराणम्/स्कन्धः N/अध्यायः`.
+* MediaWiki API (siteinfo 2026-09-21T13:57:04Z): wikiid `sawikisource`,
+  MW 1.47.0-wmf.20.
+* Fetch: `action=query&prop=revisions&rvprop=content|ids|timestamp|sha1&rvslots=main`
+  with `titles=` batches (skandha 10 uses the पूर्वार्धः/उत्तरार्धः paths above).
+* Importer: `scripts/generate_bhagavata_corpus.py`.
 
-### 5. 19th-century printed editions (e.g. Burnouf 1840s)
+### 5. Official Sanskrit Wikisource dump
+
+[dumps.wikimedia.org/sawikisource/20260901/](https://dumps.wikimedia.org/sawikisource/20260901/)
+is complete (dump date 2026-09-01).
+`sawikisource-20260901-pages-articles.xml.bz2` is **221.6 MB** compressed.
+That file is binary and too large to ingest through the Arena page-fetch
+helper. It remains a valid offline route on a machine that can `wget` it.
+
+### 6. 19th-century printed editions (e.g. Burnouf 1840s)
 
 Public-domain **prints** exist (Internet Archive scans). Turning those into a
 verified e-text requires OCR + human collation far beyond this pass. Not used
 as a silent substitute.
 
-### 6. Legal backdrop (mūla vs. translation)
+### 7. Legal backdrop (mūla vs. translation)
 
 Indian courts have treated **Purāṇa mūla** as not subject to copyright in the
 way a modern translation is (Delhi High Court, 2023, in the Gita Press / Bhagavad
@@ -104,29 +109,27 @@ the **ancient work** as public domain. It does **not**:
 * clear any translation, commentary, or recording;
 * tell us which recension to publish.
 
-## SOURCE BLOCKER (this environment)
+## Retrieval routes tried (2026-09-21)
 
 A rights-compatible complete e-text **exists** (Wikisource, CC BY-SA 4.0).
+Whether it is **in this repository** is a separate question (`work.json`
+`metadata.complete`).
 
-This sandbox **cannot bulk-download it**:
+| Route | Result |
+|---|---|
+| Local `urllib` / OpenSSL to `sa.wikisource.org`, `dumps.wikimedia.org`, `wikipedia.org`, `archive.org` | TLS handshake EOF / `SSLZeroReturnError` / 0-byte ClientHello. **Do not retry.** |
+| Local `curl` | `SSL_ERROR_SYSCALL` at ClientHello to Wikimedia / Cloudflare. GitHub.com `curl` works. |
+| Local Node `fetch` | Wikimedia `ECONNRESET`; GitHub `UNABLE_TO_VERIFY_LEAF_SIGNATURE`. |
+| Arena `fetch_page` helper | **Works.** Confirmed siteinfo JSON, `list=allpages` (335 canonical titles), `prop=revisions` wikitext (e.g. skandha 2 adhyāya 7), dump **index** HTML. Responses are chunked; reconstructing ~335 chapter bodies through the helper is not a reliable ingest. `action=raw` is rewritten as HTML by the helper — use the API. |
+| Official `pages-articles.xml.bz2` (221.6 MB) | Listed via `fetch_page`; **not** ingestible as binary through that helper. |
+| `scripts/generate_bhagavata_corpus.py` in this sandbox | SOURCE BLOCKER (same local TLS failure). Does **not** invent verses. |
+| GitHub-hosted Actions (`.github/workflows/ingest-bhagavata.yml`) | Remaining bulk path: ubuntu-latest can POST the MediaWiki API, parse 335 chapters, emit SQL + the offline bundle, and upload `bhagavata-wikisource-ingest`. |
 
-* `urllib` / OpenSSL: `SSLZeroReturnError` / handshake EOF to Wikimedia
-* `curl` / `openssl s_client`: `SSL_ERROR_SYSCALL` at ClientHello
-* Node `fetch`: `ECONNRESET` before TLS is established
-* No HTTP(S) proxy is configured
-* The only working outbound HTTPS helper is a page-fetch tool that cannot
-  persist ~335 chapters × multi-chunk API responses as a corpus
+Do **not** claim a complete Bhāgavata until that ingest artifact has been
+committed and `metadata.complete` is true with 335 chapters. A failed or
+absent ingest leaves the 10-verse pilot in place.
 
-Reconstructing 335 chapters through that helper would be incomplete, unreviewed,
-and would still risk silently shipping a partial corpus as “complete”.
-
-**Therefore this pass does not ingest a complete Bhāgavata.** It keeps the
-existing 10-verse pilot, corrects provenance so GRETIL is not claimed as a
-cleared commercial source, and leaves a ready importer
-(`scripts/generate_bhagavata_corpus.py`) for an environment that can reach
-`sa.wikisource.org`.
-
-When that importer succeeds it must:
+When the importer succeeds it must:
 
 1. Parse every canonical अध्याय page (335) and refuse to mark the work complete
    if any skandha is short.
@@ -136,10 +139,14 @@ When that importer succeeds it must:
 4. Keep Gita Press / GRETIL as numbering/collation witnesses, not as the
    shipped file.
 5. Attribute Wikimedia / CC BY-SA 4.0 on the electronic Sanskrit edition.
+6. Record source URL, `pageid`, `revid`, timestamp, sha1, retrieval date,
+   licence, attribution, and transformation (`WIKISOURCE_MANIFEST.json` plus
+   each chapter `_source`).
 
-## What remains in the app
+## What remains in the app until ingest lands
 
-* Pilot: `content/bhagavata-purana/1/1/verses.json` — **10 verses** (1.1.1–1.1.10).
+* Pilot: `content/bhagavata-purana/1/1/verses.json` — **10 verses** (1.1.1–1.1.10),
+  unless `work.json` says otherwise.
 * Bhagavad Gītā: **18 chapters / 700 verses** — unchanged.
 * Original English & Malayalam translations on the pilot verses: Dharma Library,
   CC BY-SA 4.0, labelled draft.

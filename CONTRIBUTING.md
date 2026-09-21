@@ -6,8 +6,9 @@
   Translations must be your own work (or cleared) and are released under
   CC BY-SA 4.0. Never paste from copyrighted translations. A complete
   Bhāgavata ingest is `python3 scripts/generate_bhagavata_corpus.py` (Wikisource
-  CC BY-SA 4.0); if that cannot run, leave the 10-verse pilot and do not invent
-  verses. See `docs/bhagavata-source-research.md`.
+  CC BY-SA 4.0) or the `Ingest Bhāgavata from Wikisource` GitHub Action. If that
+  cannot run, leave the 10-verse pilot and do not invent verses. See
+  `docs/bhagavata-source-research.md`.
 * Content lives in `content/**/*.json`; never edit `content/generated/`.
 * Run before pushing:
   ```bash

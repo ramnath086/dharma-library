@@ -46,7 +46,9 @@ void main() {
 
     expect(find.text('Dharma Library'), findsWidgets);
     expect(find.textContaining('Bhāgavata'), findsWidgets);
-    expect(find.textContaining('10 verses'), findsWidgets);
+    final nVerses = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
+        .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
+    expect(find.textContaining('$nVerses verses'), findsWidgets);
 
     // switch to Malayalam
     await tester.tap(find.byIcon(Icons.settings_outlined));
@@ -82,7 +84,9 @@ void main() {
     ));
     await _settle(tester);
 
-    expect(find.text('3 of 10 verses explored'), findsOneWidget);
+    final nVerses = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
+        .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
+    expect(find.text('3 of $nVerses verses explored'), findsOneWidget);
     expect(find.byType(LinearProgressIndicator), findsWidgets);
     expect(find.widgetWithText(ActionChip, 'Search'), findsOneWidget);
     expect(find.widgetWithText(ActionChip, 'Ask'), findsOneWidget);

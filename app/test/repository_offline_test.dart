@@ -29,13 +29,18 @@ void main() {
   test('toc and chapter load from bundle', () async {
     final toc = await repo.toc('bhagavata-purana');
     expect(toc.work.shortCode, 'SB');
-    expect(toc.chapters, hasLength(1));
     final ch = await repo.chapter(toc.chapters.first.id);
-    expect(ch.verses, hasLength(10));
+    expect(ch.verses.length, greaterThanOrEqualTo(10));
     expect(ch.verses.first.ref, '1.1.1');
     expect(ch.verses.first.hasEditorialCue, isTrue);
     expect(ch.verses[3].hasEditorialCue, isFalse);
     expect(ch.editions.every((e) => e.isCleared), isTrue, reason: 'bundle must only contain rights-cleared editions');
+    if (toc.work.isPilot) {
+      expect(toc.chapters, hasLength(1));
+      expect(ch.verses, hasLength(10));
+    } else {
+      expect(toc.chapters, hasLength(335));
+    }
   });
 
   test('library imports Gita alongside Bhāgavata and searches both works', () async {

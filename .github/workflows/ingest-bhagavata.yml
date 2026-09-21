@@ -1,0 +1,123 @@
+name: Ingest Bhāgavata from Wikisource
+
+# Bulk download of the CC BY-SA 4.0 sa.wikisource.org mūla. GitHub-hosted
+# runners can reach Wikimedia; the Arena sandbox's local TLS stack cannot.
+# This job never invents verses. Exit 2 from the importer is a SOURCE BLOCKER.
+#
+# Artifacts are downloaded and committed from a machine that can push to the
+# session branch (GITHUB_TOKEN pushes do not retrigger CI).
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["arena/**"]
+    paths:
+      - "scripts/generate_bhagavata_corpus.py"
+      - ".github/workflows/ingest-bhagavata.yml"
+
+concurrency:
+  group: ingest-bhagavata-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  ingest:
+    name: Fetch · parse · SQL · bundle
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    services:
+      postgres:
+        image: supabase/postgres:15.6.1.139
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      PGURI: postgresql://postgres:postgres@localhost:5432/postgres
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install psql
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+      - name: Fetch Wikisource corpus (CC BY-SA 4.0)
+        run: |
+          set -o pipefail
+          python3 scripts/generate_bhagavata_corpus.py --delay 0.25 --batch-size 10 | tee ingest-log.txt
+      - name: Fail closed if the work is not complete
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          work = json.loads(pathlib.Path("content/bhagavata-purana/work.json").read_text(encoding="utf-8"))
+          meta = work["metadata"]
+          print(json.dumps({k: meta.get(k) for k in ("complete", "imported_chapter_count", "imported_verse_count", "retrieved", "source_license")}, ensure_ascii=False, indent=2))
+          if not meta.get("complete") or meta.get("imported_chapter_count") != 335:
+              sys.exit("SOURCE BLOCKER: importer did not mark 335 chapters complete")
+          PY
+      - name: Auth stub + migrations + seed + ingest SQL
+        run: |
+          psql "$PGURI" -v ON_ERROR_STOP=1 -c "create schema if not exists auth" || true
+          psql "$PGURI" -v ON_ERROR_STOP=1 -f supabase/tests/00_local_auth_stub.sql || true
+          for f in supabase/migrations/*.sql; do echo "== $f"; psql "$PGURI" -v ON_ERROR_STOP=1 -q -f "$f"; done
+          psql "$PGURI" -v ON_ERROR_STOP=1 -q -f supabase/seed.sql
+          python3 scripts/ingest.py
+          for f in $(ls -1 content/generated/*.sql | sort); do echo "== $f"; psql "$PGURI" -v ON_ERROR_STOP=1 -q -f "$f"; done
+      - name: Export offline bundle
+        run: python3 scripts/export_bundle.py --db "$PGURI"
+      - name: Bundle counts must match the importer
+        run: |
+          python3 - <<'PY'
+          import json
+          work = json.load(open("content/bhagavata-purana/work.json"))
+          bundle = json.load(open("app/assets/bundles/bhagavata-purana.json"))
+          gita = json.load(open("app/assets/bundles/bhagavad-gita.json"))
+          meta = work["metadata"]
+          n_verses = sum(len(s["verses"]) for s in bundle["sections"])
+          n_sections = len(bundle["sections"])
+          assert n_verses == meta["imported_verse_count"], (n_verses, meta)
+          assert n_sections == meta["imported_chapter_count"] == 335
+          assert sum(len(s["verses"]) for s in gita["sections"]) == 700
+          print(f"bundle ok: Bhāgavata {n_sections} chapters / {n_verses} verses; Gītā 700")
+          PY
+      - name: Pack corpus artifact
+        run: |
+          mkdir -p /tmp/bhagavata-ingest
+          cp -a content/bhagavata-purana /tmp/bhagavata-ingest/
+          mkdir -p /tmp/bhagavata-ingest/generated /tmp/bhagavata-ingest/bundles
+          cp -a content/generated/bhagavata-purana.sql /tmp/bhagavata-ingest/generated/
+          cp -a app/assets/bundles/bhagavata-purana.json /tmp/bhagavata-ingest/bundles/
+          cp ingest-log.txt /tmp/bhagavata-ingest/ || true
+          python3 - <<'PY'
+          import json, pathlib
+          work = json.loads(pathlib.Path("content/bhagavata-purana/work.json").read_text())
+          pathlib.Path("/tmp/bhagavata-ingest/SUMMARY.json").write_text(
+              json.dumps(work["metadata"], ensure_ascii=False, indent=2) + "\n"
+          )
+          PY
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: bhagavata-wikisource-ingest
+          path: /tmp/bhagavata-ingest
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo '### Bhāgavata Wikisource ingest'
+            echo
+            if [ -f content/bhagavata-purana/WIKISOURCE_MANIFEST.json ]; then
+              python3 - <<'PY'
+          import json
+          m = json.load(open("content/bhagavata-purana/WIKISOURCE_MANIFEST.json"))
+          print(f"- retrieved: {m.get('retrieved')}")
+          print(f"- licence: {m.get('license')}")
+          print(f"- chapters: {m.get('chapters')} / {m.get('expected_chapters')}")
+          print(f"- verses (this edition): {m.get('verses')}")
+          PY
+            else
+              echo 'Manifest not written — importer did not complete.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
