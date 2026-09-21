@@ -20,7 +20,9 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
+  issues: write
 
 jobs:
   ingest:
@@ -80,6 +82,13 @@ jobs:
           } > /tmp/ingest-comment.md
           gh api "repos/${GITHUB_REPOSITORY}/issues/12/comments" -F body=@/tmp/ingest-comment.md || true
           cat /tmp/ingest-comment.md >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp ingest-log.txt docs/bhagavata-ingest-last-error.txt || echo "no ingest-log.txt" > docs/bhagavata-ingest-last-error.txt
+          if [ -f wikimedia-probe.json ]; then cp wikimedia-probe.json docs/bhagavata-wikimedia-probe.json; fi
+          git add docs/bhagavata-ingest-last-error.txt docs/bhagavata-wikimedia-probe.json || true
+          git commit -m "chore: Wikisource ingest error log" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}" || true
       - uses: actions/upload-artifact@v7
         if: always()
         with:

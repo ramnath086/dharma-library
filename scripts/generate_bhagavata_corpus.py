@@ -317,7 +317,7 @@ def _curl_api(encoded: str) -> dict:
         raise FileNotFoundError("curl not on PATH")
     proc = subprocess.run(
         [
-            curl, "-sS",
+            curl, "-sS", "-G",
             "-A", USER_AGENT,
             "--max-time", "60",
             "-H", "Accept: application/json",
