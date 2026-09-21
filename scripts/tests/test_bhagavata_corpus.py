@@ -75,6 +75,21 @@ class ParserTests(unittest.TestCase):
         self.assertIn("॥ १ ॥", verses[0]["deva"])
         self.assertIn("॥ २ ॥", verses[1]["deva"])
 
+    def test_wikisource_1_1_mixed_danda_and_two_line_colophon(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_1_1_wikisource_head.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 1, 1)
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2, 3, 4])
+        self.assertIn("जन्माद्यस्य", verses[0]["deva"])
+        self.assertIn("ऋषयः", verses[3]["deva"])
+        self.assertNotIn("प्रथमोऽध्यायः", " ".join(v["deva"] for v in verses))
+
+    def test_leading_zero_deva_number(self):
+        wiki = "aaa ॥ ८ ॥\nbbb । ०९ ॥\n"
+        verses = G.parse_wikitext(wiki, 1, 1)
+        self.assertEqual([v["ordinal"] for v in verses], [8, 9])
+
 
 class MergePilotTests(unittest.TestCase):
     def test_keeps_existing_translations_on_overlap_only(self):

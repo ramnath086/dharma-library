@@ -70,14 +70,18 @@ SKANDHA_10_PURVA_LAST = 49
 DEVA_DIGIT = str.maketrans("0123456789", "०१२३४५६७८९")
 FROM_DEVA_DIGIT = str.maketrans("०१२३४५६७८९", "0123456789")
 
+# Wikisource mixes ॥ N ॥, । N ॥ and । ०९ ॥ (leading zero).
 VERSE_END = re.compile(
-    r"॥\s*([०१२३४५६७८९0-9]+)\s*[॥।]"
+    r"[।॥]\s*([०१२३४५६७८९0-9]+)\s*[।॥]"
 )
 SPEAKER_LINE = re.compile(
     r"^[\s\*]*([^\n]{1,80}?)\s+(उवाच|ऊचुः)\s*[।|]?\s*$"
 )
 COLOPHON = re.compile(r"^इति\s+श्रीम?द्?भागवत")
-TEMPLATE = re.compile(r"\{\{[^{}]*\}\}")
+# Colophon lines like «प्रथमोऽध्यायः ॥ १ ॥» (avagraha elides the अ of अध्यायः).
+CHAPTER_END = re.compile(r"ध्यायः\s*॥")
+METER_LABEL = re.compile(r"^\([^)]+\)\s*$")
+TEMPLATE = re.compile(r"\{\{[^{}]*\}\}", re.S)
 LINK = re.compile(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]")
 TAG = re.compile(r"<[^>]+>")
 BOLD = re.compile(r"'{2,}")
@@ -164,7 +168,9 @@ def strip_wiki(text: str) -> str:
             continue
         if s.startswith("#"):
             continue
-        if COLOPHON.match(s):
+        if COLOPHON.match(s) or CHAPTER_END.search(s):
+            continue
+        if METER_LABEL.match(s):
             continue
         lines.append(line)
     return "\n".join(lines)
@@ -264,7 +270,11 @@ def _verse_body(raw: str) -> tuple[str, str]:
             leading.append(ln)
             body_idx = i + 1
             continue
-        if s.startswith("==") or COLOPHON.match(s) or s.startswith("{{"):
+        if s.startswith("==") or COLOPHON.match(s) or CHAPTER_END.search(s) or s.startswith("{{"):
+            leading.append(ln)
+            body_idx = i + 1
+            continue
+        if METER_LABEL.match(s):
             leading.append(ln)
             body_idx = i + 1
             continue
