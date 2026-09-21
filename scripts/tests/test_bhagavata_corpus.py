@@ -131,6 +131,17 @@ class ParserTests(unittest.TestCase):
         self.assertIn("skipped", verses[1]["metadata"]["numbering_note"])
         self.assertIn("40b", verses[3]["metadata"]["numbering_note"])
 
+    def test_split_tens_and_units_are_one_verse_number(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_4_2_split_digits.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 4, 2)
+        self.assertEqual([v["ref"] for v in verses], ["4.2.25", "4.2.26", "4.2.27"])
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2, 3])
+        self.assertIn("याचका", verses[1]["deva"])
+        self.assertIn("॥ २६ ॥", verses[1]["deva"])
+        self.assertNotIn("याचका", verses[2]["deva"])
+
 
 class MergePilotTests(unittest.TestCase):
     def test_keeps_existing_translations_on_overlap_only(self):

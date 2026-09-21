@@ -66,7 +66,8 @@ Parser notes for this edition (fail closed; no invented Sanskrit):
   twice on two different ślokas). `ref` keeps the page number (duplicates get
   a suffix, e.g. `1.13.40b`). `ordinal` is dense reading order for the app /
   SQL pipeline. Gaps are **not** filled with invented Sanskrit. A printed
-  number that goes backwards is still a blocker (usually a leaked colophon).
+  number that goes backwards is still a blocker (usually a leaked colophon),
+  except split tens/units (`॥ २ ॥ ६ ॥` = 26, confirmed **4.2**).
 
 Text-critical note already in the pilot: 1.1.4 reads `ऋषयः` (Wikisource /
 printed vulgate), not GRETIL’s `īśayaḥ`.

@@ -74,6 +74,10 @@ FROM_DEVA_DIGIT = str.maketrans("०१२३४५६७८९", "0123456789")
 VERSE_END = re.compile(
     r"[।॥]\s*([०१२३४५६७८९0-9]+)\s*[।॥]"
 )
+# Split tens/units: «॥ २ ॥ ६ ॥» for 26 (seen in 4.2).
+_SPLIT_REST_DIGIT = re.compile(
+    r"^\s*([०१२३४५६७८९0-9]+)\s*[।॥]"
+)
 SPEAKER_LINE = re.compile(
     r"^[\s\*]*([^\n]{1,80}?)\s+(उवाच|ऊचुः)\s*[।|]?\s*$"
 )
@@ -264,6 +268,14 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
     while i + 1 < len(parts):
         num = parse_int(parts[i])
         following = parts[i + 1]
+        if last_printed and num < last_printed:
+            # «॥ २ ॥ ६ ॥» after verse 25 is 26, not a jump back to 2.
+            m_rest = _SPLIT_REST_DIGIT.match(following)
+            if m_rest:
+                joined = int(str(num) + m_rest.group(1).translate(FROM_DEVA_DIGIT))
+                if joined > last_printed:
+                    num = joined
+                    following = following[m_rest.end():]
         raw_body = parts[i - 1]
         if not verses and num == 2:
             # Wikisource sometimes leaves the opening śloka unnumbered
