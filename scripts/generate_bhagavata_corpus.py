@@ -186,7 +186,8 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
     body = strip_wiki(wikitext)
     verses: list[dict] = []
     speaker: str | None = None
-    expected: int | None = None
+    last_printed = 0
+    printed_count: dict[int, int] = {}
 
     def flush_nonverse(chunk: str) -> None:
         nonlocal speaker
@@ -201,6 +202,57 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
                 speaker = re.sub(r"\s+", " ", m.group(1)).strip(" ।|*")
                 continue
 
+    def emit_verse(printed: int, verse_text: str, who: str | None, extra_meta: dict | None = None) -> None:
+        """Append one verse. ``ordinal`` is dense reading order; ``ref`` keeps the page number."""
+        nonlocal last_printed
+        if printed < 1:
+            raise SourceBlocker(f"{skandha}.{adhyaya}: non-positive verse number {printed}")
+        if last_printed and printed < last_printed:
+            raise SourceBlocker(
+                f"{skandha}.{adhyaya}: printed number went backwards ({last_printed} → {printed})"
+            )
+        seq = len(verses) + 1
+        printed_count[printed] = printed_count.get(printed, 0) + 1
+        occ = printed_count[printed]
+        if occ == 1:
+            ref = f"{skandha}.{adhyaya}.{printed}"
+        elif occ <= 26:
+            ref = f"{skandha}.{adhyaya}.{printed}{chr(ord('a') + occ - 1)}"
+        else:
+            raise SourceBlocker(
+                f"{skandha}.{adhyaya}: printed ॥ {printed} ॥ repeated {occ} times"
+            )
+        meta = dict(extra_meta or {})
+        notes: list[str] = []
+        if last_printed and printed > last_printed + 1:
+            skipped = ", ".join(str(i) for i in range(last_printed + 1, printed))
+            notes.append(
+                f"Wikisource numbering skipped {skipped}; no mūla invented for the gap."
+            )
+        if occ > 1:
+            notes.append(
+                f"Wikisource printed this number {occ} times; occurrence {occ} is a separate verse (ref {ref})."
+            )
+        if seq != printed or occ > 1:
+            meta["wikisource_number"] = printed
+        if notes:
+            prev_note = meta.get("numbering_note")
+            meta["numbering_note"] = " ".join([prev_note, *notes] if prev_note else notes)
+        kind = "invocation" if (skandha, adhyaya, printed) in {(1, 1, 1), (1, 1, 2), (1, 1, 3)} else "verse"
+        numbered = f"{verse_text} ॥ {deva_int(printed)} ॥"
+        payload = {
+            "ref": ref,
+            "ordinal": seq,
+            "kind": kind,
+            "speaker": who,
+            "deva": numbered,
+            "iast": _iast_lines(numbered),
+        }
+        if meta:
+            payload["metadata"] = meta
+        verses.append(payload)
+        last_printed = printed
+
     parts = VERSE_END.split(body)
     # split → [pre, num, rest, num, rest, ...]
     if len(parts) < 3:
@@ -213,8 +265,7 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
         num = parse_int(parts[i])
         following = parts[i + 1]
         raw_body = parts[i - 1]
-        recovered_opener = None
-        if expected is None and num == 2:
+        if not verses and num == 2:
             # Wikisource sometimes leaves the opening śloka unnumbered
             # (e.g. 1.7: Shaunaka's question has no ॥ १ ॥, then ॥। २ ॥).
             # Split on the last उवाच so verse 2 is not duplicated. Text is from
@@ -223,50 +274,26 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
             open_text, _open_lead = _verse_body(before)
             open_text = open_text.rstrip().rstrip("।॥").strip()
             if open_text:
-                recovered_opener = (open_text, _last_speaker_in(before))
+                emit_verse(1, open_text, _last_speaker_in(before), extra_meta={
+                    "numbering_note": (
+                        "Opening mūla had no ॥ १ ॥ on Wikisource; "
+                        "kept as verse 1 of this chapter (text from the page, numbering supplied)."
+                    )
+                })
                 if v2_speaker:
                     speaker = v2_speaker
                 raw_body = after
+            else:
+                raise SourceBlocker(
+                    f"{skandha}.{adhyaya}: first numbered verse is 2, expected 1"
+                )
         verse_text, leading = _verse_body(raw_body)
         if leading:
             flush_nonverse(leading)
             verse_text, _ = _verse_body(raw_body)
         if not verse_text:
             raise SourceBlocker(f"{skandha}.{adhyaya}.{num}: empty mūla")
-        if recovered_opener:
-            open_text, opener_speaker = recovered_opener
-            verses.append({
-                "ref": f"{skandha}.{adhyaya}.1",
-                "ordinal": 1,
-                "kind": "verse",
-                "speaker": opener_speaker,
-                "deva": f"{open_text} ॥ {deva_int(1)} ॥",
-                "iast": _iast_lines(f"{open_text} ॥ {deva_int(1)} ॥"),
-                "metadata": {
-                    "numbering_note": (
-                        "Opening mūla had no ॥ १ ॥ on Wikisource; "
-                        "kept as verse 1 of this chapter (text from the page, numbering supplied)."
-                    )
-                },
-            })
-            expected = 2
-        if expected is None:
-            expected = num
-        if num != expected:
-            raise SourceBlocker(
-                f"{skandha}.{adhyaya}: expected verse {expected}, found {num}"
-            )
-        numbered = f"{verse_text} ॥ {deva_int(num)} ॥"
-        kind = "invocation" if (skandha, adhyaya, num) in {(1, 1, 1), (1, 1, 2), (1, 1, 3)} else "verse"
-        verses.append({
-            "ref": f"{skandha}.{adhyaya}.{num}",
-            "ordinal": num,
-            "kind": kind,
-            "speaker": speaker,
-            "deva": numbered,
-            "iast": _iast_lines(numbered),
-        })
-        expected += 1
+        emit_verse(num, verse_text, speaker)
         speaker_after, _rest = _split_trailing_speaker(following)
         if speaker_after:
             speaker = speaker_after

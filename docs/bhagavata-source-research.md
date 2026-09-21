@@ -61,6 +61,12 @@ Parser notes for this edition (fail closed; no invented Sanskrit):
   as verse 1 of that chapter. Text is from the page; only the missing *number*
   is supplied (`metadata.numbering_note`). If there is no recoverable mūla
   before verse 2, ingest fails closed.
+* **Printed-number gaps and duplicates:** Wikisource numbering is not always
+  dense (confirmed **1.13**: 35 then 37, no mūla for 36; `॥ ४० ॥` printed
+  twice on two different ślokas). `ref` keeps the page number (duplicates get
+  a suffix, e.g. `1.13.40b`). `ordinal` is dense reading order for the app /
+  SQL pipeline. Gaps are **not** filled with invented Sanskrit. A printed
+  number that goes backwards is still a blocker (usually a leaked colophon).
 
 Text-critical note already in the pilot: 1.1.4 reads `ऋषयः` (Wikisource /
 printed vulgate), not GRETIL’s `īśayaḥ`.

@@ -49,7 +49,7 @@ class ParserTests(unittest.TestCase):
     def test_sample_extracts_dense_verses_with_speakers(self):
         verses = G.parse_wikitext(self.wiki, 1, 1)
         self.assertEqual([v["ref"] for v in verses], ["1.1.4", "1.1.5", "1.1.6"])
-        self.assertEqual([v["ordinal"] for v in verses], [4, 5, 6])
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2, 3])
         self.assertIn("ऋषयः", verses[0]["deva"])
         self.assertNotIn("īśayaḥ", verses[0]["iast"])
         self.assertIn("ṛṣayaḥ", verses[0]["iast"])
@@ -63,10 +63,19 @@ class ParserTests(unittest.TestCase):
         with self.assertRaises(G.SourceBlocker):
             G.parse_wikitext("no verses here at all", 1, 2)
 
-    def test_non_dense_numbering_is_a_blocker(self):
+    def test_gap_in_printed_numbers_is_kept_without_inventing(self):
         wiki = "foo ॥ १ ॥\nbar ॥ ३ ॥\n"
+        verses = G.parse_wikitext(wiki, 2, 1)
+        self.assertEqual([v["ref"] for v in verses], ["2.1.1", "2.1.3"])
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2])
+        self.assertIn("foo", verses[0]["deva"])
+        self.assertIn("bar", verses[1]["deva"])
+        self.assertIn("skipped", verses[1]["metadata"]["numbering_note"])
+
+    def test_printed_number_going_backwards_is_a_blocker(self):
+        wiki = "foo ॥ ५ ॥\nbar ॥ २ ॥\n"
         with self.assertRaises(G.SourceBlocker):
-            G.parse_wikitext(wiki, 2, 1)
+            G.parse_wikitext(wiki, 1, 2)
 
     def test_single_danda_after_number_still_splits(self):
         wiki = "aaa ॥ १ ॥\nbbb ॥ २ ।\n"
@@ -88,7 +97,8 @@ class ParserTests(unittest.TestCase):
     def test_leading_zero_deva_number(self):
         wiki = "aaa ॥ ८ ॥\nbbb । ०९ ॥\n"
         verses = G.parse_wikitext(wiki, 1, 1)
-        self.assertEqual([v["ordinal"] for v in verses], [8, 9])
+        self.assertEqual([v["ref"] for v in verses], ["1.1.8", "1.1.9"])
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2])
 
     def test_unnumbered_opener_before_verse_2_is_kept_as_verse_1(self):
         wiki = (
@@ -103,6 +113,23 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(verses[0]["speaker"], "शौनक")
         self.assertEqual(verses[1]["speaker"], "सूत")
         self.assertIn("numbering_note", verses[0]["metadata"])
+
+    def test_wikisource_1_13_gap_and_duplicate_printed_numbers(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_1_13_gap_and_dup.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 1, 13)
+        self.assertEqual(
+            [v["ref"] for v in verses],
+            ["1.13.35", "1.13.37", "1.13.40", "1.13.40b", "1.13.41"],
+        )
+        self.assertEqual([v["ordinal"] for v in verses], [1, 2, 3, 4, 5])
+        self.assertIn("नाहं वेद", verses[1]["deva"])
+        self.assertIn("नारदो मुनिसत्तमः", verses[2]["deva"])
+        self.assertIn("मा कञ्चन", verses[3]["deva"])
+        self.assertNotIn("मा कञ्चन", verses[2]["deva"])
+        self.assertIn("skipped", verses[1]["metadata"]["numbering_note"])
+        self.assertIn("40b", verses[3]["metadata"]["numbering_note"])
 
 
 class MergePilotTests(unittest.TestCase):
