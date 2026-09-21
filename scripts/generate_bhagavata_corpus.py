@@ -34,6 +34,8 @@ import json
 import os
 import pathlib
 import re
+import shutil
+import subprocess
 import sys
 import time
 import urllib.error
@@ -302,47 +304,70 @@ def apply_speaker_slugs(verses: list[dict]) -> None:
         v["speaker"] = None
 
 
+def _parse_api_json(raw: str) -> dict:
+    data = json.loads(raw)
+    if isinstance(data, dict) and data.get("error"):
+        raise SourceBlocker(f"MediaWiki API error: {data['error']}")
+    return data
+
+
+def _curl_api(encoded: str) -> dict:
+    curl = shutil.which("curl")
+    if not curl:
+        raise FileNotFoundError("curl not on PATH")
+    proc = subprocess.run(
+        [
+            curl, "-sS",
+            "-A", USER_AGENT,
+            "--max-time", "60",
+            "-H", "Accept: application/json",
+            "--data", encoded,
+            API,
+        ],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode != 0:
+        raise OSError(f"curl exit {proc.returncode}: {(proc.stderr or proc.stdout)[:400]}")
+    if not proc.stdout.strip():
+        raise OSError("curl returned empty body")
+    return _parse_api_json(proc.stdout)
+
+
+def _urllib_api(encoded: str) -> dict:
+    req = urllib.request.Request(
+        API,
+        data=encoded.encode("utf-8"),
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        raw = resp.read().decode("utf-8")
+    return _parse_api_json(raw)
+
+
 def api_request(params: dict, retries: int = 5) -> dict:
     payload = {**params, "format": "json", "formatversion": "2", "maxlag": "5"}
     encoded = urllib.parse.urlencode(payload)
     last: Exception | None = None
     for attempt in range(retries):
-        for method in ("GET", "POST"):
+        for transport, fn in (("curl", _curl_api), ("urllib", _urllib_api)):
             try:
-                if method == "GET":
-                    req = urllib.request.Request(
-                        f"{API}?{encoded}",
-                        headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
-                        method="GET",
-                    )
-                else:
-                    req = urllib.request.Request(
-                        API,
-                        data=encoded.encode("utf-8"),
-                        headers={
-                            "User-Agent": USER_AGENT,
-                            "Accept": "application/json",
-                            "Content-Type": "application/x-www-form-urlencoded",
-                        },
-                        method="POST",
-                    )
-                with urllib.request.urlopen(req, timeout=60) as resp:
-                    raw = resp.read().decode("utf-8")
-                data = json.loads(raw)
-                if isinstance(data, dict) and data.get("error"):
-                    err = data["error"]
-                    code = err.get("code", "")
-                    if code in {"maxlag", "ratelimited"} and attempt + 1 < retries:
-                        time.sleep(2 ** attempt)
-                        last = SourceBlocker(f"MediaWiki API error: {err}")
-                        break
-                    raise SourceBlocker(f"MediaWiki API error: {err}")
-                return data
-            except SourceBlocker:
+                return fn(encoded)
+            except SourceBlocker as e:
+                err = str(e)
+                if "maxlag" in err or "ratelimited" in err:
+                    last = e
+                    print(f"   ! {transport} {err}", flush=True)
+                    break
                 raise
             except Exception as e:  # noqa: BLE001 — every transport failure is the blocker
                 last = e
-                print(f"   ! {method} {type(e).__name__}: {e}", flush=True)
+                print(f"   ! {transport} {type(e).__name__}: {e}", flush=True)
                 continue
         if attempt + 1 < retries:
             time.sleep(2 ** attempt)

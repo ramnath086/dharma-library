@@ -78,7 +78,7 @@ jobs:
               echo '```'
             fi
           } > /tmp/ingest-comment.md
-          gh pr comment 12 --body-file /tmp/ingest-comment.md || true
+          gh api "repos/${GITHUB_REPOSITORY}/issues/12/comments" -F body=@/tmp/ingest-comment.md || true
           cat /tmp/ingest-comment.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v7
         if: always()
