@@ -142,6 +142,16 @@ class ParserTests(unittest.TestCase):
         self.assertIn("॥ २६ ॥", verses[1]["deva"])
         self.assertNotIn("याचका", verses[2]["deva"])
 
+    def test_dropped_units_digit_before_next_plus_two(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_4_6_dropped_digit.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 4, 6)
+        self.assertEqual([v["ref"] for v in verses], ["4.6.25", "4.6.26", "4.6.27"])
+        self.assertIn("गजा गजीः", verses[1]["deva"])
+        self.assertIn("तारहेम", verses[2]["deva"])
+        self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
+
 
 class MergePilotTests(unittest.TestCase):
     def test_keeps_existing_translations_on_overlap_only(self):

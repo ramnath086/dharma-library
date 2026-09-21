@@ -268,6 +268,7 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
     while i + 1 < len(parts):
         num = parse_int(parts[i])
         following = parts[i + 1]
+        dropped_digit_note = None
         if last_printed and num < last_printed:
             # «॥ २ ॥ ६ ॥» after verse 25 is 26, not a jump back to 2.
             m_rest = _SPLIT_REST_DIGIT.match(following)
@@ -276,6 +277,26 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
                 if joined > last_printed:
                     num = joined
                     following = following[m_rest.end():]
+        if last_printed and num < last_printed:
+            # «॥ २ ॥» then «॥ २७ ॥» after 25 is 26 with a dropped units digit (4.6).
+            nxt = None
+            if i + 2 < len(parts):
+                try:
+                    nxt = parse_int(parts[i + 2])
+                except ValueError:
+                    nxt = None
+                if nxt is not None and i + 3 < len(parts):
+                    m_n = _SPLIT_REST_DIGIT.match(parts[i + 3])
+                    if m_n:
+                        nxt = int(str(nxt) + m_n.group(1).translate(FROM_DEVA_DIGIT))
+            expected_n = last_printed + 1
+            if nxt == last_printed + 2 and str(expected_n).startswith(str(num)):
+                dropped_digit_note = (
+                    f"Wikisource printed ॥ {deva_int(num)} ॥ here; "
+                    f"kept as {expected_n} because the next marker is {nxt} "
+                    f"(dropped digit; no Sanskrit invented)."
+                )
+                num = expected_n
         raw_body = parts[i - 1]
         if not verses and num == 2:
             # Wikisource sometimes leaves the opening śloka unnumbered
@@ -305,7 +326,8 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
             verse_text, _ = _verse_body(raw_body)
         if not verse_text:
             raise SourceBlocker(f"{skandha}.{adhyaya}.{num}: empty mūla")
-        emit_verse(num, verse_text, speaker)
+        extra = {"numbering_note": dropped_digit_note} if dropped_digit_note else None
+        emit_verse(num, verse_text, speaker, extra_meta=extra)
         speaker_after, _rest = _split_trailing_speaker(following)
         if speaker_after:
             speaker = speaker_after
