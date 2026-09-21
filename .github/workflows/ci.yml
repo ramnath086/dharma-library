@@ -130,6 +130,8 @@ jobs:
           required = [
               'assets/flutter_assets/assets/bundles/bhagavata-purana.json',
               'assets/flutter_assets/assets/bundles/bhagavad-gita.json',
+              'assets/flutter_assets/assets/audio/launch_chime.wav',
+              'assets/flutter_assets/assets/audio/sloka_chime.wav',
           ]
           with zipfile.ZipFile(apk) as z:
               names = set(z.namelist())

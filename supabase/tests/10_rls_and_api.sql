@@ -66,6 +66,16 @@ select pg_temp.assert_eq((select count(*) from public.profiles), 0::bigint, 'ano
 select pg_temp.assert_eq((select count(*) from public.bookmarks), 0::bigint, 'anon sees no bookmarks');
 select pg_temp.assert_eq((select jsonb_array_length(public.get_toc('bhagavata-purana')->'sections')), 1, 'toc has 1 canto');
 select pg_temp.assert_eq((select jsonb_array_length(public.get_section_verses((select id from sections where ref='1.1'))->'verses')), 10, 'chapter has 10 verses');
+select pg_temp.assert_eq((select jsonb_array_length(public.get_published_works())), 2, 'catalogue lists both published works');
+select pg_temp.assert_eq((
+  select bool_and(w->>'slug' in ('bhagavata-purana','bhagavad-gita'))
+    from jsonb_array_elements(public.get_published_works()) w
+), true, 'catalogue slugs are the published works, not hard-coded in the client');
+select pg_temp.assert_eq((
+  select v->'metadata'->'audio'->>'important'
+    from jsonb_array_elements(public.get_section_verses((select id from sections where ref='1.1' and work_id=(select id from works where slug='bhagavata-purana')))->'verses') v
+   where v->>'ref' = '1.1.1'
+), 'true', 'editorial mangala cue metadata travels with the chapter payload');
 select pg_temp.assert_eq((select public.get_verse('bhagavata-purana','1.1.4')->>'next_ref'), '1.1.5', 'next_ref');
 select pg_temp.assert_eq((select public.get_verse('bhagavata-purana','1.1.1')->>'prev_ref'), null::text, 'prev_ref of first verse is null');
 select pg_temp.assert_eq((select count(*) > 0 from public.search_verses('naimisa')), true, 'search: diacritic-insensitive');

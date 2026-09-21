@@ -33,6 +33,8 @@ void main() {
     final ch = await repo.chapter(toc.chapters.first.id);
     expect(ch.verses, hasLength(10));
     expect(ch.verses.first.ref, '1.1.1');
+    expect(ch.verses.first.hasEditorialCue, isTrue);
+    expect(ch.verses[3].hasEditorialCue, isFalse);
     expect(ch.editions.every((e) => e.isCleared), isTrue, reason: 'bundle must only contain rights-cleared editions');
   });
 

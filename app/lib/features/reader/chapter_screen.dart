@@ -61,7 +61,7 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
       _lastRecordedRef = current.ref;
       final position = _globalPosition(toc, ch, current);
       final total = toc.chapters.fold<int>(0, (n, c) => n + c.verseCount);
-      ref.read(repositoryProvider).recordProgress(workId: toc.work.id, verse: current, sectionId: ch.id, totalVerses: total, position: position);
+      ref.read(repositoryProvider).recordProgress(workId: toc.work.id, verse: current, sectionId: ch.id, totalVerses: total, position: position, workSlug: widget.workSlug);
       ref.read(userDataVersionProvider.notifier).state++;
       ref.invalidate(progressProvider(toc.work.id));
     });
@@ -170,6 +170,7 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                           verse: v,
                           editions: ch.editions,
                           workSlug: widget.workSlug,
+                          workTitle: t?.work.titleIast,
                           highlighted: audio.currentVerseId == v.id || widget.scrollToRef == v.ref,
                           onPlay: ch.tracks.isEmpty ? null : () => ref.read(audioControllerProvider.notifier).playChapter(ch, fromVerse: v),
                         ),
@@ -191,7 +192,7 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
                         if (next != null)
                           FilledButton.icon(onPressed: () => context.pushReplacement('/read/${widget.workSlug}/chapter/${next.id}'), icon: const Icon(Icons.chevron_right), label: Text(l.nextChapter))
                         else
-                          Flexible(child: Text(l.endOfPilot, style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.end)),
+                          Flexible(child: Text((t?.work.isPilot ?? false) ? l.endOfPilot : l.endOfWork, style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.end)),
                       ]),
                     ),
                   ],

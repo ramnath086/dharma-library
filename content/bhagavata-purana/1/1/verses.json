@@ -1,5 +1,5 @@
 {
-  "_note": "Pilot content: Śrīmad Bhāgavata Purāṇa 1.1.1–1.1.10. Sanskrit text collated from two public-domain witnesses (sa.wikisource + GRETIL bhp_01u) against the Gita Press vulgate numbering. IAST is a Dharma Library rendering of the same text with word breaks. English and Malayalam translations and word-meanings are ORIGINAL work by Dharma Library contributors (CC BY-SA 4.0) and are marked as drafts pending scholarly review. Nothing here is copied from any copyrighted translation.",
+  "_note": "Pilot content: Śrīmad Bhāgavata Purāṇa 1.1.1–1.1.10 — not a complete Purāṇa. Sanskrit electronic witness: sa.wikisource.org (CC BY-SA 4.0), collated against Gita Press vulgate numbering. GRETIL bhp_01u was consulted as a scholarly witness only (non-commercial terms; not shipped); 1.1.4 follows Wikisource/vulgate ṛṣayaḥ, not GRETIL īśayaḥ. IAST is a Dharma Library rendering of the same Devanagari with word breaks. English and Malayalam translations and word-meanings are ORIGINAL work by Dharma Library contributors (CC BY-SA 4.0) and are marked as drafts pending scholarly review. Nothing here is copied from any copyrighted translation.",
   "section": {
     "canto": { "ref": "1", "ordinal": 1, "title_iast": "Prathama Skandha", "title_sa": "प्रथमः स्कन्धः", "title_en": "Canto One", "title_ml": "ഒന്നാം സ്കന്ധം" },
     "chapter": { "ref": "1.1", "ordinal": 1, "title_iast": "Naimiṣīyopākhyāna — Praśnāḥ (The Sages' Questions)", "title_sa": "नैमिषीयोपाख्याने ऋषिप्रश्नः", "title_en": "The Questions of the Sages at Naimiṣāraṇya", "title_ml": "നൈമിഷാരണ്യത്തിലെ ഋഷിമാരുടെ ചോദ്യങ്ങൾ",
@@ -11,6 +11,7 @@
   "verses": [
     {
       "ref": "1.1.1", "ordinal": 1, "kind": "invocation", "meter": "śārdūlavikrīḍita", "speaker": null,
+      "metadata": { "audio": { "important": true, "cue_asset": "assets/audio/sloka_chime.wav", "label": "mangala", "note": "Opening invocatory verse (maṅgalācaraṇa). Editorial cue only — not a recitation and not an AI ranking of the corpus." } },
       "deva": "ॐ नमो भगवते वासुदेवाय ।\nजन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट्\nतेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः ।\nतेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा\nधाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि ॥ १ ॥",
       "iast": "oṁ namo bhagavate vāsudevāya\njanmādy asya yato 'nvayād itarataś cārtheṣv abhijñaḥ svarāṭ\ntene brahma hṛdā ya ādi-kavaye muhyanti yat sūrayaḥ\ntejo-vāri-mṛdāṁ yathā vinimayo yatra tri-sargo 'mṛṣā\ndhāmnā svena sadā nirasta-kuhakaṁ satyaṁ paraṁ dhīmahi",
       "en": "Oṁ. Obeisance to the blessed Lord Vāsudeva.\nWe meditate upon the supreme truth — that from whom this universe has its birth, sustenance and dissolution; who is present in all things and yet distinct from them; who is fully aware of every object and independent; who imparted the Veda into the heart of the first seer, Brahmā, and about whom even the wise are bewildered; in whom the threefold creation appears real, just as fire, water and earth are mistaken for one another; and who by his own radiance forever dispels all illusion.",
@@ -56,6 +57,7 @@
     },
     {
       "ref": "1.1.2", "ordinal": 2, "kind": "invocation", "meter": "śārdūlavikrīḍita", "speaker": null,
+      "metadata": { "audio": { "important": true, "cue_asset": "assets/audio/sloka_chime.wav", "label": "mangala", "note": "Second invocatory verse. Editorial cue only." } },
       "deva": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरीश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥ २ ॥",
       "iast": "dharmaḥ projjhita-kaitavo 'tra paramo nirmatsarāṇāṁ satāṁ\nvedyaṁ vāstavam atra vastu śivadaṁ tāpa-trayonmūlanam\nśrīmad-bhāgavate mahā-muni-kṛte kiṁ vā parair īśvaraḥ\nsadyo hṛdy avarudhyate 'tra kṛtibhiḥ śuśrūṣubhis tat-kṣaṇāt",
       "en": "Here is set forth the highest dharma, free of every ulterior motive, for the good who are without envy; here the real substance is to be known — that which grants well-being and uproots the threefold misery. In this Śrīmad Bhāgavata, composed by the great sage, what need is there of any other scripture? The Lord is at once captured in the heart of those who are fortunate enough to wish to hear it — in that very moment.",
@@ -91,6 +93,7 @@
     },
     {
       "ref": "1.1.3", "ordinal": 3, "kind": "invocation", "meter": "drutavilambita", "speaker": null,
+      "metadata": { "audio": { "important": true, "cue_asset": "assets/audio/sloka_chime.wav", "label": "mangala", "note": "Third invocatory verse. Editorial cue only." } },
       "deva": "निगमकल्पतरोर्गलितं फलं\nशुकमुखादमृतद्रवसंयुतम् ।\nपिबत भागवतं रसमालयं\nमुहुरहो रसिका भुवि भावुकाः ॥ ३ ॥",
       "iast": "nigama-kalpa-taror galitaṁ phalaṁ\nśuka-mukhād amṛta-drava-saṁyutam\npibata bhāgavataṁ rasam ālayaṁ\nmuhur aho rasikā bhuvi bhāvukāḥ",
       "en": "O connoisseurs of taste, O sensitive souls upon the earth! Drink again and again this Bhāgavata — the ripe fruit fallen from the wish-fulfilling tree of the Veda, made yet sweeter with nectar from the mouth of Śuka — this rasa, this very abode of relish.",

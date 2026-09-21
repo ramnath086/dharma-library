@@ -33,7 +33,16 @@
    `sync_pull`, server rows win by `updated_at`. Anonymous users keep data on device.
 6. **Offline**: `get_work_bundle(work)` returns everything public for a work; the
    same JSON is shipped as an asset (`app/assets/bundles/`) so first launch works
-   without network.
+   without network. `LocalStore.importAllAssetBundles` discovers every
+   `assets/bundles/*.json` at runtime (skipping a catalog manifest if present),
+   so a new published work becomes a Home catalogue card without a hard-coded
+   slug. Home lists **all** bundled/published works. A work overview
+   (`/library/:slug`) holds that work’s TOC. Unauthenticated users can browse
+   published scripture, offline bundles and local search; login is only for
+   sync. For a future complete Bhāgavata (~335 chapters) verse bodies should be
+   imported per chapter rather than held entirely in memory at first paint —
+   the current bundles (Gītā 700 + Bhāgavata pilot 10) are small enough to
+   import whole.
 7. **AI Q&A** ("Ask Dharma"): Edge Function retrieves passages (`retrieve_for_qa`
    + optional pgvector `match_verse_contents`), prompts the model with those
    passages only, then validates citations with `grounding.ts`. Unsupported
@@ -45,7 +54,12 @@
    `qa_sessions`. Starter questions come from `app_config['ask.suggested_questions']`.
 8. **Audio**: `audio_tracks` (per chapter) + `audio_segments` (time → verse). Private
    bucket; signed URL only for tracks visible under RLS. `LockCachingAudioSource`
-   caches files for offline replay.
+   caches files for offline replay. Preference-gated **cues** (`launch_chime.wav`,
+   `sloka_chime.wav`) are original synthesized assets. Launch sound defaults
+   OFF. Śloka cues play only when `verse.metadata.audio.important` is set in
+   content (pilot: 1.1.1–1.1.3) and the reader has cues enabled.
+9. **Auth**: Supabase email OTP / magic link, PKCE, `dharmalibrary://auth-callback`.
+   Sessions persist on device (refresh token). Reading is never gated on login.
 
 ## Security model
 * All tables have RLS. Public reads are limited to `published` rows whose edition

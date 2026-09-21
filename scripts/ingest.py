@@ -259,11 +259,12 @@ on conflict (section_id, edition_id) do update set title=excluded.title, summary
             assert v["ordinal"] == prev + 1, f"non-dense ordinal at {v['ref']} (expected {prev+1})"
             prev = v["ordinal"]
             assert v["deva"].strip() and v["iast"].strip(), f"empty base text at {v['ref']}"
+            verse_meta = dict(v.get("metadata") or {})
             em.add(f"""
-insert into verses (work_id, section_id, ordinal, ref, kind, meter, speaker_id, status)
+insert into verses (work_id, section_id, ordinal, ref, kind, meter, speaker_id, status, metadata)
 values ((select id from works where slug={q(slug)}), (select id from sections where ref={q(chapter_ref)} and work_id=(select id from works where slug={q(slug)})),
-        {v['ordinal']}, {q(v['ref'])}, {q(v.get('kind','verse'))}::verse_kind, {q(v.get('meter'))}, (select id from people where slug={q(v.get('speaker'))}), 'published')
-on conflict (work_id, ref) do update set ordinal=excluded.ordinal, kind=excluded.kind, meter=excluded.meter, speaker_id=excluded.speaker_id, section_id=excluded.section_id, status='published'""")
+        {v['ordinal']}, {q(v['ref'])}, {q(v.get('kind','verse'))}::verse_kind, {q(v.get('meter'))}, (select id from people where slug={q(v.get('speaker'))}), 'published', {jq(verse_meta)})
+on conflict (work_id, ref) do update set ordinal=excluded.ordinal, kind=excluded.kind, meter=excluded.meter, speaker_id=excluded.speaker_id, section_id=excluded.section_id, status='published', metadata=coalesce(verses.metadata,'{{}}'::jsonb) || excluded.metadata""")
 
             # Generic renderings: map deva/iast/en/ml via discovered edition slugs (not hardcoded sb-*)
             renderings = {}

@@ -23,12 +23,12 @@ class LocalStore {
   static Future<LocalStore> open({String? pathOverride}) async {
     final dir = await getApplicationSupportDirectory();
     final path = pathOverride ?? p.join(dir.path, 'dharma_library.db');
-    final db = await openDatabase(path, version: 3, onCreate: _create, onUpgrade: _upgrade);
+    final db = await openDatabase(path, version: 4, onCreate: _create, onUpgrade: _upgrade);
     return LocalStore._(db);
   }
 
   static Future<LocalStore> inMemory() async {
-    final db = await openDatabase(inMemoryDatabasePath, version: 3, onCreate: _create);
+    final db = await openDatabase(inMemoryDatabasePath, version: 4, onCreate: _create);
     return LocalStore._(db);
   }
 
@@ -37,6 +37,9 @@ class LocalStore {
     // v3: reading history keeps the verse ref so the history screen needs no join
     if (from < 3 && !await _hasColumn(db, 'verse_reads', 'verse_ref')) {
       await db.execute('alter table verse_reads add column verse_ref text');
+    }
+    if (from < 4 && !await _hasColumn(db, 'verse_reads', 'work_slug')) {
+      await db.execute('alter table verse_reads add column work_slug text');
     }
   }
 
@@ -56,7 +59,7 @@ class LocalStore {
       last_read_at text not null, dirty integer not null default 0)''');
     await db.execute('''create table if not exists outbox (
       id integer primary key autoincrement, kind text not null, payload text not null, created_at integer not null)''');
-    await db.execute('create table if not exists verse_reads (verse_id text primary key, verse_ref text, read_at text not null, dirty integer not null default 1)');
+    await db.execute('create table if not exists verse_reads (verse_id text primary key, verse_ref text, work_slug text, read_at text not null, dirty integer not null default 1)');
   }
 
   // ---------------------------------------------------------------- kv
@@ -149,7 +152,7 @@ class LocalStore {
     final slugs = paths
         .where((path) => path.startsWith('assets/bundles/') && path.endsWith('.json'))
         .map((path) => path.substring('assets/bundles/'.length, path.length - '.json'.length))
-        .where((slug) => slug.isNotEmpty)
+        .where((slug) => slug.isNotEmpty && !slug.contains('/') && slug != 'manifest' && slug != 'catalog')
         .toSet()
         .toList()
       ..sort();

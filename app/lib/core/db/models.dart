@@ -6,17 +6,24 @@ import 'package:collection/collection.dart';
 
 class Work {
   final String id, slug, shortCode, titleIast, titleSa;
-  final String? tradition, description;
+  final String? tradition, description, originalLanguage, originalScript;
   final List<Map<String, dynamic>> structure;
+  final Map<String, dynamic> metadata;
   Work.fromJson(Map<String, dynamic> j)
       : id = j['id'],
         slug = j['slug'],
-        shortCode = j['short_code'],
-        titleIast = j['title_iast'],
-        titleSa = j['title_sa'],
+        shortCode = j['short_code'] ?? '',
+        titleIast = j['title_iast'] ?? '',
+        titleSa = j['title_sa'] ?? '',
         tradition = j['tradition'],
         description = j['description'],
-        structure = (j['structure'] as List? ?? []).cast<Map<String, dynamic>>();
+        originalLanguage = j['original_language'] as String?,
+        originalScript = j['original_script'] as String?,
+        structure = (j['structure'] as List? ?? []).cast<Map<String, dynamic>>(),
+        metadata = (j['metadata'] as Map?)?.cast<String, dynamic>() ?? const {};
+
+  bool get isPilot => metadata['pilot_scope'] != null;
+  String? get pilotScope => metadata['pilot_scope'] as String?;
 
   String levelLabel(int level, String lang) {
     final l = structure.firstWhereOrNull((s) => s['level'] == level);
@@ -136,6 +143,7 @@ class Verse {
   final Speaker? speaker;
   final List<Rendering> renderings;
   final List<AudioSegment> audio;
+  final Map<String, dynamic> metadata;
   Verse.fromJson(Map<String, dynamic> j)
       : id = j['id'],
         ref = j['ref'],
@@ -144,7 +152,16 @@ class Verse {
         meter = j['meter'],
         speaker = j['speaker'] == null ? null : Speaker.fromJson((j['speaker'] as Map).cast<String, dynamic>()),
         renderings = (j['renderings'] as List? ?? []).map((r) => Rendering.fromJson((r as Map).cast<String, dynamic>())).toList(),
-        audio = (j['audio'] as List? ?? []).map((a) => AudioSegment.fromJson((a as Map).cast<String, dynamic>())).toList();
+        audio = (j['audio'] as List? ?? []).map((a) => AudioSegment.fromJson((a as Map).cast<String, dynamic>())).toList(),
+        metadata = (j['metadata'] as Map?)?.cast<String, dynamic>() ?? const {};
+
+  Map<String, dynamic>? get audioCue {
+    final a = metadata['audio'];
+    return a is Map ? a.cast<String, dynamic>() : null;
+  }
+
+  bool get hasEditorialCue => audioCue?['important'] == true;
+  String? get cueAsset => audioCue?['cue_asset'] as String?;
 
   Rendering? rendering(String editionId) => renderings.firstWhereOrNull((r) => r.editionId == editionId);
   Rendering? byKind(String kind, {String? lang}) =>
@@ -201,6 +218,7 @@ class VerseDetail {
 
 class SearchHit {
   final String verseId, ref, workSlug, editionId, editionTitle, languageCode, scriptCode, kind, snippet;
+  final String shortCode;
   final double rank;
   SearchHit.fromJson(Map<String, dynamic> j)
       : verseId = j['verse_id'],
@@ -212,7 +230,10 @@ class SearchHit {
         scriptCode = j['script_code'],
         kind = j['kind'],
         snippet = j['snippet'] ?? '',
+        shortCode = (j['short_code'] as String?) ?? '',
         rank = (j['rank'] as num?)?.toDouble() ?? 0;
+
+  String get label => shortCode.isNotEmpty ? shortCode : workSlug;
 }
 
 class EntityHit {
