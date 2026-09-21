@@ -37,12 +37,25 @@ Future<void> main() async {
     await prefs.setString('locale', firstRunLocale(null, device.languageCode));
   }
 
-  // First launch: seed the cache from the bundled pilot content so the app is
-  // readable immediately (and entirely offline when no backend is configured).
-  if (!await store.hasBundle(AppConfig.defaultWorkSlug)) {
-    try {
-      await store.importAssetBundle(AppConfig.defaultWorkSlug);
-    } catch (_) {/* bundle optional */}
+  // Seed the cache from every bundle shipped in the app.  The asset manifest
+  // is discovered at runtime, so a new published work is available offline
+  // without another hard-coded slug here (and without regressing the pilot).
+  try {
+    final imported = await store.importAllAssetBundles();
+    // Bundle assets are optional in a backend-only build; retain the old
+    // default fallback for development builds whose manifest is empty.
+    if (imported.isEmpty && !await store.hasBundle(AppConfig.defaultWorkSlug)) {
+      try {
+        await store.importAssetBundle(AppConfig.defaultWorkSlug);
+      } catch (_) {/* bundle optional */}
+    }
+  } catch (_) {
+    // A missing manifest is also fine for a backend-only build.
+    if (!await store.hasBundle(AppConfig.defaultWorkSlug)) {
+      try {
+        await store.importAssetBundle(AppConfig.defaultWorkSlug);
+      } catch (_) {/* bundle optional */}
+    }
   }
 
   // On-device diagnostics: keep a small local log of framework/platform

@@ -36,6 +36,8 @@ class HomeScreen extends ConsumerWidget {
               children: [
                 _WorkHeader(work: t.work, script: settings.script),
                 const SizedBox(height: 12),
+                const _WorkPicker(),
+                const SizedBox(height: 12),
                 const _DailyVerseCard(),
                 progress.maybeWhen(
                   data: (p) => _ContinueCard(toc: t, progress: p),
@@ -46,31 +48,72 @@ class HomeScreen extends ConsumerWidget {
                 const SizedBox(height: 8),
                 const _QuickActions(),
                 const SizedBox(height: 8),
-                _RecentReadsStrip(workSlug: slug),
+                _RecentReadsStrip(workSlug: slug, shortCode: t.work.shortCode),
                 const SizedBox(height: 16),
-                for (final canto in t.sections) ...[
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8, bottom: 4),
-                    child: Text('${l.canto(canto.ref)} · ${canto.titleIast ?? ''}', style: Theme.of(context).textTheme.titleMedium),
-                  ),
-                  for (final ch in canto.leaves)
+                for (final section in t.sections) ...[
+                  if (section.children.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8, bottom: 4),
+                      child: Text('${t.work.levelLabel(section.level, settings.locale)} ${section.ref} · ${section.titleIast ?? ''}', style: Theme.of(context).textTheme.titleMedium),
+                    ),
+                  for (final ch in section.leaves)
                     Card(
                       child: ListTile(
                         leading: CircleAvatar(child: Text(ch.ref.split('.').last)),
-                        title: Text(ch.titleIast ?? l.chapter(ch.ref)),
-                        subtitle: Text('${l.chapter(ch.ref.split('.').last)} · ${l.verses(ch.verseCount)}'),
+                        title: Text(ch.titleIast ?? ch.ref),
+                        subtitle: Text('${t.work.levelLabel(ch.level, settings.locale)} · ${l.verses(ch.verseCount)}'),
                         trailing: const Icon(Icons.chevron_right),
                         onTap: () => context.push('/read/$slug/chapter/${ch.id}'),
                       ),
                     ),
                 ],
                 const SizedBox(height: 24),
-                Text(l.endOfPilot, style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.center),
               ],
             ),
           );
         },
       ),
+    );
+  }
+}
+
+class _WorkPicker extends ConsumerWidget {
+  const _WorkPicker();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final current = ref.watch(workSlugProvider);
+    final works = ref.watch(bundledWorksProvider);
+    return works.maybeWhen(
+      data: (items) {
+        if (items.length < 2) return const SizedBox.shrink();
+        return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text('Library', style: Theme.of(context).textTheme.titleSmall),
+          const SizedBox(height: 8),
+          SizedBox(
+            height: 82,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              itemCount: items.length,
+              separatorBuilder: (_, __) => const SizedBox(width: 8),
+              itemBuilder: (context, index) {
+                final toc = items[index];
+                final selected = toc.work.slug == current;
+                return ChoiceChip(
+                  selected: selected,
+                  label: Text(toc.work.shortCode),
+                  avatar: Icon(selected ? Icons.menu_book : Icons.auto_stories_outlined, size: 18),
+                  onSelected: (_) async {
+                    await ref.read(selectedWorkSlugProvider.notifier).select(toc.work.slug);
+                    ref.invalidate(dailyVerseProvider);
+                  },
+                );
+              },
+            ),
+          ),
+        ]);
+      },
+      orElse: () => const SizedBox.shrink(),
     );
   }
 }
@@ -112,6 +155,7 @@ class _DailyVerseCard extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final settings = ref.watch(settingsProvider);
     final slug = ref.watch(workSlugProvider);
+    final work = ref.watch(tocProvider(slug)).value?.work;
     final pick = ref.watch(dailyVerseProvider).value;
     if (pick == null) return const SizedBox.shrink();
     final streak = computeStreak(ref.watch(dailyReadsProvider));
@@ -123,7 +167,7 @@ class _DailyVerseCard extends ConsumerWidget {
       color: Theme.of(context).colorScheme.secondaryContainer,
       child: ListTile(
         leading: const Icon(Icons.wb_sunny_outlined),
-        title: Text('${l.dailyTitle} · SB ${v.ref}', style: Theme.of(context).textTheme.labelLarge),
+        title: Text('${l.dailyTitle} · ${work?.shortCode ?? slug} ${v.ref}', style: Theme.of(context).textTheme.labelLarge),
         subtitle: tr == null ? null : Text(tr.body, maxLines: 3, overflow: TextOverflow.ellipsis),
         trailing: streak > 0 ? Chip(visualDensity: VisualDensity.compact, label: Text(l.dailyStreak(streak))) : null,
         onTap: () {
@@ -166,8 +210,8 @@ class _StudyProgressCard extends ConsumerWidget {
 /// Last five verses read (local history) as compact chips, with a "See all"
 /// link to the full reading-history screen.
 class _RecentReadsStrip extends ConsumerWidget {
-  const _RecentReadsStrip({required this.workSlug});
-  final String workSlug;
+  const _RecentReadsStrip({required this.workSlug, required this.shortCode});
+  final String workSlug, shortCode;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -192,7 +236,7 @@ class _RecentReadsStrip extends ConsumerWidget {
             final ref_ = recent[i]['verse_ref'] as String;
             return ActionChip(
               avatar: const Icon(Icons.history, size: 16),
-              label: Text('SB $ref_'),
+              label: Text('$shortCode $ref_'),
               onPressed: () => context.push('/read/$workSlug/verse/$ref_'),
             );
           },

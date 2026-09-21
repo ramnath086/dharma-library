@@ -59,8 +59,10 @@ class Repository {
       () => _client!.rpc('get_toc', params: {'p_work_slug': workSlug}), (d) => Toc.fromJson((d as Map).cast<String, dynamic>()));
 
   Future<List<Edition>> editions(String workSlug) => _cached('editions:$workSlug', () async {
-        final rows = await _client!.from('v_editions').select().order('sort_order');
-        return rows;
+        // v_editions is global; constrain it through the work id so a
+        // multi-work library never mixes Bhāgavata and Gītā layouts.
+        final work = await _client!.from('works').select('id').eq('slug', workSlug).single();
+        return _client!.from('v_editions').select().eq('work_id', work['id']).order('sort_order');
       }, (d) => (d as List).map((e) => Edition.fromJson((e as Map).cast<String, dynamic>())).where((e) => e.isCleared).toList());
 
   Future<Chapter> chapter(String sectionId) => _cached('chapter:$sectionId',
@@ -94,19 +96,21 @@ class Repository {
         return (rows as List).map((r) => EntityHit.fromJson((r as Map).cast<String, dynamic>())).toList();
       } catch (_) {}
     }
-    final g = await graph(workSlugDefault);
-    if (g == null) return [];
     final f = fold(q);
     final out = <EntityHit>[];
-    for (final kind in const ['people', 'places', 'topics', 'stories']) {
-      for (final e in (g[kind] as List? ?? [])) {
-        final name = (e['name_iast'] ?? e['title_iast']) as String;
-        final names = (g['entity_names'] as List).where((n) => n['entity_id'] == e['id']).map((n) => n['name'] as String);
-        if (fold(name).contains(f) || names.any((n) => fold(n).contains(f) || n.contains(q))) {
-          out.add(EntityHit.fromJson({
-            'entity_kind': kind == 'people' ? 'person' : kind.substring(0, kind.length - 1),
-            'entity_id': e['id'], 'slug': e['slug'], 'name_iast': name, 'matched_name': name, 'language_code': 'sa',
-          }));
+    for (final slug in await store.bundleSlugs()) {
+      final g = await graph(slug);
+      if (g == null) continue;
+      for (final kind in const ['people', 'places', 'topics', 'stories']) {
+        for (final e in (g[kind] as List? ?? [])) {
+          final name = (e['name_iast'] ?? e['title_iast'] ?? '') as String;
+          final names = (g['entity_names'] as List? ?? []).where((n) => n['entity_id'] == e['id']).map((n) => n['name'] as String);
+          if (fold(name).contains(f) || names.any((n) => fold(n).contains(f) || n.contains(q))) {
+            out.add(EntityHit.fromJson({
+              'entity_kind': kind == 'people' ? 'person' : kind.substring(0, kind.length - 1),
+              'entity_id': e['id'], 'slug': e['slug'], 'name_iast': name, 'matched_name': name, 'language_code': 'sa',
+            }));
+          }
         }
       }
     }
@@ -115,58 +119,68 @@ class Repository {
 
   String workSlugDefault = 'bhagavata-purana';
 
-  /// Offline search over cached chapters: substring match on IAST-folded text.
+  /// Offline search over every imported work unless a caller asks for one
+  /// work explicitly.  Hits retain their work slug so the UI can navigate to
+  /// the matching reader instead of assuming Bhāgavata.
   Future<List<SearchHit>> _offlineSearch(String q, {String? workSlug, String? language, int limit = 30}) async {
-    final slug = workSlug ?? workSlugDefault;
-    final toc = await store.get('toc:$slug');
-    if (toc == null) return [];
+    final slugs = workSlug == null ? await store.bundleSlugs() : [workSlug];
     final f = fold(q);
     final hits = <SearchHit>[];
-    // Entity-name expansion (mirrors search_verses): verses that *mention* a
-    // matching person/place/topic/story count as hits even when the name is
-    // not literally in the text (e.g. "krishna" → 1.1.1 via Vāsudeva).
-    final mentioned = <String>{};
-    final g = await graph(slug);
-    if (g != null && f.length >= 3) {
-      final ids = <String>{};
-      for (final kind in const ['people', 'places', 'topics', 'stories']) {
-        for (final e in (g[kind] as List? ?? [])) {
-          final name = (e['name_iast'] ?? e['title_iast'] ?? '') as String;
-          final names = (g['entity_names'] as List? ?? []).where((n) => n['entity_id'] == e['id']).map((n) => n['name'] as String);
-          if (fold(name).contains(f) || names.any((n) => fold(n).contains(f) || n.contains(q))) ids.add(e['id'] as String);
-        }
-      }
-      for (final m in (g['mentions'] as List? ?? [])) {
-        if (ids.contains(m['entity_id'])) mentioned.add(m['verse_id'] as String);
-      }
-    }
-    for (final ch in Toc.fromJson((toc as Map).cast<String, dynamic>()).chapters) {
-      final raw = await store.get('chapter:${ch.id}');
-      if (raw == null) continue;
-      final chapter = Chapter.fromJson((raw as Map).cast<String, dynamic>());
-      final edById = {for (final e in chapter.editions) e.id: e};
-      for (final v in chapter.verses) {
-        if (v.ref == q.trim()) {
-          final r = v.renderings.firstOrNull;
-          if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body, 1.0));
-          continue;
-        }
-        var matched = false;
-        for (final r in v.renderings) {
-          if (language != null && r.languageCode != language) continue;
-          final body = r.body;
-          final idx = fold(body).indexOf(f);
-          if (idx >= 0 || body.contains(q)) {
-            final at = idx >= 0 ? idx : body.indexOf(q);
-            final start = (at - 60).clamp(0, body.length);
-            final end = (at + 100).clamp(0, body.length);
-            hits.add(_hit(v, r, edById[r.editionId], slug, '${start > 0 ? '…' : ''}${body.substring(start, end)}${end < body.length ? '…' : ''}', 0.9));
-            matched = true;
+
+    for (final slug in slugs) {
+      final toc = await store.get('toc:$slug');
+      if (toc == null) continue;
+
+      // Entity-name expansion mirrors search_verses: a query for an entity
+      // can find verses that mention it even when the name is not literal in
+      // the selected rendering.
+      final mentioned = <String>{};
+      final g = await graph(slug);
+      if (g != null && f.length >= 3) {
+        final ids = <String>{};
+        for (final kind in const ['people', 'places', 'topics', 'stories']) {
+          for (final e in (g[kind] as List? ?? [])) {
+            final name = (e['name_iast'] ?? e['title_iast'] ?? '') as String;
+            final names = (g['entity_names'] as List? ?? [])
+                .where((n) => n['entity_id'] == e['id'])
+                .map((n) => n['name'] as String);
+            if (fold(name).contains(f) || names.any((n) => fold(n).contains(f) || n.contains(q))) ids.add(e['id'] as String);
           }
         }
-        if (!matched && mentioned.contains(v.id)) {
-          final r = v.renderings.where((r) => r.kind == 'translation' && (language == null || r.languageCode == language)).firstOrNull ?? v.renderings.firstOrNull;
-          if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body.length > 160 ? '${r.body.substring(0, 160)}…' : r.body, 0.5));
+        for (final m in (g['mentions'] as List? ?? [])) {
+          if (ids.contains(m['entity_id'])) mentioned.add(m['verse_id'] as String);
+        }
+      }
+
+      for (final ch in Toc.fromJson((toc as Map).cast<String, dynamic>()).chapters) {
+        final raw = await store.get('chapter:${ch.id}');
+        if (raw == null) continue;
+        final chapter = Chapter.fromJson((raw as Map).cast<String, dynamic>());
+        final edById = {for (final e in chapter.editions) e.id: e};
+        for (final v in chapter.verses) {
+          if (v.ref == q.trim()) {
+            final r = v.renderings.firstOrNull;
+            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body, 1.0));
+            continue;
+          }
+          var matched = false;
+          for (final r in v.renderings) {
+            if (language != null && r.languageCode != language) continue;
+            final body = r.body;
+            final idx = fold(body).indexOf(f);
+            if (idx >= 0 || body.contains(q)) {
+              final at = idx >= 0 ? idx : body.indexOf(q);
+              final start = (at - 60).clamp(0, body.length);
+              final end = (at + 100).clamp(0, body.length);
+              hits.add(_hit(v, r, edById[r.editionId], slug,
+                  '${start > 0 ? '…' : ''}${body.substring(start, end)}${end < body.length ? '…' : ''}', 0.9));
+              matched = true;
+            }
+          }
+          if (!matched && mentioned.contains(v.id)) {
+            final r = v.renderings.where((r) => r.kind == 'translation' && (language == null || r.languageCode == language)).firstOrNull ?? v.renderings.firstOrNull;
+            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body.length > 160 ? '${r.body.substring(0, 160)}…' : r.body, 0.5));
+          }
         }
       }
     }
@@ -427,9 +441,22 @@ class Repository {
 
   Future<bool> isDownloaded(String workSlug) => store.hasBundle(workSlug);
   Future<void> removeDownload(String workSlug) async {
-    await store.deletePrefix('chapter:');
+    // Chapter cache keys are section-id based for RPC compatibility, so do
+    // not delete every work's chapters when removing one download.
+    final rawToc = await store.get('toc:$workSlug');
+    if (rawToc is Map) {
+      final toc = Toc.fromJson(rawToc.cast<String, dynamic>());
+      for (final chapter in toc.chapters) {
+        await store.delete('chapter:${chapter.id}');
+      }
+    }
+    await store.delete('toc:$workSlug');
+    await store.delete('editions:$workSlug');
+    await store.delete('graph:$workSlug');
     await store.deletePrefix('verse:$workSlug:');
-    await store.deletePrefix('bundle_meta:$workSlug');
+    await store.delete('bundle_meta:$workSlug');
+    final remaining = (await store.bundleSlugs())..remove(workSlug);
+    await store.put('bundle_slugs', remaining);
   }
 }
 

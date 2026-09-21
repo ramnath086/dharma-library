@@ -67,7 +67,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     setState(() => _loading = true);
     final repo = ref.read(repositoryProvider);
     final results = await Future.wait([
-      repo.search(q, workSlug: ref.read(workSlugProvider), language: _lang),
+      // Search the whole local library.  The hit carries its work slug and
+      // therefore remains navigable even when two works share a verse ref.
+      repo.search(q, language: _lang),
       repo.searchEntities(q),
     ]);
     if (!mounted) return;
@@ -88,11 +90,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final slug = ref.watch(workSlugProvider);
-    // collapse hits by verse so one verse shows once with its best snippet
+    // Collapse editions by verse, but keep works separate: 1.1.1 in the
+    // Bhāgavata and 1.1 in the Gītā are different destinations.
     final byVerse = <String, List<SearchHit>>{};
     for (final h in _hits) {
-      byVerse.putIfAbsent(h.ref, () => []).add(h);
+      byVerse.putIfAbsent('${h.workSlug}|${h.ref}', () => []).add(h);
     }
     return Scaffold(
       appBar: AppBar(
@@ -159,7 +161,12 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                             ]),
                           ),
                         for (final entry in byVerse.entries)
-                          _HitTile(ref_: entry.key, hits: entry.value, onTap: () => context.push('/read/$slug/verse/${entry.key}')),
+                          _HitTile(
+                            ref_: entry.value.first.ref,
+                            workSlug: entry.value.first.workSlug,
+                            hits: entry.value,
+                            onTap: () => context.push('/read/${entry.value.first.workSlug}/verse/${entry.value.first.ref}'),
+                          ),
                       ],
                     ),
     );
@@ -167,8 +174,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
 }
 
 class _HitTile extends StatelessWidget {
-  const _HitTile({required this.ref_, required this.hits, required this.onTap});
-  final String ref_;
+  const _HitTile({required this.ref_, required this.workSlug, required this.hits, required this.onTap});
+  final String ref_, workSlug;
   final List<SearchHit> hits;
   final VoidCallback onTap;
 

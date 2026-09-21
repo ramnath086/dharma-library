@@ -78,6 +78,7 @@ class LocalStore {
   }
 
   Future<void> deletePrefix(String prefix) => _db.delete('kv', where: 'k like ?', whereArgs: ['$prefix%']);
+  Future<void> delete(String key) => _db.delete('kv', where: 'k = ?', whereArgs: [key]);
 
   Future<int> sizeBytes() async {
     final r = await _db.rawQuery('select coalesce(sum(length(v)),0) as n from kv');
@@ -90,6 +91,7 @@ class LocalStore {
   Future<void> importBundle(Map<String, dynamic> bundle) async {
     final toc = (bundle['toc'] as Map).cast<String, dynamic>();
     final slug = toc['work']['slug'] as String;
+    final knownSlugs = await bundleSlugs();
     final batch = _db.batch();
     void putB(String k, Object v) =>
         batch.insert('kv', {'k': k, 'v': jsonEncode(v), 'updated_at': DateTime.now().millisecondsSinceEpoch}, conflictAlgorithm: ConflictAlgorithm.replace);
@@ -116,10 +118,46 @@ class LocalStore {
       }
     }
     putB('bundle_meta:$slug', {'generated_at': bundle['generated_at'], 'imported_at': DateTime.now().toIso8601String()});
+    putB('bundle_slugs', {...knownSlugs, slug}.toList()..sort());
     await batch.commit(noResult: true);
   }
 
   Future<bool> hasBundle(String slug) async => (await get('bundle_meta:$slug')) != null;
+
+  /// Slugs whose bundles have been imported into this device.  This is the
+  /// app's local catalogue: it lets the reader and offline search operate on
+  /// every work shipped in the APK, not only the historical pilot work.
+  Future<List<String>> bundleSlugs() async {
+    final raw = await get<List>('bundle_slugs');
+    if (raw == null) return const <String>[];
+    final slugs = raw.whereType<String>().toList();
+    slugs.sort();
+    return slugs;
+  }
+
+  /// Discover every bundle declared in Flutter's generated asset manifest and
+  /// import it.  Asset directories cannot be listed directly at runtime, so
+  /// the manifest is the source of truth and adding a new JSON asset is all
+  /// that is needed to add a work to the offline catalogue.
+  Future<List<String>> importAllAssetBundles() async {
+    final manifest = jsonDecode(await rootBundle.loadString('AssetManifest.json'));
+    final paths = manifest is Map
+        ? manifest.keys.cast<String>()
+        : manifest is List
+            ? manifest.whereType<String>()
+            : const <String>[];
+    final slugs = paths
+        .where((path) => path.startsWith('assets/bundles/') && path.endsWith('.json'))
+        .map((path) => path.substring('assets/bundles/'.length, path.length - '.json'.length))
+        .where((slug) => slug.isNotEmpty)
+        .toSet()
+        .toList()
+      ..sort();
+    for (final slug in slugs) {
+      await importAssetBundle(slug);
+    }
+    return slugs;
+  }
 
   Future<void> importAssetBundle(String slug) async {
     final txt = await rootBundle.loadString('assets/bundles/$slug.json');
