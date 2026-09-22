@@ -324,6 +324,16 @@ class ParserTests(unittest.TestCase):
         self.assertIn("सरित्तीरगतं", verses[2]["deva"])
         self.assertIn("no printed number", verses[1]["metadata"]["numbering_note"])
 
+    def test_empty_danda_immediately_before_same_number_is_not_a_verse(self):
+        wiki = (
+            "aaa ॥ ५ ॥\n"
+            "व्यवस्थितिः ॥ ॥ ६ ॥\n"
+            "ccc ॥ ७ ॥\n"
+        )
+        verses = G.parse_wikitext(wiki, 2, 10)
+        self.assertEqual([v["ref"] for v in verses], ["2.10.5", "2.10.6", "2.10.7"])
+        self.assertIn("व्यवस्थितिः", verses[1]["deva"])
+
     def test_empty_danda_without_neighbor_is_a_blocker(self):
         wiki = "aaa ॥ १ ॥\\nbbb ॥ ॥\\nccc ॥ ४ ॥\\n"
         with self.assertRaises(G.SourceBlocker):

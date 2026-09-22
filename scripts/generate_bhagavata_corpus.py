@@ -398,6 +398,12 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
                     "(text from the page, numbering supplied)."
                 )
                 num = expected_n
+            elif nxt == expected_n:
+                # «॥ ॥ ६ ॥» after 5: empty overlaps the real close of 6.
+                # Do not emit a second verse; keep the mūla for printed 6.
+                parts[i + 1] = parts[i - 1] + parts[i + 1]
+                i += 2
+                continue
             else:
                 raise SourceBlocker(
                     f"{skandha}.{adhyaya}: unnumbered ॥ ॥ after {last_printed} "
