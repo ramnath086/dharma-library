@@ -349,6 +349,20 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
         num = parse_int(parts[i])
         following = parts[i + 1]
         dropped_digit_note = None
+
+        def peek_next() -> int | None:
+            if i + 2 >= len(parts):
+                return None
+            try:
+                nxt = parse_int(parts[i + 2])
+            except ValueError:
+                return None
+            if i + 3 < len(parts):
+                m_n = _SPLIT_REST_DIGIT.match(parts[i + 3])
+                if m_n:
+                    nxt = int(str(nxt) + m_n.group(1).translate(FROM_DEVA_DIGIT))
+            return nxt
+
         if last_printed and num < last_printed:
             # «॥ २ ॥ ६ ॥» after verse 25 is 26, not a jump back to 2.
             m_rest = _SPLIT_REST_DIGIT.match(following)
@@ -359,16 +373,7 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
                     following = following[m_rest.end():]
         if last_printed and num < last_printed:
             # «॥ २ ॥» then «॥ २७ ॥» after 25 is 26 with a dropped units digit (4.6).
-            nxt = None
-            if i + 2 < len(parts):
-                try:
-                    nxt = parse_int(parts[i + 2])
-                except ValueError:
-                    nxt = None
-                if nxt is not None and i + 3 < len(parts):
-                    m_n = _SPLIT_REST_DIGIT.match(parts[i + 3])
-                    if m_n:
-                        nxt = int(str(nxt) + m_n.group(1).translate(FROM_DEVA_DIGIT))
+            nxt = peek_next()
             expected_n = last_printed + 1
             if nxt == last_printed + 2 and str(expected_n).startswith(str(num)):
                 dropped_digit_note = (
@@ -377,6 +382,24 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
                     f"(dropped digit; no Sanskrit invented)."
                 )
                 num = expected_n
+        if last_printed and num > last_printed + 1:
+            # «॥ ८३ ।» then «॥ ९ ॥» after 7 is 8 with a stray trailing digit (7.4).
+            nxt = peek_next()
+            expected_n = last_printed + 1
+            if nxt == expected_n + 1 and str(num).startswith(str(expected_n)):
+                dropped_digit_note = (
+                    f"Wikisource printed ॥ {deva_int(num)} ॥ here; "
+                    f"kept as {expected_n} because the next marker is {nxt} "
+                    f"(extra digit; no Sanskrit invented)."
+                )
+                num = expected_n
+            elif nxt == last_printed + 1 and str(num).startswith(str(last_printed)):
+                # «॥ ३२३ ।» after 32 before 33 is a garbled reprint of 32 (7.4).
+                dropped_digit_note = (
+                    f"Wikisource printed ॥ {deva_int(num)} ॥ here; "
+                    f"kept as {last_printed} (garbled extra digit; no Sanskrit invented)."
+                )
+                num = last_printed
         raw_body = parts[i - 1]
         if not verses and num == 2:
             # Wikisource sometimes leaves the opening śloka unnumbered

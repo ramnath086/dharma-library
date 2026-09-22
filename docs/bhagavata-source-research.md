@@ -77,8 +77,10 @@ Parser notes for this edition (fail closed; no invented Sanskrit):
   a suffix, e.g. `1.13.40b`). `ordinal` is dense reading order for the app /
   SQL pipeline. Gaps are **not** filled with invented Sanskrit. A printed
   number that goes backwards is still a blocker (usually a leaked colophon),
-  except split tens/units (`॥ २ ॥ ६ ॥` = 26, confirmed **4.2**) and a
-  dropped units digit (`॥ २ ॥` then `॥ २७ ॥` after 25 = 26, confirmed **4.6**).
+  except split tens/units (`॥ २ ॥ ६ ॥` = 26, confirmed **4.2**), a
+  dropped units digit (`॥ २ ॥` then `॥ २७ ॥` after 25 = 26, confirmed **4.6**),
+  and an extra stray digit (`॥ ८३ ।` then `॥ ९ ॥` after 7 = 8; `॥ ३२३ ।`
+  after 32 before 33 is a garbled 32, confirmed **7.4**).
 
 Text-critical note already in the pilot: 1.1.4 reads `ऋषयः` (Wikisource /
 printed vulgate), not GRETIL’s `īśayaḥ`.

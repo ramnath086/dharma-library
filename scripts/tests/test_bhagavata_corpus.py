@@ -240,6 +240,21 @@ class ParserTests(unittest.TestCase):
         self.assertIn("विश्वामित्रो", verses[2]["deva"])
         self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
 
+    def test_extra_trailing_digit_before_next_plus_one(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_4_extra_digit.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 7, 4)
+        self.assertEqual(
+            [v["ref"] for v in verses],
+            ["7.4.7", "7.4.8", "7.4.9", "7.4.32", "7.4.32b", "7.4.33"],
+        )
+        self.assertIn("विद्रुमसोपाना", verses[1]["deva"])
+        self.assertIn("स्फाटिक", verses[2]["deva"])
+        self.assertIn("extra digit", verses[1]["metadata"]["numbering_note"])
+        self.assertIn("विद्यार्थरूप", verses[4]["deva"])
+        self.assertIn("garbled extra digit", verses[4]["metadata"]["numbering_note"])
+
     def test_skandha_7_number_then_danda(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_1_number_then_danda.wiki"
