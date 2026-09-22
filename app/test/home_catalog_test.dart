@@ -5,7 +5,6 @@ import 'package:dharma_library/core/offline/local_store.dart';
 import 'package:dharma_library/core/providers.dart';
 import 'package:dharma_library/core/theme/app_theme.dart';
 import 'package:dharma_library/main.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -61,7 +61,7 @@ class _ChapterScreenState extends ConsumerState<ChapterScreen> {
       _lastRecordedRef = current.ref;
       final position = _globalPosition(toc, ch, current);
       final total = toc.chapters.fold<int>(0, (n, c) => n + c.verseCount);
-      ref.read(repositoryProvider).recordProgress(workId: toc.work.id, verse: current, sectionId: ch.id, totalVerses: total, position: position, workSlug: widget.workSlug);
+      ref.read(repositoryProvider).recordProgress(workId: toc.work.id, verse: current, sectionId: ch.id, totalVerses: total, position: position);
       ref.read(userDataVersionProvider.notifier).state++;
       ref.invalidate(progressProvider(toc.work.id));
     });

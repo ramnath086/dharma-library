@@ -45,16 +45,22 @@ final currentUserProvider = Provider<User?>((ref) {
   return ref.watch(supabaseProvider)?.auth.currentUser;
 });
 
-final userRoleProvider = FutureProvider<String>((ref) async {
+/// `profiles` row for the signed-in user. Null when signed out / no backend.
+/// Reading is never gated on this.
+final profileProvider = FutureProvider<Map<String, dynamic>?>((ref) async {
   final c = ref.watch(supabaseProvider);
   final u = ref.watch(currentUserProvider);
-  if (c == null || u == null) return 'reader';
+  if (c == null || u == null) return null;
   try {
-    final r = await c.from('profiles').select('role').eq('id', u.id).maybeSingle();
-    return (r?['role'] as String?) ?? 'reader';
+    return await c.from('profiles').select().eq('id', u.id).maybeSingle();
   } catch (_) {
-    return 'reader';
+    return null;
   }
+});
+
+final userRoleProvider = FutureProvider<String>((ref) async {
+  final profile = await ref.watch(profileProvider.future);
+  return (profile?['role'] as String?) ?? 'reader';
 });
 
 // ------------------------------------------------------------ settings

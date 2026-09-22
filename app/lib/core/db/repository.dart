@@ -74,8 +74,9 @@ class Repository {
   Future<List<Edition>> editions(String workSlug) => _cached('editions:$workSlug', () async {
         // v_editions is global; constrain it through the work id so a
         // multi-work library never mixes Bhāgavata and Gītā layouts.
-        final work = await _client!.from('works').select('id').eq('slug', workSlug).single();
-        return _client!.from('v_editions').select().eq('work_id', work['id']).order('sort_order');
+        final client = _client!;
+        final work = await client.from('works').select('id').eq('slug', workSlug).single();
+        return client.from('v_editions').select().eq('work_id', work['id']).order('sort_order');
       }, (d) => (d as List).map((e) => Edition.fromJson((e as Map).cast<String, dynamic>())).where((e) => e.isCleared).toList());
 
   Future<Chapter> chapter(String sectionId) => _cached('chapter:$sectionId',
