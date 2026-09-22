@@ -99,8 +99,9 @@ SPEAKER_LINE = re.compile(
     r"^[\s\*]*([^\n]{1,80}?)\s+(उवाच|ऊचुः)\s*[।|]?\s*$"
 )
 COLOPHON = re.compile(r"^इति\s+श्रीम?द्?भागवत")
-# Colophon lines like «प्रथमोऽध्यायः ॥ १ ॥» (avagraha elides the अ of अध्यायः).
-CHAPTER_END = re.compile(r"ध्यायः\s*॥")
+# Colophon lines like «प्रथमोऽध्यायः ॥ १ ॥» or «द्वितीयोध्याऽयः ॥ २ ॥»
+# (avagraha may sit before अध्यायः or inside it).
+CHAPTER_END = re.compile(r"ध्या['ऽ]?यः\s*॥")
 METER_LABEL = re.compile(r"^\([^)]+\)\s*$")
 TEMPLATE = re.compile(r"\{\{[^{}]*\}\}", re.S)
 LINK = re.compile(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]")
@@ -235,6 +236,7 @@ def strip_wiki(text: str) -> str:
     text = TAG.sub("", text)
     text = BOLD.sub("", text)
     text = text.replace("&nbsp;", " ").replace("\xa0", " ")
+    text = text.replace("\u200c", "").replace("\u200d", "")  # ZWNJ/ZWJ in श्रीमद्‌भागवत
     text = text.replace("।।", "॥")
     # Drop heading lines (== ... ==) and category links leftover.
     lines = []

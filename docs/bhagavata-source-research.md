@@ -60,7 +60,8 @@ Parser notes for this edition (fail closed; no invented Sanskrit):
   danda-delimited numbers, so leftover `१` cannot rewind 1.1 after verse 23.
   Skandha 7–8 often use `N।` after the pādas
   (`यथा १।`).
-* Two-line colophons (`इति …` then `प्रथमोऽध्यायः ॥ १ ॥` with avagraha) are
+* Two-line colophons (`इति …` then `प्रथमोऽध्यायः ॥ १ ॥` or
+  `द्वितीयोध्याऽयः ॥ २ ॥` with avagraha; ZWNJ in `श्रीमद्‌भागवत`) are
   dropped, not counted as verses. Meter labels like `(अनुष्टुप्)` are stripped.
 * **Unnumbered opening śloka:** some chapters omit `॥ १ ॥` on the first mūla
   and start numbering at 2 (confirmed **1.7**, pageid 7996). The unnumbered

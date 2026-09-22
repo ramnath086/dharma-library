@@ -171,6 +171,15 @@ class ParserTests(unittest.TestCase):
         self.assertIn("पर्यगोपायत्", verses[0]["deva"])
         self.assertIn("तपस्व्याराधयां", verses[1]["deva"])
 
+    def test_avagraha_colophon_is_not_a_verse(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_6_2_avagraha_colophon.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 6, 2)
+        self.assertEqual([v["ref"] for v in verses], ["6.2.49"])
+        self.assertIn("अजामिलो", verses[0]["deva"])
+        self.assertNotIn("द्वितीयोध्या", " ".join(v["deva"] for v in verses))
+
     def test_dotted_sk_adh_verse_markers(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_24_dotted.wiki"
