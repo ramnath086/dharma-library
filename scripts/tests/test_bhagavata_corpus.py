@@ -240,6 +240,15 @@ class ParserTests(unittest.TestCase):
         self.assertIn("विश्वामित्रो", verses[2]["deva"])
         self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
 
+    def test_open_danda_number_at_eol_without_close(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_26_open_eol.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 5, 26)
+        self.assertEqual([v["ref"] for v in verses], ["5.26.38", "5.26.39", "5.26.40"])
+        self.assertIn("नयेदिति", verses[1]["deva"])
+        self.assertNotIn("भूद्वीपवर्ष", verses[1]["deva"])
+
     def test_gadya_number_glued_to_last_akshara(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_4_glued_number.wiki"
