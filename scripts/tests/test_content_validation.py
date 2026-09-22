@@ -131,9 +131,12 @@ class BhagavataPilot(unittest.TestCase):
         self.assertEqual(len(seen), w["metadata"]["imported_verse_count"])
         self.assertEqual(len(fills), w["metadata"].get("bbt_vedabase_fill_count"))
         manifest = _load(BHAGAVATA / "WIKISOURCE_MANIFEST.json")
-        self.assertEqual(
-            w["metadata"]["imported_verse_count"],
-            manifest["verses"] + len(fills),
+        imported = w["metadata"]["imported_verse_count"]
+        # Manifest is WS-only (imported - fills) or merged (imported). Never double-count.
+        self.assertIn(
+            manifest["verses"],
+            {imported, imported - len(fills)},
+            "WIKISOURCE_MANIFEST verses must equal shipped count or WS-only count",
         )
         expected_deva = {
             "1.13.36": "विमृज्याश्रूणि पाणिभ्यां\nविष्टभ्यात्मानमात्मना ।\nअजातशत्रुं प्रत्यूचे प्रभोः पादावनुस्मरन् ॥ ३६ ॥",
