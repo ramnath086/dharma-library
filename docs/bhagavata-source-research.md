@@ -80,7 +80,9 @@ Parser notes for this edition (fail closed; no invented Sanskrit):
   except split tens/units (`॥ २ ॥ ६ ॥` = 26, confirmed **4.2**), a
   dropped units digit (`॥ २ ॥` then `॥ २७ ॥` after 25 = 26, confirmed **4.6**),
   and an extra stray digit (`॥ ८३ ।` then `॥ ९ ॥` after 7 = 8; `॥ ३२३ ।`
-  after 32 before 33 is a garbled 32, confirmed **7.4**).
+  after 32 before 33 is a garbled 32, confirmed **7.4**), and a same-line empty
+  close `॥ ॥` with no digits (mūla is on the page; number inferred as last+1
+  when the next marker is last+2, confirmed **10.11** / **9.11**).
 
 Text-critical note already in the pilot: 1.1.4 reads `ऋषयः` (Wikisource /
 printed vulgate), not GRETIL’s `īśayaḥ`.

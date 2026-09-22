@@ -240,6 +240,22 @@ class ParserTests(unittest.TestCase):
         self.assertIn("विश्वामित्रो", verses[2]["deva"])
         self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
 
+    def test_empty_danda_pair_infers_skipped_number(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_10_11_empty_danda.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 10, 11)
+        self.assertEqual([v["ref"] for v in verses], ["10.11.10", "10.11.11", "10.11.12"])
+        self.assertIn("फलभाण्डमपूरि", verses[1]["deva"])
+        self.assertNotIn("फलभाण्डमपूरि", verses[2]["deva"])
+        self.assertIn("सरित्तीरगतं", verses[2]["deva"])
+        self.assertIn("no printed number", verses[1]["metadata"]["numbering_note"])
+
+    def test_empty_danda_without_neighbor_is_a_blocker(self):
+        wiki = "aaa ॥ १ ॥\\nbbb ॥ ॥\\nccc ॥ ४ ॥\\n"
+        with self.assertRaises(G.SourceBlocker):
+            G.parse_wikitext(wiki, 10, 11)
+
     def test_extra_trailing_digit_before_next_plus_one(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_4_extra_digit.wiki"

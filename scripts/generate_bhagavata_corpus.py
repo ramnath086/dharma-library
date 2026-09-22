@@ -91,10 +91,15 @@ VERSE_END_NUM_DANDA = re.compile(
 VERSE_END_DOTTED = re.compile(
     rf"[।॥]\s*{_DEVA_NUM}\.{_DEVA_NUM}\.({_DEVA_NUM})\s*[।॥]"
 )
+# Same-line empty close «॥ ॥» (no digits): Wikisource omitted the printed
+# number but the mūla is on the page (10.11.11, 9.11.11). Newlines-only
+# «॥\n॥» is two numbered verses, not an empty marker.
+VERSE_END_EMPTY = re.compile(r"॥[ \t]*॥")
 # Split tens/units leftover after a classic split: « ६ ॥» following «॥ २ ॥».
 _SPLIT_REST_DIGIT = re.compile(
     rf"^\s*({_DEVA_NUM})\s*[।॥]"
 )
+UNNUMBERED = -1
 SPEAKER_LINE = re.compile(
     r"^[\s\*]*([^\n]{1,80}?)\s+(उवाच|ऊचुः)\s*[।|]?\s*$"
 )
@@ -153,6 +158,8 @@ def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int
     for pat in pats:
         for m in pat.finditer(body):
             hits.append((m.start(), m.end(), parse_int(m.group(1))))
+    for m in VERSE_END_EMPTY.finditer(body):
+        hits.append((m.start(), m.end(), UNNUMBERED))
     hits.sort(key=lambda h: (h[0], -(h[1] - h[0])))
     uniq: list[tuple[int, int, int]] = []
     last_end = -1
@@ -167,7 +174,7 @@ def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int
         s, e, n = uniq[i]
         if i + 1 < len(uniq):
             s2, e2, n2 = uniq[i + 1]
-            if body[e:s2].strip() == "" and n < 100 and n2 < 10:
+            if body[e:s2].strip() == "" and n > 0 and n2 > 0 and n < 100 and n2 < 10:
                 merged.append((s, e2, int(str(n) + str(n2))))
                 i += 2
                 continue
@@ -349,6 +356,28 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
         num = parse_int(parts[i])
         following = parts[i + 1]
         dropped_digit_note = None
+        if num == UNNUMBERED:
+            # «॥ ॥» with no digits: mūla is on the page, number omitted.
+            nxt = None
+            if i + 2 < len(parts):
+                try:
+                    nxt = parse_int(parts[i + 2])
+                except ValueError:
+                    nxt = None
+            expected_n = (last_printed + 1) if last_printed else 1
+            if nxt == expected_n + 1:
+                dropped_digit_note = (
+                    "Wikisource closed this śloka with ॥ ॥ (no printed number); "
+                    f"kept as {expected_n} because the previous marker is "
+                    f"{last_printed or 0} and the next is {nxt} "
+                    "(text from the page, numbering supplied)."
+                )
+                num = expected_n
+            else:
+                raise SourceBlocker(
+                    f"{skandha}.{adhyaya}: unnumbered ॥ ॥ after {last_printed} "
+                    f"before {nxt}; not inventing a verse number"
+                )
 
         def peek_next() -> int | None:
             if i + 2 >= len(parts):

@@ -211,7 +211,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           du -sh content/bhagavata-purana content/generated/bhagavata-purana.sql app/assets/bundles/bhagavata-purana.json || true
-          git add -A content/bhagavata-purana content/generated/bhagavata-purana.sql app/assets/bundles/bhagavata-purana.json
+          python3 scripts/audit_bhagavata_corpus.py || true
+          git add -A content/bhagavata-purana content/generated/bhagavata-purana.sql app/assets/bundles/bhagavata-purana.json docs/bhagavata-completeness-audit.json
           if git diff --cached --quiet; then
             echo "corpus already on the branch"
             exit 0

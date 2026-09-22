@@ -1,0 +1,4068 @@
+{
+  "skandhas": 12,
+  "expected_chapters": 335,
+  "chapters_on_disk": 335,
+  "imported_verses": 14069,
+  "unique_refs": 14069,
+  "duplicate_refs": [],
+  "empty_mula": [],
+  "malformed_ids": [],
+  "suffix_ids": [
+    "1.13.40b",
+    "4.14.13b",
+    "4.22.62b",
+    "4.23.35b",
+    "4.24.11b",
+    "4.29.77b",
+    "7.4.32b",
+    "8.6.7b",
+    "8.16.39b",
+    "11.27.41b"
+  ],
+  "printed_gaps": [
+    {
+      "chapter": "1.13",
+      "skipped": [
+        36
+      ]
+    },
+    {
+      "chapter": "1.15",
+      "skipped": [
+        17
+      ]
+    },
+    {
+      "chapter": "4.1",
+      "skipped": [
+        52
+      ]
+    },
+    {
+      "chapter": "4.21",
+      "skipped": [
+        45
+      ]
+    },
+    {
+      "chapter": "5.4",
+      "skipped": [
+        12
+      ]
+    },
+    {
+      "chapter": "5.16",
+      "skipped": [
+        9
+      ]
+    },
+    {
+      "chapter": "5.16",
+      "skipped": [
+        26
+      ]
+    },
+    {
+      "chapter": "5.18",
+      "skipped": [
+        28
+      ]
+    },
+    {
+      "chapter": "5.19",
+      "skipped": [
+        24
+      ]
+    },
+    {
+      "chapter": "5.26",
+      "skipped": [
+        39
+      ]
+    },
+    {
+      "chapter": "6.1",
+      "skipped": [
+        44
+      ]
+    },
+    {
+      "chapter": "6.8",
+      "skipped": [
+        27
+      ]
+    },
+    {
+      "chapter": "8.7",
+      "skipped": [
+        5
+      ]
+    },
+    {
+      "chapter": "8.8",
+      "skipped": [
+        23
+      ]
+    },
+    {
+      "chapter": "8.11",
+      "skipped": [
+        16
+      ]
+    },
+    {
+      "chapter": "8.16",
+      "skipped": [
+        23
+      ]
+    },
+    {
+      "chapter": "9.11",
+      "skipped": [
+        11
+      ]
+    },
+    {
+      "chapter": "9.13",
+      "skipped": [
+        13
+      ]
+    },
+    {
+      "chapter": "9.14",
+      "skipped": [
+        14
+      ]
+    },
+    {
+      "chapter": "9.23",
+      "skipped": [
+        23
+      ]
+    },
+    {
+      "chapter": "9.24",
+      "skipped": [
+        20
+      ]
+    },
+    {
+      "chapter": "10.11",
+      "skipped": [
+        11
+      ]
+    },
+    {
+      "chapter": "10.13",
+      "skipped": [
+        13
+      ]
+    },
+    {
+      "chapter": "10.16",
+      "skipped": [
+        16
+      ]
+    },
+    {
+      "chapter": "10.24",
+      "skipped": [
+        24
+      ]
+    },
+    {
+      "chapter": "10.25",
+      "skipped": [
+        25
+      ]
+    },
+    {
+      "chapter": "10.29",
+      "skipped": [
+        29
+      ]
+    },
+    {
+      "chapter": "10.39",
+      "skipped": [
+        39
+      ]
+    },
+    {
+      "chapter": "10.41",
+      "skipped": [
+        41
+      ]
+    },
+    {
+      "chapter": "10.83",
+      "skipped": [
+        26
+      ]
+    },
+    {
+      "chapter": "11.11",
+      "skipped": [
+        13
+      ]
+    },
+    {
+      "chapter": "11.23",
+      "skipped": [
+        52
+      ]
+    },
+    {
+      "chapter": "11.27",
+      "skipped": [
+        40
+      ]
+    },
+    {
+      "chapter": "12.4",
+      "skipped": [
+        3
+      ]
+    }
+  ],
+  "missing_files": [],
+  "numbering_notes": 49,
+  "unexplained": [],
+  "skandha_counts": {
+    "1": {
+      "chapters": 19,
+      "verses": 810
+    },
+    "2": {
+      "chapters": 10,
+      "verses": 391
+    },
+    "3": {
+      "chapters": 33,
+      "verses": 1411
+    },
+    "4": {
+      "chapters": 31,
+      "verses": 1449
+    },
+    "5": {
+      "chapters": 26,
+      "verses": 656
+    },
+    "6": {
+      "chapters": 19,
+      "verses": 849
+    },
+    "7": {
+      "chapters": 15,
+      "verses": 751
+    },
+    "8": {
+      "chapters": 24,
+      "verses": 932
+    },
+    "9": {
+      "chapters": 24,
+      "verses": 959
+    },
+    "10": {
+      "chapters": 90,
+      "verses": 3933
+    },
+    "11": {
+      "chapters": 31,
+      "verses": 1365
+    },
+    "12": {
+      "chapters": 13,
+      "verses": 563
+    }
+  },
+  "chapters": [
+    {
+      "skandha": 1,
+      "adhyaya": 1,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110172,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 2,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110173,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 3,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 369178,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 4,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110175,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 5,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110176,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 6,
+      "source_count": 39,
+      "imported_count": 39,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110177,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 7,
+      "source_count": 58,
+      "imported_count": 58,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110178,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 8,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 196197,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 9,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 330834,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 10,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110181,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 11,
+      "source_count": 39,
+      "imported_count": 39,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110182,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 12,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110183,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 13,
+      "source_count": 59,
+      "imported_count": 59,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 110184,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        36
+      ]
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 14,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110185,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 15,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 364156,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        17
+      ]
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 16,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 148532,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 17,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 313090,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 18,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110189,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 1,
+      "adhyaya": 19,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 110190,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 1,
+      "source_count": 39,
+      "imported_count": 39,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 332515,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 2,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200166,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 3,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 201379,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 4,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200168,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 5,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200167,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 6,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200169,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 7,
+      "source_count": 53,
+      "imported_count": 53,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200170,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 8,
+      "source_count": 29,
+      "imported_count": 29,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200171,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 9,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200172,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 2,
+      "adhyaya": 10,
+      "source_count": 51,
+      "imported_count": 51,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200173,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 1,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 62870,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 2,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 326989,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 3,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 62873,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 4,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261242,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 5,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261241,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 6,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 329175,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 7,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261239,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 8,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261238,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 9,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261237,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 10,
+      "source_count": 29,
+      "imported_count": 29,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261236,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 11,
+      "source_count": 41,
+      "imported_count": 41,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261235,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 12,
+      "source_count": 56,
+      "imported_count": 56,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 401059,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 13,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261243,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 14,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261244,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 15,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333616,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 16,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333671,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 17,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 334120,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 18,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261248,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 19,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 335503,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 20,
+      "source_count": 53,
+      "imported_count": 53,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 335529,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 21,
+      "source_count": 56,
+      "imported_count": 56,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 335862,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 22,
+      "source_count": 39,
+      "imported_count": 39,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 335987,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 23,
+      "source_count": 57,
+      "imported_count": 57,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 337145,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 24,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 204956,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 25,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 328252,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 26,
+      "source_count": 72,
+      "imported_count": 72,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 338770,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 27,
+      "source_count": 30,
+      "imported_count": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 338785,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 28,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 339027,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 29,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261258,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 30,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261259,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 31,
+      "source_count": 48,
+      "imported_count": 48,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 339368,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 32,
+      "source_count": 43,
+      "imported_count": 43,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 339649,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 3,
+      "adhyaya": 33,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 340084,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 1,
+      "source_count": 65,
+      "imported_count": 65,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 362641,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        52
+      ]
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 2,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 350582,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 3,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 350716,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 4,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 63633,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 5,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 164411,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 6,
+      "source_count": 53,
+      "imported_count": 53,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 223982,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 7,
+      "source_count": 61,
+      "imported_count": 61,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 223983,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 8,
+      "source_count": 82,
+      "imported_count": 82,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353504,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 9,
+      "source_count": 67,
+      "imported_count": 67,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 367143,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 10,
+      "source_count": 30,
+      "imported_count": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353680,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 11,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261268,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 12,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 354189,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 13,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 362959,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 14,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 359569,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 15,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261272,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 16,
+      "source_count": 27,
+      "imported_count": 27,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261273,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 17,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261274,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 18,
+      "source_count": 32,
+      "imported_count": 32,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 362795,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 19,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261276,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 20,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261277,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 21,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 363348,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        45
+      ]
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 22,
+      "source_count": 64,
+      "imported_count": 64,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 364824,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 23,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 364540,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 24,
+      "source_count": 80,
+      "imported_count": 80,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 365186,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 25,
+      "source_count": 62,
+      "imported_count": 62,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261282,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 26,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261283,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 27,
+      "source_count": 30,
+      "imported_count": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 261284,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 28,
+      "source_count": 65,
+      "imported_count": 65,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 367755,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 29,
+      "source_count": 86,
+      "imported_count": 86,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 368532,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 30,
+      "source_count": 51,
+      "imported_count": 51,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 368528,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 4,
+      "adhyaya": 31,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 368507,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 1,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 349788,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 2,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 313092,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 3,
+      "source_count": 18,
+      "imported_count": 18,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 274589,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 4,
+      "source_count": 18,
+      "imported_count": 18,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 274590,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        12
+      ]
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 5,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 274591,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 6,
+      "source_count": 19,
+      "imported_count": 19,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 274592,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 7,
+      "source_count": 14,
+      "imported_count": 14,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 274593,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 8,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361316,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 9,
+      "source_count": 20,
+      "imported_count": 20,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361318,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 10,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361320,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 11,
+      "source_count": 17,
+      "imported_count": 17,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361321,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 12,
+      "source_count": 16,
+      "imported_count": 16,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361322,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 13,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361323,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 14,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361325,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 15,
+      "source_count": 15,
+      "imported_count": 15,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361326,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 16,
+      "source_count": 27,
+      "imported_count": 27,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 361327,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        9,
+        26
+      ]
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 17,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361328,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 18,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 361329,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        28
+      ]
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 19,
+      "source_count": 30,
+      "imported_count": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 361331,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        24
+      ]
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 20,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 361333,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 21,
+      "source_count": 18,
+      "imported_count": 18,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 80276,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 22,
+      "source_count": 17,
+      "imported_count": 17,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106451,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 23,
+      "source_count": 9,
+      "imported_count": 9,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 308255,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 24,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 54810,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 25,
+      "source_count": 15,
+      "imported_count": 15,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106453,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 5,
+      "adhyaya": 26,
+      "source_count": 39,
+      "imported_count": 39,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 106454,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        39
+      ]
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 1,
+      "source_count": 67,
+      "imported_count": 67,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 65543,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        44
+      ]
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 2,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 183699,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 3,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333892,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 4,
+      "source_count": 54,
+      "imported_count": 54,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333894,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 5,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333895,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 6,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333897,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 7,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333898,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 8,
+      "source_count": 41,
+      "imported_count": 41,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 333891,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        27
+      ]
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 9,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353685,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 10,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 183701,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 11,
+      "source_count": 27,
+      "imported_count": 27,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 183702,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 12,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106457,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 13,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 183703,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 14,
+      "source_count": 61,
+      "imported_count": 61,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106458,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 15,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106459,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 16,
+      "source_count": 65,
+      "imported_count": 65,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106462,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 17,
+      "source_count": 41,
+      "imported_count": 41,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106463,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 18,
+      "source_count": 78,
+      "imported_count": 78,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 403350,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 6,
+      "adhyaya": 19,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106464,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 1,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 363828,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 2,
+      "source_count": 61,
+      "imported_count": 61,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 117171,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 3,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333791,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 4,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106465,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 5,
+      "source_count": 57,
+      "imported_count": 57,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333792,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 6,
+      "source_count": 30,
+      "imported_count": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 145114,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 7,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333793,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 8,
+      "source_count": 56,
+      "imported_count": 56,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333787,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 9,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333788,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 10,
+      "source_count": 71,
+      "imported_count": 71,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333789,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 11,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106467,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 12,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106468,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 13,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 57411,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 14,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106469,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 7,
+      "adhyaya": 15,
+      "source_count": 80,
+      "imported_count": 80,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 80213,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 1,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342571,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 2,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 108659,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 3,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342572,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 4,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342573,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 5,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 214684,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 6,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106472,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 7,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 342574,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        5
+      ]
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 8,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 400667,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        23
+      ]
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 9,
+      "source_count": 29,
+      "imported_count": 29,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106473,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 10,
+      "source_count": 57,
+      "imported_count": 57,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342570,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 11,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 342576,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        16
+      ]
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 12,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106474,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 13,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342577,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 14,
+      "source_count": 11,
+      "imported_count": 11,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106475,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 15,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 335543,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 16,
+      "source_count": 62,
+      "imported_count": 62,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 106476,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        23
+      ]
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 17,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106477,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 18,
+      "source_count": 32,
+      "imported_count": 32,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342578,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 19,
+      "source_count": 43,
+      "imported_count": 43,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106478,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 20,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106479,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 21,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 342579,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 22,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106480,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 23,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106481,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 8,
+      "adhyaya": 24,
+      "source_count": 61,
+      "imported_count": 61,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106482,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 1,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 372167,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 2,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98620,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 3,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98780,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 4,
+      "source_count": 71,
+      "imported_count": 71,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 123501,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 5,
+      "source_count": 27,
+      "imported_count": 27,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98789,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 6,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98794,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 7,
+      "source_count": 27,
+      "imported_count": 27,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 362803,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 8,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98804,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 9,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98806,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 10,
+      "source_count": 56,
+      "imported_count": 56,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98810,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 11,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 98813,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        11
+      ]
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 12,
+      "source_count": 16,
+      "imported_count": 16,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98455,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 13,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 108352,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        13
+      ]
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 14,
+      "source_count": 48,
+      "imported_count": 48,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 333994,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        14
+      ]
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 15,
+      "source_count": 41,
+      "imported_count": 41,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98461,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 16,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98464,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 17,
+      "source_count": 18,
+      "imported_count": 18,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98468,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 18,
+      "source_count": 51,
+      "imported_count": 51,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98475,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 19,
+      "source_count": 29,
+      "imported_count": 29,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98568,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 20,
+      "source_count": 39,
+      "imported_count": 39,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98576,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 21,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98583,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 22,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98590,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 23,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 98595,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        23
+      ]
+    },
+    {
+      "skandha": 9,
+      "adhyaya": 24,
+      "source_count": 66,
+      "imported_count": 66,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 363424,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        20
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 1,
+      "source_count": 69,
+      "imported_count": 69,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353432,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 2,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 364413,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 3,
+      "source_count": 53,
+      "imported_count": 53,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 210881,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 4,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200074,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 5,
+      "source_count": 32,
+      "imported_count": 32,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200075,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 6,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 136468,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 7,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200076,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 8,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200077,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 9,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200078,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 10,
+      "source_count": 43,
+      "imported_count": 43,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96575,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 11,
+      "source_count": 58,
+      "imported_count": 58,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 200063,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        11
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 12,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200064,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 13,
+      "source_count": 63,
+      "imported_count": 63,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 200065,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        13
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 14,
+      "source_count": 61,
+      "imported_count": 61,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200066,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 15,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200067,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 16,
+      "source_count": 66,
+      "imported_count": 66,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 200068,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        16
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 17,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200069,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 18,
+      "source_count": 32,
+      "imported_count": 32,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200070,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 19,
+      "source_count": 16,
+      "imported_count": 16,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 200071,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 20,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 266738,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 21,
+      "source_count": 20,
+      "imported_count": 20,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97307,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 22,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 307109,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 23,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97315,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 24,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 183696,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        24
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 25,
+      "source_count": 32,
+      "imported_count": 32,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 97324,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        25
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 26,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97328,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 27,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97339,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 28,
+      "source_count": 17,
+      "imported_count": 17,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97346,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 29,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 97347,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        29
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 30,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97348,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 31,
+      "source_count": 19,
+      "imported_count": 19,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97350,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 32,
+      "source_count": 22,
+      "imported_count": 22,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97561,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 33,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97562,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 34,
+      "source_count": 32,
+      "imported_count": 32,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 351729,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 35,
+      "source_count": 26,
+      "imported_count": 26,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97564,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 36,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97565,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 37,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97566,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 38,
+      "source_count": 43,
+      "imported_count": 43,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97567,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 39,
+      "source_count": 56,
+      "imported_count": 56,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 97568,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        39
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 40,
+      "source_count": 30,
+      "imported_count": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97569,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 41,
+      "source_count": 51,
+      "imported_count": 51,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 97570,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        41
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 42,
+      "source_count": 38,
+      "imported_count": 38,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106615,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 43,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106614,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 44,
+      "source_count": 51,
+      "imported_count": 51,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106612,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 45,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 364163,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 46,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343607,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 47,
+      "source_count": 67,
+      "imported_count": 67,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343608,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 48,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106609,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 49,
+      "source_count": 31,
+      "imported_count": 31,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106608,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 50,
+      "source_count": 57,
+      "imported_count": 57,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343609,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 51,
+      "source_count": 63,
+      "imported_count": 63,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343611,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 52,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343616,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 53,
+      "source_count": 57,
+      "imported_count": 57,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343617,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 54,
+      "source_count": 60,
+      "imported_count": 60,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343618,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 55,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106601,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 56,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 343619,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 57,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106599,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 58,
+      "source_count": 58,
+      "imported_count": 58,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 363541,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 59,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 106596,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 60,
+      "source_count": 59,
+      "imported_count": 59,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 363542,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 61,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 363425,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 62,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97603,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 63,
+      "source_count": 53,
+      "imported_count": 53,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97604,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 64,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97605,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 65,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 97606,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 66,
+      "source_count": 43,
+      "imported_count": 43,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 362988,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 67,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 328596,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 68,
+      "source_count": 54,
+      "imported_count": 54,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98404,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 69,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98405,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 70,
+      "source_count": 47,
+      "imported_count": 47,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 144508,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 71,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98407,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 72,
+      "source_count": 48,
+      "imported_count": 48,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98408,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 73,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98409,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 74,
+      "source_count": 54,
+      "imported_count": 54,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 310956,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 75,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98411,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 76,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98412,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 77,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98413,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 78,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 351802,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 79,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98415,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 80,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98416,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 81,
+      "source_count": 41,
+      "imported_count": 41,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98418,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 82,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98419,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 83,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 348208,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        26
+      ]
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 84,
+      "source_count": 71,
+      "imported_count": 71,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98421,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 85,
+      "source_count": 59,
+      "imported_count": 59,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98423,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 86,
+      "source_count": 59,
+      "imported_count": 59,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 313789,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 87,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98425,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 88,
+      "source_count": 40,
+      "imported_count": 40,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 351731,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 89,
+      "source_count": 65,
+      "imported_count": 65,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 351732,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 10,
+      "adhyaya": 90,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 98428,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 1,
+      "source_count": 24,
+      "imported_count": 24,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 334435,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 2,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 136467,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 3,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 107973,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 4,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 107979,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 5,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 108112,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 6,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 334434,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 7,
+      "source_count": 74,
+      "imported_count": 74,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 334433,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 8,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 334484,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 9,
+      "source_count": 33,
+      "imported_count": 33,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 108428,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 10,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 108555,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 11,
+      "source_count": 48,
+      "imported_count": 48,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 333763,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        13
+      ]
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 12,
+      "source_count": 24,
+      "imported_count": 24,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333764,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 13,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 109128,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 14,
+      "source_count": 46,
+      "imported_count": 46,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 109129,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 15,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333765,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 16,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333447,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 17,
+      "source_count": 58,
+      "imported_count": 58,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 304437,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 18,
+      "source_count": 48,
+      "imported_count": 48,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 111085,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 19,
+      "source_count": 45,
+      "imported_count": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333766,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 20,
+      "source_count": 37,
+      "imported_count": 37,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 111214,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 21,
+      "source_count": 43,
+      "imported_count": 43,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 336134,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 22,
+      "source_count": 61,
+      "imported_count": 61,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333875,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 23,
+      "source_count": 60,
+      "imported_count": 60,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 333874,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        52
+      ]
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 24,
+      "source_count": 29,
+      "imported_count": 29,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96553,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 25,
+      "source_count": 36,
+      "imported_count": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 333873,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 26,
+      "source_count": 35,
+      "imported_count": 35,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 111397,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 27,
+      "source_count": 55,
+      "imported_count": 55,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 113579,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        40
+      ]
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 28,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96557,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 29,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96558,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 30,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96559,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 11,
+      "adhyaya": 31,
+      "source_count": 28,
+      "imported_count": 28,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96560,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 1,
+      "source_count": 41,
+      "imported_count": 41,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96562,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 2,
+      "source_count": 44,
+      "imported_count": 44,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353964,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 3,
+      "source_count": 52,
+      "imported_count": 52,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353961,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 4,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "printed_gap",
+      "revid": 112833,
+      "license": "CC-BY-SA-4.0",
+      "skipped_printed": [
+        3
+      ]
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 5,
+      "source_count": 13,
+      "imported_count": 13,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 112834,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 6,
+      "source_count": 80,
+      "imported_count": 80,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 112835,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 7,
+      "source_count": 25,
+      "imported_count": 25,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 112850,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 8,
+      "source_count": 49,
+      "imported_count": 49,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 112864,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 9,
+      "source_count": 34,
+      "imported_count": 34,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 112866,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 10,
+      "source_count": 42,
+      "imported_count": 42,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96437,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 11,
+      "source_count": 50,
+      "imported_count": 50,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 353433,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 12,
+      "source_count": 68,
+      "imported_count": 68,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96446,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "skandha": 12,
+      "adhyaya": 13,
+      "source_count": 23,
+      "imported_count": 23,
+      "missing_ids": [],
+      "extra_ids": [],
+      "status": "ok",
+      "revid": 96469,
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}
