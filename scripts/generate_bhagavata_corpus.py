@@ -72,9 +72,10 @@ FROM_DEVA_DIGIT = str.maketrans("०१२३४५६७८९", "0123456789")
 
 # Numbering styles on sa.wikisource Bhāgavata pages (detected per chapter):
 #   A  ॥ N ॥ / । N ॥ / । ०९ ॥ / compact ॥N॥
-#   B  one-or-two spaces + N at EOL (gadya; used when A/C are absent, e.g. 5.1–5.2, 12.x)
+#   B  one-or-two spaces + N at EOL (gadya; used when A/C/D are absent, e.g. 5.1–5.2, 12.x)
 #   C  N। after a pāda (skandhas 7–8). Style B is never mixed into a chapter
-#      that already has A/C markers — leftover « १» after 1.1.23 is not a verse.
+#      that already has A/C/D markers — leftover « १» after 1.1.23 is not a verse.
+#   D  ॥ ०५.२४.००१ ॥  (sk.adh.verse with leading zeros; 5.24)
 _DEVA_NUM = r"[०१२३४५६७८९0-9]+"
 VERSE_END_CLASSIC = re.compile(
     rf"[।॥]\s*({_DEVA_NUM})\s*[।॥]"
@@ -85,6 +86,10 @@ VERSE_END_BARE = re.compile(
 )
 VERSE_END_NUM_DANDA = re.compile(
     rf"[ \t]+({_DEVA_NUM})[।॥]"
+)
+# D  ॥ ०५.२४.००१ ॥  (sk.adh.verse with leading zeros; 5.24+)
+VERSE_END_DOTTED = re.compile(
+    rf"[।॥]\s*{_DEVA_NUM}\.{_DEVA_NUM}\.({_DEVA_NUM})\s*[।॥]"
 )
 # Split tens/units leftover after a classic split: « ६ ॥» following «॥ २ ॥».
 _SPLIT_REST_DIGIT = re.compile(
@@ -141,7 +146,7 @@ def parse_int(token: str) -> int:
 def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int, int]]:
     """Locate verse-number markers; drop overlaps; join adjacent split digits."""
     hits: list[tuple[int, int, int]] = []
-    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA]
+    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA, VERSE_END_DOTTED]
     if allow_bare:
         pats.append(VERSE_END_BARE)
     for pat in pats:
@@ -918,6 +923,11 @@ See `docs/bhagavata-source-research.md`.
 
 
 def main() -> int:
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+        sys.stderr.reconfigure(line_buffering=True)
+    except Exception:
+        pass
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--delay", type=float, default=0.4, help="seconds between API batches (be polite)")
@@ -951,7 +961,7 @@ def main() -> int:
             write_source_md(summary)
         return 0
     except SourceBlocker as e:
-        print(str(e), file=sys.stderr)
+        print(str(e), file=sys.stderr, flush=True)
         return 2
 
 

@@ -171,6 +171,16 @@ class ParserTests(unittest.TestCase):
         self.assertIn("पर्यगोपायत्", verses[0]["deva"])
         self.assertIn("तपस्व्याराधयां", verses[1]["deva"])
 
+    def test_dotted_sk_adh_verse_markers(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_24_dotted.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 5, 24)
+        self.assertEqual([v["ref"] for v in verses], ["5.24.1", "5.24.2", "5.24.3"])
+        self.assertIn("स्वर्भानु", verses[0]["deva"])
+        self.assertIn("सुदर्शनं", verses[2]["deva"])
+        self.assertNotIn("स्वर्भानु", verses[1]["deva"])
+
     def test_skandha_12_bare_line_numbers(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_12_1_bare_numbers.wiki"

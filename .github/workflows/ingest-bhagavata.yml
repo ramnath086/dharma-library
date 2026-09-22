@@ -54,6 +54,8 @@ jobs:
           echo >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
       - name: Fetch Wikisource corpus (CC BY-SA 4.0)
+        env:
+          PYTHONUNBUFFERED: "1"
         run: |
           set -o pipefail
           python3 scripts/generate_bhagavata_corpus.py --delay 0.25 --batch-size 10 > ingest-log.txt 2>&1
