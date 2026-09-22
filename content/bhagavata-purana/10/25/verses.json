@@ -3,7 +3,7 @@
   "_source": {
     "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7%E0%A5%A6/%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A7%E0%A4%83/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%AB",
     "title": "श्रीमद्भागवतपुराणम्/स्कन्धः १०/पूर्वार्धः/अध्यायः २५",
-    "retrieved": "2026-09-22T14:55:18Z",
+    "retrieved": "2026-09-22T16:34:15Z",
     "license": "CC-BY-SA-4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sanskrit Wikisource contributors",
@@ -222,8 +222,19 @@
       "iast": "kṛṣṇayogānubhāvaṁ taṁ niśamyendro'tivismitaḥ |\nniḥstambho bhraṣṭasaṅkalpaḥ svān meghān saṁnyavārayat || 24 ||"
     },
     {
-      "ref": "10.25.26",
+      "ref": "10.25.25",
       "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "खं व्यभ्रमुदितादित्यं वातवर्षं च दारुणम् ।\nनिशम्योपरतं गोपान् गोवर्धनधरोऽब्रवीत् ॥ २५ ॥",
+      "iast": "khaṁ vyabhramuditādityaṁ vātavarṣaṁ ca dāruṇam |\nniśamyoparataṁ gopān govardhanadharo'bravīt || 25 ||",
+      "metadata": {
+        "numbering_note": "Wikisource closed this śloka with ॥ ॥ (no printed number); kept as 25 because the previous marker is 24 and the next is 26 (text from the page, numbering supplied)."
+      }
+    },
+    {
+      "ref": "10.25.26",
+      "ordinal": 26,
       "kind": "verse",
       "speaker": null,
       "deva": "खं व्यभ्रमुदितादित्यं वातवर्षं च दारुणम् ।\nनिशम्योपरतं गोपान् गोवर्धनधरोऽब्रवीत् ॥ ॥\nनिर्यात त्यजत त्रासं गोपाः सस्त्रीधनार्भकाः ।\nउपारतं वातवर्षं व्युदप्रायाश्च निम्नगाः ॥ २६ ॥",
@@ -235,7 +246,7 @@
     },
     {
       "ref": "10.25.27",
-      "ordinal": 26,
+      "ordinal": 27,
       "kind": "verse",
       "speaker": null,
       "deva": "ततस्ते निर्ययुर्गोपाः स्वं स्वमादाय गोधनम् ।\nशकटोढोपकरणं स्त्रीबालस्थविराः शनैः ॥ २७ ॥",
@@ -246,7 +257,7 @@
     },
     {
       "ref": "10.25.28",
-      "ordinal": 27,
+      "ordinal": 28,
       "kind": "verse",
       "speaker": null,
       "deva": "भगवानपि तं शैलं स्वस्थाने पूर्ववत्प्रभुः ।\nपश्यतां सर्वभूतानां स्थापयामास लीलया ॥ २८ ॥",
@@ -257,7 +268,7 @@
     },
     {
       "ref": "10.25.29",
-      "ordinal": 28,
+      "ordinal": 29,
       "kind": "verse",
       "speaker": null,
       "deva": "तं प्रेमवेगान् निभृता व्रजौकसो\nयथा समीयुः परिरम्भणादिभिः ।\nगोप्यश्च सस्नेहमपूजयन् मुदा\nदध्यक्षताद्भिर्युयुजुः सदाशिषः ॥ २९ ॥",
@@ -268,7 +279,7 @@
     },
     {
       "ref": "10.25.30",
-      "ordinal": 29,
+      "ordinal": 30,
       "kind": "verse",
       "speaker": null,
       "deva": "यशोदा रोहिणी नन्दो रामश्च बलिनां वरः ।\nकृष्णमालिङ्ग्य युयुजुः आशिषः स्नेहकातराः ॥ ३० ॥",
@@ -279,7 +290,7 @@
     },
     {
       "ref": "10.25.31",
-      "ordinal": 30,
+      "ordinal": 31,
       "kind": "verse",
       "speaker": null,
       "deva": "दिवि देवगणाः सिद्धाः साध्या गन्धर्वचारणाः ।\nतुष्टुवुर्मुमुचुस्तुष्टाः पुष्पवर्षाणि पार्थिव ॥ ३१ ॥",
@@ -290,7 +301,7 @@
     },
     {
       "ref": "10.25.32",
-      "ordinal": 31,
+      "ordinal": 32,
       "kind": "verse",
       "speaker": null,
       "deva": "शङ्खदुन्दुभयो नेदुर्दिवि देवप्रचोदिताः ।\nजगुर्गन्धर्वपतयः तुंबुरुप्रमुखा नृप ॥ ३२ ॥",
@@ -301,7 +312,7 @@
     },
     {
       "ref": "10.25.33",
-      "ordinal": 32,
+      "ordinal": 33,
       "kind": "verse",
       "speaker": null,
       "deva": "ततोऽनुरक्तैः पशुपैः परिश्रितो\nराजन् स्वगोष्ठं सबलोऽव्रजद्धरिः ।\nतथाविधान्यस्य कृतानि गोपिका\nगायन्त्य ईयुर्मुदिता हृदिस्पृशः ॥ ३३ ॥",

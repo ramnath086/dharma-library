@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-22T14:55:18Z",
+  "retrieved": "2026-09-22T16:34:15Z",
   "license": "CC-BY-SA-4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
   "attribution": "Sanskrit Wikisource contributors",
@@ -8,7 +8,7 @@
   "transformation": "MediaWiki wikitext → strip templates/links → split on ॥ N ॥ → IAST via scripts/translit.py. No translations invented. GRETIL not used as source.",
   "expected_chapters": 335,
   "chapters": 335,
-  "verses": 14069,
+  "verses": 14082,
   "skandhas": {
     "1": {
       "chapters": 19,
@@ -44,11 +44,11 @@
     },
     "9": {
       "chapters": 24,
-      "verses": 959
+      "verses": 963
     },
     "10": {
       "chapters": 90,
-      "verses": 3933
+      "verses": 3941
     },
     "11": {
       "chapters": 31,
@@ -56,7 +56,7 @@
     },
     "12": {
       "chapters": 13,
-      "verses": 563
+      "verses": 564
     }
   },
   "pages": [
@@ -2126,7 +2126,7 @@
       "revid": 98813,
       "timestamp": "2016-12-26T11:05:28Z",
       "sha1": "a9d25055d57fc775e8b3dc8e26b24c2a89e76032",
-      "verses": 35
+      "verses": 36
     },
     {
       "skandha": 9,
@@ -2148,7 +2148,7 @@
       "revid": 108352,
       "timestamp": "2017-05-04T18:43:00Z",
       "sha1": "79ab3f22d608ca9caf9195b762d13be2c2c4b053",
-      "verses": 26
+      "verses": 27
     },
     {
       "skandha": 9,
@@ -2159,7 +2159,7 @@
       "revid": 333994,
       "timestamp": "2022-03-23T01:26:17Z",
       "sha1": "fc409b4b6b4fe706012f333320dd540c5869e618",
-      "verses": 48
+      "verses": 49
     },
     {
       "skandha": 9,
@@ -2258,7 +2258,7 @@
       "revid": 98595,
       "timestamp": "2016-12-26T10:10:00Z",
       "sha1": "3c8f43010bd6feadb8cba0da5540ce9b308c9b3a",
-      "verses": 38
+      "verses": 39
     },
     {
       "skandha": 9,
@@ -2390,7 +2390,7 @@
       "revid": 200063,
       "timestamp": "2019-04-23T21:18:34Z",
       "sha1": "6cb738505b3ce504083844e00e74b7cc2f2cf4f1",
-      "verses": 58
+      "verses": 59
     },
     {
       "skandha": 10,
@@ -2412,7 +2412,7 @@
       "revid": 200065,
       "timestamp": "2019-04-23T21:19:39Z",
       "sha1": "9ac3f289cafcf4aeff902a714609cbabfd63d2fb",
-      "verses": 63
+      "verses": 64
     },
     {
       "skandha": 10,
@@ -2445,7 +2445,7 @@
       "revid": 200068,
       "timestamp": "2019-04-23T21:21:17Z",
       "sha1": "4006e698e72a6ff134ab0960ecb84e2fcca139f6",
-      "verses": 66
+      "verses": 67
     },
     {
       "skandha": 10,
@@ -2533,7 +2533,7 @@
       "revid": 183696,
       "timestamp": "2019-01-13T22:36:17Z",
       "sha1": "e5d55669f1a4a88abafb74d6275c507f16ef0186",
-      "verses": 37
+      "verses": 38
     },
     {
       "skandha": 10,
@@ -2544,7 +2544,7 @@
       "revid": 97324,
       "timestamp": "2016-12-20T10:06:01Z",
       "sha1": "f216eb6fafe80c960c04dd2776023d82419e0cc4",
-      "verses": 32
+      "verses": 33
     },
     {
       "skandha": 10,
@@ -2588,7 +2588,7 @@
       "revid": 97347,
       "timestamp": "2016-12-20T10:13:30Z",
       "sha1": "0275978e3c1bc18d15ddac1b55e45d014f14f2bd",
-      "verses": 47
+      "verses": 48
     },
     {
       "skandha": 10,
@@ -2698,7 +2698,7 @@
       "revid": 97568,
       "timestamp": "2016-12-21T10:40:31Z",
       "sha1": "6f7a4773930f06693bdce58f7e502865b9654060",
-      "verses": 56
+      "verses": 57
     },
     {
       "skandha": 10,
@@ -2720,7 +2720,7 @@
       "revid": 97570,
       "timestamp": "2016-12-21T10:42:22Z",
       "sha1": "1f7519b0d64a616d1dc312cfb61e6aa7834bf654",
-      "verses": 51
+      "verses": 52
     },
     {
       "skandha": 10,
@@ -3644,7 +3644,7 @@
       "revid": 112833,
       "timestamp": "2017-07-03T09:42:43Z",
       "sha1": "786c6c517558c5d00382b17e1daf664f50ea56e3",
-      "verses": 42
+      "verses": 43
     },
     {
       "skandha": 12,

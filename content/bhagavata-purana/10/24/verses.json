@@ -3,7 +3,7 @@
   "_source": {
     "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7%E0%A5%A6/%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A7%E0%A4%83/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%AA",
     "title": "श्रीमद्भागवतपुराणम्/स्कन्धः १०/पूर्वार्धः/अध्यायः २४",
-    "retrieved": "2026-09-22T14:55:18Z",
+    "retrieved": "2026-09-22T16:34:15Z",
     "license": "CC-BY-SA-4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sanskrit Wikisource contributors",
@@ -214,8 +214,19 @@
       "iast": "rajasā coditā meghā varṣantyambūni sarvataḥ |\nprajāstaireva sidhyanti mahendraḥ kiṁ kariṣyati || 23 ||"
     },
     {
-      "ref": "10.24.25",
+      "ref": "10.24.24",
       "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न नः पुरोजनपदा न ग्रामा न गृहा वयम् ।\nनित्यं वनौकसस्तात वनशैलनिवासिनः ॥ २४ ॥",
+      "iast": "na naḥ purojanapadā na grāmā na gṛhā vayam |\nnityaṁ vanaukasastāta vanaśailanivāsinaḥ || 24 ||",
+      "metadata": {
+        "numbering_note": "Wikisource closed this śloka with ॥ ॥ (no printed number); kept as 24 because the previous marker is 23 and the next is 25 (text from the page, numbering supplied)."
+      }
+    },
+    {
+      "ref": "10.24.25",
+      "ordinal": 25,
       "kind": "verse",
       "speaker": null,
       "deva": "न नः पुरोजनपदा न ग्रामा न गृहा वयम् ।\nनित्यं वनौकसस्तात वनशैलनिवासिनः ॥ ॥\nतस्माद्गवां ब्राह्मणानां अद्रेश्चारभ्यतां मखः ।\nय इंद्रयागसंभाराः तैरयं साध्यतां मखः ॥ २५ ॥",
@@ -227,7 +238,7 @@
     },
     {
       "ref": "10.24.26",
-      "ordinal": 25,
+      "ordinal": 26,
       "kind": "verse",
       "speaker": null,
       "deva": "पच्यन्तां विविधाः पाकाः सूपान्ताः पायसादयः ।\nसंयावापूपशष्कुल्यः सर्वदोहश्च गृह्यताम् ॥ २६ ॥",
@@ -238,7 +249,7 @@
     },
     {
       "ref": "10.24.27",
-      "ordinal": 26,
+      "ordinal": 27,
       "kind": "verse",
       "speaker": null,
       "deva": "हूयन्तामग्नयः सम्यग् ब्राह्मणैर्ब्रह्मवादिभिः ।\nअन्नं बहुगुणं तेभ्यो देयं वो धेनुदक्षिणाः ॥ २७ ॥",
@@ -249,7 +260,7 @@
     },
     {
       "ref": "10.24.28",
-      "ordinal": 27,
+      "ordinal": 28,
       "kind": "verse",
       "speaker": null,
       "deva": "अन्येभ्यश्चाश्वचाण्डाल पतितेभ्यो यथार्हतः ।\nयवसं च गवां दत्त्वा गिरये दीयतां बलिः ॥ २८ ॥",
@@ -260,7 +271,7 @@
     },
     {
       "ref": "10.24.29",
-      "ordinal": 28,
+      "ordinal": 29,
       "kind": "verse",
       "speaker": null,
       "deva": "स्वलङ्कृता भुक्तवन्तः स्वनुलिप्ताः सुवाससः ।\nप्रदक्षिणां च कुरुत गोविप्रानलपर्वतान् ॥ २९ ॥",
@@ -271,7 +282,7 @@
     },
     {
       "ref": "10.24.30",
-      "ordinal": 29,
+      "ordinal": 30,
       "kind": "verse",
       "speaker": null,
       "deva": "एतन्मम मतं तात क्रियतां यदि रोचते ।\nअयं गोब्राह्मणाद्रीणां मह्यं च दयितो मखः ॥ ३० ॥",
@@ -282,7 +293,7 @@
     },
     {
       "ref": "10.24.31",
-      "ordinal": 30,
+      "ordinal": 31,
       "kind": "verse",
       "speaker": null,
       "deva": "श्रीशुक उवाच -\nकालात्मना भगवता शक्रदर्पं जिघांसता ।\nप्रोक्तं निशम्य नन्दाद्याः साध्वगृह्णन्त तद्वचः ॥ ३१ ॥",
@@ -293,7 +304,7 @@
     },
     {
       "ref": "10.24.32",
-      "ordinal": 31,
+      "ordinal": 32,
       "kind": "verse",
       "speaker": null,
       "deva": "तथा च व्यदधुः सर्वं यथाऽऽह मधुसूदनः ।\nवाचयित्वा स्वस्त्ययनं तद् द्रव्येण गिरिद्विजान् ॥ ३२ ॥",
@@ -304,7 +315,7 @@
     },
     {
       "ref": "10.24.33",
-      "ordinal": 32,
+      "ordinal": 33,
       "kind": "verse",
       "speaker": null,
       "deva": "उपहृत्य बलीन् सम्यग् सर्वान् आदृता यवसं गवाम् ।\nगोधनानि पुरस्कृत्य गिरिं चक्रुः प्रदक्षिणम् ॥ ३३ ॥",
@@ -315,7 +326,7 @@
     },
     {
       "ref": "10.24.34",
-      "ordinal": 33,
+      "ordinal": 34,
       "kind": "verse",
       "speaker": null,
       "deva": "अनांस्यनडुद्युक्तानि ते चारुह्य स्वलङ्कृताः ।\nगोप्यश्च कृष्णवीर्याणि गायन्त्यः सद्विजाशिषः ॥ ३४ ॥",
@@ -326,7 +337,7 @@
     },
     {
       "ref": "10.24.35",
-      "ordinal": 34,
+      "ordinal": 35,
       "kind": "verse",
       "speaker": null,
       "deva": "कृष्णस्त्वन्यतमं रूपं गोपविश्रम्भणं गतः ।\nशैलोऽस्मीति ब्रुवन् भूरि बलिमादद् बृहद्वपुः ॥ ३५ ॥",
@@ -337,7 +348,7 @@
     },
     {
       "ref": "10.24.36",
-      "ordinal": 35,
+      "ordinal": 36,
       "kind": "verse",
       "speaker": null,
       "deva": "तस्मै नमो व्रजजनैः सह चक्रेऽऽत्मनाऽऽत्मने ।\nअहो पश्यत शैलोऽसौ रूपी नोऽनुग्रहं व्यधात् ॥ ३६ ॥",
@@ -348,7 +359,7 @@
     },
     {
       "ref": "10.24.37",
-      "ordinal": 36,
+      "ordinal": 37,
       "kind": "verse",
       "speaker": null,
       "deva": "एषोऽवजानतो मर्त्यान् कामरूपी वनौकसः ।\nहन्ति ह्यस्मै नमस्यामः शर्मणे आत्मनो गवाम् ॥ ३७ ॥",
@@ -359,7 +370,7 @@
     },
     {
       "ref": "10.24.38",
-      "ordinal": 37,
+      "ordinal": 38,
       "kind": "verse",
       "speaker": null,
       "deva": "इत्यद्रिगोद्विजमखं वासुदेवप्रचोदिताः ।\nयथा विधाय ते गोपा सहकृष्णा व्रजं ययुः ॥ ३८ ॥",

@@ -2,8 +2,8 @@
   "skandhas": 12,
   "expected_chapters": 335,
   "chapters_on_disk": 335,
-  "imported_verses": 14069,
-  "unique_refs": 14069,
+  "imported_verses": 14082,
+  "unique_refs": 14082,
   "duplicate_refs": [],
   "empty_mula": [],
   "malformed_ids": [],
@@ -117,81 +117,9 @@
       ]
     },
     {
-      "chapter": "9.11",
-      "skipped": [
-        11
-      ]
-    },
-    {
-      "chapter": "9.13",
-      "skipped": [
-        13
-      ]
-    },
-    {
-      "chapter": "9.14",
-      "skipped": [
-        14
-      ]
-    },
-    {
-      "chapter": "9.23",
-      "skipped": [
-        23
-      ]
-    },
-    {
       "chapter": "9.24",
       "skipped": [
         20
-      ]
-    },
-    {
-      "chapter": "10.11",
-      "skipped": [
-        11
-      ]
-    },
-    {
-      "chapter": "10.13",
-      "skipped": [
-        13
-      ]
-    },
-    {
-      "chapter": "10.16",
-      "skipped": [
-        16
-      ]
-    },
-    {
-      "chapter": "10.24",
-      "skipped": [
-        24
-      ]
-    },
-    {
-      "chapter": "10.25",
-      "skipped": [
-        25
-      ]
-    },
-    {
-      "chapter": "10.29",
-      "skipped": [
-        29
-      ]
-    },
-    {
-      "chapter": "10.39",
-      "skipped": [
-        39
-      ]
-    },
-    {
-      "chapter": "10.41",
-      "skipped": [
-        41
       ]
     },
     {
@@ -217,16 +145,10 @@
       "skipped": [
         40
       ]
-    },
-    {
-      "chapter": "12.4",
-      "skipped": [
-        3
-      ]
     }
   ],
   "missing_files": [],
-  "numbering_notes": 49,
+  "numbering_notes": 77,
   "unexplained": [],
   "skandha_counts": {
     "1": {
@@ -263,11 +185,11 @@
     },
     "9": {
       "chapters": 24,
-      "verses": 959
+      "verses": 963
     },
     "10": {
       "chapters": 90,
-      "verses": 3933
+      "verses": 3941
     },
     "11": {
       "chapters": 31,
@@ -275,7 +197,7 @@
     },
     "12": {
       "chapters": 13,
-      "verses": 563
+      "verses": 564
     }
   },
   "chapters": [
@@ -2385,16 +2307,13 @@
     {
       "skandha": 9,
       "adhyaya": 11,
-      "source_count": 35,
-      "imported_count": 35,
+      "source_count": 36,
+      "imported_count": 36,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 98813,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        11
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 9,
@@ -2410,30 +2329,24 @@
     {
       "skandha": 9,
       "adhyaya": 13,
-      "source_count": 26,
-      "imported_count": 26,
+      "source_count": 27,
+      "imported_count": 27,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 108352,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        13
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 9,
       "adhyaya": 14,
-      "source_count": 48,
-      "imported_count": 48,
+      "source_count": 49,
+      "imported_count": 49,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 333994,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        14
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 9,
@@ -2526,16 +2439,13 @@
     {
       "skandha": 9,
       "adhyaya": 23,
-      "source_count": 38,
-      "imported_count": 38,
+      "source_count": 39,
+      "imported_count": 39,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 98595,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        23
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 9,
@@ -2664,16 +2574,13 @@
     {
       "skandha": 10,
       "adhyaya": 11,
-      "source_count": 58,
-      "imported_count": 58,
+      "source_count": 59,
+      "imported_count": 59,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 200063,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        11
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -2689,16 +2596,13 @@
     {
       "skandha": 10,
       "adhyaya": 13,
-      "source_count": 63,
-      "imported_count": 63,
+      "source_count": 64,
+      "imported_count": 64,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 200065,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        13
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -2725,16 +2629,13 @@
     {
       "skandha": 10,
       "adhyaya": 16,
-      "source_count": 66,
-      "imported_count": 66,
+      "source_count": 67,
+      "imported_count": 67,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 200068,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        16
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -2816,30 +2717,24 @@
     {
       "skandha": 10,
       "adhyaya": 24,
-      "source_count": 37,
-      "imported_count": 37,
+      "source_count": 38,
+      "imported_count": 38,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 183696,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        24
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
       "adhyaya": 25,
-      "source_count": 32,
-      "imported_count": 32,
+      "source_count": 33,
+      "imported_count": 33,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 97324,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        25
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -2877,16 +2772,13 @@
     {
       "skandha": 10,
       "adhyaya": 29,
-      "source_count": 47,
-      "imported_count": 47,
+      "source_count": 48,
+      "imported_count": 48,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 97347,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        29
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -2990,16 +2882,13 @@
     {
       "skandha": 10,
       "adhyaya": 39,
-      "source_count": 56,
-      "imported_count": 56,
+      "source_count": 57,
+      "imported_count": 57,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 97568,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        39
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -3015,16 +2904,13 @@
     {
       "skandha": 10,
       "adhyaya": 41,
-      "source_count": 51,
-      "imported_count": 51,
+      "source_count": 52,
+      "imported_count": 52,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 97570,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        41
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 10,
@@ -3954,16 +3840,13 @@
     {
       "skandha": 12,
       "adhyaya": 4,
-      "source_count": 42,
-      "imported_count": 42,
+      "source_count": 43,
+      "imported_count": 43,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 112833,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        3
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 12,
