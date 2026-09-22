@@ -189,3 +189,19 @@ When the importer succeeds it must:
 Anyone quoting “the complete Bhāgavata is in this build” is wrong until the
 importer has been run successfully and the reported counts replace
 `metadata.pilot_scope`.
+
+## Remaining printed-number gaps (live Wikisource, 2026-09-22)
+
+Parser closes that keep page mūla (not invented):
+
+* `N ॥` / `N ।` with space between number and danda (6.1.44, 6.8.27)
+* number glued to the last akṣara then a danda (8.8.23, 11.23.52)
+* `[http://…]` footnote or `(…पाठभेदः)` between number and danda (8.11.16, 9.24.20)
+* one-word gloss after the number at EOL (`२६ अभिजित्।`, 10.83.26)
+
+Edition jumps with no mūla on the Wikisource page (do not invent). Other
+vulgate witnesses (Gita Press / BBT / GRETIL) sometimes print a verse here;
+those wordings are not CC BY-SA Wikisource and are not shipped:
+
+* 1.13.36 (35→37), 4.1.52 (51→53), 4.21.45 (44→46), 8.7.5 (4→6),
+  8.16.23 (22→24), 11.11.13 (12→14), 11.27.40 (39→41, 41 printed twice).

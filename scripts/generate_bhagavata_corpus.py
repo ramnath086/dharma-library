@@ -91,7 +91,13 @@ VERSE_END_GLUED_EOL = re.compile(
     re.M,
 )
 VERSE_END_NUM_DANDA = re.compile(
-    rf"[ \t]+({_DEVA_NUM})[।॥]"
+    rf"[ \t]+({_DEVA_NUM})(?:[ \t]+[\u0900-\u097F]+)?[ \t]*[।॥]"
+)
+# Number glued to the last akṣara then a danda: «माम्२३।» / «दुःखम्५२।».
+# Always on (unlike gadya-only GLUED_EOL) because these chapters already
+# use danda-delimited numbers.
+VERSE_END_GLUED_DANDA = re.compile(
+    rf"(?<=[\u0900-\u097F])({_DEVA_NUM})[ \t]*[।॥]"
 )
 # Compact close after a MediaWiki line-break: « \\१७॥ » (1.15).
 VERSE_END_ESCAPED = re.compile(
@@ -167,7 +173,7 @@ def parse_int(token: str) -> int:
 def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int, int]]:
     """Locate verse-number markers; drop overlaps; join adjacent split digits."""
     hits: list[tuple[int, int, int]] = []
-    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA, VERSE_END_ESCAPED, VERSE_END_OPEN_EOL, VERSE_END_DOTTED]
+    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA, VERSE_END_GLUED_DANDA, VERSE_END_ESCAPED, VERSE_END_OPEN_EOL, VERSE_END_DOTTED]
     if allow_bare:
         pats.append(VERSE_END_BARE)
         pats.append(VERSE_END_GLUED_EOL)
@@ -261,6 +267,9 @@ def strip_wiki(text: str) -> str:
     text = text.replace("&nbsp;", " ").replace("\xa0", " ")
     text = text.replace("\u200c", "").replace("\u200d", "")  # ZWNJ/ZWJ in श्रीमद्‌भागवत
     text = text.replace("।।", "॥")
+    # Editorial footnotes, not mūla: «१६ [http://… टिप्पणी]।», «२० (…पाठभेदः)।».
+    text = re.sub(r"\[https?://[^\]]+\]", "", text)
+    text = re.sub(r"\([^)]*पाठभेद[^)]*\)", "", text)
     # Drop heading lines (== ... ==) and category links leftover.
     lines = []
     for line in text.splitlines():

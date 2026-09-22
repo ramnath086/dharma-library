@@ -240,6 +240,51 @@ class ParserTests(unittest.TestCase):
         self.assertIn("विश्वामित्रो", verses[2]["deva"])
         self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
 
+    def test_space_between_number_and_danda(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_close_variants.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 6, 1)
+        self.assertEqual([v["ref"] for v in verses], ["6.1.43", "6.1.44", "6.1.45"])
+        self.assertIn("ह्यकर्मकृत्", verses[1]["deva"])
+        self.assertNotIn("अकर्मकृत्", verses[2]["deva"])
+
+    def test_style_c_number_space_danda(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_num_space_danda.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 6, 8)
+        self.assertEqual([v["ref"] for v in verses], ["6.8.26", "6.8.27", "6.8.28"])
+        self.assertIn("सरीसृपेभ्यो", verses[1]["deva"])
+
+    def test_number_glued_to_akshara_then_danda(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_glued_danda.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 8, 8)
+        self.assertEqual([v["ref"] for v in verses], ["8.8.22", "8.8.23", "8.8.24"])
+        self.assertIn("काङ्क्षते", verses[1]["deva"])
+        self.assertNotIn("विमृश्य", verses[1]["deva"])
+
+    def test_editorial_footnote_pathabheda_and_gloss_after_number(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_editorial_and_gloss.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 10, 83)
+        refs = [v["ref"] for v in verses]
+        self.assertIn("10.83.16", refs)
+        self.assertIn("10.83.20", refs)
+        self.assertIn("10.83.26", refs)
+        v16 = next(v for v in verses if v["ref"] == "10.83.16")
+        self.assertIn("विभुः", v16["deva"])
+        self.assertNotIn("http", v16["deva"])
+        v20 = next(v for v in verses if v["ref"] == "10.83.20")
+        self.assertIn("पुनर्वसुः", v20["deva"])
+        self.assertNotIn("पाठभेद", v20["deva"])
+        v26 = next(v for v in verses if v["ref"] == "10.83.26")
+        self.assertIn("स्थिते", v26["deva"])
+        self.assertNotIn("दुन्दुभयो", v26["deva"])
+
     def test_open_danda_number_at_eol_without_close(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_5_26_open_eol.wiki"
