@@ -10,11 +10,55 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-Future<void> _settle(WidgetTester tester) async {
-  for (var i = 0; i < 15; i++) {
+Future<void> _settleUntil(WidgetTester tester, Finder finder, {int frames = 40}) async {
+  for (var i = 0; i < frames; i++) {
     await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 50)));
     await tester.pump(const Duration(milliseconds: 100));
+    if (finder.evaluate().isNotEmpty) return;
   }
+}
+
+/// Tiny second-work bundle so the catalogue test does not import the 3.5 MB Gītā JSON.
+Map<String, dynamic> _stubGitaBundle() {
+    const chapterCounts = [47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 34, 27, 20, 24, 28, 78];
+  assert(chapterCounts.reduce((a, b) => a + b) == 700);
+  return {
+    'toc': {
+      'work': {
+        'id': 'work-bhagavad-gita',
+        'slug': 'bhagavad-gita',
+        'short_code': 'BG',
+        'title_iast': 'Śrīmad Bhagavad Gītā',
+        'title_sa': 'श्रीमद्भगवद्गीता',
+        'original_language': 'sa',
+        'original_script': 'Deva',
+        'structure': const [],
+        'metadata': const {'total_chapters': 18, 'total_verses': 700},
+      },
+      'sections': [
+        for (var i = 0; i < chapterCounts.length; i++)
+          {
+            'id': 'gita-ch-${i + 1}',
+            'ref': '${i + 1}',
+            'level': 1,
+            'ordinal': i + 1,
+            'verse_count': chapterCounts[i],
+            'title_iast': 'Adhyāya ${i + 1}',
+            'children': const [],
+          },
+      ],
+    },
+    'editions': const [],
+    'people': const [],
+    'places': const [],
+    'topics': const [],
+    'stories': const [],
+    'mentions': const [],
+    'entity_names': const [],
+    'cross_references': const [],
+    'sections': const [],
+    'generated_at': '2026-09-22T00:00:00Z',
+  };
 }
 
 void main() {
@@ -30,7 +74,7 @@ void main() {
     final store = await tester.runAsync(() => LocalStore.inMemory());
     await tester.runAsync(() async {
       await store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>());
-      await store.importBundle((jsonDecode(File('assets/bundles/bhagavad-gita.json').readAsStringSync()) as Map).cast<String, dynamic>());
+      await store.importBundle(_stubGitaBundle());
     });
 
     await tester.pumpWidget(ProviderScope(
@@ -41,7 +85,7 @@ void main() {
       ],
       child: const DharmaLibraryApp(),
     ));
-    await _settle(tester);
+    await _settleUntil(tester, find.textContaining('Published works'));
 
     expect(find.textContaining('Bhāgavata'), findsWidgets);
     expect(find.textContaining('Bhagavad Gītā'), findsWidgets);
