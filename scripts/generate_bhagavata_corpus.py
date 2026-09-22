@@ -84,6 +84,12 @@ VERSE_END_BARE = re.compile(
     rf"(?<=[ \t])({_DEVA_NUM})(?=[ \t]*$|[ \t]{{2}})",
     re.M,
 )
+# Gadya close glued to the last akṣara: «वर्णयिष्यामः१२» (5.4). Only used
+# when the chapter has no danda-delimited numbers (same gate as BARE).
+VERSE_END_GLUED_EOL = re.compile(
+    rf"(?<=[\u0900-\u097F])({_DEVA_NUM})[ \t]*$",
+    re.M,
+)
 VERSE_END_NUM_DANDA = re.compile(
     rf"[ \t]+({_DEVA_NUM})[।॥]"
 )
@@ -159,6 +165,7 @@ def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int
     pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA, VERSE_END_ESCAPED, VERSE_END_DOTTED]
     if allow_bare:
         pats.append(VERSE_END_BARE)
+        pats.append(VERSE_END_GLUED_EOL)
     for pat in pats:
         for m in pat.finditer(body):
             hits.append((m.start(), m.end(), parse_int(m.group(1))))
