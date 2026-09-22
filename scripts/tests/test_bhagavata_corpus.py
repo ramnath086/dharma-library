@@ -240,6 +240,15 @@ class ParserTests(unittest.TestCase):
         self.assertIn("विश्वामित्रो", verses[2]["deva"])
         self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
 
+    def test_backslash_escaped_verse_number(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_1_15_escaped_number.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 1, 15)
+        self.assertEqual([v["ref"] for v in verses], ["1.15.16", "1.15.17", "1.15.18"])
+        self.assertIn("न प्राहरन", verses[1]["deva"])
+        self.assertNotIn("नर्माण्युदार", verses[1]["deva"])
+
     def test_empty_danda_pair_infers_skipped_number(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_10_11_empty_danda.wiki"

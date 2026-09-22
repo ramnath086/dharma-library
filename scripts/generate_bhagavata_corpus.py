@@ -87,6 +87,10 @@ VERSE_END_BARE = re.compile(
 VERSE_END_NUM_DANDA = re.compile(
     rf"[ \t]+({_DEVA_NUM})[।॥]"
 )
+# Compact close after a MediaWiki line-break: « \\१७॥ » (1.15).
+VERSE_END_ESCAPED = re.compile(
+    rf"\\+({_DEVA_NUM})[।॥]"
+)
 # D  ॥ ०५.२४.००१ ॥  (sk.adh.verse with leading zeros; 5.24+)
 VERSE_END_DOTTED = re.compile(
     rf"[।॥]\s*{_DEVA_NUM}\.{_DEVA_NUM}\.({_DEVA_NUM})\s*[।॥]"
@@ -152,7 +156,7 @@ def parse_int(token: str) -> int:
 def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int, int]]:
     """Locate verse-number markers; drop overlaps; join adjacent split digits."""
     hits: list[tuple[int, int, int]] = []
-    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA, VERSE_END_DOTTED]
+    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA, VERSE_END_ESCAPED, VERSE_END_DOTTED]
     if allow_bare:
         pats.append(VERSE_END_BARE)
     for pat in pats:
