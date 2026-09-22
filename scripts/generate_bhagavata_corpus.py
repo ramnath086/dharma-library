@@ -753,6 +753,7 @@ def merge_pilot_translations(new_verses: list[dict], existing_path: pathlib.Path
         "en", "ml", "word_meanings", "notes_en", "mentions", "xrefs",
         "meter", "metadata", "deva", "iast", "kind",
     )
+    seen: set[str] = set()
     for v in new_verses:
         prev = old.get(v["ref"])
         if prev:
@@ -765,6 +766,28 @@ def merge_pilot_translations(new_verses: list[dict], existing_path: pathlib.Path
             out.append(merged)
         else:
             out.append(v)
+        seen.add(v["ref"])
+    # Keep verified extra units the parser did not emit (BBT printed-number fills).
+    extra = []
+    for ref, prev in old.items():
+        if ref in seen:
+            continue
+        meta = prev.get("metadata") or {}
+        if meta.get("source_witness") == "bbt-vedabase":
+            extra.append(dict(prev))
+    if extra:
+        out.extend(extra)
+
+        def _printed_key(ref: str) -> tuple[int, str]:
+            tail = ref.split(".")[-1]
+            m = re.match(r"^(\d+)([a-z])?$", tail)
+            if not m:
+                return (10**9, ref)
+            return (int(m.group(1)), m.group(2) or "")
+
+        out.sort(key=lambda v: _printed_key(v["ref"]))
+        for i, v in enumerate(out, 1):
+            v["ordinal"] = i
     return out
 
 

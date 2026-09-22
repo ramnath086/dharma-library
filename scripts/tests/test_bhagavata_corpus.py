@@ -395,6 +395,37 @@ class MergePilotTests(unittest.TestCase):
         self.assertEqual(merged[0]["speaker"], None)  # original 1.1.4 has no speaker slug
         self.assertNotIn("en", merged[1])
 
+    def test_keeps_bbt_fills_absent_from_parser(self):
+        import tempfile
+        incoming = [
+            {"ref": "1.13.35", "ordinal": 1, "kind": "verse", "speaker": None, "deva": "A", "iast": "a"},
+            {"ref": "1.13.37", "ordinal": 2, "kind": "verse", "speaker": None, "deva": "C", "iast": "c"},
+        ]
+        payload = {
+            "verses": [
+                {"ref": "1.13.35", "ordinal": 1, "kind": "verse", "speaker": None, "deva": "A", "iast": "a"},
+                {
+                    "ref": "1.13.36",
+                    "ordinal": 2,
+                    "kind": "verse",
+                    "speaker": None,
+                    "deva": "B",
+                    "iast": "b",
+                    "metadata": {"source_witness": "bbt-vedabase", "source_url": "https://vedabase.io/en/library/sb/1/13/36/"},
+                },
+                {"ref": "1.13.37", "ordinal": 3, "kind": "verse", "speaker": None, "deva": "C", "iast": "c"},
+            ]
+        }
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".json", delete=False) as fh:
+            json.dump(payload, fh)
+            path = pathlib.Path(fh.name)
+        merged = G.merge_pilot_translations(incoming, path)
+        path.unlink()
+        self.assertEqual([v["ref"] for v in merged], ["1.13.35", "1.13.36", "1.13.37"])
+        self.assertEqual([v["ordinal"] for v in merged], [1, 2, 3])
+        self.assertEqual(merged[1]["deva"], "B")
+        self.assertEqual(merged[1]["metadata"]["source_witness"], "bbt-vedabase")
+
 
 if __name__ == "__main__":
     unittest.main()
