@@ -171,6 +171,45 @@ class ParserTests(unittest.TestCase):
         self.assertIn("पर्यगोपायत्", verses[0]["deva"])
         self.assertIn("तपस्व्याराधयां", verses[1]["deva"])
 
+    def test_skandha_12_bare_line_numbers(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_12_1_bare_numbers.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 12, 1)
+        self.assertEqual([v["ref"] for v in verses], ["12.1.1", "12.1.2", "12.1.3"])
+        self.assertIn("शुनको", verses[0]["deva"])
+        self.assertIn("प्रद्योतसंज्ञं", verses[1]["deva"])
+
+    def test_trailing_bare_digit_does_not_rewind_classic_chapter(self):
+        wiki = "जन्माद्यस्य यतः ॥ २३ ॥\nइति श्रीमद्भागवते leftover १\n"
+        verses = G.parse_wikitext(wiki, 1, 1)
+        self.assertEqual([v["ref"] for v in verses], ["1.1.23"])
+
+    def test_classic_markers_win_over_bare_on_later_skandha_5(self):
+        # 5.26 numbers with ॥ N ॥; leftover « ३» must not become a verse.
+        wiki = "foo ॥ १ ॥\nbar ॥ २ ॥\nbaz ३\n"
+        verses = G.parse_wikitext(wiki, 5, 26)
+        self.assertEqual([v["ref"] for v in verses], ["5.26.1", "5.26.2"])
+
+    def test_compact_danda_numbers(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_11_1_compact.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 11, 1)
+        self.assertEqual([v["ref"] for v in verses], ["11.1.1", "11.1.2", "11.1.3"])
+        self.assertIn("दैत्यवधं", verses[0]["deva"])
+        self.assertIn("कोपिताः", verses[1]["deva"])
+
+    def test_skandha_11_dropped_digit_after_ten(self):
+        wiki = (
+            pathlib.Path(__file__).parent / "fixtures" / "bhagavata_11_1_dropped_eleven.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 11, 1)
+        self.assertEqual([v["ref"] for v in verses], ["11.1.10", "11.1.11", "11.1.12"])
+        self.assertIn("निसृष्टाः", verses[1]["deva"])
+        self.assertIn("विश्वामित्रो", verses[2]["deva"])
+        self.assertIn("dropped digit", verses[1]["metadata"]["numbering_note"])
+
     def test_skandha_7_number_then_danda(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_1_number_then_danda.wiki"

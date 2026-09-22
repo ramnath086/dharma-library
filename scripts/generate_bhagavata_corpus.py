@@ -70,10 +70,11 @@ SKANDHA_10_PURVA_LAST = 49
 DEVA_DIGIT = str.maketrans("0123456789", "०१२३४५६७८९")
 FROM_DEVA_DIGIT = str.maketrans("०१२३४५६७८९", "0123456789")
 
-# Three numbering styles on sa.wikisource Bhāgavata pages:
-#   A  ॥ N ॥ / । N ॥ / । ०९ ॥   (skandhas 1–4, 6, 10–12)
-#   B  two-or-more spaces + N    (skandha 5 gadya, no danda)
-#   C  N।  at the end of a line  (skandha 7)
+# Numbering styles on sa.wikisource Bhāgavata pages (detected per chapter):
+#   A  ॥ N ॥ / । N ॥ / । ०९ ॥ / compact ॥N॥
+#   B  one-or-two spaces + N at EOL (gadya; used when A/C are absent, e.g. 5.1–5.2, 12.x)
+#   C  N। after a pāda (skandhas 7–8). Style B is never mixed into a chapter
+#      that already has A/C markers — leftover « १» after 1.1.23 is not a verse.
 _DEVA_NUM = r"[०१२३४५६७८९0-9]+"
 VERSE_END_CLASSIC = re.compile(
     rf"[।॥]\s*({_DEVA_NUM})\s*[।॥]"
@@ -137,10 +138,13 @@ def parse_int(token: str) -> int:
     return int(token.translate(FROM_DEVA_DIGIT))
 
 
-def _iter_markers(body: str) -> list[tuple[int, int, int]]:
+def _iter_markers(body: str, *, allow_bare: bool = False) -> list[tuple[int, int, int]]:
     """Locate verse-number markers; drop overlaps; join adjacent split digits."""
     hits: list[tuple[int, int, int]] = []
-    for pat in (VERSE_END_CLASSIC, VERSE_END_BARE, VERSE_END_NUM_DANDA):
+    pats = [VERSE_END_CLASSIC, VERSE_END_NUM_DANDA]
+    if allow_bare:
+        pats.append(VERSE_END_BARE)
+    for pat in pats:
         for m in pat.finditer(body):
             hits.append((m.start(), m.end(), parse_int(m.group(1))))
     hits.sort(key=lambda h: (h[0], -(h[1] - h[0])))
@@ -166,9 +170,19 @@ def _iter_markers(body: str) -> list[tuple[int, int, int]]:
     return merged
 
 
-def _split_verse_markers(body: str) -> list[str]:
-    """Like ``re.split`` with one capturing group: [pre, num, rest, num, rest, …]."""
-    markers = _iter_markers(body)
+def _split_verse_markers(body: str, *, allow_bare: bool | None = None) -> list[str]:
+    """Like ``re.split`` with one capturing group: [pre, num, rest, num, rest, …].
+
+    Bare line-numbers (style B) are used only when the chapter has no
+    danda-delimited numbers. That covers 5.1–5.2 and 12.x gadya without
+    letting a leftover « १» rewind a classic chapter such as 1.1.
+    """
+    if allow_bare is None:
+        markers = _iter_markers(body, allow_bare=False)
+        if not markers:
+            markers = _iter_markers(body, allow_bare=True)
+    else:
+        markers = _iter_markers(body, allow_bare=allow_bare)
     if not markers:
         return [body]
     parts: list[str] = []
@@ -312,7 +326,7 @@ def parse_wikitext(wikitext: str, skandha: int, adhyaya: int) -> list[dict]:
         verses.append(payload)
         last_printed = printed
 
-    parts = _split_verse_markers(body)
+    parts = _split_verse_markers(body)  # auto: bare only if no danda markers
     # split → [pre, num, rest, num, rest, ...]
     if len(parts) < 3:
         raise SourceBlocker(
