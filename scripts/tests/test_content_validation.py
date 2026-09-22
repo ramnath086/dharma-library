@@ -129,7 +129,55 @@ class BhagavataPilot(unittest.TestCase):
             self.assertTrue(v["deva"].strip(), ref)
             self.assertNotIn("invent", (meta.get("numbering_note") or "").lower(), ref)
         self.assertEqual(len(seen), w["metadata"]["imported_verse_count"])
-        self.assertEqual(w["metadata"]["imported_verse_count"], 14105)
+        self.assertEqual(len(fills), w["metadata"].get("bbt_vedabase_fill_count"))
+        manifest = _load(BHAGAVATA / "WIKISOURCE_MANIFEST.json")
+        self.assertEqual(
+            w["metadata"]["imported_verse_count"],
+            manifest["verses"] + len(fills),
+        )
+        expected_deva = {
+            "1.13.36": "विमृज्याश्रूणि पाणिभ्यां\nविष्टभ्यात्मानमात्मना ।\nअजातशत्रुं प्रत्यूचे प्रभोः पादावनुस्मरन् ॥ ३६ ॥",
+            "4.1.52": "मेधा स्मृतिं तितिक्षा तु क्षेमं ह्रीः प्रश्रयं सुतम् ।\nमूर्तिः सर्वगुणोत्पत्तिर्नरनारायणावृषी ॥ ५२ ॥",
+            "4.21.45": "मैत्रेय उवाच\nइति ब्रुवाणं नृपतिं पितृदेवद्विजातयः ।\nतुष्टुवुर्हृष्टमनसः साधुवादेन साधवः ॥ ४५ ॥",
+            "8.7.5": "कृतस्थानविभागास्त एवं कश्यपनन्दनाः ।\nममन्थुः परमं यत्ता अमृतार्थं पयोनिधिम् ॥ ५ ॥",
+            "8.16.23": "आदिश त्वं द्विजश्रेष्ठ विधिं तदुपधावनम् ।\nआशु तुष्यति मे देवः सीदन्त्याः सह पुत्रकैः ॥ २३ ॥",
+            "11.11.13": "प्रतिबुद्ध इव स्वप्नान्नानात्वाद् विनिवर्तते ॥ १३ ॥",
+            "11.27.40": "ध्यायन्नभ्यर्च्य दारूणि हविषाभिघृतानि च ।\nप्रास्याज्यभागावाघारौ दत्त्वा चाज्यप्लुतं हविः ॥ ४० ॥",
+        }
+        for ref, de in expected_deva.items():
+            self.assertEqual(by_ref[ref]["deva"], de, ref)
+
+    def test_audit_invariants_and_bundle_match_work_json(self):
+        import sys
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from audit_bhagavata_corpus import audit  # noqa: E402
+
+        w = _load(BHAGAVATA / "work.json")
+        meta = w["metadata"]
+        report = audit()
+        self.assertEqual(report["chapters_on_disk"], 335)
+        self.assertEqual(report["imported_verses"], meta["imported_verse_count"])
+        self.assertEqual(report["unique_refs"], report["imported_verses"])
+        self.assertEqual(report["duplicate_refs"], [])
+        self.assertEqual(report["empty_mula"], [])
+        self.assertEqual(report["malformed_ids"], [])
+        self.assertEqual(report["printed_gaps"], [])
+        self.assertEqual(report["bbt_fills_missing"], [])
+        self.assertEqual(report["unexplained"], [])
+        self.assertEqual(
+            set(report["latin_in_deva"]),
+            {"1.13.1", "2.2.25", "3.12.47", "4.26.2", "4.26.16", "5.1.31", "5.1.32", "8.8.1", "8.8.3", "8.11.17"},
+        )
+
+        gita_bundle = _load(ROOT / "app" / "assets" / "bundles" / "bhagavad-gita.json")
+        self.assertEqual(len(gita_bundle["sections"]), 18)
+        self.assertEqual(sum(len(s["verses"]) for s in gita_bundle["sections"]), 700)
+
+        bh_bundle = _load(ROOT / "app" / "assets" / "bundles" / "bhagavata-purana.json")
+        n_verses = sum(len(s["verses"]) for s in bh_bundle["sections"])
+        self.assertEqual(len(bh_bundle["sections"]), meta["imported_chapter_count"])
+        self.assertEqual(n_verses, meta["imported_verse_count"])
+        self.assertEqual(len(bh_bundle["sections"]), 335)
 
     def test_wikisource_is_the_named_electronic_witness(self):
         w = _load(BHAGAVATA / "work.json")

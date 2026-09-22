@@ -133,6 +133,7 @@ TEMPLATE = re.compile(r"\{\{[^{}]*\}\}", re.S)
 LINK = re.compile(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]")
 TAG = re.compile(r"<[^>]+>")
 BOLD = re.compile(r"'{2,}")
+DEVANAGARI_CHAR = re.compile(r"[\u0900-\u097F]")
 
 # Surface उवाच labels → graph slugs already present in graph.json.
 # Unmapped speakers are stored as metadata.speaker_surface, never invented people.
@@ -279,6 +280,14 @@ def strip_wiki(text: str) -> str:
         if s.startswith("[[Category:") or s.startswith("[[वर्ग:"):
             continue
         if s.startswith("#"):
+            continue
+        if s.lower().startswith("thumb|") or s.lower().startswith("file:"):
+            continue
+        if s.startswith("तुलनीय"):
+            continue
+        if re.fullmatch(r"अथ.{0,24}ध्या['ऽ]?यः", s):
+            continue
+        if s and not DEVANAGARI_CHAR.search(s):
             continue
         if COLOPHON.match(s):
             # Chapter is over. Trailing duplicate dumps (6.18 repeats 1। after

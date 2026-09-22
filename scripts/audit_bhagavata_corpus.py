@@ -19,6 +19,12 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from generate_bhagavata_corpus import SKANDHA_CHAPTERS, EXPECTED_CHAPTERS  # noqa: E402
 
 PRINTED = re.compile(r"^(\d+)([a-z])?$")
+LATIN = re.compile(r"[A-Za-z]")
+DEVANAGARI = re.compile(r"[\u0900-\u097F]")
+WIKI_LEFTOVER = re.compile(
+    r"thumb\s*\||\[https?://|तुलनीय\s*-|These two shlokas",
+    re.I,
+)
 
 
 def audit() -> dict:
@@ -97,6 +103,44 @@ def audit() -> dict:
         r for r in rows
         if r["status"] not in ("ok", "printed_gap", "missing_file")
     ]
+
+    latin_refs: list[str] = []
+    wiki_leftovers: list[str] = []
+    dup_bodies: dict[str, list[str]] = {}
+    fills_ok: list[str] = []
+    fills_missing: list[str] = []
+    work = json.loads((CONTENT / "work.json").read_text(encoding="utf-8"))
+    fill_refs = list((work.get("metadata") or {}).get("bbt_vedabase_fill_refs") or [])
+    by_ref: dict[str, dict] = {}
+    for sk, nchap in SKANDHA_CHAPTERS.items():
+        for adh in range(1, nchap + 1):
+            path = CONTENT / str(sk) / str(adh) / "verses.json"
+            if not path.exists():
+                continue
+            for v in json.loads(path.read_text(encoding="utf-8")).get("verses") or []:
+                ref = v.get("ref") or ""
+                by_ref[ref] = v
+                de = v.get("deva") or ""
+                if LATIN.search(de):
+                    latin_refs.append(ref)
+                if WIKI_LEFTOVER.search(de):
+                    wiki_leftovers.append(ref)
+                body = re.sub(r"[॥।\s\d०-९]+$", "", de)
+                body = re.sub(r"\s+", " ", body).strip()
+                if body:
+                    dup_bodies.setdefault(body, []).append(ref)
+    for ref in fill_refs:
+        v = by_ref.get(ref)
+        if not v:
+            fills_missing.append(ref)
+            continue
+        meta = v.get("metadata") or {}
+        if meta.get("source_witness") == "bbt-vedabase" and (v.get("deva") or "").strip():
+            fills_ok.append(ref)
+        else:
+            fills_missing.append(ref)
+    duplicate_sanskrit = [refs for refs in dup_bodies.values() if len(refs) > 1]
+
     return {
         "skandhas": 12,
         "expected_chapters": EXPECTED_CHAPTERS,
@@ -112,6 +156,13 @@ def audit() -> dict:
         "numbering_notes": len(notes),
         "unexplained": unexplained,
         "skandha_counts": by_sk,
+        "latin_in_deva": latin_refs,
+        "wiki_markup_leftovers": wiki_leftovers,
+        "duplicate_sanskrit_groups": duplicate_sanskrit,
+        "bbt_fills_ok": fills_ok,
+        "bbt_fills_missing": fills_missing,
+        "traditional_approx_verses": (work.get("metadata") or {}).get("approx_verses_traditional"),
+        "declared_imported_verse_count": (work.get("metadata") or {}).get("imported_verse_count"),
         "chapters": rows,
     }
 

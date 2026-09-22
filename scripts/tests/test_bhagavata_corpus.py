@@ -354,6 +354,24 @@ class ParserTests(unittest.TestCase):
         self.assertIn("विद्यार्थरूप", verses[4]["deva"])
         self.assertIn("garbled extra digit", verses[4]["metadata"]["numbering_note"])
 
+    def test_thumb_ascii_and_tulaniya_lines_are_not_mula(self):
+        wiki = (
+            "thumb|400px|सप्तचक्राणि.\n"
+            "These two shlokas are found only in Madhwa school\n"
+            "तुलनीय - [https://sa.wikisource.org/s/n9 ऋ. ३.५३.५-६]\n"
+            "अथाष्टमोऽध्यायः\n"
+            "aaa ॥ १ ॥\n"
+            "bbb ॥ २ ॥\n"
+        )
+        verses = G.parse_wikitext(wiki, 3, 12)
+        self.assertEqual([v["ref"] for v in verses], ["3.12.1", "3.12.2"])
+        joined = "\n".join(v["deva"] for v in verses)
+        self.assertNotIn("thumb", joined)
+        self.assertNotIn("Madhwa", joined)
+        self.assertNotIn("तुलनीय", joined)
+        self.assertNotIn("अथाष्टमोऽध्यायः", joined)
+        self.assertIn("aaa", verses[0]["deva"])
+
     def test_skandha_7_number_then_danda(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_7_1_number_then_danda.wiki"
