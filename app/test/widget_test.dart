@@ -32,7 +32,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
     final store = await tester.runAsync(() => LocalStore.inMemory());
-    await tester.runAsync(() => store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
+    await tester.runAsync(() => store!.importBundle((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map).cast<String, dynamic>()));
 
     await tester.pumpWidget(ProviderScope(
       overrides: [
@@ -46,7 +46,7 @@ void main() {
 
     expect(find.text('Dharma Library'), findsWidgets);
     expect(find.textContaining('Bhāgavata'), findsWidgets);
-    final nVerses = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
+    final nVerses = ((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map)['sections'] as List)
         .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
     expect(find.textContaining('$nVerses verses'), findsWidgets);
 
@@ -62,7 +62,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
     final store = await tester.runAsync(() => LocalStore.inMemory());
-    await tester.runAsync(() => store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
+    await tester.runAsync(() => store!.importBundle((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map).cast<String, dynamic>()));
 
     // read three verses first so the dashboard has something to report
     final repo = Repository(store: store!);
@@ -84,7 +84,7 @@ void main() {
     ));
     await _settle(tester);
 
-    final nVerses = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
+    final nVerses = ((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map)['sections'] as List)
         .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
     expect(find.text('3 of $nVerses verses explored'), findsOneWidget);
     expect(find.byType(LinearProgressIndicator), findsWidgets);
@@ -105,7 +105,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
     final store = await tester.runAsync(() => LocalStore.inMemory());
-    await tester.runAsync(() => store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
+    await tester.runAsync(() => store!.importBundle((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map).cast<String, dynamic>()));
 
     await tester.pumpWidget(ProviderScope(
       overrides: [

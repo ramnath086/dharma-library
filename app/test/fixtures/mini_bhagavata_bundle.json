@@ -1,0 +1,5246 @@
+{
+  "toc": {
+    "work": {
+      "id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "slug": "bhagavata-purana",
+      "status": "published",
+      "metadata": {
+        "retrieved": "2026-09-22T14:55:18Z",
+        "total_cantos": 12,
+        "source_license": "CC-BY-SA-4.0",
+        "translation_scope": "1.1.1–1.1.10",
+        "imported_verse_count": 10,
+        "imported_chapter_count": 1,
+        "approx_verses_traditional": 18000,
+        "traditional_chapter_inventory": 335
+      },
+      "title_sa": "श्रीमद्भागवतपुराणम्",
+      "structure": [
+        {
+          "key": "canto",
+          "level": 1,
+          "label_en": "Canto",
+          "label_ml": "സ്കന്ധം",
+          "label_sa": "स्कन्धः",
+          "label_iast": "Skandha"
+        },
+        {
+          "key": "chapter",
+          "level": 2,
+          "label_en": "Chapter",
+          "label_ml": "അധ്യായം",
+          "label_sa": "अध्यायः",
+          "label_iast": "Adhyāya"
+        }
+      ],
+      "tradition": "Purāṇa · Vaiṣṇava",
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "short_code": "SB",
+      "sort_order": 100,
+      "title_iast": "Śrīmad Bhāgavata Purāṇa",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. This build ships the complete sa.wikisource.org mūla: 12 skandhas, 335 adhyāyas, 14069 numbered verses parsed from that edition on 2026-09-22 (CC BY-SA 4.0). Traditional ~18,000 is an approximation, not an import target. English and Malayalam translations remain original Dharma Library drafts on 1.1.1–1.1.10 only; other verses have no invented translation. GRETIL was collated as a scholarly witness and is not shipped.",
+      "original_script": "Deva",
+      "original_language": "sa"
+    },
+    "sections": [
+      {
+        "id": "60bde2c1-c28b-4e80-bbfe-c5406267ea69",
+        "ref": "1",
+        "level": 1,
+        "ordinal": 1,
+        "summary": null,
+        "children": [
+          {
+            "id": "74f13e8c-8ed6-42fc-a768-ce328e7adf47",
+            "ref": "1.1",
+            "level": 2,
+            "ordinal": 1,
+            "summary": "After three invocatory verses defining the supreme truth and the purpose of the Bhāgavata, the sages led by Śaunaka, performing a thousand-year sacrifice at Naimiṣāraṇya, honour Sūta and ask him what is the ultimate good for people in the age of Kali.",
+            "children": [],
+            "title_sa": "नैमिषीयोपाख्याने ऋषिप्रश्नः",
+            "title_iast": "Naimiṣīyopākhyāna — Praśnāḥ (The Sages' Questions)",
+            "verse_count": 10
+          }
+        ],
+        "title_sa": "स्कन्धः १",
+        "title_iast": "Skandha 1",
+        "verse_count": 10
+      }
+    ]
+  },
+  "people": [
+    {
+      "id": "020a2cdf-4a35-422a-a495-1409ccde79a3",
+      "kind": "deity",
+      "slug": "krishna",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "श्रीकृष्णः",
+      "epithets": [
+        "Vāsudeva",
+        "Bhagavān",
+        "Keśava",
+        "Madhusūdana",
+        "Hrishikesha",
+        "Achyuta",
+        "Janārdana",
+        "Govinda",
+        "Mādhava",
+        "Pārthasārathi"
+      ],
+      "metadata": {},
+      "name_iast": "Śrī Kṛṣṇa",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "The supreme Lord, speaker of the Gītā, charioteer of Arjuna; addressed as Śrībhagavān throughout the text."
+    },
+    {
+      "id": "b4bb3fdf-420f-4093-a148-6eee9575a5e0",
+      "kind": "king",
+      "slug": "arjuna",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "अर्जुनः",
+      "epithets": [
+        "Pārtha",
+        "Kaunteya",
+        "Dhanagñjaya",
+        "Gudākeśa",
+        "Bhārata",
+        "Parantapa"
+      ],
+      "metadata": {},
+      "name_iast": "Arjuna",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Pāṇḍava prince, protagonist and interlocutor of Kṛṣṇa; speaker of the Gītā's questions."
+    },
+    {
+      "id": "6f8c8174-91cd-4d21-b3a0-2e4712e0e112",
+      "kind": "narrator",
+      "slug": "sanjaya",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "सञ्जयः",
+      "epithets": [],
+      "metadata": {},
+      "name_iast": "Sañjaya",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Bard and counsellor of Dhṛtarāṣṭra; narrator of the Gītā to the blind king, having received divine sight from Vyāsa."
+    },
+    {
+      "id": "a7608055-78d3-4077-a924-a2cc42ee4da4",
+      "kind": "king",
+      "slug": "dhritarashtra",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "धृतराष्ट्रः",
+      "epithets": [
+        "Kururāja"
+      ],
+      "metadata": {},
+      "name_iast": "Dhṛtarāṣṭra",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Blind king of the Kurus, father of the Kauravas; questioner at Gītā 1.1."
+    },
+    {
+      "id": "c48c445f-db9b-45e1-a2aa-2b27bd658bf4",
+      "kind": "king",
+      "slug": "bhishma",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "भीष्मः",
+      "epithets": [
+        "Devavrata",
+        "Pitāmaha"
+      ],
+      "metadata": {},
+      "name_iast": "Bhīṣma",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Grandsire of the Kurus, commander of the Kaurava army."
+    },
+    {
+      "id": "8c582bcc-45c7-4e92-971c-cbd6f49a18cf",
+      "kind": "sage",
+      "slug": "drona",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "द्रोणः",
+      "epithets": [
+        "Ācārya"
+      ],
+      "metadata": {},
+      "name_iast": "Droṇa",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Military preceptor of the Kauravas and Pāṇḍavas."
+    },
+    {
+      "id": "958e3db4-5ce0-47e2-b575-63bba14422c1",
+      "kind": "king",
+      "slug": "duryodhana",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "दुर्योधनः",
+      "epithets": [
+        "Suyodhana"
+      ],
+      "metadata": {},
+      "name_iast": "Duryodhana",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Eldest Kaurava, son of Dhṛtarāṣṭra."
+    },
+    {
+      "id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "kind": "deity",
+      "slug": "vasudeva-krishna",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "वासुदेवः",
+      "epithets": [
+        "Kṛṣṇa",
+        "Bhagavān",
+        "Hari",
+        "Keśava",
+        "Adhokṣaja",
+        "Uttamaśloka"
+      ],
+      "metadata": {},
+      "name_iast": "Vāsudeva (Kṛṣṇa)",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The supreme Lord to whom the Bhāgavata is addressed; invoked in the maṅgala of 1.1.1 as bhagavān Vāsudeva."
+    },
+    {
+      "id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "kind": "deity",
+      "slug": "vishnu",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "विष्णुः",
+      "epithets": [
+        "Animiṣa",
+        "Nārāyaṇa"
+      ],
+      "metadata": {},
+      "name_iast": "Viṣṇu",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Referred to in 1.1.4 by the epithet Animiṣa, 'the unblinking one', whose sacred field is Naimiṣa."
+    },
+    {
+      "id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "kind": "deity",
+      "slug": "brahma",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "ब्रह्मा",
+      "epithets": [
+        "Ādi-kavi",
+        "Virinci",
+        "Svayambhū"
+      ],
+      "metadata": {},
+      "name_iast": "Brahmā",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The first created being and first seer (ādi-kavi), into whose heart the Lord imparted the Veda (1.1.1)."
+    },
+    {
+      "id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "kind": "sage",
+      "slug": "vyasa",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "व्यासः",
+      "epithets": [
+        "Bādarāyaṇa",
+        "Kṛṣṇa Dvaipāyana",
+        "Veda-vyāsa",
+        "Mahā-muni"
+      ],
+      "metadata": {},
+      "name_iast": "Vyāsa",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Compiler of the Vedas and author of the Bhāgavata Purāṇa (mahā-muni, 1.1.2; bhagavān Bādarāyaṇa, 1.1.7). Father of Śuka."
+    },
+    {
+      "id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "kind": "sage",
+      "slug": "suka",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "शुकः",
+      "epithets": [
+        "Śukadeva",
+        "Vyāsa-sūnu",
+        "Bādarāyaṇi"
+      ],
+      "metadata": {},
+      "name_iast": "Śuka",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Son of Vyāsa, who recited the Bhāgavata to King Parīkṣit; 'from the mouth of Śuka' (1.1.3)."
+    },
+    {
+      "id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "kind": "narrator",
+      "slug": "suta",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "सूतः",
+      "epithets": [
+        "Ugraśravas",
+        "Raumaharṣaṇi",
+        "Sūta Gosvāmī"
+      ],
+      "metadata": {},
+      "name_iast": "Sūta",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Ugraśravas, son of Romaharṣaṇa; the bard who heard Śuka recite the Bhāgavata and retells it to the sages at Naimiṣāraṇya. Addressed in 1.1.5–1.1.10."
+    },
+    {
+      "id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "kind": "sage",
+      "slug": "saunaka",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "शौनकः",
+      "epithets": [
+        "Kulapati"
+      ],
+      "metadata": {},
+      "name_iast": "Śaunaka",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Leader of the sages performing the thousand-year sacrifice at Naimiṣāraṇya (1.1.4)."
+    },
+    {
+      "id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "kind": "sage",
+      "slug": "sages-of-naimisaranya",
+      "gender": "m",
+      "status": "published",
+      "name_sa": "शौनकादयः ऋषयः",
+      "epithets": [
+        "ṛṣayaḥ",
+        "munayaḥ"
+      ],
+      "metadata": {},
+      "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Collective speaker of 1.1.6–1.1.23: the sages headed by Śaunaka who question Sūta."
+    }
+  ],
+  "places": [
+    {
+      "id": "3fe7b434-3ce2-4f34-9b87-1af3cd5aa3be",
+      "kind": "tirtha",
+      "slug": "kurukshetra",
+      "status": "published",
+      "name_sa": "कुरुक्षेत्रम्",
+      "latitude": 29.9695,
+      "metadata": {},
+      "alt_names": [
+        "Dharmakṣetra",
+        "Samantapañcaka"
+      ],
+      "longitude": 76.8783,
+      "name_iast": "Kurukṣetra",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "The sacred field of the Kurus, also called Dharmakṣetra, where the Mahābhārata war and the Gītā discourse took place.",
+      "modern_name": "Kurukshetra, Haryana, India"
+    },
+    {
+      "id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "kind": "forest",
+      "slug": "naimisaranya",
+      "status": "published",
+      "name_sa": "नैमिषारण्यम्",
+      "latitude": 27.35,
+      "metadata": {},
+      "alt_names": [
+        "Naimiṣa",
+        "Animiṣa-kṣetra"
+      ],
+      "longitude": 80.49,
+      "name_iast": "Naimiṣāraṇya",
+      "source_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The forest where the sages perform their thousand-year sacrifice and hear the Bhāgavata from Sūta. Identified with Nimsar (Neemsar) on the Gomatī river.",
+      "modern_name": "Nimsar (Neemsar), Sitapur district, Uttar Pradesh, India"
+    }
+  ],
+  "topics": [
+    {
+      "id": "0963e432-5a64-4f8c-93bc-6daea3de3154",
+      "slug": "yoga",
+      "status": "published",
+      "name_sa": "योगः",
+      "metadata": {},
+      "name_iast": "Yoga",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Discipline, union, and the paths of action, knowledge and devotion."
+    },
+    {
+      "id": "38256064-7c4e-43b4-aa21-57f51bbbbf63",
+      "slug": "karma-yoga",
+      "status": "published",
+      "name_sa": "कर्मयोगः",
+      "metadata": {},
+      "name_iast": "Karma-yoga",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "The yoga of selfless action (Gītā chapters 3–5)."
+    },
+    {
+      "id": "d8a0391a-6608-4cd5-8844-be9f44955073",
+      "slug": "jnana-yoga",
+      "status": "published",
+      "name_sa": "ज्ञानयोगः",
+      "metadata": {},
+      "name_iast": "Jñāna-yoga",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "The yoga of knowledge and discernment."
+    },
+    {
+      "id": "503f9033-e447-4b87-be1a-916681bec6ec",
+      "slug": "bhakti-yoga",
+      "status": "published",
+      "name_sa": "भक्तियोगः",
+      "metadata": {},
+      "name_iast": "Bhakti-yoga",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "The yoga of devotion (Gītā chapters 12, etc.)."
+    },
+    {
+      "id": "4fe51f27-359d-4c74-87a4-3f0a87801920",
+      "slug": "atman",
+      "status": "published",
+      "name_sa": "आत्मा",
+      "metadata": {},
+      "name_iast": "Ātman — the Self",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "The imperishable Self, distinct from the body (Gītā chapter 2)."
+    },
+    {
+      "id": "a7e1a9d0-44fc-4c51-9120-640cb6537a69",
+      "slug": "moksha",
+      "status": "published",
+      "name_sa": "मोक्षः",
+      "metadata": {},
+      "name_iast": "Mokṣa — liberation",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Liberation from saṃsāra, the goal of the Gītā's teaching."
+    },
+    {
+      "id": "4e76eeb8-d4f9-4052-bd3a-5634c27fd6d0",
+      "slug": "sankhya",
+      "status": "published",
+      "name_sa": "सांख्यम्",
+      "metadata": {},
+      "name_iast": "Sāṅkhya",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:41.636104+00:00",
+      "description": "Analytical knowledge of prakṛti and puruṣa."
+    },
+    {
+      "id": "fbbef66a-fe95-45a2-95c8-342146bc6ede",
+      "slug": "satyam-param",
+      "status": "published",
+      "name_sa": "सत्यं परम्",
+      "metadata": {},
+      "name_iast": "Satyaṁ param — the supreme truth",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The object of meditation named in 1.1.1; later (1.2.11) said to be known as Brahman, Paramātmā and Bhagavān."
+    },
+    {
+      "id": "ed609a0a-2776-4518-85f0-7ebadf9c136e",
+      "slug": "srsti-sthiti-laya",
+      "status": "published",
+      "name_sa": "सृष्टिस्थितिलयाः",
+      "metadata": {},
+      "name_iast": "Sṛṣṭi–sthiti–laya — creation, sustenance, dissolution",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The universe's origin, maintenance and end, all traced to the one source (janmādy asya yataḥ)."
+    },
+    {
+      "id": "e2857153-f63c-413f-b751-02f13cbc1700",
+      "slug": "maya",
+      "status": "published",
+      "name_sa": "माया",
+      "metadata": {},
+      "name_iast": "Māyā — illusion",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Deception (kuhaka) dispelled by the Lord's own radiance (1.1.1)."
+    },
+    {
+      "id": "acfb94fc-10b3-4cf1-bcbe-c9b7ec77125d",
+      "slug": "dharma",
+      "status": "published",
+      "name_sa": "धर्मः",
+      "metadata": {},
+      "name_iast": "Dharma",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:41.636104+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Right conduct / religion; the Bhāgavata teaches the highest dharma free of ulterior motive (1.1.2)."
+    },
+    {
+      "id": "ed09003e-d450-46e9-a1f9-7d5e0465ed99",
+      "slug": "tapa-traya",
+      "status": "published",
+      "name_sa": "तापत्रयम्",
+      "metadata": {},
+      "name_iast": "Tāpa-traya — the three miseries",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Ādhyātmika, ādhibhautika and ādhidaivika suffering, uprooted by knowledge of the real (1.1.2)."
+    },
+    {
+      "id": "aba13554-20a6-4143-b023-c8176047658a",
+      "slug": "sravana",
+      "status": "published",
+      "name_sa": "श्रवणम्",
+      "metadata": {},
+      "name_iast": "Śravaṇa — hearing",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Hearing the Bhāgavata is itself the means: the Lord is captured in the heart of those who wish to hear (1.1.2–3)."
+    },
+    {
+      "id": "8c79446b-65d8-4263-a014-e413d9a24be5",
+      "slug": "rasa",
+      "status": "published",
+      "name_sa": "रसः",
+      "metadata": {},
+      "name_iast": "Rasa — relish",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The Bhāgavata is described as the nectarean fruit and very abode of rasa (1.1.3)."
+    },
+    {
+      "id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "slug": "yajna",
+      "status": "published",
+      "name_sa": "यज्ञः",
+      "metadata": {},
+      "name_iast": "Yajña / satra — sacrifice",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The thousand-year sacrificial session at Naimiṣāraṇya (1.1.4–5)."
+    },
+    {
+      "id": "b98fd8ba-d1f2-44a8-8bfc-7393f72c58af",
+      "slug": "sastra",
+      "status": "published",
+      "name_sa": "शास्त्रम्",
+      "metadata": {},
+      "name_iast": "Śāstra — scripture",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Purāṇas, Itihāsas and Dharma-śāstras that Sūta has studied and taught (1.1.6)."
+    },
+    {
+      "id": "9e1cae4f-05e7-43dc-ba32-e720b965d295",
+      "slug": "guru-sisya",
+      "status": "published",
+      "name_sa": "गुरुशिष्यसम्बन्धः",
+      "metadata": {},
+      "name_iast": "Guru–śiṣya — teacher and disciple",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "Teachers reveal even secrets to a beloved disciple (1.1.8)."
+    },
+    {
+      "id": "3988bd80-6102-4077-a2a2-8328f36f3047",
+      "slug": "sreyas",
+      "status": "published",
+      "name_sa": "श्रेयः",
+      "metadata": {},
+      "name_iast": "Śreyas — the ultimate good",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The absolute good for humanity, which the sages ask Sūta to state (1.1.9)."
+    },
+    {
+      "id": "3b865647-3afa-4c4c-b7af-47756e6cfbbc",
+      "slug": "kali-yuga",
+      "status": "published",
+      "name_sa": "कलियुगम्",
+      "metadata": {},
+      "name_iast": "Kali-yuga",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "updated_at": "2026-09-22T14:55:46.156398+00:00",
+      "description": "The present age, whose people are short-lived, dull and troubled (1.1.10)."
+    }
+  ],
+  "stories": [
+    {
+      "id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "slug": "sages-question-suta",
+      "status": "published",
+      "summary": "Framing narrative of the whole Bhāgavata. At a thousand-year sacrifice in Naimiṣāraṇya, Śaunaka and the sages honour Sūta and ask him to distil the essence of all scripture: what is the ultimate good for people in the age of Kali, and what became of dharma after Kṛṣṇa's departure.",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "place_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "title_sa": "नैमिषीयाणां सूतं प्रति प्रश्नः",
+      "parent_id": null,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "title_iast": "The sages of Naimiṣāraṇya question Sūta",
+      "updated_at": "2026-09-22T14:56:51.010572+00:00",
+      "narrator_id": null,
+      "end_verse_id": "e57335b9-b8d2-4577-91a3-466b39d5db93",
+      "start_verse_id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c"
+    }
+  ],
+  "editions": [
+    {
+      "id": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "kind": "base_text",
+      "slug": "sb-mula-deva",
+      "title": "Mūla (Devanagari)",
+      "status": "published",
+      "license": "CC-BY-SA-4.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": true,
+      "is_machine": false,
+      "sort_order": 10,
+      "source_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+      "description": "The Sanskrit text in Devanagari. Electronic witness: sa.wikisource.org (CC BY-SA 4.0), 14069 verses in 335 chapters.",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "script_code": "Deva",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": null,
+      "source_title": "श्रीमद्भागवतपुराणम् — Sanskrit Wikisource",
+      "language_code": "sa",
+      "rights_holder": "Sanskrit Wikisource contributors",
+      "rights_status": "open_license",
+      "script_name_en": "Devanagari",
+      "source_authors": [],
+      "attribution_text": "Sanskrit mūla of the Bhāgavata Purāṇa, electronic edition after sa.wikisource.org (CC BY-SA 4.0). The ancient work is public-domain mūla (see Delhi High Court, 2023, on Purāṇa mūla); this file follows the Wikimedia e-text, not GRETIL. Gita Press numbering used only for collation. GRETIL consulted as a scholarly witness and is not redistributed.",
+      "language_name_en": "Sanskrit",
+      "source_publisher": "Wikimedia Foundation / Sanskrit Wikisource contributors",
+      "source_archive_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+      "kind": "transliteration",
+      "slug": "sb-mula-mlym",
+      "title": "Mūla (Malayalam script)",
+      "status": "published",
+      "license": "CC0-1.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": false,
+      "is_machine": true,
+      "sort_order": 15,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": "Sanskrit text rendered in Malayalam script (automatic conversion).",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "script_code": "Mlym",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "sa",
+      "rights_holder": "Dharma Library",
+      "rights_status": "original",
+      "script_name_en": "Malayalam",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+      "language_name_en": "Sanskrit",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+      "kind": "transliteration",
+      "slug": "sb-mula-knda",
+      "title": "Mūla (Kannada script)",
+      "status": "published",
+      "license": "CC0-1.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": false,
+      "is_machine": true,
+      "sort_order": 16,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "script_code": "Knda",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "sa",
+      "rights_holder": "Dharma Library",
+      "rights_status": "original",
+      "script_name_en": "Kannada",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+      "language_name_en": "Sanskrit",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+      "kind": "transliteration",
+      "slug": "sb-mula-telu",
+      "title": "Mūla (Telugu script)",
+      "status": "published",
+      "license": "CC0-1.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": false,
+      "is_machine": true,
+      "sort_order": 17,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "script_code": "Telu",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "sa",
+      "rights_holder": "Dharma Library",
+      "rights_status": "original",
+      "script_name_en": "Telugu",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+      "language_name_en": "Sanskrit",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+      "kind": "transliteration",
+      "slug": "sb-mula-beng",
+      "title": "Mūla (Bengali script)",
+      "status": "published",
+      "license": "CC0-1.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": false,
+      "is_machine": true,
+      "sort_order": 18,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "script_code": "Beng",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "sa",
+      "rights_holder": "Dharma Library",
+      "rights_status": "original",
+      "script_name_en": "Bengali",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+      "language_name_en": "Sanskrit",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+      "kind": "transliteration",
+      "slug": "sb-mula-gujr",
+      "title": "Mūla (Gujarati script)",
+      "status": "published",
+      "license": "CC0-1.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": false,
+      "is_machine": true,
+      "sort_order": 19,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "script_code": "Gujr",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "sa",
+      "rights_holder": "Dharma Library",
+      "rights_status": "original",
+      "script_name_en": "Gujarati",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+      "language_name_en": "Sanskrit",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+      "kind": "transliteration",
+      "slug": "sb-iast",
+      "title": "IAST transliteration",
+      "status": "published",
+      "license": "CC-BY-SA-4.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": true,
+      "is_machine": false,
+      "sort_order": 20,
+      "source_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+      "description": "Roman transliteration (IAST) with word breaks and compound hyphens, derived from the Wikisource Devanagari.",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "script_code": "Latn",
+      "source_year": null,
+      "contributors": [],
+      "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+      "source_title": "श्रीमद्भागवतपुराणम् — Sanskrit Wikisource",
+      "language_code": "sa",
+      "rights_holder": "Sanskrit Wikisource contributors",
+      "rights_status": "open_license",
+      "script_name_en": "Latin (IAST)",
+      "source_authors": [],
+      "attribution_text": "Sanskrit mūla of the Bhāgavata Purāṇa, electronic edition after sa.wikisource.org (CC BY-SA 4.0). The ancient work is public-domain mūla (see Delhi High Court, 2023, on Purāṇa mūla); this file follows the Wikimedia e-text, not GRETIL. Gita Press numbering used only for collation. GRETIL consulted as a scholarly witness and is not redistributed.",
+      "language_name_en": "Sanskrit",
+      "source_publisher": "Wikimedia Foundation / Sanskrit Wikisource contributors",
+      "source_archive_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+      "language_name_native": "संस्कृतम्"
+    },
+    {
+      "id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+      "kind": "translation",
+      "slug": "sb-en-dl",
+      "title": "English translation (Dharma Library, draft)",
+      "status": "published",
+      "license": "CC-BY-SA-4.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": true,
+      "is_machine": false,
+      "sort_order": 30,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": "Original English prose translation. Draft — pending scholarly review.",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "script_code": "Latn",
+      "source_year": null,
+      "contributors": [
+        "Dharma Library contributors"
+      ],
+      "derived_from": null,
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "en",
+      "rights_holder": "Dharma Library contributors",
+      "rights_status": "original",
+      "script_name_en": "Latin (IAST)",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
+      "language_name_en": "English",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "English"
+    },
+    {
+      "id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+      "kind": "translation",
+      "slug": "sb-ml-dl",
+      "title": "മലയാളം പരിഭാഷ (Dharma Library, കരട്)",
+      "status": "published",
+      "license": "CC-BY-SA-4.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": true,
+      "is_machine": false,
+      "sort_order": 31,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": "Original Malayalam prose translation. Draft — pending scholarly review.",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "script_code": "Mlym",
+      "source_year": null,
+      "contributors": [
+        "Dharma Library contributors"
+      ],
+      "derived_from": null,
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "ml",
+      "rights_holder": "Dharma Library contributors",
+      "rights_status": "original",
+      "script_name_en": "Malayalam",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
+      "language_name_en": "Malayalam",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "മലയാളം"
+    },
+    {
+      "id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+      "kind": "word_meanings",
+      "slug": "sb-wm-en",
+      "title": "Word-by-word (English)",
+      "status": "published",
+      "license": "CC-BY-SA-4.0",
+      "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+      "metadata": {},
+      "is_default": true,
+      "is_machine": false,
+      "sort_order": 40,
+      "source_url": "https://github.com/ramnath086/dharma-library",
+      "description": "Word-by-word glosses keyed to the IAST.",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "script_code": "Latn",
+      "source_year": null,
+      "contributors": [
+        "Dharma Library contributors"
+      ],
+      "derived_from": null,
+      "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+      "language_code": "en",
+      "rights_holder": "Dharma Library contributors",
+      "rights_status": "original",
+      "script_name_en": "Latin (IAST)",
+      "source_authors": [
+        "Dharma Library contributors"
+      ],
+      "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
+      "language_name_en": "English",
+      "source_publisher": null,
+      "source_archive_url": null,
+      "language_name_native": "English"
+    }
+  ],
+  "mentions": [
+    {
+      "id": "58aa984a-e17a-4a19-976c-7c15930ebe48",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "6f6196f5-634e-41ce-a92f-fbe2e8e2e142",
+      "entity_id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "bhagavate vāsudevāya"
+    },
+    {
+      "id": "7a3ec1a5-07b9-4898-aaf1-f40c88480db8",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "6f6196f5-634e-41ce-a92f-fbe2e8e2e142",
+      "entity_id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "ādi-kavaye"
+    },
+    {
+      "id": "8ecf3e5d-49be-4ac6-ad86-5fc823ab83a4",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "6f6196f5-634e-41ce-a92f-fbe2e8e2e142",
+      "entity_id": "fbbef66a-fe95-45a2-95c8-342146bc6ede",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "satyaṁ param"
+    },
+    {
+      "id": "f12ea0a6-19d8-4f79-8955-13fe9f25de84",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "6f6196f5-634e-41ce-a92f-fbe2e8e2e142",
+      "entity_id": "ed609a0a-2776-4518-85f0-7ebadf9c136e",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "janmādy asya"
+    },
+    {
+      "id": "3564d3d1-4a70-4fe0-acb1-46896e846a92",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "6f6196f5-634e-41ce-a92f-fbe2e8e2e142",
+      "entity_id": "e2857153-f63c-413f-b751-02f13cbc1700",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "kuhakam"
+    },
+    {
+      "id": "a2236870-f843-4f78-9344-4f87ea614729",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "51d7a449-b701-416c-a349-0dc377da22d7",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "mahā-muni"
+    },
+    {
+      "id": "fe9d025e-11a4-4e62-ba5e-63bf4a90c4e7",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "51d7a449-b701-416c-a349-0dc377da22d7",
+      "entity_id": "acfb94fc-10b3-4cf1-bcbe-c9b7ec77125d",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "dharmaḥ projjhita-kaitavaḥ"
+    },
+    {
+      "id": "1d4038d0-6b27-4e58-9183-e12c396036a0",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "51d7a449-b701-416c-a349-0dc377da22d7",
+      "entity_id": "ed09003e-d450-46e9-a1f9-7d5e0465ed99",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "tāpa-trayonmūlanam"
+    },
+    {
+      "id": "5a9442d8-39f8-4dc8-833d-1ea8ab8a03e9",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "51d7a449-b701-416c-a349-0dc377da22d7",
+      "entity_id": "aba13554-20a6-4143-b023-c8176047658a",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "śuśrūṣubhiḥ"
+    },
+    {
+      "id": "dc7ed0a8-cd6e-413e-8b3d-0de54863a6a5",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "479a633d-7c1a-4518-bbe2-8e779f2da363",
+      "entity_id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "śuka-mukhāt"
+    },
+    {
+      "id": "6674264c-c8f0-498f-8453-a98ac7af08af",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "479a633d-7c1a-4518-bbe2-8e779f2da363",
+      "entity_id": "8c79446b-65d8-4263-a014-e413d9a24be5",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "rasam"
+    },
+    {
+      "id": "c5884fb7-aba4-4604-b1c5-c54650be2326",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "479a633d-7c1a-4518-bbe2-8e779f2da363",
+      "entity_id": "aba13554-20a6-4143-b023-c8176047658a",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "pibata"
+    },
+    {
+      "id": "e4e5c3fa-429e-4329-a0a7-c410fdc6e1e3",
+      "role": "setting",
+      "status": "published",
+      "verse_id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c",
+      "entity_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "place",
+      "surface_form": "naimiṣe 'nimiṣa-kṣetre"
+    },
+    {
+      "id": "d7a77d6c-24dd-4ab0-b121-518284743e53",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c",
+      "entity_id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "śaunakādayaḥ"
+    },
+    {
+      "id": "29c46d4c-a8d5-4b65-9894-b1aaaefb4403",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c",
+      "entity_id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "animiṣa"
+    },
+    {
+      "id": "e66abe9a-39c0-418a-91e1-167f85c5dcb6",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c",
+      "entity_id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "satram"
+    },
+    {
+      "id": "c251367c-da35-449b-b400-d31185023767",
+      "role": "addressee",
+      "status": "published",
+      "verse_id": "0b6a11fd-877c-460e-b2ad-1da5e5cc6a90",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "sūtam"
+    },
+    {
+      "id": "44013d22-bc01-40a6-8d38-85edb7173559",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "0b6a11fd-877c-460e-b2ad-1da5e5cc6a90",
+      "entity_id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "huta-hutāgnayaḥ"
+    },
+    {
+      "id": "d721b5e1-c6bd-4ac8-8f6b-634357e2247a",
+      "role": "speaker",
+      "status": "published",
+      "verse_id": "cbcb258a-55ce-41fa-a5c8-5d51ad112b5c",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": null
+    },
+    {
+      "id": "85a0e4a5-9e3f-458e-99d4-d4505fddbce4",
+      "role": "addressee",
+      "status": "published",
+      "verse_id": "cbcb258a-55ce-41fa-a5c8-5d51ad112b5c",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "anagha"
+    },
+    {
+      "id": "c4f99592-21ee-4600-90fe-429f6c73520d",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "cbcb258a-55ce-41fa-a5c8-5d51ad112b5c",
+      "entity_id": "b98fd8ba-d1f2-44a8-8bfc-7393f72c58af",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "purāṇāni setihāsāni … dharma-śāstrāṇi"
+    },
+    {
+      "id": "026428c3-2897-44c5-a34f-c39c264fd29c",
+      "role": "speaker",
+      "status": "published",
+      "verse_id": "558b3002-3bed-41e6-be12-060cfb83eba7",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": null
+    },
+    {
+      "id": "76e53696-f373-451a-9f28-b90183deacc4",
+      "role": "subject",
+      "status": "published",
+      "verse_id": "558b3002-3bed-41e6-be12-060cfb83eba7",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "bhagavān bādarāyaṇaḥ"
+    },
+    {
+      "id": "fe2ada93-506a-4385-8360-34692aaedaa0",
+      "role": "addressee",
+      "status": "published",
+      "verse_id": "558b3002-3bed-41e6-be12-060cfb83eba7",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "sūta"
+    },
+    {
+      "id": "efc2ba93-8136-4b8c-b169-5c8053846b04",
+      "role": "speaker",
+      "status": "published",
+      "verse_id": "d1ebe33d-946b-4fc4-9f93-7d4c9e8434d9",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": null
+    },
+    {
+      "id": "b1d6ea47-ec11-4d98-b6b4-812533fb84ae",
+      "role": "addressee",
+      "status": "published",
+      "verse_id": "d1ebe33d-946b-4fc4-9f93-7d4c9e8434d9",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "saumya"
+    },
+    {
+      "id": "f78785ca-91ad-4001-a271-4f4466811c5f",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "d1ebe33d-946b-4fc4-9f93-7d4c9e8434d9",
+      "entity_id": "9e1cae4f-05e7-43dc-ba32-e720b965d295",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "snigdhasya śiṣyasya guravaḥ"
+    },
+    {
+      "id": "0f00125e-3e6d-4730-b036-466d37dbe565",
+      "role": "speaker",
+      "status": "published",
+      "verse_id": "81dae911-e110-4b19-8c5d-23baf77efd35",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": null
+    },
+    {
+      "id": "1a494255-3006-4fac-acd4-bed04324d725",
+      "role": "addressee",
+      "status": "published",
+      "verse_id": "81dae911-e110-4b19-8c5d-23baf77efd35",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "āyuṣman"
+    },
+    {
+      "id": "a718e011-21f8-42b9-bab9-9ad00717a364",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "81dae911-e110-4b19-8c5d-23baf77efd35",
+      "entity_id": "3988bd80-6102-4077-a2a2-8328f36f3047",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "ekāntataḥ śreyaḥ"
+    },
+    {
+      "id": "78ead471-220e-4a57-bf38-3802dc642ea4",
+      "role": "speaker",
+      "status": "published",
+      "verse_id": "b9a76067-e63f-4324-a2cc-5020ceddf605",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": null
+    },
+    {
+      "id": "2ac17204-98c6-43b9-8a60-53354b42f5e3",
+      "role": "addressee",
+      "status": "published",
+      "verse_id": "b9a76067-e63f-4324-a2cc-5020ceddf605",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "person",
+      "surface_form": "sabhya"
+    },
+    {
+      "id": "ee4c523e-8fea-4223-b527-88a53475fedd",
+      "role": "theme",
+      "status": "published",
+      "verse_id": "b9a76067-e63f-4324-a2cc-5020ceddf605",
+      "entity_id": "3b865647-3afa-4c4c-b7af-47756e6cfbbc",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:55:46.156398+00:00",
+      "entity_kind": "topic",
+      "surface_form": "kalāv asmin yuge"
+    },
+    {
+      "id": "38283a77-036f-4cb7-9d57-dcee90d437a8",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    },
+    {
+      "id": "5d5ed3a1-216a-460e-a0be-9c2ebac6c495",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "0b6a11fd-877c-460e-b2ad-1da5e5cc6a90",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    },
+    {
+      "id": "3c816752-2f45-414a-8cbc-31ec48b0f025",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "cbcb258a-55ce-41fa-a5c8-5d51ad112b5c",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    },
+    {
+      "id": "08c314fd-a6c1-4f3f-95aa-327374c0f259",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "558b3002-3bed-41e6-be12-060cfb83eba7",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    },
+    {
+      "id": "da1af52a-ca19-4e2d-a4be-51c24cc2613e",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "d1ebe33d-946b-4fc4-9f93-7d4c9e8434d9",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    },
+    {
+      "id": "1738c7ef-7550-463e-9601-628d7c1e64f2",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "81dae911-e110-4b19-8c5d-23baf77efd35",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    },
+    {
+      "id": "328244e6-c7c8-439a-b713-ea5a25b831d6",
+      "role": "part_of",
+      "status": "published",
+      "verse_id": "b9a76067-e63f-4324-a2cc-5020ceddf605",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "confidence": 1,
+      "created_at": "2026-09-22T14:56:51.010572+00:00",
+      "entity_kind": "story",
+      "surface_form": null
+    }
+  ],
+  "sections": [
+    {
+      "tracks": [],
+      "verses": [
+        {
+          "id": "6f6196f5-634e-41ce-a92f-fbe2e8e2e142",
+          "ref": "1.1.1",
+          "kind": "invocation",
+          "audio": [],
+          "meter": "śārdūlavikrīḍita",
+          "ordinal": 1,
+          "speaker": null,
+          "metadata": {
+            "audio": {
+              "note": "Opening invocatory verse (maṅgalācaraṇa). Editorial cue only — not a recitation and not an AI ranking of the corpus.",
+              "label": "mangala",
+              "cue_asset": "assets/audio/sloka_chime.wav",
+              "important": true
+            }
+          },
+          "renderings": [
+            {
+              "body": "ॐ नमो भगवते वासुदेवाय ।\nजन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट्\nतेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः ।\nतेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा\nधाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि ॥ १ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ഓം നമോ ഭഗവതേ വാസുദേവായ ।\nജന്മാദ്യസ്യ യതോഽന്വയാദിതരതശ്ചാർഥേഷ്വഭിജ്ഞഃ സ്വരാട്\nതേനേ ബ്രഹ്മ ഹൃദാ യ ആദികവയേ മുഹ്യന്തി യത്സൂരയഃ ।\nതേജോവാരിമൃദാം യഥാ വിനിമയോ യത്ര ത്രിസർഗോഽമൃഷാ\nധാമ്നാ സ്വേന സദാ നിരസ്തകുഹകം സത്യം പരം ധീമഹി ॥ ൧ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ಓಂ ನಮೋ ಭಗವತೇ ವಾಸುದೇವಾಯ ।\nಜನ್ಮಾದ್ಯಸ್ಯ ಯತೋಽನ್ವಯಾದಿತರತಶ್ಚಾರ್ಥೇಷ್ವಭಿಜ್ಞಃ ಸ್ವರಾಟ್\nತೇನೇ ಬ್ರಹ್ಮ ಹೃದಾ ಯ ಆದಿಕವಯೇ ಮುಹ್ಯನ್ತಿ ಯತ್ಸೂರಯಃ ।\nತೇಜೋವಾರಿಮೃದಾಂ ಯಥಾ ವಿನಿಮಯೋ ಯತ್ರ ತ್ರಿಸರ್ಗೋಽಮೃಷಾ\nಧಾಮ್ನಾ ಸ್ವೇನ ಸದಾ ನಿರಸ್ತಕುಹಕಂ ಸತ್ಯಂ ಪರಂ ಧೀಮಹಿ ॥ ೧ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ఓం నమో భగవతే వాసుదేవాయ ।\nజన్మాద్యస్య యతోఽన్వయాదితరతశ్చార్థేష్వభిజ్ఞః స్వరాట్\nతేనే బ్రహ్మ హృదా య ఆదికవయే ముహ్యన్తి యత్సూరయః ।\nతేజోవారిమృదాం యథా వినిమయో యత్ర త్రిసర్గోఽమృషా\nధామ్నా స్వేన సదా నిరస్తకుహకం సత్యం పరం ధీమహి ॥ ౧ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ওঁ নমো ভগবতে বাসুদেবায ।\nজন্মাদ্যস্য যতোঽন্বযাদিতরতশ্চার্থেষ্বভিজ্ঞঃ স্বরাট্\nতেনে ব্রহ্ম হৃদা য আদিকবযে মুহ্যন্তি যত্সূরযঃ ।\nতেজোবারিমৃদাং যথা বিনিমযো যত্র ত্রিসর্গোঽমৃষা\nধাম্না স্বেন সদা নিরস্তকুহকং সত্যং পরং ধীমহি ॥ ১ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ૐ નમો ભગવતે વાસુદેવાય ।\nજન્માદ્યસ્ય યતોઽન્વયાદિતરતશ્ચાર્થેષ્વભિજ્ઞઃ સ્વરાટ્\nતેને બ્રહ્મ હૃદા ય આદિકવયે મુહ્યન્તિ યત્સૂરયઃ ।\nતેજોવારિમૃદાં યથા વિનિમયો યત્ર ત્રિસર્ગોઽમૃષા\nધામ્ના સ્વેન સદા નિરસ્તકુહકં સત્યં પરં ધીમહિ ॥ ૧ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "oṁ namo bhagavate vāsudevāya\njanmādy asya yato 'nvayād itarataś cārtheṣv abhijñaḥ svarāṭ\ntene brahma hṛdā ya ādi-kavaye muhyanti yat sūrayaḥ\ntejo-vāri-mṛdāṁ yathā vinimayo yatra tri-sargo 'mṛṣā\ndhāmnā svena sadā nirasta-kuhakaṁ satyaṁ paraṁ dhīmahi",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "Oṁ. Obeisance to the blessed Lord Vāsudeva.\nWe meditate upon the supreme truth — that from whom this universe has its birth, sustenance and dissolution; who is present in all things and yet distinct from them; who is fully aware of every object and independent; who imparted the Veda into the heart of the first seer, Brahmā, and about whom even the wise are bewildered; in whom the threefold creation appears real, just as fire, water and earth are mistaken for one another; and who by his own radiance forever dispels all illusion.",
+              "kind": "translation",
+              "notes": "The opening verse echoes the Gāyatrī (dhīmahi) and the Vedānta-sūtra 1.1.2 (janmādy asya yataḥ). The maṅgala 'oṁ namo bhagavate vāsudevāya' precedes the verse in the printed vulgate.",
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "ഓം. ഭഗവാൻ വാസുദേവന് നമസ്കാരം.\nഈ പ്രപഞ്ചത്തിന്റെ സൃഷ്ടിയും സ്ഥിതിയും ലയവും ആരിൽനിന്നാണോ; സകലതിലും അന്വയിച്ചിരിക്കുകയും അതേസമയം അവയിൽനിന്ന് വ്യതിരിക്തനുമായ; സർവാർത്ഥങ്ങളെയും അറിയുന്നവനും സ്വതന്ത്രനുമായ; ആദികവിയായ ബ്രഹ്മാവിന്റെ ഹൃദയത്തിൽ വേദത്തെ പകർന്നവനും, ആരെക്കുറിച്ച് പണ്ഡിതന്മാർ പോലും മോഹിക്കുന്നുവോ; തേജസ്സ്, ജലം, മണ്ണ് എന്നിവ പരസ്പരം തെറ്റിദ്ധരിക്കപ്പെടുന്നതുപോലെ ആരിൽ ത്രിവിധസൃഷ്ടി സത്യമെന്നു തോന്നുന്നുവോ; സ്വന്തം തേജസ്സുകൊണ്ട് സദാ സകലമായയെയും അകറ്റുന്നവനുമായ ആ പരമസത്യത്തെ ഞങ്ങൾ ധ്യാനിക്കുന്നു.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "janma-ādi — birth and the rest (sustenance, dissolution)\nasya — of this (universe)\nyataḥ — from whom\nanvayāt itarataḥ ca — by presence (in all things) and by distinctness (from them)\nartheṣu abhijñaḥ — fully aware of all objects\nsvarāṭ — self-luminous, independent\ntene — imparted\nbrahma — the Veda\nhṛdā — through the heart\nyaḥ — who\nādi-kavaye — to the first seer (Brahmā)\nmuhyanti — are bewildered\nyat — about whom\nsūrayaḥ — the wise\ntejaḥ-vāri-mṛdām — of fire, water and earth\nyathā — just as\nvinimayaḥ — mutual confusion / exchange\nyatra — in whom\ntri-sargaḥ — the threefold creation (of the guṇas)\namṛṣā — (appears) not false, real\ndhāmnā svena — by his own radiance\nsadā — always\nnirasta-kuhakam — who has dispelled deception (māyā)\nsatyam param — the supreme truth\ndhīmahi — we meditate upon",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "janma-ādi",
+                  "meaning": "birth and the rest (sustenance, dissolution)"
+                },
+                {
+                  "word": "asya",
+                  "meaning": "of this (universe)"
+                },
+                {
+                  "word": "yataḥ",
+                  "meaning": "from whom"
+                },
+                {
+                  "word": "anvayāt itarataḥ ca",
+                  "meaning": "by presence (in all things) and by distinctness (from them)"
+                },
+                {
+                  "word": "artheṣu abhijñaḥ",
+                  "meaning": "fully aware of all objects"
+                },
+                {
+                  "word": "svarāṭ",
+                  "meaning": "self-luminous, independent"
+                },
+                {
+                  "word": "tene",
+                  "meaning": "imparted"
+                },
+                {
+                  "word": "brahma",
+                  "meaning": "the Veda"
+                },
+                {
+                  "word": "hṛdā",
+                  "meaning": "through the heart"
+                },
+                {
+                  "word": "yaḥ",
+                  "meaning": "who"
+                },
+                {
+                  "word": "ādi-kavaye",
+                  "meaning": "to the first seer (Brahmā)"
+                },
+                {
+                  "word": "muhyanti",
+                  "meaning": "are bewildered"
+                },
+                {
+                  "word": "yat",
+                  "meaning": "about whom"
+                },
+                {
+                  "word": "sūrayaḥ",
+                  "meaning": "the wise"
+                },
+                {
+                  "word": "tejaḥ-vāri-mṛdām",
+                  "meaning": "of fire, water and earth"
+                },
+                {
+                  "word": "yathā",
+                  "meaning": "just as"
+                },
+                {
+                  "word": "vinimayaḥ",
+                  "meaning": "mutual confusion / exchange"
+                },
+                {
+                  "word": "yatra",
+                  "meaning": "in whom"
+                },
+                {
+                  "word": "tri-sargaḥ",
+                  "meaning": "the threefold creation (of the guṇas)"
+                },
+                {
+                  "word": "amṛṣā",
+                  "meaning": "(appears) not false, real"
+                },
+                {
+                  "word": "dhāmnā svena",
+                  "meaning": "by his own radiance"
+                },
+                {
+                  "word": "sadā",
+                  "meaning": "always"
+                },
+                {
+                  "word": "nirasta-kuhakam",
+                  "meaning": "who has dispelled deception (māyā)"
+                },
+                {
+                  "word": "satyam param",
+                  "meaning": "the supreme truth"
+                },
+                {
+                  "word": "dhīmahi",
+                  "meaning": "we meditate upon"
+                }
+              ]
+            }
+          ],
+          "speaker_id": null
+        },
+        {
+          "id": "51d7a449-b701-416c-a349-0dc377da22d7",
+          "ref": "1.1.2",
+          "kind": "invocation",
+          "audio": [],
+          "meter": "śārdūlavikrīḍita",
+          "ordinal": 2,
+          "speaker": null,
+          "metadata": {
+            "audio": {
+              "note": "Second invocatory verse. Editorial cue only.",
+              "label": "mangala",
+              "cue_asset": "assets/audio/sloka_chime.wav",
+              "important": true
+            }
+          },
+          "renderings": [
+            {
+              "body": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरीश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥ २ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ധർമഃ പ്രോജ്ഝിതകൈതവോഽത്ര പരമോ നിർമത്സരാണാം സതാം\nവേദ്യം വാസ്തവമത്ര വസ്തു ശിവദം താപത്രയോന്മൂലനമ് ।\nശ്രീമദ്ഭാഗവതേ മഹാമുനികൃതേ കിം വാ പരൈരീശ്വരഃ\nസദ്യോ ഹൃദ്യവരുധ്യതേഽത്ര കൃതിഭിഃ ശുശ്രൂഷുഭിസ്തത്ക്ഷണാത് ॥ ൨ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ಧರ್ಮಃ ಪ್ರೋಜ್ಝಿತಕೈತವೋಽತ್ರ ಪರಮೋ ನಿರ್ಮತ್ಸರಾಣಾಂ ಸತಾಂ\nವೇದ್ಯಂ ವಾಸ್ತವಮತ್ರ ವಸ್ತು ಶಿವದಂ ತಾಪತ್ರಯೋನ್ಮೂಲನಮ್ ।\nಶ್ರೀಮದ್ಭಾಗವತೇ ಮಹಾಮುನಿಕೃತೇ ಕಿಂ ವಾ ಪರೈರೀಶ್ವರಃ\nಸದ್ಯೋ ಹೃದ್ಯವರುಧ್ಯತೇಽತ್ರ ಕೃತಿಭಿಃ ಶುಶ್ರೂಷುಭಿಸ್ತತ್ಕ್ಷಣಾತ್ ॥ ೨ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ధర్మః ప్రోజ్ఝితకైతవోఽత్ర పరమో నిర్మత్సరాణాం సతాం\nవేద్యం వాస్తవమత్ర వస్తు శివదం తాపత్రయోన్మూలనమ్ ।\nశ్రీమద్భాగవతే మహామునికృతే కిం వా పరైరీశ్వరః\nసద్యో హృద్యవరుధ్యతేఽత్ర కృతిభిః శుశ్రూషుభిస్తత్క్షణాత్ ॥ ౨ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ধর্মঃ প্রোজ্ঝিতকৈতবোঽত্র পরমো নির্মত্সরাণাং সতাং\nবেদ্যং বাস্তবমত্র বস্তু শিবদং তাপত্রযোন্মূলনম্ ।\nশ্রীমদ্ভাগবতে মহামুনিকৃতে কিং বা পরৈরীশ্বরঃ\nসদ্যো হৃদ্যবরুধ্যতেঽত্র কৃতিভিঃ শুশ্রূষুভিস্তত্ক্ষণাত্ ॥ ২ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ધર્મઃ પ્રોજ્ઝિતકૈતવોઽત્ર પરમો નિર્મત્સરાણાં સતાં\nવેદ્યં વાસ્તવમત્ર વસ્તુ શિવદં તાપત્રયોન્મૂલનમ્ ।\nશ્રીમદ્ભાગવતે મહામુનિકૃતે કિં વા પરૈરીશ્વરઃ\nસદ્યો હૃદ્યવરુધ્યતેઽત્ર કૃતિભિઃ શુશ્રૂષુભિસ્તત્ક્ષણાત્ ॥ ૨ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "dharmaḥ projjhita-kaitavo 'tra paramo nirmatsarāṇāṁ satāṁ\nvedyaṁ vāstavam atra vastu śivadaṁ tāpa-trayonmūlanam\nśrīmad-bhāgavate mahā-muni-kṛte kiṁ vā parair īśvaraḥ\nsadyo hṛdy avarudhyate 'tra kṛtibhiḥ śuśrūṣubhis tat-kṣaṇāt",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "Here is set forth the highest dharma, free of every ulterior motive, for the good who are without envy; here the real substance is to be known — that which grants well-being and uproots the threefold misery. In this Śrīmad Bhāgavata, composed by the great sage, what need is there of any other scripture? The Lord is at once captured in the heart of those who are fortunate enough to wish to hear it — in that very moment.",
+              "kind": "translation",
+              "notes": "tāpa-traya: the three miseries — ādhyātmika (from one's own body and mind), ādhibhautika (from other beings), ādhidaivika (from natural forces).",
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "അസൂയയില്ലാത്ത സജ്ജനങ്ങൾക്കായി, സകലകപടവും വെടിഞ്ഞ പരമധർമ്മം ഇവിടെ പ്രതിപാദിക്കപ്പെടുന്നു; ത്രിതാപങ്ങളെ വേരോടെ പിഴുതെറിയുന്ന, മംഗളം നൽകുന്ന യഥാർത്ഥവസ്തുവാണ് ഇവിടെ അറിയേണ്ടത്. മഹാമുനി രചിച്ച ഈ ശ്രീമദ്ഭാഗവതം ഉള്ളപ്പോൾ മറ്റു ശാസ്ത്രങ്ങൾകൊണ്ട് എന്തു കാര്യം? ഇത് കേൾക്കാൻ ആഗ്രഹിക്കുന്ന പുണ്യവാന്മാരുടെ ഹൃദയത്തിൽ ഈശ്വരൻ ആ ക്ഷണത്തിൽത്തന്നെ ബന്ധിക്കപ്പെടുന്നു.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "dharmaḥ — dharma, religion\nprojjhita-kaitavaḥ — from which all deceit / ulterior motive is cast out\natra — here (in this work)\nparamaḥ — the highest\nnirmatsarāṇām satām — of the good who are free from envy\nvedyam — to be known\nvāstavam vastu — the real substance / reality\nśiva-dam — bestowing well-being\ntāpa-traya-unmūlanam — uprooting the three miseries\nśrīmad-bhāgavate — in the Śrīmad Bhāgavata\nmahā-muni-kṛte — composed by the great sage (Vyāsa)\nkim vā paraiḥ — what use of others?\nīśvaraḥ — the Lord\nsadyaḥ — at once\nhṛdi avarudhyate — is confined / captured in the heart\nkṛtibhiḥ — by the fortunate, the accomplished\nśuśrūṣubhiḥ — by those desiring to hear\ntat-kṣaṇāt — from that very moment",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "dharmaḥ",
+                  "meaning": "dharma, religion"
+                },
+                {
+                  "word": "projjhita-kaitavaḥ",
+                  "meaning": "from which all deceit / ulterior motive is cast out"
+                },
+                {
+                  "word": "atra",
+                  "meaning": "here (in this work)"
+                },
+                {
+                  "word": "paramaḥ",
+                  "meaning": "the highest"
+                },
+                {
+                  "word": "nirmatsarāṇām satām",
+                  "meaning": "of the good who are free from envy"
+                },
+                {
+                  "word": "vedyam",
+                  "meaning": "to be known"
+                },
+                {
+                  "word": "vāstavam vastu",
+                  "meaning": "the real substance / reality"
+                },
+                {
+                  "word": "śiva-dam",
+                  "meaning": "bestowing well-being"
+                },
+                {
+                  "word": "tāpa-traya-unmūlanam",
+                  "meaning": "uprooting the three miseries"
+                },
+                {
+                  "word": "śrīmad-bhāgavate",
+                  "meaning": "in the Śrīmad Bhāgavata"
+                },
+                {
+                  "word": "mahā-muni-kṛte",
+                  "meaning": "composed by the great sage (Vyāsa)"
+                },
+                {
+                  "word": "kim vā paraiḥ",
+                  "meaning": "what use of others?"
+                },
+                {
+                  "word": "īśvaraḥ",
+                  "meaning": "the Lord"
+                },
+                {
+                  "word": "sadyaḥ",
+                  "meaning": "at once"
+                },
+                {
+                  "word": "hṛdi avarudhyate",
+                  "meaning": "is confined / captured in the heart"
+                },
+                {
+                  "word": "kṛtibhiḥ",
+                  "meaning": "by the fortunate, the accomplished"
+                },
+                {
+                  "word": "śuśrūṣubhiḥ",
+                  "meaning": "by those desiring to hear"
+                },
+                {
+                  "word": "tat-kṣaṇāt",
+                  "meaning": "from that very moment"
+                }
+              ]
+            }
+          ],
+          "speaker_id": null
+        },
+        {
+          "id": "479a633d-7c1a-4518-bbe2-8e779f2da363",
+          "ref": "1.1.3",
+          "kind": "invocation",
+          "audio": [],
+          "meter": "drutavilambita",
+          "ordinal": 3,
+          "speaker": null,
+          "metadata": {
+            "audio": {
+              "note": "Third invocatory verse. Editorial cue only.",
+              "label": "mangala",
+              "cue_asset": "assets/audio/sloka_chime.wav",
+              "important": true
+            }
+          },
+          "renderings": [
+            {
+              "body": "निगमकल्पतरोर्गलितं फलं\nशुकमुखादमृतद्रवसंयुतम् ।\nपिबत भागवतं रसमालयं\nमुहुरहो रसिका भुवि भावुकाः ॥ ३ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "നിഗമകല്പതരോർഗലിതം ഫലം\nശുകമുഖാദമൃതദ്രവസംയുതമ് ।\nപിബത ഭാഗവതം രസമാലയം\nമുഹുരഹോ രസികാ ഭുവി ഭാവുകാഃ ॥ ൩ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ನಿಗಮಕಲ್ಪತರೋರ್ಗಲಿತಂ ಫಲಂ\nಶುಕಮುಖಾದಮೃತದ್ರವಸಂಯುತಮ್ ।\nಪಿಬತ ಭಾಗವತಂ ರಸಮಾಲಯಂ\nಮುಹುರಹೋ ರಸಿಕಾ ಭುವಿ ಭಾವುಕಾಃ ॥ ೩ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "నిగమకల్పతరోర్గలితం ఫలం\nశుకముఖాదమృతద్రవసంయుతమ్ ।\nపిబత భాగవతం రసమాలయం\nముహురహో రసికా భువి భావుకాః ॥ ౩ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "নিগমকল্পতরোর্গলিতং ফলং\nশুকমুখাদমৃতদ্রবসংযুতম্ ।\nপিবত ভাগবতং রসমালযং\nমুহুরহো রসিকা ভুবি ভাবুকাঃ ॥ ৩ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "નિગમકલ્પતરોર્ગલિતં ફલં\nશુકમુખાદમૃતદ્રવસંયુતમ્ ।\nપિબત ભાગવતં રસમાલયં\nમુહુરહો રસિકા ભુવિ ભાવુકાઃ ॥ ૩ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "nigama-kalpa-taror galitaṁ phalaṁ\nśuka-mukhād amṛta-drava-saṁyutam\npibata bhāgavataṁ rasam ālayaṁ\nmuhur aho rasikā bhuvi bhāvukāḥ",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "O connoisseurs of taste, O sensitive souls upon the earth! Drink again and again this Bhāgavata — the ripe fruit fallen from the wish-fulfilling tree of the Veda, made yet sweeter with nectar from the mouth of Śuka — this rasa, this very abode of relish.",
+              "kind": "translation",
+              "notes": "A double meaning is traditionally read in śuka-mukhāt: a fruit touched by a parrot's (śuka) beak is sweeter, and the Bhāgavata comes from the mouth of Śuka, son of Vyāsa.",
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "അല്ലയോ ഭൂമിയിലെ രസികന്മാരേ, ഭാവുകന്മാരേ! വേദമാകുന്ന കൽപവൃക്ഷത്തിൽനിന്ന് പഴുത്തുവീണ, ശുകന്റെ മുഖത്തുനിന്നുള്ള അമൃതരസത്താൽ കൂടുതൽ മധുരമായ ഈ ഭാഗവതമാകുന്ന രസം — രസത്തിന്റെ ഇരിപ്പിടം തന്നെയായ ഇത് — വീണ്ടും വീണ്ടും പാനം ചെയ്യുവിൻ.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "nigama-kalpa-taroḥ — of the wish-fulfilling tree of the Veda\ngalitam — fallen (fully ripe)\nphalam — fruit\nśuka-mukhāt — from the mouth of Śuka (also: the parrot)\namṛta-drava-saṁyutam — joined with nectarean juice\npibata — drink!\nbhāgavatam — the Bhāgavata\nrasam — the juice, relish\nālayam — the abode (of rasa); also read 'ā layam' — 'until dissolution'\nmuhuḥ — again and again\naho — O!\nrasikāḥ — connoisseurs of rasa\nbhuvi — on earth\nbhāvukāḥ — those of feeling, the sensitive",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "nigama-kalpa-taroḥ",
+                  "meaning": "of the wish-fulfilling tree of the Veda"
+                },
+                {
+                  "word": "galitam",
+                  "meaning": "fallen (fully ripe)"
+                },
+                {
+                  "word": "phalam",
+                  "meaning": "fruit"
+                },
+                {
+                  "word": "śuka-mukhāt",
+                  "meaning": "from the mouth of Śuka (also: the parrot)"
+                },
+                {
+                  "word": "amṛta-drava-saṁyutam",
+                  "meaning": "joined with nectarean juice"
+                },
+                {
+                  "word": "pibata",
+                  "meaning": "drink!"
+                },
+                {
+                  "word": "bhāgavatam",
+                  "meaning": "the Bhāgavata"
+                },
+                {
+                  "word": "rasam",
+                  "meaning": "the juice, relish"
+                },
+                {
+                  "word": "ālayam",
+                  "meaning": "the abode (of rasa); also read 'ā layam' — 'until dissolution'"
+                },
+                {
+                  "word": "muhuḥ",
+                  "meaning": "again and again"
+                },
+                {
+                  "word": "aho",
+                  "meaning": "O!"
+                },
+                {
+                  "word": "rasikāḥ",
+                  "meaning": "connoisseurs of rasa"
+                },
+                {
+                  "word": "bhuvi",
+                  "meaning": "on earth"
+                },
+                {
+                  "word": "bhāvukāḥ",
+                  "meaning": "those of feeling, the sensitive"
+                }
+              ]
+            }
+          ],
+          "speaker_id": null
+        },
+        {
+          "id": "4b90d3b8-d2ef-4b6b-b9ff-0c312f3d221c",
+          "ref": "1.1.4",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 4,
+          "speaker": null,
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः ।\nसत्रं स्वर्गाय लोकाय सहस्रसममासत ॥ ४ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "നൈമിഷേഽനിമിഷക്ഷേത്രേ ഋഷയഃ ശൌനകാദയഃ ।\nസത്രം സ്വർഗായ ലോകായ സഹസ്രസമമാസത ॥ ൪ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ನೈಮಿಷೇಽನಿಮಿಷಕ್ಷೇತ್ರೇ ಋಷಯಃ ಶೌನಕಾದಯಃ ।\nಸತ್ರಂ ಸ್ವರ್ಗಾಯ ಲೋಕಾಯ ಸಹಸ್ರಸಮಮಾಸತ ॥ ೪ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "నైమిషేఽనిమిషక్షేత్రే ఋషయః శౌనకాదయః ।\nసత్రం స్వర్గాయ లోకాయ సహస్రసమమాసత ॥ ౪ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "নৈমিষেঽনিমিষক্ষেত্রে ঋষযঃ শৌনকাদযঃ ।\nসত্রং স্বর্গায লোকায সহস্রসমমাসত ॥ ৪ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "નૈમિષેઽનિમિષક્ષેત્રે ઋષયઃ શૌનકાદયઃ ।\nસત્રં સ્વર્ગાય લોકાય સહસ્રસમમાસત ॥ ૪ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "naimiṣe 'nimiṣa-kṣetre ṛṣayaḥ śaunakādayaḥ\nsatraṁ svargāya lokāya sahasra-samam āsata",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "In the Naimiṣa forest, the sacred field of Viṣṇu, the sages headed by Śaunaka were seated at a sacrificial session of a thousand years, for the sake of the heavenly world.",
+              "kind": "translation",
+              "notes": "Text-critical: GRETIL reads 'īśayaḥ' (a transcription error); Wikisource and the printed vulgate read 'ṛṣayaḥ', which is adopted here.",
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "അനിമിഷനായ വിഷ്ണുവിന്റെ ക്ഷേത്രമായ നൈമിഷാരണ്യത്തിൽ, ശൗനകൻ തുടങ്ങിയ ഋഷിമാർ സ്വർഗലോകപ്രാപ്തിക്കായി ആയിരം വർഷം നീളുന്ന ഒരു സത്രയാഗത്തിൽ ഇരിക്കുകയായിരുന്നു.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "naimiṣe — in Naimiṣa (forest)\nanimiṣa-kṣetre — in the field sacred to Animiṣa (the unblinking one, Viṣṇu)\nṛṣayaḥ — the sages\nśaunaka-ādayaḥ — headed by Śaunaka\nsatram — a sacrificial session\nsvargāya lokāya — for the heavenly world (or: for the good of the world)\nsahasra-samam — lasting a thousand years\nāsata — they sat / performed",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "naimiṣe",
+                  "meaning": "in Naimiṣa (forest)"
+                },
+                {
+                  "word": "animiṣa-kṣetre",
+                  "meaning": "in the field sacred to Animiṣa (the unblinking one, Viṣṇu)"
+                },
+                {
+                  "word": "ṛṣayaḥ",
+                  "meaning": "the sages"
+                },
+                {
+                  "word": "śaunaka-ādayaḥ",
+                  "meaning": "headed by Śaunaka"
+                },
+                {
+                  "word": "satram",
+                  "meaning": "a sacrificial session"
+                },
+                {
+                  "word": "svargāya lokāya",
+                  "meaning": "for the heavenly world (or: for the good of the world)"
+                },
+                {
+                  "word": "sahasra-samam",
+                  "meaning": "lasting a thousand years"
+                },
+                {
+                  "word": "āsata",
+                  "meaning": "they sat / performed"
+                }
+              ]
+            }
+          ],
+          "speaker_id": null
+        },
+        {
+          "id": "0b6a11fd-877c-460e-b2ad-1da5e5cc6a90",
+          "ref": "1.1.5",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 5,
+          "speaker": null,
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "त एकदा तु मुनयः प्रातर्हुतहुताग्नयः ।\nसत्कृतं सूतमासीनं पप्रच्छुरिदमादरात् ॥ ५ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ത ഏകദാ തു മുനയഃ പ്രാതർഹുതഹുതാഗ്നയഃ ।\nസത്കൃതം സൂതമാസീനം പപ്രച്ഛുരിദമാദരാത് ॥ ൫ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ತ ಏಕದಾ ತು ಮುನಯಃ ಪ್ರಾತರ್ಹುತಹುತಾಗ್ನಯಃ ।\nಸತ್ಕೃತಂ ಸೂತಮಾಸೀನಂ ಪಪ್ರಚ್ಛುರಿದಮಾದರಾತ್ ॥ ೫ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "త ఏకదా తు మునయః ప్రాతర్హుతహుతాగ్నయః ।\nసత్కృతం సూతమాసీనం పప్రచ్ఛురిదమాదరాత్ ॥ ౫ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ত একদা তু মুনযঃ প্রাতর্হুতহুতাগ্নযঃ ।\nসত্কৃতং সূতমাসীনং পপ্রচ্ছুরিদমাদরাত্ ॥ ৫ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ત એકદા તુ મુનયઃ પ્રાતર્હુતહુતાગ્નયઃ ।\nસત્કૃતં સૂતમાસીનં પપ્રચ્છુરિદમાદરાત્ ॥ ૫ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ta ekadā tu munayaḥ prātar huta-hutāgnayaḥ\nsatkṛtaṁ sūtam āsīnaṁ papracchur idam ādarāt",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "One day, having offered the morning oblations into the sacred fire, those sages respectfully put this question to Sūta, who was seated after being duly honoured.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "ഒരു ദിവസം, പ്രഭാതത്തിലെ ഹോമം അഗ്നിയിൽ അർപ്പിച്ചശേഷം, ആ മുനിമാർ യഥാവിധി ആദരിക്കപ്പെട്ട് ഇരിക്കുന്ന സൂതനോട് ആദരപൂർവ്വം ഇപ്രകാരം ചോദിച്ചു.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "te — they\nekadā — once, one day\ntu — indeed\nmunayaḥ — the sages\nprātaḥ — in the morning\nhuta-huta-agnayaḥ — having offered oblations into the sacred fire\nsatkṛtam — duly honoured\nsūtam — Sūta\nāsīnam — seated\npapracchuḥ — they asked\nidam — this\nādarāt — with respect",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "te",
+                  "meaning": "they"
+                },
+                {
+                  "word": "ekadā",
+                  "meaning": "once, one day"
+                },
+                {
+                  "word": "tu",
+                  "meaning": "indeed"
+                },
+                {
+                  "word": "munayaḥ",
+                  "meaning": "the sages"
+                },
+                {
+                  "word": "prātaḥ",
+                  "meaning": "in the morning"
+                },
+                {
+                  "word": "huta-huta-agnayaḥ",
+                  "meaning": "having offered oblations into the sacred fire"
+                },
+                {
+                  "word": "satkṛtam",
+                  "meaning": "duly honoured"
+                },
+                {
+                  "word": "sūtam",
+                  "meaning": "Sūta"
+                },
+                {
+                  "word": "āsīnam",
+                  "meaning": "seated"
+                },
+                {
+                  "word": "papracchuḥ",
+                  "meaning": "they asked"
+                },
+                {
+                  "word": "idam",
+                  "meaning": "this"
+                },
+                {
+                  "word": "ādarāt",
+                  "meaning": "with respect"
+                }
+              ]
+            }
+          ],
+          "speaker_id": null
+        },
+        {
+          "id": "cbcb258a-55ce-41fa-a5c8-5d51ad112b5c",
+          "ref": "1.1.6",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 6,
+          "speaker": {
+            "id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+            "slug": "sages-of-naimisaranya",
+            "name_sa": "शौनकादयः ऋषयः",
+            "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)"
+          },
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "ऋषय ऊचुः ।\nत्वया खलु पुराणानि सेतिहासानि चानघ ।\nआख्यातान्यप्यधीतानि धर्मशास्त्राणि यान्युत ॥ ६ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ഋഷയ ഊചുഃ ।\nത്വയാ ഖലു പുരാണാനി സേതിഹാസാനി ചാനഘ ।\nആഖ്യാതാന്യപ്യധീതാനി ധർമശാസ്ത്രാണി യാന്യുത ॥ ൬ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ಋಷಯ ಊಚುಃ ।\nತ್ವಯಾ ಖಲು ಪುರಾಣಾನಿ ಸೇತಿಹಾಸಾನಿ ಚಾನಘ ।\nಆಖ್ಯಾತಾನ್ಯಪ್ಯಧೀತಾನಿ ಧರ್ಮಶಾಸ್ತ್ರಾಣಿ ಯಾನ್ಯುತ ॥ ೬ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ఋషయ ఊచుః ।\nత్వయా ఖలు పురాణాని సేతిహాసాని చానఘ ।\nఆఖ్యాతాన్యప్యధీతాని ధర్మశాస్త్రాణి యాన్యుత ॥ ౬ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ঋষয ঊচুঃ ।\nত্বযা খলু পুরাণানি সেতিহাসানি চানঘ ।\nআখ্যাতান্যপ্যধীতানি ধর্মশাস্ত্রাণি যান্যুত ॥ ৬ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ઋષય ઊચુઃ ।\nત્વયા ખલુ પુરાણાનિ સેતિહાસાનિ ચાનઘ ।\nઆખ્યાતાન્યપ્યધીતાનિ ધર્મશાસ્ત્રાણિ યાન્યુત ॥ ૬ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ṛṣaya ūcuḥ\ntvayā khalu purāṇāni setihāsāni cānagha\nākhyātāny apy adhītāni dharma-śāstrāṇi yāny uta",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "The sages said: O sinless one, you have indeed studied — and also expounded — the Purāṇas together with the Itihāsas, and the treatises on dharma as well.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "ഋഷിമാർ പറഞ്ഞു: അല്ലയോ നിഷ്പാപനായവനേ, അങ്ങ് പുരാണങ്ങളും ഇതിഹാസങ്ങളും ധർമ്മശാസ്ത്രങ്ങളും പഠിക്കുക മാത്രമല്ല, അവ വ്യാഖ്യാനിക്കുകയും ചെയ്തിട്ടുണ്ടല്ലോ.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "ṛṣayaḥ ūcuḥ — the sages said\ntvayā — by you\nkhalu — indeed\npurāṇāni — the Purāṇas\nsa-itihāsāni — together with the Itihāsas (epics)\nca — and\nanagha — O sinless one\nākhyātāni — expounded\napi — also\nadhītāni — studied\ndharma-śāstrāṇi — the treatises on dharma\nyāni uta — and which (there are)",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "ṛṣayaḥ ūcuḥ",
+                  "meaning": "the sages said"
+                },
+                {
+                  "word": "tvayā",
+                  "meaning": "by you"
+                },
+                {
+                  "word": "khalu",
+                  "meaning": "indeed"
+                },
+                {
+                  "word": "purāṇāni",
+                  "meaning": "the Purāṇas"
+                },
+                {
+                  "word": "sa-itihāsāni",
+                  "meaning": "together with the Itihāsas (epics)"
+                },
+                {
+                  "word": "ca",
+                  "meaning": "and"
+                },
+                {
+                  "word": "anagha",
+                  "meaning": "O sinless one"
+                },
+                {
+                  "word": "ākhyātāni",
+                  "meaning": "expounded"
+                },
+                {
+                  "word": "api",
+                  "meaning": "also"
+                },
+                {
+                  "word": "adhītāni",
+                  "meaning": "studied"
+                },
+                {
+                  "word": "dharma-śāstrāṇi",
+                  "meaning": "the treatises on dharma"
+                },
+                {
+                  "word": "yāni uta",
+                  "meaning": "and which (there are)"
+                }
+              ]
+            }
+          ],
+          "speaker_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8"
+        },
+        {
+          "id": "558b3002-3bed-41e6-be12-060cfb83eba7",
+          "ref": "1.1.7",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 7,
+          "speaker": {
+            "id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+            "slug": "sages-of-naimisaranya",
+            "name_sa": "शौनकादयः ऋषयः",
+            "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)"
+          },
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "यानि वेदविदां श्रेष्ठो भगवान् बादरायणः ।\nअन्ये च मुनयः सूत परावरविदो विदुः ॥ ७ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "യാനി വേദവിദാം ശ്രേഷ്ഠോ ഭഗവാൻ ബാദരായണഃ ।\nഅന്യേ ച മുനയഃ സൂത പരാവരവിദോ വിദുഃ ॥ ൭ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ಯಾನಿ ವೇದವಿದಾಂ ಶ್ರೇಷ್ಠೋ ಭಗವಾನ್ ಬಾದರಾಯಣಃ ।\nಅನ್ಯೇ ಚ ಮುನಯಃ ಸೂತ ಪರಾವರವಿದೋ ವಿದುಃ ॥ ೭ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "యాని వేదవిదాం శ్రేష్ఠో భగవాన్ బాదరాయణః ।\nఅన్యే చ మునయః సూత పరావరవిదో విదుః ॥ ౭ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "যানি বেদবিদাং শ্রেষ্ঠো ভগবান্ বাদরাযণঃ ।\nঅন্যে চ মুনযঃ সূত পরাবরবিদো বিদুঃ ॥ ৭ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "યાનિ વેદવિદાં શ્રેષ્ઠો ભગવાન્ બાદરાયણઃ ।\nઅન્યે ચ મુનયઃ સૂત પરાવરવિદો વિદુઃ ॥ ૭ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "yāni veda-vidāṁ śreṣṭho bhagavān bādarāyaṇaḥ\nanye ca munayaḥ sūta parāvara-vido viduḥ",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "O Sūta, whatever the blessed Bādarāyaṇa, foremost among the knowers of the Veda, knows — and whatever the other sages who know both the higher and the lower know —",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "അല്ലയോ സൂതാ, വേദജ്ഞരിൽ ശ്രേഷ്ഠനായ ഭഗവാൻ ബാദരായണനും, പരവും അപരവും അറിയുന്ന മറ്റു മുനിമാരും അറിയുന്നതെല്ലാം —",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "yāni — which (things)\nveda-vidām — of the knowers of the Veda\nśreṣṭhaḥ — the foremost\nbhagavān — the venerable\nbādarāyaṇaḥ — Bādarāyaṇa (Vyāsa)\nanye ca munayaḥ — and the other sages\nsūta — O Sūta\npara-avara-vidaḥ — knowers of the higher and the lower (spirit and matter / Veda and its auxiliaries)\nviduḥ — know",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "yāni",
+                  "meaning": "which (things)"
+                },
+                {
+                  "word": "veda-vidām",
+                  "meaning": "of the knowers of the Veda"
+                },
+                {
+                  "word": "śreṣṭhaḥ",
+                  "meaning": "the foremost"
+                },
+                {
+                  "word": "bhagavān",
+                  "meaning": "the venerable"
+                },
+                {
+                  "word": "bādarāyaṇaḥ",
+                  "meaning": "Bādarāyaṇa (Vyāsa)"
+                },
+                {
+                  "word": "anye ca munayaḥ",
+                  "meaning": "and the other sages"
+                },
+                {
+                  "word": "sūta",
+                  "meaning": "O Sūta"
+                },
+                {
+                  "word": "para-avara-vidaḥ",
+                  "meaning": "knowers of the higher and the lower (spirit and matter / Veda and its auxiliaries)"
+                },
+                {
+                  "word": "viduḥ",
+                  "meaning": "know"
+                }
+              ]
+            }
+          ],
+          "speaker_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8"
+        },
+        {
+          "id": "d1ebe33d-946b-4fc4-9f93-7d4c9e8434d9",
+          "ref": "1.1.8",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 8,
+          "speaker": {
+            "id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+            "slug": "sages-of-naimisaranya",
+            "name_sa": "शौनकादयः ऋषयः",
+            "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)"
+          },
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "वेत्थ त्वं सौम्य तत्सर्वं तत्त्वतस्तदनुग्रहात् ।\nब्रूयुः स्निग्धस्य शिष्यस्य गुरवो गुह्यमप्युत ॥ ८ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "വേത്ഥ ത്വം സൌമ്യ തത്സർവം തത്ത്വതസ്തദനുഗ്രഹാത് ।\nബ്രൂയുഃ സ്നിഗ്ധസ്യ ശിഷ്യസ്യ ഗുരവോ ഗുഹ്യമപ്യുത ॥ ൮ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ವೇತ್ಥ ತ್ವಂ ಸೌಮ್ಯ ತತ್ಸರ್ವಂ ತತ್ತ್ವತಸ್ತದನುಗ್ರಹಾತ್ ।\nಬ್ರೂಯುಃ ಸ್ನಿಗ್ಧಸ್ಯ ಶಿಷ್ಯಸ್ಯ ಗುರವೋ ಗುಹ್ಯಮಪ್ಯುತ ॥ ೮ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "వేత్థ త్వం సౌమ్య తత్సర్వం తత్త్వతస్తదనుగ్రహాత్ ।\nబ్రూయుః స్నిగ్ధస్య శిష్యస్య గురవో గుహ్యమప్యుత ॥ ౮ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "বেত্থ ত্বং সৌম্য তত্সর্বং তত্ত্বতস্তদনুগ্রহাত্ ।\nব্রূযুঃ স্নিগ্ধস্য শিষ্যস্য গুরবো গুহ্যমপ্যুত ॥ ৮ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "વેત્થ ત્વં સૌમ્ય તત્સર્વં તત્ત્વતસ્તદનુગ્રહાત્ ।\nબ્રૂયુઃ સ્નિગ્ધસ્ય શિષ્યસ્ય ગુરવો ગુહ્યમપ્યુત ॥ ૮ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "vettha tvaṁ saumya tat sarvaṁ tattvatas tad-anugrahāt\nbrūyuḥ snigdhasya śiṣyasya guravo guhyam apy uta",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "— all of that, gentle one, you know in truth, by their grace. For teachers reveal even what is secret to a disciple who is dear to them.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "— അതെല്ലാം, സൗമ്യനായവനേ, അവരുടെ അനുഗ്രഹത്താൽ അങ്ങ് യഥാർത്ഥമായി അറിയുന്നു. സ്നേഹമുള്ള ശിഷ്യനോട് ഗുരുക്കന്മാർ രഹസ്യമായതു പോലും പറഞ്ഞുകൊടുക്കുമല്ലോ.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "vettha — you know\ntvam — you\nsaumya — O gentle one\ntat sarvam — all that\ntattvataḥ — in truth, in essence\ntat-anugrahāt — by their grace\nbrūyuḥ — would tell\nsnigdhasya śiṣyasya — to an affectionate / beloved disciple\nguravaḥ — teachers\nguhyam api uta — even what is confidential",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "vettha",
+                  "meaning": "you know"
+                },
+                {
+                  "word": "tvam",
+                  "meaning": "you"
+                },
+                {
+                  "word": "saumya",
+                  "meaning": "O gentle one"
+                },
+                {
+                  "word": "tat sarvam",
+                  "meaning": "all that"
+                },
+                {
+                  "word": "tattvataḥ",
+                  "meaning": "in truth, in essence"
+                },
+                {
+                  "word": "tat-anugrahāt",
+                  "meaning": "by their grace"
+                },
+                {
+                  "word": "brūyuḥ",
+                  "meaning": "would tell"
+                },
+                {
+                  "word": "snigdhasya śiṣyasya",
+                  "meaning": "to an affectionate / beloved disciple"
+                },
+                {
+                  "word": "guravaḥ",
+                  "meaning": "teachers"
+                },
+                {
+                  "word": "guhyam api uta",
+                  "meaning": "even what is confidential"
+                }
+              ]
+            }
+          ],
+          "speaker_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8"
+        },
+        {
+          "id": "81dae911-e110-4b19-8c5d-23baf77efd35",
+          "ref": "1.1.9",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 9,
+          "speaker": {
+            "id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+            "slug": "sages-of-naimisaranya",
+            "name_sa": "शौनकादयः ऋषयः",
+            "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)"
+          },
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "तत्र तत्राञ्जसायुष्मन् भवता यद्विनिश्चितम् ।\nपुंसामेकान्ततः श्रेयस्तन्नः शंसितुमर्हसि ॥ ९ ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "തത്ര തത്രാഞ്ജസായുഷ്മൻ ഭവതാ യദ്വിനിശ്ചിതമ് ।\nപുംസാമേകാന്തതഃ ശ്രേയസ്തന്നഃ ശംസിതുമർഹസി ॥ ൯ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ತತ್ರ ತತ್ರಾಞ್ಜಸಾಯುಷ್ಮನ್ ಭವತಾ ಯದ್ವಿನಿಶ್ಚಿತಮ್ ।\nಪುಂಸಾಮೇಕಾನ್ತತಃ ಶ್ರೇಯಸ್ತನ್ನಃ ಶಂಸಿತುಮರ್ಹಸಿ ॥ ೯ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "తత్ర తత్రాఞ్జసాయుష్మన్ భవతా యద్వినిశ్చితమ్ ।\nపుంసామేకాన్తతః శ్రేయస్తన్నః శంసితుమర్హసి ॥ ౯ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "তত্র তত্রাঞ্জসাযুষ্মন্ ভবতা যদ্বিনিশ্চিতম্ ।\nপুংসামেকান্ততঃ শ্রেযস্তন্নঃ শংসিতুমর্হসি ॥ ৯ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "તત્ર તત્રાઞ્જસાયુષ્મન્ ભવતા યદ્વિનિશ્ચિતમ્ ।\nપુંસામેકાન્તતઃ શ્રેયસ્તન્નઃ શંસિતુમર્હસિ ॥ ૯ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "tatra tatrāñjasāyuṣman bhavatā yad viniścitam\npuṁsām ekāntataḥ śreyas tan naḥ śaṁsitum arhasi",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "Therefore, long-lived one, from all of that, please tell us plainly what you have ascertained to be the absolute good of human beings.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "അതിനാൽ, ദീർഘായുസ്സേ, അവയിൽനിന്നെല്ലാം മനുഷ്യർക്ക് ഏകാന്തമായ, പരമമായ ശ്രേയസ്സ് എന്തെന്ന് അങ്ങ് നിശ്ചയിച്ചിട്ടുള്ളതിനെ ലളിതമായി ഞങ്ങൾക്ക് പറഞ്ഞുതരാൻ അങ്ങ് അർഹനാണ്.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "tatra tatra — in each of those (scriptures)\nañjasā — plainly, directly\nāyuṣman — O long-lived one\nbhavatā — by you\nyat viniścitam — what has been ascertained\npuṁsām — of human beings\nekāntataḥ — absolutely, without exception\nśreyaḥ — the ultimate good\ntat — that\nnaḥ — to us\nśaṁsitum arhasi — you ought to tell",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "tatra tatra",
+                  "meaning": "in each of those (scriptures)"
+                },
+                {
+                  "word": "añjasā",
+                  "meaning": "plainly, directly"
+                },
+                {
+                  "word": "āyuṣman",
+                  "meaning": "O long-lived one"
+                },
+                {
+                  "word": "bhavatā",
+                  "meaning": "by you"
+                },
+                {
+                  "word": "yat viniścitam",
+                  "meaning": "what has been ascertained"
+                },
+                {
+                  "word": "puṁsām",
+                  "meaning": "of human beings"
+                },
+                {
+                  "word": "ekāntataḥ",
+                  "meaning": "absolutely, without exception"
+                },
+                {
+                  "word": "śreyaḥ",
+                  "meaning": "the ultimate good"
+                },
+                {
+                  "word": "tat",
+                  "meaning": "that"
+                },
+                {
+                  "word": "naḥ",
+                  "meaning": "to us"
+                },
+                {
+                  "word": "śaṁsitum arhasi",
+                  "meaning": "you ought to tell"
+                }
+              ]
+            }
+          ],
+          "speaker_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8"
+        },
+        {
+          "id": "b9a76067-e63f-4324-a2cc-5020ceddf605",
+          "ref": "1.1.10",
+          "kind": "verse",
+          "audio": [],
+          "meter": "anuṣṭubh",
+          "ordinal": 10,
+          "speaker": {
+            "id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+            "slug": "sages-of-naimisaranya",
+            "name_sa": "शौनकादयः ऋषयः",
+            "name_iast": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)"
+          },
+          "metadata": {},
+          "renderings": [
+            {
+              "body": "प्रायेणाल्पायुषः सभ्य कलावस्मिन् युगे जनाः ।\nमन्दाः सुमन्दमतयो मन्दभाग्या ह्युपद्रुताः ॥ १० ॥",
+              "kind": "base_text",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "bba6efe5-9462-4547-8737-734e5891bab0",
+              "script_code": "Deva",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "പ്രായേണാല്പായുഷഃ സഭ്യ കലാവസ്മിൻ യുഗേ ജനാഃ ।\nമന്ദാഃ സുമന്ദമതയോ മന്ദഭാഗ്യാ ഹ്യുപദ്രുതാഃ ॥ ൧൦ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+              "script_code": "Mlym",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ಪ್ರಾಯೇಣಾಲ್ಪಾಯುಷಃ ಸಭ್ಯ ಕಲಾವಸ್ಮಿನ್ ಯುಗೇ ಜನಾಃ ।\nಮನ್ದಾಃ ಸುಮನ್ದಮತಯೋ ಮನ್ದಭಾಗ್ಯಾ ಹ್ಯುಪದ್ರುತಾಃ ॥ ೧೦ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+              "script_code": "Knda",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "ప్రాయేణాల్పాయుషః సభ్య కలావస్మిన్ యుగే జనాః ।\nమన్దాః సుమన్దమతయో మన్దభాగ్యా హ్యుపద్రుతాః ॥ ౧౦ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+              "script_code": "Telu",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "প্রাযেণাল্পাযুষঃ সভ্য কলাবস্মিন্ যুগে জনাঃ ।\nমন্দাঃ সুমন্দমতযো মন্দভাগ্যা হ্যুপদ্রুতাঃ ॥ ১০ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+              "script_code": "Beng",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "પ્રાયેણાલ્પાયુષઃ સભ્ય કલાવસ્મિન્ યુગે જનાઃ ।\nમન્દાઃ સુમન્દમતયો મન્દભાગ્યા હ્યુપદ્રુતાઃ ॥ ૧૦ ॥",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+              "script_code": "Gujr",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "prāyeṇālpāyuṣaḥ sabhya kalāv asmin yuge janāḥ\nmandāḥ sumanda-matayo manda-bhāgyā hy upadrutāḥ",
+              "kind": "transliteration",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+              "script_code": "Latn",
+              "language_code": "sa",
+              "word_meanings": null
+            },
+            {
+              "body": "For in this age of Kali, O noble one, people are for the most part short-lived, sluggish, very dull of understanding, unfortunate, and, above all, harassed by troubles.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": null
+            },
+            {
+              "body": "എന്തെന്നാൽ, സഭ്യനായവനേ, ഈ കലിയുഗത്തിൽ ജനങ്ങൾ മിക്കവാറും അൽപായുസ്സുള്ളവരും, മന്ദന്മാരും, അതിമന്ദബുദ്ധികളും, ഭാഗ്യഹീനരും, എപ്പോഴും ഉപദ്രവങ്ങളാൽ പീഡിതരുമാണ്.",
+              "kind": "translation",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+              "script_code": "Mlym",
+              "language_code": "ml",
+              "word_meanings": null
+            },
+            {
+              "body": "prāyeṇa — for the most part\nalpa-āyuṣaḥ — short-lived\nsabhya — O noble one (fit for the assembly)\nkalau asmin yuge — in this age of Kali\njanāḥ — people\nmandāḥ — sluggish, lazy\nsu-manda-matayaḥ — of very dull intelligence\nmanda-bhāgyāḥ — unfortunate\nhi — indeed\nupadrutāḥ — harassed, disturbed",
+              "kind": "word_meanings",
+              "notes": null,
+              "body_html": null,
+              "footnotes": null,
+              "edition_id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+              "script_code": "Latn",
+              "language_code": "en",
+              "word_meanings": [
+                {
+                  "word": "prāyeṇa",
+                  "meaning": "for the most part"
+                },
+                {
+                  "word": "alpa-āyuṣaḥ",
+                  "meaning": "short-lived"
+                },
+                {
+                  "word": "sabhya",
+                  "meaning": "O noble one (fit for the assembly)"
+                },
+                {
+                  "word": "kalau asmin yuge",
+                  "meaning": "in this age of Kali"
+                },
+                {
+                  "word": "janāḥ",
+                  "meaning": "people"
+                },
+                {
+                  "word": "mandāḥ",
+                  "meaning": "sluggish, lazy"
+                },
+                {
+                  "word": "su-manda-matayaḥ",
+                  "meaning": "of very dull intelligence"
+                },
+                {
+                  "word": "manda-bhāgyāḥ",
+                  "meaning": "unfortunate"
+                },
+                {
+                  "word": "hi",
+                  "meaning": "indeed"
+                },
+                {
+                  "word": "upadrutāḥ",
+                  "meaning": "harassed, disturbed"
+                }
+              ]
+            }
+          ],
+          "speaker_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8"
+        }
+      ],
+      "section": {
+        "id": "74f13e8c-8ed6-42fc-a768-ce328e7adf47",
+        "ref": "1.1",
+        "level": 2,
+        "status": "published",
+        "ordinal": 1,
+        "summary": "After three invocatory verses defining the supreme truth and the purpose of the Bhāgavata, the sages led by Śaunaka, performing a thousand-year sacrifice at Naimiṣāraṇya, honour Sūta and ask him what is the ultimate good for people in the age of Kali.",
+        "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+        "metadata": {
+          "title_en": "The Questions of the Sages at Naimiṣāraṇya",
+          "title_ml": "നൈമിഷാരണ്യത്തിലെ ഋഷിമാരുടെ ചോദ്യങ്ങൾ",
+          "title_sa": "नैमिषीयोपाख्याने ऋषिप्रश्नः",
+          "summary_en": "After three invocatory verses defining the supreme truth and the purpose of the Bhāgavata, the sages led by Śaunaka, performing a thousand-year sacrifice at Naimiṣāraṇya, honour Sūta and ask him what is the ultimate good for people in the age of Kali.",
+          "summary_ml": "പരമസത്യത്തെയും ഭാഗവതത്തിന്റെ ലക്ഷ്യത്തെയും നിർവചിക്കുന്ന മൂന്ന് മംഗളശ്ലോകങ്ങൾക്കു ശേഷം, നൈമിഷാരണ്യത്തിൽ ആയിരം വർഷത്തെ സത്രം അനുഷ്ഠിക്കുന്ന ശൗനകാദി ഋഷിമാർ സൂതനെ ആദരിച്ച് കലിയുഗത്തിലെ ജനങ്ങൾക്ക് പരമമായ ശ്രേയസ്സ് എന്തെന്ന് ചോദിക്കുന്നു.",
+          "title_iast": "Naimiṣīyopākhyāna — Praśnāḥ (The Sages' Questions)",
+          "colophon_sa": "इति श्रीमद्भागवते महापुराणे पारमहंस्यां संहितायां प्रथमस्कन्धे नैमिषीयोपाख्याने प्रथमोऽध्यायः ॥ १ ॥"
+        },
+        "title_sa": "नैमिषीयोपाख्याने ऋषिप्रश्नः",
+        "parent_id": "60bde2c1-c28b-4e80-bbfe-c5406267ea69",
+        "created_at": "2026-09-22T14:55:46.156398+00:00",
+        "title_iast": "Naimiṣīyopākhyāna — Praśnāḥ (The Sages' Questions)",
+        "updated_at": "2026-09-22T14:56:51.010572+00:00",
+        "verse_count": 23
+      },
+      "editions": [
+        {
+          "id": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "kind": "base_text",
+          "slug": "sb-mula-deva",
+          "title": "Mūla (Devanagari)",
+          "status": "published",
+          "license": "CC-BY-SA-4.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": true,
+          "is_machine": false,
+          "sort_order": 10,
+          "source_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+          "description": "The Sanskrit text in Devanagari. Electronic witness: sa.wikisource.org (CC BY-SA 4.0), 14069 verses in 335 chapters.",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "script_code": "Deva",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": null,
+          "source_title": "श्रीमद्भागवतपुराणम् — Sanskrit Wikisource",
+          "language_code": "sa",
+          "rights_holder": "Sanskrit Wikisource contributors",
+          "rights_status": "open_license",
+          "script_name_en": "Devanagari",
+          "source_authors": [],
+          "attribution_text": "Sanskrit mūla of the Bhāgavata Purāṇa, electronic edition after sa.wikisource.org (CC BY-SA 4.0). The ancient work is public-domain mūla (see Delhi High Court, 2023, on Purāṇa mūla); this file follows the Wikimedia e-text, not GRETIL. Gita Press numbering used only for collation. GRETIL consulted as a scholarly witness and is not redistributed.",
+          "language_name_en": "Sanskrit",
+          "source_publisher": "Wikimedia Foundation / Sanskrit Wikisource contributors",
+          "source_archive_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "15471baf-25a6-4d7c-8c8e-dabf13430c13",
+          "kind": "transliteration",
+          "slug": "sb-mula-mlym",
+          "title": "Mūla (Malayalam script)",
+          "status": "published",
+          "license": "CC0-1.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": false,
+          "is_machine": true,
+          "sort_order": 15,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": "Sanskrit text rendered in Malayalam script (automatic conversion).",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "script_code": "Mlym",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "sa",
+          "rights_holder": "Dharma Library",
+          "rights_status": "original",
+          "script_name_en": "Malayalam",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+          "language_name_en": "Sanskrit",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "30b25618-6cd7-4e99-a1f9-fd883cb66e28",
+          "kind": "transliteration",
+          "slug": "sb-mula-knda",
+          "title": "Mūla (Kannada script)",
+          "status": "published",
+          "license": "CC0-1.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": false,
+          "is_machine": true,
+          "sort_order": 16,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": null,
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "script_code": "Knda",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "sa",
+          "rights_holder": "Dharma Library",
+          "rights_status": "original",
+          "script_name_en": "Kannada",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+          "language_name_en": "Sanskrit",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "19b5de96-599e-412d-8a74-7d7e5d0dc0cf",
+          "kind": "transliteration",
+          "slug": "sb-mula-telu",
+          "title": "Mūla (Telugu script)",
+          "status": "published",
+          "license": "CC0-1.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": false,
+          "is_machine": true,
+          "sort_order": 17,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": null,
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "script_code": "Telu",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "sa",
+          "rights_holder": "Dharma Library",
+          "rights_status": "original",
+          "script_name_en": "Telugu",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+          "language_name_en": "Sanskrit",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "71cf1f62-b7ef-4c69-a15f-2681fb73de56",
+          "kind": "transliteration",
+          "slug": "sb-mula-beng",
+          "title": "Mūla (Bengali script)",
+          "status": "published",
+          "license": "CC0-1.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": false,
+          "is_machine": true,
+          "sort_order": 18,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": null,
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "script_code": "Beng",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "sa",
+          "rights_holder": "Dharma Library",
+          "rights_status": "original",
+          "script_name_en": "Bengali",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+          "language_name_en": "Sanskrit",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "b424ff45-0fd5-4037-8316-b7bca4a348cc",
+          "kind": "transliteration",
+          "slug": "sb-mula-gujr",
+          "title": "Mūla (Gujarati script)",
+          "status": "published",
+          "license": "CC0-1.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": false,
+          "is_machine": true,
+          "sort_order": 19,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": null,
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "script_code": "Gujr",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "sa",
+          "rights_holder": "Dharma Library",
+          "rights_status": "original",
+          "script_name_en": "Gujarati",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+          "language_name_en": "Sanskrit",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "5e80d7d1-c33b-42e1-afcf-1d0da851c781",
+          "kind": "transliteration",
+          "slug": "sb-iast",
+          "title": "IAST transliteration",
+          "status": "published",
+          "license": "CC-BY-SA-4.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": true,
+          "is_machine": false,
+          "sort_order": 20,
+          "source_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+          "description": "Roman transliteration (IAST) with word breaks and compound hyphens, derived from the Wikisource Devanagari.",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "script_code": "Latn",
+          "source_year": null,
+          "contributors": [],
+          "derived_from": "bba6efe5-9462-4547-8737-734e5891bab0",
+          "source_title": "श्रीमद्भागवतपुराणम् — Sanskrit Wikisource",
+          "language_code": "sa",
+          "rights_holder": "Sanskrit Wikisource contributors",
+          "rights_status": "open_license",
+          "script_name_en": "Latin (IAST)",
+          "source_authors": [],
+          "attribution_text": "Sanskrit mūla of the Bhāgavata Purāṇa, electronic edition after sa.wikisource.org (CC BY-SA 4.0). The ancient work is public-domain mūla (see Delhi High Court, 2023, on Purāṇa mūla); this file follows the Wikimedia e-text, not GRETIL. Gita Press numbering used only for collation. GRETIL consulted as a scholarly witness and is not redistributed.",
+          "language_name_en": "Sanskrit",
+          "source_publisher": "Wikimedia Foundation / Sanskrit Wikisource contributors",
+          "source_archive_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+          "language_name_native": "संस्कृतम्"
+        },
+        {
+          "id": "8f618ebf-e2ca-4593-8430-a9f2afcf93dd",
+          "kind": "translation",
+          "slug": "sb-en-dl",
+          "title": "English translation (Dharma Library, draft)",
+          "status": "published",
+          "license": "CC-BY-SA-4.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": true,
+          "is_machine": false,
+          "sort_order": 30,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": "Original English prose translation. Draft — pending scholarly review.",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "script_code": "Latn",
+          "source_year": null,
+          "contributors": [
+            "Dharma Library contributors"
+          ],
+          "derived_from": null,
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "en",
+          "rights_holder": "Dharma Library contributors",
+          "rights_status": "original",
+          "script_name_en": "Latin (IAST)",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
+          "language_name_en": "English",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "English"
+        },
+        {
+          "id": "f338d8ad-73f9-48e5-9056-095db45bb294",
+          "kind": "translation",
+          "slug": "sb-ml-dl",
+          "title": "മലയാളം പരിഭാഷ (Dharma Library, കരട്)",
+          "status": "published",
+          "license": "CC-BY-SA-4.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": true,
+          "is_machine": false,
+          "sort_order": 31,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": "Original Malayalam prose translation. Draft — pending scholarly review.",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "script_code": "Mlym",
+          "source_year": null,
+          "contributors": [
+            "Dharma Library contributors"
+          ],
+          "derived_from": null,
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "ml",
+          "rights_holder": "Dharma Library contributors",
+          "rights_status": "original",
+          "script_name_en": "Malayalam",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
+          "language_name_en": "Malayalam",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "മലയാളം"
+        },
+        {
+          "id": "39f77daa-cd60-4ea2-9231-114a7b1ffe2b",
+          "kind": "word_meanings",
+          "slug": "sb-wm-en",
+          "title": "Word-by-word (English)",
+          "status": "published",
+          "license": "CC-BY-SA-4.0",
+          "work_id": "fefe1afd-dc22-4a37-86bb-bc13ea9557c5",
+          "metadata": {},
+          "is_default": true,
+          "is_machine": false,
+          "sort_order": 40,
+          "source_url": "https://github.com/ramnath086/dharma-library",
+          "description": "Word-by-word glosses keyed to the IAST.",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "script_code": "Latn",
+          "source_year": null,
+          "contributors": [
+            "Dharma Library contributors"
+          ],
+          "derived_from": null,
+          "source_title": "Dharma Library editorial team — original translations, glosses and annotations",
+          "language_code": "en",
+          "rights_holder": "Dharma Library contributors",
+          "rights_status": "original",
+          "script_name_en": "Latin (IAST)",
+          "source_authors": [
+            "Dharma Library contributors"
+          ],
+          "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
+          "language_name_en": "English",
+          "source_publisher": null,
+          "source_archive_url": null,
+          "language_name_native": "English"
+        }
+      ]
+    }
+  ],
+  "entity_names": [
+    {
+      "id": "1e140a2a-1ae1-46e7-ac27-9e074b30ef20",
+      "name": "Krishna",
+      "entity_id": "020a2cdf-4a35-422a-a495-1409ccde79a3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "fd0c4d48-120a-4574-9d9e-a5f61028992e",
+      "name": "ശ്രീകൃഷ്ണൻ",
+      "entity_id": "020a2cdf-4a35-422a-a495-1409ccde79a3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "7b720059-eb7b-4771-9e87-4b7c0a92c5d2",
+      "name": "श्रीकृष्ण",
+      "entity_id": "020a2cdf-4a35-422a-a495-1409ccde79a3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "041a21ab-795b-4cef-82e7-2738b2cd9647",
+      "name": "Śrī Kṛṣṇa",
+      "entity_id": "020a2cdf-4a35-422a-a495-1409ccde79a3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "3dab36eb-a2ba-4935-85ac-093344cd7367",
+      "name": "श्रीकृष्णः",
+      "entity_id": "020a2cdf-4a35-422a-a495-1409ccde79a3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "3b6a162f-f8ef-47a7-8a83-a602a2a556f3",
+      "name": "Arjuna",
+      "entity_id": "b4bb3fdf-420f-4093-a148-6eee9575a5e0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "7d1d3bb7-46aa-48d9-97b2-b443d18c80e9",
+      "name": "അർജുനൻ",
+      "entity_id": "b4bb3fdf-420f-4093-a148-6eee9575a5e0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "25501e4c-eb99-45c2-8250-68ef1d2a5a61",
+      "name": "अर्जुन",
+      "entity_id": "b4bb3fdf-420f-4093-a148-6eee9575a5e0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "74496292-1089-4671-ac2f-5570ab1ca78c",
+      "name": "Arjuna",
+      "entity_id": "b4bb3fdf-420f-4093-a148-6eee9575a5e0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "446ef8ee-04f5-4a49-bf51-8c6233abb1dd",
+      "name": "अर्जुनः",
+      "entity_id": "b4bb3fdf-420f-4093-a148-6eee9575a5e0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "787ce33a-368c-4a74-b654-02c1dcd6e20c",
+      "name": "Sanjaya",
+      "entity_id": "6f8c8174-91cd-4d21-b3a0-2e4712e0e112",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "5adce501-e9fd-4f57-ab4a-fb60306d24ae",
+      "name": "സഞ്ജയൻ",
+      "entity_id": "6f8c8174-91cd-4d21-b3a0-2e4712e0e112",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "57212078-1753-4b6e-82bd-c9ce958c9e1a",
+      "name": "संजय",
+      "entity_id": "6f8c8174-91cd-4d21-b3a0-2e4712e0e112",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "6679b3bd-d1e5-4d93-b42a-5fbaea904efe",
+      "name": "Sañjaya",
+      "entity_id": "6f8c8174-91cd-4d21-b3a0-2e4712e0e112",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "d5961434-a81e-4867-b682-2b613032cadc",
+      "name": "सञ्जयः",
+      "entity_id": "6f8c8174-91cd-4d21-b3a0-2e4712e0e112",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "bb8a7ff5-f858-4fbf-921f-bb5dbf3191c7",
+      "name": "Dhritarashtra",
+      "entity_id": "a7608055-78d3-4077-a924-a2cc42ee4da4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "252ddf12-d70e-4afb-8f42-65ea897179ec",
+      "name": "ധൃതരാഷ്ട്രർ",
+      "entity_id": "a7608055-78d3-4077-a924-a2cc42ee4da4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "3023c7e8-3cf8-4313-9842-145e403973e3",
+      "name": "धृतराष्ट्र",
+      "entity_id": "a7608055-78d3-4077-a924-a2cc42ee4da4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "da6536d7-c55b-4f38-86a0-b66e5a41e3ef",
+      "name": "Dhṛtarāṣṭra",
+      "entity_id": "a7608055-78d3-4077-a924-a2cc42ee4da4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "da62b0be-8d99-498d-8996-7bf05efbd1f5",
+      "name": "धृतराष्ट्रः",
+      "entity_id": "a7608055-78d3-4077-a924-a2cc42ee4da4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "5837dd61-16bd-44d2-a94e-bdb3bf7b4dde",
+      "name": "Vyasa",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "916f6efc-3af6-41e3-9573-0d9ead25cfa1",
+      "name": "വേദവ്യാസൻ",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "506950bc-9cd5-44b0-a1aa-e9002b80b24b",
+      "name": "वेदव्यास",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "1ed80fe5-a67c-4d29-8a1f-8c63dda6f734",
+      "name": "Vyāsa",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "02574767-c7af-4d66-af5f-cdc6c6191d5b",
+      "name": "व्यासः",
+      "entity_id": "cb6814cf-3817-4649-9f0b-d1f28f50eff0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "8dec9356-5585-4875-bce4-2ac331a63a84",
+      "name": "Bhishma",
+      "entity_id": "c48c445f-db9b-45e1-a2aa-2b27bd658bf4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "36c0b119-29e6-47fd-8672-2cfcd2a3031f",
+      "name": "ഭീഷ്മർ",
+      "entity_id": "c48c445f-db9b-45e1-a2aa-2b27bd658bf4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "6a46c392-929c-4d7e-a0c1-3776feb243cc",
+      "name": "भीष्म",
+      "entity_id": "c48c445f-db9b-45e1-a2aa-2b27bd658bf4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "631d9721-bd0b-4262-b1bf-170b0b2d025f",
+      "name": "Bhīṣma",
+      "entity_id": "c48c445f-db9b-45e1-a2aa-2b27bd658bf4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "ff94107a-3634-43e6-a604-53d40ec63b28",
+      "name": "भीष्मः",
+      "entity_id": "c48c445f-db9b-45e1-a2aa-2b27bd658bf4",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "8f6968b1-185b-4494-b4bc-645be3b79f34",
+      "name": "Drona",
+      "entity_id": "8c582bcc-45c7-4e92-971c-cbd6f49a18cf",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "b70b3b4f-15c2-4582-9270-3978976c4b9a",
+      "name": "ദ്രോണർ",
+      "entity_id": "8c582bcc-45c7-4e92-971c-cbd6f49a18cf",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "f862c29a-d6e8-4fc8-be9b-7ad6f699304e",
+      "name": "द्रोण",
+      "entity_id": "8c582bcc-45c7-4e92-971c-cbd6f49a18cf",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "a44526ed-fb0c-4fa7-be2d-2965e18fe6fe",
+      "name": "Droṇa",
+      "entity_id": "8c582bcc-45c7-4e92-971c-cbd6f49a18cf",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "744ef9c2-6f6d-44ae-bdf2-3f6c89d5b8c8",
+      "name": "द्रोणः",
+      "entity_id": "8c582bcc-45c7-4e92-971c-cbd6f49a18cf",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "b6a18207-e141-4ffb-a61d-2f14897608c5",
+      "name": "Duryodhana",
+      "entity_id": "958e3db4-5ce0-47e2-b575-63bba14422c1",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "44195db6-d9fd-4466-96f2-717658b2e52e",
+      "name": "ദുര്യോധനൻ",
+      "entity_id": "958e3db4-5ce0-47e2-b575-63bba14422c1",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "fee014dc-0f0d-4c24-88f9-8943daf9a9cd",
+      "name": "दुर्योधन",
+      "entity_id": "958e3db4-5ce0-47e2-b575-63bba14422c1",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "3b5c8e34-9154-486b-8ea2-a7c44b424b59",
+      "name": "Duryodhana",
+      "entity_id": "958e3db4-5ce0-47e2-b575-63bba14422c1",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "bf9d3315-429a-434f-a979-d47224b07780",
+      "name": "दुर्योधनः",
+      "entity_id": "958e3db4-5ce0-47e2-b575-63bba14422c1",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "538c0aca-6d64-4885-ae03-c8151623f2b3",
+      "name": "Kurukshetra",
+      "entity_id": "3fe7b434-3ce2-4f34-9b87-1af3cd5aa3be",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "d5a7c0cd-91e0-472c-a982-dd404e2e9038",
+      "name": "കുരുക്ഷേത്രം",
+      "entity_id": "3fe7b434-3ce2-4f34-9b87-1af3cd5aa3be",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "acd43e95-8d95-40e4-98b4-42e22287bec9",
+      "name": "कुरुक्षेत्र",
+      "entity_id": "3fe7b434-3ce2-4f34-9b87-1af3cd5aa3be",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "67ad1ddc-a2ff-43a8-8db9-9b2b593c029c",
+      "name": "Kurukṣetra",
+      "entity_id": "3fe7b434-3ce2-4f34-9b87-1af3cd5aa3be",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "857b052b-6146-4e0d-b385-d2f00db4923f",
+      "name": "कुरुक्षेत्रम्",
+      "entity_id": "3fe7b434-3ce2-4f34-9b87-1af3cd5aa3be",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "33eb3a20-49e2-4b76-be27-a1f99fee54c2",
+      "name": "Dharma",
+      "entity_id": "acfb94fc-10b3-4cf1-bcbe-c9b7ec77125d",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "062a7fef-3505-4306-a904-da9428fae52f",
+      "name": "ധർമ്മം",
+      "entity_id": "acfb94fc-10b3-4cf1-bcbe-c9b7ec77125d",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "bb93566e-9f33-48b3-8b9d-6d1de391443c",
+      "name": "Dharma",
+      "entity_id": "acfb94fc-10b3-4cf1-bcbe-c9b7ec77125d",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "94d01ed2-8a8e-42ac-b6f1-4b1839794a53",
+      "name": "धर्मः",
+      "entity_id": "acfb94fc-10b3-4cf1-bcbe-c9b7ec77125d",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "7c91a4e0-ecd6-40a7-b068-2211802c3c6b",
+      "name": "Yoga",
+      "entity_id": "0963e432-5a64-4f8c-93bc-6daea3de3154",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "c3306412-9819-4825-8632-aefd3c4f2863",
+      "name": "യോഗം",
+      "entity_id": "0963e432-5a64-4f8c-93bc-6daea3de3154",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "5f356908-3c21-4f42-b764-d3f16b2809eb",
+      "name": "Yoga",
+      "entity_id": "0963e432-5a64-4f8c-93bc-6daea3de3154",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "7d0c14e5-b147-419e-9ea1-039c0fe1f578",
+      "name": "योगः",
+      "entity_id": "0963e432-5a64-4f8c-93bc-6daea3de3154",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "a7ce895f-59c2-4f05-aa6b-956467706470",
+      "name": "Karma-yoga",
+      "entity_id": "38256064-7c4e-43b4-aa21-57f51bbbbf63",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "02276adf-41d0-4fb6-b88e-64f7fdaeadc4",
+      "name": "കർമ്മയോഗം",
+      "entity_id": "38256064-7c4e-43b4-aa21-57f51bbbbf63",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "e26a18dd-1035-42a0-a61b-ae9c92415f91",
+      "name": "Karma-yoga",
+      "entity_id": "38256064-7c4e-43b4-aa21-57f51bbbbf63",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "5f8ef28e-8074-4eab-82a9-ea5288b89a4d",
+      "name": "कर्मयोगः",
+      "entity_id": "38256064-7c4e-43b4-aa21-57f51bbbbf63",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "32918fd6-a3f0-43d6-a5b1-9097b42599d4",
+      "name": "Jnana-yoga",
+      "entity_id": "d8a0391a-6608-4cd5-8844-be9f44955073",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "712e228d-4be3-46a2-9646-9e32b9b1c4eb",
+      "name": "ജ്ഞാനയോഗം",
+      "entity_id": "d8a0391a-6608-4cd5-8844-be9f44955073",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "6d5f0259-feff-405f-8e7f-82eb927f5101",
+      "name": "Jñāna-yoga",
+      "entity_id": "d8a0391a-6608-4cd5-8844-be9f44955073",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "76225e72-e95a-418f-9e94-0a8fa0320182",
+      "name": "ज्ञानयोगः",
+      "entity_id": "d8a0391a-6608-4cd5-8844-be9f44955073",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "070f1f6c-c401-42dc-a757-22e879c51177",
+      "name": "Bhakti-yoga",
+      "entity_id": "503f9033-e447-4b87-be1a-916681bec6ec",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "9665ce5f-1a02-4a86-b0d3-2813da0b42ff",
+      "name": "ഭക്തിയോഗം",
+      "entity_id": "503f9033-e447-4b87-be1a-916681bec6ec",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "d9644c32-feb3-46c4-bfe8-e9c4ac2a4f2e",
+      "name": "Bhakti-yoga",
+      "entity_id": "503f9033-e447-4b87-be1a-916681bec6ec",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "add2358d-1d99-4a7a-ab2a-527c2ba27100",
+      "name": "भक्तियोगः",
+      "entity_id": "503f9033-e447-4b87-be1a-916681bec6ec",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "d4b765e5-e741-4b73-ad00-3809a842d060",
+      "name": "The Self (Atman)",
+      "entity_id": "4fe51f27-359d-4c74-87a4-3f0a87801920",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "003792d1-dbd4-4304-a70f-c72e71e2b9c8",
+      "name": "ആത്മാവ്",
+      "entity_id": "4fe51f27-359d-4c74-87a4-3f0a87801920",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "717bd677-57e6-4762-b65f-176c19746552",
+      "name": "Ātman — the Self",
+      "entity_id": "4fe51f27-359d-4c74-87a4-3f0a87801920",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "9701908b-3bea-4fbb-8b14-2c43264fd9eb",
+      "name": "आत्मा",
+      "entity_id": "4fe51f27-359d-4c74-87a4-3f0a87801920",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "0f173887-73ff-4045-b774-e5c42fdfede2",
+      "name": "Liberation",
+      "entity_id": "a7e1a9d0-44fc-4c51-9120-640cb6537a69",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "cb1fd3ee-1dba-4478-a7f4-674da4c7ee85",
+      "name": "മോക്ഷം",
+      "entity_id": "a7e1a9d0-44fc-4c51-9120-640cb6537a69",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "80d87f5b-50aa-4661-9865-42619c2f99a3",
+      "name": "Mokṣa — liberation",
+      "entity_id": "a7e1a9d0-44fc-4c51-9120-640cb6537a69",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "b2dc0320-4de0-4710-bacd-45344b60e1f4",
+      "name": "मोक्षः",
+      "entity_id": "a7e1a9d0-44fc-4c51-9120-640cb6537a69",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "85216a19-8483-43d6-871b-9e0932b4b6ab",
+      "name": "Sankhya",
+      "entity_id": "4e76eeb8-d4f9-4052-bd3a-5634c27fd6d0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "b8b583bb-65f6-4ff6-bd24-47fe496e7017",
+      "name": "സാംഖ്യം",
+      "entity_id": "4e76eeb8-d4f9-4052-bd3a-5634c27fd6d0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "680fdd0c-e448-4048-a7a6-b4c4a97e267a",
+      "name": "Sāṅkhya",
+      "entity_id": "4e76eeb8-d4f9-4052-bd3a-5634c27fd6d0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "5c4c0c65-876b-4be8-93a3-4d879efdb968",
+      "name": "सांख्यम्",
+      "entity_id": "4e76eeb8-d4f9-4052-bd3a-5634c27fd6d0",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "5db0afd3-9c46-49ad-b9d3-0a5f5a0e63dd",
+      "name": "Vāsudeva (Krishna)",
+      "entity_id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "019b5821-6985-49e0-add5-5cbba3cecf3f",
+      "name": "വാസുദേവൻ (ശ്രീകൃഷ്ണൻ)",
+      "entity_id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "76dd1b1f-4030-4736-91cb-248f85685371",
+      "name": "वासुदेव (कृष्ण)",
+      "entity_id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "6c0b3070-0cf3-434a-852f-96ee392edf09",
+      "name": "Vāsudeva (Kṛṣṇa)",
+      "entity_id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "25db8744-10f0-420e-abc7-336562b88d64",
+      "name": "वासुदेवः",
+      "entity_id": "07e00963-681d-4bea-b37a-deef40e8e677",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "7b4863a9-f8ee-41a6-9e75-2df3123fca6f",
+      "name": "Vishnu",
+      "entity_id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "b122d77a-3f17-42bc-ab3c-30f04389347b",
+      "name": "വിഷ്ണു",
+      "entity_id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "505fdcbc-df4e-409f-a69d-d30b680f394d",
+      "name": "विष्णु",
+      "entity_id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "a05696ab-8436-4ca0-be61-aa6c2ef140f4",
+      "name": "Viṣṇu",
+      "entity_id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "c69df10d-dbd2-422d-8c87-8e4f49a4f65f",
+      "name": "विष्णुः",
+      "entity_id": "7cc3961c-9ab2-4e26-ba7c-6febcdbff068",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "bd9cac7f-ab0c-42bd-85cd-0eb192c82a88",
+      "name": "Brahma",
+      "entity_id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "c54271c0-d6b7-4d1a-b4d8-e8ffab1eda12",
+      "name": "ബ്രഹ്മാവ്",
+      "entity_id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "14e664df-b7dd-4d6c-8823-6d2939d749f8",
+      "name": "ब्रह्मा",
+      "entity_id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "19e829b8-e5ea-4cfc-aafa-d36134b1f774",
+      "name": "Brahmā",
+      "entity_id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "7cfb9e30-1514-46bd-9a9d-fcb1dcd41ae6",
+      "name": "ब्रह्मा",
+      "entity_id": "a83a6f76-4681-48bb-8644-ed54628675da",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "4370ef3f-ff8b-44d6-bbf9-ab222b80b06e",
+      "name": "Shuka",
+      "entity_id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "c9bb3a2d-3a90-48eb-86e9-23fcbee3dda8",
+      "name": "ശുകൻ",
+      "entity_id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "37a38842-ad40-43a1-bbe7-32268ffae63b",
+      "name": "शुकदेव",
+      "entity_id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "a7615e23-d86b-4ca6-9d1c-50ccfe56dba5",
+      "name": "Śuka",
+      "entity_id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "d511f94f-30fb-4fd2-86e1-3473f45bd1c8",
+      "name": "शुकः",
+      "entity_id": "f99753df-6ef6-4af0-a5f5-59e02ac78260",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "2a4f376c-b035-44a1-8fcc-fd0c331ab3d0",
+      "name": "Suta",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "bd300036-e207-4968-a3e0-c6dd1366001a",
+      "name": "സൂതൻ",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "ed23b4e6-cfe5-4d13-9039-7d4fab92aea7",
+      "name": "सूत",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "cbbde268-8051-4a19-897b-0228669dfafc",
+      "name": "Sūta",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "8d514dba-8492-4a2b-aa25-1b885cd3b146",
+      "name": "सूतः",
+      "entity_id": "b8782377-992e-4067-a360-867fabfe3ee3",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "42e25a7c-42d6-4f6e-bab1-c1ab79ec4a3b",
+      "name": "Shaunaka",
+      "entity_id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "ecb434b2-6358-4659-819c-3587a84d60a2",
+      "name": "ശൗനകൻ",
+      "entity_id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "abe8a310-12a9-4ce5-96d2-0ada26bd2d00",
+      "name": "शौनक",
+      "entity_id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "eb1c9cfc-a566-40ee-ba17-299381185896",
+      "name": "Śaunaka",
+      "entity_id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "c5afedce-d85c-4c46-96f7-eedbbbed46b4",
+      "name": "शौनकः",
+      "entity_id": "854a3b6d-a5fe-4a4c-89ae-f335764fa566",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "9671f3a3-c6c3-47d8-8d0c-83e1f41f1eb6",
+      "name": "The sages of Naimisharanya",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "eee818c9-e5a6-470f-8b84-9acee5f32f46",
+      "name": "നൈമിഷാരണ്യത്തിലെ ഋഷിമാർ",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "694ed41b-8ed7-4174-abf5-23cc6831a554",
+      "name": "नैमिषारण्य के ऋषि",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "ed8ba96b-3e64-42bc-950b-6c7086234ca6",
+      "name": "The sages of Naimiṣāraṇya (Śaunakādi ṛṣayaḥ)",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "8612c63b-02e8-4914-b467-292c894f2c23",
+      "name": "शौनकादयः ऋषयः",
+      "entity_id": "4d1a56aa-1ac6-4263-a34e-909775f2c0f8",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "person",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "f47085b9-c4ef-43e5-8261-410ec83d4ec4",
+      "name": "Naimisharanya",
+      "entity_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "196536ba-46fd-4498-9a25-32a2a5bef3b9",
+      "name": "നൈമിഷാരണ്യം",
+      "entity_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "799a61db-9011-4d55-bd28-086406912d0c",
+      "name": "नैमिषारण्य",
+      "entity_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Deva",
+      "language_code": "hi"
+    },
+    {
+      "id": "f13ad613-8a35-4c0d-8363-c25ed4a09ca6",
+      "name": "Naimiṣāraṇya",
+      "entity_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "fef0058a-18e0-472b-9a45-62a751e393c8",
+      "name": "नैमिषारण्यम्",
+      "entity_id": "28b6ef51-dbf5-4d49-987b-7b556104610f",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "place",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "87b1541e-d702-4ea1-9ac2-0df9a82a4a95",
+      "name": "The supreme truth",
+      "entity_id": "fbbef66a-fe95-45a2-95c8-342146bc6ede",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "378cd2e1-24fe-49dc-8dfe-5594030fd028",
+      "name": "പരമസത്യം",
+      "entity_id": "fbbef66a-fe95-45a2-95c8-342146bc6ede",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "7961dcca-0b58-4939-be7f-6d4a4f137072",
+      "name": "Satyaṁ param — the supreme truth",
+      "entity_id": "fbbef66a-fe95-45a2-95c8-342146bc6ede",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "ee14eb7a-9616-4d5d-beb5-80f950fe99f7",
+      "name": "सत्यं परम्",
+      "entity_id": "fbbef66a-fe95-45a2-95c8-342146bc6ede",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "8d451d3f-d18a-41f4-ba10-b014e9b5581d",
+      "name": "Creation, sustenance and dissolution",
+      "entity_id": "ed609a0a-2776-4518-85f0-7ebadf9c136e",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "2bf67749-6ab2-49ad-b43d-0cf0f91cf61e",
+      "name": "സൃഷ്ടി, സ്ഥിതി, ലയം",
+      "entity_id": "ed609a0a-2776-4518-85f0-7ebadf9c136e",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "be607c05-1622-49ec-98dc-4bcb84524dca",
+      "name": "Sṛṣṭi–sthiti–laya — creation, sustenance, dissolution",
+      "entity_id": "ed609a0a-2776-4518-85f0-7ebadf9c136e",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "f419315a-75c2-4fdd-9df1-d599295b4ea9",
+      "name": "सृष्टिस्थितिलयाः",
+      "entity_id": "ed609a0a-2776-4518-85f0-7ebadf9c136e",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "f52ded5f-2a60-462a-8328-81c38e0db71d",
+      "name": "Maya (illusion)",
+      "entity_id": "e2857153-f63c-413f-b751-02f13cbc1700",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "061d995f-68eb-4605-a316-c3f019bcda87",
+      "name": "മായ",
+      "entity_id": "e2857153-f63c-413f-b751-02f13cbc1700",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "a1a55553-4122-4a04-bf62-c3959b718bcb",
+      "name": "Māyā — illusion",
+      "entity_id": "e2857153-f63c-413f-b751-02f13cbc1700",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "f26a8036-a9c5-4ef8-aa70-f40851a17557",
+      "name": "माया",
+      "entity_id": "e2857153-f63c-413f-b751-02f13cbc1700",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "62724e16-a4ef-46c8-8de4-a6c234a39bea",
+      "name": "The three miseries",
+      "entity_id": "ed09003e-d450-46e9-a1f9-7d5e0465ed99",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "2f1187fa-d1ac-4b8c-8cb0-4f084c2bf2bb",
+      "name": "ത്രിതാപങ്ങൾ",
+      "entity_id": "ed09003e-d450-46e9-a1f9-7d5e0465ed99",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "285a481e-78e5-450a-99c9-7a63597fdbe9",
+      "name": "Tāpa-traya — the three miseries",
+      "entity_id": "ed09003e-d450-46e9-a1f9-7d5e0465ed99",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "e09b89f3-d016-424e-b5ae-772e303657da",
+      "name": "तापत्रयम्",
+      "entity_id": "ed09003e-d450-46e9-a1f9-7d5e0465ed99",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "56f73d5b-3b78-4531-8921-c5a7d71df5cd",
+      "name": "Hearing (shravana)",
+      "entity_id": "aba13554-20a6-4143-b023-c8176047658a",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "5ccca774-f5c4-4358-b109-e7234e6db454",
+      "name": "ശ്രവണം",
+      "entity_id": "aba13554-20a6-4143-b023-c8176047658a",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "c1b5b623-bbd0-4979-abcc-9358fbe49172",
+      "name": "Śravaṇa — hearing",
+      "entity_id": "aba13554-20a6-4143-b023-c8176047658a",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "984e04fe-5cbc-487b-b495-048204be39b4",
+      "name": "श्रवणम्",
+      "entity_id": "aba13554-20a6-4143-b023-c8176047658a",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "90c504e9-e012-4852-ba71-f6a305447100",
+      "name": "Rasa (relish)",
+      "entity_id": "8c79446b-65d8-4263-a014-e413d9a24be5",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "80b8a682-8692-4629-8ac3-9663335f08fa",
+      "name": "രസം",
+      "entity_id": "8c79446b-65d8-4263-a014-e413d9a24be5",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "579acca0-62de-4550-b4b7-cc10fe960adb",
+      "name": "Rasa — relish",
+      "entity_id": "8c79446b-65d8-4263-a014-e413d9a24be5",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "eaeab978-bdc1-4a3f-8abc-357828003ff5",
+      "name": "रसः",
+      "entity_id": "8c79446b-65d8-4263-a014-e413d9a24be5",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "8fadfac6-9fbe-444e-a38f-8f250b7b5bf1",
+      "name": "Sacrifice (yajna)",
+      "entity_id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "a23c2e01-ffaa-46f3-ab2e-7434b7c09e09",
+      "name": "യജ്ഞം",
+      "entity_id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "b1097b20-28d2-412f-ae10-bf0895819214",
+      "name": "Yajña / satra — sacrifice",
+      "entity_id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "b4b1b0f6-ce92-41b2-802b-06e0e36af891",
+      "name": "यज्ञः",
+      "entity_id": "9829bba6-347b-4e24-a27b-55970af867cb",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "a6a8fa1a-0248-42e6-bd5b-a419cc02f4f7",
+      "name": "Scripture (shastra)",
+      "entity_id": "b98fd8ba-d1f2-44a8-8bfc-7393f72c58af",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "3e578817-08a3-4c6b-91ca-2cc84ce84497",
+      "name": "ശാസ്ത്രം",
+      "entity_id": "b98fd8ba-d1f2-44a8-8bfc-7393f72c58af",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "24ab4997-ed86-4cac-9e5f-9aa67059ecfd",
+      "name": "Śāstra — scripture",
+      "entity_id": "b98fd8ba-d1f2-44a8-8bfc-7393f72c58af",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "4a09e18c-5c3c-4a8c-9ffe-65fa06600068",
+      "name": "शास्त्रम्",
+      "entity_id": "b98fd8ba-d1f2-44a8-8bfc-7393f72c58af",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "9bccc011-48d0-4cb9-a44a-87aa22a0ddeb",
+      "name": "Teacher and disciple",
+      "entity_id": "9e1cae4f-05e7-43dc-ba32-e720b965d295",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "bac30cf9-847a-490d-997d-cf0a06e0393f",
+      "name": "ഗുരു-ശിഷ്യബന്ധം",
+      "entity_id": "9e1cae4f-05e7-43dc-ba32-e720b965d295",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "cb406bde-e769-4b62-940a-f57083f7b4a0",
+      "name": "Guru–śiṣya — teacher and disciple",
+      "entity_id": "9e1cae4f-05e7-43dc-ba32-e720b965d295",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "5669bb35-204c-4562-8ef6-229c9e671fc1",
+      "name": "गुरुशिष्यसम्बन्धः",
+      "entity_id": "9e1cae4f-05e7-43dc-ba32-e720b965d295",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "ac1360b4-8066-4635-9bfa-e7af5d5670f9",
+      "name": "The ultimate good (shreyas)",
+      "entity_id": "3988bd80-6102-4077-a2a2-8328f36f3047",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "5359ffbb-0632-4f0b-a66c-86fb9b264d78",
+      "name": "ശ്രേയസ്സ്",
+      "entity_id": "3988bd80-6102-4077-a2a2-8328f36f3047",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "2dc5916a-8e16-4132-9b38-09abb7400cd6",
+      "name": "Śreyas — the ultimate good",
+      "entity_id": "3988bd80-6102-4077-a2a2-8328f36f3047",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "74347f9a-56f4-4531-b5c6-2fb4e43c8265",
+      "name": "श्रेयः",
+      "entity_id": "3988bd80-6102-4077-a2a2-8328f36f3047",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "abd03b2d-baaf-47b1-9379-e464174d5a8e",
+      "name": "The age of Kali",
+      "entity_id": "3b865647-3afa-4c4c-b7af-47756e6cfbbc",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "ebd0fc52-2591-41e6-bfe3-33b762a2ca74",
+      "name": "കലിയുഗം",
+      "entity_id": "3b865647-3afa-4c4c-b7af-47756e6cfbbc",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "daae8998-d948-479d-8fa1-02fe8535a0ba",
+      "name": "Kali-yuga",
+      "entity_id": "3b865647-3afa-4c4c-b7af-47756e6cfbbc",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "3c11cc59-4813-4060-9db3-9e1890d10884",
+      "name": "कलियुगम्",
+      "entity_id": "3b865647-3afa-4c4c-b7af-47756e6cfbbc",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "topic",
+      "script_code": "Deva",
+      "language_code": "sa"
+    },
+    {
+      "id": "3c0858e2-b39c-4af0-aebb-d3f7fc6d10b7",
+      "name": "The sages question Suta",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "story",
+      "script_code": "Latn",
+      "language_code": "en"
+    },
+    {
+      "id": "47a58b1f-5b00-480a-8eea-9c6b77b8bf8f",
+      "name": "ഋഷിമാർ സൂതനോട് ചോദിക്കുന്നു",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "story",
+      "script_code": "Mlym",
+      "language_code": "ml"
+    },
+    {
+      "id": "a4a1407a-f806-4c83-a521-c5e111c4f10b",
+      "name": "The sages of Naimiṣāraṇya question Sūta",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "story",
+      "script_code": "Latn",
+      "language_code": "sa"
+    },
+    {
+      "id": "a8cba80f-8baf-494f-901c-a7af672b6dfc",
+      "name": "नैमिषीयाणां सूतं प्रति प्रश्नः",
+      "entity_id": "eb9763aa-bef8-4bb8-936e-b3e96f4e7788",
+      "is_primary": true,
+      "description": null,
+      "entity_kind": "story",
+      "script_code": "Deva",
+      "language_code": "sa"
+    }
+  ],
+  "generated_at": "2026-09-22T14:56:51.59434+00:00",
+  "cross_references": []
+}

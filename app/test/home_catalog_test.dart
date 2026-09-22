@@ -78,7 +78,7 @@ void main() {
     final prefs = await SharedPreferences.getInstance();
     final store = await tester.runAsync(() => LocalStore.inMemory());
     await tester.runAsync(() async {
-      await store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>());
+      await store!.importBundle((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map).cast<String, dynamic>());
       await store.importBundle(_stubGitaBundle());
     });
 
@@ -95,7 +95,7 @@ void main() {
 
     expect(find.textContaining('Bhāgavata'), findsWidgets);
     expect(find.textContaining('Gītā'), findsWidgets);
-    final nBhagavata = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
+    final nBhagavata = ((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map)['sections'] as List)
         .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
     expect(find.textContaining('$nBhagavata verses'), findsWidgets);
     expect(find.textContaining('700 verses'), findsWidgets);

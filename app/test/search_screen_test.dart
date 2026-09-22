@@ -45,7 +45,7 @@ void main() {
   Future<LocalStore> bundleStore(WidgetTester tester) async {
     final store = await tester.runAsync(() => LocalStore.inMemory());
     await tester.runAsync(() =>
-        store!.importBundle((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map).cast<String, dynamic>()));
+        store!.importBundle((jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map).cast<String, dynamic>()));
     return store!;
   }
 

@@ -6,25 +6,30 @@ import 'package:dharma_library/core/offline/local_store.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-/// Exercises the offline path end-to-end against the shipped pilot bundle:
+/// Exercises the offline path end-to-end against the shipped Wikisource bundle:
 /// import → toc → chapter → verse → search → bookmarks → progress.
 void main() {
   late LocalStore store;
   late Repository repo;
 
-  setUpAll(() {
+  setUpAll(() async {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
-  });
-
-  setUp(() async {
     store = await LocalStore.inMemory();
     final bundle = jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map<String, dynamic>;
     await store.importBundle(bundle);
+  });
+
+  setUp(() {
     repo = Repository(store: store);
   });
 
-  tearDown(() => store.close());
+  tearDown(() async {
+    await store.clearUserData();
+    await store.clearErrorLog();
+  });
+
+  tearDownAll(() => store.close());
 
   test('toc and chapter load from bundle', () async {
     final toc = await repo.toc('bhagavata-purana');
