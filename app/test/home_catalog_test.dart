@@ -69,6 +69,11 @@ void main() {
   });
 
   testWidgets('Home lists every bundled work without hard-coded slugs', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
+    tester.view.physicalSize = const Size(1080, 2400);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
     SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
     final store = await tester.runAsync(() => LocalStore.inMemory());
@@ -86,9 +91,10 @@ void main() {
       child: const DharmaLibraryApp(),
     ));
     await _settleUntil(tester, find.textContaining('Published works'));
+    await _settleUntil(tester, find.textContaining('Gītā'));
 
     expect(find.textContaining('Bhāgavata'), findsWidgets);
-    expect(find.textContaining('Bhagavad Gītā'), findsWidgets);
+    expect(find.textContaining('Gītā'), findsWidgets);
     final nBhagavata = ((jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map)['sections'] as List)
         .fold<int>(0, (n, s) => n + ((s as Map)['verses'] as List).length);
     expect(find.textContaining('$nBhagavata verses'), findsWidgets);

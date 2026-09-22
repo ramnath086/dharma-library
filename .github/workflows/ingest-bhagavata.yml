@@ -175,3 +175,47 @@ jobs:
               echo 'Manifest not written — importer did not complete.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
+      - name: Comment ingest counts on the PR
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          m = json.load(open("content/bhagavata-purana/WIKISOURCE_MANIFEST.json"))
+          meta = json.load(open("content/bhagavata-purana/work.json"))["metadata"]
+          sha = os.environ.get("GITHUB_SHA", "")[:7]
+          open("/tmp/ingest-ok.md", "w").write(
+              f"### Bhāgavata ingest OK on `{sha}`\n\n"
+              f"- retrieved: {m.get('retrieved')}\n"
+              f"- licence: {m.get('license')} ({meta.get('source_license')})\n"
+              f"- chapters: {m.get('chapters')} / {m.get('expected_chapters')}\n"
+              f"- verses (this edition): **{m.get('verses')}**\n"
+              f"- complete: {meta.get('complete')}\n"
+              f"- attribution: {m.get('attribution')}\n\n"
+              "Corpus files are committed to this branch. GRETIL was not shipped. "
+              "Do not drop BY-SA attribution.\n"
+          )
+          PY
+          gh api "repos/${GITHUB_REPOSITORY}/issues/12/comments" -F body=@/tmp/ingest-ok.md || true
+      - name: Commit complete corpus onto the session branch
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A content/bhagavata-purana content/generated/bhagavata-purana.sql app/assets/bundles/bhagavata-purana.json
+          if git diff --cached --quiet; then
+            echo "corpus already on the branch"
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json
+          m = json.load(open("content/bhagavata-purana/work.json"))["metadata"]
+          print(f"committing {m.get('imported_chapter_count')} chapters / {m.get('imported_verse_count')} verses")
+          PY
+          git commit -m "content: complete Śrīmad Bhāgavata mūla from sa.wikisource.org (CC BY-SA 4.0)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
