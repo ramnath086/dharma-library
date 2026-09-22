@@ -2,8 +2,8 @@
   "skandhas": 12,
   "expected_chapters": 335,
   "chapters_on_disk": 335,
-  "imported_verses": 14082,
-  "unique_refs": 14082,
+  "imported_verses": 14083,
+  "unique_refs": 14083,
   "duplicate_refs": [],
   "empty_mula": [],
   "malformed_ids": [],
@@ -24,12 +24,6 @@
       "chapter": "1.13",
       "skipped": [
         36
-      ]
-    },
-    {
-      "chapter": "1.15",
-      "skipped": [
-        17
       ]
     },
     {
@@ -153,7 +147,7 @@
   "skandha_counts": {
     "1": {
       "chapters": 19,
-      "verses": 810
+      "verses": 811
     },
     "2": {
       "chapters": 10,
@@ -361,16 +355,13 @@
     {
       "skandha": 1,
       "adhyaya": 15,
-      "source_count": 50,
-      "imported_count": 50,
+      "source_count": 51,
+      "imported_count": 51,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 364156,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        17
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 1,
