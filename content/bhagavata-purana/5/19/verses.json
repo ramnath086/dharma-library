@@ -3,7 +3,7 @@
   "_source": {
     "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%AF",
     "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः १९",
-    "retrieved": "2026-09-22T16:39:42Z",
+    "retrieved": "2026-09-22T16:47:13Z",
     "license": "CC-BY-SA-4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sanskrit Wikisource contributors",
@@ -214,8 +214,16 @@
       "iast": "kalpāyuṣāṁ sthānajayātpunarbhavātkṣaṇāyuṣāṁ bhāratabhūjayo varam\nkṣaṇena martyena kṛtaṁ manasvinaḥ sannyasya saṁyāntyabhayaṁ padaṁ hareḥ || 23 ||"
     },
     {
-      "ref": "5.19.25",
+      "ref": "5.19.24",
       "ordinal": 24,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "न यत्र वैकुण्ठकथासुधापगा न साधवो भागवतास्तदाश्रयाः\nन यत्र यज्ञेशमखा महोत्सवाः सुरेशलोकोऽपि न वै स सेव्यताम् ॥ २४ ॥",
+      "iast": "na yatra vaikuṇṭhakathāsudhāpagā na sādhavo bhāgavatāstadāśrayāḥ\nna yatra yajñeśamakhā mahotsavāḥ sureśaloko'pi na vai sa sevyatām || 24 ||"
+    },
+    {
+      "ref": "5.19.25",
+      "ordinal": 25,
       "kind": "verse",
       "speaker": "suka",
       "deva": "न यत्र वैकुण्ठकथासुधापगा न साधवो भागवतास्तदाश्रयाः\nन यत्र यज्ञेशमखा महोत्सवाः सुरेशलोकोऽपि न वै स सेव्यताम्२४\nप्राप्ता नृजातिं त्विह ये च जन्तवो ज्ञानक्रियाद्रव्यकलापसम्भृताम्\nन वै यतेरन्नपुनर्भवाय ते भूयो वनौका इव यान्ति बन्धनम् ॥ २५ ॥",
@@ -227,7 +235,7 @@
     },
     {
       "ref": "5.19.26",
-      "ordinal": 25,
+      "ordinal": 26,
       "kind": "verse",
       "speaker": "suka",
       "deva": "यैः श्रद्धया बर्हिषि भागशो हविर्निरुप्तमिष्टं विधिमन्त्रवस्तुतः\nएकः पृथङ्नामभिराहुतो मुदा गृह्णाति पूर्णः स्वयमाशिषां प्रभुः ॥ २६ ॥",
@@ -238,7 +246,7 @@
     },
     {
       "ref": "5.19.27",
-      "ordinal": 26,
+      "ordinal": 27,
       "kind": "verse",
       "speaker": "suka",
       "deva": "सत्यं दिशत्यर्थितमर्थितो नृणां नैवार्थदो यत्पुनरर्थिता यतः\nस्वयं विधत्ते भजतामनिच्छतामिच्छापिधानं निजपादपल्लवम् ॥ २७ ॥",
@@ -249,7 +257,7 @@
     },
     {
       "ref": "5.19.28",
-      "ordinal": 27,
+      "ordinal": 28,
       "kind": "verse",
       "speaker": "suka",
       "deva": "यद्यत्र नः स्वर्गसुखावशेषितं स्विष्टस्य सूक्तस्य कृतस्य शोभनम्\nतेनाजनाभे स्मृतिमज्जन्म नः स्याद्वर्षे हरिर्यद्भजतां शं तनोति ॥ २८ ॥",
@@ -260,7 +268,7 @@
     },
     {
       "ref": "5.19.29",
-      "ordinal": 28,
+      "ordinal": 29,
       "kind": "verse",
       "speaker": "suka",
       "deva": "जम्बूद्वीपस्य च राजन्नुपद्वीपानष्टौ हैक उपदिशन्ति सगरात्मजैरश्वा-न्वेषण इमां महीं परितो निखनद्भिरुपकल्पितान् ॥ २९ ॥",
@@ -271,7 +279,7 @@
     },
     {
       "ref": "5.19.30",
-      "ordinal": 29,
+      "ordinal": 30,
       "kind": "verse",
       "speaker": "suka",
       "deva": "तद्यथा स्वर्णप्रस्थश्चन्द्र शुक्ल आवर्तनो रमणको मन्दरहरिणः पाञ्चजन्यः सिंहलो लङ्केति ॥ ३० ॥",
@@ -282,7 +290,7 @@
     },
     {
       "ref": "5.19.31",
-      "ordinal": 30,
+      "ordinal": 31,
       "kind": "verse",
       "speaker": "suka",
       "deva": "एवं तव भारतोत्तम जम्बूद्वीपवर्षविभागो यथोपदेशमुपवर्णित इति ॥ ३१ ॥",
