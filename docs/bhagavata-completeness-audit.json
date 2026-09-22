@@ -2,8 +2,8 @@
   "skandhas": 12,
   "expected_chapters": 335,
   "chapters_on_disk": 335,
-  "imported_verses": 14098,
-  "unique_refs": 14098,
+  "imported_verses": 14105,
+  "unique_refs": 14105,
   "duplicate_refs": [],
   "empty_mula": [],
   "malformed_ids": [],
@@ -19,57 +19,14 @@
     "8.16.39b",
     "11.27.41b"
   ],
-  "printed_gaps": [
-    {
-      "chapter": "1.13",
-      "skipped": [
-        36
-      ]
-    },
-    {
-      "chapter": "4.1",
-      "skipped": [
-        52
-      ]
-    },
-    {
-      "chapter": "4.21",
-      "skipped": [
-        45
-      ]
-    },
-    {
-      "chapter": "8.7",
-      "skipped": [
-        5
-      ]
-    },
-    {
-      "chapter": "8.16",
-      "skipped": [
-        23
-      ]
-    },
-    {
-      "chapter": "11.11",
-      "skipped": [
-        13
-      ]
-    },
-    {
-      "chapter": "11.27",
-      "skipped": [
-        40
-      ]
-    }
-  ],
+  "printed_gaps": [],
   "missing_files": [],
   "numbering_notes": 77,
   "unexplained": [],
   "skandha_counts": {
     "1": {
       "chapters": 19,
-      "verses": 811
+      "verses": 812
     },
     "2": {
       "chapters": 10,
@@ -81,7 +38,7 @@
     },
     "4": {
       "chapters": 31,
-      "verses": 1449
+      "verses": 1451
     },
     "5": {
       "chapters": 26,
@@ -97,7 +54,7 @@
     },
     "8": {
       "chapters": 24,
-      "verses": 934
+      "verses": 936
     },
     "9": {
       "chapters": 24,
@@ -109,7 +66,7 @@
     },
     "11": {
       "chapters": 31,
-      "verses": 1366
+      "verses": 1368
     },
     "12": {
       "chapters": 13,
@@ -252,16 +209,13 @@
     {
       "skandha": 1,
       "adhyaya": 13,
-      "source_count": 59,
-      "imported_count": 59,
+      "source_count": 60,
+      "imported_count": 60,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 110184,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        36
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 1,
@@ -805,16 +759,13 @@
     {
       "skandha": 4,
       "adhyaya": 1,
-      "source_count": 65,
-      "imported_count": 65,
+      "source_count": 66,
+      "imported_count": 66,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 362641,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        52
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 4,
@@ -1028,16 +979,13 @@
     {
       "skandha": 4,
       "adhyaya": 21,
-      "source_count": 52,
-      "imported_count": 52,
+      "source_count": 53,
+      "imported_count": 53,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 363348,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        45
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 4,
@@ -1878,16 +1826,13 @@
     {
       "skandha": 8,
       "adhyaya": 7,
-      "source_count": 46,
-      "imported_count": 46,
+      "source_count": 47,
+      "imported_count": 47,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 342574,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        5
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 8,
@@ -1980,16 +1925,13 @@
     {
       "skandha": 8,
       "adhyaya": 16,
-      "source_count": 62,
-      "imported_count": 62,
+      "source_count": 63,
+      "imported_count": 63,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 106476,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        23
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 8,
@@ -3446,16 +3388,13 @@
     {
       "skandha": 11,
       "adhyaya": 11,
-      "source_count": 48,
-      "imported_count": 48,
+      "source_count": 49,
+      "imported_count": 49,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 333763,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        13
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 11,
@@ -3625,16 +3564,13 @@
     {
       "skandha": 11,
       "adhyaya": 27,
-      "source_count": 55,
-      "imported_count": 55,
+      "source_count": 56,
+      "imported_count": 56,
       "missing_ids": [],
       "extra_ids": [],
-      "status": "printed_gap",
+      "status": "ok",
       "revid": 113579,
-      "license": "CC-BY-SA-4.0",
-      "skipped_printed": [
-        40
-      ]
+      "license": "CC-BY-SA-4.0"
     },
     {
       "skandha": 11,

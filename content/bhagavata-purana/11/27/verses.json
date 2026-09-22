@@ -342,20 +342,32 @@
       "iast": "sphuratkirīṭakaṭaka kaṭisūtravarāṅgadam |\nśrīvatsavakṣasaṁ bhrājat kaustubhaṁ vanamālinam || 39 ||"
     },
     {
-      "ref": "11.27.41",
+      "ref": "11.27.40",
       "ordinal": 40,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ध्यायन्नभ्यर्च्य दारूणि हविषाभिघृतानि च ।\nप्रास्याज्यभागावाघारौ दत्त्वा चाज्यप्लुतं हविः ॥ ४० ॥",
+      "iast": "dhyāyannabhyarcya dārūṇi haviṣābhighṛtāni ca |\nprāsyājyabhāgāvāghārau dattvā cājyaplutaṁ haviḥ || 40 ||",
+      "metadata": {
+        "source_url": "https://vedabase.io/en/library/sb/11/27/38-41/",
+        "source_witness": "bbt-vedabase",
+        "numbering_note": "Not on sa.wikisource.org at this printed number. Devanagari inserted exactly from the BBT Vedabase page cited in metadata.source_url (traditional mūla; BBT English translation/purport not used). Wikisource neighbours were not rewritten."
+      }
+    },
+    {
+      "ref": "11.27.41",
+      "ordinal": 41,
       "kind": "verse",
       "speaker": null,
       "deva": "ध्यायन्नभ्यर्च्य दारूणि हविषाभिघृतानि च ।\nप्रास्याज्यभागावाघारौ दत्त्वा चाज्यप्लुतं हविः ॥ ४१ ॥",
       "iast": "dhyāyannabhyarcya dārūṇi haviṣābhighṛtāni ca |\nprāsyājyabhāgāvāghārau dattvā cājyaplutaṁ haviḥ || 41 ||",
       "metadata": {
-        "wikisource_number": 41,
-        "numbering_note": "Wikisource numbering skipped 40; no mūla invented for the gap."
+        "wikisource_number": 41
       }
     },
     {
       "ref": "11.27.41b",
-      "ordinal": 41,
+      "ordinal": 42,
       "kind": "verse",
       "speaker": null,
       "deva": "जुहुयान्मूलमन्त्रेण षोडशर्चावदानतः ।\nधर्मादिभ्यो यथान्यायं मन्त्रैः स्विष्टिकृतं बुधः ॥ ४१ ॥",
@@ -367,7 +379,7 @@
     },
     {
       "ref": "11.27.42",
-      "ordinal": 42,
+      "ordinal": 43,
       "kind": "verse",
       "speaker": null,
       "deva": "अभ्यर्च्याथ नमस्कृत्य पार्षदेभ्यो बलिं हरेत् ।\nमूलमन्त्रं जपेद् ब्रह्म स्मरन्नारायणात्मकम् ॥ ४२ ॥",
@@ -375,7 +387,7 @@
     },
     {
       "ref": "11.27.43",
-      "ordinal": 43,
+      "ordinal": 44,
       "kind": "verse",
       "speaker": null,
       "deva": "दत्त्वाऽऽचमनमुच्छेषं विष्वक्सेनाय कल्पयेत् ।\nमुखवासं सुरभिमत् ताम्बूलाद्यमथाहयेत् ॥ ४३ ॥",
@@ -383,7 +395,7 @@
     },
     {
       "ref": "11.27.44",
-      "ordinal": 44,
+      "ordinal": 45,
       "kind": "verse",
       "speaker": null,
       "deva": "उपगायन् गृणन् नृत्यन् कर्माणि अभिनयन् मम ।\nमत्कथाः श्रावयन् श्रृण्वन् मुहूर्तं क्षणिको भवेत् ॥ ४४ ॥",
@@ -391,7 +403,7 @@
     },
     {
       "ref": "11.27.45",
-      "ordinal": 45,
+      "ordinal": 46,
       "kind": "verse",
       "speaker": null,
       "deva": "स्तवैरुच्चावचैः स्तोत्रैः पौराणैः प्राकृतैरपि ।\nस्तुत्वा प्रसीद भगवन् इति वन्देत दण्डवत् ॥ ४५ ॥",
@@ -399,7 +411,7 @@
     },
     {
       "ref": "11.27.46",
-      "ordinal": 46,
+      "ordinal": 47,
       "kind": "verse",
       "speaker": null,
       "deva": "शिरो मत्पादयोः कृत्वा बाहुभ्यां च परस्परम् ।\nप्रपन्नं पाहि मामीश भीतं मृत्युग्रहार्णवात् ॥ ४६ ॥",
@@ -407,7 +419,7 @@
     },
     {
       "ref": "11.27.47",
-      "ordinal": 47,
+      "ordinal": 48,
       "kind": "verse",
       "speaker": null,
       "deva": "इति शेषां मया दत्तां शिरस्याधाय सादरम् ।\nउद्वासयेद् चेद् उद्वास्यं ज्योतिर्ज्योतिषि तत्पुनः ॥ ४७ ॥",
@@ -415,7 +427,7 @@
     },
     {
       "ref": "11.27.48",
-      "ordinal": 48,
+      "ordinal": 49,
       "kind": "verse",
       "speaker": null,
       "deva": "अर्चादिषु यदा यत्र श्रद्धा मां तत्र चार्चयेत् ।\nसर्वभूतेष्वात्मनि च सर्वात्माहं अवस्थितः ॥ ४८ ॥",
@@ -423,7 +435,7 @@
     },
     {
       "ref": "11.27.49",
-      "ordinal": 49,
+      "ordinal": 50,
       "kind": "verse",
       "speaker": null,
       "deva": "एवं क्रियायोगपथैः पुमान्वैदिकतान्त्रिकैः ।\nअर्चन् उभयतः सिद्धिं मत्तो विन्दत्यभीप्सिताम् ॥ ४९ ॥",
@@ -431,7 +443,7 @@
     },
     {
       "ref": "11.27.50",
-      "ordinal": 50,
+      "ordinal": 51,
       "kind": "verse",
       "speaker": null,
       "deva": "मदर्चां सम्प्रतिष्ठाप्य मन्दिरं कारयेद् दृढम् ।\nपुष्पोद्यानानि रम्याणि पूजायात्रोत्सवाश्रितान् ॥ ५० ॥",
@@ -439,7 +451,7 @@
     },
     {
       "ref": "11.27.51",
-      "ordinal": 51,
+      "ordinal": 52,
       "kind": "verse",
       "speaker": null,
       "deva": "पूजादीनां प्रवाहार्थं महापर्वस्वथान्वहम् ।\nक्षेत्रापणपुरग्रामान् दत्त्वा मत्सार्ष्टितामियात् ॥ ५१ ॥",
@@ -447,7 +459,7 @@
     },
     {
       "ref": "11.27.52",
-      "ordinal": 52,
+      "ordinal": 53,
       "kind": "verse",
       "speaker": null,
       "deva": "प्रतिष्ठया सार्वभौमं सद्मना भुवनत्रयम् ।\nपूजादिना ब्रह्मलोकं त्रिभिर्मत्साम्यतामियात् ॥ ५२ ॥",
@@ -455,7 +467,7 @@
     },
     {
       "ref": "11.27.53",
-      "ordinal": 53,
+      "ordinal": 54,
       "kind": "verse",
       "speaker": null,
       "deva": "मामेव नैरपेक्ष्येण भक्तियोगेन विन्दति ।\nभक्तियोगं स लभते एवं यः पूजयेत माम् ॥ ५३ ॥",
@@ -463,7 +475,7 @@
     },
     {
       "ref": "11.27.54",
-      "ordinal": 54,
+      "ordinal": 55,
       "kind": "verse",
       "speaker": null,
       "deva": "यः स्वदत्तां परैर्दत्तां हरेत सुरविप्रयोः ।\nवृत्तिं स जायते विड्भुग् वर्षाणां अयुतायुतम् ॥ ५४ ॥",
@@ -471,7 +483,7 @@
     },
     {
       "ref": "11.27.55",
-      "ordinal": 55,
+      "ordinal": 56,
       "kind": "verse",
       "speaker": null,
       "deva": "कर्तुश्च सारथेहेतोः अनुमोदितुरेव च ।\nकर्मणां भागिनः प्रेत्य भूयो भूयसि तत्फलम् ॥ ५५ ॥",

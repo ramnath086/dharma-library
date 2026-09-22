@@ -107,6 +107,30 @@ class BhagavataPilot(unittest.TestCase):
             if "gretil" in src:
                 self.fail("rights row must not key commercial clearance off GRETIL")
 
+    def test_bbt_printed_number_fills_are_present_and_unique(self):
+        w = _load(BHAGAVATA / "work.json")
+        fills = w["metadata"].get("bbt_vedabase_fill_refs") or []
+        self.assertEqual(
+            fills,
+            ["1.13.36", "4.1.52", "4.21.45", "8.7.5", "8.16.23", "11.11.13", "11.27.40"],
+        )
+        seen = set()
+        by_ref = {}
+        for vf in _verse_files(BHAGAVATA):
+            for v in _load(vf)["verses"]:
+                self.assertNotIn(v["ref"], seen, v["ref"])
+                seen.add(v["ref"])
+                by_ref[v["ref"]] = v
+        for ref in fills:
+            v = by_ref[ref]
+            meta = v.get("metadata") or {}
+            self.assertEqual(meta.get("source_witness"), "bbt-vedabase", ref)
+            self.assertTrue(meta.get("source_url", "").startswith("https://vedabase.io/"), ref)
+            self.assertTrue(v["deva"].strip(), ref)
+            self.assertNotIn("invent", (meta.get("numbering_note") or "").lower(), ref)
+        self.assertEqual(len(seen), w["metadata"]["imported_verse_count"])
+        self.assertEqual(w["metadata"]["imported_verse_count"], 14105)
+
     def test_wikisource_is_the_named_electronic_witness(self):
         w = _load(BHAGAVATA / "work.json")
         wiki = [s for s in w["sources"] if "wikisource" in s["slug"].lower() or "wikisource" in (s.get("url") or "")]

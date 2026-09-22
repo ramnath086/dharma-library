@@ -382,20 +382,33 @@
       "iast": "guṇāyanaṁ śīladhanaṁ kṛtajñaṁ\nvṛddhāśrayaṁ saṁvṛṇate'nu sampadaḥ |\nprasīdatāṁ brahmakulaṁ gavāṁ ca\njanārdanaḥ sānucaraśca mahyam || 44 ||"
     },
     {
-      "ref": "4.21.46",
+      "ref": "4.21.45",
       "ordinal": 45,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मैत्रेय उवाच\nइति ब्रुवाणं नृपतिं पितृदेवद्विजातयः ।\nतुष्टुवुर्हृष्टमनसः साधुवादेन साधवः ॥ ४५ ॥",
+      "iast": "maitreya uvāca\niti bruvāṇaṁ nṛpatiṁ pitṛdevadvijātayaḥ |\ntuṣṭuvurhṛṣṭamanasaḥ sādhuvādena sādhavaḥ || 45 ||",
+      "metadata": {
+        "source_url": "https://vedabase.io/en/library/sb/4/21/45/",
+        "source_witness": "bbt-vedabase",
+        "numbering_note": "Not on sa.wikisource.org at this printed number. Devanagari inserted exactly from the BBT Vedabase page cited in metadata.source_url (traditional mūla; BBT English translation/purport not used). Wikisource neighbours were not rewritten.",
+        "speaker_surface": "मैत्रेय"
+      }
+    },
+    {
+      "ref": "4.21.46",
+      "ordinal": 46,
       "kind": "verse",
       "speaker": null,
       "deva": "मैत्रेय उवाच -\nइति ब्रुवाणं नृपतिं पितृदेवद्विजातयः ।\nतुष्टुवुर्हृष्टमनसः साधुवादेन साधवः ॥ ४६ ॥",
       "iast": "maitreya uvāca -\niti bruvāṇaṁ nṛpatiṁ pitṛdevadvijātayaḥ |\ntuṣṭuvurhṛṣṭamanasaḥ sādhuvādena sādhavaḥ || 46 ||",
       "metadata": {
-        "wikisource_number": 46,
-        "numbering_note": "Wikisource numbering skipped 45; no mūla invented for the gap."
+        "wikisource_number": 46
       }
     },
     {
       "ref": "4.21.47",
-      "ordinal": 46,
+      "ordinal": 47,
       "kind": "verse",
       "speaker": null,
       "deva": "पुत्रेण जयते लोकान् इति सत्यवती श्रुतिः ।\nब्रह्मदण्डहतः पापो यद्वेनोऽत्यतरत्तमः ॥ ४७ ॥",
@@ -406,7 +419,7 @@
     },
     {
       "ref": "4.21.48",
-      "ordinal": 47,
+      "ordinal": 48,
       "kind": "verse",
       "speaker": null,
       "deva": "हिरण्यकशिपुश्चापि भगवन् निन्दया तमः ।\nविविक्षुरत्यगात्सूनोः प्रह्लादस्यानुभावतः ॥ ४८ ॥",
@@ -417,7 +430,7 @@
     },
     {
       "ref": "4.21.49",
-      "ordinal": 48,
+      "ordinal": 49,
       "kind": "verse",
       "speaker": null,
       "deva": "वीरवर्य पितः पृथ्व्याः समाः सञ्जीव शाश्वतीः ।\nयस्येदृश्यच्युते भक्तिः सर्वलोकैकभर्तरि ॥ ४९ ॥",
@@ -428,7 +441,7 @@
     },
     {
       "ref": "4.21.50",
-      "ordinal": 49,
+      "ordinal": 50,
       "kind": "verse",
       "speaker": null,
       "deva": "अहो वयं ह्यद्य पवित्रकीर्ते\nत्वयैव नाथेन मुकुन्दनाथाः ।\nय उत्तमश्लोकतमस्य विष्णोः\nब्रह्मण्यदेवस्य कथां व्यनक्ति ॥ ५० ॥",
@@ -439,7 +452,7 @@
     },
     {
       "ref": "4.21.51",
-      "ordinal": 50,
+      "ordinal": 51,
       "kind": "verse",
       "speaker": null,
       "deva": "नात्यद्भुतमिदं नाथ तवाजीव्यानुशासनम् ।\nप्रजानुरागो महतां प्रकृतिः करुणात्मनाम् ॥ ५१ ॥",
@@ -450,7 +463,7 @@
     },
     {
       "ref": "4.21.52",
-      "ordinal": 51,
+      "ordinal": 52,
       "kind": "verse",
       "speaker": null,
       "deva": "अद्य नस्तमसः पारः त्वयोपासादितः प्रभो ।\nभ्राम्यतां नष्टदृष्टीनां कर्मभिर्दैवसंज्ञितैः ॥ ५२ ॥",
@@ -461,7 +474,7 @@
     },
     {
       "ref": "4.21.53",
-      "ordinal": 52,
+      "ordinal": 53,
       "kind": "verse",
       "speaker": null,
       "deva": "नमो विवृद्धसत्त्वाय पुरुषाय महीयसे ।\nयो ब्रह्म क्षत्रमाविश्य बिभर्तीदं स्वतेजसा ॥ ५३ ॥",

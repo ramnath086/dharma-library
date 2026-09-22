@@ -441,20 +441,32 @@
       "iast": "yogaṁ kriyonnatirdarpaṁ arthaṁ buddhirasūyata |\nmedhā smṛtiṁ titikṣā tu kṣemaṁ hrīḥ praśrayaṁ sutam || 51 ||"
     },
     {
-      "ref": "4.1.53",
+      "ref": "4.1.52",
       "ordinal": 52,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मेधा स्मृतिं तितिक्षा तु क्षेमं ह्रीः प्रश्रयं सुतम् ।\nमूर्तिः सर्वगुणोत्पत्तिर्नरनारायणावृषी ॥ ५२ ॥",
+      "iast": "medhā smṛtiṁ titikṣā tu kṣemaṁ hrīḥ praśrayaṁ sutam |\nmūrtiḥ sarvaguṇotpattirnaranārāyaṇāvṛṣī || 52 ||",
+      "metadata": {
+        "source_url": "https://vedabase.io/en/library/sb/4/1/49-52/",
+        "source_witness": "bbt-vedabase",
+        "numbering_note": "Not on sa.wikisource.org at this printed number. Devanagari inserted exactly from the BBT Vedabase page cited in metadata.source_url (traditional mūla; BBT English translation/purport not used). Wikisource neighbours were not rewritten."
+      }
+    },
+    {
+      "ref": "4.1.53",
+      "ordinal": 53,
       "kind": "verse",
       "speaker": null,
       "deva": "मूर्तिः सर्वगुणोत्पत्तिः नरनारायणौ ऋषी ।\nययोर्जन्मन्यदो विश्वं अभ्यनन्दत् सुनिर्वृतम् ।\nमनांसि ककुभो वाताः प्रसेदुः सरितोऽद्रयः ॥ ५३ ॥",
       "iast": "mūrtiḥ sarvaguṇotpattiḥ naranārāyaṇau ṛṣī |\nyayorjanmanyado viśvaṁ abhyanandat sunirvṛtam |\nmanāṁsi kakubho vātāḥ praseduḥ sarito'drayaḥ || 53 ||",
       "metadata": {
-        "wikisource_number": 53,
-        "numbering_note": "Wikisource numbering skipped 52; no mūla invented for the gap."
+        "wikisource_number": 53
       }
     },
     {
       "ref": "4.1.54",
-      "ordinal": 53,
+      "ordinal": 54,
       "kind": "verse",
       "speaker": null,
       "deva": "दिव्यवाद्यन्त तूर्याणि पेतुः कुसुमवृष्टयः ।\nमुनयस्तुष्टुवुस्तुष्टा जगुर्गन्धर्वकिन्नराः ॥ ५४ ॥",
@@ -465,7 +477,7 @@
     },
     {
       "ref": "4.1.55",
-      "ordinal": 54,
+      "ordinal": 55,
       "kind": "verse",
       "speaker": null,
       "deva": "नृत्यन्ति स्म स्त्रियो देव्य आसीत् परममङ्गलम् ।\nदेवा ब्रह्मादयः सर्वे उपतस्थुरभिष्टवैः ॥ ५५ ॥",
@@ -476,7 +488,7 @@
     },
     {
       "ref": "4.1.56",
-      "ordinal": 55,
+      "ordinal": 56,
       "kind": "verse",
       "speaker": null,
       "deva": "देवा ऊचुः -\nयो मायया विरचितं निजयात्मनीदं\nखे रूपभेदमिव तत्प्रतिचक्षणाय ।\nएतेन धर्मसदने ऋषिमूर्तिनाद्य\nप्रादुश्चकार पुरुषाय नमः परस्मै ॥ ५६ ॥",
@@ -487,7 +499,7 @@
     },
     {
       "ref": "4.1.57",
-      "ordinal": 56,
+      "ordinal": 57,
       "kind": "verse",
       "speaker": null,
       "deva": "सोऽयं स्थितिव्यतिकरोपशमाय सृष्टान्\nसत्त्वेन नः सुरगणान् अनुमेयतत्त्वः ।\nदृश्याददभ्रकरुणेन विलोकनेन\nयच्छ्रीनिकेतममलं क्षिपतारविन्दम् ॥ ५७ ॥",
@@ -498,7 +510,7 @@
     },
     {
       "ref": "4.1.58",
-      "ordinal": 57,
+      "ordinal": 58,
       "kind": "verse",
       "speaker": null,
       "deva": "एवं सुरगणैस्तात भगवन्तावभिष्टुतौ ।\nलब्धावलोकैर्ययतुः अर्चितौ गन्धमादनम् ॥ ५८ ॥",
@@ -509,7 +521,7 @@
     },
     {
       "ref": "4.1.59",
-      "ordinal": 58,
+      "ordinal": 59,
       "kind": "verse",
       "speaker": null,
       "deva": "तौ इमौ वै भगवतो हरेरंशाविहागतौ ।\nभारव्ययाय च भुवः कृष्णौ यदुकुरूद्वहौ ॥ ५९ ॥",
@@ -520,7 +532,7 @@
     },
     {
       "ref": "4.1.60",
-      "ordinal": 59,
+      "ordinal": 60,
       "kind": "verse",
       "speaker": null,
       "deva": "स्वाहाभिमानिनश्चाग्नेः आत्मजान् त्रीन् अजीजनत् ।\nपावकं पवमानं च शुचिं च हुतभोजनम् ॥ ६० ॥",
@@ -531,7 +543,7 @@
     },
     {
       "ref": "4.1.61",
-      "ordinal": 60,
+      "ordinal": 61,
       "kind": "verse",
       "speaker": null,
       "deva": "तेभ्योऽग्नयः समभवन् चत्वारिंशच्च पञ्च च ।\nते एवैकोनपञ्चाशत् साकं पितृपितामहैः । ॥ ६१ ॥",
@@ -542,7 +554,7 @@
     },
     {
       "ref": "4.1.62",
-      "ordinal": 61,
+      "ordinal": 62,
       "kind": "verse",
       "speaker": null,
       "deva": "वैतानिके कर्मणि यत् नामभिर्ब्रह्मवादिभिः ।\nआग्नेय्य इष्टयो यज्ञे निरूप्यन्तेऽग्नयस्तु ते । ॥ ६२ ॥",
@@ -553,7 +565,7 @@
     },
     {
       "ref": "4.1.63",
-      "ordinal": 62,
+      "ordinal": 63,
       "kind": "verse",
       "speaker": null,
       "deva": "अग्निष्वात्ता बर्हिषदः सौम्याः पितर आज्यपाः ।\nसाग्नयोऽनग्नयस्तेषां पत्नी दाक्षायणी स्वधा । ॥ ६३ ॥",
@@ -564,7 +576,7 @@
     },
     {
       "ref": "4.1.64",
-      "ordinal": 63,
+      "ordinal": 64,
       "kind": "verse",
       "speaker": null,
       "deva": "तेभ्यो दधार कन्ये द्वे वयुनां धारिणीं स्वधा ।\nउभे ते ब्रह्मवादिन्यौ ज्ञानविज्ञानपारगे । ॥ ६४ ॥",
@@ -575,7 +587,7 @@
     },
     {
       "ref": "4.1.65",
-      "ordinal": 64,
+      "ordinal": 65,
       "kind": "verse",
       "speaker": null,
       "deva": "भवस्य पत्नी तु सती भवं देवमनुव्रता ।\nआत्मनः सदृशं पुत्रं न लेभे गुणशीलतः । ॥ ६५ ॥",
@@ -586,7 +598,7 @@
     },
     {
       "ref": "4.1.66",
-      "ordinal": 65,
+      "ordinal": 66,
       "kind": "verse",
       "speaker": null,
       "deva": "पितर्यप्रतिरूपे स्वे भवायानागसे रुषा ।\nअप्रौढैवात्मनात्मानं अजहाद् योगसंयुता । ॥ ६६ ॥",

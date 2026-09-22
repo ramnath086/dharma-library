@@ -388,21 +388,34 @@
       "iast": "vimṛjyāśrūṇi pāṇibhyāṁ viṣṭabhyātmānamātmanā |\najātaśatruṁ pratyūce prabhoḥ pādāvanusmaran || 35 ||"
     },
     {
-      "ref": "1.13.37",
+      "ref": "1.13.36",
       "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विमृज्याश्रूणि पाणिभ्यां\nविष्टभ्यात्मानमात्मना ।\nअजातशत्रुं प्रत्यूचे प्रभोः पादावनुस्मरन् ॥ ३६ ॥",
+      "iast": "vimṛjyāśrūṇi pāṇibhyāṁ\nviṣṭabhyātmānamātmanā |\najātaśatruṁ pratyūce prabhoḥ pādāvanusmaran || 36 ||",
+      "metadata": {
+        "source_url": "https://vedabase.io/en/library/sb/1/13/36/",
+        "source_witness": "bbt-vedabase",
+        "numbering_note": "Not on sa.wikisource.org at this printed number. Devanagari inserted exactly from the BBT Vedabase page cited in metadata.source_url (traditional mūla; BBT English translation/purport not used). Wikisource neighbours were not rewritten.",
+        "speaker_surface": "सञ्जय"
+      }
+    },
+    {
+      "ref": "1.13.37",
+      "ordinal": 37,
       "kind": "verse",
       "speaker": null,
       "deva": "नाहं वेद व्यवसितं पित्रोर्वः कुलनन्दन ।\nगान्धार्या वा महाबाहो मुषितोऽस्मि महात्मभिः ॥ ३७ ॥",
       "iast": "nāhaṁ veda vyavasitaṁ pitrorvaḥ kulanandana |\ngāndhāryā vā mahābāho muṣito'smi mahātmabhiḥ || 37 ||",
       "metadata": {
         "wikisource_number": 37,
-        "numbering_note": "Wikisource numbering skipped 36; no mūla invented for the gap.",
         "speaker_surface": "सञ्जय"
       }
     },
     {
       "ref": "1.13.38",
-      "ordinal": 37,
+      "ordinal": 38,
       "kind": "verse",
       "speaker": null,
       "deva": "अथाजगाम भगवान् नारदः सहतुम्बुरुः ।\nप्रत्युत्थायाभिवाद्याह सानुजोऽभ्यर्चयन् मुनिम् ॥ ३८ ॥",
@@ -414,7 +427,7 @@
     },
     {
       "ref": "1.13.39",
-      "ordinal": 38,
+      "ordinal": 39,
       "kind": "verse",
       "speaker": null,
       "deva": "नाहं वेद गतिं पित्रोः भगवन् क्व गतावितः ।\nअम्बा वा हतपुत्रार्ता क्व गता च तपस्विनी ॥ ३९ ॥",
@@ -426,7 +439,7 @@
     },
     {
       "ref": "1.13.40",
-      "ordinal": 39,
+      "ordinal": 40,
       "kind": "verse",
       "speaker": null,
       "deva": "कर्णधार इवापारे भगवान् पारदर्शकः ।\nअथाबभाषे भगवान् नारदो मुनिसत्तमः ॥ ४० ॥",
@@ -438,7 +451,7 @@
     },
     {
       "ref": "1.13.40b",
-      "ordinal": 40,
+      "ordinal": 41,
       "kind": "verse",
       "speaker": null,
       "deva": "मा कञ्चन शुचो राजन् यदीश्वरवशं जगत् ।\nलोकाः सपाला यस्येमे वहन्ति बलिमीशितुः ।\nस संयुनक्ति भूतानि स एव वियुनक्ति च ॥ ४० ॥",
@@ -451,7 +464,7 @@
     },
     {
       "ref": "1.13.41",
-      "ordinal": 41,
+      "ordinal": 42,
       "kind": "verse",
       "speaker": null,
       "deva": "यथा गावो नसि प्रोताः तन्त्यां बद्धाः स्वदामभिः ।\nवाक्तन्त्यां नामभिर्बद्धा वहन्ति बलिमीशितुः ॥ ४१ ॥",
@@ -462,7 +475,7 @@
     },
     {
       "ref": "1.13.42",
-      "ordinal": 42,
+      "ordinal": 43,
       "kind": "verse",
       "speaker": null,
       "deva": "यथा क्रीडोपस्कराणां संयोगविगमाविह ।\nइच्छया क्रीडितुः स्यातां तथैवेशेच्छया नृणाम् ॥ ४२ ॥",
@@ -473,7 +486,7 @@
     },
     {
       "ref": "1.13.43",
-      "ordinal": 43,
+      "ordinal": 44,
       "kind": "verse",
       "speaker": null,
       "deva": "यन्मन्यसे ध्रुवं लोकं अध्रुवं वा न चोभयम् ।\nसर्वथा न हि शोच्यास्ते स्नेहात् अन्यत्र मोहजात् ॥ ४३ ॥",
@@ -484,7 +497,7 @@
     },
     {
       "ref": "1.13.44",
-      "ordinal": 44,
+      "ordinal": 45,
       "kind": "verse",
       "speaker": null,
       "deva": "तस्माज्जह्यङ्ग वैक्लव्यं अज्ञानकृतमात्मनः ।\nकथं त्वनाथाः कृपणा वर्तेरंस्ते च मां विना ॥ ४४ ॥",
@@ -495,7 +508,7 @@
     },
     {
       "ref": "1.13.45",
-      "ordinal": 45,
+      "ordinal": 46,
       "kind": "verse",
       "speaker": null,
       "deva": "कालकर्म गुणाधीनो देहोऽयं पाञ्चभौतिकः ।\nकथमन्यांस्तु गोपायेत् सर्पग्रस्तो यथा परम् ॥ ४५ ॥",
@@ -506,7 +519,7 @@
     },
     {
       "ref": "1.13.46",
-      "ordinal": 46,
+      "ordinal": 47,
       "kind": "verse",
       "speaker": null,
       "deva": "अहस्तानि सहस्तानां अपदानि चतुष्पदाम् ।\nफल्गूनि तत्र महतां जीवो जीवस्य जीवनम् ॥ ४६ ॥",
@@ -517,7 +530,7 @@
     },
     {
       "ref": "1.13.47",
-      "ordinal": 47,
+      "ordinal": 48,
       "kind": "verse",
       "speaker": null,
       "deva": "तदिदं भगवान् राजन् एक आत्मात्मनां स्वदृक् ।\nअन्तरोऽनन्तरो भाति पश्य तं माययोरुधा ॥ ४७ ॥",
@@ -528,7 +541,7 @@
     },
     {
       "ref": "1.13.48",
-      "ordinal": 48,
+      "ordinal": 49,
       "kind": "verse",
       "speaker": null,
       "deva": "सोऽयमद्य महाराज भगवान् भूतभावनः ।\nकालरूपोऽवतीर्णोऽस्यां अभावाय सुरद्विषाम् ॥ ४८ ॥",
@@ -539,7 +552,7 @@
     },
     {
       "ref": "1.13.49",
-      "ordinal": 49,
+      "ordinal": 50,
       "kind": "verse",
       "speaker": null,
       "deva": "निष्पादितं देवकृत्यं अवशेषं प्रतीक्षते ।\nतावद् यूयं अवेक्षध्वं भवेद् यावदिहेश्वरः ॥ ४९ ॥",
@@ -550,7 +563,7 @@
     },
     {
       "ref": "1.13.50",
-      "ordinal": 50,
+      "ordinal": 51,
       "kind": "verse",
       "speaker": null,
       "deva": "धृतराष्ट्रः सह भ्रात्रा गान्धार्या च स्वभार्यया ।\nदक्षिणेन हिमवत ऋषीणां आश्रमं गतः ॥ ५० ॥",
@@ -561,7 +574,7 @@
     },
     {
       "ref": "1.13.51",
-      "ordinal": 51,
+      "ordinal": 52,
       "kind": "verse",
       "speaker": null,
       "deva": "स्रोतोभिः सप्तभिर्या वै स्वर्धुनी सप्तधा व्यधात् ।\nसप्तानां प्रीतये नाना सप्तस्रोतः प्रचक्षते ॥ ५१ ॥",
@@ -572,7 +585,7 @@
     },
     {
       "ref": "1.13.52",
-      "ordinal": 52,
+      "ordinal": 53,
       "kind": "verse",
       "speaker": null,
       "deva": "स्नात्वानुसवनं तस्मिन् हुत्वा चाग्नीन्यथाविधि ।\nअब्भक्ष उपशान्तात्मा स आस्ते विगतैषणः ॥ ५२ ॥",
@@ -583,7 +596,7 @@
     },
     {
       "ref": "1.13.53",
-      "ordinal": 53,
+      "ordinal": 54,
       "kind": "verse",
       "speaker": null,
       "deva": "जितासनो जितश्वासः प्रत्याहृतषडिन्द्रियः ।\nहरिभावनया ध्वस्तः अजःसत्त्वतमोमलः ॥ ५३ ॥",
@@ -594,7 +607,7 @@
     },
     {
       "ref": "1.13.54",
-      "ordinal": 54,
+      "ordinal": 55,
       "kind": "verse",
       "speaker": null,
       "deva": "विज्ञानात्मनि संयोज्य क्षेत्रज्ञे प्रविलाप्य तम् ।\nब्रह्मण्यात्मानमाधारे घटाम्बरमिवाम्बरे ॥ ५४ ॥",
@@ -605,7 +618,7 @@
     },
     {
       "ref": "1.13.55",
-      "ordinal": 55,
+      "ordinal": 56,
       "kind": "verse",
       "speaker": null,
       "deva": "ध्वस्तमायागुणोदर्को निरुद्धकरणाशयः ।\nनिवर्तिताखिलाहार आस्ते स्थाणुरिवाचलः ।\nतस्यान्तरायो मैवाभूः सन्न्यस्ताखिलकर्मणः ॥ ५५ ॥",
@@ -616,7 +629,7 @@
     },
     {
       "ref": "1.13.56",
-      "ordinal": 56,
+      "ordinal": 57,
       "kind": "verse",
       "speaker": null,
       "deva": "स वा अद्यतनाद् राजन् परतः पञ्चमेऽहनि ।\nकलेवरं हास्यति स्वं तच्च भस्मीभविष्यति ॥ ५६ ॥",
@@ -627,7 +640,7 @@
     },
     {
       "ref": "1.13.57",
-      "ordinal": 57,
+      "ordinal": 58,
       "kind": "verse",
       "speaker": null,
       "deva": "दह्यमानेऽग्निभिर्देहे पत्युः पत्नी सहोटजे ।\nबहिः स्थिता पतिं साध्वी तमग्निमनु वेक्ष्यति ॥ ५७ ॥",
@@ -638,7 +651,7 @@
     },
     {
       "ref": "1.13.58",
-      "ordinal": 58,
+      "ordinal": 59,
       "kind": "verse",
       "speaker": null,
       "deva": "विदुरस्तु तदाश्चर्यं निशाम्य कुरुनन्दन ।\nहर्षशोकयुतस्तस्माद् गन्ता तीर्थनिषेवकः ॥ ५८ ॥",
@@ -649,7 +662,7 @@
     },
     {
       "ref": "1.13.59",
-      "ordinal": 59,
+      "ordinal": 60,
       "kind": "verse",
       "speaker": null,
       "deva": "इत्युक्त्वाथारुहत् स्वर्गं नारदः सहतुम्बुरुः ।\nयुधिष्ठिरो वचस्तस्य हृदि कृत्वाजहाच्छुचः ॥ ५९ ॥",

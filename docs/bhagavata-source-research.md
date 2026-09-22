@@ -199,9 +199,14 @@ Parser closes that keep page mūla (not invented):
 * `[http://…]` footnote or `(…पाठभेदः)` between number and danda (8.11.16, 9.24.20)
 * one-word gloss after the number at EOL (`२६ अभिजित्।`, 10.83.26)
 
-Edition jumps with no mūla on the Wikisource page (do not invent). Other
-vulgate witnesses (Gita Press / BBT / GRETIL) sometimes print a verse here;
-those wordings are not CC BY-SA Wikisource and are not shipped:
+Edition jumps with no mūla on the Wikisource page. Other vulgate witnesses
+(Gita Press / BBT / GRETIL) sometimes print a verse here. Those wordings are
+**not** CC BY-SA Wikisource. This build **does** ship seven of them as
+traditional mūla fills, taken from the cited BBT Vedabase Devanagari after
+verification (no BBT English, synonyms, or purports). Wikisource neighbours
+were not rewritten. See `docs/bhagavata-completeness.md` and verse
+`metadata.source_witness = bbt-vedabase`.
 
-* 1.13.36 (35→37), 4.1.52 (51→53), 4.21.45 (44→46), 8.7.5 (4→6),
-  8.16.23 (22→24), 11.11.13 (12→14), 11.27.40 (39→41, 41 printed twice).
+* 1.13.36, 4.1.52 (`/sb/4/1/49-52/`; `/sb/4/1/52/` is 404), 4.21.45, 8.7.5,
+  8.16.23, 11.11.13 (line after `॥ १२ ॥` on `/sb/11/11/12-13/`), 11.27.40
+  (`/sb/11/27/38-41/`; Vedabase `हवि:` stored as supplied `हविः`).
