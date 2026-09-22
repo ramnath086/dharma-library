@@ -24,7 +24,7 @@
       "label_ml": "അധ്യായം"
     }
   ],
-  "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. This build ships the complete sa.wikisource.org mūla: 12 skandhas, 335 adhyāyas, 14098 numbered verses parsed from that edition on 2026-09-22 (CC BY-SA 4.0), plus 7 printed-number fills whose Devanagari was taken from BBT Vedabase (traditional mūla only; no BBT translation shipped) where Wikisource had no mūla at that number. Traditional ~18,000 is an approximation, not an import target. English and Malayalam translations remain original Dharma Library drafts on 1.1.1–1.1.10 only; other verses have no invented translation. GRETIL was collated as a scholarly witness and is not shipped.",
+  "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. This build ships the complete sa.wikisource.org mūla: 12 skandhas, 335 adhyāyas, 14105 numbered verses parsed from that edition on 2026-09-22 (CC BY-SA 4.0). Traditional ~18,000 is an approximation, not an import target. English and Malayalam translations remain original Dharma Library drafts on 1.1.1–1.1.10 only; other verses have no invented translation. GRETIL was collated as a scholarly witness and is not shipped.",
   "metadata": {
     "total_cantos": 12,
     "traditional_chapter_inventory": 335,
@@ -32,7 +32,7 @@
     "imported_chapter_count": 335,
     "imported_verse_count": 14105,
     "complete": true,
-    "retrieved": "2026-09-22T17:52:13Z",
+    "retrieved": "2026-09-22T19:12:01Z",
     "source_license": "CC-BY-SA-4.0",
     "translation_scope": "1.1.1–1.1.10",
     "bbt_vedabase_fill_count": 7,
@@ -55,7 +55,7 @@
       "publisher": "Wikimedia Foundation / Sanskrit Wikisource contributors",
       "url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
       "archive_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
-      "notes": "Electronic Sanskrit mūla of the vulgate Bhāgavata Purāṇa. Licence: CC BY-SA 4.0 (Wikimedia). Retrieved 2026-09-22T17:52:13Z. Imported 335 chapters / 14098 Wikisource verses + 7 BBT-numbered fills. Attribution required."
+      "notes": "Electronic Sanskrit mūla of the vulgate Bhāgavata Purāṇa. Licence: CC BY-SA 4.0 (Wikimedia). Retrieved 2026-09-22T19:12:01Z. Imported 335 chapters / 14105 verses. Attribution required."
     },
     {
       "slug": "gretil-bhp",
@@ -148,7 +148,7 @@
       "source": "sa-wikisource-bhagavata",
       "is_default": true,
       "sort_order": 10,
-      "description": "The Sanskrit text in Devanagari. Electronic witness: sa.wikisource.org (CC BY-SA 4.0) for 14098 verses, plus 7 BBT-numbered traditional-mūla fills (no BBT translation), in 335 chapters."
+      "description": "The Sanskrit text in Devanagari. Electronic witness: sa.wikisource.org (CC BY-SA 4.0), 14105 verses in 335 chapters."
     },
     {
       "slug": "sb-iast",
