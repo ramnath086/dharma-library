@@ -6,12 +6,12 @@
 
 | Axis | This ingest |
 |---|---|
-| Retrieved | 2026-09-22T16:47:13Z |
+| Retrieved | 2026-09-22T16:52:45Z |
 | Licence | [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Attribution | Sanskrit Wikisource contributors |
 | Skandhas | 12 |
 | Adhyāyas parsed | 335 (expected 335) |
-| Numbered verses parsed | **14088** (this edition; not a traditional 18,000 target) |
+| Numbered verses parsed | **14091** (this edition; not a traditional 18,000 target) |
 | Translations | original Dharma Library drafts on **1.1.1–1.1.10** only; nothing invented for the rest |
 | GRETIL | collation/validation only; **not shipped** |
 
@@ -21,12 +21,12 @@
 | 2 | 10 | 391 |
 | 3 | 33 | 1411 |
 | 4 | 31 | 1449 |
-| 5 | 26 | 661 |
+| 5 | 26 | 662 |
 | 6 | 19 | 849 |
 | 7 | 15 | 751 |
 | 8 | 24 | 932 |
 | 9 | 24 | 963 |
-| 10 | 90 | 3941 |
+| 10 | 90 | 3943 |
 | 11 | 31 | 1365 |
 | 12 | 13 | 564 |
 

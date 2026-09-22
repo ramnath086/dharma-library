@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-22T16:47:13Z",
+  "retrieved": "2026-09-22T16:52:45Z",
   "license": "CC-BY-SA-4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
   "attribution": "Sanskrit Wikisource contributors",
@@ -8,7 +8,7 @@
   "transformation": "MediaWiki wikitext → strip templates/links → split on ॥ N ॥ → IAST via scripts/translit.py. No translations invented. GRETIL not used as source.",
   "expected_chapters": 335,
   "chapters": 335,
-  "verses": 14088,
+  "verses": 14091,
   "skandhas": {
     "1": {
       "chapters": 19,
@@ -28,7 +28,7 @@
     },
     "5": {
       "chapters": 26,
-      "verses": 661
+      "verses": 662
     },
     "6": {
       "chapters": 19,
@@ -48,7 +48,7 @@
     },
     "10": {
       "chapters": 90,
-      "verses": 3941
+      "verses": 3943
     },
     "11": {
       "chapters": 31,
@@ -1367,7 +1367,7 @@
       "revid": 106454,
       "timestamp": "2017-03-24T19:38:05Z",
       "sha1": "8133565d1e8afd1fadcfd52d560dde6b53f73612",
-      "verses": 39
+      "verses": 40
     },
     {
       "skandha": 6,
@@ -2786,7 +2786,7 @@
       "revid": 343608,
       "timestamp": "2022-08-16T13:06:10Z",
       "sha1": "0e0378dd2d0f7c599191d720fcd43b53f7737dc4",
-      "verses": 67
+      "verses": 69
     },
     {
       "skandha": 10,
