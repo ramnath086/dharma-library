@@ -1,0 +1,461 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 1.5 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AB), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AB",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः १/अध्यायः ५",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 7994,
+    "revid": 110176,
+    "timestamp": "2017-06-04T22:15:14Z",
+    "sha1": "c94b622db0db4b168ae39825da686c9bb3e8ec94",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः १/अध्यायः ५"
+  },
+  "section": {
+    "canto": {
+      "ref": "1",
+      "ordinal": 1,
+      "title_iast": "Skandha 1",
+      "title_sa": "स्कन्धः १"
+    },
+    "chapter": {
+      "ref": "1.5",
+      "ordinal": 5,
+      "title_iast": "Adhyāya 5",
+      "title_sa": "अध्यायः ५"
+    }
+  },
+  "verses": [
+    {
+      "ref": "1.5.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अथ तं सुखमासीन उपासीनं बृहच्छ्रवाः ।\nदेवर्षिः प्राह विप्रर्षिं वीणापाणिः स्मयन्निव ॥ १ ॥",
+      "iast": "atha taṁ sukhamāsīna upāsīnaṁ bṛhacchravāḥ |\ndevarṣiḥ prāha viprarṣiṁ vīṇāpāṇiḥ smayanniva || 1 ||"
+    },
+    {
+      "ref": "1.5.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पाराशर्य महाभाग भवतः कच्चिदात्मना ।\nपरितुष्यति शारीर आत्मा मानस एव वा ॥ २ ॥",
+      "iast": "pārāśarya mahābhāga bhavataḥ kaccidātmanā |\nparituṣyati śārīra ātmā mānasa eva vā || 2 ||",
+      "metadata": {
+        "speaker_surface": "नारद"
+      }
+    },
+    {
+      "ref": "1.5.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जिज्ञासितं सुसंपन्नं अपि ते महदद्भुतम् ।\nकृतवान् भारतं यस्त्वं सर्वार्थपरिबृंहितम् ॥ ३ ॥",
+      "iast": "jijñāsitaṁ susaṁpannaṁ api te mahadadbhutam |\nkṛtavān bhārataṁ yastvaṁ sarvārthaparibṛṁhitam || 3 ||",
+      "metadata": {
+        "speaker_surface": "नारद"
+      }
+    },
+    {
+      "ref": "1.5.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जिज्ञासितमधीतं च यत्तद् ब्रह्म सनातनम् ।\nतथापि शोचस्यात्मानं अकृतार्थ इव प्रभो ॥ ४ ॥",
+      "iast": "jijñāsitamadhītaṁ ca yattad brahma sanātanam |\ntathāpi śocasyātmānaṁ akṛtārtha iva prabho || 4 ||",
+      "metadata": {
+        "speaker_surface": "नारद"
+      }
+    },
+    {
+      "ref": "1.5.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": "vyasa",
+      "deva": "अस्त्येव मे सर्वमिदं त्वयोक्तं\nतथापि नात्मा परितुष्यते मे ।\nतन्मूलमव्यक्तमगाधबोधं\nपृच्छामहे त्वात्मभवात्मभूतम् ॥ ५ ॥",
+      "iast": "astyeva me sarvamidaṁ tvayoktaṁ\ntathāpi nātmā parituṣyate me |\ntanmūlamavyaktamagādhabodhaṁ\npṛcchāmahe tvātmabhavātmabhūtam || 5 ||"
+    },
+    {
+      "ref": "1.5.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": "vyasa",
+      "deva": "स वै भवान् वेद समस्तगुह्यं\nउपासितो यत्पुरुषः पुराणः ।\nपरावरेशो मनसैव विश्वं\nसृजत्यवत्यत्ति गुणैरसङ्गः ॥ ६ ॥",
+      "iast": "sa vai bhavān veda samastaguhyaṁ\nupāsito yatpuruṣaḥ purāṇaḥ |\nparāvareśo manasaiva viśvaṁ\nsṛjatyavatyatti guṇairasaṅgaḥ || 6 ||"
+    },
+    {
+      "ref": "1.5.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": "vyasa",
+      "deva": "त्वं पर्यटन्नर्क इव त्रिलोकीं\nअन्तश्चरो वायुरिवात्मसाक्षी ।\nपरावरे ब्रह्मणि धर्मतो व्रतैः\nस्नातस्य मे न्यूनमलं विचक्ष्व ॥ ७ ॥",
+      "iast": "tvaṁ paryaṭannarka iva trilokīṁ\nantaścaro vāyurivātmasākṣī |\nparāvare brahmaṇi dharmato vrataiḥ\nsnātasya me nyūnamalaṁ vicakṣva || 7 ||"
+    },
+    {
+      "ref": "1.5.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भवतानुदितप्रायं यशो भगवतोऽमलम् ।\nयेनैवासौ न तुष्येत मन्ये तद्दर्शनं खिलम् ॥ ८ ॥",
+      "iast": "bhavatānuditaprāyaṁ yaśo bhagavato'malam |\nyenaivāsau na tuṣyeta manye taddarśanaṁ khilam || 8 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथा धर्मादयश्चार्था मुनिवर्यानुकीर्तिताः ।\nन तथा वासुदेवस्य महिमा ह्यनुवर्णितः ॥ ९ ॥",
+      "iast": "yathā dharmādayaścārthā munivaryānukīrtitāḥ |\nna tathā vāsudevasya mahimā hyanuvarṇitaḥ || 9 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न यद् वचश्चित्रपदं हरेर्यशो\nजगत्पवित्रं प्रगृणीत कर्हिचित् ।\nतद्वायसं तीर्थमुशन्ति मानसा\nन यत्र हंसा निरमन्त्युशिक्क्षयाः ॥ १० ॥",
+      "iast": "na yad vacaścitrapadaṁ hareryaśo\njagatpavitraṁ pragṛṇīta karhicit |\ntadvāyasaṁ tīrthamuśanti mānasā\nna yatra haṁsā niramantyuśikkṣayāḥ || 10 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तद्वाग्विसर्गो जनताघविप्लवो\nयस्मिन् प्रतिश्लोकमबद्धवत्यपि ।\nनामान्यनन्तस्य यशोऽङ्कितानि यत्\nश्रृण्वन्ति गायन्ति गृणन्ति साधवः ॥ ११ ॥",
+      "iast": "tadvāgvisargo janatāghaviplavo\nyasmin pratiślokamabaddhavatyapi |\nnāmānyanantasya yaśo'ṅkitāni yat\nśrṛṇvanti gāyanti gṛṇanti sādhavaḥ || 11 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नैष्कर्म्यमप्यच्युतभाववर्जितं\nन शोभते ज्ञानमलं निरञ्जनम् ।\nकुतः पुनः शश्वदभद्रमीश्वरे\nन चार्पितं कर्म यदप्यकारणम् ॥ १२ ॥",
+      "iast": "naiṣkarmyamapyacyutabhāvavarjitaṁ\nna śobhate jñānamalaṁ nirañjanam |\nkutaḥ punaḥ śaśvadabhadramīśvare\nna cārpitaṁ karma yadapyakāraṇam || 12 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अथो महाभाग भवानमोघदृक्\nशुचिश्रवाः सत्यरतो धृतव्रतः ।\nउरुक्रमस्याखिलबंधमुक्तये\nसमाधिनानुस्मर तद्विचेष्टितम् ॥ १३ ॥",
+      "iast": "atho mahābhāga bhavānamoghadṛk\nśuciśravāḥ satyarato dhṛtavrataḥ |\nurukramasyākhilabaṁdhamuktaye\nsamādhinānusmara tadviceṣṭitam || 13 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ततोऽन्यथा किञ्चन यद्विवक्षतः\nपृथग् दृशस्तत् कृतरूपनामभिः ।\nन कर्हिचित् क्वापि च दुःस्थिता मतिः\nलभेत वाताहतनौरिवास्पदम् ॥ १४ ॥",
+      "iast": "tato'nyathā kiñcana yadvivakṣataḥ\npṛthag dṛśastat kṛtarūpanāmabhiḥ |\nna karhicit kvāpi ca duḥsthitā matiḥ\nlabheta vātāhatanaurivāspadam || 14 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जुगुप्सितं धर्मकृतेऽनुशासतः\nस्वभावरक्तस्य महान् व्यतिक्रमः ।\nयद्वाक्यतो धर्म इतीतरः स्थितो\nन मन्यते तस्य निवारणं जनः ॥ १५ ॥",
+      "iast": "jugupsitaṁ dharmakṛte'nuśāsataḥ\nsvabhāvaraktasya mahān vyatikramaḥ |\nyadvākyato dharma itītaraḥ sthito\nna manyate tasya nivāraṇaṁ janaḥ || 15 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विचक्षणोऽस्यार्हति वेदितुं विभोः\nअनन्तपारस्य निवृत्तितः सुखम् ।\nप्रवर्तमानस्य गुणैरनात्मनः\nततो भवान् दर्शय चेष्टितं विभोः ॥ १६ ॥",
+      "iast": "vicakṣaṇo'syārhati vedituṁ vibhoḥ\nanantapārasya nivṛttitaḥ sukham |\npravartamānasya guṇairanātmanaḥ\ntato bhavān darśaya ceṣṭitaṁ vibhoḥ || 16 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "त्यक्त्वा स्वधर्मं चरणाम्बुजं हरेः\nभजन् अपक्वोऽथ पतेत् ततो यदि ।\nयत्र क्व वाभद्रमभूदमुष्य किं\nको वार्थ आप्तोऽभजतां स्वधर्मतः ॥ १७ ॥",
+      "iast": "tyaktvā svadharmaṁ caraṇāmbujaṁ hareḥ\nbhajan apakvo'tha patet tato yadi |\nyatra kva vābhadramabhūdamuṣya kiṁ\nko vārtha āpto'bhajatāṁ svadharmataḥ || 17 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्यैव हेतोः प्रयतेत कोविदो\nन लभ्यते यद्भ्रमतामुपर्यधः ।\nतल्लभ्यते दुःखवदन्यतः सुखं\nकालेन सर्वत्र गभीररंहसा ॥ १८ ॥",
+      "iast": "tasyaiva hetoḥ prayateta kovido\nna labhyate yadbhramatāmuparyadhaḥ |\ntallabhyate duḥkhavadanyataḥ sukhaṁ\nkālena sarvatra gabhīraraṁhasā || 18 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न वै जनो जातु कथञ्चनाव्रजेत्\nमुकुंदसेव्यन्यवदङ्ग संसृतिम् ।\nस्मरन् मुकुंदाङ्घ्र्युपगूहनं पुनः\nविहातुमिच्छेन्न रसग्रहो जनः ॥ १९ ॥",
+      "iast": "na vai jano jātu kathañcanāvrajet\nmukuṁdasevyanyavadaṅga saṁsṛtim |\nsmaran mukuṁdāṅghryupagūhanaṁ punaḥ\nvihātumicchenna rasagraho janaḥ || 19 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इदं हि विश्वं भगवानिवेतरो\nयतो जगत्स्थाननिरोधसंभवाः ।\nतद्धि स्वयं वेद भवांस्तथापि वै\nप्रादेशमात्रं भवतः प्रदर्शितम् ॥ २० ॥",
+      "iast": "idaṁ hi viśvaṁ bhagavānivetaro\nyato jagatsthānanirodhasaṁbhavāḥ |\ntaddhi svayaṁ veda bhavāṁstathāpi vai\nprādeśamātraṁ bhavataḥ pradarśitam || 20 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "त्वमात्मनात्मानमवेह्यमोघदृक्\nपरस्य पुंसः परमात्मनः कलाम् ।\nअजं प्रजातं जगतः शिवाय तन्\nमहानुभावाभ्युदयोऽधिगण्यताम् ॥ २१ ॥",
+      "iast": "tvamātmanātmānamavehyamoghadṛk\nparasya puṁsaḥ paramātmanaḥ kalām |\najaṁ prajātaṁ jagataḥ śivāya tan\nmahānubhāvābhyudayo'dhigaṇyatām || 21 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इदं हि पुंसस्तपसः श्रुतस्य वा\nस्विष्टस्य सूक्तस्य च बुद्धिदत्तयोः ।\nअविच्युतोऽर्थः कविभिर्निरूपितो\nयदुत्तमश्लोक गुणानुवर्णनम् ॥ २२ ॥",
+      "iast": "idaṁ hi puṁsastapasaḥ śrutasya vā\nsviṣṭasya sūktasya ca buddhidattayoḥ |\navicyuto'rthaḥ kavibhirnirūpito\nyaduttamaśloka guṇānuvarṇanam || 22 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अहं पुरातीतभवेऽभवं मुने\nदास्यास्तु कस्याश्चन वेदवादिनाम् ।\nनिरूपितो बालक एव योगिनां\nशुश्रूषणे प्रावृषि निर्विविक्षताम् ॥ २३ ॥",
+      "iast": "ahaṁ purātītabhave'bhavaṁ mune\ndāsyāstu kasyāścana vedavādinām |\nnirūpito bālaka eva yogināṁ\nśuśrūṣaṇe prāvṛṣi nirvivikṣatām || 23 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ते मय्यपेताखिलचापलेऽर्भके\nदान्तेऽधृतक्रीडनकेऽनुवर्तिनि ।\nचक्रुः कृपां यद्यपि तुल्यदर्शनाः\nशुश्रूषमाणे मुनयोऽल्पभाषिणि ॥ २४ ॥",
+      "iast": "te mayyapetākhilacāpale'rbhake\ndānte'dhṛtakrīḍanake'nuvartini |\ncakruḥ kṛpāṁ yadyapi tulyadarśanāḥ\nśuśrūṣamāṇe munayo'lpabhāṣiṇi || 24 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "उच्छिष्टलेपाननुमोदितो द्विजैः\nसकृत्स्म भुञ्जे तदपास्तकिल्बिषः ।\nएवं प्रवृत्तस्य विशुद्धचेतसः\nतद्धर्म एवात्मरुचिः प्रजायते ॥ २५ ॥",
+      "iast": "ucchiṣṭalepānanumodito dvijaiḥ\nsakṛtsma bhuñje tadapāstakilbiṣaḥ |\nevaṁ pravṛttasya viśuddhacetasaḥ\ntaddharma evātmaruciḥ prajāyate || 25 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत्रान्वहं कृष्णकथाः प्रगायतां\nअनुग्रहेणाश्रृणवं मनोहराः ।\nताः श्रद्धया मेऽनुपदं विश्रृण्वतः\nप्रियश्रवस्यङ्ग ममाभवद् रुचिः ॥ २६ ॥",
+      "iast": "tatrānvahaṁ kṛṣṇakathāḥ pragāyatāṁ\nanugraheṇāśrṛṇavaṁ manoharāḥ |\ntāḥ śraddhayā me'nupadaṁ viśrṛṇvataḥ\npriyaśravasyaṅga mamābhavad ruciḥ || 26 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्मिंस्तदा लब्धरुचेर्महामते\nप्रियश्रवस्यस्खलिता मतिर्मम ।\nययाहमेतत् सदसत्स्वमायया\nपश्ये मयि ब्रह्मणि कल्पितं परे ॥ २७ ॥",
+      "iast": "tasmiṁstadā labdharucermahāmate\npriyaśravasyaskhalitā matirmama |\nyayāhametat sadasatsvamāyayā\npaśye mayi brahmaṇi kalpitaṁ pare || 27 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इत्थं शरत् प्रावृषिकावृतू हरेः\nविश्रृण्वतो मेऽनुसवं यशोऽमलम् ।\nसङ्कीर्त्यमानं मुनिभिर्महात्मभिः\nभक्तिः प्रवृत्ताऽऽत्मरजस्तमोपहा ॥ २८ ॥",
+      "iast": "itthaṁ śarat prāvṛṣikāvṛtū hareḥ\nviśrṛṇvato me'nusavaṁ yaśo'malam |\nsaṅkīrtyamānaṁ munibhirmahātmabhiḥ\nbhaktiḥ pravṛttā''tmarajastamopahā || 28 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्यैवं मेऽनुरक्तस्य प्रश्रितस्य हतैनसः ।\nश्रद्दधानस्य बालस्य दान्तस्यानुचरस्य च ॥ २९ ॥",
+      "iast": "tasyaivaṁ me'nuraktasya praśritasya hatainasaḥ |\nśraddadhānasya bālasya dāntasyānucarasya ca || 29 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ज्ञानं गुह्यतमं यत्तत् साक्षाद्भगवतोदितम् ।\nअन्ववोचन् गमिष्यन्तः कृपया दीनवत्सलाः ॥ ३० ॥",
+      "iast": "jñānaṁ guhyatamaṁ yattat sākṣādbhagavatoditam |\nanvavocan gamiṣyantaḥ kṛpayā dīnavatsalāḥ || 30 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "येनैवाहं भगवतो वासुदेवस्य वेधसः ।\nमायानुभावमविदं येन गच्छन्ति तत्पदम् ॥ ३१ ॥",
+      "iast": "yenaivāhaṁ bhagavato vāsudevasya vedhasaḥ |\nmāyānubhāvamavidaṁ yena gacchanti tatpadam || 31 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतत् संसूचितं ब्रह्मन् तापत्रयचिकित्सितम् ।\nयदीश्वरे भगवति कर्म ब्रह्मणि भावितम् ॥ ३२ ॥",
+      "iast": "etat saṁsūcitaṁ brahman tāpatrayacikitsitam |\nyadīśvare bhagavati karma brahmaṇi bhāvitam || 32 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आमयो यश्च भूतानां जायते येन सुव्रत ।\nतदेव ह्यामयं द्रव्यं न पुनाति चिकित्सितम् ॥ ३३ ॥",
+      "iast": "āmayo yaśca bhūtānāṁ jāyate yena suvrata |\ntadeva hyāmayaṁ dravyaṁ na punāti cikitsitam || 33 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं नृणां क्रियायोगाः सर्वे संसृतिहेतवः ।\nत एवात्मविनाशाय कल्पन्ते कल्पिताः परे ॥ ३४ ॥",
+      "iast": "evaṁ nṛṇāṁ kriyāyogāḥ sarve saṁsṛtihetavaḥ |\nta evātmavināśāya kalpante kalpitāḥ pare || 34 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदत्र क्रियते कर्म भगवत् परितोषणम् ।\nज्ञानं यत् तद् अधीनं हि भक्तियोगसमन्वितम् ॥ ३५ ॥",
+      "iast": "yadatra kriyate karma bhagavat paritoṣaṇam |\njñānaṁ yat tad adhīnaṁ hi bhaktiyogasamanvitam || 35 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कुर्वाणा यत्र कर्माणि भगवच्छिक्षयासकृत् ।\nगृणन्ति गुणनामानि कृष्णस्यानुस्मरन्ति च ॥ ३६ ॥",
+      "iast": "kurvāṇā yatra karmāṇi bhagavacchikṣayāsakṛt |\ngṛṇanti guṇanāmāni kṛṣṇasyānusmaranti ca || 36 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नमो भगवते तुभ्यं वासुदेवाय धीमहि ।\nप्रद्युम्नायानिरुद्धाय नमः सङ्कर्षणाय च ॥ ३७ ॥",
+      "iast": "namo bhagavate tubhyaṁ vāsudevāya dhīmahi |\npradyumnāyāniruddhāya namaḥ saṅkarṣaṇāya ca || 37 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इति मूर्त्यभिधानेन मंत्रमूर्तिममूर्तिकम् ।\nयजते यज्ञपुरुषं स सम्यग् दर्शनः पुमान् ॥ ३८ ॥",
+      "iast": "iti mūrtyabhidhānena maṁtramūrtimamūrtikam |\nyajate yajñapuruṣaṁ sa samyag darśanaḥ pumān || 38 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इमं स्वनिगमं ब्रह्मन् अवेत्य मदनुष्ठितम् ।\nअदान्मे ज्ञानमैश्वर्यं स्वस्मिन् भावं च केशवः ॥ ३९ ॥",
+      "iast": "imaṁ svanigamaṁ brahman avetya madanuṣṭhitam |\nadānme jñānamaiśvaryaṁ svasmin bhāvaṁ ca keśavaḥ || 39 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    },
+    {
+      "ref": "1.5.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "त्वमप्यदभ्रश्रुत विश्रुतं विभोः\nसमाप्यते येन विदां बुभुत्सितम् ।\nप्राख्याहि दुःखैर्मुहुरर्दितात्मनां\nसंक्लेशनिर्वाणमुशन्ति नान्यथा ॥ ४० ॥",
+      "iast": "tvamapyadabhraśruta viśrutaṁ vibhoḥ\nsamāpyate yena vidāṁ bubhutsitam |\nprākhyāhi duḥkhairmuhurarditātmanāṁ\nsaṁkleśanirvāṇamuśanti nānyathā || 40 ||",
+      "metadata": {
+        "speaker_surface": "श्रीनारद"
+      }
+    }
+  ]
+}

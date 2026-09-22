@@ -1,0 +1,386 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 9.23 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AF/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%A9), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AF/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%A9",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ९/अध्यायः २३",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 41714,
+    "revid": 98595,
+    "timestamp": "2016-12-26T10:10:00Z",
+    "sha1": "3c8f43010bd6feadb8cba0da5540ce9b308c9b3a",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ९/अध्यायः २३"
+  },
+  "section": {
+    "canto": {
+      "ref": "9",
+      "ordinal": 9,
+      "title_iast": "Skandha 9",
+      "title_sa": "स्कन्धः ९"
+    },
+    "chapter": {
+      "ref": "9.23",
+      "ordinal": 23,
+      "title_iast": "Adhyāya 23",
+      "title_sa": "अध्यायः २३"
+    }
+  },
+  "verses": [
+    {
+      "ref": "9.23.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अनुद्रुह्युतुर्वसु यदूनां वंशवर्णनम् -\nश्रीशुक उवाच ।\nअनोः सभानरश्चक्षुः परोक्षश्च त्रयः सुताः ।\nसभानरात् कालनरः सृञ्जयः तत्सुतस्ततः ॥ १ ॥",
+      "iast": "anudruhyuturvasu yadūnāṁ vaṁśavarṇanam -\nśrīśuka uvāca |\nanoḥ sabhānaraścakṣuḥ parokṣaśca trayaḥ sutāḥ |\nsabhānarāt kālanaraḥ sṛñjayaḥ tatsutastataḥ || 1 ||"
+    },
+    {
+      "ref": "9.23.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "जनमेजयः तस्य पुत्रो महाशालो महामनाः ।\nउशीनरः तितिक्षुश्च महामनस आत्मजौ ॥ २ ॥",
+      "iast": "janamejayaḥ tasya putro mahāśālo mahāmanāḥ |\nuśīnaraḥ titikṣuśca mahāmanasa ātmajau || 2 ||"
+    },
+    {
+      "ref": "9.23.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "शिबिर्वनः शमिर्दक्षः चत्वार् उशीनरात्मजाः ।\nवृषादर्भः सुधीरश्च मद्रः केकय आत्मवान् ॥ ३ ॥",
+      "iast": "śibirvanaḥ śamirdakṣaḥ catvār uśīnarātmajāḥ |\nvṛṣādarbhaḥ sudhīraśca madraḥ kekaya ātmavān || 3 ||"
+    },
+    {
+      "ref": "9.23.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "शिबेश्चत्वार एवासन् तितिक्षोश्च रुशद्रथः ।\nततो होमोऽथ सुतपा बलिः सुतपसोऽभवत् ॥ ४ ॥",
+      "iast": "śibeścatvāra evāsan titikṣośca ruśadrathaḥ |\ntato homo'tha sutapā baliḥ sutapaso'bhavat || 4 ||"
+    },
+    {
+      "ref": "9.23.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अंगवंगकलिंगाद्याः सुह्मपुण्ड्रान्ध्रसंज्ञिताः ।\nजज्ञिरे दीर्घतमसो बलेः क्षेत्रे महीक्षितः ॥ ५ ॥",
+      "iast": "aṁgavaṁgakaliṁgādyāḥ suhmapuṇḍrāndhrasaṁjñitāḥ |\njajñire dīrghatamaso baleḥ kṣetre mahīkṣitaḥ || 5 ||"
+    },
+    {
+      "ref": "9.23.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "चक्रुः स्वनाम्ना विषयान् षडिमान् प्राच्यकांश्च ते ।\nखनपानोऽङ्गतो जज्ञे तस्माद् दिविरथस्ततः ॥ ६ ॥",
+      "iast": "cakruḥ svanāmnā viṣayān ṣaḍimān prācyakāṁśca te |\nkhanapāno'ṅgato jajñe tasmād divirathastataḥ || 6 ||"
+    },
+    {
+      "ref": "9.23.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "सुतो धर्मरथो यस्य जज्ञे चित्ररथोऽप्रजाः ।\nरोमपाद इति ख्यातः तस्मै दशरथः सखा ॥ ७ ॥",
+      "iast": "suto dharmaratho yasya jajñe citraratho'prajāḥ |\nromapāda iti khyātaḥ tasmai daśarathaḥ sakhā || 7 ||"
+    },
+    {
+      "ref": "9.23.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "शान्तां स्वकन्यां प्रायच्छद् ऋष्यशृङ्ग उवाह याम् ।\nदेवेऽवर्षति यं रामा आनिन्युर्हरिणीसुतम् ॥ ८ ॥",
+      "iast": "śāntāṁ svakanyāṁ prāyacchad ṛṣyaśṛṅga uvāha yām |\ndeve'varṣati yaṁ rāmā āninyurhariṇīsutam || 8 ||"
+    },
+    {
+      "ref": "9.23.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "नाट्यसंगीतवादित्रैः विभ्रमालिंंगनार्हणैः ।\nस तु राज्ञोऽनपत्यस्य निरूप्येष्टिं मरुत्वतः ॥ ९ ॥",
+      "iast": "nāṭyasaṁgītavāditraiḥ vibhramāliṁṁganārhaṇaiḥ |\nsa tu rājño'napatyasya nirūpyeṣṭiṁ marutvataḥ || 9 ||"
+    },
+    {
+      "ref": "9.23.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "प्रजामदाद् दशरथो येन लेभेऽप्रजाः प्रजाः ।\nचतुरंगो रोमपादात् पृथुलाक्षस्तु तत्सुतः ॥ १० ॥",
+      "iast": "prajāmadād daśaratho yena lebhe'prajāḥ prajāḥ |\ncaturaṁgo romapādāt pṛthulākṣastu tatsutaḥ || 10 ||"
+    },
+    {
+      "ref": "9.23.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "बृहद्रथो बृहत्कर्मा बृहद्भानुश्च तत्सुताः ।\nआद्याद् बृहन्मनास्तस्मात् जयद्रथ उदाहृतः ॥ ११ ॥",
+      "iast": "bṛhadratho bṛhatkarmā bṛhadbhānuśca tatsutāḥ |\nādyād bṛhanmanāstasmāt jayadratha udāhṛtaḥ || 11 ||"
+    },
+    {
+      "ref": "9.23.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "विजयस्तस्य संभूत्यां ततो धृतिरजायत ।\nततो धृतव्रतस्तस्य सत्कर्माधिरथस्ततः ॥ १२ ॥",
+      "iast": "vijayastasya saṁbhūtyāṁ tato dhṛtirajāyata |\ntato dhṛtavratastasya satkarmādhirathastataḥ || 12 ||"
+    },
+    {
+      "ref": "9.23.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "योऽसौ गंगातटे क्रीडन् मञ्जूषान्तर्गतं शिशुम् ।\nकुन्त्यापविद्धं कानीनं अनपत्योऽकरोत्सुतम् ॥ १३ ॥",
+      "iast": "yo'sau gaṁgātaṭe krīḍan mañjūṣāntargataṁ śiśum |\nkuntyāpaviddhaṁ kānīnaṁ anapatyo'karotsutam || 13 ||"
+    },
+    {
+      "ref": "9.23.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वृषसेनः सुतस्तस्य कर्णस्य जगतीपते ।\nद्रुह्योश्च तनयो बभ्रुः सेतुः तस्यात्मजस्ततः ॥ १४ ॥",
+      "iast": "vṛṣasenaḥ sutastasya karṇasya jagatīpate |\ndruhyośca tanayo babhruḥ setuḥ tasyātmajastataḥ || 14 ||"
+    },
+    {
+      "ref": "9.23.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "आरब्धस्तस्य गान्धारः तस्य धर्मस्ततो धृतः ।\nधृतस्य दुर्मदस्तस्मात् प्रचेताः प्राचेतसः शतम् ॥ १५ ॥",
+      "iast": "ārabdhastasya gāndhāraḥ tasya dharmastato dhṛtaḥ |\ndhṛtasya durmadastasmāt pracetāḥ prācetasaḥ śatam || 15 ||"
+    },
+    {
+      "ref": "9.23.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "म्लेच्छाधिपतयोऽभूवन् उदीचीं दिशमाश्रिताः ।\nतुर्वसोश्च सुतो वह्निः वह्नेर्भर्गोऽथ भानुमान् ॥ १६ ॥",
+      "iast": "mlecchādhipatayo'bhūvan udīcīṁ diśamāśritāḥ |\nturvasośca suto vahniḥ vahnerbhargo'tha bhānumān || 16 ||"
+    },
+    {
+      "ref": "9.23.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "त्रिभानुस्तत्सुतोऽस्यापि करन्धम उदारधीः ।\nमरुतस्तत्सुतोऽपुत्रः पुत्रं पौरवमन्वभूत् ॥ १७ ॥",
+      "iast": "tribhānustatsuto'syāpi karandhama udāradhīḥ |\nmarutastatsuto'putraḥ putraṁ pauravamanvabhūt || 17 ||"
+    },
+    {
+      "ref": "9.23.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "दुष्मन्तः स पुनर्भेजे स्व वंशं राज्यकामुकः ।\nययातेर्ज्येष्ठपुत्रस्य यदोर्वंशं नरर्षभ ॥ १८ ॥",
+      "iast": "duṣmantaḥ sa punarbheje sva vaṁśaṁ rājyakāmukaḥ |\nyayāterjyeṣṭhaputrasya yadorvaṁśaṁ nararṣabha || 18 ||"
+    },
+    {
+      "ref": "9.23.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वर्णयामि महापुण्यं सर्वपापहरं नृणाम् ।\nयदोर्वंशं नरः श्रुत्वा सर्वपापैः प्रमुच्यते ॥ १९ ॥",
+      "iast": "varṇayāmi mahāpuṇyaṁ sarvapāpaharaṁ nṛṇām |\nyadorvaṁśaṁ naraḥ śrutvā sarvapāpaiḥ pramucyate || 19 ||"
+    },
+    {
+      "ref": "9.23.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "यत्रावतीर्णो भगवान् परमात्मा नराकृतिः ।\nयदोः सहस्रजित्क्रोष्टा नलो रिपुरिति श्रुताः ॥ २० ॥",
+      "iast": "yatrāvatīrṇo bhagavān paramātmā narākṛtiḥ |\nyadoḥ sahasrajitkroṣṭā nalo ripuriti śrutāḥ || 20 ||"
+    },
+    {
+      "ref": "9.23.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "चत्वारः सूनवस्तत्र शतजित् प्रथमात्मजः ।\nमहाहयो रेणुहयो हैहयश्चेति तत्सुताः ॥ २१ ॥",
+      "iast": "catvāraḥ sūnavastatra śatajit prathamātmajaḥ |\nmahāhayo reṇuhayo haihayaśceti tatsutāḥ || 21 ||"
+    },
+    {
+      "ref": "9.23.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "धर्मस्तु हैहयसुतो नेत्रः कुन्तेः पिता ततः ।\nसोहञ्जिरभवत् कुन्तेः महिष्मान् भद्रसेनकः ॥ २२ ॥",
+      "iast": "dharmastu haihayasuto netraḥ kunteḥ pitā tataḥ |\nsohañjirabhavat kunteḥ mahiṣmān bhadrasenakaḥ || 22 ||"
+    },
+    {
+      "ref": "9.23.24",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "दुर्मदो भद्रसेनस्य धनकः कृतवीर्यसूः ।\nकृताग्निः कृतवर्मा च कृतौजा धनकात्मजाः ॥ ॥\nअर्जुनः कृतवीर्यस्य सप्तद्वीपेश्वरोऽभवत् ।\nदत्तात्रेयात् हरेरंशात् प्राप्तयोगमहागुणः ॥ २४ ॥",
+      "iast": "durmado bhadrasenasya dhanakaḥ kṛtavīryasūḥ |\nkṛtāgniḥ kṛtavarmā ca kṛtaujā dhanakātmajāḥ || ||\narjunaḥ kṛtavīryasya saptadvīpeśvaro'bhavat |\ndattātreyāt hareraṁśāt prāptayogamahāguṇaḥ || 24 ||",
+      "metadata": {
+        "wikisource_number": 24,
+        "numbering_note": "Wikisource numbering skipped 23; no mūla invented for the gap."
+      }
+    },
+    {
+      "ref": "9.23.25",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "न नूनं कार्तवीर्यस्य गतिं यास्यन्ति पार्थिवाः ।\nयज्ञदानतपोयोग श्रुतवीर्यदयादिभिः ॥ २५ ॥",
+      "iast": "na nūnaṁ kārtavīryasya gatiṁ yāsyanti pārthivāḥ |\nyajñadānatapoyoga śrutavīryadayādibhiḥ || 25 ||",
+      "metadata": {
+        "wikisource_number": 25
+      }
+    },
+    {
+      "ref": "9.23.26",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पञ्चाशीति सहस्राणि ह्यव्याहतबलः समाः ।\nअनष्टवित्तस्मरणो बुभुजेऽक्षय्यषड्वसु ॥ २६ ॥",
+      "iast": "pañcāśīti sahasrāṇi hyavyāhatabalaḥ samāḥ |\nanaṣṭavittasmaraṇo bubhuje'kṣayyaṣaḍvasu || 26 ||",
+      "metadata": {
+        "wikisource_number": 26
+      }
+    },
+    {
+      "ref": "9.23.27",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तस्य पुत्रसहस्रेषु पञ्चैवोर्वरिता मृधे ।\nजयध्वजः शूरसेनो वृषभो मधुरूर्जितः ॥ २७ ॥",
+      "iast": "tasya putrasahasreṣu pañcaivorvaritā mṛdhe |\njayadhvajaḥ śūraseno vṛṣabho madhurūrjitaḥ || 27 ||",
+      "metadata": {
+        "wikisource_number": 27
+      }
+    },
+    {
+      "ref": "9.23.28",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "जयध्वजात् तालजंघ तस्य पुत्रशतं त्वभूत् ।\nक्षत्रं यत् तालजंघाख्यं और्वतेजोपसंहृतम् ॥ २८ ॥",
+      "iast": "jayadhvajāt tālajaṁgha tasya putraśataṁ tvabhūt |\nkṣatraṁ yat tālajaṁghākhyaṁ aurvatejopasaṁhṛtam || 28 ||",
+      "metadata": {
+        "wikisource_number": 28
+      }
+    },
+    {
+      "ref": "9.23.29",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तेषां ज्येष्ठो वीतिहोत्रो वृष्णिः पुत्रो मधोः स्मृतः ।\nतस्य पुत्रशतं त्वासीत् वृष्णिज्येष्ठं यतः कुलम् ॥ २९ ॥",
+      "iast": "teṣāṁ jyeṣṭho vītihotro vṛṣṇiḥ putro madhoḥ smṛtaḥ |\ntasya putraśataṁ tvāsīt vṛṣṇijyeṣṭhaṁ yataḥ kulam || 29 ||",
+      "metadata": {
+        "wikisource_number": 29
+      }
+    },
+    {
+      "ref": "9.23.30",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "माधवा वृष्णयो राजन् यादवाश्चेति संज्ञिताः ।\nयदुपुत्रस्य च क्रोष्टोः पुत्रो वृजिनवांस्ततः ॥ ३० ॥",
+      "iast": "mādhavā vṛṣṇayo rājan yādavāśceti saṁjñitāḥ |\nyaduputrasya ca kroṣṭoḥ putro vṛjinavāṁstataḥ || 30 ||",
+      "metadata": {
+        "wikisource_number": 30
+      }
+    },
+    {
+      "ref": "9.23.31",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "स्वाहितोऽतो रुशेकुर्वै तस्य चित्ररथस्ततः ।\nशशबिन्दुर्महायोगी महाभागो महानभूत् ॥ ३१ ॥",
+      "iast": "svāhito'to ruśekurvai tasya citrarathastataḥ |\nśaśabindurmahāyogī mahābhāgo mahānabhūt || 31 ||",
+      "metadata": {
+        "wikisource_number": 31
+      }
+    },
+    {
+      "ref": "9.23.32",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "चतुर्दशमहारत्नः चक्रवर्ति अपराजितः ।\nतस्य पत्नीसहस्राणां दशानां सुमहायशाः ॥ ३२ ॥",
+      "iast": "caturdaśamahāratnaḥ cakravarti aparājitaḥ |\ntasya patnīsahasrāṇāṁ daśānāṁ sumahāyaśāḥ || 32 ||",
+      "metadata": {
+        "wikisource_number": 32
+      }
+    },
+    {
+      "ref": "9.23.33",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "दशलक्षसहस्राणि पुत्राणां तास्वजीजनत् ।\nतेषां तु षट्प्रधानानां पृथुश्रवस आत्मजः ॥ ३३ ॥",
+      "iast": "daśalakṣasahasrāṇi putrāṇāṁ tāsvajījanat |\nteṣāṁ tu ṣaṭpradhānānāṁ pṛthuśravasa ātmajaḥ || 33 ||",
+      "metadata": {
+        "wikisource_number": 33
+      }
+    },
+    {
+      "ref": "9.23.34",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "धर्मो नामोशना तस्य हयमेधशतस्य याट् ।\nतत्सुतो रुचकस्तस्य पञ्चासन्नात्मजाः श्रृणु ॥ ३४ ॥",
+      "iast": "dharmo nāmośanā tasya hayamedhaśatasya yāṭ |\ntatsuto rucakastasya pañcāsannātmajāḥ śrṛṇu || 34 ||",
+      "metadata": {
+        "wikisource_number": 34
+      }
+    },
+    {
+      "ref": "9.23.35",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पुरुजित् रुक्म रुक्मेषु पृथु ज्यामघ संज्ञिताः ।\nज्यामघस्त्वप्रजोऽप्यन्यां भार्यां शैब्यापतिर्भयात् ॥ ३५ ॥",
+      "iast": "purujit rukma rukmeṣu pṛthu jyāmagha saṁjñitāḥ |\njyāmaghastvaprajo'pyanyāṁ bhāryāṁ śaibyāpatirbhayāt || 35 ||",
+      "metadata": {
+        "wikisource_number": 35
+      }
+    },
+    {
+      "ref": "9.23.36",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "नाविन्दत् शत्रुभवनाद् भोज्यां कन्यामहारषीत् ।\nरथस्थां तां निरीक्ष्याह शैब्या पतिममर्षिता ॥ ३६ ॥",
+      "iast": "nāvindat śatrubhavanād bhojyāṁ kanyāmahāraṣīt |\nrathasthāṁ tāṁ nirīkṣyāha śaibyā patimamarṣitā || 36 ||",
+      "metadata": {
+        "wikisource_number": 36
+      }
+    },
+    {
+      "ref": "9.23.37",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "केयं कुहक मत्स्थानं रथमारोपितेति वै ।\nस्नुषा तवेत्यभिहिते स्मयन्ती पतिमब्रवीत् ॥ ३७ ॥",
+      "iast": "keyaṁ kuhaka matsthānaṁ rathamāropiteti vai |\nsnuṣā tavetyabhihite smayantī patimabravīt || 37 ||",
+      "metadata": {
+        "wikisource_number": 37
+      }
+    },
+    {
+      "ref": "9.23.38",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अहं बन्ध्यासपत्नी च स्नुषा मे युज्यते कथम् ।\nजनयिष्यसि यं राज्ञि तस्येयमुपयुज्यते ॥ ३८ ॥",
+      "iast": "ahaṁ bandhyāsapatnī ca snuṣā me yujyate katham |\njanayiṣyasi yaṁ rājñi tasyeyamupayujyate || 38 ||",
+      "metadata": {
+        "wikisource_number": 38
+      }
+    },
+    {
+      "ref": "9.23.39",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अन्वमोदन्त तद्विश्वे देवाः पितर एव च ।\nशैब्या गर्भं अधात्काले कुमारं सुषुवे शुभम् ।\nस विदर्भ इति प्रोक्त उपयेमे स्नुषां सतीम् ॥ ३९ ॥",
+      "iast": "anvamodanta tadviśve devāḥ pitara eva ca |\nśaibyā garbhaṁ adhātkāle kumāraṁ suṣuve śubham |\nsa vidarbha iti prokta upayeme snuṣāṁ satīm || 39 ||",
+      "metadata": {
+        "wikisource_number": 39
+      }
+    }
+  ]
+}

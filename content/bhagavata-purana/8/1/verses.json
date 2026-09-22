@@ -1,0 +1,300 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 8.1 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AE/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AE/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ८/अध्यायः १",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 37451,
+    "revid": 342571,
+    "timestamp": "2022-08-05T01:06:03Z",
+    "sha1": "2ed059fe9cdcb5bc7f83cf30133194067fa458ab",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ८/अध्यायः १"
+  },
+  "section": {
+    "canto": {
+      "ref": "8",
+      "ordinal": 8,
+      "title_iast": "Skandha 8",
+      "title_sa": "स्कन्धः ८"
+    },
+    "chapter": {
+      "ref": "8.1",
+      "ordinal": 1,
+      "title_iast": "Adhyāya 1",
+      "title_sa": "अध्यायः १"
+    }
+  },
+  "verses": [
+    {
+      "ref": "8.1.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीराजोवाच।\nस्वायम्भुवस्येह गुरो वंशोऽयं विस्तराच्छ्रुतः।\nयत्र विश्वसृजां सर्गो मनूनन्यान्वदस्व नः ॥ १ ॥",
+      "iast": "śrīrājovāca|\nsvāyambhuvasyeha guro vaṁśo'yaṁ vistarācchrutaḥ|\nyatra viśvasṛjāṁ sargo manūnanyānvadasva naḥ || 1 ||"
+    },
+    {
+      "ref": "8.1.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मन्वन्तरे हरेर्जन्म कर्माणि च महीयसः।\nगृणन्ति कवयो ब्रह्मंस्तानि नो वद शृण्वताम् ॥ २ ॥",
+      "iast": "manvantare harerjanma karmāṇi ca mahīyasaḥ|\ngṛṇanti kavayo brahmaṁstāni no vada śṛṇvatām || 2 ||"
+    },
+    {
+      "ref": "8.1.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यद्यस्मिन्नन्तरे ब्रह्मन्भगवान्विश्वभावनः।\nकृतवान्कुरुते कर्ता ह्यतीतेऽनागतेऽद्य वा ॥ ३ ॥",
+      "iast": "yadyasminnantare brahmanbhagavānviśvabhāvanaḥ|\nkṛtavānkurute kartā hyatīte'nāgate'dya vā || 3 ||"
+    },
+    {
+      "ref": "8.1.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीऋषिरुवाच।\nमनवोऽस्मिन्व्यतीताः षट्कल्पे स्वायम्भुवादयः।\nआद्यस्ते कथितो यत्र देवादीनां च सम्भवः ॥ ४ ॥",
+      "iast": "śrīṛṣiruvāca|\nmanavo'sminvyatītāḥ ṣaṭkalpe svāyambhuvādayaḥ|\nādyaste kathito yatra devādīnāṁ ca sambhavaḥ || 4 ||"
+    },
+    {
+      "ref": "8.1.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आकूत्यां देवहूत्यां च दुहित्रोस्तस्य वै मनोः।\nधर्मज्ञानोपदेशार्थं भगवान्पुत्रतां गतः ॥ ५ ॥",
+      "iast": "ākūtyāṁ devahūtyāṁ ca duhitrostasya vai manoḥ|\ndharmajñānopadeśārthaṁ bhagavānputratāṁ gataḥ || 5 ||"
+    },
+    {
+      "ref": "8.1.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कृतं पुरा भगवतः कपिलस्यानुवर्णितम्।\nआख्यास्ये भगवान्यज्ञो यच्चकार कुरूद्वह ॥ ६ ॥",
+      "iast": "kṛtaṁ purā bhagavataḥ kapilasyānuvarṇitam|\nākhyāsye bhagavānyajño yaccakāra kurūdvaha || 6 ||"
+    },
+    {
+      "ref": "8.1.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विरक्तः कामभोगेषु शतरूपापतिः प्रभुः।\nविसृज्य राज्यं तपसे सभार्यो वनमाविशत् ॥ ७ ॥",
+      "iast": "viraktaḥ kāmabhogeṣu śatarūpāpatiḥ prabhuḥ|\nvisṛjya rājyaṁ tapase sabhāryo vanamāviśat || 7 ||"
+    },
+    {
+      "ref": "8.1.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सुनन्दायां वर्षशतं पदैकेन भुवं स्पृशन्।\nतप्यमानस्तपो घोरमिदमन्वाह भारत ॥ ८ ॥",
+      "iast": "sunandāyāṁ varṣaśataṁ padaikena bhuvaṁ spṛśan|\ntapyamānastapo ghoramidamanvāha bhārata || 8 ||"
+    },
+    {
+      "ref": "8.1.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीमनुरुवाच।\nयेन चेतयते विश्वं विश्वं चेतयते न यम्।\nयो जागर्ति शयानेऽस्मिन्नायं तं वेद वेद सः ॥ ९ ॥",
+      "iast": "śrīmanuruvāca|\nyena cetayate viśvaṁ viśvaṁ cetayate na yam|\nyo jāgarti śayāne'sminnāyaṁ taṁ veda veda saḥ || 9 ||"
+    },
+    {
+      "ref": "8.1.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आत्मावास्यमिदं विश्वं यत्किञ्चिज्जगत्यां जगत्।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्य स्विद्धनम् ॥ १० ॥",
+      "iast": "ātmāvāsyamidaṁ viśvaṁ yatkiñcijjagatyāṁ jagat|\ntena tyaktena bhuñjīthā mā gṛdhaḥ kasya sviddhanam || 10 ||"
+    },
+    {
+      "ref": "8.1.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यं पश्यति न पश्यन्तं चक्षुर्यस्य न रिष्यति।\nतं भूतनिलयं देवं सुपर्णमुपधावत ॥ ११ ॥",
+      "iast": "yaṁ paśyati na paśyantaṁ cakṣuryasya na riṣyati|\ntaṁ bhūtanilayaṁ devaṁ suparṇamupadhāvata || 11 ||"
+    },
+    {
+      "ref": "8.1.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न यस्याद्यन्तौ मध्यं च स्वः परो नान्तरं बहिः।\nविश्वस्यामूनि यद्यस्माद्विश्वं च तदृतं महत् ॥ १२ ॥",
+      "iast": "na yasyādyantau madhyaṁ ca svaḥ paro nāntaraṁ bahiḥ|\nviśvasyāmūni yadyasmādviśvaṁ ca tadṛtaṁ mahat || 12 ||"
+    },
+    {
+      "ref": "8.1.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स विश्वकायः पुरुहूतईशः सत्यः स्वयंज्योतिरजः पुराणः।\nधत्तेऽस्य जन्माद्यजयात्मशक्त्या तां विद्ययोदस्य निरीह आस्ते ॥ १३ ॥",
+      "iast": "sa viśvakāyaḥ puruhūtaīśaḥ satyaḥ svayaṁjyotirajaḥ purāṇaḥ|\ndhatte'sya janmādyajayātmaśaktyā tāṁ vidyayodasya nirīha āste || 13 ||"
+    },
+    {
+      "ref": "8.1.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अथाग्रे ऋषयः कर्माणीहन्तेऽकर्महेतवे।\nईहमानो हि पुरुषः प्रायोऽनीहां प्रपद्यते ॥ १४ ॥",
+      "iast": "athāgre ṛṣayaḥ karmāṇīhante'karmahetave|\nīhamāno hi puruṣaḥ prāyo'nīhāṁ prapadyate || 14 ||"
+    },
+    {
+      "ref": "8.1.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ईहते भगवानीशो न हि तत्र विसज्जते।\nआत्मलाभेन पूर्णार्थो नावसीदन्ति येऽनु तम् ॥ १५ ॥",
+      "iast": "īhate bhagavānīśo na hi tatra visajjate|\nātmalābhena pūrṇārtho nāvasīdanti ye'nu tam || 15 ||"
+    },
+    {
+      "ref": "8.1.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तमीहमानं निरहङ्कृतं बुधं निराशिषं पूर्णमनन्यचोदितम्।\nनॄन्शिक्षयन्तं निजवर्त्मसंस्थितं प्रभुं प्रपद्येऽखिलधर्मभावनम् ॥ १६ ॥",
+      "iast": "tamīhamānaṁ nirahaṅkṛtaṁ budhaṁ nirāśiṣaṁ pūrṇamananyacoditam|\nnṝnśikṣayantaṁ nijavartmasaṁsthitaṁ prabhuṁ prapadye'khiladharmabhāvanam || 16 ||"
+    },
+    {
+      "ref": "8.1.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "इति मन्त्रोपनिषदं व्याहरन्तं समाहितम्।\nदृष्ट्वासुरा यातुधाना जग्धुमभ्यद्रवन्क्षुधा ॥ १७ ॥",
+      "iast": "iti mantropaniṣadaṁ vyāharantaṁ samāhitam|\ndṛṣṭvāsurā yātudhānā jagdhumabhyadravankṣudhā || 17 ||"
+    },
+    {
+      "ref": "8.1.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तांस्तथावसितान्वीक्ष्य यज्ञः सर्वगतो हरिः।\nयामैः परिवृतो देवैर्हत्वाशासत्त्रिविष्टपम् ॥ १८ ॥",
+      "iast": "tāṁstathāvasitānvīkṣya yajñaḥ sarvagato hariḥ|\nyāmaiḥ parivṛto devairhatvāśāsattriviṣṭapam || 18 ||"
+    },
+    {
+      "ref": "8.1.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "स्वारोचिषो द्वितीयस्तु मनुरग्नेः सुतोऽभवत्।\nद्युमत्सुषेणरोचिष्मत्प्रमुखास्तस्य चात्मजाः ॥ १९ ॥",
+      "iast": "svārociṣo dvitīyastu manuragneḥ suto'bhavat|\ndyumatsuṣeṇarociṣmatpramukhāstasya cātmajāḥ || 19 ||"
+    },
+    {
+      "ref": "8.1.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तत्रेन्द्रो रोचनस्त्वासीद्देवाश्च तुषितादयः।\nऊर्जस्तम्भादयः सप्त ऋषयो ब्रह्मवादिनः ॥ २० ॥",
+      "iast": "tatrendro rocanastvāsīddevāśca tuṣitādayaḥ|\nūrjastambhādayaḥ sapta ṛṣayo brahmavādinaḥ || 20 ||"
+    },
+    {
+      "ref": "8.1.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "ऋषेस्तु वेदशिरसस्तुषिता नाम पत्न्यभूत्।\nतस्यां जज्ञे ततो देवो विभुरित्यभिविश्रुतः ॥ २१ ॥",
+      "iast": "ṛṣestu vedaśirasastuṣitā nāma patnyabhūt|\ntasyāṁ jajñe tato devo vibhurityabhiviśrutaḥ || 21 ||"
+    },
+    {
+      "ref": "8.1.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अष्टाशीतिसहस्राणि मुनयो ये धृतव्रताः।\nअन्वशिक्षन्व्रतं तस्य कौमारब्रह्मचारिणः ॥ २२ ॥",
+      "iast": "aṣṭāśītisahasrāṇi munayo ye dhṛtavratāḥ|\nanvaśikṣanvrataṁ tasya kaumārabrahmacāriṇaḥ || 22 ||"
+    },
+    {
+      "ref": "8.1.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तृतीय उत्तमो नाम प्रियव्रतसुतो मनुः।\nपवनः सृञ्जयो यज्ञ होत्राद्यास्तत्सुता नृप ॥ २३ ॥",
+      "iast": "tṛtīya uttamo nāma priyavratasuto manuḥ|\npavanaḥ sṛñjayo yajña hotrādyāstatsutā nṛpa || 23 ||"
+    },
+    {
+      "ref": "8.1.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वसिष्ठतनयाः सप्त ऋषयः प्रमदादयः।\nसत्या वेदश्रुता भद्रा देवा इन्द्रस्तु सत्यजित् ॥ २४ ॥",
+      "iast": "vasiṣṭhatanayāḥ sapta ṛṣayaḥ pramadādayaḥ|\nsatyā vedaśrutā bhadrā devā indrastu satyajit || 24 ||"
+    },
+    {
+      "ref": "8.1.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "धर्मस्य सूनृतायां तु भगवान्पुरुषोत्तमः।\nसत्यसेन इति ख्यातो जातः सत्यव्रतैः सह ॥ २५ ॥",
+      "iast": "dharmasya sūnṛtāyāṁ tu bhagavānpuruṣottamaḥ|\nsatyasena iti khyāto jātaḥ satyavrataiḥ saha || 25 ||"
+    },
+    {
+      "ref": "8.1.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "सोऽनृतव्रतदुःशीलानसतो यक्षराक्षसान्।\nभूतद्रुहो भूतगणांश्चावधीत्सत्यजित्सखः ॥ २६ ॥",
+      "iast": "so'nṛtavrataduḥśīlānasato yakṣarākṣasān|\nbhūtadruho bhūtagaṇāṁścāvadhītsatyajitsakhaḥ || 26 ||"
+    },
+    {
+      "ref": "8.1.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "चतुर्थ उत्तमभ्राता मनुर्नाम्ना च तामसः।\nपृथुः ख्यातिर्नरः केतुरित्याद्या दश तत्सुताः ॥ २७ ॥",
+      "iast": "caturtha uttamabhrātā manurnāmnā ca tāmasaḥ|\npṛthuḥ khyātirnaraḥ keturityādyā daśa tatsutāḥ || 27 ||"
+    },
+    {
+      "ref": "8.1.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "सत्यका हरयो वीरा देवास्त्रिशिख ईश्वरः।\nज्योतिर्धामादयः सप्त ऋषयस्तामसेऽन्तरे ॥ २८ ॥",
+      "iast": "satyakā harayo vīrā devāstriśikha īśvaraḥ|\njyotirdhāmādayaḥ sapta ṛṣayastāmase'ntare || 28 ||"
+    },
+    {
+      "ref": "8.1.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "देवा वैधृतयो नाम विधृतेस्तनया नृप।\nनष्टाः कालेन यैर्वेदा विधृताः स्वेन तेजसा ॥ २९ ॥",
+      "iast": "devā vaidhṛtayo nāma vidhṛtestanayā nṛpa|\nnaṣṭāḥ kālena yairvedā vidhṛtāḥ svena tejasā || 29 ||"
+    },
+    {
+      "ref": "8.1.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तत्रापि जज्ञे भगवान्हरिण्यां हरिमेधसः।\nहरिरित्याहृतो येन गजेन्द्रो मोचितो ग्रहात् ॥ ३० ॥",
+      "iast": "tatrāpi jajñe bhagavānhariṇyāṁ harimedhasaḥ|\nharirityāhṛto yena gajendro mocito grahāt || 30 ||"
+    },
+    {
+      "ref": "8.1.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "श्रीराजोवाच।\nबादरायण एतत्ते श्रोतुमिच्छामहे वयम्।\nहरिर्यथा गजपतिं ग्राहग्रस्तममूमुचत् ॥ ३१ ॥",
+      "iast": "śrīrājovāca|\nbādarāyaṇa etatte śrotumicchāmahe vayam|\nhariryathā gajapatiṁ grāhagrastamamūmucat || 31 ||"
+    },
+    {
+      "ref": "8.1.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तत्कथासु महत्पुण्यं धन्यं स्वस्त्ययनं शुभम्।\nयत्र यत्रोत्तमश्लोको भगवान्गीयते हरिः ॥ ३२ ॥",
+      "iast": "tatkathāsu mahatpuṇyaṁ dhanyaṁ svastyayanaṁ śubham|\nyatra yatrottamaśloko bhagavāngīyate hariḥ || 32 ||"
+    },
+    {
+      "ref": "8.1.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "परीक्षितैवं स तु बादरायणिः प्रायोपविष्टेन कथासु चोदितः।\nउवाच विप्राः प्रतिनन्द्य पार्थिवं मुदा मुनीनां सदसि स्म शृण्वताम् ॥ ३३ ॥",
+      "iast": "parīkṣitaivaṁ sa tu bādarāyaṇiḥ prāyopaviṣṭena kathāsu coditaḥ|\nuvāca viprāḥ pratinandya pārthivaṁ mudā munīnāṁ sadasi sma śṛṇvatām || 33 ||",
+      "metadata": {
+        "speaker_surface": "श्रीसूत"
+      }
+    }
+  ]
+}

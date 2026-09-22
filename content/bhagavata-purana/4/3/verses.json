@@ -1,0 +1,233 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 4.3 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AA/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A9), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AA/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A9",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ४/अध्यायः ३",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 19330,
+    "revid": 350716,
+    "timestamp": "2022-09-11T02:52:05Z",
+    "sha1": "5df504f7fa48746b10f1c69b85b33ee4893ba433",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ४/अध्यायः ३"
+  },
+  "section": {
+    "canto": {
+      "ref": "4",
+      "ordinal": 4,
+      "title_iast": "Skandha 4",
+      "title_sa": "स्कन्धः ४"
+    },
+    "chapter": {
+      "ref": "4.3",
+      "ordinal": 3,
+      "title_iast": "Adhyāya 3",
+      "title_sa": "अध्यायः ३"
+    }
+  },
+  "verses": [
+    {
+      "ref": "4.3.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मैत्रेय उवाच -\nसदा विद्विषतोरेवं कालो वै ध्रियमाणयोः ।\nजामातुः श्वशुरस्यापि सुमहानतिचक्रमे ॥ १ ॥",
+      "iast": "maitreya uvāca -\nsadā vidviṣatorevaṁ kālo vai dhriyamāṇayoḥ |\njāmātuḥ śvaśurasyāpi sumahānaticakrame || 1 ||"
+    },
+    {
+      "ref": "4.3.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदाभिषिक्तो दक्षस्तु ब्रह्मणा परमेष्ठिना ।\nप्रजापतीनां सर्वेषां आधिपत्ये स्मयोऽभवत् ॥ २ ॥",
+      "iast": "yadābhiṣikto dakṣastu brahmaṇā parameṣṭhinā |\nprajāpatīnāṁ sarveṣāṁ ādhipatye smayo'bhavat || 2 ||"
+    },
+    {
+      "ref": "4.3.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इष्ट्वा स वाजपेयेन ब्रह्मिष्ठानभिभूय च ।\nबृहस्पतिसवं नाम समारेभे क्रतूत्तमम् ॥ ३ ॥",
+      "iast": "iṣṭvā sa vājapeyena brahmiṣṭhānabhibhūya ca |\nbṛhaspatisavaṁ nāma samārebhe kratūttamam || 3 ||"
+    },
+    {
+      "ref": "4.3.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्मिन् ब्रह्मर्षयः सर्वे देवर्षिपितृदेवताः ।\nआसन् कृतस्वस्त्ययनाः तत्पत्न्यश्च सभर्तृकाः ॥ ४ ॥",
+      "iast": "tasmin brahmarṣayaḥ sarve devarṣipitṛdevatāḥ |\nāsan kṛtasvastyayanāḥ tatpatnyaśca sabhartṛkāḥ || 4 ||"
+    },
+    {
+      "ref": "4.3.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तदुपश्रुत्य नभसि खेचराणां प्रजल्पताम् ।\nसती दाक्षायणी देवी पितृयज्ञमहोत्सवम् ॥ ५ ॥",
+      "iast": "tadupaśrutya nabhasi khecarāṇāṁ prajalpatām |\nsatī dākṣāyaṇī devī pitṛyajñamahotsavam || 5 ||"
+    },
+    {
+      "ref": "4.3.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "व्रजन्तीः सर्वतो दिग्भ्य उपदेववरस्त्रियः ।\nविमानयानाः सप्रेष्ठा निष्ककण्ठीः सुवाससः ॥ ॥ ६ ॥",
+      "iast": "vrajantīḥ sarvato digbhya upadevavarastriyaḥ |\nvimānayānāḥ sapreṣṭhā niṣkakaṇṭhīḥ suvāsasaḥ || || 6 ||"
+    },
+    {
+      "ref": "4.3.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दृष्ट्वा स्वनिलयाभ्याशे लोलाक्षीर्मृष्टकुण्डलाः ।\nपतिं भूतपतिं देवं औत्सुक्यादभ्यभाषत ॥ ७ ॥",
+      "iast": "dṛṣṭvā svanilayābhyāśe lolākṣīrmṛṣṭakuṇḍalāḥ |\npatiṁ bhūtapatiṁ devaṁ autsukyādabhyabhāṣata || 7 ||"
+    },
+    {
+      "ref": "4.3.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सत्युवाच -\nप्रजापतेस्ते श्वशुरस्य साम्प्रतं\nनिर्यापितो यज्ञमहोत्सवः किल ।\nवयं च तत्राभिसराम वाम ते\nयद्यर्थितामी विबुधा व्रजन्ति हि ॥ ८ ॥",
+      "iast": "satyuvāca -\nprajāpateste śvaśurasya sāmprataṁ\nniryāpito yajñamahotsavaḥ kila |\nvayaṁ ca tatrābhisarāma vāma te\nyadyarthitāmī vibudhā vrajanti hi || 8 ||"
+    },
+    {
+      "ref": "4.3.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्मिन् भगिन्यो मम भर्तृभिः स्वकैः\nध्रुवं गमिष्यन्ति सुहृद्दिदृक्षवः ।\nअहं च तस्मिन् भवताभिकामये\nसहोपनीतं परिबर्हमर्हितुम् ॥ ९ ॥",
+      "iast": "tasmin bhaginyo mama bhartṛbhiḥ svakaiḥ\ndhruvaṁ gamiṣyanti suhṛddidṛkṣavaḥ |\nahaṁ ca tasmin bhavatābhikāmaye\nsahopanītaṁ paribarhamarhitum || 9 ||"
+    },
+    {
+      "ref": "4.3.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत्र स्वसॄर्मे ननु भर्तृसम्मिता\nमातृष्वसॄः क्लिन्नधियं च मातरम् ।\nद्रक्ष्ये चिरोत्कण्ठमना महर्षिभिः\nउन्नीयमानं च मृडाध्वरध्वजम् ॥ १० ॥",
+      "iast": "tatra svasṝrme nanu bhartṛsammitā\nmātṛṣvasṝḥ klinnadhiyaṁ ca mātaram |\ndrakṣye cirotkaṇṭhamanā maharṣibhiḥ\nunnīyamānaṁ ca mṛḍādhvaradhvajam || 10 ||"
+    },
+    {
+      "ref": "4.3.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "त्वय्येतदाश्चर्यमजात्ममायया\nविनिर्मितं भाति गुणत्रयात्मकम् ।\nतथाप्यहं योषिदतत्त्वविच्च ते\nदीना दिदृक्षे भव मे भवक्षितिम् ॥ ११ ॥",
+      "iast": "tvayyetadāścaryamajātmamāyayā\nvinirmitaṁ bhāti guṇatrayātmakam |\ntathāpyahaṁ yoṣidatattvavicca te\ndīnā didṛkṣe bhava me bhavakṣitim || 11 ||"
+    },
+    {
+      "ref": "4.3.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पश्य प्रयान्तीरभवान्ययोषितो\nऽप्यलङ्कृताः कान्तसखा वरूथशः ।\nयासां व्रजद्भिः शितिकण्ठ मण्डितं\nनभो विमानैः कलहंसपाण्डुभिः ॥ १२ ॥",
+      "iast": "paśya prayāntīrabhavānyayoṣito\n'pyalaṅkṛtāḥ kāntasakhā varūthaśaḥ |\nyāsāṁ vrajadbhiḥ śitikaṇṭha maṇḍitaṁ\nnabho vimānaiḥ kalahaṁsapāṇḍubhiḥ || 12 ||"
+    },
+    {
+      "ref": "4.3.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कथं सुतायाः पितृगेहकौतुकं\nनिशम्य देहः सुरवर्य नेङ्गते ।\nअनाहुता अप्यभियन्ति सौहृदं\nभर्तुर्गुरोर्देहकृतश्च केतनम् ॥ १३ ॥",
+      "iast": "kathaṁ sutāyāḥ pitṛgehakautukaṁ\nniśamya dehaḥ suravarya neṅgate |\nanāhutā apyabhiyanti sauhṛdaṁ\nbharturgurordehakṛtaśca ketanam || 13 ||"
+    },
+    {
+      "ref": "4.3.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तन्मे प्रसीदेदममर्त्य वाञ्छितं\nकर्तुं भवान्कारुणिको बतार्हति ।\nत्वयात्मनोऽर्धेऽहमदभ्रचक्षुषा\nनिरूपिता मानुगृहाण याचितः ॥ १४ ॥",
+      "iast": "tanme prasīdedamamartya vāñchitaṁ\nkartuṁ bhavānkāruṇiko batārhati |\ntvayātmano'rdhe'hamadabhracakṣuṣā\nnirūpitā mānugṛhāṇa yācitaḥ || 14 ||"
+    },
+    {
+      "ref": "4.3.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ऋषिरुवाच -\nएवं गिरित्रः प्रिययाभिभाषितः\nप्रत्यभ्यधत्त प्रहसन् सुहृत्प्रियः ।\nसंस्मारितो मर्मभिदः कुवागिषून्\nयानाह को विश्वसृजां समक्षतः ॥ १५ ॥",
+      "iast": "ṛṣiruvāca -\nevaṁ giritraḥ priyayābhibhāṣitaḥ\npratyabhyadhatta prahasan suhṛtpriyaḥ |\nsaṁsmārito marmabhidaḥ kuvāgiṣūn\nyānāha ko viśvasṛjāṁ samakṣataḥ || 15 ||"
+    },
+    {
+      "ref": "4.3.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीभगवानुवाच -\nत्वयोदितं शोभनमेव शोभने\nअनाहुता अप्यभियन्ति बन्धुषु ।\nते यद्यनुत्पादितदोषदृष्टयो\nबलीयसानात्म्यमदेन मन्युना ॥ १६ ॥",
+      "iast": "śrībhagavānuvāca -\ntvayoditaṁ śobhanameva śobhane\nanāhutā apyabhiyanti bandhuṣu |\nte yadyanutpāditadoṣadṛṣṭayo\nbalīyasānātmyamadena manyunā || 16 ||"
+    },
+    {
+      "ref": "4.3.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विद्यातपोवित्तवपुर्वयःकुलैः\nसतां गुणैः षड्भिरसत्तमेतरैः ।\nस्मृतौ हतायां भृतमानदुर्दृशः\nस्तब्धा न पश्यन्ति हि धाम भूयसाम् ॥ १७ ॥",
+      "iast": "vidyātapovittavapurvayaḥkulaiḥ\nsatāṁ guṇaiḥ ṣaḍbhirasattametaraiḥ |\nsmṛtau hatāyāṁ bhṛtamānadurdṛśaḥ\nstabdhā na paśyanti hi dhāma bhūyasām || 17 ||"
+    },
+    {
+      "ref": "4.3.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नैतादृशानां स्वजनव्यपेक्षया\nगृहान् प्रतीयादनवस्थितात्मनाम् ।\nयेऽभ्यागतान् वक्रधियाभिचक्षते\nआरोपितभ्रूभिरमर्षणाक्षिभिः ॥ १८ ॥",
+      "iast": "naitādṛśānāṁ svajanavyapekṣayā\ngṛhān pratīyādanavasthitātmanām |\nye'bhyāgatān vakradhiyābhicakṣate\nāropitabhrūbhiramarṣaṇākṣibhiḥ || 18 ||"
+    },
+    {
+      "ref": "4.3.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तथारिभिर्न व्यथते शिलीमुखैः\nशेतेऽर्दिताङ्गो हृदयेन दूयता ।\nस्वानां यथा वक्रधियां दुरुक्तिभिः\nदिवानिशं तप्यति मर्मताडितः ॥ १९ ॥",
+      "iast": "tathāribhirna vyathate śilīmukhaiḥ\nśete'rditāṅgo hṛdayena dūyatā |\nsvānāṁ yathā vakradhiyāṁ duruktibhiḥ\ndivāniśaṁ tapyati marmatāḍitaḥ || 19 ||"
+    },
+    {
+      "ref": "4.3.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "व्यक्तं त्वमुत्कृष्टगतेः प्रजापतेः\nप्रियात्मजानामसि सुभ्रु मे मता ।\nतथापि मानं न पितुः प्रपत्स्यसे\nमदाश्रयात्कः परितप्यते यतः ॥ २० ॥",
+      "iast": "vyaktaṁ tvamutkṛṣṭagateḥ prajāpateḥ\npriyātmajānāmasi subhru me matā |\ntathāpi mānaṁ na pituḥ prapatsyase\nmadāśrayātkaḥ paritapyate yataḥ || 20 ||"
+    },
+    {
+      "ref": "4.3.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पापच्यमानेन हृदाऽऽतुरेन्द्रियः\nसमृद्धिभिः पूरुषबुद्धिसाक्षिणाम् ।\nअकल्प एषामधिरोढुमञ्जसा\nपरं पदं द्वेष्टि यथासुरा हरिम् ॥ २१ ॥",
+      "iast": "pāpacyamānena hṛdā''turendriyaḥ\nsamṛddhibhiḥ pūruṣabuddhisākṣiṇām |\nakalpa eṣāmadhiroḍhumañjasā\nparaṁ padaṁ dveṣṭi yathāsurā harim || 21 ||"
+    },
+    {
+      "ref": "4.3.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्रत्युद्गमप्रश्रयणाभिवादनं\nविधीयते साधु मिथः सुमध्यमे ।\nप्राज्ञैः परस्मै पुरुषाय चेतसा\nगुहाशयायैव न देहमानिने ॥ २२ ॥",
+      "iast": "pratyudgamapraśrayaṇābhivādanaṁ\nvidhīyate sādhu mithaḥ sumadhyame |\nprājñaiḥ parasmai puruṣāya cetasā\nguhāśayāyaiva na dehamānine || 22 ||"
+    },
+    {
+      "ref": "4.3.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सत्त्वं विशुद्धं वसुदेवशब्दितं\nयदीयते तत्र पुमानपावृतः ।\nसत्त्वे च तस्मिन् भगवान् वासुदेवो\nह्यधोक्षजो मे नमसा विधीयते ॥ २३ ॥",
+      "iast": "sattvaṁ viśuddhaṁ vasudevaśabditaṁ\nyadīyate tatra pumānapāvṛtaḥ |\nsattve ca tasmin bhagavān vāsudevo\nhyadhokṣajo me namasā vidhīyate || 23 ||"
+    },
+    {
+      "ref": "4.3.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत्ते निरीक्ष्यो न पितापि देहकृद्\nदक्षो मम द्विट् तदनुव्रताश्च ये ।\nयो विश्वसृग्यज्ञगतं वरोरु मां\nअनागसं दुर्वचसाकरोत्तिरः ॥ २४ ॥",
+      "iast": "tatte nirīkṣyo na pitāpi dehakṛd\ndakṣo mama dviṭ tadanuvratāśca ye |\nyo viśvasṛgyajñagataṁ varoru māṁ\nanāgasaṁ durvacasākarottiraḥ || 24 ||"
+    },
+    {
+      "ref": "4.3.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदि व्रजिष्यस्यतिहाय मद्वचो\nभद्रं भवत्या न ततो भविष्यति ।\nसम्भावितस्य स्वजनात्पराभवो\nयदा स सद्यो मरणाय कल्पते ॥ २५ ॥",
+      "iast": "yadi vrajiṣyasyatihāya madvaco\nbhadraṁ bhavatyā na tato bhaviṣyati |\nsambhāvitasya svajanātparābhavo\nyadā sa sadyo maraṇāya kalpate || 25 ||"
+    }
+  ]
+}

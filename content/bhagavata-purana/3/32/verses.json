@@ -1,0 +1,377 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 3.32 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A9%E0%A5%A8), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A9%E0%A5%A8",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः ३२",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 19132,
+    "revid": 339649,
+    "timestamp": "2022-07-02T05:42:37Z",
+    "sha1": "7afcbab4d1b1cda1f6fb9c59ca134e676136d333",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः ३२"
+  },
+  "section": {
+    "canto": {
+      "ref": "3",
+      "ordinal": 3,
+      "title_iast": "Skandha 3",
+      "title_sa": "स्कन्धः ३"
+    },
+    "chapter": {
+      "ref": "3.32",
+      "ordinal": 32,
+      "title_iast": "Adhyāya 32",
+      "title_sa": "अध्यायः ३२"
+    }
+  },
+  "verses": [
+    {
+      "ref": "3.32.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मातुः कुक्षौ प्रविष्टस्य जीवस्य देहप्राप्तिवर्णनं गर्भस्थजीवकृता\nभगवत्स्तुतिः,जीवस्य बाल्यादि अवस्था क्लेशवर्णनं च -\nकपिल उवाच -\nअथ यो गृहमेधीयान् धर्मानेवावसन्गृहे ।\nकाममर्थं च धर्मान् स्वान् दोग्धि भूयः पिपर्ति तान् ॥ १ ॥",
+      "iast": "mātuḥ kukṣau praviṣṭasya jīvasya dehaprāptivarṇanaṁ garbhasthajīvakṛtā\nbhagavatstutiḥ,jīvasya bālyādi avasthā kleśavarṇanaṁ ca -\nkapila uvāca -\natha yo gṛhamedhīyān dharmānevāvasangṛhe |\nkāmamarthaṁ ca dharmān svān dogdhi bhūyaḥ piparti tān || 1 ||"
+    },
+    {
+      "ref": "3.32.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स चापि भगवद्धर्मात् काममूढः पराङ्मुखः ।\nयजते क्रतुभिर्देवान् पितॄंश्च श्रद्धयान्वितः ॥ २ ॥",
+      "iast": "sa cāpi bhagavaddharmāt kāmamūḍhaḥ parāṅmukhaḥ |\nyajate kratubhirdevān pitṝṁśca śraddhayānvitaḥ || 2 ||"
+    },
+    {
+      "ref": "3.32.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत् श्रद्धया क्रान्तमतिः पितृदेवव्रतः पुमान् ।\nगत्वा चान्द्रमसं लोकं सोमपाः पुनरेष्यति ॥ ३ ॥",
+      "iast": "tat śraddhayā krāntamatiḥ pitṛdevavrataḥ pumān |\ngatvā cāndramasaṁ lokaṁ somapāḥ punareṣyati || 3 ||"
+    },
+    {
+      "ref": "3.32.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदा चाहीन्द्रशय्यायां शेतेऽनन्तासनो हरिः ।\nतदा लोका लयं यान्ति ते एते गृहमेधिनाम् ॥ ४ ॥",
+      "iast": "yadā cāhīndraśayyāyāṁ śete'nantāsano hariḥ |\ntadā lokā layaṁ yānti te ete gṛhamedhinām || 4 ||"
+    },
+    {
+      "ref": "3.32.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ये स्वधर्मान्न दुह्यन्ति धीराः कामार्थहेतवे ।\nनिःसङ्गा न्यस्तकर्माणः प्रशान्ताः शुद्धचेतसः ॥ ५ ॥",
+      "iast": "ye svadharmānna duhyanti dhīrāḥ kāmārthahetave |\nniḥsaṅgā nyastakarmāṇaḥ praśāntāḥ śuddhacetasaḥ || 5 ||"
+    },
+    {
+      "ref": "3.32.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "निवृत्तिधर्मनिरता निर्ममा निरहङ्कृताः ।\nस्वधर्माप्तेन सत्त्वेन परिशुद्धेन चेतसा ॥ ६ ॥",
+      "iast": "nivṛttidharmaniratā nirmamā nirahaṅkṛtāḥ |\nsvadharmāptena sattvena pariśuddhena cetasā || 6 ||"
+    },
+    {
+      "ref": "3.32.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सूर्यद्वारेण ते यान्ति पुरुषं विश्वतोमुखम् ।\nपरावरेशं प्रकृतिं अस्योत्पत्त्यन्तभावनम् ॥ ७ ॥",
+      "iast": "sūryadvāreṇa te yānti puruṣaṁ viśvatomukham |\nparāvareśaṁ prakṛtiṁ asyotpattyantabhāvanam || 7 ||"
+    },
+    {
+      "ref": "3.32.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "द्विपरार्धावसाने यः प्रलयो ब्रह्मणस्तु ते ।\nतावद् अध्यासते लोकं परस्य परचिन्तकाः ॥ ८ ॥",
+      "iast": "dviparārdhāvasāne yaḥ pralayo brahmaṇastu te |\ntāvad adhyāsate lokaṁ parasya paracintakāḥ || 8 ||"
+    },
+    {
+      "ref": "3.32.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "क्ष्माम्भोऽनलानिलवियन् मनैन्द्रियार्थ\nभूतादिभिः परिवृतं प्रतिसञ्जिहीर्षुः ।\nअव्याकृतं विशति यर्हि गुणत्रयात्मा\nकालं पराख्यमनुभूय परः स्वयम्भूः ॥ ९ ॥",
+      "iast": "kṣmāmbho'nalānilaviyan manaindriyārtha\nbhūtādibhiḥ parivṛtaṁ pratisañjihīrṣuḥ |\navyākṛtaṁ viśati yarhi guṇatrayātmā\nkālaṁ parākhyamanubhūya paraḥ svayambhūḥ || 9 ||"
+    },
+    {
+      "ref": "3.32.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं परेत्य भगवन्तमनुप्रविष्टा\nये योगिनो जितमरुन्मनसो विरागाः ।\nतेनैव साकममृतं पुरुषं पुराणं\nब्रह्म प्रधानमुपयान्ति अगताभिमानाः ॥ १० ॥",
+      "iast": "evaṁ paretya bhagavantamanupraviṣṭā\nye yogino jitamarunmanaso virāgāḥ |\ntenaiva sākamamṛtaṁ puruṣaṁ purāṇaṁ\nbrahma pradhānamupayānti agatābhimānāḥ || 10 ||"
+    },
+    {
+      "ref": "3.32.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अथ तं सर्वभूतानां हृत्पद्मेषु कृतालयम् ।\nश्रुतानुभावं शरणं व्रज भावेन भामिनि ॥ ११ ॥",
+      "iast": "atha taṁ sarvabhūtānāṁ hṛtpadmeṣu kṛtālayam |\nśrutānubhāvaṁ śaraṇaṁ vraja bhāvena bhāmini || 11 ||"
+    },
+    {
+      "ref": "3.32.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आद्यः स्थिरचराणां यो वेदगर्भः सहर्षिभिः ।\nयोगेश्वरैः कुमाराद्यैः सिद्धैर्योगप्रवर्तकैः ॥ १२ ॥",
+      "iast": "ādyaḥ sthiracarāṇāṁ yo vedagarbhaḥ saharṣibhiḥ |\nyogeśvaraiḥ kumārādyaiḥ siddhairyogapravartakaiḥ || 12 ||"
+    },
+    {
+      "ref": "3.32.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भेददृष्ट्याभिमानेन निःसङ्गेनापि कर्मणा ।\nकर्तृत्वात्सगुणं ब्रह्म पुरुषं पुरुषर्षभम् ॥ १३ ॥",
+      "iast": "bhedadṛṣṭyābhimānena niḥsaṅgenāpi karmaṇā |\nkartṛtvātsaguṇaṁ brahma puruṣaṁ puruṣarṣabham || 13 ||"
+    },
+    {
+      "ref": "3.32.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स संसृत्य पुनः काले कालेनेश्वरमूर्तिना ।\nजाते गुणव्यतिकरे यथापूर्वं प्रजायते ॥ १४ ॥",
+      "iast": "sa saṁsṛtya punaḥ kāle kāleneśvaramūrtinā |\njāte guṇavyatikare yathāpūrvaṁ prajāyate || 14 ||"
+    },
+    {
+      "ref": "3.32.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ऐश्वर्यं पारमेष्ठ्यं च तेऽपि धर्मविनिर्मितम् ।\nनिषेव्य पुनरायान्ति गुणव्यतिकरे सति ॥ १५ ॥",
+      "iast": "aiśvaryaṁ pārameṣṭhyaṁ ca te'pi dharmavinirmitam |\nniṣevya punarāyānti guṇavyatikare sati || 15 ||"
+    },
+    {
+      "ref": "3.32.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ये त्विहासक्तमनसः कर्मसु श्रद्धयान्विताः ।\nकुर्वन्ति अप्रतिषिद्धानि नित्यान्यपि च कृत्स्नशः ॥ १६ ॥",
+      "iast": "ye tvihāsaktamanasaḥ karmasu śraddhayānvitāḥ |\nkurvanti apratiṣiddhāni nityānyapi ca kṛtsnaśaḥ || 16 ||"
+    },
+    {
+      "ref": "3.32.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "रजसा कुण्ठमनसः कामात्मानोऽजितेन्द्रियाः ।\nपितॄन् यजन्ति अनुदिनं गृहेष्वभिरताशयाः ॥ १७ ॥",
+      "iast": "rajasā kuṇṭhamanasaḥ kāmātmāno'jitendriyāḥ |\npitṝn yajanti anudinaṁ gṛheṣvabhiratāśayāḥ || 17 ||"
+    },
+    {
+      "ref": "3.32.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "त्रैवर्गिकास्ते पुरुषा विमुखा हरिमेधसः ।\nकथायां कथनीयोरुविक्रमस्य मधुद्विषः ॥ १८ ॥",
+      "iast": "traivargikāste puruṣā vimukhā harimedhasaḥ |\nkathāyāṁ kathanīyoruvikramasya madhudviṣaḥ || 18 ||"
+    },
+    {
+      "ref": "3.32.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नूनं दैवेन विहता ये चाच्युतकथासुधाम् ।\nहित्वा शृण्वन्ति असद्गाथाः पुरीषमिव विड्भुजः ॥ १९ ॥",
+      "iast": "nūnaṁ daivena vihatā ye cācyutakathāsudhām |\nhitvā śṛṇvanti asadgāthāḥ purīṣamiva viḍbhujaḥ || 19 ||"
+    },
+    {
+      "ref": "3.32.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दक्षिणेन पथार्यम्णः पितृलोकं व्रजन्ति ते ।\nप्रजामनु प्रजायन्ते श्मशानान्तक्रियाकृतः ॥ २० ॥",
+      "iast": "dakṣiṇena pathāryamṇaḥ pitṛlokaṁ vrajanti te |\nprajāmanu prajāyante śmaśānāntakriyākṛtaḥ || 20 ||"
+    },
+    {
+      "ref": "3.32.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ततस्ते क्षीणसुकृताः पुनर्लोकमिमं सति ।\nपतन्ति विवशा देवैः सद्यो विभ्रंशितोदयाः ॥ २१ ॥",
+      "iast": "tataste kṣīṇasukṛtāḥ punarlokamimaṁ sati |\npatanti vivaśā devaiḥ sadyo vibhraṁśitodayāḥ || 21 ||"
+    },
+    {
+      "ref": "3.32.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्मात्त्वं सर्वभावेन भजस्व परमेष्ठिनम् ।\nतद्गुणाश्रयया भक्त्या भजनीयपदाम्बुजम् ॥ २२ ॥",
+      "iast": "tasmāttvaṁ sarvabhāvena bhajasva parameṣṭhinam |\ntadguṇāśrayayā bhaktyā bhajanīyapadāmbujam || 22 ||"
+    },
+    {
+      "ref": "3.32.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वासुदेवे भगवति भक्तियोगः प्रयोजितः ।\nजनयत्याशु वैराग्यं ज्ञानं यद्ब्रह्मदर्शनम् ॥ २३ ॥",
+      "iast": "vāsudeve bhagavati bhaktiyogaḥ prayojitaḥ |\njanayatyāśu vairāgyaṁ jñānaṁ yadbrahmadarśanam || 23 ||"
+    },
+    {
+      "ref": "3.32.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदास्य चित्तमर्थेषु समेष्विन्द्रियवृत्तिभिः ।\nन विगृह्णाति वैषम्यं प्रियं अप्रियमित्युत ॥ २४ ॥",
+      "iast": "yadāsya cittamartheṣu sameṣvindriyavṛttibhiḥ |\nna vigṛhṇāti vaiṣamyaṁ priyaṁ apriyamityuta || 24 ||"
+    },
+    {
+      "ref": "3.32.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स तदैवात्मनात्मानं निःसङ्गं समदर्शनम् ।\nहेयोपादेयरहितं आरूढं पदमीक्षते ॥ २५ ॥",
+      "iast": "sa tadaivātmanātmānaṁ niḥsaṅgaṁ samadarśanam |\nheyopādeyarahitaṁ ārūḍhaṁ padamīkṣate || 25 ||"
+    },
+    {
+      "ref": "3.32.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ज्ञानमात्रं परं ब्रह्म परमात्मेश्वरः पुमान् ।\nदृश्यादिभिः पृथग्भावैः भगवान् एक ईयते ॥ २६ ॥",
+      "iast": "jñānamātraṁ paraṁ brahma paramātmeśvaraḥ pumān |\ndṛśyādibhiḥ pṛthagbhāvaiḥ bhagavān eka īyate || 26 ||"
+    },
+    {
+      "ref": "3.32.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतावानेव योगेन समग्रेणेह योगिनः ।\nयुज्यतेऽभिमतो ह्यर्थो यद् असङ्गस्तु कृत्स्नशः ॥ २७ ॥",
+      "iast": "etāvāneva yogena samagreṇeha yoginaḥ |\nyujyate'bhimato hyartho yad asaṅgastu kṛtsnaśaḥ || 27 ||"
+    },
+    {
+      "ref": "3.32.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ज्ञानमेकं पराचीनैः इन्द्रियैर्ब्रह्म निर्गुणम् ।\nअवभात्यर्थरूपेण भ्रान्त्या शब्दादिधर्मिणा ॥ २८ ॥",
+      "iast": "jñānamekaṁ parācīnaiḥ indriyairbrahma nirguṇam |\navabhātyartharūpeṇa bhrāntyā śabdādidharmiṇā || 28 ||"
+    },
+    {
+      "ref": "3.32.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथा महान् अहंरूपः त्रिवृत् पञ्चविधः स्वराट् ।\nएकादशविधस्तस्य वपुरण्डं जगद्यतः ॥ २९ ॥",
+      "iast": "yathā mahān ahaṁrūpaḥ trivṛt pañcavidhaḥ svarāṭ |\nekādaśavidhastasya vapuraṇḍaṁ jagadyataḥ || 29 ||"
+    },
+    {
+      "ref": "3.32.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतद्वै श्रद्धया भक्त्या योगाभ्यासेन नित्यशः ।\nसमाहितात्मा निःसङ्गो विरक्त्या परिपश्यति ॥ ३० ॥",
+      "iast": "etadvai śraddhayā bhaktyā yogābhyāsena nityaśaḥ |\nsamāhitātmā niḥsaṅgo viraktyā paripaśyati || 30 ||"
+    },
+    {
+      "ref": "3.32.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इत्येतत्कथितं गुर्वि ज्ञानं तद्ब्रह्मदर्शनम् ।\nयेन अनुबुद्ध्यते तत्त्वं प्रकृतेः पुरुषस्य च ॥ ३१ ॥",
+      "iast": "ityetatkathitaṁ gurvi jñānaṁ tadbrahmadarśanam |\nyena anubuddhyate tattvaṁ prakṛteḥ puruṣasya ca || 31 ||"
+    },
+    {
+      "ref": "3.32.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ज्ञानयोगश्च मन्निष्ठो नैर्गुण्यो भक्तिलक्षणः ।\nद्वयोरप्येक एवार्थो भगवत् शब्दलक्षणः ॥ ३२ ॥",
+      "iast": "jñānayogaśca manniṣṭho nairguṇyo bhaktilakṣaṇaḥ |\ndvayorapyeka evārtho bhagavat śabdalakṣaṇaḥ || 32 ||"
+    },
+    {
+      "ref": "3.32.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथेन्द्रियैः पृथग्द्वारैः अर्थो बहुगुणाश्रयः ।\nएको नानेयते तद्वद् भगवान् शास्त्रवर्त्मभिः ॥ ३३ ॥",
+      "iast": "yathendriyaiḥ pṛthagdvāraiḥ artho bahuguṇāśrayaḥ |\neko nāneyate tadvad bhagavān śāstravartmabhiḥ || 33 ||"
+    },
+    {
+      "ref": "3.32.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "क्रियया क्रतुभिर्दानैः तपःस्वाध्यायमर्शनैः ।\nआत्मेन्द्रियजयेनापि सन्न्यासेन च कर्मणाम् ॥ ३४ ॥",
+      "iast": "kriyayā kratubhirdānaiḥ tapaḥsvādhyāyamarśanaiḥ |\nātmendriyajayenāpi sannyāsena ca karmaṇām || 34 ||"
+    },
+    {
+      "ref": "3.32.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "योगेन विविधाङ्गेन भक्तियोगेन चैव हि ।\nधर्मेणोभयचिह्नेन यः प्रवृत्तिनिवृत्तिमान् ॥ ३५ ॥",
+      "iast": "yogena vividhāṅgena bhaktiyogena caiva hi |\ndharmeṇobhayacihnena yaḥ pravṛttinivṛttimān || 35 ||"
+    },
+    {
+      "ref": "3.32.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आत्मतत्त्वावबोधेन वैराग्येण दृढेन च ।\nईयते भगवानेभिः सगुणो निर्गुणः स्वदृक् ॥ ३६ ॥",
+      "iast": "ātmatattvāvabodhena vairāgyeṇa dṛḍhena ca |\nīyate bhagavānebhiḥ saguṇo nirguṇaḥ svadṛk || 36 ||"
+    },
+    {
+      "ref": "3.32.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्रावोचं भक्तियोगस्य स्वरूपं ते चतुर्विधम् ।\nकालस्य चाव्यक्तगतेः योऽन्तर्धावति जन्तुषु ॥ ३७ ॥",
+      "iast": "prāvocaṁ bhaktiyogasya svarūpaṁ te caturvidham |\nkālasya cāvyaktagateḥ yo'ntardhāvati jantuṣu || 37 ||"
+    },
+    {
+      "ref": "3.32.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जीवस्य संसृतीर्बह्वीः अविद्याकर्म निर्मिताः ।\nयास्वङ्ग प्रविशन्नात्मा न वेद गतिमात्मनः ॥ ३८ ॥",
+      "iast": "jīvasya saṁsṛtīrbahvīḥ avidyākarma nirmitāḥ |\nyāsvaṅga praviśannātmā na veda gatimātmanaḥ || 38 ||"
+    },
+    {
+      "ref": "3.32.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नैतत्खलायोपदिशेन् नाविनीताय कर्हिचित् ।\nन स्तब्धाय न भिन्नाय नैव धर्मध्वजाय च ॥ ३९ ॥",
+      "iast": "naitatkhalāyopadiśen nāvinītāya karhicit |\nna stabdhāya na bhinnāya naiva dharmadhvajāya ca || 39 ||"
+    },
+    {
+      "ref": "3.32.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न लोलुपायोपदिशेत् न गृहारूढचेतसे ।\nनाभक्ताय च मे जातु न मद्भक्तद्विषामपि ॥ ४० ॥",
+      "iast": "na lolupāyopadiśet na gṛhārūḍhacetase |\nnābhaktāya ca me jātu na madbhaktadviṣāmapi || 40 ||"
+    },
+    {
+      "ref": "3.32.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रद्दधानाय भक्ताय विनीताय अनसूयवे ।\nभूतेषु कृतमैत्राय शुश्रूषाभिरताय च ॥ ४१ ॥",
+      "iast": "śraddadhānāya bhaktāya vinītāya anasūyave |\nbhūteṣu kṛtamaitrāya śuśrūṣābhiratāya ca || 41 ||"
+    },
+    {
+      "ref": "3.32.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "बहिर्जातविरागाय शान्तचित्ताय दीयताम् ।\nनिर्मत्सराय शुचये यस्याहं प्रेयसां प्रियः ॥ ४२ ॥",
+      "iast": "bahirjātavirāgāya śāntacittāya dīyatām |\nnirmatsarāya śucaye yasyāhaṁ preyasāṁ priyaḥ || 42 ||"
+    },
+    {
+      "ref": "3.32.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "य इदं श्रृणुयाद् अम्ब श्रद्धया पुरुषः सकृत् ।\nयो वाभिधत्ते मच्चित्तः स ह्येति पदवीं च मे ॥ ४३ ॥",
+      "iast": "ya idaṁ śrṛṇuyād amba śraddhayā puruṣaḥ sakṛt |\nyo vābhidhatte maccittaḥ sa hyeti padavīṁ ca me || 43 ||"
+    }
+  ]
+}

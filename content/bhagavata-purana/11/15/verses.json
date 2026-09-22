@@ -1,0 +1,426 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 11.15 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%AB), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%AB",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ११/अध्यायः १५",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 24869,
+    "revid": 333765,
+    "timestamp": "2022-03-16T04:36:55Z",
+    "sha1": "38dd0216d53d0093ce2b3a5a4c09d61b35eb846f",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ११/अध्यायः १५"
+  },
+  "section": {
+    "canto": {
+      "ref": "11",
+      "ordinal": 11,
+      "title_iast": "Skandha 11",
+      "title_sa": "स्कन्धः ११"
+    },
+    "chapter": {
+      "ref": "11.15",
+      "ordinal": 15,
+      "title_iast": "Adhyāya 15",
+      "title_sa": "अध्यायः १५"
+    }
+  },
+  "verses": [
+    {
+      "ref": "11.15.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अष्टादशसिद्धिवर्णनम् -\nश्रीभगवानुवाच।\nजितेन्द्रियस्य युक्तस्य जितश्वासस्य योगिनः।\nमयि धारयतश्चेत उपतिष्ठन्ति सिद्धयः ॥ १ ॥",
+      "iast": "aṣṭādaśasiddhivarṇanam -\nśrībhagavānuvāca|\njitendriyasya yuktasya jitaśvāsasya yoginaḥ|\nmayi dhārayataśceta upatiṣṭhanti siddhayaḥ || 1 ||"
+    },
+    {
+      "ref": "11.15.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कया धारणया का स्वित्कथं वा सिद्धिरच्युत।\nकति वा सिद्धयो ब्रूहि योगिनां सिद्धिदो भवान् ॥ २ ॥",
+      "iast": "kayā dhāraṇayā kā svitkathaṁ vā siddhiracyuta|\nkati vā siddhayo brūhi yogināṁ siddhido bhavān || 2 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीभगवानुवाच।\nसिद्धयोऽष्टादश प्रोक्ता धारणा योगपारगैः।\nतासामष्टौ मत्प्रधाना दशैव गुणहेतवः ॥ ३ ॥",
+      "iast": "śrībhagavānuvāca|\nsiddhayo'ṣṭādaśa proktā dhāraṇā yogapāragaiḥ|\ntāsāmaṣṭau matpradhānā daśaiva guṇahetavaḥ || 3 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अणिमा महिमा मूर्तेर्लघिमा प्राप्तिरिन्द्रियैः।\nप्राकाम्यं श्रुतदृष्टेषु शक्तिप्रेरणमीशिता ॥ ४ ॥",
+      "iast": "aṇimā mahimā mūrterlaghimā prāptirindriyaiḥ|\nprākāmyaṁ śrutadṛṣṭeṣu śaktipreraṇamīśitā || 4 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "गुणेष्वसङ्गो वशिता यत्कामस्तदवस्यति।\nएता मे सिद्धयः सौम्य अष्टावौत्पत्तिका मताः ॥ ५ ॥",
+      "iast": "guṇeṣvasaṅgo vaśitā yatkāmastadavasyati|\netā me siddhayaḥ saumya aṣṭāvautpattikā matāḥ || 5 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अनूर्मिमत्त्वं देहेऽस्मिन्दूरश्रवणदर्शनम्।\nमनोजवः कामरूपं परकायप्रवेशनम् ॥ ६ ॥",
+      "iast": "anūrmimattvaṁ dehe'smindūraśravaṇadarśanam|\nmanojavaḥ kāmarūpaṁ parakāyapraveśanam || 6 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्वच्छन्दमृत्युर्देवानां सहक्रीडानुदर्शनम्।\nयथासङ्कल्पसंसिद्धिराज्ञाप्रतिहता गतिः ॥ ७ ॥",
+      "iast": "svacchandamṛtyurdevānāṁ sahakrīḍānudarśanam|\nyathāsaṅkalpasaṁsiddhirājñāpratihatā gatiḥ || 7 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "त्रिकालज्ञत्वमद्वन्द्वं परचित्ताद्यभिज्ञता।\nअग्न्यर्काम्बुविषादीनां प्रतिष्टम्भोऽपराजयः ॥ ८ ॥",
+      "iast": "trikālajñatvamadvandvaṁ paracittādyabhijñatā|\nagnyarkāmbuviṣādīnāṁ pratiṣṭambho'parājayaḥ || 8 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एताश्चोद्देशतः प्रोक्ता योगधारणसिद्धयः।\nयया धारणया या स्याद्यथा वा स्यान्निबोध मे ॥ ९ ॥",
+      "iast": "etāścoddeśataḥ proktā yogadhāraṇasiddhayaḥ|\nyayā dhāraṇayā yā syādyathā vā syānnibodha me || 9 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भूतसूक्ष्मात्मनि मयि तन्मात्रं धारयेन्मनः।\nअणिमानमवाप्नोति तन्मात्रोपासको मम ॥ १० ॥",
+      "iast": "bhūtasūkṣmātmani mayi tanmātraṁ dhārayenmanaḥ|\naṇimānamavāpnoti tanmātropāsako mama || 10 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "महत्तत्त्वात्मनि मयि यथासंस्थं मनो दधत्।\nमहिमानमवाप्नोति भूतानां च पृथक्पृथक् ॥ ११ ॥",
+      "iast": "mahattattvātmani mayi yathāsaṁsthaṁ mano dadhat|\nmahimānamavāpnoti bhūtānāṁ ca pṛthakpṛthak || 11 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "परमाणुमये चित्तं भूतानां मयि रञ्जयन्।\nकालसूक्ष्मार्थतां योगी लघिमानमवाप्नुयात् ॥ १२ ॥",
+      "iast": "paramāṇumaye cittaṁ bhūtānāṁ mayi rañjayan|\nkālasūkṣmārthatāṁ yogī laghimānamavāpnuyāt || 12 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "धारयन्मय्यहंतत्त्वे मनो वैकारिकेऽखिलम्।\nसर्वेन्द्रियाणामात्मत्वं प्राप्तिं प्राप्नोति मन्मनाः ॥ १३ ॥",
+      "iast": "dhārayanmayyahaṁtattve mano vaikārike'khilam|\nsarvendriyāṇāmātmatvaṁ prāptiṁ prāpnoti manmanāḥ || 13 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "महत्यात्मनि यः सूत्रे धारयेन्मयि मानसम्।\nप्राकाम्यं पारमेष्ठ्यं मे विन्दतेऽव्यक्तजन्मनः ॥ १४ ॥",
+      "iast": "mahatyātmani yaḥ sūtre dhārayenmayi mānasam|\nprākāmyaṁ pārameṣṭhyaṁ me vindate'vyaktajanmanaḥ || 14 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विष्णौ त्र्यधीश्वरे चित्तं धारयेत्कालविग्रहे।\nस ईशित्वमवाप्नोति क्षेत्रज्ञक्षेत्रचोदनाम् ॥ १५ ॥",
+      "iast": "viṣṇau tryadhīśvare cittaṁ dhārayetkālavigrahe|\nsa īśitvamavāpnoti kṣetrajñakṣetracodanām || 15 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नारायणे तुरीयाख्ये भगवच्छब्दशब्दिते।\nमनो मय्यादधद्योगी मद्धर्मा वशितामियात् ॥ १६ ॥",
+      "iast": "nārāyaṇe turīyākhye bhagavacchabdaśabdite|\nmano mayyādadhadyogī maddharmā vaśitāmiyāt || 16 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "निर्गुणे ब्रह्मणि मयि धारयन्विशदं मनः।\nपरमानन्दमाप्नोति यत्र कामोऽवसीयते ॥ १७ ॥",
+      "iast": "nirguṇe brahmaṇi mayi dhārayanviśadaṁ manaḥ|\nparamānandamāpnoti yatra kāmo'vasīyate || 17 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्वेतद्वीपपतौ चित्तं शुद्धे धर्ममये मयि।\nधारयञ्छ्वेततां याति षडूर्मिरहितो नरः ॥ १८ ॥",
+      "iast": "śvetadvīpapatau cittaṁ śuddhe dharmamaye mayi|\ndhārayañchvetatāṁ yāti ṣaḍūrmirahito naraḥ || 18 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मय्याकाशात्मनि प्राणे मनसा घोषमुद्वहन्।\nतत्रोपलब्धा भूतानां हंसो वाचः शृणोत्यसौ ॥ १९ ॥",
+      "iast": "mayyākāśātmani prāṇe manasā ghoṣamudvahan|\ntatropalabdhā bhūtānāṁ haṁso vācaḥ śṛṇotyasau || 19 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "चक्षुस्त्वष्टरि संयोज्य त्वष्टारमपि चक्षुषि।\nमां तत्र मनसा ध्यायन्विश्वं पश्यति दूरतः ॥ २० ॥",
+      "iast": "cakṣustvaṣṭari saṁyojya tvaṣṭāramapi cakṣuṣi|\nmāṁ tatra manasā dhyāyanviśvaṁ paśyati dūrataḥ || 20 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मनो मयि सुसंयोज्य देहं तदनुवायुना।\nमद्धारणानुभावेन तत्रात्मा यत्र वै मनः ॥ २१ ॥",
+      "iast": "mano mayi susaṁyojya dehaṁ tadanuvāyunā|\nmaddhāraṇānubhāvena tatrātmā yatra vai manaḥ || 21 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदा मन उपादाय यद्यद्रूपं बुभूषति।\nतत्तद्भवेन्मनोरूपं मद्योगबलमाश्रयः ॥ २२ ॥",
+      "iast": "yadā mana upādāya yadyadrūpaṁ bubhūṣati|\ntattadbhavenmanorūpaṁ madyogabalamāśrayaḥ || 22 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "परकायं विशन्सिद्ध आत्मानं तत्र भावयेत्।\nपिण्डं हित्वा विशेत्प्राणो वायुभूतः षडङ्घ्रिवत् ॥ २३ ॥",
+      "iast": "parakāyaṁ viśansiddha ātmānaṁ tatra bhāvayet|\npiṇḍaṁ hitvā viśetprāṇo vāyubhūtaḥ ṣaḍaṅghrivat || 23 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पार्ष्ण्यापीड्य गुदं प्राणं हृदुरःकण्ठमूर्धसु।\nआरोप्य ब्रह्मरन्ध्रेण ब्रह्म नीत्वोत्सृजेत्तनुम् ॥ २४ ॥",
+      "iast": "pārṣṇyāpīḍya gudaṁ prāṇaṁ hṛduraḥkaṇṭhamūrdhasu|\nāropya brahmarandhreṇa brahma nītvotsṛjettanum || 24 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विहरिष्यन्सुराक्रीडे मत्स्थं सत्त्वं विभावयेत्।\nविमानेनोपतिष्ठन्ति सत्त्ववृत्तीः सुरस्त्रियः ॥ २५ ॥",
+      "iast": "vihariṣyansurākrīḍe matsthaṁ sattvaṁ vibhāvayet|\nvimānenopatiṣṭhanti sattvavṛttīḥ surastriyaḥ || 25 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथा सङ्कल्पयेद्बुद्ध्या यदा वा मत्परः पुमान्।\nमयि सत्ये मनो युञ्जंस्तथा तत्समुपाश्नुते ॥ २६ ॥",
+      "iast": "yathā saṅkalpayedbuddhyā yadā vā matparaḥ pumān|\nmayi satye mano yuñjaṁstathā tatsamupāśnute || 26 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यो वै मद्भावमापन्न ईशितुर्वशितुः पुमान्।\nकुतश्चिन्न विहन्येत तस्य चाज्ञा यथा मम ॥ २७ ॥",
+      "iast": "yo vai madbhāvamāpanna īśiturvaśituḥ pumān|\nkutaścinna vihanyeta tasya cājñā yathā mama || 27 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मद्भक्त्या शुद्धसत्त्वस्य योगिनो धारणाविदः।\nतस्य त्रैकालिकी बुद्धिर्जन्ममृत्यूपबृंहिता ॥ २८ ॥",
+      "iast": "madbhaktyā śuddhasattvasya yogino dhāraṇāvidaḥ|\ntasya traikālikī buddhirjanmamṛtyūpabṛṁhitā || 28 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अग्न्यादिभिर्न हन्येत मुनेर्योगमयं वपुः।\nमद्योगशान्तचित्तस्य यादसामुदकं यथा ॥ २९ ॥",
+      "iast": "agnyādibhirna hanyeta muneryogamayaṁ vapuḥ|\nmadyogaśāntacittasya yādasāmudakaṁ yathā || 29 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मद्विभूतीरभिध्यायन्श्रीवत्सास्त्रविभूषिताः।\nध्वजातपत्रव्यजनैः स भवेदपराजितः ॥ ३० ॥",
+      "iast": "madvibhūtīrabhidhyāyanśrīvatsāstravibhūṣitāḥ|\ndhvajātapatravyajanaiḥ sa bhavedaparājitaḥ || 30 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "उपासकस्य मामेवं योगधारणया मुनेः।\nसिद्धयः पूर्वकथिता उपतिष्ठन्त्यशेषतः ॥ ३१ ॥",
+      "iast": "upāsakasya māmevaṁ yogadhāraṇayā muneḥ|\nsiddhayaḥ pūrvakathitā upatiṣṭhantyaśeṣataḥ || 31 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जितेन्द्रियस्य दान्तस्य जितश्वासात्मनो मुनेः।\nमद्धारणां धारयतः का सा सिद्धिः सुदुर्लभा ॥ ३२ ॥",
+      "iast": "jitendriyasya dāntasya jitaśvāsātmano muneḥ|\nmaddhāraṇāṁ dhārayataḥ kā sā siddhiḥ sudurlabhā || 32 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अन्तरायान्वदन्त्येता युञ्जतो योगमुत्तमम्।\nमया सम्पद्यमानस्य कालक्षपणहेतवः ॥ ३३ ॥",
+      "iast": "antarāyānvadantyetā yuñjato yogamuttamam|\nmayā sampadyamānasya kālakṣapaṇahetavaḥ || 33 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जन्मौषधितपोमन्त्रैर्यावतीरिह सिद्धयः।\nयोगेनाप्नोति ताः सर्वा नान्यैर्योगगतिं व्रजेत् ॥ ३४ ॥",
+      "iast": "janmauṣadhitapomantrairyāvatīriha siddhayaḥ|\nyogenāpnoti tāḥ sarvā nānyairyogagatiṁ vrajet || 34 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सर्वासामपि सिद्धीनां हेतुः पतिरहं प्रभुः।\nअहं योगस्य साङ्ख्यस्य धर्मस्य ब्रह्मवादिनाम् ॥ ३५ ॥",
+      "iast": "sarvāsāmapi siddhīnāṁ hetuḥ patirahaṁ prabhuḥ|\nahaṁ yogasya sāṅkhyasya dharmasya brahmavādinām || 35 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    },
+    {
+      "ref": "11.15.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अहमात्मान्तरो बाह्योऽनावृतः सर्वदेहिनाम्।\nयथा भूतानि भूतेषु बहिरन्तः स्वयं तथा ॥ ३६ ॥",
+      "iast": "ahamātmāntaro bāhyo'nāvṛtaḥ sarvadehinām|\nyathā bhūtāni bhūteṣu bahirantaḥ svayaṁ tathā || 36 ||",
+      "metadata": {
+        "speaker_surface": "श्रीउद्धव"
+      }
+    }
+  ]
+}

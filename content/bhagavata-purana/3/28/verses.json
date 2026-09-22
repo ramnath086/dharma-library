@@ -1,0 +1,385 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 3.28 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%AE), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%AE",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः २८",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 19129,
+    "revid": 339027,
+    "timestamp": "2022-06-12T10:35:18Z",
+    "sha1": "03893a8ca206492c1946acf596cf950bb9ad8034",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः २८"
+  },
+  "section": {
+    "canto": {
+      "ref": "3",
+      "ordinal": 3,
+      "title_iast": "Skandha 3",
+      "title_sa": "स्कन्धः ३"
+    },
+    "chapter": {
+      "ref": "3.28",
+      "ordinal": 28,
+      "title_iast": "Adhyāya 28",
+      "title_sa": "अध्यायः २८"
+    }
+  },
+  "verses": [
+    {
+      "ref": "3.28.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीभगवानुवाच -\nयोगस्य लक्षणं वक्ष्ये सबीजस्य नृपात्मजे ।\nमनो येनैव विधिना प्रसन्नं याति सत्पथम् ॥ १ ॥",
+      "iast": "śrībhagavānuvāca -\nyogasya lakṣaṇaṁ vakṣye sabījasya nṛpātmaje |\nmano yenaiva vidhinā prasannaṁ yāti satpatham || 1 ||"
+    },
+    {
+      "ref": "3.28.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्वधर्माचरणं शक्त्या विधर्माच्च निवर्तनम् ।\nदैवाल्लब्धेन सन्तोष आत्मवित् चरणार्चनम् ॥ २ ॥",
+      "iast": "svadharmācaraṇaṁ śaktyā vidharmācca nivartanam |\ndaivāllabdhena santoṣa ātmavit caraṇārcanam || 2 ||"
+    },
+    {
+      "ref": "3.28.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ग्राम्यधर्मनिवृत्तिश्च मोक्षधर्मरतिस्तथा ।\nमितमेध्यादनं शश्वद् विविक्तक्षेमसेवनम् ॥ ३ ॥",
+      "iast": "grāmyadharmanivṛttiśca mokṣadharmaratistathā |\nmitamedhyādanaṁ śaśvad viviktakṣemasevanam || 3 ||"
+    },
+    {
+      "ref": "3.28.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अहिंसा सत्यमस्तेयं यावदर्थपरिग्रहः ।\nब्रह्मचर्यं तपः शौचं स्वाध्यायः पुरुषार्चनम् ॥ ४ ॥",
+      "iast": "ahiṁsā satyamasteyaṁ yāvadarthaparigrahaḥ |\nbrahmacaryaṁ tapaḥ śaucaṁ svādhyāyaḥ puruṣārcanam || 4 ||"
+    },
+    {
+      "ref": "3.28.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मौनं सदाऽऽसनजयः स्थैर्यं प्राणजयः शनैः ।\nप्रत्याहारश्चेन्द्रियाणां विषयान्मनसा हृदि ॥ ५ ॥",
+      "iast": "maunaṁ sadā''sanajayaḥ sthairyaṁ prāṇajayaḥ śanaiḥ |\npratyāhāraścendriyāṇāṁ viṣayānmanasā hṛdi || 5 ||"
+    },
+    {
+      "ref": "3.28.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्वधिष्ण्यानां एकदेशे मनसा प्राणधारणम् ।\nवैकुण्ठलीलाभिध्यानं समाधानं तथात्मनः ॥ ६ ॥",
+      "iast": "svadhiṣṇyānāṁ ekadeśe manasā prāṇadhāraṇam |\nvaikuṇṭhalīlābhidhyānaṁ samādhānaṁ tathātmanaḥ || 6 ||"
+    },
+    {
+      "ref": "3.28.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतैः अन्यैश्च पथिभिः मनो दुष्टमसत्पथम् ।\nबुद्ध्या युञ्जीत शनकैः जितप्राणो ह्यतन्द्रितः ॥ ७ ॥",
+      "iast": "etaiḥ anyaiśca pathibhiḥ mano duṣṭamasatpatham |\nbuddhyā yuñjīta śanakaiḥ jitaprāṇo hyatandritaḥ || 7 ||"
+    },
+    {
+      "ref": "3.28.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "शुचौ देशे प्रतिष्ठाप्य विजितासन आसनम् ।\nतस्मिन् स्वस्ति समासीन ऋजुकायः समभ्यसेत् ॥ ८ ॥",
+      "iast": "śucau deśe pratiṣṭhāpya vijitāsana āsanam |\ntasmin svasti samāsīna ṛjukāyaḥ samabhyaset || 8 ||"
+    },
+    {
+      "ref": "3.28.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्राणस्य शोधयेन्मार्गं पूरकुम्भकरेचकैः ।\nप्रतिकूलेन वा चित्तं यथा स्थिरं अचञ्चलम् ॥ ९ ॥",
+      "iast": "prāṇasya śodhayenmārgaṁ pūrakumbhakarecakaiḥ |\npratikūlena vā cittaṁ yathā sthiraṁ acañcalam || 9 ||"
+    },
+    {
+      "ref": "3.28.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मनोऽचिरात्स्याद् विरजं जितश्वासस्य योगिनः ।\nवाय्वग्निभ्यां यथा लोहं ध्मातं त्यजति वै मलम् ॥ १० ॥",
+      "iast": "mano'cirātsyād virajaṁ jitaśvāsasya yoginaḥ |\nvāyvagnibhyāṁ yathā lohaṁ dhmātaṁ tyajati vai malam || 10 ||"
+    },
+    {
+      "ref": "3.28.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्राणायामैः दहेद् दोषान् धारणाभिश्च किल्बिषान् ।\nप्रत्याहारेण संसर्गान् ध्यानेनानीश्वरान्गुणान् ॥ ११ ॥",
+      "iast": "prāṇāyāmaiḥ dahed doṣān dhāraṇābhiśca kilbiṣān |\npratyāhāreṇa saṁsargān dhyānenānīśvarānguṇān || 11 ||"
+    },
+    {
+      "ref": "3.28.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदा मनः स्वं विरजं योगेन सुसमाहितम् ।\nकाष्ठां भगवतो ध्यायेत् स्वनासाग्रावलोकनः ॥ १२ ॥",
+      "iast": "yadā manaḥ svaṁ virajaṁ yogena susamāhitam |\nkāṣṭhāṁ bhagavato dhyāyet svanāsāgrāvalokanaḥ || 12 ||"
+    },
+    {
+      "ref": "3.28.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्रसन्नवदनाम्भोजं पद्मगर्भारुणेक्षणम् ।\nनीलोत्पलदलश्यामं शङ्खचक्रगदाधरम् ॥ १३ ॥",
+      "iast": "prasannavadanāmbhojaṁ padmagarbhāruṇekṣaṇam |\nnīlotpaladalaśyāmaṁ śaṅkhacakragadādharam || 13 ||"
+    },
+    {
+      "ref": "3.28.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "लसत्पङ्कज किञ्जल्क पीतकौशेयवाससम् ।\nश्रीवत्सवक्षसं भ्राजत् कौस्तुभामुक्तकन्धरम् ॥ १४ ॥",
+      "iast": "lasatpaṅkaja kiñjalka pītakauśeyavāsasam |\nśrīvatsavakṣasaṁ bhrājat kaustubhāmuktakandharam || 14 ||"
+    },
+    {
+      "ref": "3.28.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मत्तद्विरेफकलया परीतं वनमालया ।\nपरार्ध्यहारवलय किरीटाङ्गदनूपुरम् ॥ १५ ॥",
+      "iast": "mattadvirephakalayā parītaṁ vanamālayā |\nparārdhyahāravalaya kirīṭāṅgadanūpuram || 15 ||"
+    },
+    {
+      "ref": "3.28.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "काञ्चीगुणोल्लसत् श्रोणिं हृदयाम्भोजविष्टरम् ।\nदर्शनीयतमं शान्तं मनोनयन वर्धनम् ॥ १६ ॥",
+      "iast": "kāñcīguṇollasat śroṇiṁ hṛdayāmbhojaviṣṭaram |\ndarśanīyatamaṁ śāntaṁ manonayana vardhanam || 16 ||"
+    },
+    {
+      "ref": "3.28.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अपीच्यदर्शनं शश्वत् सर्वलोकनमस्कृतम् ।\nसन्तं वयसि कैशोरे भृत्यानुग्रहकातरम् ॥ १७ ॥",
+      "iast": "apīcyadarśanaṁ śaśvat sarvalokanamaskṛtam |\nsantaṁ vayasi kaiśore bhṛtyānugrahakātaram || 17 ||"
+    },
+    {
+      "ref": "3.28.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कीर्तन्यतीर्थयशसं पुण्यश्लोकयशस्करम् ।\nध्यायेद्देवं समग्राङ्गं यावन्न च्यवते मनः ॥ १८ ॥",
+      "iast": "kīrtanyatīrthayaśasaṁ puṇyaślokayaśaskaram |\ndhyāyeddevaṁ samagrāṅgaṁ yāvanna cyavate manaḥ || 18 ||"
+    },
+    {
+      "ref": "3.28.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्थितं व्रजन्तमासीनं शयानं वा गुहाशयम् ।\nप्रेक्षणीयेहितं ध्यायेत् शुद्धभावेन चेतसा ॥ १९ ॥",
+      "iast": "sthitaṁ vrajantamāsīnaṁ śayānaṁ vā guhāśayam |\nprekṣaṇīyehitaṁ dhyāyet śuddhabhāvena cetasā || 19 ||"
+    },
+    {
+      "ref": "3.28.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्मिन्लब्धपदं चित्तं सर्वावयवसंस्थितम् ।\nविलक्ष्यैकत्र संयुज्याद् अङ्गे भगवतो मुनिः ॥ २० ॥",
+      "iast": "tasminlabdhapadaṁ cittaṁ sarvāvayavasaṁsthitam |\nvilakṣyaikatra saṁyujyād aṅge bhagavato muniḥ || 20 ||"
+    },
+    {
+      "ref": "3.28.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सञ्चिन्तयेद् भगवतश्चरणारविन्दं\nवज्राङ्कुशध्वज सरोरुह लाञ्छनाढ्यम् ।\nउत्तुङ्गरक्तविलसन् नखचक्रवाल\nज्योत्स्नाभिराहतमहद् हृदयान्धकारम् ॥ २१ ॥",
+      "iast": "sañcintayed bhagavataścaraṇāravindaṁ\nvajrāṅkuśadhvaja saroruha lāñchanāḍhyam |\nuttuṅgaraktavilasan nakhacakravāla\njyotsnābhirāhatamahad hṛdayāndhakāram || 21 ||"
+    },
+    {
+      "ref": "3.28.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यच्छौचनिःसृतसरित् प्रवरोदकेन ।\nतीर्थेन मूर्ध्न्यधिकृतेन शिवः शिवोऽभूत् ।\nध्यातुर्मनःशमलशैलनिसृष्टवज्रं\nध्यायेच्चिरं भगवतश्चरणारविन्दम् ॥ २२ ॥",
+      "iast": "yacchaucaniḥsṛtasarit pravarodakena |\ntīrthena mūrdhnyadhikṛtena śivaḥ śivo'bhūt |\ndhyāturmanaḥśamalaśailanisṛṣṭavajraṁ\ndhyāyecciraṁ bhagavataścaraṇāravindam || 22 ||"
+    },
+    {
+      "ref": "3.28.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जानुद्वयं जलजलोचनया जनन्या\nलक्ष्म्याखिलस्य सुरवन्दितया विधातुः ।\nऊर्वोर्निधाय करपल्लवरोचिषा यत्\nसंलालितं हृदि विभोरभवस्य कुर्यात् ॥ २३ ॥",
+      "iast": "jānudvayaṁ jalajalocanayā jananyā\nlakṣmyākhilasya suravanditayā vidhātuḥ |\nūrvornidhāya karapallavarociṣā yat\nsaṁlālitaṁ hṛdi vibhorabhavasya kuryāt || 23 ||"
+    },
+    {
+      "ref": "3.28.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ऊरू सुपर्णभुजयोरधि शोभमानौ\nओजोनिधी अतसिकाकुसुमावभासौ ।\nव्यालम्बिपीतवरवाससि वर्तमान\nकाञ्चीकलापपरिरम्भि नितम्बबिम्बम् ॥ २४ ॥",
+      "iast": "ūrū suparṇabhujayoradhi śobhamānau\nojonidhī atasikākusumāvabhāsau |\nvyālambipītavaravāsasi vartamāna\nkāñcīkalāpaparirambhi nitambabimbam || 24 ||"
+    },
+    {
+      "ref": "3.28.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नाभिह्रदं भुवनकोशगुहोदरस्थं\nयत्रात्मयोनिधिषणाखिललोकपद्मम् ।\nव्यूढं हरिन्मणिवृषस्तनयोरमुष्य\nध्यायेद् द्वयं विशदहारमयूखगौरम् ॥ २५ ॥",
+      "iast": "nābhihradaṁ bhuvanakośaguhodarasthaṁ\nyatrātmayonidhiṣaṇākhilalokapadmam |\nvyūḍhaṁ harinmaṇivṛṣastanayoramuṣya\ndhyāyed dvayaṁ viśadahāramayūkhagauram || 25 ||"
+    },
+    {
+      "ref": "3.28.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वक्षोऽधिवासमृषभस्य महाविभूतेः\nपुंसां मनोनयननिर्वृतिमादधानम् ।\nकण्ठं च कौस्तुभमणेरधिभूषणार्थं\nकुर्यान्मनस्यखिल लोकनमस्कृतस्य ॥ २६ ॥",
+      "iast": "vakṣo'dhivāsamṛṣabhasya mahāvibhūteḥ\npuṁsāṁ manonayananirvṛtimādadhānam |\nkaṇṭhaṁ ca kaustubhamaṇeradhibhūṣaṇārthaṁ\nkuryānmanasyakhila lokanamaskṛtasya || 26 ||"
+    },
+    {
+      "ref": "3.28.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "बाहूंश्च मन्दरगिरेः परिवर्तनेन\nनिर्णिक्तबाहुवलयान् अधिलोकपालान् ।\nसञ्चिन्तयेद् दशशतारमसह्यतेजः\nशङ्खं च तत्करसरोरुहराजहंसम् ॥ २७ ॥",
+      "iast": "bāhūṁśca mandaragireḥ parivartanena\nnirṇiktabāhuvalayān adhilokapālān |\nsañcintayed daśaśatāramasahyatejaḥ\nśaṅkhaṁ ca tatkarasaroruharājahaṁsam || 27 ||"
+    },
+    {
+      "ref": "3.28.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कौमोदकीं भगवतो दयितां स्मरेत\nदिग्धामरातिभटशोणितकर्दमेन ।\nमालां मधुव्रतवरूथगिरोपघुष्टां\nचैत्यस्य तत्त्वममलं मणिमस्य कण्ठे ॥ २८ ॥",
+      "iast": "kaumodakīṁ bhagavato dayitāṁ smareta\ndigdhāmarātibhaṭaśoṇitakardamena |\nmālāṁ madhuvratavarūthagiropaghuṣṭāṁ\ncaityasya tattvamamalaṁ maṇimasya kaṇṭhe || 28 ||"
+    },
+    {
+      "ref": "3.28.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भृत्यानुकम्पितधियेह गृहीतमूर्तेः\nसञ्चिन्तयेद् भगवतो वदनारविन्दम् ।\nयद्विस्फुरन् मकरकुण्डलवल्गितेन ।\nविद्योतितामलकपोलमुदारनासम् ॥ २९ ॥",
+      "iast": "bhṛtyānukampitadhiyeha gṛhītamūrteḥ\nsañcintayed bhagavato vadanāravindam |\nyadvisphuran makarakuṇḍalavalgitena |\nvidyotitāmalakapolamudāranāsam || 29 ||"
+    },
+    {
+      "ref": "3.28.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यच्छ्रीनिकेतमलिभिः परिसेव्यमानं\nभूत्या स्वया कुटिलकुन्तलवृन्दजुष्टम् ।\nमीनद्वयाश्रयमधिक्षिपदब्जनेत्रं\nध्यायेन् मनोमयमतन्द्रित उल्लसद्भ्रु ॥ ३० ॥",
+      "iast": "yacchrīniketamalibhiḥ parisevyamānaṁ\nbhūtyā svayā kuṭilakuntalavṛndajuṣṭam |\nmīnadvayāśrayamadhikṣipadabjanetraṁ\ndhyāyen manomayamatandrita ullasadbhru || 30 ||"
+    },
+    {
+      "ref": "3.28.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्यावलोकमधिकं कृपयातिघोर\nतापत्रयोपशमनाय निसृष्टमक्ष्णोः ।\nस्निग्धस्मितानुगुणितं विपुलप्रसादं\nध्यायेच्चिरं विपुलभावनया गुहायाम् ॥ ३१ ॥",
+      "iast": "tasyāvalokamadhikaṁ kṛpayātighora\ntāpatrayopaśamanāya nisṛṣṭamakṣṇoḥ |\nsnigdhasmitānuguṇitaṁ vipulaprasādaṁ\ndhyāyecciraṁ vipulabhāvanayā guhāyām || 31 ||"
+    },
+    {
+      "ref": "3.28.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "हासं हरेरवनताखिललोकतीव्र\nशोकाश्रुसागरविशोषणमत्युदारम् ।\nसम्मोहनाय रचितं निजमाययास्य\nभ्रूमण्डलं मुनिकृते मकरध्वजस्य ॥ ३२ ॥",
+      "iast": "hāsaṁ hareravanatākhilalokatīvra\nśokāśrusāgaraviśoṣaṇamatyudāram |\nsammohanāya racitaṁ nijamāyayāsya\nbhrūmaṇḍalaṁ munikṛte makaradhvajasya || 32 ||"
+    },
+    {
+      "ref": "3.28.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ध्यानायनं प्रहसितं बहुलाधरोष्ठ\nभासारुणायिततनुद्विजकुन्दपङ्क्ति ।\nध्यायेत्स्वदेहकुहरेऽवसितस्य विष्णोः\nभक्त्यार्द्रयार्पितमना न पृथग्दिदृक्षेत् ॥ ३३ ॥",
+      "iast": "dhyānāyanaṁ prahasitaṁ bahulādharoṣṭha\nbhāsāruṇāyitatanudvijakundapaṅkti |\ndhyāyetsvadehakuhare'vasitasya viṣṇoḥ\nbhaktyārdrayārpitamanā na pṛthagdidṛkṣet || 33 ||"
+    },
+    {
+      "ref": "3.28.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं हरौ भगवति प्रतिलब्धभावो\nभक्त्या द्रवद्धृदय उत्पुलकः प्रमोदात् ।\nऔत्कण्ठ्यबाष्पकलया मुहुरर्द्यमानः\nतच्चापि चित्तबडिशं शनकैर्वियुङ्क्ते ॥ ३४ ॥",
+      "iast": "evaṁ harau bhagavati pratilabdhabhāvo\nbhaktyā dravaddhṛdaya utpulakaḥ pramodāt |\nautkaṇṭhyabāṣpakalayā muhurardyamānaḥ\ntaccāpi cittabaḍiśaṁ śanakairviyuṅkte || 34 ||"
+    },
+    {
+      "ref": "3.28.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मुक्ताश्रयं यर्हि निर्विषयं विरक्तं\nनिर्वाणमृच्छति मनः सहसा यथार्चिः ।\nआत्मानमत्र पुरुषोऽव्यवधानमेकम्\nअन्वीक्षते प्रतिनिवृत्तगुणप्रवाहः ॥ ३५ ॥",
+      "iast": "muktāśrayaṁ yarhi nirviṣayaṁ viraktaṁ\nnirvāṇamṛcchati manaḥ sahasā yathārciḥ |\nātmānamatra puruṣo'vyavadhānamekam\nanvīkṣate pratinivṛttaguṇapravāhaḥ || 35 ||"
+    },
+    {
+      "ref": "3.28.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सोऽप्येतया चरमया मनसो निवृत्त्या\nतस्मिन् महिम्न्यवसितः सुखदुःखबाह्ये ।\nहेतुत्वमप्यसति कर्तरि दुःखयोर्यत्\nस्वात्मन्विधत्त उपलब्धपरात्मकाष्ठः ॥ ३६ ॥",
+      "iast": "so'pyetayā caramayā manaso nivṛttyā\ntasmin mahimnyavasitaḥ sukhaduḥkhabāhye |\nhetutvamapyasati kartari duḥkhayoryat\nsvātmanvidhatta upalabdhaparātmakāṣṭhaḥ || 36 ||"
+    },
+    {
+      "ref": "3.28.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "देहं च तं न चरमः स्थितमुत्थितं वा\nसिद्धो विपश्यति यतोऽध्यगमत्स्वरूपम् ।\nदैवादुपेतमथ दैववशादपेतं\nवासो यथा परिकृतं मदिरामदान्धः ॥ ३७ ॥",
+      "iast": "dehaṁ ca taṁ na caramaḥ sthitamutthitaṁ vā\nsiddho vipaśyati yato'dhyagamatsvarūpam |\ndaivādupetamatha daivavaśādapetaṁ\nvāso yathā parikṛtaṁ madirāmadāndhaḥ || 37 ||"
+    },
+    {
+      "ref": "3.28.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "देहोऽपि दैववशगः खलु कर्म यावत्\nस्वारम्भकं प्रतिसमीक्षत एव सासुः ।\nतं सप्रपञ्चमधिरूढसमाधियोगः\nस्वाप्नं पुनर्न भजते प्रतिबुद्धवस्तुः ॥ ३८ ॥",
+      "iast": "deho'pi daivavaśagaḥ khalu karma yāvat\nsvārambhakaṁ pratisamīkṣata eva sāsuḥ |\ntaṁ saprapañcamadhirūḍhasamādhiyogaḥ\nsvāpnaṁ punarna bhajate pratibuddhavastuḥ || 38 ||"
+    },
+    {
+      "ref": "3.28.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथा पुत्राच्च वित्ताच्च पृथङ्मर्त्यः प्रतीयते ।\nअप्यात्मत्वेनाभिमताद् देहादेः पुरुषस्तथा ॥ ३९ ॥",
+      "iast": "yathā putrācca vittācca pṛthaṅmartyaḥ pratīyate |\napyātmatvenābhimatād dehādeḥ puruṣastathā || 39 ||"
+    },
+    {
+      "ref": "3.28.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथोल्मुकाद् विस्फुलिङ्गाद् धूमाद्वापि स्वसम्भवात् ।\nअप्यात्मत्वेनाभिमताद् यथाग्निः पृथगुल्मुकात् ॥ ४० ॥",
+      "iast": "yatholmukād visphuliṅgād dhūmādvāpi svasambhavāt |\napyātmatvenābhimatād yathāgniḥ pṛthagulmukāt || 40 ||"
+    },
+    {
+      "ref": "3.28.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भूतेन्द्रियान्तःकरणात् प्रधानात् जीवसंज्ञितात् ।\nआत्मा तथा पृथग्द्रष्टा भगवान् ब्रह्मसंज्ञितः ॥ ४१ ॥",
+      "iast": "bhūtendriyāntaḥkaraṇāt pradhānāt jīvasaṁjñitāt |\nātmā tathā pṛthagdraṣṭā bhagavān brahmasaṁjñitaḥ || 41 ||"
+    },
+    {
+      "ref": "3.28.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सर्वभूतेषु चात्मानं सर्वभूतानि चात्मनि ।\nईक्षेतान् अन्यभावेन भूतेष्विव तदात्मताम् ॥ ४२ ॥",
+      "iast": "sarvabhūteṣu cātmānaṁ sarvabhūtāni cātmani |\nīkṣetān anyabhāvena bhūteṣviva tadātmatām || 42 ||"
+    },
+    {
+      "ref": "3.28.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्वयोनिषु यथा ज्योतिः एकं नाना प्रतीयते ।\nयोनीनां गुणवैषम्यात् तथात्मा प्रकृतौ स्थितः ॥ ४३ ॥",
+      "iast": "svayoniṣu yathā jyotiḥ ekaṁ nānā pratīyate |\nyonīnāṁ guṇavaiṣamyāt tathātmā prakṛtau sthitaḥ || 43 ||"
+    },
+    {
+      "ref": "3.28.44",
+      "ordinal": 44,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्माद् इमां स्वां प्रकृतिं दैवीं सदसदात्मिकाम् ।\nदुर्विभाव्यां पराभाव्य स्वरूपेणावतिष्ठते ॥ ४४ ॥",
+      "iast": "tasmād imāṁ svāṁ prakṛtiṁ daivīṁ sadasadātmikām |\ndurvibhāvyāṁ parābhāvya svarūpeṇāvatiṣṭhate || 44 ||"
+    }
+  ]
+}

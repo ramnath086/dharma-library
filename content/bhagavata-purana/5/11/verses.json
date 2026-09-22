@@ -1,0 +1,220 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 5.11 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%A7), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%A7",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः ११",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 36031,
+    "revid": 361321,
+    "timestamp": "2022-11-27T10:43:10Z",
+    "sha1": "e3737a5a573fecb8bec68a3b883cb5c3985e8c36",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः ११"
+  },
+  "section": {
+    "canto": {
+      "ref": "5",
+      "ordinal": 5,
+      "title_iast": "Skandha 5",
+      "title_sa": "स्कन्धः ५"
+    },
+    "chapter": {
+      "ref": "5.11",
+      "ordinal": 11,
+      "title_iast": "Adhyāya 11",
+      "title_sa": "अध्यायः ११"
+    }
+  },
+  "verses": [
+    {
+      "ref": "5.11.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अकोविदः कोविदवादवादान्वदस्यथो नातिविदां वरिष्ठः\nन सूरयो हि व्यवहारमेनं तत्त्वावमर्शेन सहामनन्ति ॥ १ ॥",
+      "iast": "akovidaḥ kovidavādavādānvadasyatho nātividāṁ variṣṭhaḥ\nna sūrayo hi vyavahāramenaṁ tattvāvamarśena sahāmananti || 1 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तथैव राजन्नुरुगार्हमेध वितानविद्योरुविजृम्भितेषु\nन वेदवादेषु हि तत्त्ववादः प्रायेण शुद्धो नु चकास्ति साधुः ॥ २ ॥",
+      "iast": "tathaiva rājannurugārhamedha vitānavidyoruvijṛmbhiteṣu\nna vedavādeṣu hi tattvavādaḥ prāyeṇa śuddho nu cakāsti sādhuḥ || 2 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न तस्य तत्त्वग्रहणाय साक्षाद्वरीयसीरपि वाचः समासन्\nस्वप्ने निरुक्त्या गृहमेधिसौख्यं न यस्य हेयानुमितं स्वयं स्यात् ॥ ३ ॥",
+      "iast": "na tasya tattvagrahaṇāya sākṣādvarīyasīrapi vācaḥ samāsan\nsvapne niruktyā gṛhamedhisaukhyaṁ na yasya heyānumitaṁ svayaṁ syāt || 3 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यावन्मनो रजसा पूरुषस्य सत्त्वेन वा तमसा वानुरुद्धम्\nचेतोभिराकूतिभिरातनोति निरङ्कुशं कुशलं चेतरं वा ॥ ४ ॥",
+      "iast": "yāvanmano rajasā pūruṣasya sattvena vā tamasā vānuruddham\ncetobhirākūtibhirātanoti niraṅkuśaṁ kuśalaṁ cetaraṁ vā || 4 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स वासनात्मा विषयोपरक्तो गुणप्रवाहो विकृतः षोडशात्मा\nबिभ्रत्पृथङ्नामभि रूपभेदमन्तर्बहिष्ट्वं च पुरैस्तनोति ॥ ५ ॥",
+      "iast": "sa vāsanātmā viṣayoparakto guṇapravāho vikṛtaḥ ṣoḍaśātmā\nbibhratpṛthaṅnāmabhi rūpabhedamantarbahiṣṭvaṁ ca puraistanoti || 5 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दुःखं सुखं व्यतिरिक्तं च तीव्रं कालोपपन्नं फलमाव्यनक्ति\nआलिङ्ग्य मायारचितान्तरात्मा स्वदेहिनं संसृतिचक्रकूटः ॥ ६ ॥",
+      "iast": "duḥkhaṁ sukhaṁ vyatiriktaṁ ca tīvraṁ kālopapannaṁ phalamāvyanakti\nāliṅgya māyāracitāntarātmā svadehinaṁ saṁsṛticakrakūṭaḥ || 6 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तावानयं व्यवहारः सदाविः क्षेत्रज्ञसाक्ष्यो भवति स्थूलसूक्ष्मः\nतस्मान्मनो लिङ्गमदो वदन्ति गुणागुणत्वस्य परावरस्य ॥ ७ ॥",
+      "iast": "tāvānayaṁ vyavahāraḥ sadāviḥ kṣetrajñasākṣyo bhavati sthūlasūkṣmaḥ\ntasmānmano liṅgamado vadanti guṇāguṇatvasya parāvarasya || 7 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "गुणानुरक्तं व्यसनाय जन्तोः क्षेमाय नैर्गुण्यमथो मनः स्यात्\nयथा प्रदीपो घृतवर्तिमश्नन्शिखाः सधूमा भजति ह्यन्यदा स्वम्\nपदं तथा गुणकर्मानुबद्धं वृत्तीर्मनः श्रयतेऽन्यत्र तत्त्वम् ॥ ८ ॥",
+      "iast": "guṇānuraktaṁ vyasanāya jantoḥ kṣemāya nairguṇyamatho manaḥ syāt\nyathā pradīpo ghṛtavartimaśnanśikhāḥ sadhūmā bhajati hyanyadā svam\npadaṁ tathā guṇakarmānubaddhaṁ vṛttīrmanaḥ śrayate'nyatra tattvam || 8 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एकादशासन्मनसो हि वृत्तय आकूतयः पञ्च धियोऽभिमानः\nमात्राणि कर्माणि पुरं च तासां वदन्ति हैकादश वीर भूमीः ॥ ९ ॥",
+      "iast": "ekādaśāsanmanaso hi vṛttaya ākūtayaḥ pañca dhiyo'bhimānaḥ\nmātrāṇi karmāṇi puraṁ ca tāsāṁ vadanti haikādaśa vīra bhūmīḥ || 9 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "गन्धाकृतिस्पर्शरसश्रवांसि विसर्गरत्यर्त्यभिजल्पशिल्पाः\nएकादशं स्वीकरणं ममेति शय्यामहं द्वादशमेक आहुः ॥ १० ॥",
+      "iast": "gandhākṛtisparśarasaśravāṁsi visargaratyartyabhijalpaśilpāḥ\nekādaśaṁ svīkaraṇaṁ mameti śayyāmahaṁ dvādaśameka āhuḥ || 10 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "द्रव्यस्वभावाशयकर्मकालैरेकादशामी मनसो विकाराः\nसहस्रशः शतशः कोटिशश्च क्षेत्रज्ञतो न मिथो न स्वतः स्युः ॥ ११ ॥",
+      "iast": "dravyasvabhāvāśayakarmakālairekādaśāmī manaso vikārāḥ\nsahasraśaḥ śataśaḥ koṭiśaśca kṣetrajñato na mitho na svataḥ syuḥ || 11 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "क्षेत्रज्ञ एता मनसो विभूतीर्जीवस्य मायारचितस्य नित्याः\nआविर्हिताः क्वापि तिरोहिताश्च शुद्धो विचष्टे ह्यविशुद्धकर्तुः ॥ १२ ॥",
+      "iast": "kṣetrajña etā manaso vibhūtīrjīvasya māyāracitasya nityāḥ\nāvirhitāḥ kvāpi tirohitāśca śuddho vicaṣṭe hyaviśuddhakartuḥ || 12 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "क्षेत्रज्ञ आत्मा पुरुषः पुराणः साक्षात्स्वयं ज्योतिरजः परेशः\nनारायणो भगवान्वासुदेवः स्वमाययात्मन्यवधीयमानः ॥ १३ ॥",
+      "iast": "kṣetrajña ātmā puruṣaḥ purāṇaḥ sākṣātsvayaṁ jyotirajaḥ pareśaḥ\nnārāyaṇo bhagavānvāsudevaḥ svamāyayātmanyavadhīyamānaḥ || 13 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथानिलः स्थावरजङ्गमानामात्मस्वरूपेण निविष्ट ईशेत्\nएवं परो भगवान्वासुदेवः क्षेत्रज्ञ आत्मेदमनुप्रविष्टः ॥ १४ ॥",
+      "iast": "yathānilaḥ sthāvarajaṅgamānāmātmasvarūpeṇa niviṣṭa īśet\nevaṁ paro bhagavānvāsudevaḥ kṣetrajña ātmedamanupraviṣṭaḥ || 14 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न यावदेतां तनुभृन्नेन्द्र विधूय मायां वयुनोदयेन\nविमुक्तसङ्गो जितषट्सपत्नो वेदात्मतत्त्वं भ्रमतीह तावत् ॥ १५ ॥",
+      "iast": "na yāvadetāṁ tanubhṛnnendra vidhūya māyāṁ vayunodayena\nvimuktasaṅgo jitaṣaṭsapatno vedātmatattvaṁ bhramatīha tāvat || 15 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न यावदेतन्मन आत्मलिङ्गं संसारतापावपनं जनस्य\nयच्छोकमोहामयरागलोभ वैरानुबन्धं ममतां विधत्ते ॥ १६ ॥",
+      "iast": "na yāvadetanmana ātmaliṅgaṁ saṁsāratāpāvapanaṁ janasya\nyacchokamohāmayarāgalobha vairānubandhaṁ mamatāṁ vidhatte || 16 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    },
+    {
+      "ref": "5.11.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भ्रातृव्यमेनं तददभ्रवीर्यमुपेक्षयाध्येधितमप्रमत्तः\nगुरोर्हरेश्चरणोपासनास्त्रो जहि व्यलीकं स्वयमात्ममोषम् ॥ १७ ॥",
+      "iast": "bhrātṛvyamenaṁ tadadabhravīryamupekṣayādhyedhitamapramattaḥ\ngurorhareścaraṇopāsanāstro jahi vyalīkaṁ svayamātmamoṣam || 17 ||",
+      "metadata": {
+        "speaker_surface": "ब्राह्मण"
+      }
+    }
+  ]
+}

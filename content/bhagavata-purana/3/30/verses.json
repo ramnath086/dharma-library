@@ -1,0 +1,305 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 3.30 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A9%E0%A5%A6), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A9%E0%A5%A6",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः ३०",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 19130,
+    "revid": 261259,
+    "timestamp": "2020-07-21T02:43:22Z",
+    "sha1": "fb3b1f81c1fb33c579fb4e6afdbae7916fd27135",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः ३०"
+  },
+  "section": {
+    "canto": {
+      "ref": "3",
+      "ordinal": 3,
+      "title_iast": "Skandha 3",
+      "title_sa": "स्कन्धः ३"
+    },
+    "chapter": {
+      "ref": "3.30",
+      "ordinal": 30,
+      "title_iast": "Adhyāya 30",
+      "title_sa": "अध्यायः ३०"
+    }
+  },
+  "verses": [
+    {
+      "ref": "3.30.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कपिल उवाच -\nतस्यैतस्य जनो नूनं नायं वेदोरुविक्रमम् ।\nकाल्यमानोऽपि बलिनो वायोरिव घनावलिः ॥ १ ॥",
+      "iast": "kapila uvāca -\ntasyaitasya jano nūnaṁ nāyaṁ vedoruvikramam |\nkālyamāno'pi balino vāyoriva ghanāvaliḥ || 1 ||"
+    },
+    {
+      "ref": "3.30.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यं यं अर्थमुपादत्ते दुःखेन सुखहेतवे ।\nतं तं धुनोति भगवान् पुमान्छोचति यत्कृते ॥ २ ॥",
+      "iast": "yaṁ yaṁ arthamupādatte duḥkhena sukhahetave |\ntaṁ taṁ dhunoti bhagavān pumānchocati yatkṛte || 2 ||"
+    },
+    {
+      "ref": "3.30.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदध्रुवस्य देहस्य सानुबन्धस्य दुर्मतिः ।\nध्रुवाणि मन्यते मोहाद् गृहक्षेत्रवसूनि च ॥ ३ ॥",
+      "iast": "yadadhruvasya dehasya sānubandhasya durmatiḥ |\ndhruvāṇi manyate mohād gṛhakṣetravasūni ca || 3 ||"
+    },
+    {
+      "ref": "3.30.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जन्तुर्वै भव एतस्मिन् यां यां योनिमनुव्रजेत् ।\nतस्यां तस्यां स लभते निर्वृतिं न विरज्यते ॥ ४ ॥",
+      "iast": "janturvai bhava etasmin yāṁ yāṁ yonimanuvrajet |\ntasyāṁ tasyāṁ sa labhate nirvṛtiṁ na virajyate || 4 ||"
+    },
+    {
+      "ref": "3.30.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नरकस्थोऽपि देहं वै न पुमान् त्यक्तुमिच्छति ।\nनारक्यां निर्वृतौ सत्यां देवमायाविमोहितः ॥ ५ ॥",
+      "iast": "narakastho'pi dehaṁ vai na pumān tyaktumicchati |\nnārakyāṁ nirvṛtau satyāṁ devamāyāvimohitaḥ || 5 ||"
+    },
+    {
+      "ref": "3.30.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आत्मजायासुतागार पशुद्रविण बन्धुषु ।\nनिरूढमूलहृदय आत्मानं बहु मन्यते ॥ ६ ॥",
+      "iast": "ātmajāyāsutāgāra paśudraviṇa bandhuṣu |\nnirūḍhamūlahṛdaya ātmānaṁ bahu manyate || 6 ||"
+    },
+    {
+      "ref": "3.30.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सन्दह्यमानसर्वाङ्ग एषां उद्वहनाधिना ।\nकरोति अविरतं मूढो दुरितानि दुराशयः ॥ ७ ॥",
+      "iast": "sandahyamānasarvāṅga eṣāṁ udvahanādhinā |\nkaroti avirataṁ mūḍho duritāni durāśayaḥ || 7 ||"
+    },
+    {
+      "ref": "3.30.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आक्षिप्तात्मेन्द्रियः स्त्रीणां असतीनां च मायया ।\nरहो रचितयालापैः शिशूनां कलभाषिणाम् ॥ ८ ॥",
+      "iast": "ākṣiptātmendriyaḥ strīṇāṁ asatīnāṁ ca māyayā |\nraho racitayālāpaiḥ śiśūnāṁ kalabhāṣiṇām || 8 ||"
+    },
+    {
+      "ref": "3.30.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "गृहेषु कूटधर्मेषु दुःखतन्त्रेष्वतन्द्रितः ।\nकुर्वन् दुखप्रतीकारं सुखवन्मन्यते गृही ॥ ९ ॥",
+      "iast": "gṛheṣu kūṭadharmeṣu duḥkhatantreṣvatandritaḥ |\nkurvan dukhapratīkāraṁ sukhavanmanyate gṛhī || 9 ||"
+    },
+    {
+      "ref": "3.30.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अर्थैरापादितैर्गुर्व्या हिंसयेतः ततश्च तान् ।\nपुष्णाति येषां पोषेण शेषभुग्यात्यधः स्वयम् ॥ १० ॥",
+      "iast": "arthairāpāditairgurvyā hiṁsayetaḥ tataśca tān |\npuṣṇāti yeṣāṁ poṣeṇa śeṣabhugyātyadhaḥ svayam || 10 ||"
+    },
+    {
+      "ref": "3.30.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वार्तायां लुप्यमानायां आरब्धायां पुनः पुनः ।\nलोभाभिभूतो निःसत्त्वः परार्थे कुरुते स्पृहाम् ॥ ११ ॥",
+      "iast": "vārtāyāṁ lupyamānāyāṁ ārabdhāyāṁ punaḥ punaḥ |\nlobhābhibhūto niḥsattvaḥ parārthe kurute spṛhām || 11 ||"
+    },
+    {
+      "ref": "3.30.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कुटुम्बभरणाकल्पो मन्दभाग्यो वृथोद्यमः ।\nश्रिया विहीनः कृपणो ध्यायन् श्वसिति मूढधीः ॥ १२ ॥",
+      "iast": "kuṭumbabharaṇākalpo mandabhāgyo vṛthodyamaḥ |\nśriyā vihīnaḥ kṛpaṇo dhyāyan śvasiti mūḍhadhīḥ || 12 ||"
+    },
+    {
+      "ref": "3.30.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं स्वभरणाकल्पं तत्कलत्रादयस्तथा ।\nनाद्रियन्ते यथा पूर्वं कीनाशा इव गोजरम् ॥ १३ ॥",
+      "iast": "evaṁ svabharaṇākalpaṁ tatkalatrādayastathā |\nnādriyante yathā pūrvaṁ kīnāśā iva gojaram || 13 ||"
+    },
+    {
+      "ref": "3.30.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत्राप्यजातनिर्वेदो भ्रियमाणः स्वयम्भृतैः ।\nजरयोपात्तवैरूप्यो मरणाभिमुखो गृहे ॥ १४ ॥",
+      "iast": "tatrāpyajātanirvedo bhriyamāṇaḥ svayambhṛtaiḥ |\njarayopāttavairūpyo maraṇābhimukho gṛhe || 14 ||"
+    },
+    {
+      "ref": "3.30.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आस्तेऽवमत्योपन्यस्तं गृहपाल इवाहरन् ।\nआमयाव्यप्रदीप्ताग्निः अल्पाहारोऽल्पचेष्टितः ॥ १५ ॥",
+      "iast": "āste'vamatyopanyastaṁ gṛhapāla ivāharan |\nāmayāvyapradīptāgniḥ alpāhāro'lpaceṣṭitaḥ || 15 ||"
+    },
+    {
+      "ref": "3.30.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वायुनोत्क्रमतोत्तारः कफसंरुद्धनाडिकः ।\nकासश्वासकृतायासः कण्ठे घुरघुरायते ॥ १६ ॥",
+      "iast": "vāyunotkramatottāraḥ kaphasaṁruddhanāḍikaḥ |\nkāsaśvāsakṛtāyāsaḥ kaṇṭhe ghuraghurāyate || 16 ||"
+    },
+    {
+      "ref": "3.30.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "शयानः परिशोचद्भिः परिवीतः स्वबन्धुभिः ।\nवाच्यमानोऽपि न ब्रूते कालपाशवशं गतः ॥ १७ ॥",
+      "iast": "śayānaḥ pariśocadbhiḥ parivītaḥ svabandhubhiḥ |\nvācyamāno'pi na brūte kālapāśavaśaṁ gataḥ || 17 ||"
+    },
+    {
+      "ref": "3.30.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं कुटुम्बभरणे व्यापृतात्माजितेन्द्रियः ।\nम्रियते रुदतां स्वानां उरुवेदनयास्तधीः ॥ १८ ॥",
+      "iast": "evaṁ kuṭumbabharaṇe vyāpṛtātmājitendriyaḥ |\nmriyate rudatāṁ svānāṁ uruvedanayāstadhīḥ || 18 ||"
+    },
+    {
+      "ref": "3.30.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यमदूतौ तदा प्राप्तौ भीमौ सरभसेक्षणौ ।\nस दृष्ट्वा त्रस्तहृदयः शकृन् मूत्रं विमुञ्चति ॥ १९ ॥",
+      "iast": "yamadūtau tadā prāptau bhīmau sarabhasekṣaṇau |\nsa dṛṣṭvā trastahṛdayaḥ śakṛn mūtraṁ vimuñcati || 19 ||"
+    },
+    {
+      "ref": "3.30.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यातनादेह आवृत्य पाशैर्बद्ध्वा गले बलात् ।\nनयतो दीर्घमध्वानं दण्ड्यं राजभटा यथा ॥ २० ॥",
+      "iast": "yātanādeha āvṛtya pāśairbaddhvā gale balāt |\nnayato dīrghamadhvānaṁ daṇḍyaṁ rājabhaṭā yathā || 20 ||"
+    },
+    {
+      "ref": "3.30.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तयोर्निर्भिन्नहृदयः तर्जनैर्जातवेपथुः ।\nपथि श्वभिर्भक्ष्यमाण आर्तोऽघं स्वमनुस्मरन् ॥ २१ ॥",
+      "iast": "tayornirbhinnahṛdayaḥ tarjanairjātavepathuḥ |\npathi śvabhirbhakṣyamāṇa ārto'ghaṁ svamanusmaran || 21 ||"
+    },
+    {
+      "ref": "3.30.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "क्षुत्तृट्परीतोऽर्कदवानलानिलैः\nसन्तप्यमानः पथि तप्तवालुके ।\nकृच्छ्रेण पृष्ठे कशया च ताडितः\nचलत्यशक्तोऽपि निराश्रमोदके ॥ २२ ॥",
+      "iast": "kṣuttṛṭparīto'rkadavānalānilaiḥ\nsantapyamānaḥ pathi taptavāluke |\nkṛcchreṇa pṛṣṭhe kaśayā ca tāḍitaḥ\ncalatyaśakto'pi nirāśramodake || 22 ||"
+    },
+    {
+      "ref": "3.30.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत्र तत्र पतन्छ्रान्तो मूर्च्छितः पुनरुत्थितः ।\nपथा पापीयसा नीतस्तरसा यमसादनम् ॥ २३ ॥",
+      "iast": "tatra tatra patanchrānto mūrcchitaḥ punarutthitaḥ |\npathā pāpīyasā nītastarasā yamasādanam || 23 ||"
+    },
+    {
+      "ref": "3.30.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "योजनानां सहस्राणि नवतिं नव चाध्वनः ।\nत्रिभिर्मुहूर्तैर्द्वाभ्यां वा नीतः प्राप्नोति यातनाः ॥ २४ ॥",
+      "iast": "yojanānāṁ sahasrāṇi navatiṁ nava cādhvanaḥ |\ntribhirmuhūrtairdvābhyāṁ vā nītaḥ prāpnoti yātanāḥ || 24 ||"
+    },
+    {
+      "ref": "3.30.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आदीपनं स्वगात्राणां वेष्टयित्वोल्मुकादिभिः ।\nआत्ममांसादनं क्वापि स्वकृत्तं परतोऽपि वा ॥ २५ ॥",
+      "iast": "ādīpanaṁ svagātrāṇāṁ veṣṭayitvolmukādibhiḥ |\nātmamāṁsādanaṁ kvāpi svakṛttaṁ parato'pi vā || 25 ||"
+    },
+    {
+      "ref": "3.30.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जीवतश्चान्त्राभ्युद्धारः श्वगृध्रैर्यमसादने ।\nसर्पवृश्चिक दंशाद्यैः दशद्भिश्चात्मवैशसम् ॥ २६ ॥",
+      "iast": "jīvataścāntrābhyuddhāraḥ śvagṛdhrairyamasādane |\nsarpavṛścika daṁśādyaiḥ daśadbhiścātmavaiśasam || 26 ||"
+    },
+    {
+      "ref": "3.30.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कृन्तनं चावयवशो गजादिभ्यो भिदापनम् ।\nपातनं गिरिशृङ्गेभ्यो रोधनं चाम्बुगर्तयोः ॥ २७ ॥",
+      "iast": "kṛntanaṁ cāvayavaśo gajādibhyo bhidāpanam |\npātanaṁ giriśṛṅgebhyo rodhanaṁ cāmbugartayoḥ || 27 ||"
+    },
+    {
+      "ref": "3.30.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यास्तामिस्रान्धतामिस्रा रौरवाद्याश्च यातनाः ।\nभुङ्क्ते नरो वा नारी वा मिथः सङ्गेन निर्मिताः ॥ २८ ॥",
+      "iast": "yāstāmisrāndhatāmisrā rauravādyāśca yātanāḥ |\nbhuṅkte naro vā nārī vā mithaḥ saṅgena nirmitāḥ || 28 ||"
+    },
+    {
+      "ref": "3.30.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अत्रैव नरकः स्वर्ग इति मातः प्रचक्षते ।\nया यातना वै नारक्यः ता इहाप्युपलक्षिताः ॥ २९ ॥",
+      "iast": "atraiva narakaḥ svarga iti mātaḥ pracakṣate |\nyā yātanā vai nārakyaḥ tā ihāpyupalakṣitāḥ || 29 ||"
+    },
+    {
+      "ref": "3.30.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं कुटुम्बं बिभ्राण उदरम्भर एव वा ।\nविसृज्येहोभयं प्रेत्य भुङ्क्ते तत्फलमीदृशम् ॥ ३० ॥",
+      "iast": "evaṁ kuṭumbaṁ bibhrāṇa udarambhara eva vā |\nvisṛjyehobhayaṁ pretya bhuṅkte tatphalamīdṛśam || 30 ||"
+    },
+    {
+      "ref": "3.30.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एकः प्रपद्यते ध्वान्तं हित्वेदं स्वकलेवरम् ।\nकुशलेतरपाथेयो भूतद्रोहेण यद् भृतम् ॥ ३१ ॥",
+      "iast": "ekaḥ prapadyate dhvāntaṁ hitvedaṁ svakalevaram |\nkuśaletarapātheyo bhūtadroheṇa yad bhṛtam || 31 ||"
+    },
+    {
+      "ref": "3.30.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दैवेनासादितं तस्य शमलं निरये पुमान् ।\nभुङ्क्ते कुटुम्बपोषस्य हृतवित्त इवातुरः ॥ ३२ ॥",
+      "iast": "daivenāsāditaṁ tasya śamalaṁ niraye pumān |\nbhuṅkte kuṭumbapoṣasya hṛtavitta ivāturaḥ || 32 ||"
+    },
+    {
+      "ref": "3.30.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "केवलेन हि अधर्मेण कुटुम्बभरणोत्सुकः ।\nयाति जीवोऽन्धतामिस्रं चरमं तमसः पदम् ॥ ३३ ॥",
+      "iast": "kevalena hi adharmeṇa kuṭumbabharaṇotsukaḥ |\nyāti jīvo'ndhatāmisraṁ caramaṁ tamasaḥ padam || 33 ||"
+    },
+    {
+      "ref": "3.30.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अधस्तात् नरलोकस्य यावतीर्यातनादयः ।\nक्रमशः समनुक्रम्य पुनरत्राव्रजेच्छुचिः ॥ ३४ ॥",
+      "iast": "adhastāt naralokasya yāvatīryātanādayaḥ |\nkramaśaḥ samanukramya punaratrāvrajecchuciḥ || 34 ||"
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 3.7 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AD), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A9/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AD",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः ७",
+    "retrieved": "2026-09-22T14:55:18Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 19073,
+    "revid": 261239,
+    "timestamp": "2020-07-21T02:36:11Z",
+    "sha1": "6d768083b288b9f2d04ba692fc5714421bb448a0",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ३/अध्यायः ७"
+  },
+  "section": {
+    "canto": {
+      "ref": "3",
+      "ordinal": 3,
+      "title_iast": "Skandha 3",
+      "title_sa": "स्कन्धः ३"
+    },
+    "chapter": {
+      "ref": "3.7",
+      "ordinal": 7,
+      "title_iast": "Adhyāya 7",
+      "title_sa": "अध्यायः ७"
+    }
+  },
+  "verses": [
+    {
+      "ref": "3.7.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीशुक उवाच -\nएवं ब्रुवाणं मैत्रेयं द्वैपायनसुतो बुधः ।\nप्रीणयन्निव भारत्या विदुरः प्रत्यभाषत ॥ १ ॥",
+      "iast": "śrīśuka uvāca -\nevaṁ bruvāṇaṁ maitreyaṁ dvaipāyanasuto budhaḥ |\nprīṇayanniva bhāratyā viduraḥ pratyabhāṣata || 1 ||"
+    },
+    {
+      "ref": "3.7.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ब्रह्मन् कथं भगवतः चिन्मात्रस्याविकारिणः ।\nलीलया चापि युज्येरन् निर्गुणस्य गुणाः क्रियाः ॥ २ ॥",
+      "iast": "brahman kathaṁ bhagavataḥ cinmātrasyāvikāriṇaḥ |\nlīlayā cāpi yujyeran nirguṇasya guṇāḥ kriyāḥ || 2 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "क्रीडायां उद्यमोऽर्भस्य कामश्चिक्रीडिषान्यतः ।\nस्वतस्तृप्तस्य च कथं निवृत्तस्य सदान्यतः ॥ ३ ॥",
+      "iast": "krīḍāyāṁ udyamo'rbhasya kāmaścikrīḍiṣānyataḥ |\nsvatastṛptasya ca kathaṁ nivṛttasya sadānyataḥ || 3 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अस्राक्षीत् भगवान् विश्वं गुणमय्याऽऽत्ममायया ।\nतया संस्थापयत्येतद् भूयः प्रत्यपिधास्यति ॥ ४ ॥",
+      "iast": "asrākṣīt bhagavān viśvaṁ guṇamayyā''tmamāyayā |\ntayā saṁsthāpayatyetad bhūyaḥ pratyapidhāsyati || 4 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "देशतः कालतो योऽसौ अवस्थातः स्वतोऽन्यतः ।\nअविलुप्तावबोधात्मा स युज्येताजया कथम् ॥ ५ ॥",
+      "iast": "deśataḥ kālato yo'sau avasthātaḥ svato'nyataḥ |\naviluptāvabodhātmā sa yujyetājayā katham || 5 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भगवानेक एवैष सर्वक्षेत्रेष्ववस्थितः ।\nअमुष्य दुर्भगत्वं वा क्लेशो वा कर्मभिः कुतः ॥ ६ ॥",
+      "iast": "bhagavāneka evaiṣa sarvakṣetreṣvavasthitaḥ |\namuṣya durbhagatvaṁ vā kleśo vā karmabhiḥ kutaḥ || 6 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतस्मिन्मे मनो विद्वन् खिद्यतेऽज्ञानसङ्कटे ।\nतन्नः पराणुद विभो कश्मलं मानसं महत् ॥ ७ ॥",
+      "iast": "etasminme mano vidvan khidyate'jñānasaṅkaṭe |\ntannaḥ parāṇuda vibho kaśmalaṁ mānasaṁ mahat || 7 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीशुक उवाच -\nस इत्थं चोदितः क्षत्त्रा तत्त्वजिज्ञासुना मुनिः ।\nप्रत्याह भगवच्चित्तः स्मयन्निव गतस्मयः ॥ ८ ॥",
+      "iast": "śrīśuka uvāca -\nsa itthaṁ coditaḥ kṣattrā tattvajijñāsunā muniḥ |\npratyāha bhagavaccittaḥ smayanniva gatasmayaḥ || 8 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मैत्रेय उवाच -\nसेयं भगवतो माया यन्नयेन विरुध्यते ।\nईश्वरस्य विमुक्तस्य कार्पण्यमुत बन्धनम् ॥ ९ ॥",
+      "iast": "maitreya uvāca -\nseyaṁ bhagavato māyā yannayena virudhyate |\nīśvarasya vimuktasya kārpaṇyamuta bandhanam || 9 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदर्थेन विनामुष्य पुंस आत्मविपर्ययः ।\nप्रतीयत उपद्रष्टुः स्वशिरश्छेदनादिकः ॥ १० ॥",
+      "iast": "yadarthena vināmuṣya puṁsa ātmaviparyayaḥ |\npratīyata upadraṣṭuḥ svaśiraśchedanādikaḥ || 10 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यथा जले चन्द्रमसः कम्पादिस्तत्कृतो गुणः ।\nदृश्यतेऽसन्नपि द्रष्टुः आत्मनोऽनात्मनो गुणः ॥ ११ ॥",
+      "iast": "yathā jale candramasaḥ kampādistatkṛto guṇaḥ |\ndṛśyate'sannapi draṣṭuḥ ātmano'nātmano guṇaḥ || 11 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स वै निवृत्तिधर्मेण वासुदेवानुकम्पया ।\nभगवद्भक्तियोगेन तिरोधत्ते शनैरिह ॥ १२ ॥",
+      "iast": "sa vai nivṛttidharmeṇa vāsudevānukampayā |\nbhagavadbhaktiyogena tirodhatte śanairiha || 12 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदेन्द्रियोपरामोऽथ द्रष्ट्रात्मनि परे हरौ ।\nविलीयन्ते तदा क्लेशाः संसुप्तस्येव कृत्स्नशः ॥ १३ ॥",
+      "iast": "yadendriyoparāmo'tha draṣṭrātmani pare harau |\nvilīyante tadā kleśāḥ saṁsuptasyeva kṛtsnaśaḥ || 13 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अशेषसङ्क्लेशशमं विधत्ते\nगुणानुवादश्रवणं मुरारेः ।\nकिं वा पुनस्तच्चरणारविन्द\nपरागसेवारतिरात्मलब्धा ॥ १४ ॥",
+      "iast": "aśeṣasaṅkleśaśamaṁ vidhatte\nguṇānuvādaśravaṇaṁ murāreḥ |\nkiṁ vā punastaccaraṇāravinda\nparāgasevāratirātmalabdhā || 14 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विदुर उवाच -\nसञ्छिन्नः संशयो मह्यं तव सूक्तासिना विभो ।\nउभयत्रापि भगवन् मनो मे सम्प्रधावति ॥ १५ ॥",
+      "iast": "vidura uvāca -\nsañchinnaḥ saṁśayo mahyaṁ tava sūktāsinā vibho |\nubhayatrāpi bhagavan mano me sampradhāvati || 15 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "साध्वेतद् व्याहृतं विद्वन् आत्ममायायनं हरेः ।\nआभात्यपार्थं निर्मूलं विश्वमूलं न यद्बहिः ॥ १६ ॥",
+      "iast": "sādhvetad vyāhṛtaṁ vidvan ātmamāyāyanaṁ hareḥ |\nābhātyapārthaṁ nirmūlaṁ viśvamūlaṁ na yadbahiḥ || 16 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यश्च मूढतमो लोके यश्च बुद्धेः परं गतः ।\nतावुभौ सुखमेधेते क्लिश्यत्यन्तरितो जनः ॥ १७ ॥",
+      "iast": "yaśca mūḍhatamo loke yaśca buddheḥ paraṁ gataḥ |\ntāvubhau sukhamedhete kliśyatyantarito janaḥ || 17 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अर्थाभावं विनिश्चित्य प्रतीतस्यापि नात्मनः ।\nतां चापि युष्मच्चरण सेवयाहं पराणुदे ॥ १८ ॥",
+      "iast": "arthābhāvaṁ viniścitya pratītasyāpi nātmanaḥ |\ntāṁ cāpi yuṣmaccaraṇa sevayāhaṁ parāṇude || 18 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यत्सेवया भगवतः कूटस्थस्य मधुद्विषः ।\nरतिरासो भवेत्तीव्रः पादयोर्व्यसनार्दनः ॥ १९ ॥",
+      "iast": "yatsevayā bhagavataḥ kūṭasthasya madhudviṣaḥ |\nratirāso bhavettīvraḥ pādayorvyasanārdanaḥ || 19 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दुरापा ह्यल्पतपसः सेवा वैकुण्ठवर्त्मसु ।\nयत्रोपगीयते नित्यं देवदेवो जनार्दनः ॥ २० ॥",
+      "iast": "durāpā hyalpatapasaḥ sevā vaikuṇṭhavartmasu |\nyatropagīyate nityaṁ devadevo janārdanaḥ || 20 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सृष्ट्वाग्रे महदादीनि सविकाराणि अनुक्रमात् ।\nतेभ्यो विराजं उद्धृत्य तमनु प्राविशद्विभुः ॥ २१ ॥",
+      "iast": "sṛṣṭvāgre mahadādīni savikārāṇi anukramāt |\ntebhyo virājaṁ uddhṛtya tamanu prāviśadvibhuḥ || 21 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यमाहुराद्यं पुरुषं सहस्राङ्घ्र्यूरुबाहुकम् ।\nयत्र विश्व इमे लोकाः सविकाशं समासते ॥ २२ ॥",
+      "iast": "yamāhurādyaṁ puruṣaṁ sahasrāṅghryūrubāhukam |\nyatra viśva ime lokāḥ savikāśaṁ samāsate || 22 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्मिन् दशविधः प्राणः सेन्द्रियार्थेन्द्रियः त्रिवृत् ।\nत्वयेरितो यतो वर्णाः तद्विभूतीर्वदस्व नः ॥ २३ ॥",
+      "iast": "yasmin daśavidhaḥ prāṇaḥ sendriyārthendriyaḥ trivṛt |\ntvayerito yato varṇāḥ tadvibhūtīrvadasva naḥ || 23 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यत्र पुत्रैश्च पौत्रैश्च नप्तृभिः सह गोत्रजैः ।\nप्रजा विचित्राकृतय आसन्याभिरिदं ततम् ॥ २४ ॥",
+      "iast": "yatra putraiśca pautraiśca naptṛbhiḥ saha gotrajaiḥ |\nprajā vicitrākṛtaya āsanyābhiridaṁ tatam || 24 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्रजापतीनां स पतिः चकॢपे कान् प्रजापतीन् ।\nसर्गांश्चैवानुसर्गांश्च मनून् मन्वन्तराधिपान् ॥ २५ ॥",
+      "iast": "prajāpatīnāṁ sa patiḥ cakḷpe kān prajāpatīn |\nsargāṁścaivānusargāṁśca manūn manvantarādhipān || 25 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतेषामपि वंशांश्च वंशानुचरितानि च ।\nउपर्यधश्च ये लोका भूमेर्मित्रात्मजासते ॥ २६ ॥",
+      "iast": "eteṣāmapi vaṁśāṁśca vaṁśānucaritāni ca |\nuparyadhaśca ye lokā bhūmermitrātmajāsate || 26 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तेषां संस्थां प्रमाणं च भूर्लोकस्य च वर्णय ।\nतिर्यङ्मानुषदेवानां सरीसृप पतत्त्रिणाम् ।\nवद नः सर्गसंव्यूहं गार्भस्वेदद्विजोद्भिदाम् ॥ २७ ॥",
+      "iast": "teṣāṁ saṁsthāṁ pramāṇaṁ ca bhūrlokasya ca varṇaya |\ntiryaṅmānuṣadevānāṁ sarīsṛpa patattriṇām |\nvada naḥ sargasaṁvyūhaṁ gārbhasvedadvijodbhidām || 27 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "गुणावतारैर्विश्वस्य सर्गस्थित्यप्ययाश्रयम् ।\nसृजतः श्रीनिवासस्य व्याचक्ष्वोदारविक्रमम् ॥ २८ ॥",
+      "iast": "guṇāvatārairviśvasya sargasthityapyayāśrayam |\nsṛjataḥ śrīnivāsasya vyācakṣvodāravikramam || 28 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वर्णाश्रमविभागांश्च रूपशीलस्वभावतः ।\nऋषीणां जन्मकर्माणि वेदस्य च विकर्षणम् ॥ २९ ॥",
+      "iast": "varṇāśramavibhāgāṁśca rūpaśīlasvabhāvataḥ |\nṛṣīṇāṁ janmakarmāṇi vedasya ca vikarṣaṇam || 29 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यज्ञस्य च वितानानि योगस्य च पथः प्रभो ।\nनैष्कर्म्यस्य च साङ्ख्यस्य तंत्रं वा भगवत्स्मृतम् ॥ ३० ॥",
+      "iast": "yajñasya ca vitānāni yogasya ca pathaḥ prabho |\nnaiṣkarmyasya ca sāṅkhyasya taṁtraṁ vā bhagavatsmṛtam || 30 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पाषण्डपथवैषम्यं प्रतिलोमनिवेशनम् ।\nजीवस्य गतयो याश्च यावतीर्गुणकर्मजाः ॥ ३१ ॥",
+      "iast": "pāṣaṇḍapathavaiṣamyaṁ pratilomaniveśanam |\njīvasya gatayo yāśca yāvatīrguṇakarmajāḥ || 31 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "धर्मार्थकाममोक्षाणां निमित्तान्यविरोधतः ।\nवार्ताया दण्डनीतेश्च श्रुतस्य च विधिं पृथक् ॥ ३२ ॥",
+      "iast": "dharmārthakāmamokṣāṇāṁ nimittānyavirodhataḥ |\nvārtāyā daṇḍanīteśca śrutasya ca vidhiṁ pṛthak || 32 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्राद्धस्य च विधिं ब्रह्मन् पितॄणां सर्गमेव च ।\nग्रहनक्षत्रताराणां कालावयवसंस्थितिम् ॥ ३३ ॥",
+      "iast": "śrāddhasya ca vidhiṁ brahman pitṝṇāṁ sargameva ca |\ngrahanakṣatratārāṇāṁ kālāvayavasaṁsthitim || 33 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दानस्य तपसो वापि यच्चेष्टापूर्तयोः फलम् ।\nप्रवासस्थस्य यो धर्मो यश्च पुंस उतापदि ॥ ३४ ॥",
+      "iast": "dānasya tapaso vāpi yacceṣṭāpūrtayoḥ phalam |\npravāsasthasya yo dharmo yaśca puṁsa utāpadi || 34 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "येन वा भगवान् तुस्तुष्येद् धर्मयोनिर्जनार्दनः ।\nसम्प्रसीदति वा येषां एतत् आख्याहि मेऽनघ ॥ ३५ ॥",
+      "iast": "yena vā bhagavān tustuṣyed dharmayonirjanārdanaḥ |\nsamprasīdati vā yeṣāṁ etat ākhyāhi me'nagha || 35 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अनुव्रतानां शिष्याणां पुत्राणां च द्विजोत्तम ।\nअनापृष्टमपि ब्रूयुः गुरवो दीनवत्सलाः ॥ ३६ ॥",
+      "iast": "anuvratānāṁ śiṣyāṇāṁ putrāṇāṁ ca dvijottama |\nanāpṛṣṭamapi brūyuḥ guravo dīnavatsalāḥ || 36 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तत्त्वानां भगवन् तेषां कतिधा प्रतिसङ्क्रमः ।\nतत्रेमं क उपासीरन् क उ स्विदनुशेरते ॥ ३७ ॥",
+      "iast": "tattvānāṁ bhagavan teṣāṁ katidhā pratisaṅkramaḥ |\ntatremaṁ ka upāsīran ka u svidanuśerate || 37 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पुरुषस्य च संस्थानं स्वरूपं वा परस्य च ।\nज्ञानं च नैगमं यत्तद् गुरुशिष्यप्रयोजनम् ॥ ३८ ॥",
+      "iast": "puruṣasya ca saṁsthānaṁ svarūpaṁ vā parasya ca |\njñānaṁ ca naigamaṁ yattad guruśiṣyaprayojanam || 38 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "निमित्तानि च तस्येह प्रोक्तान्यनघसूरिभिः ।\nस्वतो ज्ञानं कुतः पुंसां भक्तिर्वैराग्यमेव वा ॥ ३९ ॥",
+      "iast": "nimittāni ca tasyeha proktānyanaghasūribhiḥ |\nsvato jñānaṁ kutaḥ puṁsāṁ bhaktirvairāgyameva vā || 39 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतान्मे पृच्छतः प्रश्नान् हरेः कर्मविवित्सया ।\nब्रूहि मेऽज्ञस्य मित्रत्वात् अजया नष्टचक्षुषः ॥ ४० ॥",
+      "iast": "etānme pṛcchataḥ praśnān hareḥ karmavivitsayā |\nbrūhi me'jñasya mitratvāt ajayā naṣṭacakṣuṣaḥ || 40 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सर्वे वेदाश्च यज्ञाश्च तपो दानानि चानघ ।\nजीवाभयप्रदानस्य न कुर्वीरन् कलामपि ॥ ४१ ॥",
+      "iast": "sarve vedāśca yajñāśca tapo dānāni cānagha |\njīvābhayapradānasya na kurvīran kalāmapi || 41 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    },
+    {
+      "ref": "3.7.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीशुक उवाच -\nस इत्थं आपृष्टपुराणकल्पः\nकुरुप्रधानेन मुनिप्रधानः ।\nप्रवृद्धहर्षो भगवत्कथायां\nसञ्चोदितस्तं प्रहसन्निवाह ॥ ४२ ॥",
+      "iast": "śrīśuka uvāca -\nsa itthaṁ āpṛṣṭapurāṇakalpaḥ\nkurupradhānena munipradhānaḥ |\npravṛddhaharṣo bhagavatkathāyāṁ\nsañcoditastaṁ prahasannivāha || 42 ||",
+      "metadata": {
+        "speaker_surface": "विदुर"
+      }
+    }
+  ]
+}
