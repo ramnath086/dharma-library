@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:ui' show Size;
 
 import 'package:dharma_library/core/offline/local_store.dart';
 import 'package:dharma_library/core/providers.dart';
