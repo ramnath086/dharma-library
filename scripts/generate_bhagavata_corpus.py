@@ -248,7 +248,11 @@ def strip_wiki(text: str) -> str:
             continue
         if s.startswith("#"):
             continue
-        if COLOPHON.match(s) or CHAPTER_END.search(s):
+        if COLOPHON.match(s):
+            # Chapter is over. Trailing duplicate dumps (6.18 repeats 1। after
+            # the इति line) must not be parsed as more mūla.
+            break
+        if CHAPTER_END.search(s):
             continue
         if METER_LABEL.match(s):
             continue

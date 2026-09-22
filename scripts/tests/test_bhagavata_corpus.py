@@ -171,6 +171,17 @@ class ParserTests(unittest.TestCase):
         self.assertIn("पर्यगोपायत्", verses[0]["deva"])
         self.assertIn("तपस्व्याराधयां", verses[1]["deva"])
 
+    def test_duplicate_dump_after_colophon_is_ignored(self):
+        wiki = (
+            pathlib.Path(__file__).parent
+            / "fixtures"
+            / "bhagavata_6_18_duplicate_after_colophon.wiki"
+        ).read_text(encoding="utf-8")
+        verses = G.parse_wikitext(wiki, 6, 18)
+        self.assertEqual([v["ref"] for v in verses], ["6.18.77", "6.18.78"])
+        self.assertIn("त्रिदिवं", verses[0]["deva"])
+        self.assertNotIn("पृश्निस्तु", " ".join(v["deva"] for v in verses))
+
     def test_avagraha_colophon_is_not_a_verse(self):
         wiki = (
             pathlib.Path(__file__).parent / "fixtures" / "bhagavata_6_2_avagraha_colophon.wiki"

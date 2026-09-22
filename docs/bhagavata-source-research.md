@@ -62,7 +62,9 @@ Parser notes for this edition (fail closed; no invented Sanskrit):
   (`यथा १।`).
 * Two-line colophons (`इति …` then `प्रथमोऽध्यायः ॥ १ ॥` or
   `द्वितीयोध्याऽयः ॥ २ ॥` with avagraha; ZWNJ in `श्रीमद्‌भागवत`) are
-  dropped, not counted as verses. Meter labels like `(अनुष्टुप्)` are stripped.
+  dropped, not counted as verses. Text **after** the `इति श्रीमद्भागवत…`
+  line is truncated (6.18 repeats the chapter from `१।`). Meter labels like
+  `(अनुष्टुप्)` are stripped.
 * **Unnumbered opening śloka:** some chapters omit `॥ १ ॥` on the first mūla
   and start numbering at 2 (confirmed **1.7**, pageid 7996). The unnumbered
   Devanagari immediately before that marker, split on the last `उवाच`, is kept
