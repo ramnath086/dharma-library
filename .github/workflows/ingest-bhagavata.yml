@@ -206,9 +206,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -euo pipefail
+          set -euxo pipefail
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          du -sh content/bhagavata-purana content/generated/bhagavata-purana.sql app/assets/bundles/bhagavata-purana.json || true
           git add -A content/bhagavata-purana content/generated/bhagavata-purana.sql app/assets/bundles/bhagavata-purana.json
           if git diff --cached --quiet; then
             echo "corpus already on the branch"
@@ -220,5 +222,15 @@ jobs:
           print(f"committing {m.get('imported_chapter_count')} chapters / {m.get('imported_verse_count')} verses")
           PY
           git commit -m "content: complete Śrīmad Bhāgavata mūla from sa.wikisource.org (CC BY-SA 4.0)"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          if ! git push origin "HEAD:${GITHUB_REF_NAME}"; then
+            {
+              echo "### Corpus git push failed on \`${GITHUB_SHA:0:7}\`"
+              echo
+              echo '```'
+              git status
+              git log -3 --oneline
+              echo '```'
+            } > /tmp/corpus-git.md
+            gh api "repos/${GITHUB_REPOSITORY}/issues/12/comments" -F body=@/tmp/corpus-git.md || true
+            exit 1
+          fi
