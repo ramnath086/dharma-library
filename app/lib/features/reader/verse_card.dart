@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 
 import '../../core/db/models.dart';
 import '../../core/providers.dart';
+import '../audio/cue_player.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/translit/translit.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -22,6 +23,7 @@ class VerseCard extends ConsumerWidget {
     required this.verse,
     required this.editions,
     required this.workSlug,
+    this.workTitle,
     this.highlighted = false,
     this.compact = false,
     this.onPlay,
@@ -30,6 +32,7 @@ class VerseCard extends ConsumerWidget {
   final Verse verse;
   final List<Edition> editions;
   final String workSlug;
+  final String? workTitle;
   final bool highlighted;
   final bool compact;
   final VoidCallback? onPlay;
@@ -88,6 +91,24 @@ class VerseCard extends ConsumerWidget {
           if (verse.meter != null) Padding(padding: const EdgeInsets.only(left: 6), child: Text(verse.meter!, style: theme.textTheme.labelSmall?.copyWith(fontStyle: FontStyle.italic))),
           const Spacer(),
           if (onPlay != null && verse.audio.isNotEmpty) IconButton(icon: const Icon(Icons.play_arrow), tooltip: l.play, onPressed: onPlay, visualDensity: VisualDensity.compact),
+          if (verse.hasEditorialCue && s.devotionalSounds && s.slokaAudioCues)
+            IconButton(
+              icon: const Icon(Icons.notifications_active_outlined),
+              tooltip: l.playCue,
+              visualDensity: VisualDensity.compact,
+              onPressed: () async {
+                final asset = verse.cueAsset;
+                if (asset == null || asset.isEmpty) {
+                  if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.audioMissing)));
+                  return;
+                }
+                try {
+                  await ref.read(cuePlayerProvider).playAsset(asset, volume: s.soundVolume);
+                } catch (_) {
+                  if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.audioMissing)));
+                }
+              },
+            ),
           FutureBuilder<bool>(
             future: repo.isBookmarked(verse.id),
             builder: (c, snap) => IconButton(
@@ -183,7 +204,7 @@ class VerseCard extends ConsumerWidget {
   }
 
   String _shareText(String? base, String? iast, String? tr, Edition? trEd) {
-    final b = StringBuffer('Śrīmad Bhāgavatam ${verse.ref}\n\n');
+    final b = StringBuffer('${workTitle ?? workSlug} ${verse.ref}\n\n');
     if (base != null) b.writeln('$base\n');
     if (iast != null) b.writeln('$iast\n');
     if (tr != null) b.writeln(tr);

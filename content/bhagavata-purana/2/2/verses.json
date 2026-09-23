@@ -1,0 +1,329 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 2.2 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A8/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A8/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः २/अध्यायः २",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 18994,
+    "revid": 200166,
+    "timestamp": "2019-04-25T01:23:23Z",
+    "sha1": "e7e6d810f9af4733a32fa8f8f806c0160acdfa45",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः २/अध्यायः २"
+  },
+  "section": {
+    "canto": {
+      "ref": "2",
+      "ordinal": 2,
+      "title_iast": "Skandha 2",
+      "title_sa": "स्कन्धः २"
+    },
+    "chapter": {
+      "ref": "2.2",
+      "ordinal": 2,
+      "title_iast": "Adhyāya 2",
+      "title_sa": "अध्यायः २"
+    }
+  },
+  "verses": [
+    {
+      "ref": "2.2.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "एवं पुरा धारणयाऽऽत्मयोनिः\nनष्टां स्मृतिं प्रत्यवरुध्य तुष्टात् ।\nतथा ससर्जेदममोघदृष्टिः\nयथाप्ययात् प्राक् व्यवसायबुद्धिः ॥ १ ॥",
+      "iast": "evaṁ purā dhāraṇayā''tmayoniḥ\nnaṣṭāṁ smṛtiṁ pratyavarudhya tuṣṭāt |\ntathā sasarjedamamoghadṛṣṭiḥ\nyathāpyayāt prāk vyavasāyabuddhiḥ || 1 ||"
+    },
+    {
+      "ref": "2.2.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "शाब्दस्य हि ब्रह्मण एष पन्था\nयन्नामभिर्ध्यायति धीरपार्थैः ।\nपरिभ्रमन् तत्र न विन्दतेऽर्थान्\nमायामये वासनया शयानः ॥ २ ॥",
+      "iast": "śābdasya hi brahmaṇa eṣa panthā\nyannāmabhirdhyāyati dhīrapārthaiḥ |\nparibhraman tatra na vindate'rthān\nmāyāmaye vāsanayā śayānaḥ || 2 ||"
+    },
+    {
+      "ref": "2.2.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अतः कविर्नामसु यावदर्थः\nस्याद् अप्रमत्तो व्यवसायबुद्धिः ।\nसिद्धेऽन्यथार्थे न यतेत तत्र\nपरिश्रमं तत्र समीक्षमाणः ॥ ३ ॥",
+      "iast": "ataḥ kavirnāmasu yāvadarthaḥ\nsyād apramatto vyavasāyabuddhiḥ |\nsiddhe'nyathārthe na yateta tatra\npariśramaṁ tatra samīkṣamāṇaḥ || 3 ||"
+    },
+    {
+      "ref": "2.2.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "सत्यां क्षितौ किं कशिपोः प्रयासैः\nबाहौ स्वसिद्धे ह्युपबर्हणैः किम् ।\nसत्यञ्जलौ किं पुरुधान्नपात्र्या\nदिग्वल्कलादौ सति किं दुकूलैः ॥ ४ ॥",
+      "iast": "satyāṁ kṣitau kiṁ kaśipoḥ prayāsaiḥ\nbāhau svasiddhe hyupabarhaṇaiḥ kim |\nsatyañjalau kiṁ purudhānnapātryā\ndigvalkalādau sati kiṁ dukūlaiḥ || 4 ||"
+    },
+    {
+      "ref": "2.2.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "चीराणि किं पथि न सन्ति दिशन्ति भिक्षां ।\nनैवाङ्घ्रिपाः परभृतः सरितोऽप्यशुष्यन् ।\nरुद्धा गुहाः किमजितोऽवति नोपसन्नान् ।\nकस्माद् भजंति कवयो धनदुर्मदान्धान् ॥ ५ ॥",
+      "iast": "cīrāṇi kiṁ pathi na santi diśanti bhikṣāṁ |\nnaivāṅghripāḥ parabhṛtaḥ sarito'pyaśuṣyan |\nruddhā guhāḥ kimajito'vati nopasannān |\nkasmād bhajaṁti kavayo dhanadurmadāndhān || 5 ||"
+    },
+    {
+      "ref": "2.2.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "एवं स्वचित्ते स्वत एव सिद्ध\nआत्मा प्रियोऽर्थो भगवान अनंतः ।\nतं निर्वृतो नियतार्थो भजेत\nसंसारहेतूपरमश्च यत्र ॥ ६ ॥",
+      "iast": "evaṁ svacitte svata eva siddha\nātmā priyo'rtho bhagavāna anaṁtaḥ |\ntaṁ nirvṛto niyatārtho bhajeta\nsaṁsārahetūparamaśca yatra || 6 ||"
+    },
+    {
+      "ref": "2.2.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "कस्तां त्वनादृत्य परानुचिन्तां\nऋते पशून् असतीं नाम कुर्यात् ।\nपश्यञ्जनं पतितं वैतरण्यां\nस्वकर्मजान् परितापान् जुषाणम् ॥ ७ ॥",
+      "iast": "kastāṁ tvanādṛtya parānucintāṁ\nṛte paśūn asatīṁ nāma kuryāt |\npaśyañjanaṁ patitaṁ vaitaraṇyāṁ\nsvakarmajān paritāpān juṣāṇam || 7 ||"
+    },
+    {
+      "ref": "2.2.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "केचित् स्वदेहान्तर्हृदयावकाशे\nप्रादेशमात्रं पुरुषं वसन्तम् ।\nचतुर्भुजं कञ्जरथाङ्गशङ्ख\nगदाधरं धारणया स्मरन्ति ॥ ८ ॥",
+      "iast": "kecit svadehāntarhṛdayāvakāśe\nprādeśamātraṁ puruṣaṁ vasantam |\ncaturbhujaṁ kañjarathāṅgaśaṅkha\ngadādharaṁ dhāraṇayā smaranti || 8 ||"
+    },
+    {
+      "ref": "2.2.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "प्रसन्नवक्त्रं नलिनायतेक्षणं\nकदंबकिञ्जल्कपिशङ्गवाससम् ।\nलसन्महारत्नहिरण्मयाङ्गदं\nस्फुरन् महारत्नकिरीटकुण्डलम् ॥ ९ ॥",
+      "iast": "prasannavaktraṁ nalināyatekṣaṇaṁ\nkadaṁbakiñjalkapiśaṅgavāsasam |\nlasanmahāratnahiraṇmayāṅgadaṁ\nsphuran mahāratnakirīṭakuṇḍalam || 9 ||"
+    },
+    {
+      "ref": "2.2.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "उन्निद्रहृत्पङ्कजकर्णिकालये\nयोगेश्वरास्थापितपादपल्लवम् ।\nश्रीलक्षणं कौस्तुभरत्नकन्धरं\nअम्लानलक्ष्म्या वनमालयाचितम् ॥ १० ॥",
+      "iast": "unnidrahṛtpaṅkajakarṇikālaye\nyogeśvarāsthāpitapādapallavam |\nśrīlakṣaṇaṁ kaustubharatnakandharaṁ\namlānalakṣmyā vanamālayācitam || 10 ||"
+    },
+    {
+      "ref": "2.2.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "विभूषितं मेखलयाऽङ्गुलीयकैः\nमहाधनैर्नूपुरकङ्कणादिभिः ।\nस्निग्धामलाकुञ्चितनीलकुन्तलैः\nविरोचमानाननहासपेशलम् ॥ ११ ॥",
+      "iast": "vibhūṣitaṁ mekhalayā'ṅgulīyakaiḥ\nmahādhanairnūpurakaṅkaṇādibhiḥ |\nsnigdhāmalākuñcitanīlakuntalaiḥ\nvirocamānānanahāsapeśalam || 11 ||"
+    },
+    {
+      "ref": "2.2.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अदीनलीलाहसितेक्षणोल्लसद्\nभ्रूभङ्गसंसूचितभूर्यनुग्रहम् ।\nईक्षेत चिन्तामयमेनमीश्वरं\nयावन्मनो धारणयाऽवतिष्ठते ॥ १२ ॥",
+      "iast": "adīnalīlāhasitekṣaṇollasad\nbhrūbhaṅgasaṁsūcitabhūryanugraham |\nīkṣeta cintāmayamenamīśvaraṁ\nyāvanmano dhāraṇayā'vatiṣṭhate || 12 ||"
+    },
+    {
+      "ref": "2.2.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "एकैकशोऽङ्गानि धियानुभावयेत्\nपादादि यावद् हसितं गदाभृतः ।\nजितं जितं स्थानमपोह्य धारयेत्\nपरं परं शुद्ध्यति धीर्यथा यथा ॥ १३ ॥",
+      "iast": "ekaikaśo'ṅgāni dhiyānubhāvayet\npādādi yāvad hasitaṁ gadābhṛtaḥ |\njitaṁ jitaṁ sthānamapohya dhārayet\nparaṁ paraṁ śuddhyati dhīryathā yathā || 13 ||"
+    },
+    {
+      "ref": "2.2.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "यावन्न जायेत परावरेऽस्मिन्\nविश्वेश्वरे द्रष्टरि भक्तियोगः ।\nतावत् स्थवीयः पुरुषस्य रूपं\nक्रियावसाने प्रयतः स्मरेत ॥ १४ ॥",
+      "iast": "yāvanna jāyeta parāvare'smin\nviśveśvare draṣṭari bhaktiyogaḥ |\ntāvat sthavīyaḥ puruṣasya rūpaṁ\nkriyāvasāne prayataḥ smareta || 14 ||"
+    },
+    {
+      "ref": "2.2.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "स्थिरं सुखं चासनमास्थितो यतिः\nयदा जिहासुरिममङ्ग लोकम् ।\nकाले च देशे च मनो न सज्जयेत्\nप्राणान् नियच्छेन्मनसा जितासुः ॥ १५ ॥",
+      "iast": "sthiraṁ sukhaṁ cāsanamāsthito yatiḥ\nyadā jihāsurimamaṅga lokam |\nkāle ca deśe ca mano na sajjayet\nprāṇān niyacchenmanasā jitāsuḥ || 15 ||"
+    },
+    {
+      "ref": "2.2.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "मनः स्वबुद्ध्याऽमलया नियम्य\nक्षेत्रज्ञ एतां निनयेत् तमात्मनि ।\nआत्मानमात्मन्यवरुध्य धीरो\nलब्धोपशान्तिर्विरमेत कृत्यात् ॥ १६ ॥",
+      "iast": "manaḥ svabuddhyā'malayā niyamya\nkṣetrajña etāṁ ninayet tamātmani |\nātmānamātmanyavarudhya dhīro\nlabdhopaśāntirvirameta kṛtyāt || 16 ||"
+    },
+    {
+      "ref": "2.2.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "न यत्र कालोऽनिमिषां परः प्रभुः\nकुतो नु देवा जगतां य ईशिरे ।\nन यत्र सत्त्वं न रजस्तमश्च\nन वै विकारो न महान् प्रधानम् ॥ १७ ॥",
+      "iast": "na yatra kālo'nimiṣāṁ paraḥ prabhuḥ\nkuto nu devā jagatāṁ ya īśire |\nna yatra sattvaṁ na rajastamaśca\nna vai vikāro na mahān pradhānam || 17 ||"
+    },
+    {
+      "ref": "2.2.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "परं पदं वैष्णवमामनन्ति\nतद् यन्नेति नेतीत्यतदुत्सिसृक्षवः ।\nविसृज्य दौरात्म्यमनन्यसौहृदा\nहृदोपगुह्यार्हपदं पदे पदे ॥ १८ ॥",
+      "iast": "paraṁ padaṁ vaiṣṇavamāmananti\ntad yanneti netītyatadutsisṛkṣavaḥ |\nvisṛjya daurātmyamananyasauhṛdā\nhṛdopaguhyārhapadaṁ pade pade || 18 ||"
+    },
+    {
+      "ref": "2.2.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "इत्थं मुनिस्तूपरमेद् व्यवस्थितो\nविज्ञानदृग्वीर्य सुरन्धिताशयः ।\nस्वपार्ष्णिनऽपीड्य गुदं ततोऽनिलं\nस्थानेषु षट्सून्नमयेज्जितक्लमः ॥ १९ ॥",
+      "iast": "itthaṁ munistūparamed vyavasthito\nvijñānadṛgvīrya surandhitāśayaḥ |\nsvapārṣṇina'pīḍya gudaṁ tato'nilaṁ\nsthāneṣu ṣaṭsūnnamayejjitaklamaḥ || 19 ||"
+    },
+    {
+      "ref": "2.2.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "नाभ्यां स्थितं हृद्यधिरोप्य तस्माद्\nउदुदानगत्योरसि तं नयेन्मुनिः ।\nततोऽनुसन्धाय धिया मनस्वी\nस्वतालुमूलं शनकैर्नयेत ॥ २० ॥",
+      "iast": "nābhyāṁ sthitaṁ hṛdyadhiropya tasmād\nududānagatyorasi taṁ nayenmuniḥ |\ntato'nusandhāya dhiyā manasvī\nsvatālumūlaṁ śanakairnayeta || 20 ||"
+    },
+    {
+      "ref": "2.2.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तस्माद् भ्रुवोरन्तरमुन्नयेत\nनिरुद्धसप्तायतनोऽनपेक्षः ।\nस्थित्वा मुहूर्तार्धमकुण्ठदृष्टिः\nनिर्भिद्य मूर्धन् विसृजेत् परं गतः ॥ २१ ॥",
+      "iast": "tasmād bhruvorantaramunnayeta\nniruddhasaptāyatano'napekṣaḥ |\nsthitvā muhūrtārdhamakuṇṭhadṛṣṭiḥ\nnirbhidya mūrdhan visṛjet paraṁ gataḥ || 21 ||"
+    },
+    {
+      "ref": "2.2.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "यदि प्रयास्यन् नृप पारमेष्ठ्यं\nवैहायसानामुत यद् विहारम् ।\nअष्टाधिपत्यं गुणसन्निवाये\nसहैव गच्छेन्मनसेन्द्रियैश्च ॥ २२ ॥",
+      "iast": "yadi prayāsyan nṛpa pārameṣṭhyaṁ\nvaihāyasānāmuta yad vihāram |\naṣṭādhipatyaṁ guṇasannivāye\nsahaiva gacchenmanasendriyaiśca || 22 ||"
+    },
+    {
+      "ref": "2.2.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "योगेश्वराणां गतिमाहुरन्तः\nबहिस्त्रिलोक्याः पवनान्तरात्मनाम् ।\nन कर्मभिस्तां गतिमाप्नुवन्ति\nविद्यातपोयोगसमाधिभाजाम् ॥ २३ ॥",
+      "iast": "yogeśvarāṇāṁ gatimāhurantaḥ\nbahistrilokyāḥ pavanāntarātmanām |\nna karmabhistāṁ gatimāpnuvanti\nvidyātapoyogasamādhibhājām || 23 ||"
+    },
+    {
+      "ref": "2.2.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वैश्वानरं याति विहायसा गतः\nसुषुम्नया ब्रह्मपथेन शोचिषा ।\nविधूतकल्कोऽथ हरेरुदस्तात्\nप्रयाति चक्रं नृप शैशुमारम् ॥ २४ ॥",
+      "iast": "vaiśvānaraṁ yāti vihāyasā gataḥ\nsuṣumnayā brahmapathena śociṣā |\nvidhūtakalko'tha harerudastāt\nprayāti cakraṁ nṛpa śaiśumāram || 24 ||"
+    },
+    {
+      "ref": "2.2.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "[ योऽन्तः पचति भूतानां यस्तपत्यण्डमध्यगः ।\nसोऽग्निर्वैश्वानरो मार्गो देवानां पितृणां मुनेः ॥\nदेवयानं पिङ्गलाभिः हन्येति शतायुषा ।\nरात्रीरिडाभिः पितृणां विषुवत्तां सुषुम्नया ॥ ]\nThese two shlokas are found only in Madhwa school\nedition and Shri Vijayadhwajatirtha commented on these.\nतद्विश्वनाभिं त्वतिवर्त्य विष्णोः\nअणीयसा विरजेनात्मनैकः ।\nनमस्कृतं ब्रह्मविदामुपैति\nकल्पायुषो यद् विबुधा रमन्ते ॥ २५ ॥",
+      "iast": "[ yo'ntaḥ pacati bhūtānāṁ yastapatyaṇḍamadhyagaḥ |\nso'gnirvaiśvānaro mārgo devānāṁ pitṛṇāṁ muneḥ ||\ndevayānaṁ piṅgalābhiḥ hanyeti śatāyuṣā |\nrātrīriḍābhiḥ pitṛṇāṁ viṣuvattāṁ suṣumnayā || ]\nThese two shlokas are found only in Madhwa school\nedition and Shri Vijayadhwajatirtha commented on these.\ntadviśvanābhiṁ tvativartya viṣṇoḥ\naṇīyasā virajenātmanaikaḥ |\nnamaskṛtaṁ brahmavidāmupaiti\nkalpāyuṣo yad vibudhā ramante || 25 ||"
+    },
+    {
+      "ref": "2.2.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अथो अनन्तस्य मुखानलेन\nदन्दह्यमानं स निरीक्ष्य विश्वम् ।\nनिर्याति सिद्धेश्वरयुष्टधिष्ण्यं\nयद् द्वैपरार्ध्यं तदु पारमेष्ठ्यम् ॥ २६ ॥",
+      "iast": "atho anantasya mukhānalena\ndandahyamānaṁ sa nirīkṣya viśvam |\nniryāti siddheśvarayuṣṭadhiṣṇyaṁ\nyad dvaiparārdhyaṁ tadu pārameṣṭhyam || 26 ||"
+    },
+    {
+      "ref": "2.2.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "न यत्र शोको न जरा न मृत्युः\nन आर्तिः न चोद्वेग ऋते कुतश्चित् ।\nयच्चित्ततोऽदः कृपयानिदं विदां\nदुरन्तदुःखप्रभवानुदर्शनात् ॥ २७ ॥",
+      "iast": "na yatra śoko na jarā na mṛtyuḥ\nna ārtiḥ na codvega ṛte kutaścit |\nyaccittato'daḥ kṛpayānidaṁ vidāṁ\ndurantaduḥkhaprabhavānudarśanāt || 27 ||"
+    },
+    {
+      "ref": "2.2.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "ततो विशेषं प्रतिपद्य निर्भयः\nतेनात्मनापोऽनलमूर्तिरत्वरन् ।\nज्योतिर्मयो वायुमुपेत्य काले\nवाय्वात्मना खं बृहदात्मलिङ्गम् ॥ २८ ॥",
+      "iast": "tato viśeṣaṁ pratipadya nirbhayaḥ\ntenātmanāpo'nalamūrtiratvaran |\njyotirmayo vāyumupetya kāle\nvāyvātmanā khaṁ bṛhadātmaliṅgam || 28 ||"
+    },
+    {
+      "ref": "2.2.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "घ्राणेन गन्धं रसनेन वै रसं\nरूपं च दृष्ट्या श्वसनं त्वचैव ।\nश्रोत्रेण चोपेत्य नभोगुणत्वं\nप्राणेन चाकूतिमुपैति योगी ॥ २९ ॥",
+      "iast": "ghrāṇena gandhaṁ rasanena vai rasaṁ\nrūpaṁ ca dṛṣṭyā śvasanaṁ tvacaiva |\nśrotreṇa copetya nabhoguṇatvaṁ\nprāṇena cākūtimupaiti yogī || 29 ||"
+    },
+    {
+      "ref": "2.2.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "स भूतसूक्ष्मेन्द्रियसन्निकर्षं\nमनोमयं देवमयं विकार्यम् ।\nसंसाद्य गत्या सह तेन याति\nविज्ञानतत्त्वं गुणसंनिरोधम् ॥ ३० ॥",
+      "iast": "sa bhūtasūkṣmendriyasannikarṣaṁ\nmanomayaṁ devamayaṁ vikāryam |\nsaṁsādya gatyā saha tena yāti\nvijñānatattvaṁ guṇasaṁnirodham || 30 ||"
+    },
+    {
+      "ref": "2.2.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तेनात्मनात्मानमुपैति शान्तं\nआनंदमानंदमयोऽवसाने ।\nएतां गतिं भागवतीं गतो यः\nस वै पुनर्नेह विषज्जतेऽङ्ग ॥ ३१ ॥",
+      "iast": "tenātmanātmānamupaiti śāntaṁ\nānaṁdamānaṁdamayo'vasāne |\netāṁ gatiṁ bhāgavatīṁ gato yaḥ\nsa vai punarneha viṣajjate'ṅga || 31 ||"
+    },
+    {
+      "ref": "2.2.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "एते सृती ते नृप वेदगीते\nत्वयाभिपृष्टे च सनातने च ।\nये वै पुरा ब्रह्मण आह तुष्ट\nआराधितो भगवान् वासुदेवः ॥ ३२ ॥",
+      "iast": "ete sṛtī te nṛpa vedagīte\ntvayābhipṛṣṭe ca sanātane ca |\nye vai purā brahmaṇa āha tuṣṭa\nārādhito bhagavān vāsudevaḥ || 32 ||"
+    },
+    {
+      "ref": "2.2.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "न ह्यतोऽन्यः शिवः पन्था विशतः संसृताविह ।\nवासुदेवे भगवति भक्तियोगो यतो भवेत् ॥ ३३ ॥",
+      "iast": "na hyato'nyaḥ śivaḥ panthā viśataḥ saṁsṛtāviha |\nvāsudeve bhagavati bhaktiyogo yato bhavet || 33 ||"
+    },
+    {
+      "ref": "2.2.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "भगवान्ब्रह्म कार्त्स्न्येन त्रिरन् वीक्ष्य मनीषया ।\nतदध्यवस्यत् कूटस्थो रतिरात्मन् यतो भवेत् ॥ ३४ ॥",
+      "iast": "bhagavānbrahma kārtsnyena triran vīkṣya manīṣayā |\ntadadhyavasyat kūṭastho ratirātman yato bhavet || 34 ||"
+    },
+    {
+      "ref": "2.2.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "भगवान् सर्वभूतेषु लक्षितः स्वात्मना हरिः ।\nदृश्यैर्बुद्ध्यादिभिर्द्रष्टा लक्षणैः अनुमापकैः ॥ ३५ ॥",
+      "iast": "bhagavān sarvabhūteṣu lakṣitaḥ svātmanā hariḥ |\ndṛśyairbuddhyādibhirdraṣṭā lakṣaṇaiḥ anumāpakaiḥ || 35 ||"
+    },
+    {
+      "ref": "2.2.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तस्मात् सर्वात्मना राजन् हरिः सर्वत्र सर्वदा ।\nश्रोतव्यः कीर्तितव्यश्च स्मर्तव्यो भगवान् नृणाम् ॥ ३६ ॥",
+      "iast": "tasmāt sarvātmanā rājan hariḥ sarvatra sarvadā |\nśrotavyaḥ kīrtitavyaśca smartavyo bhagavān nṛṇām || 36 ||"
+    },
+    {
+      "ref": "2.2.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पिबन्ति ये भगवत आत्मनः\nसतां कथामृतं श्रवणपुटेषु सम्भृतम् ।\nपुनन्ति ते विषयविदूषिताशयं\nव्रजन्ति तच्चरणसरोरुहान्तिकम् ॥ ३७ ॥",
+      "iast": "pibanti ye bhagavata ātmanaḥ\nsatāṁ kathāmṛtaṁ śravaṇapuṭeṣu sambhṛtam |\npunanti te viṣayavidūṣitāśayaṁ\nvrajanti taccaraṇasaroruhāntikam || 37 ||"
+    }
+  ]
+}

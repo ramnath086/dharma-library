@@ -1,0 +1,385 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 11.8 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AE), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AE",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ११/अध्यायः ८",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 40099,
+    "revid": 334484,
+    "timestamp": "2022-04-04T11:02:35Z",
+    "sha1": "558743c4df7ef3ccef01a8950b545738b7689973",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ११/अध्यायः ८"
+  },
+  "section": {
+    "canto": {
+      "ref": "11",
+      "ordinal": 11,
+      "title_iast": "Skandha 11",
+      "title_sa": "स्कन्धः ११"
+    },
+    "chapter": {
+      "ref": "11.8",
+      "ordinal": 8,
+      "title_iast": "Adhyāya 8",
+      "title_sa": "अध्यायः ८"
+    }
+  },
+  "verses": [
+    {
+      "ref": "11.8.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अवधूतस्य अजगरादि नवगुरूणां वर्णनम् -\nश्रीब्राह्मण उवाच -\nसुखम् ऐन्द्रियकं राजन् स्वर्गे नरक एव च ।\nदेहिनां यद् यथा दुःखं तस्मान् नेच्छेत तद्बुधः ॥ १ ॥",
+      "iast": "avadhūtasya ajagarādi navagurūṇāṁ varṇanam -\nśrībrāhmaṇa uvāca -\nsukham aindriyakaṁ rājan svarge naraka eva ca |\ndehināṁ yad yathā duḥkhaṁ tasmān neccheta tadbudhaḥ || 1 ||"
+    },
+    {
+      "ref": "11.8.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ग्रासं सुमृष्टं विरसं महान्तं स्तोकमेव वा ।\nयदृच्छयैवापतितं ग्रसेत् आजगरोऽक्रियः ॥ २ ॥",
+      "iast": "grāsaṁ sumṛṣṭaṁ virasaṁ mahāntaṁ stokameva vā |\nyadṛcchayaivāpatitaṁ graset ājagaro'kriyaḥ || 2 ||"
+    },
+    {
+      "ref": "11.8.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "शयीताहानि भूरीणि निराहारोऽनुपक्रमः ।\nयदि नोपनमेद् ग्रासो महाहिरिव दिष्टभुक् ॥ ३ ॥",
+      "iast": "śayītāhāni bhūrīṇi nirāhāro'nupakramaḥ |\nyadi nopanamed grāso mahāhiriva diṣṭabhuk || 3 ||"
+    },
+    {
+      "ref": "11.8.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ओजःसहोबलयुतं बिभ्रद् देहमकर्मकम् ।\nशयानो वीतनिद्रश्च नेहेतेन्द्रियवानपि ॥ ४ ॥",
+      "iast": "ojaḥsahobalayutaṁ bibhrad dehamakarmakam |\nśayāno vītanidraśca nehetendriyavānapi || 4 ||"
+    },
+    {
+      "ref": "11.8.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मुनिः प्रसन्नगम्भीरो दुर्विगाह्यो दुरत्ययः ।\nअनन्तपारो ह्यक्षोभ्यः स्तिमितोद इवार्णवः ॥ ५ ॥",
+      "iast": "muniḥ prasannagambhīro durvigāhyo duratyayaḥ |\nanantapāro hyakṣobhyaḥ stimitoda ivārṇavaḥ || 5 ||"
+    },
+    {
+      "ref": "11.8.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "समृद्धकामो हीनो वा नारायणपरो मुनिः ।\nनोत्सर्पेत न शुष्येत सरिद्भिरिव सागरः ॥ ६ ॥",
+      "iast": "samṛddhakāmo hīno vā nārāyaṇaparo muniḥ |\nnotsarpeta na śuṣyeta saridbhiriva sāgaraḥ || 6 ||"
+    },
+    {
+      "ref": "11.8.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "दृष्ट्वा स्त्रियं देवमायां तद्भावैरजितेन्द्रियः ।\nप्रलोभितः पतत्यन्धे तमस्यग्नौ पतङ्गवत् ॥ ७ ॥",
+      "iast": "dṛṣṭvā striyaṁ devamāyāṁ tadbhāvairajitendriyaḥ |\npralobhitaḥ patatyandhe tamasyagnau pataṅgavat || 7 ||"
+    },
+    {
+      "ref": "11.8.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "योषिद्धिरण्याभरणाम्बरादि\nद्रव्येषु मायारचितेषु मूढः ।\nप्रलोभितात्मा ह्युपभोगबुद्ध्या\nपतङ्गवत् नश्यति नष्टदृष्टिः ॥ ८ ॥",
+      "iast": "yoṣiddhiraṇyābharaṇāmbarādi\ndravyeṣu māyāraciteṣu mūḍhaḥ |\npralobhitātmā hyupabhogabuddhyā\npataṅgavat naśyati naṣṭadṛṣṭiḥ || 8 ||"
+    },
+    {
+      "ref": "11.8.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्तोकं स्तोकं ग्रसेद् ग्रासं देहो वर्तेत यावता ।\nगृहान् अहिंसन् आतिष्ठेद् वृत्तिं माधुकरीं मुनिः ॥ ९ ॥",
+      "iast": "stokaṁ stokaṁ grased grāsaṁ deho varteta yāvatā |\ngṛhān ahiṁsan ātiṣṭhed vṛttiṁ mādhukarīṁ muniḥ || 9 ||"
+    },
+    {
+      "ref": "11.8.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अणुभ्यश्च महद्भ्यश्च शास्त्रेभ्यः कुशलो नरः ।\nसर्वतः सारमादद्यात् पुष्पेभ्य इव षट्पदः ॥ १० ॥",
+      "iast": "aṇubhyaśca mahadbhyaśca śāstrebhyaḥ kuśalo naraḥ |\nsarvataḥ sāramādadyāt puṣpebhya iva ṣaṭpadaḥ || 10 ||"
+    },
+    {
+      "ref": "11.8.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सायन्तनं श्वस्तनं वा न सङ्गृह्णीत भिक्षितम् ।\nपाणिपात्रोदरामत्रो मक्षिकेव न सङ्ग्रही ॥ ११ ॥",
+      "iast": "sāyantanaṁ śvastanaṁ vā na saṅgṛhṇīta bhikṣitam |\npāṇipātrodarāmatro makṣikeva na saṅgrahī || 11 ||"
+    },
+    {
+      "ref": "11.8.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सायन्तनं श्वस्तनं वा न सङ्गृह्णीत भिक्षुकः ।\nमक्षिका इव सङ्गृह्णन् सह तेन विनश्यति ॥ १२ ॥",
+      "iast": "sāyantanaṁ śvastanaṁ vā na saṅgṛhṇīta bhikṣukaḥ |\nmakṣikā iva saṅgṛhṇan saha tena vinaśyati || 12 ||"
+    },
+    {
+      "ref": "11.8.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पदापि युवतीं भिक्षुः न स्पृशेद् दारवीमपि ।\nस्पृशन् करीव बध्येत करिण्या अङ्गसङ्गतः ॥ १३ ॥",
+      "iast": "padāpi yuvatīṁ bhikṣuḥ na spṛśed dāravīmapi |\nspṛśan karīva badhyeta kariṇyā aṅgasaṅgataḥ || 13 ||"
+    },
+    {
+      "ref": "11.8.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नाधिगच्छेत् स्त्रियं प्राज्ञः कर्हिचित् मृत्युमात्मनः ।\nबलाधिकैः स हन्येत गजैरन्यैर्गजो यथा ॥ १४ ॥",
+      "iast": "nādhigacchet striyaṁ prājñaḥ karhicit mṛtyumātmanaḥ |\nbalādhikaiḥ sa hanyeta gajairanyairgajo yathā || 14 ||"
+    },
+    {
+      "ref": "11.8.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न देयं नोपभोग्यं च लुब्धैर्यद् दुःखसञ्चितम् ।\nभुङ्क्ते तदपि तच्चान्यो मधुहेवार्थविन्मधु ॥ १५ ॥",
+      "iast": "na deyaṁ nopabhogyaṁ ca lubdhairyad duḥkhasañcitam |\nbhuṅkte tadapi taccānyo madhuhevārthavinmadhu || 15 ||"
+    },
+    {
+      "ref": "11.8.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सुदुःखोपार्जितैः वित्तैः आशासानां गृहाशिषः ।\nमधुहेवाग्रतो भुङ्क्ते यतिर्वै गृहमेधिनाम् ॥ १६ ॥",
+      "iast": "suduḥkhopārjitaiḥ vittaiḥ āśāsānāṁ gṛhāśiṣaḥ |\nmadhuhevāgrato bhuṅkte yatirvai gṛhamedhinām || 16 ||"
+    },
+    {
+      "ref": "11.8.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ग्राम्यगीतं न श्रृणुयाद् यतिर्वनचरः क्वचित् ।\nशिक्षेत हरिणाद् बद्धान् मृगयोर्गीतमोहितात् ॥ १७ ॥",
+      "iast": "grāmyagītaṁ na śrṛṇuyād yatirvanacaraḥ kvacit |\nśikṣeta hariṇād baddhān mṛgayorgītamohitāt || 17 ||"
+    },
+    {
+      "ref": "11.8.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नृत्यवादित्रगीतानि जुषन् ग्राम्याणि योषिताम् ।\nआसां क्रीडनको वश्य ऋष्यश्रृङ्गो मृगीसुतः ॥ १८ ॥",
+      "iast": "nṛtyavāditragītāni juṣan grāmyāṇi yoṣitām |\nāsāṁ krīḍanako vaśya ṛṣyaśrṛṅgo mṛgīsutaḥ || 18 ||"
+    },
+    {
+      "ref": "11.8.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जिह्वयातिप्रमाथिन्या जनो रसविमोहितः ।\nमृत्युम् ऋच्छत्यसद्बुधिः मीनस्तु बडिशैर्यथा ॥ १९ ॥",
+      "iast": "jihvayātipramāthinyā jano rasavimohitaḥ |\nmṛtyum ṛcchatyasadbudhiḥ mīnastu baḍiśairyathā || 19 ||"
+    },
+    {
+      "ref": "11.8.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "इन्द्रियाणि जयन्त्याशु निराहारा मनीषिणः ।\nवर्जयित्वा तु रसनं तन्निरन्नस्य वर्धते ॥ २० ॥",
+      "iast": "indriyāṇi jayantyāśu nirāhārā manīṣiṇaḥ |\nvarjayitvā tu rasanaṁ tannirannasya vardhate || 20 ||"
+    },
+    {
+      "ref": "11.8.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तावत् जितेन्द्रियो न स्याद् विजितान्येन्द्रियः पुमान् ।\nन जयेद् रसनं यावत् जितं सर्वं जिते रसे ॥ २१ ॥",
+      "iast": "tāvat jitendriyo na syād vijitānyendriyaḥ pumān |\nna jayed rasanaṁ yāvat jitaṁ sarvaṁ jite rase || 21 ||"
+    },
+    {
+      "ref": "11.8.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पिङ्गला नाम वेश्याऽऽसीद् विदेहनगरे पुरा ।\nतस्या मे शिक्षितं किञ्चित् निबोध नृपनन्दन ॥ २२ ॥",
+      "iast": "piṅgalā nāma veśyā''sīd videhanagare purā |\ntasyā me śikṣitaṁ kiñcit nibodha nṛpanandana || 22 ||"
+    },
+    {
+      "ref": "11.8.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सा स्वैरिण्येकदा कान्तं सङ्केत उपनेष्यती ।\nअभूत्काले बहिर्द्वारि बिभ्रती रूपमुत्तमम् ॥ २३ ॥",
+      "iast": "sā svairiṇyekadā kāntaṁ saṅketa upaneṣyatī |\nabhūtkāle bahirdvāri bibhratī rūpamuttamam || 23 ||"
+    },
+    {
+      "ref": "11.8.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मार्ग आगच्छतो वीक्ष्य पुरुषान् पुरुषर्षभ ।\nतान् शुल्कदान् वित्तवतः कान्तान् मेनेऽर्थकामुका ॥ २४ ॥",
+      "iast": "mārga āgacchato vīkṣya puruṣān puruṣarṣabha |\ntān śulkadān vittavataḥ kāntān mene'rthakāmukā || 24 ||"
+    },
+    {
+      "ref": "11.8.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आगतेष्वपयातेषु सा सङ्केतोपजीविनी ।\nअप्यन्यो वित्तवान् कोऽपि मामुपैष्यति भूरिदः ॥ २५ ॥",
+      "iast": "āgateṣvapayāteṣu sā saṅketopajīvinī |\napyanyo vittavān ko'pi māmupaiṣyati bhūridaḥ || 25 ||"
+    },
+    {
+      "ref": "11.8.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवं दुराशया ध्वस्तनिद्रा द्वार्यवलम्बती ।\nनिर्गच्छन्ती प्रविशती निशीथं समपद्यत ॥ २६ ॥",
+      "iast": "evaṁ durāśayā dhvastanidrā dvāryavalambatī |\nnirgacchantī praviśatī niśīthaṁ samapadyata || 26 ||"
+    },
+    {
+      "ref": "11.8.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्या वित्ताशया शुष्यद्वक्त्राया दीनचेतसः ।\nनिर्वेदः परमो जज्ञे चिन्ताहेतुः सुखावहः ॥ २७ ॥",
+      "iast": "tasyā vittāśayā śuṣyadvaktrāyā dīnacetasaḥ |\nnirvedaḥ paramo jajñe cintāhetuḥ sukhāvahaḥ || 27 ||"
+    },
+    {
+      "ref": "11.8.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्या निर्विण्णचित्ताया गीतं श्रृणु यथा मम ।\nनिर्वेद आशापाशानां पुरुषस्य यथा ह्यसिः ॥ २८ ॥",
+      "iast": "tasyā nirviṇṇacittāyā gītaṁ śrṛṇu yathā mama |\nnirveda āśāpāśānāṁ puruṣasya yathā hyasiḥ || 28 ||"
+    },
+    {
+      "ref": "11.8.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "न ह्यङ्गाज्जातनिर्वेदो देहबन्धं जिहासति ।\nयथा विज्ञानरहितो मनुजो ममतां नृप ॥ २९ ॥",
+      "iast": "na hyaṅgājjātanirvedo dehabandhaṁ jihāsati |\nyathā vijñānarahito manujo mamatāṁ nṛpa || 29 ||"
+    },
+    {
+      "ref": "11.8.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "पिङ्गलोवाच -\nअहो मे मोहविततिं पश्यताविजितात्मनः ।\nया कान्ताद् असतः कामं कामये येन बालिशा ॥ ३० ॥",
+      "iast": "piṅgalovāca -\naho me mohavitatiṁ paśyatāvijitātmanaḥ |\nyā kāntād asataḥ kāmaṁ kāmaye yena bāliśā || 30 ||"
+    },
+    {
+      "ref": "11.8.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सन्तं समीपे रमणं रतिप्रदं\nवित्तप्रदं नित्यमिमं विहाय ।\nअकामदं दुःखभयाधिशोक-\nमोहप्रदं तुच्छमहं भजेऽज्ञा ॥ ३१ ॥",
+      "iast": "santaṁ samīpe ramaṇaṁ ratipradaṁ\nvittapradaṁ nityamimaṁ vihāya |\nakāmadaṁ duḥkhabhayādhiśoka-\nmohapradaṁ tucchamahaṁ bhaje'jñā || 31 ||"
+    },
+    {
+      "ref": "11.8.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अहो मयाऽऽत्मा परितापितो वृथा\nसाङ्केत्यवृत्त्यातिविगर्ह्यवार्तया ।\nस्त्रैणान्नराद् यार्थतृषोऽनुशोच्यात्\nक्रीतेन वित्तं रतिमात्मनेच्छती ॥ ३२ ॥",
+      "iast": "aho mayā''tmā paritāpito vṛthā\nsāṅketyavṛttyātivigarhyavārtayā |\nstraiṇānnarād yārthatṛṣo'nuśocyāt\nkrītena vittaṁ ratimātmanecchatī || 32 ||"
+    },
+    {
+      "ref": "11.8.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यदस्थिभिर्निर्मित-वंशवंश्य-\nस्थूणं त्वचा रोमनखैः पिनद्धम् ।\nक्षरन्नवद्वारमगारमेतद् ।\nविण्मूत्रपूर्णं मदुपैति कान्या ॥ ३३ ॥",
+      "iast": "yadasthibhirnirmita-vaṁśavaṁśya-\nsthūṇaṁ tvacā romanakhaiḥ pinaddham |\nkṣarannavadvāramagārametad |\nviṇmūtrapūrṇaṁ madupaiti kānyā || 33 ||"
+    },
+    {
+      "ref": "11.8.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विदेहानां पुरे ह्यस्मिन् अहमेकैव मूढधीः ।\nयान्यमिच्छन्त्यसत्यस्माद् आत्मदात् काममच्युतात् ॥ ३४ ॥",
+      "iast": "videhānāṁ pure hyasmin ahamekaiva mūḍhadhīḥ |\nyānyamicchantyasatyasmād ātmadāt kāmamacyutāt || 34 ||"
+    },
+    {
+      "ref": "11.8.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सुहृत्प्रेष्ठतमो नाथ आत्मा चायं शरीरिणाम् ।\nतं विक्रीयात्मनैवाहं रमेऽनेन यथा रमा ॥ ३५ ॥",
+      "iast": "suhṛtpreṣṭhatamo nātha ātmā cāyaṁ śarīriṇām |\ntaṁ vikrīyātmanaivāhaṁ rame'nena yathā ramā || 35 ||"
+    },
+    {
+      "ref": "11.8.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "कियत् प्रियं ते व्यभजन् कामा ये कामदा नराः ।\nआद्यन्तवन्तो भार्याया देवा वा कालविद्रुताः ॥ ३६ ॥",
+      "iast": "kiyat priyaṁ te vyabhajan kāmā ye kāmadā narāḥ |\nādyantavanto bhāryāyā devā vā kālavidrutāḥ || 36 ||"
+    },
+    {
+      "ref": "11.8.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "नूनं मे भगवान् प्रीतो विष्णुः केनापि कर्मणा ।\nनिर्वेदोऽयं दुराशाया यन्मे जातः सुखावहः ॥ ३७ ॥",
+      "iast": "nūnaṁ me bhagavān prīto viṣṇuḥ kenāpi karmaṇā |\nnirvedo'yaṁ durāśāyā yanme jātaḥ sukhāvahaḥ || 37 ||"
+    },
+    {
+      "ref": "11.8.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मैवं स्युः मन्दभाग्यायाः क्लेशा निर्वेदहेतवः ।\nयेनानुबन्धं निर्हृत्य पुरुषः शममृच्छति ॥ ३८ ॥",
+      "iast": "maivaṁ syuḥ mandabhāgyāyāḥ kleśā nirvedahetavaḥ |\nyenānubandhaṁ nirhṛtya puruṣaḥ śamamṛcchati || 38 ||"
+    },
+    {
+      "ref": "11.8.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तेनोपकृतमादाय शिरसा ग्राम्यसङ्गताः ।\nत्यक्त्वा दुराशाः शरणं व्रजामि तमधीश्वरम् ॥ ३९ ॥",
+      "iast": "tenopakṛtamādāya śirasā grāmyasaṅgatāḥ |\ntyaktvā durāśāḥ śaraṇaṁ vrajāmi tamadhīśvaram || 39 ||"
+    },
+    {
+      "ref": "11.8.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "सन्तुष्टा श्रद्दधत्येतद् यथालाभेन जीवती ।\nविहरामिमुनैवाहमात्मना रमणेन वै ॥ ४० ॥",
+      "iast": "santuṣṭā śraddadhatyetad yathālābhena jīvatī |\nviharāmimunaivāhamātmanā ramaṇena vai || 40 ||"
+    },
+    {
+      "ref": "11.8.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "संसारकूपे पतितं विषयैर्मुषितेक्षणम् ।\nग्रस्तं कालाहिनात्मानं कोऽन्यस्त्रातुमधीश्वरः ॥ ४१ ॥",
+      "iast": "saṁsārakūpe patitaṁ viṣayairmuṣitekṣaṇam |\ngrastaṁ kālāhinātmānaṁ ko'nyastrātumadhīśvaraḥ || 41 ||"
+    },
+    {
+      "ref": "11.8.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आत्मैव ह्यात्मनो गोप्ता निर्विद्येत यदाखिलात् ।\nअप्रमत्त इदं पश्येद् ग्रस्तं कालाहिना जगत् ॥ ४२ ॥",
+      "iast": "ātmaiva hyātmano goptā nirvidyeta yadākhilāt |\napramatta idaṁ paśyed grastaṁ kālāhinā jagat || 42 ||"
+    },
+    {
+      "ref": "11.8.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीब्राह्मण उवाच -\nएवं व्यवसितमतिः दुराशां कान्ततर्षजाम् ।\nछित्त्वोपशममास्थाय शय्यामुपविवेश सा ॥ ४३ ॥",
+      "iast": "śrībrāhmaṇa uvāca -\nevaṁ vyavasitamatiḥ durāśāṁ kāntatarṣajām |\nchittvopaśamamāsthāya śayyāmupaviveśa sā || 43 ||"
+    },
+    {
+      "ref": "11.8.44",
+      "ordinal": 44,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "आशा हि परमं दुःखं नैराश्यं परमं सुखम् ।\nयथा सञ्छिद्य कान्ताशां सुखं सुष्वाप पिङ्गला ॥ ४४ ॥",
+      "iast": "āśā hi paramaṁ duḥkhaṁ nairāśyaṁ paramaṁ sukham |\nyathā sañchidya kāntāśāṁ sukhaṁ suṣvāpa piṅgalā || 44 ||"
+    }
+  ]
+}

@@ -55,17 +55,34 @@ on conflict (slug) do nothing;
 set role anon;
 select set_config('request.jwt.claim.sub', '', false);
 
-select pg_temp.assert_eq((select count(*) from public.verses where work_id = (select id from works where slug='bhagavata-purana')), 10::bigint, 'anon sees 10 published verses in bhagavata-purana');
 select pg_temp.assert_eq((select count(*) from public.verses where work_id = (select id from works where slug='bhagavad-gita')), 700::bigint, 'anon sees 700 published verses in bhagavad-gita');
-select pg_temp.assert_eq((select count(*) from public.verses), 710::bigint, 'anon sees 710 published verses total');
+select pg_temp.assert_eq(
+  (select count(*) from public.verses where work_id = (select id from works where slug='bhagavata-purana')),
+  (select coalesce((metadata->>'imported_verse_count')::bigint, 0) from public.works where slug='bhagavata-purana'),
+  'anon sees this Wikisource edition imported verse count in bhagavata-purana');
+select pg_temp.assert_eq(
+  (select count(*) from public.verses),
+  (select count(*) from public.verses where work_id = (select id from works where slug='bhagavata-purana'))
+  + 700::bigint,
+  'anon sees Bhāgavata + Gītā verses only');
 select pg_temp.assert_eq((select count(*) from public.editions where slug like 'test-%'), 0::bigint, 'anon cannot see restricted/pending editions');
 select pg_temp.assert_eq((select count(*) from public.verse_contents where body like 'SECRET%'), 0::bigint, 'anon cannot read restricted content');
 select pg_temp.assert_eq((select count(*) from public.v_editions where rights_status in ('restricted','pending')), 0::bigint, 'v_editions hides uncleared editions');
 select pg_temp.assert_eq((select count(*) from public.editions where public.edition_is_public(id)), (select count(*) from public.editions), 'all visible editions are public');
 select pg_temp.assert_eq((select count(*) from public.profiles), 0::bigint, 'anon sees no profiles');
 select pg_temp.assert_eq((select count(*) from public.bookmarks), 0::bigint, 'anon sees no bookmarks');
-select pg_temp.assert_eq((select jsonb_array_length(public.get_toc('bhagavata-purana')->'sections')), 1, 'toc has 1 canto');
-select pg_temp.assert_eq((select jsonb_array_length(public.get_section_verses((select id from sections where ref='1.1'))->'verses')), 10, 'chapter has 10 verses');
+select pg_temp.assert_eq((select jsonb_array_length(public.get_toc('bhagavata-purana')->'sections')), 12, 'toc has 12 skandhas');
+select pg_temp.assert_eq((select jsonb_array_length(public.get_section_verses((select id from sections where ref='1.1' and work_id=(select id from works where slug='bhagavata-purana')))->'verses')), 23, 'chapter 1.1 has 23 verses');
+select pg_temp.assert_eq((select jsonb_array_length(public.get_published_works())), 2, 'catalogue lists both published works');
+select pg_temp.assert_eq((
+  select bool_and(w->>'slug' in ('bhagavata-purana','bhagavad-gita'))
+    from jsonb_array_elements(public.get_published_works()) w
+), true, 'catalogue slugs are the published works, not hard-coded in the client');
+select pg_temp.assert_eq((
+  select v->'metadata'->'audio'->>'important'
+    from jsonb_array_elements(public.get_section_verses((select id from sections where ref='1.1' and work_id=(select id from works where slug='bhagavata-purana')))->'verses') v
+   where v->>'ref' = '1.1.1'
+), 'true', 'editorial mangala cue metadata travels with the chapter payload');
 select pg_temp.assert_eq((select public.get_verse('bhagavata-purana','1.1.4')->>'next_ref'), '1.1.5', 'next_ref');
 select pg_temp.assert_eq((select public.get_verse('bhagavata-purana','1.1.1')->>'prev_ref'), null::text, 'prev_ref of first verse is null');
 select pg_temp.assert_eq((select count(*) > 0 from public.search_verses('naimisa')), true, 'search: diacritic-insensitive');
@@ -119,8 +136,13 @@ do $$ begin
   exception when insufficient_privilege or check_violation then raise notice 'ok — cannot forge bookmark owner'; end;
 end $$;
 
-select public.upsert_progress((select id from works where slug='bhagavata-purana'), (select id from verses where ref='1.1.5'), '{}', 'dev-1');
-select pg_temp.assert_eq((select percent from public.reading_progress), 50.00::numeric, 'progress 5/10 = 50%');
+select public.upsert_progress((select id from works where slug='bhagavata-purana'), (select id from verses where ref='1.1.5' and work_id=(select id from works where slug='bhagavata-purana')), '{}', 'dev-1');
+select pg_temp.assert_eq(
+  (select percent from public.reading_progress),
+  (select round(100.0 * (public.verse_seq((select id from works where slug='bhagavata-purana'), '1.1.5') + 1)
+           / (select count(*) from public.verses where work_id = (select id from works where slug='bhagavata-purana')), 2)),
+  'progress percent is position / imported verse count'
+);
 select pg_temp.assert_eq((select jsonb_array_length(public.sync_pull()->'bookmarks')), 1, 'sync_pull returns own bookmarks');
 
 -- cannot self-promote

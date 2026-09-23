@@ -45,16 +45,22 @@ final currentUserProvider = Provider<User?>((ref) {
   return ref.watch(supabaseProvider)?.auth.currentUser;
 });
 
-final userRoleProvider = FutureProvider<String>((ref) async {
+/// `profiles` row for the signed-in user. Null when signed out / no backend.
+/// Reading is never gated on this.
+final profileProvider = FutureProvider<Map<String, dynamic>?>((ref) async {
   final c = ref.watch(supabaseProvider);
   final u = ref.watch(currentUserProvider);
-  if (c == null || u == null) return 'reader';
+  if (c == null || u == null) return null;
   try {
-    final r = await c.from('profiles').select('role').eq('id', u.id).maybeSingle();
-    return (r?['role'] as String?) ?? 'reader';
+    return await c.from('profiles').select().eq('id', u.id).maybeSingle();
   } catch (_) {
-    return 'reader';
+    return null;
   }
+});
+
+final userRoleProvider = FutureProvider<String>((ref) async {
+  final profile = await ref.watch(profileProvider.future);
+  return (profile?['role'] as String?) ?? 'reader';
 });
 
 // ------------------------------------------------------------ settings
@@ -69,16 +75,28 @@ class Settings {
     this.showTranslation = true,
     this.showWordMeanings = false,
     this.translationLang,
+    this.devotionalSounds = true,
+    this.launchSound = false,
+    this.slokaAudioCues = true,
+    this.soundVolume = 0.45,
   });
   final String locale, script, themeMode;
   final double fontScale;
   final bool showBaseText, showTransliteration, showTranslation, showWordMeanings;
   final String? translationLang; // null => follow locale
+  /// Master switch for launch chime + śloka cues (recitation player is separate).
+  final bool devotionalSounds;
+  /// Launch bell. Default OFF — autoplay is inappropriate on first run / tests.
+  final bool launchSound;
+  /// Play the editorial cue on verses tagged `metadata.audio.important`.
+  final bool slokaAudioCues;
+  final double soundVolume;
 
   String get effectiveTranslationLang => translationLang ?? locale;
 
   Settings copyWith({String? locale, String? script, double? fontScale, String? themeMode, bool? showBaseText,
-      bool? showTransliteration, bool? showTranslation, bool? showWordMeanings, String? translationLang, bool clearTranslationLang = false}) =>
+      bool? showTransliteration, bool? showTranslation, bool? showWordMeanings, String? translationLang, bool clearTranslationLang = false,
+      bool? devotionalSounds, bool? launchSound, bool? slokaAudioCues, double? soundVolume}) =>
       Settings(
         locale: locale ?? this.locale,
         script: script ?? this.script,
@@ -89,6 +107,10 @@ class Settings {
         showTranslation: showTranslation ?? this.showTranslation,
         showWordMeanings: showWordMeanings ?? this.showWordMeanings,
         translationLang: clearTranslationLang ? null : (translationLang ?? this.translationLang),
+        devotionalSounds: devotionalSounds ?? this.devotionalSounds,
+        launchSound: launchSound ?? this.launchSound,
+        slokaAudioCues: slokaAudioCues ?? this.slokaAudioCues,
+        soundVolume: soundVolume ?? this.soundVolume,
       );
 
   static Settings load(SharedPreferences p) => Settings(
@@ -101,6 +123,10 @@ class Settings {
         showTranslation: p.getBool('showTranslation') ?? true,
         showWordMeanings: p.getBool('showWordMeanings') ?? false,
         translationLang: p.getString('translationLang'),
+        devotionalSounds: p.getBool('devotionalSounds') ?? true,
+        launchSound: p.getBool('launchSound') ?? false,
+        slokaAudioCues: p.getBool('slokaAudioCues') ?? true,
+        soundVolume: p.getDouble('soundVolume') ?? 0.45,
       );
 
   Future<void> save(SharedPreferences p) async {
@@ -117,6 +143,10 @@ class Settings {
     } else {
       await p.setString('translationLang', translationLang!);
     }
+    await p.setBool('devotionalSounds', devotionalSounds);
+    await p.setBool('launchSound', launchSound);
+    await p.setBool('slokaAudioCues', slokaAudioCues);
+    await p.setDouble('soundVolume', soundVolume);
   }
 
   ThemeMode get materialThemeMode => switch (themeMode) { 'light' || 'sepia' => ThemeMode.light, 'dark' => ThemeMode.dark, _ => ThemeMode.system };
@@ -164,6 +194,29 @@ final bundledWorksProvider = FutureProvider<List<Toc>>((ref) async {
   }
   works.sort((a, b) => a.work.slug.compareTo(b.work.slug));
   return works;
+});
+
+/// Home catalogue: every bundled work, plus any extra published works the
+/// backend knows about. Never hard-codes Gītā / Bhāgavata slugs.
+final catalogProvider = FutureProvider<List<Toc>>((ref) async {
+  final bundled = await ref.watch(bundledWorksProvider.future);
+  final repo = ref.watch(repositoryProvider);
+  if (!repo.hasBackend || !(ref.watch(isOnlineProvider))) return bundled;
+  try {
+    final remote = await repo.publishedWorkSummaries();
+    final bySlug = {for (final t in bundled) t.work.slug: t};
+    for (final row in remote) {
+      final slug = row['slug'] as String?;
+      if (slug == null || bySlug.containsKey(slug)) continue;
+      try {
+        bySlug[slug] = await repo.toc(slug);
+      } catch (_) {/* online-only work whose toc is not yet cached */}
+    }
+    final works = bySlug.values.toList()..sort((a, b) => a.work.slug.compareTo(b.work.slug));
+    return works;
+  } catch (_) {
+    return bundled;
+  }
 });
 
 final tocProvider = FutureProvider.family<Toc, String>((ref, slug) => ref.watch(repositoryProvider).toc(slug));

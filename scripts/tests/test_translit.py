@@ -34,8 +34,9 @@ class IngestTests(unittest.TestCase):
         root = pathlib.Path(__file__).resolve().parent.parent.parent
         d = json.loads((root / 'content/bhagavata-purana/1/1/verses.json').read_text(encoding='utf-8'))
         refs = [v['ref'] for v in d['verses']]
-        self.assertEqual(refs, [f'1.1.{i}' for i in range(1, 11)])
-        for v in d['verses']:
+        self.assertGreaterEqual(len(refs), 10)
+        self.assertEqual(refs[:10], [f'1.1.{i}' for i in range(1, 11)])
+        for v in d['verses'][:10]:
             for k in ('deva', 'iast', 'en', 'ml', 'word_meanings'):
                 self.assertTrue(v.get(k), f"{v['ref']} missing {k}")
         w = json.loads((root / 'content/bhagavata-purana/work.json').read_text(encoding='utf-8'))

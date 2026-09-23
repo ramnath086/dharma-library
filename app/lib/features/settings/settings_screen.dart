@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/db/repository.dart';
 import '../../core/providers.dart';
 import '../../l10n/generated/app_localizations.dart';
 
@@ -19,8 +20,6 @@ class SettingsScreen extends ConsumerWidget {
     final repo = ref.watch(repositoryProvider);
     final user = ref.watch(currentUserProvider);
     final role = ref.watch(userRoleProvider).value ?? 'reader';
-    final slug = ref.watch(workSlugProvider);
-    final downloaded = ref.watch(downloadedProvider(slug));
 
     return Scaffold(
       appBar: AppBar(title: Text(l.tabSettings)),
@@ -31,8 +30,14 @@ class SettingsScreen extends ConsumerWidget {
             leading: const Icon(Icons.account_circle_outlined),
             title: Text(user == null ? l.signIn : (user.email ?? user.id)),
             subtitle: user == null ? Text(l.signInHint) : Text(role),
-            trailing: user == null ? const Icon(Icons.chevron_right) : TextButton(onPressed: () async { await repo.client!.auth.signOut(); await repo.store.clearUserData(); ref.read(userDataVersionProvider.notifier).state++; }, child: Text(l.signOut)),
-            onTap: user == null ? () => context.push('/sign-in') : null,
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => context.push(user == null ? '/sign-in' : '/account'),
+          )
+        else
+          ListTile(
+            leading: const Icon(Icons.account_circle_outlined),
+            title: Text(l.signIn),
+            subtitle: Text(l.publicReadingAvailable),
           ),
         if (role == 'editor' || role == 'admin')
           ListTile(leading: const Icon(Icons.admin_panel_settings_outlined), title: Text(l.adminCms), trailing: const Icon(Icons.chevron_right), onTap: () => context.push('/admin')),
@@ -76,35 +81,44 @@ class SettingsScreen extends ConsumerWidget {
         ),
         const Divider(),
 
-        // ---- offline
-        downloaded.when(
-          data: (isDl) => Column(children: [
-            ListTile(
-              leading: Icon(isDl ? Icons.offline_pin : Icons.download_for_offline_outlined),
-              title: Text(isDl ? l.downloaded : l.downloadForOffline),
-              subtitle: FutureBuilder<int>(future: repo.store.sizeBytes(), builder: (_, sn) => Text(l.storageUsed(((sn.data ?? 0) / 1e6).toStringAsFixed(1)))),
-              trailing: isDl
-                  ? TextButton(onPressed: () async { await repo.removeDownload(slug); ref.invalidate(downloadedProvider(slug)); }, child: Text(l.removeDownload))
-                  : FilledButton.tonal(onPressed: () async {
-                      await repo.downloadWork(slug);
-                      ref.invalidate(downloadedProvider(slug));
-                      if (ref.read(analyticsOptInProvider)) unawaited(repo.logAnalytics('offline_download'));
-                    }, child: Text(l.downloadForOffline)),
-            ),
-            if (isDl)
-              FutureBuilder<Map<String, dynamic>?>(
-                future: repo.bundleMeta(slug),
-                builder: (_, sn) {
-                  final at = (sn.data?['imported_at'] as String?)?.substring(0, 10);
-                  return at == null
-                      ? const SizedBox.shrink()
-                      : ListTile(dense: true, leading: const Icon(Icons.inventory_2_outlined), title: Text(l.bundleImported(at)));
-                },
-              ),
-          ]),
-          loading: () => const ListTile(title: LinearProgressIndicator()),
-          error: (_, __) => const SizedBox.shrink(),
+        // ---- sound (launch chime default OFF; śloka cues are user-initiated)
+        ListTile(title: Text(l.devotionalSounds), subtitle: Text(l.devotionalSoundsHint)),
+        SwitchListTile(
+          secondary: const Icon(Icons.volume_up_outlined),
+          title: Text(l.devotionalSounds),
+          value: s.devotionalSounds,
+          onChanged: (v) => n.update((x) => x.copyWith(devotionalSounds: v)),
         ),
+        SwitchListTile(
+          secondary: const Icon(Icons.notifications_active_outlined),
+          title: Text(l.launchSound),
+          subtitle: Text(l.launchSoundHint),
+          value: s.launchSound,
+          onChanged: s.devotionalSounds ? (v) => n.update((x) => x.copyWith(launchSound: v)) : null,
+        ),
+        SwitchListTile(
+          secondary: const Icon(Icons.spa_outlined),
+          title: Text(l.slokaAudioCues),
+          subtitle: Text(l.slokaAudioCuesHint),
+          value: s.slokaAudioCues,
+          onChanged: s.devotionalSounds ? (v) => n.update((x) => x.copyWith(slokaAudioCues: v)) : null,
+        ),
+        ListTile(
+          title: Text(l.soundVolume),
+          subtitle: Slider(
+            value: s.soundVolume,
+            min: 0.1,
+            max: 1,
+            divisions: 9,
+            label: '${(s.soundVolume * 100).round()}%',
+            onChanged: s.devotionalSounds ? (v) => n.update((x) => x.copyWith(soundVolume: v)) : null,
+          ),
+        ),
+        const Divider(),
+
+        // ---- offline (every catalogued work)
+        FutureBuilder<int>(future: repo.store.sizeBytes(), builder: (_, sn) => ListTile(dense: true, title: Text(l.storageUsed(((sn.data ?? 0) / 1e6).toStringAsFixed(1))))),
+        ..._offlineTiles(ref, l, repo),
         const Divider(),
 
         // ---- privacy
@@ -137,6 +151,38 @@ class SettingsScreen extends ConsumerWidget {
           child: Text(l.about),
         ),
       ]),
+    );
+  }
+
+  List<Widget> _offlineTiles(WidgetRef ref, AppLocalizations l, Repository repo) {
+    final works = ref.watch(catalogProvider).value ?? ref.watch(bundledWorksProvider).value ?? const [];
+    if (works.isEmpty) {
+      final slug = ref.watch(workSlugProvider);
+      return [_offlineTile(ref, l, repo, slug, slug)];
+    }
+    return [
+      for (final toc in works) _offlineTile(ref, l, repo, toc.work.slug, toc.work.titleIast),
+    ];
+  }
+
+  Widget _offlineTile(WidgetRef ref, AppLocalizations l, Repository repo, String slug, String title) {
+    final downloaded = ref.watch(downloadedProvider(slug));
+    return downloaded.when(
+      data: (isDl) => ListTile(
+        leading: Icon(isDl ? Icons.offline_pin : Icons.download_for_offline_outlined),
+        title: Text(title),
+        subtitle: Text(isDl ? l.downloaded : l.downloadForOffline),
+        trailing: isDl
+            ? TextButton(onPressed: () async { await repo.removeDownload(slug); ref.invalidate(downloadedProvider(slug)); ref.invalidate(bundledWorksProvider); }, child: Text(l.removeDownload))
+            : FilledButton.tonal(onPressed: () async {
+                await repo.downloadWork(slug);
+                ref.invalidate(downloadedProvider(slug));
+                ref.invalidate(bundledWorksProvider);
+                if (ref.read(analyticsOptInProvider)) unawaited(repo.logAnalytics('offline_download'));
+              }, child: Text(l.downloadForOffline)),
+      ),
+      loading: () => const ListTile(title: LinearProgressIndicator()),
+      error: (_, __) => const SizedBox.shrink(),
     );
   }
 

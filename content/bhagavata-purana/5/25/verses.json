@@ -1,0 +1,198 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 5.25 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%AB), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A8%E0%A5%AB",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः २५",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 46888,
+    "revid": 106453,
+    "timestamp": "2017-03-24T19:36:52Z",
+    "sha1": "5df02fd40a9e3a9c29191b9f55878d90fcd6d785",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः २५"
+  },
+  "section": {
+    "canto": {
+      "ref": "5",
+      "ordinal": 5,
+      "title_iast": "Skandha 5",
+      "title_sa": "स्कन्धः ५"
+    },
+    "chapter": {
+      "ref": "5.25",
+      "ordinal": 25,
+      "title_iast": "Adhyāya 25",
+      "title_sa": "अध्यायः २५"
+    }
+  },
+  "verses": [
+    {
+      "ref": "5.25.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "श्रीमद्भागवत महापुराण\nपञ्चमः स्कन्धः - पञ्चविंशोऽध्यायः\nभूविवरविध्युपवर्णनम् -श्रीशुक उवाच\nतस्य मूलदेशे त्रिंशद्योजनसहस्रान्तरआस्ते या\nवै कला भगवतस्तामसी समाख्याताऽनन्त इति\nसात्वतीया द्रष्ट्टदृश्ययोःसङ्कर्षणमहमित्यभिमान-\nलक्षणं यं सङ्कर्षणमित्याचक्षते ॥ १ ॥",
+      "iast": "śrīmadbhāgavata mahāpurāṇa\npañcamaḥ skandhaḥ - pañcaviṁśo'dhyāyaḥ\nbhūvivaravidhyupavarṇanam -śrīśuka uvāca\ntasya mūladeśe triṁśadyojanasahasrāntaraāste yā\nvai kalā bhagavatastāmasī samākhyātā'nanta iti\nsātvatīyā draṣṭṭadṛśyayoḥsaṅkarṣaṇamahamityabhimāna-\nlakṣaṇaṁ yaṁ saṅkarṣaṇamityācakṣate || 1 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्येदं क्षितिमण्डले भगवतोऽनन्तमूर्तेः\nसहस्रशिरस एकस्मिन्नेव शीर्षणि ध्रियमाणं\nसिद्धार्थ इव लक्ष्यते ॥ २ ॥",
+      "iast": "yasyedaṁ kṣitimaṇḍale bhagavato'nantamūrteḥ\nsahasraśirasa ekasminneva śīrṣaṇi dhriyamāṇaṁ\nsiddhārtha iva lakṣyate || 2 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्य ह वा इदं कालेनोपसंजिहीर्षतोऽमर्ष-\nविरचितरुचिरभ्रमद्भुवोरन्तरेण साङ्कर्षणो नाम रुद्र\nएकादशव्यूहस्त्र्यक्षस्त्रिशिखं शूलमुत्तम्भयन्नुदतिष्ठत् ॥ ३ ॥",
+      "iast": "yasya ha vā idaṁ kālenopasaṁjihīrṣato'marṣa-\nviracitarucirabhramadbhuvorantareṇa sāṅkarṣaṇo nāma rudra\nekādaśavyūhastryakṣastriśikhaṁ śūlamuttambhayannudatiṣṭhat || 3 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्याङ्घ्रिकमलयुगलारुणविशदनखमणि-\nषण्डमण्डलेष्वहिपतयः सह सात्वतर्षभैरेकान्त-\nभक्तियोगेनावनमन्तः स्ववदनानि परिस्फुरत्-\nकुण्डलप्रभामण्डितगण्डस्थलान्यतिमनोहराणि\nप्रमुदितमनसः खलु विलोकयन्ति ॥ ४ ॥",
+      "iast": "yasyāṅghrikamalayugalāruṇaviśadanakhamaṇi-\nṣaṇḍamaṇḍaleṣvahipatayaḥ saha sātvatarṣabhairekānta-\nbhaktiyogenāvanamantaḥ svavadanāni parisphurat-\nkuṇḍalaprabhāmaṇḍitagaṇḍasthalānyatimanoharāṇi\npramuditamanasaḥ khalu vilokayanti || 4 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्यैव हि नागराजकुमार्य आशिष\nआशासानाश्चार्वङ्गवलयविलसितविशदविपुल-\nधवलसुभगरुचिरभुजरजतस्तम्भेष्वगुरुचन्दन-\nकुङ्कुमपङ्कानुलेपेनावलिम्पमानास्तदभिमर्शनो-\nन्मथितहृदयमकरध्वजावेशरुचिरललितस्मिता-\nस्तदनुरागमदमुदितमदविघूर्णितारुणकरुणावलोक-\nनयनवदनारविन्दं सव्रीडं किलविलोकयन्ति ॥ ५ ॥",
+      "iast": "yasyaiva hi nāgarājakumārya āśiṣa\nāśāsānāścārvaṅgavalayavilasitaviśadavipula-\ndhavalasubhagarucirabhujarajatastambheṣvagurucandana-\nkuṅkumapaṅkānulepenāvalimpamānāstadabhimarśano-\nnmathitahṛdayamakaradhvajāveśaruciralalitasmitā-\nstadanurāgamadamuditamadavighūrṇitāruṇakaruṇāvaloka-\nnayanavadanāravindaṁ savrīḍaṁ kilavilokayanti || 5 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स एव भगवाननन्तोऽनन्तगुणार्णव आदिदेव\nउपसंहृतामर्षरोषवेगो लोकानां स्वस्तय आस्ते ॥ ६ ॥",
+      "iast": "sa eva bhagavānananto'nantaguṇārṇava ādideva\nupasaṁhṛtāmarṣaroṣavego lokānāṁ svastaya āste || 6 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ध्यायमानः सुरासुरोरगसिद्धगन्धर्वविद्याधर-\nमुनिगणैरनवरतमदमुदितविकृतविह्वललोचनः\nसुललितमुखरिकामृतेनाप्यायमानः स्वपार्षदविबुध-\nयूथपतीनपरिम्लानरागनवतुलसिकामोदमध्वासवेन\nमाद्यन्मधुकरत्रातमधुरगीतश्रियं वैजयन्तीं स्वां\nवनमालां नीलवासा एककुण्डलो हलककुदि\nकृतसुभगसुन्दरभुजो भगवान्माहेन्द्रो वारणेन्द्र इव\nकाञ्चनीं कक्षामुदारलीलो बिभर्ति ॥ ७ ॥",
+      "iast": "dhyāyamānaḥ surāsuroragasiddhagandharvavidyādhara-\nmunigaṇairanavaratamadamuditavikṛtavihvalalocanaḥ\nsulalitamukharikāmṛtenāpyāyamānaḥ svapārṣadavibudha-\nyūthapatīnaparimlānarāganavatulasikāmodamadhvāsavena\nmādyanmadhukaratrātamadhuragītaśriyaṁ vaijayantīṁ svāṁ\nvanamālāṁ nīlavāsā ekakuṇḍalo halakakudi\nkṛtasubhagasundarabhujo bhagavānmāhendro vāraṇendra iva\nkāñcanīṁ kakṣāmudāralīlo bibharti || 7 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "य एष एवमनुश्रुतो ध्यायमानो मुमुक्षूणामनादि-\nकालकर्मवासनाग्रथितमविद्यामयं हृदयग्नन्थिं\nसत्त्वरजस्तमोमयमन्तर्हृदयं गत आशु निर्भिनत्ति\nतस्यानुभावान् भगवान् स्वायम्भुवो नारदः सह\nतुम्बुरुणा सभायां ब्रह्मणः संश्लोकयामास ॥ ८ ॥",
+      "iast": "ya eṣa evamanuśruto dhyāyamāno mumukṣūṇāmanādi-\nkālakarmavāsanāgrathitamavidyāmayaṁ hṛdayagnanthiṁ\nsattvarajastamomayamantarhṛdayaṁ gata āśu nirbhinatti\ntasyānubhāvān bhagavān svāyambhuvo nāradaḥ saha\ntumburuṇā sabhāyāṁ brahmaṇaḥ saṁślokayāmāsa || 8 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "उत्पत्तिस्थितिलयहेतवोऽस्य कल्पाः\nसत्त्वाद्याः प्रकृतिगुणायदीक्षयाऽऽसन् ।\nयद्रूपं ध्रुवमकृतं यदेकमात्मन्\nनानाधात्कथमु ह वेद तस्य वर्त्म ॥ ९ ॥",
+      "iast": "utpattisthitilayahetavo'sya kalpāḥ\nsattvādyāḥ prakṛtiguṇāyadīkṣayā''san |\nyadrūpaṁ dhruvamakṛtaṁ yadekamātman\nnānādhātkathamu ha veda tasya vartma || 9 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मूर्तिं नः पुरुकृपया बभार सत्त्वं\nसंशुद्धं सदसदिदं विभाति यत्र ।\nयल्लीलां मृगपतिराददेऽनवद्या -\nमादातुं स्वजनमनांस्युदारवीर्यः ॥ १० ॥",
+      "iast": "mūrtiṁ naḥ purukṛpayā babhāra sattvaṁ\nsaṁśuddhaṁ sadasadidaṁ vibhāti yatra |\nyallīlāṁ mṛgapatirādade'navadyā -\nmādātuṁ svajanamanāṁsyudāravīryaḥ || 10 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यन्नाम श्रुतमनुकीर्तयेदकस्मा -\nदार्तो वा यदि पतितः प्रलम्भनाद्वा ।\nहन्त्यंहः सपदि नृणामशेषमन्यं\nकं शेषाद्भगवत आश्रयेन्मुमुक्षुः ॥ ११ ॥",
+      "iast": "yannāma śrutamanukīrtayedakasmā -\ndārto vā yadi patitaḥ pralambhanādvā |\nhantyaṁhaḥ sapadi nṛṇāmaśeṣamanyaṁ\nkaṁ śeṣādbhagavata āśrayenmumukṣuḥ || 11 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मूर्धन्यर्पितमणुवत्सहस्रमूर्धो\nभूगोलं सगिरिसरित्समुद्रसत्त्वम् ।\nआनन्त्यादनिमितविक्रमस्य भूम्नः\nको वीर्याण्यधिगणयेत्सहस्रजिह्वः ॥ १२ ॥",
+      "iast": "mūrdhanyarpitamaṇuvatsahasramūrdho\nbhūgolaṁ sagirisaritsamudrasattvam |\nānantyādanimitavikramasya bhūmnaḥ\nko vīryāṇyadhigaṇayetsahasrajihvaḥ || 12 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एवम्प्रभावो भगवाननन्तो\nदुरन्तवीर्योरुगुणानुभावः ।\nमूले रसायाः स्थित आत्मतन्त्रो\nयो लीलया क्ष्मां स्थितये बिभर्ति ॥ १३ ॥",
+      "iast": "evamprabhāvo bhagavānananto\ndurantavīryoruguṇānubhāvaḥ |\nmūle rasāyāḥ sthita ātmatantro\nyo līlayā kṣmāṁ sthitaye bibharti || 13 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एता ह्येवेह नृभिरुपगन्तव्या गतयो\nयथाकर्मविनिर्मिता यथोपदेशमनुवर्णिताः\nकामान् कामयमानैः ॥ १४ ॥",
+      "iast": "etā hyeveha nṛbhirupagantavyā gatayo\nyathākarmavinirmitā yathopadeśamanuvarṇitāḥ\nkāmān kāmayamānaiḥ || 14 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    },
+    {
+      "ref": "5.25.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "एतावतीर्हि राजन् पुंसः प्रवृत्तिलक्षणस्य धर्मस्य\nविपाकगतय उच्चावचा विसदृशा यथाप्रन्नं\nव्याचख्ये किमन्यत्कथयाम इति ॥ १५ ॥",
+      "iast": "etāvatīrhi rājan puṁsaḥ pravṛttilakṣaṇasya dharmasya\nvipākagataya uccāvacā visadṛśā yathāprannaṁ\nvyācakhye kimanyatkathayāma iti || 15 ||",
+      "metadata": {
+        "speaker_surface": "भूविवरविध्युपवर्णनम् -श्रीशुक"
+      }
+    }
+  ]
+}

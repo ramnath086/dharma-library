@@ -13,6 +13,9 @@ import '../../features/reader/chapter_screen.dart';
 import '../../features/reader/history_screen.dart';
 import '../../features/reader/verse_screen.dart';
 import '../../features/search/search_screen.dart';
+import '../../features/home/work_screen.dart';
+import '../../features/settings/account_screen.dart';
+import '../../features/settings/auth_callback_screen.dart';
 import '../../features/settings/settings_screen.dart';
 import '../../features/settings/sign_in_screen.dart';
 
@@ -50,7 +53,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(parentNavigatorKey: _rootKey, path: '/history', builder: (_, __) => const ReadingHistoryScreen()),
       GoRoute(parentNavigatorKey: _rootKey, path: '/ask/history', builder: (_, __) => const QaHistoryScreen()),
+      GoRoute(parentNavigatorKey: _rootKey, path: '/library/:work', builder: (_, s) => WorkScreen(workSlug: s.pathParameters['work']!)),
       GoRoute(parentNavigatorKey: _rootKey, path: '/sign-in', builder: (_, __) => const SignInScreen()),
+      GoRoute(parentNavigatorKey: _rootKey, path: '/account', builder: (_, __) => const AccountScreen()),
+      GoRoute(parentNavigatorKey: _rootKey, path: '/auth-callback', builder: (_, __) => const AuthCallbackScreen()),
       GoRoute(parentNavigatorKey: _rootKey, path: '/admin', builder: (_, __) => const AdminScreen()),
     ],
   );

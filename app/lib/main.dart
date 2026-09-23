@@ -13,6 +13,7 @@ import 'core/offline/local_store.dart';
 import 'core/providers.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
+import 'features/audio/launch_chime.dart';
 import 'l10n/generated/app_localizations.dart';
 
 Future<void> main() async {
@@ -23,7 +24,11 @@ Future<void> main() async {
       url: AppConfig.supabaseUrl,
       // ignore: deprecated_member_use  (publishableKey requires newer key format; anonKey still supported)
       anonKey: AppConfig.supabaseAnonKey,
-      authOptions: const FlutterAuthClientOptions(authFlowType: AuthFlowType.pkce),
+      authOptions: const FlutterAuthClientOptions(
+        authFlowType: AuthFlowType.pkce,
+        autoRefreshToken: true,
+        detectSessionInUri: true,
+      ),
     );
   }
 
@@ -99,7 +104,7 @@ class DharmaLibraryApp extends ConsumerWidget {
       themeMode: settings.materialThemeMode,
       builder: (context, child) => MediaQuery(
         data: MediaQuery.of(context).copyWith(textScaler: TextScaler.linear(settings.fontScale)),
-        child: child!,
+        child: LaunchChime(child: child!),
       ),
     );
   }

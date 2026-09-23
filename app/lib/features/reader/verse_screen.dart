@@ -47,7 +47,7 @@ class VerseScreen extends ConsumerWidget {
           return ListView(
             padding: const EdgeInsets.only(bottom: 32),
             children: [
-              VerseCard(verse: d.verse, editions: eds, workSlug: workSlug),
+              VerseCard(verse: d.verse, editions: eds, workSlug: workSlug, workTitle: ref.watch(tocProvider(workSlug)).value?.work.titleIast),
               // ---- all translations (every language), so a reader can compare
               for (final r in d.renderings.where((r) => r['kind'] == 'translation' && r['language_code'] != settings.effectiveTranslationLang))
                 Padding(

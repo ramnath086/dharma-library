@@ -1,8 +1,35 @@
 {
-  "_note": "Pilot content: Śrīmad Bhāgavata Purāṇa 1.1.1–1.1.10. Sanskrit text collated from two public-domain witnesses (sa.wikisource + GRETIL bhp_01u) against the Gita Press vulgate numbering. IAST is a Dharma Library rendering of the same text with word breaks. English and Malayalam translations and word-meanings are ORIGINAL work by Dharma Library contributors (CC BY-SA 4.0) and are marked as drafts pending scholarly review. Nothing here is copied from any copyrighted translation.",
+  "_note": "Śrīmad Bhāgavata Purāṇa 1.1 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः १/अध्यायः १",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 7990,
+    "revid": 110172,
+    "timestamp": "2017-06-04T22:13:15Z",
+    "sha1": "fa351cdbba6ab5d988b01767f82fe45016e06ebd",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः १/अध्यायः १"
+  },
   "section": {
-    "canto": { "ref": "1", "ordinal": 1, "title_iast": "Prathama Skandha", "title_sa": "प्रथमः स्कन्धः", "title_en": "Canto One", "title_ml": "ഒന്നാം സ്കന്ധം" },
-    "chapter": { "ref": "1.1", "ordinal": 1, "title_iast": "Naimiṣīyopākhyāna — Praśnāḥ (The Sages' Questions)", "title_sa": "नैमिषीयोपाख्याने ऋषिप्रश्नः", "title_en": "The Questions of the Sages at Naimiṣāraṇya", "title_ml": "നൈമിഷാരണ്യത്തിലെ ഋഷിമാരുടെ ചോദ്യങ്ങൾ",
+    "canto": {
+      "ref": "1",
+      "ordinal": 1,
+      "title_iast": "Prathama Skandha",
+      "title_sa": "प्रथमः स्कन्धः",
+      "title_en": "Canto One",
+      "title_ml": "ഒന്നാം സ്കന്ധം"
+    },
+    "chapter": {
+      "ref": "1.1",
+      "ordinal": 1,
+      "title_iast": "Naimiṣīyopākhyāna — Praśnāḥ (The Sages' Questions)",
+      "title_sa": "नैमिषीयोपाख्याने ऋषिप्रश्नः",
+      "title_en": "The Questions of the Sages at Naimiṣāraṇya",
+      "title_ml": "നൈമിഷാരണ്യത്തിലെ ഋഷിമാരുടെ ചോദ്യങ്ങൾ",
       "summary_en": "After three invocatory verses defining the supreme truth and the purpose of the Bhāgavata, the sages led by Śaunaka, performing a thousand-year sacrifice at Naimiṣāraṇya, honour Sūta and ask him what is the ultimate good for people in the age of Kali.",
       "summary_ml": "പരമസത്യത്തെയും ഭാഗവതത്തിന്റെ ലക്ഷ്യത്തെയും നിർവചിക്കുന്ന മൂന്ന് മംഗളശ്ലോകങ്ങൾക്കു ശേഷം, നൈമിഷാരണ്യത്തിൽ ആയിരം വർഷത്തെ സത്രം അനുഷ്ഠിക്കുന്ന ശൗനകാദി ഋഷിമാർ സൂതനെ ആദരിച്ച് കലിയുഗത്തിലെ ജനങ്ങൾക്ക് പരമമായ ശ്രേയസ്സ് എന്തെന്ന് ചോദിക്കുന്നു.",
       "colophon_sa": "इति श्रीमद्भागवते महापुराणे पारमहंस्यां संहितायां प्रथमस्कन्धे नैमिषीयोपाख्याने प्रथमोऽध्यायः ॥ १ ॥"
@@ -10,299 +37,1064 @@
   },
   "verses": [
     {
-      "ref": "1.1.1", "ordinal": 1, "kind": "invocation", "meter": "śārdūlavikrīḍita", "speaker": null,
+      "ref": "1.1.1",
+      "ordinal": 1,
+      "kind": "invocation",
+      "speaker": null,
       "deva": "ॐ नमो भगवते वासुदेवाय ।\nजन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट्\nतेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः ।\nतेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा\nधाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि ॥ १ ॥",
       "iast": "oṁ namo bhagavate vāsudevāya\njanmādy asya yato 'nvayād itarataś cārtheṣv abhijñaḥ svarāṭ\ntene brahma hṛdā ya ādi-kavaye muhyanti yat sūrayaḥ\ntejo-vāri-mṛdāṁ yathā vinimayo yatra tri-sargo 'mṛṣā\ndhāmnā svena sadā nirasta-kuhakaṁ satyaṁ paraṁ dhīmahi",
       "en": "Oṁ. Obeisance to the blessed Lord Vāsudeva.\nWe meditate upon the supreme truth — that from whom this universe has its birth, sustenance and dissolution; who is present in all things and yet distinct from them; who is fully aware of every object and independent; who imparted the Veda into the heart of the first seer, Brahmā, and about whom even the wise are bewildered; in whom the threefold creation appears real, just as fire, water and earth are mistaken for one another; and who by his own radiance forever dispels all illusion.",
       "ml": "ഓം. ഭഗവാൻ വാസുദേവന് നമസ്കാരം.\nഈ പ്രപഞ്ചത്തിന്റെ സൃഷ്ടിയും സ്ഥിതിയും ലയവും ആരിൽനിന്നാണോ; സകലതിലും അന്വയിച്ചിരിക്കുകയും അതേസമയം അവയിൽനിന്ന് വ്യതിരിക്തനുമായ; സർവാർത്ഥങ്ങളെയും അറിയുന്നവനും സ്വതന്ത്രനുമായ; ആദികവിയായ ബ്രഹ്മാവിന്റെ ഹൃദയത്തിൽ വേദത്തെ പകർന്നവനും, ആരെക്കുറിച്ച് പണ്ഡിതന്മാർ പോലും മോഹിക്കുന്നുവോ; തേജസ്സ്, ജലം, മണ്ണ് എന്നിവ പരസ്പരം തെറ്റിദ്ധരിക്കപ്പെടുന്നതുപോലെ ആരിൽ ത്രിവിധസൃഷ്ടി സത്യമെന്നു തോന്നുന്നുവോ; സ്വന്തം തേജസ്സുകൊണ്ട് സദാ സകലമായയെയും അകറ്റുന്നവനുമായ ആ പരമസത്യത്തെ ഞങ്ങൾ ധ്യാനിക്കുന്നു.",
       "word_meanings": [
-        {"word": "janma-ādi", "meaning": "birth and the rest (sustenance, dissolution)"},
-        {"word": "asya", "meaning": "of this (universe)"},
-        {"word": "yataḥ", "meaning": "from whom"},
-        {"word": "anvayāt itarataḥ ca", "meaning": "by presence (in all things) and by distinctness (from them)"},
-        {"word": "artheṣu abhijñaḥ", "meaning": "fully aware of all objects"},
-        {"word": "svarāṭ", "meaning": "self-luminous, independent"},
-        {"word": "tene", "meaning": "imparted"},
-        {"word": "brahma", "meaning": "the Veda"},
-        {"word": "hṛdā", "meaning": "through the heart"},
-        {"word": "yaḥ", "meaning": "who"},
-        {"word": "ādi-kavaye", "meaning": "to the first seer (Brahmā)"},
-        {"word": "muhyanti", "meaning": "are bewildered"},
-        {"word": "yat", "meaning": "about whom"},
-        {"word": "sūrayaḥ", "meaning": "the wise"},
-        {"word": "tejaḥ-vāri-mṛdām", "meaning": "of fire, water and earth"},
-        {"word": "yathā", "meaning": "just as"},
-        {"word": "vinimayaḥ", "meaning": "mutual confusion / exchange"},
-        {"word": "yatra", "meaning": "in whom"},
-        {"word": "tri-sargaḥ", "meaning": "the threefold creation (of the guṇas)"},
-        {"word": "amṛṣā", "meaning": "(appears) not false, real"},
-        {"word": "dhāmnā svena", "meaning": "by his own radiance"},
-        {"word": "sadā", "meaning": "always"},
-        {"word": "nirasta-kuhakam", "meaning": "who has dispelled deception (māyā)"},
-        {"word": "satyam param", "meaning": "the supreme truth"},
-        {"word": "dhīmahi", "meaning": "we meditate upon"}
+        {
+          "word": "janma-ādi",
+          "meaning": "birth and the rest (sustenance, dissolution)"
+        },
+        {
+          "word": "asya",
+          "meaning": "of this (universe)"
+        },
+        {
+          "word": "yataḥ",
+          "meaning": "from whom"
+        },
+        {
+          "word": "anvayāt itarataḥ ca",
+          "meaning": "by presence (in all things) and by distinctness (from them)"
+        },
+        {
+          "word": "artheṣu abhijñaḥ",
+          "meaning": "fully aware of all objects"
+        },
+        {
+          "word": "svarāṭ",
+          "meaning": "self-luminous, independent"
+        },
+        {
+          "word": "tene",
+          "meaning": "imparted"
+        },
+        {
+          "word": "brahma",
+          "meaning": "the Veda"
+        },
+        {
+          "word": "hṛdā",
+          "meaning": "through the heart"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "who"
+        },
+        {
+          "word": "ādi-kavaye",
+          "meaning": "to the first seer (Brahmā)"
+        },
+        {
+          "word": "muhyanti",
+          "meaning": "are bewildered"
+        },
+        {
+          "word": "yat",
+          "meaning": "about whom"
+        },
+        {
+          "word": "sūrayaḥ",
+          "meaning": "the wise"
+        },
+        {
+          "word": "tejaḥ-vāri-mṛdām",
+          "meaning": "of fire, water and earth"
+        },
+        {
+          "word": "yathā",
+          "meaning": "just as"
+        },
+        {
+          "word": "vinimayaḥ",
+          "meaning": "mutual confusion / exchange"
+        },
+        {
+          "word": "yatra",
+          "meaning": "in whom"
+        },
+        {
+          "word": "tri-sargaḥ",
+          "meaning": "the threefold creation (of the guṇas)"
+        },
+        {
+          "word": "amṛṣā",
+          "meaning": "(appears) not false, real"
+        },
+        {
+          "word": "dhāmnā svena",
+          "meaning": "by his own radiance"
+        },
+        {
+          "word": "sadā",
+          "meaning": "always"
+        },
+        {
+          "word": "nirasta-kuhakam",
+          "meaning": "who has dispelled deception (māyā)"
+        },
+        {
+          "word": "satyam param",
+          "meaning": "the supreme truth"
+        },
+        {
+          "word": "dhīmahi",
+          "meaning": "we meditate upon"
+        }
       ],
       "notes_en": "The opening verse echoes the Gāyatrī (dhīmahi) and the Vedānta-sūtra 1.1.2 (janmādy asya yataḥ). The maṅgala 'oṁ namo bhagavate vāsudevāya' precedes the verse in the printed vulgate.",
       "mentions": [
-        {"kind": "person", "slug": "vasudeva-krishna", "role": "subject", "surface_form": "bhagavate vāsudevāya"},
-        {"kind": "person", "slug": "brahma", "role": "subject", "surface_form": "ādi-kavaye"},
-        {"kind": "topic", "slug": "satyam-param", "role": "theme", "surface_form": "satyaṁ param"},
-        {"kind": "topic", "slug": "srsti-sthiti-laya", "role": "theme", "surface_form": "janmādy asya"},
-        {"kind": "topic", "slug": "maya", "role": "theme", "surface_form": "kuhakam"}
+        {
+          "kind": "person",
+          "slug": "vasudeva-krishna",
+          "role": "subject",
+          "surface_form": "bhagavate vāsudevāya"
+        },
+        {
+          "kind": "person",
+          "slug": "brahma",
+          "role": "subject",
+          "surface_form": "ādi-kavaye"
+        },
+        {
+          "kind": "topic",
+          "slug": "satyam-param",
+          "role": "theme",
+          "surface_form": "satyaṁ param"
+        },
+        {
+          "kind": "topic",
+          "slug": "srsti-sthiti-laya",
+          "role": "theme",
+          "surface_form": "janmādy asya"
+        },
+        {
+          "kind": "topic",
+          "slug": "maya",
+          "role": "theme",
+          "surface_form": "kuhakam"
+        }
       ],
       "xrefs": [
-        {"to": "1.2.11", "kind": "see_also", "note": "The three designations of the one truth: Brahman, Paramātmā, Bhagavān."}
-      ]
+        {
+          "to": "1.2.11",
+          "kind": "see_also",
+          "note": "The three designations of the one truth: Brahman, Paramātmā, Bhagavān."
+        }
+      ],
+      "meter": "śārdūlavikrīḍita",
+      "metadata": {
+        "audio": {
+          "important": true,
+          "cue_asset": "assets/audio/sloka_chime.wav",
+          "label": "mangala",
+          "note": "Opening invocatory verse (maṅgalācaraṇa). Editorial cue only — not a recitation and not an AI ranking of the corpus."
+        }
+      }
     },
     {
-      "ref": "1.1.2", "ordinal": 2, "kind": "invocation", "meter": "śārdūlavikrīḍita", "speaker": null,
+      "ref": "1.1.2",
+      "ordinal": 2,
+      "kind": "invocation",
+      "speaker": null,
       "deva": "धर्मः प्रोज्झितकैतवोऽत्र परमो निर्मत्सराणां सतां\nवेद्यं वास्तवमत्र वस्तु शिवदं तापत्रयोन्मूलनम् ।\nश्रीमद्भागवते महामुनिकृते किं वा परैरीश्वरः\nसद्यो हृद्यवरुध्यतेऽत्र कृतिभिः शुश्रूषुभिस्तत्क्षणात् ॥ २ ॥",
       "iast": "dharmaḥ projjhita-kaitavo 'tra paramo nirmatsarāṇāṁ satāṁ\nvedyaṁ vāstavam atra vastu śivadaṁ tāpa-trayonmūlanam\nśrīmad-bhāgavate mahā-muni-kṛte kiṁ vā parair īśvaraḥ\nsadyo hṛdy avarudhyate 'tra kṛtibhiḥ śuśrūṣubhis tat-kṣaṇāt",
       "en": "Here is set forth the highest dharma, free of every ulterior motive, for the good who are without envy; here the real substance is to be known — that which grants well-being and uproots the threefold misery. In this Śrīmad Bhāgavata, composed by the great sage, what need is there of any other scripture? The Lord is at once captured in the heart of those who are fortunate enough to wish to hear it — in that very moment.",
       "ml": "അസൂയയില്ലാത്ത സജ്ജനങ്ങൾക്കായി, സകലകപടവും വെടിഞ്ഞ പരമധർമ്മം ഇവിടെ പ്രതിപാദിക്കപ്പെടുന്നു; ത്രിതാപങ്ങളെ വേരോടെ പിഴുതെറിയുന്ന, മംഗളം നൽകുന്ന യഥാർത്ഥവസ്തുവാണ് ഇവിടെ അറിയേണ്ടത്. മഹാമുനി രചിച്ച ഈ ശ്രീമദ്ഭാഗവതം ഉള്ളപ്പോൾ മറ്റു ശാസ്ത്രങ്ങൾകൊണ്ട് എന്തു കാര്യം? ഇത് കേൾക്കാൻ ആഗ്രഹിക്കുന്ന പുണ്യവാന്മാരുടെ ഹൃദയത്തിൽ ഈശ്വരൻ ആ ക്ഷണത്തിൽത്തന്നെ ബന്ധിക്കപ്പെടുന്നു.",
       "word_meanings": [
-        {"word": "dharmaḥ", "meaning": "dharma, religion"},
-        {"word": "projjhita-kaitavaḥ", "meaning": "from which all deceit / ulterior motive is cast out"},
-        {"word": "atra", "meaning": "here (in this work)"},
-        {"word": "paramaḥ", "meaning": "the highest"},
-        {"word": "nirmatsarāṇām satām", "meaning": "of the good who are free from envy"},
-        {"word": "vedyam", "meaning": "to be known"},
-        {"word": "vāstavam vastu", "meaning": "the real substance / reality"},
-        {"word": "śiva-dam", "meaning": "bestowing well-being"},
-        {"word": "tāpa-traya-unmūlanam", "meaning": "uprooting the three miseries"},
-        {"word": "śrīmad-bhāgavate", "meaning": "in the Śrīmad Bhāgavata"},
-        {"word": "mahā-muni-kṛte", "meaning": "composed by the great sage (Vyāsa)"},
-        {"word": "kim vā paraiḥ", "meaning": "what use of others?"},
-        {"word": "īśvaraḥ", "meaning": "the Lord"},
-        {"word": "sadyaḥ", "meaning": "at once"},
-        {"word": "hṛdi avarudhyate", "meaning": "is confined / captured in the heart"},
-        {"word": "kṛtibhiḥ", "meaning": "by the fortunate, the accomplished"},
-        {"word": "śuśrūṣubhiḥ", "meaning": "by those desiring to hear"},
-        {"word": "tat-kṣaṇāt", "meaning": "from that very moment"}
+        {
+          "word": "dharmaḥ",
+          "meaning": "dharma, religion"
+        },
+        {
+          "word": "projjhita-kaitavaḥ",
+          "meaning": "from which all deceit / ulterior motive is cast out"
+        },
+        {
+          "word": "atra",
+          "meaning": "here (in this work)"
+        },
+        {
+          "word": "paramaḥ",
+          "meaning": "the highest"
+        },
+        {
+          "word": "nirmatsarāṇām satām",
+          "meaning": "of the good who are free from envy"
+        },
+        {
+          "word": "vedyam",
+          "meaning": "to be known"
+        },
+        {
+          "word": "vāstavam vastu",
+          "meaning": "the real substance / reality"
+        },
+        {
+          "word": "śiva-dam",
+          "meaning": "bestowing well-being"
+        },
+        {
+          "word": "tāpa-traya-unmūlanam",
+          "meaning": "uprooting the three miseries"
+        },
+        {
+          "word": "śrīmad-bhāgavate",
+          "meaning": "in the Śrīmad Bhāgavata"
+        },
+        {
+          "word": "mahā-muni-kṛte",
+          "meaning": "composed by the great sage (Vyāsa)"
+        },
+        {
+          "word": "kim vā paraiḥ",
+          "meaning": "what use of others?"
+        },
+        {
+          "word": "īśvaraḥ",
+          "meaning": "the Lord"
+        },
+        {
+          "word": "sadyaḥ",
+          "meaning": "at once"
+        },
+        {
+          "word": "hṛdi avarudhyate",
+          "meaning": "is confined / captured in the heart"
+        },
+        {
+          "word": "kṛtibhiḥ",
+          "meaning": "by the fortunate, the accomplished"
+        },
+        {
+          "word": "śuśrūṣubhiḥ",
+          "meaning": "by those desiring to hear"
+        },
+        {
+          "word": "tat-kṣaṇāt",
+          "meaning": "from that very moment"
+        }
       ],
       "notes_en": "tāpa-traya: the three miseries — ādhyātmika (from one's own body and mind), ādhibhautika (from other beings), ādhidaivika (from natural forces).",
       "mentions": [
-        {"kind": "person", "slug": "vyasa", "role": "subject", "surface_form": "mahā-muni"},
-        {"kind": "topic", "slug": "dharma", "role": "theme", "surface_form": "dharmaḥ projjhita-kaitavaḥ"},
-        {"kind": "topic", "slug": "tapa-traya", "role": "theme", "surface_form": "tāpa-trayonmūlanam"},
-        {"kind": "topic", "slug": "sravana", "role": "theme", "surface_form": "śuśrūṣubhiḥ"}
+        {
+          "kind": "person",
+          "slug": "vyasa",
+          "role": "subject",
+          "surface_form": "mahā-muni"
+        },
+        {
+          "kind": "topic",
+          "slug": "dharma",
+          "role": "theme",
+          "surface_form": "dharmaḥ projjhita-kaitavaḥ"
+        },
+        {
+          "kind": "topic",
+          "slug": "tapa-traya",
+          "role": "theme",
+          "surface_form": "tāpa-trayonmūlanam"
+        },
+        {
+          "kind": "topic",
+          "slug": "sravana",
+          "role": "theme",
+          "surface_form": "śuśrūṣubhiḥ"
+        }
       ],
-      "xrefs": []
+      "xrefs": [],
+      "meter": "śārdūlavikrīḍita",
+      "metadata": {
+        "audio": {
+          "important": true,
+          "cue_asset": "assets/audio/sloka_chime.wav",
+          "label": "mangala",
+          "note": "Second invocatory verse. Editorial cue only."
+        }
+      }
     },
     {
-      "ref": "1.1.3", "ordinal": 3, "kind": "invocation", "meter": "drutavilambita", "speaker": null,
+      "ref": "1.1.3",
+      "ordinal": 3,
+      "kind": "invocation",
+      "speaker": null,
       "deva": "निगमकल्पतरोर्गलितं फलं\nशुकमुखादमृतद्रवसंयुतम् ।\nपिबत भागवतं रसमालयं\nमुहुरहो रसिका भुवि भावुकाः ॥ ३ ॥",
       "iast": "nigama-kalpa-taror galitaṁ phalaṁ\nśuka-mukhād amṛta-drava-saṁyutam\npibata bhāgavataṁ rasam ālayaṁ\nmuhur aho rasikā bhuvi bhāvukāḥ",
       "en": "O connoisseurs of taste, O sensitive souls upon the earth! Drink again and again this Bhāgavata — the ripe fruit fallen from the wish-fulfilling tree of the Veda, made yet sweeter with nectar from the mouth of Śuka — this rasa, this very abode of relish.",
       "ml": "അല്ലയോ ഭൂമിയിലെ രസികന്മാരേ, ഭാവുകന്മാരേ! വേദമാകുന്ന കൽപവൃക്ഷത്തിൽനിന്ന് പഴുത്തുവീണ, ശുകന്റെ മുഖത്തുനിന്നുള്ള അമൃതരസത്താൽ കൂടുതൽ മധുരമായ ഈ ഭാഗവതമാകുന്ന രസം — രസത്തിന്റെ ഇരിപ്പിടം തന്നെയായ ഇത് — വീണ്ടും വീണ്ടും പാനം ചെയ്യുവിൻ.",
       "word_meanings": [
-        {"word": "nigama-kalpa-taroḥ", "meaning": "of the wish-fulfilling tree of the Veda"},
-        {"word": "galitam", "meaning": "fallen (fully ripe)"},
-        {"word": "phalam", "meaning": "fruit"},
-        {"word": "śuka-mukhāt", "meaning": "from the mouth of Śuka (also: the parrot)"},
-        {"word": "amṛta-drava-saṁyutam", "meaning": "joined with nectarean juice"},
-        {"word": "pibata", "meaning": "drink!"},
-        {"word": "bhāgavatam", "meaning": "the Bhāgavata"},
-        {"word": "rasam", "meaning": "the juice, relish"},
-        {"word": "ālayam", "meaning": "the abode (of rasa); also read 'ā layam' — 'until dissolution'"},
-        {"word": "muhuḥ", "meaning": "again and again"},
-        {"word": "aho", "meaning": "O!"},
-        {"word": "rasikāḥ", "meaning": "connoisseurs of rasa"},
-        {"word": "bhuvi", "meaning": "on earth"},
-        {"word": "bhāvukāḥ", "meaning": "those of feeling, the sensitive"}
+        {
+          "word": "nigama-kalpa-taroḥ",
+          "meaning": "of the wish-fulfilling tree of the Veda"
+        },
+        {
+          "word": "galitam",
+          "meaning": "fallen (fully ripe)"
+        },
+        {
+          "word": "phalam",
+          "meaning": "fruit"
+        },
+        {
+          "word": "śuka-mukhāt",
+          "meaning": "from the mouth of Śuka (also: the parrot)"
+        },
+        {
+          "word": "amṛta-drava-saṁyutam",
+          "meaning": "joined with nectarean juice"
+        },
+        {
+          "word": "pibata",
+          "meaning": "drink!"
+        },
+        {
+          "word": "bhāgavatam",
+          "meaning": "the Bhāgavata"
+        },
+        {
+          "word": "rasam",
+          "meaning": "the juice, relish"
+        },
+        {
+          "word": "ālayam",
+          "meaning": "the abode (of rasa); also read 'ā layam' — 'until dissolution'"
+        },
+        {
+          "word": "muhuḥ",
+          "meaning": "again and again"
+        },
+        {
+          "word": "aho",
+          "meaning": "O!"
+        },
+        {
+          "word": "rasikāḥ",
+          "meaning": "connoisseurs of rasa"
+        },
+        {
+          "word": "bhuvi",
+          "meaning": "on earth"
+        },
+        {
+          "word": "bhāvukāḥ",
+          "meaning": "those of feeling, the sensitive"
+        }
       ],
       "notes_en": "A double meaning is traditionally read in śuka-mukhāt: a fruit touched by a parrot's (śuka) beak is sweeter, and the Bhāgavata comes from the mouth of Śuka, son of Vyāsa.",
       "mentions": [
-        {"kind": "person", "slug": "suka", "role": "subject", "surface_form": "śuka-mukhāt"},
-        {"kind": "topic", "slug": "rasa", "role": "theme", "surface_form": "rasam"},
-        {"kind": "topic", "slug": "sravana", "role": "theme", "surface_form": "pibata"}
+        {
+          "kind": "person",
+          "slug": "suka",
+          "role": "subject",
+          "surface_form": "śuka-mukhāt"
+        },
+        {
+          "kind": "topic",
+          "slug": "rasa",
+          "role": "theme",
+          "surface_form": "rasam"
+        },
+        {
+          "kind": "topic",
+          "slug": "sravana",
+          "role": "theme",
+          "surface_form": "pibata"
+        }
       ],
-      "xrefs": []
+      "xrefs": [],
+      "meter": "drutavilambita",
+      "metadata": {
+        "audio": {
+          "important": true,
+          "cue_asset": "assets/audio/sloka_chime.wav",
+          "label": "mangala",
+          "note": "Third invocatory verse. Editorial cue only."
+        }
+      }
     },
     {
-      "ref": "1.1.4", "ordinal": 4, "kind": "verse", "meter": "anuṣṭubh", "speaker": null,
+      "ref": "1.1.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
       "deva": "नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः ।\nसत्रं स्वर्गाय लोकाय सहस्रसममासत ॥ ४ ॥",
       "iast": "naimiṣe 'nimiṣa-kṣetre ṛṣayaḥ śaunakādayaḥ\nsatraṁ svargāya lokāya sahasra-samam āsata",
       "en": "In the Naimiṣa forest, the sacred field of Viṣṇu, the sages headed by Śaunaka were seated at a sacrificial session of a thousand years, for the sake of the heavenly world.",
       "ml": "അനിമിഷനായ വിഷ്ണുവിന്റെ ക്ഷേത്രമായ നൈമിഷാരണ്യത്തിൽ, ശൗനകൻ തുടങ്ങിയ ഋഷിമാർ സ്വർഗലോകപ്രാപ്തിക്കായി ആയിരം വർഷം നീളുന്ന ഒരു സത്രയാഗത്തിൽ ഇരിക്കുകയായിരുന്നു.",
       "word_meanings": [
-        {"word": "naimiṣe", "meaning": "in Naimiṣa (forest)"},
-        {"word": "animiṣa-kṣetre", "meaning": "in the field sacred to Animiṣa (the unblinking one, Viṣṇu)"},
-        {"word": "ṛṣayaḥ", "meaning": "the sages"},
-        {"word": "śaunaka-ādayaḥ", "meaning": "headed by Śaunaka"},
-        {"word": "satram", "meaning": "a sacrificial session"},
-        {"word": "svargāya lokāya", "meaning": "for the heavenly world (or: for the good of the world)"},
-        {"word": "sahasra-samam", "meaning": "lasting a thousand years"},
-        {"word": "āsata", "meaning": "they sat / performed"}
+        {
+          "word": "naimiṣe",
+          "meaning": "in Naimiṣa (forest)"
+        },
+        {
+          "word": "animiṣa-kṣetre",
+          "meaning": "in the field sacred to Animiṣa (the unblinking one, Viṣṇu)"
+        },
+        {
+          "word": "ṛṣayaḥ",
+          "meaning": "the sages"
+        },
+        {
+          "word": "śaunaka-ādayaḥ",
+          "meaning": "headed by Śaunaka"
+        },
+        {
+          "word": "satram",
+          "meaning": "a sacrificial session"
+        },
+        {
+          "word": "svargāya lokāya",
+          "meaning": "for the heavenly world (or: for the good of the world)"
+        },
+        {
+          "word": "sahasra-samam",
+          "meaning": "lasting a thousand years"
+        },
+        {
+          "word": "āsata",
+          "meaning": "they sat / performed"
+        }
       ],
       "notes_en": "Text-critical: GRETIL reads 'īśayaḥ' (a transcription error); Wikisource and the printed vulgate read 'ṛṣayaḥ', which is adopted here.",
       "mentions": [
-        {"kind": "place", "slug": "naimisaranya", "role": "setting", "surface_form": "naimiṣe 'nimiṣa-kṣetre"},
-        {"kind": "person", "slug": "saunaka", "role": "subject", "surface_form": "śaunakādayaḥ"},
-        {"kind": "person", "slug": "vishnu", "role": "subject", "surface_form": "animiṣa"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"},
-        {"kind": "topic", "slug": "yajna", "role": "theme", "surface_form": "satram"}
+        {
+          "kind": "place",
+          "slug": "naimisaranya",
+          "role": "setting",
+          "surface_form": "naimiṣe 'nimiṣa-kṣetre"
+        },
+        {
+          "kind": "person",
+          "slug": "saunaka",
+          "role": "subject",
+          "surface_form": "śaunakādayaḥ"
+        },
+        {
+          "kind": "person",
+          "slug": "vishnu",
+          "role": "subject",
+          "surface_form": "animiṣa"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        },
+        {
+          "kind": "topic",
+          "slug": "yajna",
+          "role": "theme",
+          "surface_form": "satram"
+        }
       ],
-      "xrefs": [{"to": "1.1.21", "kind": "continuation", "note": "The sages explain why they sit at the long sacrifice in this Vaiṣṇava field."}]
+      "xrefs": [
+        {
+          "to": "1.1.21",
+          "kind": "continuation",
+          "note": "The sages explain why they sit at the long sacrifice in this Vaiṣṇava field."
+        }
+      ],
+      "meter": "anuṣṭubh"
     },
     {
-      "ref": "1.1.5", "ordinal": 5, "kind": "verse", "meter": "anuṣṭubh", "speaker": null,
+      "ref": "1.1.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
       "deva": "त एकदा तु मुनयः प्रातर्हुतहुताग्नयः ।\nसत्कृतं सूतमासीनं पप्रच्छुरिदमादरात् ॥ ५ ॥",
       "iast": "ta ekadā tu munayaḥ prātar huta-hutāgnayaḥ\nsatkṛtaṁ sūtam āsīnaṁ papracchur idam ādarāt",
       "en": "One day, having offered the morning oblations into the sacred fire, those sages respectfully put this question to Sūta, who was seated after being duly honoured.",
       "ml": "ഒരു ദിവസം, പ്രഭാതത്തിലെ ഹോമം അഗ്നിയിൽ അർപ്പിച്ചശേഷം, ആ മുനിമാർ യഥാവിധി ആദരിക്കപ്പെട്ട് ഇരിക്കുന്ന സൂതനോട് ആദരപൂർവ്വം ഇപ്രകാരം ചോദിച്ചു.",
       "word_meanings": [
-        {"word": "te", "meaning": "they"},
-        {"word": "ekadā", "meaning": "once, one day"},
-        {"word": "tu", "meaning": "indeed"},
-        {"word": "munayaḥ", "meaning": "the sages"},
-        {"word": "prātaḥ", "meaning": "in the morning"},
-        {"word": "huta-huta-agnayaḥ", "meaning": "having offered oblations into the sacred fire"},
-        {"word": "satkṛtam", "meaning": "duly honoured"},
-        {"word": "sūtam", "meaning": "Sūta"},
-        {"word": "āsīnam", "meaning": "seated"},
-        {"word": "papracchuḥ", "meaning": "they asked"},
-        {"word": "idam", "meaning": "this"},
-        {"word": "ādarāt", "meaning": "with respect"}
+        {
+          "word": "te",
+          "meaning": "they"
+        },
+        {
+          "word": "ekadā",
+          "meaning": "once, one day"
+        },
+        {
+          "word": "tu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "munayaḥ",
+          "meaning": "the sages"
+        },
+        {
+          "word": "prātaḥ",
+          "meaning": "in the morning"
+        },
+        {
+          "word": "huta-huta-agnayaḥ",
+          "meaning": "having offered oblations into the sacred fire"
+        },
+        {
+          "word": "satkṛtam",
+          "meaning": "duly honoured"
+        },
+        {
+          "word": "sūtam",
+          "meaning": "Sūta"
+        },
+        {
+          "word": "āsīnam",
+          "meaning": "seated"
+        },
+        {
+          "word": "papracchuḥ",
+          "meaning": "they asked"
+        },
+        {
+          "word": "idam",
+          "meaning": "this"
+        },
+        {
+          "word": "ādarāt",
+          "meaning": "with respect"
+        }
       ],
       "mentions": [
-        {"kind": "person", "slug": "suta", "role": "addressee", "surface_form": "sūtam"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"},
-        {"kind": "topic", "slug": "yajna", "role": "theme", "surface_form": "huta-hutāgnayaḥ"}
+        {
+          "kind": "person",
+          "slug": "suta",
+          "role": "addressee",
+          "surface_form": "sūtam"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        },
+        {
+          "kind": "topic",
+          "slug": "yajna",
+          "role": "theme",
+          "surface_form": "huta-hutāgnayaḥ"
+        }
       ],
-      "xrefs": []
+      "xrefs": [],
+      "meter": "anuṣṭubh"
     },
     {
-      "ref": "1.1.6", "ordinal": 6, "kind": "verse", "meter": "anuṣṭubh", "speaker": "sages-of-naimisaranya",
+      "ref": "1.1.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
       "deva": "ऋषय ऊचुः ।\nत्वया खलु पुराणानि सेतिहासानि चानघ ।\nआख्यातान्यप्यधीतानि धर्मशास्त्राणि यान्युत ॥ ६ ॥",
       "iast": "ṛṣaya ūcuḥ\ntvayā khalu purāṇāni setihāsāni cānagha\nākhyātāny apy adhītāni dharma-śāstrāṇi yāny uta",
       "en": "The sages said: O sinless one, you have indeed studied — and also expounded — the Purāṇas together with the Itihāsas, and the treatises on dharma as well.",
       "ml": "ഋഷിമാർ പറഞ്ഞു: അല്ലയോ നിഷ്പാപനായവനേ, അങ്ങ് പുരാണങ്ങളും ഇതിഹാസങ്ങളും ധർമ്മശാസ്ത്രങ്ങളും പഠിക്കുക മാത്രമല്ല, അവ വ്യാഖ്യാനിക്കുകയും ചെയ്തിട്ടുണ്ടല്ലോ.",
       "word_meanings": [
-        {"word": "ṛṣayaḥ ūcuḥ", "meaning": "the sages said"},
-        {"word": "tvayā", "meaning": "by you"},
-        {"word": "khalu", "meaning": "indeed"},
-        {"word": "purāṇāni", "meaning": "the Purāṇas"},
-        {"word": "sa-itihāsāni", "meaning": "together with the Itihāsas (epics)"},
-        {"word": "ca", "meaning": "and"},
-        {"word": "anagha", "meaning": "O sinless one"},
-        {"word": "ākhyātāni", "meaning": "expounded"},
-        {"word": "api", "meaning": "also"},
-        {"word": "adhītāni", "meaning": "studied"},
-        {"word": "dharma-śāstrāṇi", "meaning": "the treatises on dharma"},
-        {"word": "yāni uta", "meaning": "and which (there are)"}
+        {
+          "word": "ṛṣayaḥ ūcuḥ",
+          "meaning": "the sages said"
+        },
+        {
+          "word": "tvayā",
+          "meaning": "by you"
+        },
+        {
+          "word": "khalu",
+          "meaning": "indeed"
+        },
+        {
+          "word": "purāṇāni",
+          "meaning": "the Purāṇas"
+        },
+        {
+          "word": "sa-itihāsāni",
+          "meaning": "together with the Itihāsas (epics)"
+        },
+        {
+          "word": "ca",
+          "meaning": "and"
+        },
+        {
+          "word": "anagha",
+          "meaning": "O sinless one"
+        },
+        {
+          "word": "ākhyātāni",
+          "meaning": "expounded"
+        },
+        {
+          "word": "api",
+          "meaning": "also"
+        },
+        {
+          "word": "adhītāni",
+          "meaning": "studied"
+        },
+        {
+          "word": "dharma-śāstrāṇi",
+          "meaning": "the treatises on dharma"
+        },
+        {
+          "word": "yāni uta",
+          "meaning": "and which (there are)"
+        }
       ],
       "mentions": [
-        {"kind": "person", "slug": "sages-of-naimisaranya", "role": "speaker"},
-        {"kind": "person", "slug": "suta", "role": "addressee", "surface_form": "anagha"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"},
-        {"kind": "topic", "slug": "sastra", "role": "theme", "surface_form": "purāṇāni setihāsāni … dharma-śāstrāṇi"}
+        {
+          "kind": "person",
+          "slug": "sages-of-naimisaranya",
+          "role": "speaker"
+        },
+        {
+          "kind": "person",
+          "slug": "suta",
+          "role": "addressee",
+          "surface_form": "anagha"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        },
+        {
+          "kind": "topic",
+          "slug": "sastra",
+          "role": "theme",
+          "surface_form": "purāṇāni setihāsāni … dharma-śāstrāṇi"
+        }
       ],
-      "xrefs": []
+      "xrefs": [],
+      "meter": "anuṣṭubh"
     },
     {
-      "ref": "1.1.7", "ordinal": 7, "kind": "verse", "meter": "anuṣṭubh", "speaker": "sages-of-naimisaranya",
+      "ref": "1.1.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
       "deva": "यानि वेदविदां श्रेष्ठो भगवान् बादरायणः ।\nअन्ये च मुनयः सूत परावरविदो विदुः ॥ ७ ॥",
       "iast": "yāni veda-vidāṁ śreṣṭho bhagavān bādarāyaṇaḥ\nanye ca munayaḥ sūta parāvara-vido viduḥ",
       "en": "O Sūta, whatever the blessed Bādarāyaṇa, foremost among the knowers of the Veda, knows — and whatever the other sages who know both the higher and the lower know —",
       "ml": "അല്ലയോ സൂതാ, വേദജ്ഞരിൽ ശ്രേഷ്ഠനായ ഭഗവാൻ ബാദരായണനും, പരവും അപരവും അറിയുന്ന മറ്റു മുനിമാരും അറിയുന്നതെല്ലാം —",
       "word_meanings": [
-        {"word": "yāni", "meaning": "which (things)"},
-        {"word": "veda-vidām", "meaning": "of the knowers of the Veda"},
-        {"word": "śreṣṭhaḥ", "meaning": "the foremost"},
-        {"word": "bhagavān", "meaning": "the venerable"},
-        {"word": "bādarāyaṇaḥ", "meaning": "Bādarāyaṇa (Vyāsa)"},
-        {"word": "anye ca munayaḥ", "meaning": "and the other sages"},
-        {"word": "sūta", "meaning": "O Sūta"},
-        {"word": "para-avara-vidaḥ", "meaning": "knowers of the higher and the lower (spirit and matter / Veda and its auxiliaries)"},
-        {"word": "viduḥ", "meaning": "know"}
+        {
+          "word": "yāni",
+          "meaning": "which (things)"
+        },
+        {
+          "word": "veda-vidām",
+          "meaning": "of the knowers of the Veda"
+        },
+        {
+          "word": "śreṣṭhaḥ",
+          "meaning": "the foremost"
+        },
+        {
+          "word": "bhagavān",
+          "meaning": "the venerable"
+        },
+        {
+          "word": "bādarāyaṇaḥ",
+          "meaning": "Bādarāyaṇa (Vyāsa)"
+        },
+        {
+          "word": "anye ca munayaḥ",
+          "meaning": "and the other sages"
+        },
+        {
+          "word": "sūta",
+          "meaning": "O Sūta"
+        },
+        {
+          "word": "para-avara-vidaḥ",
+          "meaning": "knowers of the higher and the lower (spirit and matter / Veda and its auxiliaries)"
+        },
+        {
+          "word": "viduḥ",
+          "meaning": "know"
+        }
       ],
       "mentions": [
-        {"kind": "person", "slug": "sages-of-naimisaranya", "role": "speaker"},
-        {"kind": "person", "slug": "vyasa", "role": "subject", "surface_form": "bhagavān bādarāyaṇaḥ"},
-        {"kind": "person", "slug": "suta", "role": "addressee", "surface_form": "sūta"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"}
+        {
+          "kind": "person",
+          "slug": "sages-of-naimisaranya",
+          "role": "speaker"
+        },
+        {
+          "kind": "person",
+          "slug": "vyasa",
+          "role": "subject",
+          "surface_form": "bhagavān bādarāyaṇaḥ"
+        },
+        {
+          "kind": "person",
+          "slug": "suta",
+          "role": "addressee",
+          "surface_form": "sūta"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        }
       ],
-      "xrefs": []
+      "xrefs": [],
+      "meter": "anuṣṭubh"
     },
     {
-      "ref": "1.1.8", "ordinal": 8, "kind": "verse", "meter": "anuṣṭubh", "speaker": "sages-of-naimisaranya",
+      "ref": "1.1.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
       "deva": "वेत्थ त्वं सौम्य तत्सर्वं तत्त्वतस्तदनुग्रहात् ।\nब्रूयुः स्निग्धस्य शिष्यस्य गुरवो गुह्यमप्युत ॥ ८ ॥",
       "iast": "vettha tvaṁ saumya tat sarvaṁ tattvatas tad-anugrahāt\nbrūyuḥ snigdhasya śiṣyasya guravo guhyam apy uta",
       "en": "— all of that, gentle one, you know in truth, by their grace. For teachers reveal even what is secret to a disciple who is dear to them.",
       "ml": "— അതെല്ലാം, സൗമ്യനായവനേ, അവരുടെ അനുഗ്രഹത്താൽ അങ്ങ് യഥാർത്ഥമായി അറിയുന്നു. സ്നേഹമുള്ള ശിഷ്യനോട് ഗുരുക്കന്മാർ രഹസ്യമായതു പോലും പറഞ്ഞുകൊടുക്കുമല്ലോ.",
       "word_meanings": [
-        {"word": "vettha", "meaning": "you know"},
-        {"word": "tvam", "meaning": "you"},
-        {"word": "saumya", "meaning": "O gentle one"},
-        {"word": "tat sarvam", "meaning": "all that"},
-        {"word": "tattvataḥ", "meaning": "in truth, in essence"},
-        {"word": "tat-anugrahāt", "meaning": "by their grace"},
-        {"word": "brūyuḥ", "meaning": "would tell"},
-        {"word": "snigdhasya śiṣyasya", "meaning": "to an affectionate / beloved disciple"},
-        {"word": "guravaḥ", "meaning": "teachers"},
-        {"word": "guhyam api uta", "meaning": "even what is confidential"}
+        {
+          "word": "vettha",
+          "meaning": "you know"
+        },
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "saumya",
+          "meaning": "O gentle one"
+        },
+        {
+          "word": "tat sarvam",
+          "meaning": "all that"
+        },
+        {
+          "word": "tattvataḥ",
+          "meaning": "in truth, in essence"
+        },
+        {
+          "word": "tat-anugrahāt",
+          "meaning": "by their grace"
+        },
+        {
+          "word": "brūyuḥ",
+          "meaning": "would tell"
+        },
+        {
+          "word": "snigdhasya śiṣyasya",
+          "meaning": "to an affectionate / beloved disciple"
+        },
+        {
+          "word": "guravaḥ",
+          "meaning": "teachers"
+        },
+        {
+          "word": "guhyam api uta",
+          "meaning": "even what is confidential"
+        }
       ],
       "mentions": [
-        {"kind": "person", "slug": "sages-of-naimisaranya", "role": "speaker"},
-        {"kind": "person", "slug": "suta", "role": "addressee", "surface_form": "saumya"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"},
-        {"kind": "topic", "slug": "guru-sisya", "role": "theme", "surface_form": "snigdhasya śiṣyasya guravaḥ"}
+        {
+          "kind": "person",
+          "slug": "sages-of-naimisaranya",
+          "role": "speaker"
+        },
+        {
+          "kind": "person",
+          "slug": "suta",
+          "role": "addressee",
+          "surface_form": "saumya"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        },
+        {
+          "kind": "topic",
+          "slug": "guru-sisya",
+          "role": "theme",
+          "surface_form": "snigdhasya śiṣyasya guravaḥ"
+        }
       ],
-      "xrefs": []
+      "xrefs": [],
+      "meter": "anuṣṭubh"
     },
     {
-      "ref": "1.1.9", "ordinal": 9, "kind": "verse", "meter": "anuṣṭubh", "speaker": "sages-of-naimisaranya",
+      "ref": "1.1.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
       "deva": "तत्र तत्राञ्जसायुष्मन् भवता यद्विनिश्चितम् ।\nपुंसामेकान्ततः श्रेयस्तन्नः शंसितुमर्हसि ॥ ९ ॥",
       "iast": "tatra tatrāñjasāyuṣman bhavatā yad viniścitam\npuṁsām ekāntataḥ śreyas tan naḥ śaṁsitum arhasi",
       "en": "Therefore, long-lived one, from all of that, please tell us plainly what you have ascertained to be the absolute good of human beings.",
       "ml": "അതിനാൽ, ദീർഘായുസ്സേ, അവയിൽനിന്നെല്ലാം മനുഷ്യർക്ക് ഏകാന്തമായ, പരമമായ ശ്രേയസ്സ് എന്തെന്ന് അങ്ങ് നിശ്ചയിച്ചിട്ടുള്ളതിനെ ലളിതമായി ഞങ്ങൾക്ക് പറഞ്ഞുതരാൻ അങ്ങ് അർഹനാണ്.",
       "word_meanings": [
-        {"word": "tatra tatra", "meaning": "in each of those (scriptures)"},
-        {"word": "añjasā", "meaning": "plainly, directly"},
-        {"word": "āyuṣman", "meaning": "O long-lived one"},
-        {"word": "bhavatā", "meaning": "by you"},
-        {"word": "yat viniścitam", "meaning": "what has been ascertained"},
-        {"word": "puṁsām", "meaning": "of human beings"},
-        {"word": "ekāntataḥ", "meaning": "absolutely, without exception"},
-        {"word": "śreyaḥ", "meaning": "the ultimate good"},
-        {"word": "tat", "meaning": "that"},
-        {"word": "naḥ", "meaning": "to us"},
-        {"word": "śaṁsitum arhasi", "meaning": "you ought to tell"}
+        {
+          "word": "tatra tatra",
+          "meaning": "in each of those (scriptures)"
+        },
+        {
+          "word": "añjasā",
+          "meaning": "plainly, directly"
+        },
+        {
+          "word": "āyuṣman",
+          "meaning": "O long-lived one"
+        },
+        {
+          "word": "bhavatā",
+          "meaning": "by you"
+        },
+        {
+          "word": "yat viniścitam",
+          "meaning": "what has been ascertained"
+        },
+        {
+          "word": "puṁsām",
+          "meaning": "of human beings"
+        },
+        {
+          "word": "ekāntataḥ",
+          "meaning": "absolutely, without exception"
+        },
+        {
+          "word": "śreyaḥ",
+          "meaning": "the ultimate good"
+        },
+        {
+          "word": "tat",
+          "meaning": "that"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "to us"
+        },
+        {
+          "word": "śaṁsitum arhasi",
+          "meaning": "you ought to tell"
+        }
       ],
       "mentions": [
-        {"kind": "person", "slug": "sages-of-naimisaranya", "role": "speaker"},
-        {"kind": "person", "slug": "suta", "role": "addressee", "surface_form": "āyuṣman"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"},
-        {"kind": "topic", "slug": "sreyas", "role": "theme", "surface_form": "ekāntataḥ śreyaḥ"}
+        {
+          "kind": "person",
+          "slug": "sages-of-naimisaranya",
+          "role": "speaker"
+        },
+        {
+          "kind": "person",
+          "slug": "suta",
+          "role": "addressee",
+          "surface_form": "āyuṣman"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        },
+        {
+          "kind": "topic",
+          "slug": "sreyas",
+          "role": "theme",
+          "surface_form": "ekāntataḥ śreyaḥ"
+        }
       ],
-      "xrefs": [{"to": "1.2.6", "kind": "see_also", "note": "Sūta's answer: the supreme dharma is unmotivated, uninterrupted bhakti to Adhokṣaja."}]
+      "xrefs": [
+        {
+          "to": "1.2.6",
+          "kind": "see_also",
+          "note": "Sūta's answer: the supreme dharma is unmotivated, uninterrupted bhakti to Adhokṣaja."
+        }
+      ],
+      "meter": "anuṣṭubh"
     },
     {
-      "ref": "1.1.10", "ordinal": 10, "kind": "verse", "meter": "anuṣṭubh", "speaker": "sages-of-naimisaranya",
+      "ref": "1.1.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
       "deva": "प्रायेणाल्पायुषः सभ्य कलावस्मिन् युगे जनाः ।\nमन्दाः सुमन्दमतयो मन्दभाग्या ह्युपद्रुताः ॥ १० ॥",
       "iast": "prāyeṇālpāyuṣaḥ sabhya kalāv asmin yuge janāḥ\nmandāḥ sumanda-matayo manda-bhāgyā hy upadrutāḥ",
       "en": "For in this age of Kali, O noble one, people are for the most part short-lived, sluggish, very dull of understanding, unfortunate, and, above all, harassed by troubles.",
       "ml": "എന്തെന്നാൽ, സഭ്യനായവനേ, ഈ കലിയുഗത്തിൽ ജനങ്ങൾ മിക്കവാറും അൽപായുസ്സുള്ളവരും, മന്ദന്മാരും, അതിമന്ദബുദ്ധികളും, ഭാഗ്യഹീനരും, എപ്പോഴും ഉപദ്രവങ്ങളാൽ പീഡിതരുമാണ്.",
       "word_meanings": [
-        {"word": "prāyeṇa", "meaning": "for the most part"},
-        {"word": "alpa-āyuṣaḥ", "meaning": "short-lived"},
-        {"word": "sabhya", "meaning": "O noble one (fit for the assembly)"},
-        {"word": "kalau asmin yuge", "meaning": "in this age of Kali"},
-        {"word": "janāḥ", "meaning": "people"},
-        {"word": "mandāḥ", "meaning": "sluggish, lazy"},
-        {"word": "su-manda-matayaḥ", "meaning": "of very dull intelligence"},
-        {"word": "manda-bhāgyāḥ", "meaning": "unfortunate"},
-        {"word": "hi", "meaning": "indeed"},
-        {"word": "upadrutāḥ", "meaning": "harassed, disturbed"}
+        {
+          "word": "prāyeṇa",
+          "meaning": "for the most part"
+        },
+        {
+          "word": "alpa-āyuṣaḥ",
+          "meaning": "short-lived"
+        },
+        {
+          "word": "sabhya",
+          "meaning": "O noble one (fit for the assembly)"
+        },
+        {
+          "word": "kalau asmin yuge",
+          "meaning": "in this age of Kali"
+        },
+        {
+          "word": "janāḥ",
+          "meaning": "people"
+        },
+        {
+          "word": "mandāḥ",
+          "meaning": "sluggish, lazy"
+        },
+        {
+          "word": "su-manda-matayaḥ",
+          "meaning": "of very dull intelligence"
+        },
+        {
+          "word": "manda-bhāgyāḥ",
+          "meaning": "unfortunate"
+        },
+        {
+          "word": "hi",
+          "meaning": "indeed"
+        },
+        {
+          "word": "upadrutāḥ",
+          "meaning": "harassed, disturbed"
+        }
       ],
       "mentions": [
-        {"kind": "person", "slug": "sages-of-naimisaranya", "role": "speaker"},
-        {"kind": "person", "slug": "suta", "role": "addressee", "surface_form": "sabhya"},
-        {"kind": "story", "slug": "sages-question-suta", "role": "part_of"},
-        {"kind": "topic", "slug": "kali-yuga", "role": "theme", "surface_form": "kalāv asmin yuge"}
+        {
+          "kind": "person",
+          "slug": "sages-of-naimisaranya",
+          "role": "speaker"
+        },
+        {
+          "kind": "person",
+          "slug": "suta",
+          "role": "addressee",
+          "surface_form": "sabhya"
+        },
+        {
+          "kind": "story",
+          "slug": "sages-question-suta",
+          "role": "part_of"
+        },
+        {
+          "kind": "topic",
+          "slug": "kali-yuga",
+          "role": "theme",
+          "surface_form": "kalāv asmin yuge"
+        }
       ],
-      "xrefs": [{"to": "1.1.21", "kind": "see_also", "note": "The sages have gathered precisely because Kali has arrived."}]
+      "xrefs": [
+        {
+          "to": "1.1.21",
+          "kind": "see_also",
+          "note": "The sages have gathered precisely because Kali has arrived."
+        }
+      ],
+      "meter": "anuṣṭubh"
+    },
+    {
+      "ref": "1.1.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "भूरीणि भूरिकर्माणि श्रोतव्यानि विभागशः ।\nअतः साधोऽत्र यत्सारं समुद्धृत्य मनीषया ।\nब्रूहि नः श्रद्दधानानां येनात्मा संप्रसीदति ॥ ११ ॥",
+      "iast": "bhūrīṇi bhūrikarmāṇi śrotavyāni vibhāgaśaḥ |\nataḥ sādho'tra yatsāraṁ samuddhṛtya manīṣayā |\nbrūhi naḥ śraddadhānānāṁ yenātmā saṁprasīdati || 11 ||"
+    },
+    {
+      "ref": "1.1.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "सूत जानासि भद्रं ते भगवान् सात्वतां पतिः ।\nदेवक्यां वसुदेवस्य जातो यस्य चिकीर्षया ॥ १२ ॥",
+      "iast": "sūta jānāsi bhadraṁ te bhagavān sātvatāṁ patiḥ |\ndevakyāṁ vasudevasya jāto yasya cikīrṣayā || 12 ||"
+    },
+    {
+      "ref": "1.1.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "तन्नः शुष्रूषमाणानां अर्हस्यङ्गानुवर्णितुम् ।\nयस्यावतारो भूतानां क्षेमाय च भवाय च ॥ १३ ॥",
+      "iast": "tannaḥ śuṣrūṣamāṇānāṁ arhasyaṅgānuvarṇitum |\nyasyāvatāro bhūtānāṁ kṣemāya ca bhavāya ca || 13 ||"
+    },
+    {
+      "ref": "1.1.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "आपन्नः संसृतिं घोरां यन्नाम विवशो गृणन् ।\nततः सद्यो विमुच्येत यद् बिभेति स्वयं भयम् ॥ १४ ॥",
+      "iast": "āpannaḥ saṁsṛtiṁ ghorāṁ yannāma vivaśo gṛṇan |\ntataḥ sadyo vimucyeta yad bibheti svayaṁ bhayam || 14 ||"
+    },
+    {
+      "ref": "1.1.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "यत्पादसंश्रयाः सूत मुनयः प्रशमायनाः ।\nसद्यः पुनन्त्युपस्पृष्टाः स्वर्धुन्यापोऽनुसेवया ॥ १५ ॥",
+      "iast": "yatpādasaṁśrayāḥ sūta munayaḥ praśamāyanāḥ |\nsadyaḥ punantyupaspṛṣṭāḥ svardhunyāpo'nusevayā || 15 ||"
+    },
+    {
+      "ref": "1.1.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "को वा भगवतस्तस्य पुण्यश्लोकेड्यकर्मणः ।\nशुद्धिकामो न श्रृणुयाद् यशः कलिमलापहम् ॥ १६ ॥",
+      "iast": "ko vā bhagavatastasya puṇyaślokeḍyakarmaṇaḥ |\nśuddhikāmo na śrṛṇuyād yaśaḥ kalimalāpaham || 16 ||"
+    },
+    {
+      "ref": "1.1.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "तस्य कर्माण्युदाराणि परिगीतानि सूरिभिः ।\nब्रूहि नः श्रद्दधानानां लीलया दधतः कलाः ॥ १७ ॥",
+      "iast": "tasya karmāṇyudārāṇi parigītāni sūribhiḥ |\nbrūhi naḥ śraddadhānānāṁ līlayā dadhataḥ kalāḥ || 17 ||"
+    },
+    {
+      "ref": "1.1.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "अथाख्याहि हरेर्धीमन् अवतारकथाः शुभाः ।\nलीला विदधतः स्वैरं ईश्वरस्यात्ममायया ॥ १८ ॥",
+      "iast": "athākhyāhi harerdhīman avatārakathāḥ śubhāḥ |\nlīlā vidadhataḥ svairaṁ īśvarasyātmamāyayā || 18 ||"
+    },
+    {
+      "ref": "1.1.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "वयं तु न वितृप्याम उत्तमश्लोकविक्रमे ।\nयत् श्रृण्वतां रसज्ञानां स्वादु स्वादु पदे पदे ॥ १९ ॥",
+      "iast": "vayaṁ tu na vitṛpyāma uttamaślokavikrame |\nyat śrṛṇvatāṁ rasajñānāṁ svādu svādu pade pade || 19 ||"
+    },
+    {
+      "ref": "1.1.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "कृतवान् किल वीर्याणि सह रामेण केशवः ।\nअतिमर्त्यानि भगवान् गूढः कपटमानुषः ॥ २० ॥",
+      "iast": "kṛtavān kila vīryāṇi saha rāmeṇa keśavaḥ |\natimartyāni bhagavān gūḍhaḥ kapaṭamānuṣaḥ || 20 ||"
+    },
+    {
+      "ref": "1.1.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "कलिमागतमाज्ञाय क्षेत्रेऽस्मिन् वैष्णवे वयम् ।\nआसीना दीर्घसत्रेण कथायां सक्षणा हरेः ॥ २१ ॥",
+      "iast": "kalimāgatamājñāya kṣetre'smin vaiṣṇave vayam |\nāsīnā dīrghasatreṇa kathāyāṁ sakṣaṇā hareḥ || 21 ||"
+    },
+    {
+      "ref": "1.1.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "त्वं नः संदर्शितो धात्रा दुस्तरं निस्तितीर्षताम् ।\nकलिं सत्त्वहरं पुंसां कर्णधार इवार्णवम् ॥ २२ ॥",
+      "iast": "tvaṁ naḥ saṁdarśito dhātrā dustaraṁ nistitīrṣatām |\nkaliṁ sattvaharaṁ puṁsāṁ karṇadhāra ivārṇavam || 22 ||"
+    },
+    {
+      "ref": "1.1.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": "sages-of-naimisaranya",
+      "deva": "ब्रूहि योगेश्वरे कृष्णे ब्रह्मण्ये धर्मवर्मणि ।\nस्वां काष्ठामधुनोपेते धर्मः कं शरणं गतः ॥ २३ ॥",
+      "iast": "brūhi yogeśvare kṛṣṇe brahmaṇye dharmavarmaṇi |\nsvāṁ kāṣṭhāmadhunopete dharmaḥ kaṁ śaraṇaṁ gataḥ || 23 ||"
     }
   ]
 }

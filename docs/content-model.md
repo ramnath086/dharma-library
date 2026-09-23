@@ -4,7 +4,7 @@
 |---|---|---|
 | `works` | A scripture (Bhāgavata Purāṇa) | slug, titles, original language/script, `structure` (level names) |
 | `sections` | Hierarchy (canto → chapter …), self-referential | work, parent, level, ordinal, ref `1.1` |
-| `verses` | Leaf unit, language-neutral | section, ordinal, ref `1.1.4`, kind, meter, speaker |
+| `verses` | Leaf unit, language-neutral | section, ordinal, ref `1.1.4`, kind, meter, speaker, `metadata` (e.g. editorial audio cues) |
 | `languages` / `scripts` | BCP-47 / ISO 15924 reference | `sa` `en` `ml` … / `Deva` `Latn` `Mlym` … |
 | `sources` | Bibliographic provenance | title, publisher, year, url, archive_url |
 | `rights` | **Mandatory** legal status per edition | status, license, attribution_text, permission doc, expiry |
@@ -24,6 +24,11 @@
 
 Commentaries are editions of kind `commentary` (e.g. Śrīdhara's *Bhāvārtha-dīpikā*
 when a cleared source exists) — no separate table is needed.
+
+Editorial audio cues live on `verses.metadata.audio` (`important`, `cue_asset`,
+`label`). They are a small named set in content JSON, never an automatic
+classification of the corpus. `get_section_verses` includes `metadata` so
+offline bundles carry the cue.
 
 ## Content files
 `content/<work>/work.json` declares sources, rights and editions.

@@ -1,0 +1,471 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 5.18 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%AE), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AB/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%AE",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः १८",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 14667,
+    "revid": 361329,
+    "timestamp": "2022-11-27T10:51:25Z",
+    "sha1": "23543036a9622a9a683ce5dcdc34ded040710165",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ५/अध्यायः १८"
+  },
+  "section": {
+    "canto": {
+      "ref": "5",
+      "ordinal": 5,
+      "title_iast": "Skandha 5",
+      "title_sa": "स्कन्धः ५"
+    },
+    "chapter": {
+      "ref": "5.18",
+      "ordinal": 18,
+      "title_iast": "Adhyāya 18",
+      "title_sa": "अध्यायः १८"
+    }
+  },
+  "verses": [
+    {
+      "ref": "5.18.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अथाष्टादशोऽध्यायः\nश्रीशुक उवाच\nतथा च भद्रश्रवा नाम धर्मसुतस्तत्कुलपतयः पुरुषा भद्राश्ववर्षे साक्षाद्भगवतो वासुदेवस्य प्रियां तनुं धर्ममयीं हयशीर्षाभिधानां परमेण समाधिना सन्निधाप्येदमभिगृणन्त उपधावन्ति ॥ १ ॥",
+      "iast": "athāṣṭādaśo'dhyāyaḥ\nśrīśuka uvāca\ntathā ca bhadraśravā nāma dharmasutastatkulapatayaḥ puruṣā bhadrāśvavarṣe sākṣādbhagavato vāsudevasya priyāṁ tanuṁ dharmamayīṁ hayaśīrṣābhidhānāṁ parameṇa samādhinā sannidhāpyedamabhigṛṇanta upadhāvanti || 1 ||"
+    },
+    {
+      "ref": "5.18.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ॐ नमो भगवते धर्मायात्मविशोधनाय नम इति ॥ २ ॥",
+      "iast": "oṁ namo bhagavate dharmāyātmaviśodhanāya nama iti || 2 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अहो विचित्रं भगवद्विचेष्टितं घ्नन्तं जनोऽयं हि मिषन्न पश्यति\nध्यायन्नसद्यर्हि विकर्म सेवितुं निर्हृत्य पुत्रं पितरं जिजीविषति ॥ ३ ॥",
+      "iast": "aho vicitraṁ bhagavadviceṣṭitaṁ ghnantaṁ jano'yaṁ hi miṣanna paśyati\ndhyāyannasadyarhi vikarma sevituṁ nirhṛtya putraṁ pitaraṁ jijīviṣati || 3 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वदन्ति विश्वं कवयः स्म नश्वरं पश्यन्ति चाध्यात्मविदो विपश्चितः\nतथापि मुह्यन्ति तवाज मायया सुविस्मितं कृत्यमजं नतोऽस्मि तम् ॥ ४ ॥",
+      "iast": "vadanti viśvaṁ kavayaḥ sma naśvaraṁ paśyanti cādhyātmavido vipaścitaḥ\ntathāpi muhyanti tavāja māyayā suvismitaṁ kṛtyamajaṁ nato'smi tam || 4 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "विश्वोद्भवस्थाननिरोधकर्म ते ह्यकर्तुरङ्गीकृतमप्यपावृतः\nयुक्तं न चित्रं त्वयि कार्यकारणे सर्वात्मनि व्यतिरिक्ते च वस्तुतः ॥ ५ ॥",
+      "iast": "viśvodbhavasthānanirodhakarma te hyakarturaṅgīkṛtamapyapāvṛtaḥ\nyuktaṁ na citraṁ tvayi kāryakāraṇe sarvātmani vyatirikte ca vastutaḥ || 5 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "वेदान्युगान्ते तमसा तिरस्कृतान्रसातलाद्यो नृतुरङ्गविग्रहः\nप्रत्याददे वै कवयेऽभियाचते तस्मै नमस्तेऽवितथेहिताय इति ॥ ६ ॥",
+      "iast": "vedānyugānte tamasā tiraskṛtānrasātalādyo nṛturaṅgavigrahaḥ\npratyādade vai kavaye'bhiyācate tasmai namaste'vitathehitāya iti || 6 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "हरिवर्षे चापि भगवान्नरहरिरूपेणास्ते तद्रूपग्रहणनिमित्तमुत्तरत्राभिधास्ये तद्दयितं रूपं महापुरुषगुणभाजनो महाभागवतो दैत्यदानव-कुलतीर्थीकरणशीलाचरितः प्रह्लादोऽव्यवधानानन्यभक्तियोगेन सह तद्वर्षपुरुषैरुपास्ते इदं चोदाहरति ॥ ७ ॥",
+      "iast": "harivarṣe cāpi bhagavānnaraharirūpeṇāste tadrūpagrahaṇanimittamuttaratrābhidhāsye taddayitaṁ rūpaṁ mahāpuruṣaguṇabhājano mahābhāgavato daityadānava-kulatīrthīkaraṇaśīlācaritaḥ prahlādo'vyavadhānānanyabhaktiyogena saha tadvarṣapuruṣairupāste idaṁ codāharati || 7 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ॐ नमो भगवते नरसिंहाय नमस्तेजस्तेजसे आविराविर्भव वज्रनख वज्रदंष्ट्र कर्माशयान्रन्धय रन्धय तमो ग्रस ग्रस ॐ स्वाहा अभयमभयमात्मनि भूयिष्ठा ॐ क्ष्रौम् ॥ ८ ॥",
+      "iast": "oṁ namo bhagavate narasiṁhāya namastejastejase āvirāvirbhava vajranakha vajradaṁṣṭra karmāśayānrandhaya randhaya tamo grasa grasa oṁ svāhā abhayamabhayamātmani bhūyiṣṭhā oṁ kṣraum || 8 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्वस्त्यस्तु विश्वस्य खलः प्रसीदतां ध्यायन्तु भूतानि शिवं मिथो धियामनश्च भद्रं भजतादधोक्षजे आवेश्यतां नो मतिरप्यहैतुकी ॥ ९ ॥",
+      "iast": "svastyastu viśvasya khalaḥ prasīdatāṁ dhyāyantu bhūtāni śivaṁ mitho dhiyāmanaśca bhadraṁ bhajatādadhokṣaje āveśyatāṁ no matirapyahaitukī || 9 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मागारदारात्मजवित्तबन्धुषु सङ्गो यदि स्याद्भगवत्प्रियेषु नः\nयः प्राणवृत्त्या परितुष्ट आत्मवान्सिद्ध्यत्यदूरान्न तथेन्द्रियप्रियः ॥ १० ॥",
+      "iast": "māgāradārātmajavittabandhuṣu saṅgo yadi syādbhagavatpriyeṣu naḥ\nyaḥ prāṇavṛttyā parituṣṭa ātmavānsiddhyatyadūrānna tathendriyapriyaḥ || 10 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यत्सङ्गलब्धं निजवीर्यवैभवं तीर्थं मुहुः संस्पृशतां हि मानसम्\nहरत्यजोऽन्तः श्रुतिभिर्गतोऽङ्गजं को वै न सेवेत मुकुन्दविक्रमम् ॥ ११ ॥",
+      "iast": "yatsaṅgalabdhaṁ nijavīryavaibhavaṁ tīrthaṁ muhuḥ saṁspṛśatāṁ hi mānasam\nharatyajo'ntaḥ śrutibhirgato'ṅgajaṁ ko vai na seveta mukundavikramam || 11 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्यास्ति भक्तिर्भगवत्यकिञ्चना सर्वैर्गुणैस्तत्र समासते सुराः\nहरावभक्तस्य कुतो महद्गुणा मनोरथेनासति धावतो बहिः ॥ १२ ॥",
+      "iast": "yasyāsti bhaktirbhagavatyakiñcanā sarvairguṇaistatra samāsate surāḥ\nharāvabhaktasya kuto mahadguṇā manorathenāsati dhāvato bahiḥ || 12 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "हरिर्हि साक्षाद्भगवान्शरीरिणामात्मा झषाणामिव तोयमीप्सितम्\nहित्वा महांस्तं यदि सज्जते गृहे तदा महत्त्वं वयसा दम्पतीनाम् ॥ १३ ॥",
+      "iast": "harirhi sākṣādbhagavānśarīriṇāmātmā jhaṣāṇāmiva toyamīpsitam\nhitvā mahāṁstaṁ yadi sajjate gṛhe tadā mahattvaṁ vayasā dampatīnām || 13 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तस्माद्र जोरागविषादमन्यु मानस्पृहाभयदैन्याधिमूलम्\nहित्वा गृहं संसृतिचक्रवालं नृसिंहपादं भजताकुतोभयमिति ॥ १४ ॥",
+      "iast": "tasmādra jorāgaviṣādamanyu mānaspṛhābhayadainyādhimūlam\nhitvā gṛhaṁ saṁsṛticakravālaṁ nṛsiṁhapādaṁ bhajatākutobhayamiti || 14 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "केतुमालेऽपि भगवान्कामदेवस्वरूपेण लक्ष्म्याः प्रियचिकीर्षया प्रजापतेर्दुहित्तॄणां पुत्राणां तद्वर्षपतीनां पुरुषायुषाहोरात्रपरिसङ्ख्यानानां यासां गर्भा महापुरुषमहास्त्रतेजसोद्वेजितमनसां विध्वस्ता व्यसवः संवत्सरान्ते विनिपतन्ति ॥ १५ ॥",
+      "iast": "ketumāle'pi bhagavānkāmadevasvarūpeṇa lakṣmyāḥ priyacikīrṣayā prajāpaterduhittṝṇāṁ putrāṇāṁ tadvarṣapatīnāṁ puruṣāyuṣāhorātraparisaṅkhyānānāṁ yāsāṁ garbhā mahāpuruṣamahāstratejasodvejitamanasāṁ vidhvastā vyasavaḥ saṁvatsarānte vinipatanti || 15 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अतीव सुललितगतिविलासविलसितरुचिरहासलेशावलोकली-लया किञ्चिदुत्तम्भितसुन्दरभ्रूमण्डलसुभगवदनारविन्दश्रिया रमां रमयन्निन्द्रि याणि रमयते ॥ १६ ॥",
+      "iast": "atīva sulalitagativilāsavilasitarucirahāsaleśāvalokalī-layā kiñciduttambhitasundarabhrūmaṇḍalasubhagavadanāravindaśriyā ramāṁ ramayannindri yāṇi ramayate || 16 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "तद्भगवतो मायामयं रूपं परमसमाधियोगेन रमा देवी संवत्सरस्य रात्रिषु प्रजापतेर्दुहितृभिरुपेताहःसु च तद्भर्तृभिरुपास्ते इदं चोदाहरति ॥ १७ ॥",
+      "iast": "tadbhagavato māyāmayaṁ rūpaṁ paramasamādhiyogena ramā devī saṁvatsarasya rātriṣu prajāpaterduhitṛbhirupetāhaḥsu ca tadbhartṛbhirupāste idaṁ codāharati || 17 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ॐ ह्रां ह्रीं ह्रूं ॐ नमो भगवते हृषीकेशाय सर्वगुणविशेषैर्विल-क्षितात्मने आकूतीनां चित्तीनां चेतसां विशेषाणां चाधिपतये षोडशकलाय च्छन्दोमयायान्नमयायामृतमयाय सर्वमयाय ओजसे बलाय कान्ताय कामाय नमस्ते उभयत्र भूयात् ॥ १८ ॥",
+      "iast": "oṁ hrāṁ hrīṁ hrūṁ oṁ namo bhagavate hṛṣīkeśāya sarvaguṇaviśeṣairvila-kṣitātmane ākūtīnāṁ cittīnāṁ cetasāṁ viśeṣāṇāṁ cādhipataye ṣoḍaśakalāya cchandomayāyānnamayāyāmṛtamayāya sarvamayāya ojase balāya kāntāya kāmāya namaste ubhayatra bhūyāt || 18 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स्त्रियो व्रतैस्त्वा हृषीकेश्वरं स्वतो ह्याराध्य लोके पतिमाशासतेऽन्यम्\nतासां न ते वै परिपान्त्यपत्यं प्रियं धनायूंषि यतोऽस्वतन्त्राः ॥ १९ ॥",
+      "iast": "striyo vrataistvā hṛṣīkeśvaraṁ svato hyārādhya loke patimāśāsate'nyam\ntāsāṁ na te vai paripāntyapatyaṁ priyaṁ dhanāyūṁṣi yato'svatantrāḥ || 19 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स वै पतिः स्यादकुतोभयः स्वयं समन्ततः पाति भयातुरं जनम्\nस एक एवेतरथा मिथो भयं नैवात्मलाभादधि मन्यते परम् ॥ २० ॥",
+      "iast": "sa vai patiḥ syādakutobhayaḥ svayaṁ samantataḥ pāti bhayāturaṁ janam\nsa eka evetarathā mitho bhayaṁ naivātmalābhādadhi manyate param || 20 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "या तस्य ते पादसरोरुहार्हणं निकामयेत्साखिलकामलम्पटा\nतदेव रासीप्सितमीप्सितोऽर्चितो यद्भग्नयाच्ञा भगवन्प्रतप्यते ॥ २१ ॥",
+      "iast": "yā tasya te pādasaroruhārhaṇaṁ nikāmayetsākhilakāmalampaṭā\ntadeva rāsīpsitamīpsito'rcito yadbhagnayācñā bhagavanpratapyate || 21 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "मत्प्राप्तयेऽजेशसुरासुरादयस्तप्यन्त उग्रं तप ऐन्द्रि ये धियः\nऋते भवत्पादपरायणान्न मां विन्दन्त्यहं त्वद्धृदया यतोऽजित ॥ २२ ॥",
+      "iast": "matprāptaye'jeśasurāsurādayastapyanta ugraṁ tapa aindri ye dhiyaḥ\nṛte bhavatpādaparāyaṇānna māṁ vindantyahaṁ tvaddhṛdayā yato'jita || 22 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "स त्वं ममाप्यच्युत शीर्ष्णि वन्दितं कराम्बुजं यत्त्वदधायि सात्वताम्\nबिभर्षि मां लक्ष्म वरेण्य मायया क ईश्वरस्येहितमूहितुं विभुरिति ॥ २३ ॥",
+      "iast": "sa tvaṁ mamāpyacyuta śīrṣṇi vanditaṁ karāmbujaṁ yattvadadhāyi sātvatām\nbibharṣi māṁ lakṣma vareṇya māyayā ka īśvarasyehitamūhituṁ vibhuriti || 23 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "रम्यके च भगवतः प्रियतमं मात्स्यमवताररूपं तद्वर्षपुरुषस्य मनोः प्राक्\nप्रदर्शितं स इदानीमपि महता भक्तियोगेनाराधयतीदं चोदाहरति ॥ २४ ॥",
+      "iast": "ramyake ca bhagavataḥ priyatamaṁ mātsyamavatārarūpaṁ tadvarṣapuruṣasya manoḥ prāk\npradarśitaṁ sa idānīmapi mahatā bhaktiyogenārādhayatīdaṁ codāharati || 24 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ॐ नमो भगवते मुख्यतमाय नमः सत्त्वाय प्राणायौजसे सहसे बलाय महामत्स्याय नम इति ॥ २५ ॥",
+      "iast": "oṁ namo bhagavate mukhyatamāya namaḥ sattvāya prāṇāyaujase sahase balāya mahāmatsyāya nama iti || 25 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "अन्तर्बहिश्चाखिललोकपालकैरदृष्टरूपो विचरस्युरुस्वनः\nस ईश्वरस्त्वं य इदं वशेऽनयन्नाम्ना यथा दारुमयीं नरः स्त्रियम् ॥ २६ ॥",
+      "iast": "antarbahiścākhilalokapālakairadṛṣṭarūpo vicarasyurusvanaḥ\nsa īśvarastvaṁ ya idaṁ vaśe'nayannāmnā yathā dārumayīṁ naraḥ striyam || 26 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यं लोकपालाः किल मत्सरज्वरा हित्वा यतन्तोऽपि पृथक्समेत्य च\nपातुं न शेकुर्द्विपदश्चतुष्पदः सरीसृपं स्थाणु यदत्र दृश्यते ॥ २७ ॥",
+      "iast": "yaṁ lokapālāḥ kila matsarajvarā hitvā yatanto'pi pṛthaksametya ca\npātuṁ na śekurdvipadaścatuṣpadaḥ sarīsṛpaṁ sthāṇu yadatra dṛśyate || 27 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भवान्युगान्तार्णव ऊर्मिमालिनि क्षोणीमिमामोषधिवीरुधां निधिम्\nमया सहोरु क्रमतेऽज ओजसा तस्मै जगत्प्राणगणात्मने नम इति ॥ २८ ॥",
+      "iast": "bhavānyugāntārṇava ūrmimālini kṣoṇīmimāmoṣadhivīrudhāṁ nidhim\nmayā sahoru kramate'ja ojasā tasmai jagatprāṇagaṇātmane nama iti || 28 ||",
+      "metadata": {
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "भवान्युगान्तार्णव ऊर्मिमालिनि क्षोणीमिमामोषधिवीरुधां निधिम्\nमया सहोरु क्रमतेऽज ओजसा तस्मै जगत्प्राणगणात्मने नम इति२८\nहिरण्मयेऽपि भगवान्निवसति कूर्मतनुं बिभ्राणस्तस्य तत्प्रियतमां तनुमर्यमा सह वर्षपुरुषैः पितृगणाधिपतिरुपधावति मन्त्रमिमं चानुजपति ॥ २९ ॥",
+      "iast": "bhavānyugāntārṇava ūrmimālini kṣoṇīmimāmoṣadhivīrudhāṁ nidhim\nmayā sahoru kramate'ja ojasā tasmai jagatprāṇagaṇātmane nama iti28\nhiraṇmaye'pi bhagavānnivasati kūrmatanuṁ bibhrāṇastasya tatpriyatamāṁ tanumaryamā saha varṣapuruṣaiḥ pitṛgaṇādhipatirupadhāvati mantramimaṁ cānujapati || 29 ||",
+      "metadata": {
+        "wikisource_number": 29,
+        "numbering_note": "Wikisource numbering skipped 28; no mūla invented for the gap.",
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ॐ नमो भगवते अकूपाराय* सर्वसत्त्वगुणविशेषणायानुपलक्षितस्थानाय नमो वर्ष्मणे\nनमो भूम्ने नमो नमोऽवस्थानाय नमस्ते ॥ ३० ॥",
+      "iast": "oṁ namo bhagavate akūpārāya* sarvasattvaguṇaviśeṣaṇāyānupalakṣitasthānāya namo varṣmaṇe\nnamo bhūmne namo namo'vasthānāya namaste || 30 ||",
+      "metadata": {
+        "wikisource_number": 30,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यद्रूपमेतन्निजमाययार्पितमर्थस्वरूपं बहुरूपरूपितम्\nसङ्ख्या न यस्यास्त्ययथोपलम्भनात्तस्मै नमस्तेऽव्यपदेशरूपिणे ॥ ३१ ॥",
+      "iast": "yadrūpametannijamāyayārpitamarthasvarūpaṁ bahurūparūpitam\nsaṅkhyā na yasyāstyayathopalambhanāttasmai namaste'vyapadeśarūpiṇe || 31 ||",
+      "metadata": {
+        "wikisource_number": 31,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "जरायुजं स्वेदजमण्डजोद्भिदं चराचरं देवर्षिपितृभूतमैन्द्रियम्\nद्यौः खं क्षितिः शैलसरित्समुद्र द्वीपग्रहर्क्षेत्यभिधेय एकः ॥ ३२ ॥",
+      "iast": "jarāyujaṁ svedajamaṇḍajodbhidaṁ carācaraṁ devarṣipitṛbhūtamaindriyam\ndyauḥ khaṁ kṣitiḥ śailasaritsamudra dvīpagraharkṣetyabhidheya ekaḥ || 32 ||",
+      "metadata": {
+        "wikisource_number": 32,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्मिन्नसङ्ख्येयविशेषनाम रूपाकृतौ कविभिः कल्पितेयम्\nसङ्ख्या यया तत्त्वदृशापनीयते तस्मै नमः साङ्ख्यनिदर्शनाय ते इति ॥ ३३ ॥",
+      "iast": "yasminnasaṅkhyeyaviśeṣanāma rūpākṛtau kavibhiḥ kalpiteyam\nsaṅkhyā yayā tattvadṛśāpanīyate tasmai namaḥ sāṅkhyanidarśanāya te iti || 33 ||",
+      "metadata": {
+        "wikisource_number": 33,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "उत्तरेषु च कुरुषु भगवान्यज्ञपुरुषः कृतवराहरूप आस्ते तं तु देवी हैषा भूः सह\nकुरुभिरस्खलितभक्तियोगेनोपधावति इमां च परमामुपनिषदमावर्तयति ॥ ३४ ॥",
+      "iast": "uttareṣu ca kuruṣu bhagavānyajñapuruṣaḥ kṛtavarāharūpa āste taṁ tu devī haiṣā bhūḥ saha\nkurubhiraskhalitabhaktiyogenopadhāvati imāṁ ca paramāmupaniṣadamāvartayati || 34 ||",
+      "metadata": {
+        "wikisource_number": 34,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "ॐ नमो भगवते मन्त्रतत्त्वलिङ्गाय यज्ञक्रतवे महाध्वरावयवाय महापुरुषाय नमः कर्मशुक्लाय त्रियुगाय नमस्ते ॥ ३५ ॥",
+      "iast": "oṁ namo bhagavate mantratattvaliṅgāya yajñakratave mahādhvarāvayavāya mahāpuruṣāya namaḥ karmaśuklāya triyugāya namaste || 35 ||",
+      "metadata": {
+        "wikisource_number": 35,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "यस्य स्वरूपं कवयो विपश्चितो गुणेषु दारुष्विव जातवेदसम्\nमथ्नन्ति मथ्ना मनसा दिदृक्षवो गूढं क्रियार्थैर्नम ईरितात्मने ॥ ३६ ॥",
+      "iast": "yasya svarūpaṁ kavayo vipaścito guṇeṣu dāruṣviva jātavedasam\nmathnanti mathnā manasā didṛkṣavo gūḍhaṁ kriyārthairnama īritātmane || 36 ||",
+      "metadata": {
+        "wikisource_number": 36,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "द्र व्यक्रियाहेत्वयनेशकर्तृभिर्मायागुणैर्वस्तुनिरीक्षितात्मने\nअन्वीक्षयाङ्गातिशयात्मबुद्धिभिर्निरस्तमायाकृतये नमो नमः ॥ ३७ ॥",
+      "iast": "dra vyakriyāhetvayaneśakartṛbhirmāyāguṇairvastunirīkṣitātmane\nanvīkṣayāṅgātiśayātmabuddhibhirnirastamāyākṛtaye namo namaḥ || 37 ||",
+      "metadata": {
+        "wikisource_number": 37,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "करोति विश्वस्थितिसंयमोदयं यस्येप्सितं नेप्सितमीक्षितुर्गुणैः\nमाया यथायो भ्रमते तदाश्रयं ग्राव्णो नमस्ते गुणकर्मसाक्षिणे ॥ ३८ ॥",
+      "iast": "karoti viśvasthitisaṁyamodayaṁ yasyepsitaṁ nepsitamīkṣiturguṇaiḥ\nmāyā yathāyo bhramate tadāśrayaṁ grāvṇo namaste guṇakarmasākṣiṇe || 38 ||",
+      "metadata": {
+        "wikisource_number": 38,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    },
+    {
+      "ref": "5.18.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": null,
+      "deva": "प्रमथ्य दैत्यं प्रतिवारणं मृधे यो मां रसाया जगदादिसूकरः\nकृत्वाग्रदंष्ट्रे निरगादुदन्वतः क्रीडन्निवेभः प्रणतास्मि तं विभुमिति ॥ ३९ ॥",
+      "iast": "pramathya daityaṁ prativāraṇaṁ mṛdhe yo māṁ rasāyā jagadādisūkaraḥ\nkṛtvāgradaṁṣṭre niragādudanvataḥ krīḍannivebhaḥ praṇatāsmi taṁ vibhumiti || 39 ||",
+      "metadata": {
+        "wikisource_number": 39,
+        "speaker_surface": "भद्रश्रवस"
+      }
+    }
+  ]
+}

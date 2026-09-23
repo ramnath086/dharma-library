@@ -213,6 +213,7 @@ on conflict (slug) do update set name_iast=excluded.name_iast, name_sa=excluded.
     ml_slug = _find_edition(lambda e: e.get("kind") == "translation" and e.get("language_code") == "ml")
     wm_slug = _find_edition(lambda e: e.get("kind") == "word_meanings")
     all_xrefs = []
+    n_verses = 0
     for vf in verse_files:
         data = json.loads(pathlib.Path(vf).read_text(encoding="utf-8"))
         sec = data["section"]
@@ -258,12 +259,14 @@ on conflict (section_id, edition_id) do update set title=excluded.title, summary
             assert v["ref"].startswith(chapter_ref + "."), f"{v['ref']} not in {chapter_ref} (file {vf})"
             assert v["ordinal"] == prev + 1, f"non-dense ordinal at {v['ref']} (expected {prev+1})"
             prev = v["ordinal"]
+            n_verses += 1
             assert v["deva"].strip() and v["iast"].strip(), f"empty base text at {v['ref']}"
+            verse_meta = dict(v.get("metadata") or {})
             em.add(f"""
-insert into verses (work_id, section_id, ordinal, ref, kind, meter, speaker_id, status)
+insert into verses (work_id, section_id, ordinal, ref, kind, meter, speaker_id, status, metadata)
 values ((select id from works where slug={q(slug)}), (select id from sections where ref={q(chapter_ref)} and work_id=(select id from works where slug={q(slug)})),
-        {v['ordinal']}, {q(v['ref'])}, {q(v.get('kind','verse'))}::verse_kind, {q(v.get('meter'))}, (select id from people where slug={q(v.get('speaker'))}), 'published')
-on conflict (work_id, ref) do update set ordinal=excluded.ordinal, kind=excluded.kind, meter=excluded.meter, speaker_id=excluded.speaker_id, section_id=excluded.section_id, status='published'""")
+        {v['ordinal']}, {q(v['ref'])}, {q(v.get('kind','verse'))}::verse_kind, {q(v.get('meter'))}, (select id from people where slug={q(v.get('speaker'))}), 'published', {jq(verse_meta)})
+on conflict (work_id, ref) do update set ordinal=excluded.ordinal, kind=excluded.kind, meter=excluded.meter, speaker_id=excluded.speaker_id, section_id=excluded.section_id, status='published', metadata=coalesce(verses.metadata,'{{}}'::jsonb) || excluded.metadata""")
 
             # Generic renderings: map deva/iast/en/ml via discovered edition slugs (not hardcoded sb-*)
             renderings = {}
@@ -305,6 +308,14 @@ on conflict (verse_id, entity_kind, entity_id, role) do update set surface_form=
                 all_xrefs.append((v["ref"], x))
         em.add(f"""update sections set verse_count = (select count(*) from verses where section_id = sections.id)
 where work_id = (select id from works where slug={q(slug)})""")
+
+    declared = (work.get("metadata") or {}).get("imported_verse_count")
+    if declared is None:
+        declared = (work.get("metadata") or {}).get("total_verses")
+    if declared is not None and n_verses != declared:
+        raise SystemExit(
+            f"{slug}: JSON has {n_verses} verses but work.json declares {declared}"
+        )
 
     # -- stories (need verses for ranges), story mentions, relations
     for s in graph.get("stories", []):

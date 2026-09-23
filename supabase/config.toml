@@ -33,6 +33,9 @@ enable_signup = true
 enable_signup = true
 double_confirm_changes = true
 enable_confirmations = false
+# Magic-link + 6-digit email OTP. The Flutter client sends
+# emailRedirectTo = dharmalibrary://auth-callback (PKCE). Refresh tokens keep
+# the user signed in on this device; reading is never gated on a session.
 
 [auth.external.google]
 enabled = false

@@ -7,18 +7,56 @@
   "original_language": "sa",
   "original_script": "Deva",
   "structure": [
-    { "level": 1, "key": "canto",   "label_iast": "Skandha", "label_sa": "स्कन्धः", "label_en": "Canto",   "label_ml": "സ്കന്ധം" },
-    { "level": 2, "key": "chapter", "label_iast": "Adhyāya", "label_sa": "अध्यायः", "label_en": "Chapter", "label_ml": "അധ്യായം" }
+    {
+      "level": 1,
+      "key": "canto",
+      "label_iast": "Skandha",
+      "label_sa": "स्कन्धः",
+      "label_en": "Canto",
+      "label_ml": "സ്കന്ധം"
+    },
+    {
+      "level": 2,
+      "key": "chapter",
+      "label_iast": "Adhyāya",
+      "label_sa": "अध्यायः",
+      "label_en": "Chapter",
+      "label_ml": "അധ്യായം"
+    }
   ],
-  "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. Twelve cantos (skandhas), 335 chapters, roughly 18,000 verses. Pilot scope: Canto 1, Chapter 1, verses 1–10.",
+  "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. This build ships the complete sa.wikisource.org mūla: 12 skandhas, 335 adhyāyas, 14098 numbered verses parsed from that edition on 2026-09-22 (CC BY-SA 4.0), plus 7 printed-number fills whose Devanagari was taken from BBT Vedabase (traditional mūla only; no BBT translation shipped) where Wikisource had no mūla at that number. Traditional ~18,000 is an approximation, not an import target. English and Malayalam translations remain original Dharma Library drafts on 1.1.1–1.1.10 only; other verses have no invented translation. GRETIL was collated as a scholarly witness and is not shipped.",
   "metadata": {
     "total_cantos": 12,
-    "total_chapters": 335,
-    "approx_verses": 18000,
-    "pilot_scope": "1.1.1–1.1.10"
+    "traditional_chapter_inventory": 335,
+    "approx_verses_traditional": 18000,
+    "imported_chapter_count": 335,
+    "imported_verse_count": 14105,
+    "complete": true,
+    "retrieved": "2026-09-22T19:12:01Z",
+    "source_license": "CC-BY-SA-4.0",
+    "translation_scope": "1.1.1–1.1.10",
+    "bbt_vedabase_fill_count": 7,
+    "bbt_vedabase_fill_refs": [
+      "1.13.36",
+      "4.1.52",
+      "4.21.45",
+      "8.7.5",
+      "8.16.23",
+      "11.11.13",
+      "11.27.40"
+    ]
   },
-
   "sources": [
+    {
+      "slug": "sa-wikisource-bhagavata",
+      "kind": "digital_text",
+      "title": "श्रीमद्भागवतपुराणम् — Sanskrit Wikisource",
+      "authors": [],
+      "publisher": "Wikimedia Foundation / Sanskrit Wikisource contributors",
+      "url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+      "archive_url": "https://sa.wikisource.org/wiki/श्रीमद्भागवतपुराणम्",
+      "notes": "Electronic Sanskrit mūla of the vulgate Bhāgavata Purāṇa. Licence: CC BY-SA 4.0 (Wikimedia). Retrieved 2026-09-22T17:52:13Z (Wikisource fetch); re-merged 2026-09-22T19:12:01Z. Imported 335 chapters / 14098 Wikisource verses + 7 BBT-numbered fills. Attribution required."
+    },
     {
       "slug": "gretil-bhp",
       "kind": "digital_text",
@@ -27,7 +65,7 @@
       "publisher": "Niedersächsische Staats- und Universitätsbibliothek Göttingen",
       "url": "http://gretil.sub.uni-goettingen.de/gretil.html",
       "archive_url": "http://gretil.sub.uni-goettingen.de/gretil/1_sanskr/3_purana/bhagp/bhp_01u.htm",
-      "notes": "Machine-readable Sanskrit text of the vulgate Bhāgavata Purāṇa. Used as the primary collation reference for the base text."
+      "notes": "Scholarly machine-readable transcription. GRETIL terms are scholarly / non-commercial and do not clear redistribution of that file. Used for collation and validation only; not shipped; not used as an edition source."
     },
     {
       "slug": "gita-press-bhagavata",
@@ -43,21 +81,36 @@
       "slug": "dharma-library-editorial",
       "kind": "original",
       "title": "Dharma Library editorial team — original translations, glosses and annotations",
-      "authors": ["Dharma Library contributors"],
+      "authors": [
+        "Dharma Library contributors"
+      ],
       "url": "https://github.com/ramnath086/dharma-library",
       "notes": "All translations, word meanings and knowledge-graph annotations here are original work produced for Dharma Library and released under CC BY-SA 4.0. They are drafts pending scholarly review and are labelled as such in the app."
+    },
+    {
+      "slug": "bbt-vedabase-bhagavata",
+      "kind": "digital_text",
+      "title": "Śrīmad-Bhāgavatam — Vedabase (Bhaktivedanta Book Trust)",
+      "authors": [
+        "A. C. Bhaktivedanta Swami Prabhupāda / BBT"
+      ],
+      "publisher": "Bhaktivedanta Book Trust",
+      "url": "https://vedabase.io/en/library/sb/",
+      "notes": "Used only to supply Devanagari for seven printed numbers absent on sa.wikisource.org (1.13.36, 4.1.52, 4.21.45, 8.7.5, 8.16.23, 11.11.13, 11.27.40). BBT English translation, synonyms, and purports are not shipped. Traditional Sanskrit mūla; BBT colon-visarga normalised to U+0903."
     }
   ],
-
   "rights": [
     {
-      "key": "pd-sanskrit",
-      "source": "gretil-bhp",
-      "status": "public_domain",
-      "license": "PD",
-      "rights_holder": null,
-      "attribution_text": "Sanskrit text of the Bhāgavata Purāṇa (vulgate), public domain. Collated against GRETIL and the Gita Press edition.",
-      "allows_commercial": true, "allows_derivatives": true, "allows_audio": true
+      "key": "mula-wikisource",
+      "source": "sa-wikisource-bhagavata",
+      "status": "open_license",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rights_holder": "Sanskrit Wikisource contributors",
+      "attribution_text": "Sanskrit mūla of the Bhāgavata Purāṇa, electronic edition after sa.wikisource.org (CC BY-SA 4.0). The ancient work is public-domain mūla (see Delhi High Court, 2023, on Purāṇa mūla); this file follows the Wikimedia e-text, not GRETIL. Gita Press numbering used only for collation. GRETIL consulted as a scholarly witness and is not redistributed.",
+      "allows_commercial": true,
+      "allows_derivatives": true,
+      "allows_audio": true
     },
     {
       "key": "dl-cc-by-sa",
@@ -67,7 +120,9 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_holder": "Dharma Library contributors",
       "attribution_text": "© Dharma Library contributors, CC BY-SA 4.0. Draft translation pending scholarly review.",
-      "allows_commercial": true, "allows_derivatives": true, "allows_audio": true
+      "allows_commercial": true,
+      "allows_derivatives": true,
+      "allows_audio": true
     },
     {
       "key": "dl-machine-translit",
@@ -77,20 +132,142 @@
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights_holder": "Dharma Library",
       "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
-      "allows_commercial": true, "allows_derivatives": true, "allows_audio": true
+      "allows_commercial": true,
+      "allows_derivatives": true,
+      "allows_audio": true
     }
   ],
-
   "editions": [
-    { "slug": "sb-mula-deva", "kind": "base_text", "language_code": "sa", "script_code": "Deva", "title": "Mūla (Devanagari)", "rights": "pd-sanskrit", "source": "gretil-bhp", "is_default": true, "sort_order": 10, "description": "The Sanskrit text in Devanagari." },
-    { "slug": "sb-iast", "kind": "transliteration", "language_code": "sa", "script_code": "Latn", "title": "IAST transliteration", "rights": "pd-sanskrit", "source": "gretil-bhp", "derived_from": "sb-mula-deva", "is_default": true, "sort_order": 20, "description": "Roman transliteration (IAST) with word breaks and compound hyphens." },
-    { "slug": "sb-mula-mlym", "kind": "transliteration", "language_code": "sa", "script_code": "Mlym", "title": "Mūla (Malayalam script)", "rights": "dl-machine-translit", "source": "dharma-library-editorial", "derived_from": "sb-mula-deva", "is_machine": true, "sort_order": 15, "description": "Sanskrit text rendered in Malayalam script (automatic conversion)." },
-    { "slug": "sb-mula-knda", "kind": "transliteration", "language_code": "sa", "script_code": "Knda", "title": "Mūla (Kannada script)", "rights": "dl-machine-translit", "source": "dharma-library-editorial", "derived_from": "sb-mula-deva", "is_machine": true, "sort_order": 16 },
-    { "slug": "sb-mula-telu", "kind": "transliteration", "language_code": "sa", "script_code": "Telu", "title": "Mūla (Telugu script)", "rights": "dl-machine-translit", "source": "dharma-library-editorial", "derived_from": "sb-mula-deva", "is_machine": true, "sort_order": 17 },
-    { "slug": "sb-mula-beng", "kind": "transliteration", "language_code": "sa", "script_code": "Beng", "title": "Mūla (Bengali script)", "rights": "dl-machine-translit", "source": "dharma-library-editorial", "derived_from": "sb-mula-deva", "is_machine": true, "sort_order": 18 },
-    { "slug": "sb-mula-gujr", "kind": "transliteration", "language_code": "sa", "script_code": "Gujr", "title": "Mūla (Gujarati script)", "rights": "dl-machine-translit", "source": "dharma-library-editorial", "derived_from": "sb-mula-deva", "is_machine": true, "sort_order": 19 },
-    { "slug": "sb-en-dl", "kind": "translation", "language_code": "en", "script_code": "Latn", "title": "English translation (Dharma Library, draft)", "contributors": ["Dharma Library contributors"], "rights": "dl-cc-by-sa", "source": "dharma-library-editorial", "is_default": true, "sort_order": 30, "description": "Original English prose translation. Draft — pending scholarly review." },
-    { "slug": "sb-ml-dl", "kind": "translation", "language_code": "ml", "script_code": "Mlym", "title": "മലയാളം പരിഭാഷ (Dharma Library, കരട്)", "contributors": ["Dharma Library contributors"], "rights": "dl-cc-by-sa", "source": "dharma-library-editorial", "is_default": true, "sort_order": 31, "description": "Original Malayalam prose translation. Draft — pending scholarly review." },
-    { "slug": "sb-wm-en", "kind": "word_meanings", "language_code": "en", "script_code": "Latn", "title": "Word-by-word (English)", "contributors": ["Dharma Library contributors"], "rights": "dl-cc-by-sa", "source": "dharma-library-editorial", "is_default": true, "sort_order": 40, "description": "Word-by-word glosses keyed to the IAST." }
+    {
+      "slug": "sb-mula-deva",
+      "kind": "base_text",
+      "language_code": "sa",
+      "script_code": "Deva",
+      "title": "Mūla (Devanagari)",
+      "rights": "mula-wikisource",
+      "source": "sa-wikisource-bhagavata",
+      "is_default": true,
+      "sort_order": 10,
+      "description": "The Sanskrit text in Devanagari. Electronic witness: sa.wikisource.org (CC BY-SA 4.0), 14105 verses in 335 chapters."
+    },
+    {
+      "slug": "sb-iast",
+      "kind": "transliteration",
+      "language_code": "sa",
+      "script_code": "Latn",
+      "title": "IAST transliteration",
+      "rights": "mula-wikisource",
+      "source": "sa-wikisource-bhagavata",
+      "derived_from": "sb-mula-deva",
+      "is_default": true,
+      "sort_order": 20,
+      "description": "Roman transliteration (IAST) with word breaks and compound hyphens, derived from the Wikisource Devanagari."
+    },
+    {
+      "slug": "sb-mula-mlym",
+      "kind": "transliteration",
+      "language_code": "sa",
+      "script_code": "Mlym",
+      "title": "Mūla (Malayalam script)",
+      "rights": "dl-machine-translit",
+      "source": "dharma-library-editorial",
+      "derived_from": "sb-mula-deva",
+      "is_machine": true,
+      "sort_order": 15,
+      "description": "Sanskrit text rendered in Malayalam script (automatic conversion)."
+    },
+    {
+      "slug": "sb-mula-knda",
+      "kind": "transliteration",
+      "language_code": "sa",
+      "script_code": "Knda",
+      "title": "Mūla (Kannada script)",
+      "rights": "dl-machine-translit",
+      "source": "dharma-library-editorial",
+      "derived_from": "sb-mula-deva",
+      "is_machine": true,
+      "sort_order": 16
+    },
+    {
+      "slug": "sb-mula-telu",
+      "kind": "transliteration",
+      "language_code": "sa",
+      "script_code": "Telu",
+      "title": "Mūla (Telugu script)",
+      "rights": "dl-machine-translit",
+      "source": "dharma-library-editorial",
+      "derived_from": "sb-mula-deva",
+      "is_machine": true,
+      "sort_order": 17
+    },
+    {
+      "slug": "sb-mula-beng",
+      "kind": "transliteration",
+      "language_code": "sa",
+      "script_code": "Beng",
+      "title": "Mūla (Bengali script)",
+      "rights": "dl-machine-translit",
+      "source": "dharma-library-editorial",
+      "derived_from": "sb-mula-deva",
+      "is_machine": true,
+      "sort_order": 18
+    },
+    {
+      "slug": "sb-mula-gujr",
+      "kind": "transliteration",
+      "language_code": "sa",
+      "script_code": "Gujr",
+      "title": "Mūla (Gujarati script)",
+      "rights": "dl-machine-translit",
+      "source": "dharma-library-editorial",
+      "derived_from": "sb-mula-deva",
+      "is_machine": true,
+      "sort_order": 19
+    },
+    {
+      "slug": "sb-en-dl",
+      "kind": "translation",
+      "language_code": "en",
+      "script_code": "Latn",
+      "title": "English translation (Dharma Library, draft)",
+      "contributors": [
+        "Dharma Library contributors"
+      ],
+      "rights": "dl-cc-by-sa",
+      "source": "dharma-library-editorial",
+      "is_default": true,
+      "sort_order": 30,
+      "description": "Original English prose translation. Draft — pending scholarly review."
+    },
+    {
+      "slug": "sb-ml-dl",
+      "kind": "translation",
+      "language_code": "ml",
+      "script_code": "Mlym",
+      "title": "മലയാളം പരിഭാഷ (Dharma Library, കരട്)",
+      "contributors": [
+        "Dharma Library contributors"
+      ],
+      "rights": "dl-cc-by-sa",
+      "source": "dharma-library-editorial",
+      "is_default": true,
+      "sort_order": 31,
+      "description": "Original Malayalam prose translation. Draft — pending scholarly review."
+    },
+    {
+      "slug": "sb-wm-en",
+      "kind": "word_meanings",
+      "language_code": "en",
+      "script_code": "Latn",
+      "title": "Word-by-word (English)",
+      "contributors": [
+        "Dharma Library contributors"
+      ],
+      "rights": "dl-cc-by-sa",
+      "source": "dharma-library-editorial",
+      "is_default": true,
+      "sort_order": 40,
+      "description": "Word-by-word glosses keyed to the IAST."
+    }
   ]
 }

@@ -45,15 +45,24 @@ jobs:
           def load(slug):
               return json.load(open(f'app/assets/bundles/{slug}.json'))
 
+          work = json.load(open('content/bhagavata-purana/work.json'))
+          meta = work['metadata']
           bhagavata = load('bhagavata-purana')
-          assert len(bhagavata['sections']) == 1 and len(bhagavata['sections'][0]['verses']) == 10, 'pilot Bhāgavata bundle must contain 1.1.1-1.1.10'
+          n_verses = sum(len(s['verses']) for s in bhagavata['sections'])
+          n_sections = len(bhagavata['sections'])
+          assert n_verses == meta['imported_verse_count'], (n_verses, meta)
+          assert n_sections == meta['imported_chapter_count'], (n_sections, meta)
+          if meta.get('complete'):
+              assert n_sections == 335, n_sections
+          else:
+              assert n_sections == 1 and n_verses == 10, 'pilot Bhāgavata bundle must contain 1.1.1-1.1.10'
           assert all(e['rights_status'] in ('public_domain','open_license','permission_granted','original') for e in bhagavata['editions'])
 
           gita = load('bhagavad-gita')
           assert len(gita['sections']) == 18, 'Gita bundle must contain 18 chapters'
           assert sum(len(s['verses']) for s in gita['sections']) == 700, 'Gita bundle must contain 700 verses'
           assert all(e['rights_status'] in ('public_domain','open_license','permission_granted','original') for e in gita['editions'])
-          print('all published bundles ok: Bhāgavata 10 verses; Gītā 18 chapters / 700 verses')
+          print(f"all published bundles ok: Bhāgavata {n_sections} chapters / {n_verses} verses; Gītā 18 chapters / 700 verses")
           PY
       - name: Python unit tests
         run: python3 -m unittest discover -s scripts/tests -v
@@ -130,6 +139,8 @@ jobs:
           required = [
               'assets/flutter_assets/assets/bundles/bhagavata-purana.json',
               'assets/flutter_assets/assets/bundles/bhagavad-gita.json',
+              'assets/flutter_assets/assets/audio/launch_chime.wav',
+              'assets/flutter_assets/assets/audio/sloka_chime.wav',
           ]
           with zipfile.ZipFile(apk) as z:
               names = set(z.namelist())
@@ -137,11 +148,15 @@ jobs:
               assert not missing, f'APK is missing bundled assets: {missing}'
               gita = json.loads(z.read(required[1]))
               bhagavata = json.loads(z.read(required[0]))
+          work = json.load(open('../content/bhagavata-purana/work.json'))
+          meta = work['metadata']
+          n_verses = sum(len(s['verses']) for s in bhagavata['sections'])
+          n_sections = len(bhagavata['sections'])
           assert len(gita['sections']) == 18
           assert sum(len(s['verses']) for s in gita['sections']) == 700
-          assert len(bhagavata['sections']) == 1
-          assert len(bhagavata['sections'][0]['verses']) == 10
-          print('APK assets verified: Bhāgavata bundle intact; Gītā 18 chapters / 700 verses')
+          assert n_verses == meta['imported_verse_count'], (n_verses, meta)
+          assert n_sections == meta['imported_chapter_count'], (n_sections, meta)
+          print(f'APK assets verified: Bhāgavata {n_sections} chapters / {n_verses} verses; Gītā 18 chapters / 700 verses')
           PY
       - uses: actions/upload-artifact@v7
         with:

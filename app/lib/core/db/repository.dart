@@ -58,11 +58,25 @@ class Repository {
   Future<Toc> toc(String workSlug) => _cached('toc:$workSlug',
       () => _client!.rpc('get_toc', params: {'p_work_slug': workSlug}), (d) => Toc.fromJson((d as Map).cast<String, dynamic>()));
 
+  /// Published works for the Home catalogue. Empty when offline / bundle-only;
+  /// callers merge this with [LocalStore.bundleSlugs].
+  Future<List<Map<String, dynamic>>> publishedWorkSummaries() async {
+    if (_client == null || !_online) return const [];
+    try {
+      final data = await _client.rpc('get_published_works').timeout(const Duration(seconds: 15));
+      if (data is List) {
+        return data.map((e) => (e as Map).cast<String, dynamic>()).toList();
+      }
+    } catch (_) {/* fall through */}
+    return const [];
+  }
+
   Future<List<Edition>> editions(String workSlug) => _cached('editions:$workSlug', () async {
         // v_editions is global; constrain it through the work id so a
         // multi-work library never mixes Bhāgavata and Gītā layouts.
-        final work = await _client!.from('works').select('id').eq('slug', workSlug).single();
-        return _client!.from('v_editions').select().eq('work_id', work['id']).order('sort_order');
+        final client = _client!;
+        final work = await client.from('works').select('id').eq('slug', workSlug).single();
+        return client.from('v_editions').select().eq('work_id', work['id']).order('sort_order');
       }, (d) => (d as List).map((e) => Edition.fromJson((e as Map).cast<String, dynamic>())).where((e) => e.isCleared).toList());
 
   Future<Chapter> chapter(String sectionId) => _cached('chapter:$sectionId',
@@ -152,7 +166,8 @@ class Repository {
         }
       }
 
-      for (final ch in Toc.fromJson((toc as Map).cast<String, dynamic>()).chapters) {
+      final tocObj = Toc.fromJson((toc as Map).cast<String, dynamic>());
+      for (final ch in tocObj.chapters) {
         final raw = await store.get('chapter:${ch.id}');
         if (raw == null) continue;
         final chapter = Chapter.fromJson((raw as Map).cast<String, dynamic>());
@@ -160,7 +175,7 @@ class Repository {
         for (final v in chapter.verses) {
           if (v.ref == q.trim()) {
             final r = v.renderings.firstOrNull;
-            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body, 1.0));
+            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body, 1.0, shortCode: tocObj.work.shortCode));
             continue;
           }
           var matched = false;
@@ -173,13 +188,13 @@ class Repository {
               final start = (at - 60).clamp(0, body.length);
               final end = (at + 100).clamp(0, body.length);
               hits.add(_hit(v, r, edById[r.editionId], slug,
-                  '${start > 0 ? '…' : ''}${body.substring(start, end)}${end < body.length ? '…' : ''}', 0.9));
+                  '${start > 0 ? '…' : ''}${body.substring(start, end)}${end < body.length ? '…' : ''}', 0.9, shortCode: tocObj.work.shortCode));
               matched = true;
             }
           }
           if (!matched && mentioned.contains(v.id)) {
             final r = v.renderings.where((r) => r.kind == 'translation' && (language == null || r.languageCode == language)).firstOrNull ?? v.renderings.firstOrNull;
-            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body.length > 160 ? '${r.body.substring(0, 160)}…' : r.body, 0.5));
+            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body.length > 160 ? '${r.body.substring(0, 160)}…' : r.body, 0.5, shortCode: tocObj.work.shortCode));
           }
         }
       }
@@ -188,9 +203,10 @@ class Repository {
     return hits.take(limit).toList();
   }
 
-  SearchHit _hit(Verse v, Rendering r, Edition? e, String slug, String snippet, double rank) => SearchHit.fromJson({
+  SearchHit _hit(Verse v, Rendering r, Edition? e, String slug, String snippet, double rank, {String shortCode = ''}) => SearchHit.fromJson({
         'verse_id': v.id, 'ref': v.ref, 'work_slug': slug, 'edition_id': r.editionId, 'edition_title': e?.title ?? r.kind,
         'language_code': r.languageCode, 'script_code': r.scriptCode, 'kind': r.kind, 'snippet': snippet, 'rank': rank,
+        'short_code': shortCode,
       });
 
   /// Dart mirror of SQL `iast_fold`: lower-case, strip IAST diacritics,

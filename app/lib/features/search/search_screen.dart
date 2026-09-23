@@ -187,7 +187,7 @@ class _HitTile extends StatelessWidget {
       onTap: onTap,
       isThreeLine: true,
       leading: CircleAvatar(radius: 22, child: Text(ref_.split('.').last)),
-      title: Text('${best.workSlug == 'bhagavata-purana' ? 'SB' : best.workSlug} $ref_', style: t.textTheme.labelLarge?.copyWith(color: t.colorScheme.primary)),
+      title: Text('${best.label} $ref_', style: t.textTheme.labelLarge?.copyWith(color: t.colorScheme.primary)),
       subtitle: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         _Snippet(best.snippet, best.scriptCode),
         Text(hits.map((h) => h.editionTitle).toSet().join(' · '), style: t.textTheme.labelSmall, maxLines: 1, overflow: TextOverflow.ellipsis),

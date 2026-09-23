@@ -1,0 +1,321 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 1.10 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%A6), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%A7%E0%A5%A6",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः १/अध्यायः १०",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 7999,
+    "revid": 110181,
+    "timestamp": "2017-06-04T22:17:09Z",
+    "sha1": "dcfe243064d3bed90b6b79a6ba63fb2a60950afb",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः १/अध्यायः १०"
+  },
+  "section": {
+    "canto": {
+      "ref": "1",
+      "ordinal": 1,
+      "title_iast": "Skandha 1",
+      "title_sa": "स्कन्धः १"
+    },
+    "chapter": {
+      "ref": "1.10",
+      "ordinal": 10,
+      "title_iast": "Adhyāya 10",
+      "title_sa": "अध्यायः १०"
+    }
+  },
+  "verses": [
+    {
+      "ref": "1.10.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": "saunaka",
+      "deva": "हत्वा स्वरिक्थस्पृध आततायिनो\nयुधिष्ठिरो धर्मभृतां वरिष्ठः ।\nसहानुजैः प्रत्यवरुद्धभोजनः\nकथं प्रवृत्तः किमकारषीत्ततः ॥ १ ॥",
+      "iast": "hatvā svarikthaspṛdha ātatāyino\nyudhiṣṭhiro dharmabhṛtāṁ variṣṭhaḥ |\nsahānujaiḥ pratyavaruddhabhojanaḥ\nkathaṁ pravṛttaḥ kimakāraṣīttataḥ || 1 ||"
+    },
+    {
+      "ref": "1.10.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "वंशं कुरोर्वंशदवाग्निनिर्हृतं\nसंरोहयित्वा भवभावनो हरिः ।\nनिवेशयित्वा निजराज्य ईश्वरो\nयुधिष्ठिरं प्रीतमना बभूव ह ॥ २ ॥",
+      "iast": "vaṁśaṁ kurorvaṁśadavāgninirhṛtaṁ\nsaṁrohayitvā bhavabhāvano hariḥ |\nniveśayitvā nijarājya īśvaro\nyudhiṣṭhiraṁ prītamanā babhūva ha || 2 ||"
+    },
+    {
+      "ref": "1.10.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "निशम्य भीष्मोक्तमथाच्युतोक्तं\nप्रवृत्त विज्ञान विधूत विभ्रमः ।\nशशास गामिन्द्र इवाजिताश्रयः\nपरिध्युपान्तां अनुजानुवर्तितः ॥ ३ ॥",
+      "iast": "niśamya bhīṣmoktamathācyutoktaṁ\npravṛtta vijñāna vidhūta vibhramaḥ |\nśaśāsa gāmindra ivājitāśrayaḥ\nparidhyupāntāṁ anujānuvartitaḥ || 3 ||"
+    },
+    {
+      "ref": "1.10.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "कामं ववर्ष पर्जन्यः सर्वकामदुघा मही ।\nसिषिचुः स्म व्रजान् गावः पयसोधस्वतीर्मुदा ॥ ४ ॥",
+      "iast": "kāmaṁ vavarṣa parjanyaḥ sarvakāmadughā mahī |\nsiṣicuḥ sma vrajān gāvaḥ payasodhasvatīrmudā || 4 ||"
+    },
+    {
+      "ref": "1.10.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "नद्यः समुद्रा गिरयः सवनस्पतिवीरुधः ।\nफलन्त्योषधयः सर्वाः कामं अन्वृतु तस्य वै ॥ ५ ॥",
+      "iast": "nadyaḥ samudrā girayaḥ savanaspativīrudhaḥ |\nphalantyoṣadhayaḥ sarvāḥ kāmaṁ anvṛtu tasya vai || 5 ||"
+    },
+    {
+      "ref": "1.10.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "नाधयो व्याधयः क्लेशा दैवभूतात्महेतवः ।\nअजातशत्रौ अवभवन् जन्तूनां राज्ञि कर्हिचित् ॥ ६ ॥",
+      "iast": "nādhayo vyādhayaḥ kleśā daivabhūtātmahetavaḥ |\najātaśatrau avabhavan jantūnāṁ rājñi karhicit || 6 ||"
+    },
+    {
+      "ref": "1.10.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "उषित्वा हास्तिनपुरे मासान् कतिपयान् हरिः ।\nसुहृदां च विशोकाय स्वसुश्च प्रियकाम्यया ॥ ७ ॥",
+      "iast": "uṣitvā hāstinapure māsān katipayān hariḥ |\nsuhṛdāṁ ca viśokāya svasuśca priyakāmyayā || 7 ||"
+    },
+    {
+      "ref": "1.10.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "आमंत्र्य चाभ्यनुज्ञातः परिष्वज्याभिवाद्य तम् ।\nआरुरोह रथं कैश्चित् परिष्वक्तोऽभिवादितः ॥ ८ ॥",
+      "iast": "āmaṁtrya cābhyanujñātaḥ pariṣvajyābhivādya tam |\nāruroha rathaṁ kaiścit pariṣvakto'bhivāditaḥ || 8 ||"
+    },
+    {
+      "ref": "1.10.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "सुभद्रा द्रौपदी कुन्ती विराटतनया तथा ।\nगान्धारी धृतराष्ट्रश्च युयुत्सुः गौतमो यमौ ॥ ९ ॥",
+      "iast": "subhadrā draupadī kuntī virāṭatanayā tathā |\ngāndhārī dhṛtarāṣṭraśca yuyutsuḥ gautamo yamau || 9 ||"
+    },
+    {
+      "ref": "1.10.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "वृकोदरश्च धौम्यश्च स्त्रियो मत्स्यसुतादयः ।\nन सेहिरे विमुह्यन्तो विरहं शार्ङ्गधन्वनः ॥ १० ॥",
+      "iast": "vṛkodaraśca dhaumyaśca striyo matsyasutādayaḥ |\nna sehire vimuhyanto virahaṁ śārṅgadhanvanaḥ || 10 ||"
+    },
+    {
+      "ref": "1.10.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "सत्सङ्गात् मुक्तदुःसङ्गो हातुं नोत्सहते बुधः ।\nकीर्त्यमानं यशो यस्य सकृत् आकर्ण्य रोचनम् ॥ ११ ॥",
+      "iast": "satsaṅgāt muktaduḥsaṅgo hātuṁ notsahate budhaḥ |\nkīrtyamānaṁ yaśo yasya sakṛt ākarṇya rocanam || 11 ||"
+    },
+    {
+      "ref": "1.10.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "तस्मिन् न्यस्तधियः पार्थाः सहेरन् विरहं कथम् ।\nदर्शनस्पर्शसंलाप शयनासन भोजनैः ॥ १२ ॥",
+      "iast": "tasmin nyastadhiyaḥ pārthāḥ saheran virahaṁ katham |\ndarśanasparśasaṁlāpa śayanāsana bhojanaiḥ || 12 ||"
+    },
+    {
+      "ref": "1.10.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "सर्वे तेऽनिमिषैः अक्षैः तं अनु द्रुतचेतसः ।\nवीक्षन्तः स्नेहसम्बद्धा विचेलुस्तत्र तत्र ह ॥ १३ ॥",
+      "iast": "sarve te'nimiṣaiḥ akṣaiḥ taṁ anu drutacetasaḥ |\nvīkṣantaḥ snehasambaddhā vicelustatra tatra ha || 13 ||"
+    },
+    {
+      "ref": "1.10.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "न्यरुन्धन् उद्गलत् बाष्पं औत्कण्ठ्यात् देवकीसुते ।\nनिर्यात्यगारात् नोऽभद्रं इति स्यात् बान्धवस्त्रियः ॥ १४ ॥",
+      "iast": "nyarundhan udgalat bāṣpaṁ autkaṇṭhyāt devakīsute |\nniryātyagārāt no'bhadraṁ iti syāt bāndhavastriyaḥ || 14 ||"
+    },
+    {
+      "ref": "1.10.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "मृदङ्गशङ्खभेर्यश्च वीणापणव गोमुखाः ।\nधुन्धुर्यानक घण्टाद्या नेदुः दुन्दुभयस्तथा ॥ १५ ॥",
+      "iast": "mṛdaṅgaśaṅkhabheryaśca vīṇāpaṇava gomukhāḥ |\ndhundhuryānaka ghaṇṭādyā neduḥ dundubhayastathā || 15 ||"
+    },
+    {
+      "ref": "1.10.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "प्रासादशिखरारूढाः कुरुनार्यो दिदृक्षया ।\nववृषुः कुसुमैः कृष्णं प्रेमव्रीडास्मितेक्षणाः ॥ १६ ॥",
+      "iast": "prāsādaśikharārūḍhāḥ kurunāryo didṛkṣayā |\nvavṛṣuḥ kusumaiḥ kṛṣṇaṁ premavrīḍāsmitekṣaṇāḥ || 16 ||"
+    },
+    {
+      "ref": "1.10.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "सितातपत्रं जग्राह मुक्तादामविभूषितम् ।\nरत्नदण्डं गुडाकेशः प्रियः प्रियतमस्य ह ॥ १७ ॥",
+      "iast": "sitātapatraṁ jagrāha muktādāmavibhūṣitam |\nratnadaṇḍaṁ guḍākeśaḥ priyaḥ priyatamasya ha || 17 ||"
+    },
+    {
+      "ref": "1.10.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "उद्धवः सात्यकिश्चैव व्यजने परमाद्भुते ।\nविकीर्यमाणः कुसुमै रेजे मधुपतिः पथि ॥ १८ ॥",
+      "iast": "uddhavaḥ sātyakiścaiva vyajane paramādbhute |\nvikīryamāṇaḥ kusumai reje madhupatiḥ pathi || 18 ||"
+    },
+    {
+      "ref": "1.10.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अश्रूयन्ताशिषः सत्याः तत्र तत्र द्विजेरिताः ।\nनानुरूपानुरूपाश्च निर्गुणस्य गुणात्मनः ॥ १९ ॥",
+      "iast": "aśrūyantāśiṣaḥ satyāḥ tatra tatra dvijeritāḥ |\nnānurūpānurūpāśca nirguṇasya guṇātmanaḥ || 19 ||"
+    },
+    {
+      "ref": "1.10.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अन्योन्यमासीत् संजल्प उत्तमश्लोकचेतसाम् ।\nकौरवेन्द्रपुरस्त्रीणां सर्वश्रुतिमनोहरः ॥ २० ॥",
+      "iast": "anyonyamāsīt saṁjalpa uttamaślokacetasām |\nkauravendrapurastrīṇāṁ sarvaśrutimanoharaḥ || 20 ||"
+    },
+    {
+      "ref": "1.10.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "स वै किलायं पुरुषः पुरातनो\nय एक आसीदविशेष आत्मनि ।\nअग्रे गुणेभ्यो जगदात्मनीश्वरे\nनिमीलितात्मन्निशि सुप्तशक्तिषु ॥ २१ ॥",
+      "iast": "sa vai kilāyaṁ puruṣaḥ purātano\nya eka āsīdaviśeṣa ātmani |\nagre guṇebhyo jagadātmanīśvare\nnimīlitātmanniśi suptaśaktiṣu || 21 ||"
+    },
+    {
+      "ref": "1.10.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "स एव भूयो निजवीर्यचोदितां\nस्वजीवमायां प्रकृतिं सिसृक्षतीम् ।\nअनामरूपात्मनि रूपनामनी\nविधित्समानोऽनुससार शास्त्रकृत् ॥ २२ ॥",
+      "iast": "sa eva bhūyo nijavīryacoditāṁ\nsvajīvamāyāṁ prakṛtiṁ sisṛkṣatīm |\nanāmarūpātmani rūpanāmanī\nvidhitsamāno'nusasāra śāstrakṛt || 22 ||"
+    },
+    {
+      "ref": "1.10.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "स वा अयं यत्पदमत्र सूरयो\nजितेन्द्रिया निर्जितमातरिश्वनः ।\nपश्यन्ति भक्ति उत्कलितामलात्मना\nनन्वेष सत्त्वं परिमार्ष्टुमर्हति ॥ २३ ॥",
+      "iast": "sa vā ayaṁ yatpadamatra sūrayo\njitendriyā nirjitamātariśvanaḥ |\npaśyanti bhakti utkalitāmalātmanā\nnanveṣa sattvaṁ parimārṣṭumarhati || 23 ||"
+    },
+    {
+      "ref": "1.10.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "स वा अयं सख्यनुगीत सत्कथो\nवेदेषु गुह्येषु च गुह्यवादिभिः ।\nय एक ईशो जगदात्मलीलया\nसृजत्यवत्यत्ति न तत्र सज्जते ॥ २४ ॥",
+      "iast": "sa vā ayaṁ sakhyanugīta satkatho\nvedeṣu guhyeṣu ca guhyavādibhiḥ |\nya eka īśo jagadātmalīlayā\nsṛjatyavatyatti na tatra sajjate || 24 ||"
+    },
+    {
+      "ref": "1.10.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "यदा ह्यधर्मेण तमोधियो नृपा\nजीवन्ति तत्रैष हि सत्त्वतः किल ।\nधत्ते भगं सत्यमृतं दयां यशो\nभवाय रूपाणि दधत् युगे युगे ॥ २५ ॥",
+      "iast": "yadā hyadharmeṇa tamodhiyo nṛpā\njīvanti tatraiṣa hi sattvataḥ kila |\ndhatte bhagaṁ satyamṛtaṁ dayāṁ yaśo\nbhavāya rūpāṇi dadhat yuge yuge || 25 ||"
+    },
+    {
+      "ref": "1.10.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अहो अलं श्लाघ्यतमं यदोः कुलं\nअहो अलं पुण्यतमं मधोर्वनम् ।\nयदेष पुंसां ऋषभः श्रियः पतिः\nस्वजन्मना चङ्क्रमणेन चाञ्चति ॥ २६ ॥",
+      "iast": "aho alaṁ ślāghyatamaṁ yadoḥ kulaṁ\naho alaṁ puṇyatamaṁ madhorvanam |\nyadeṣa puṁsāṁ ṛṣabhaḥ śriyaḥ patiḥ\nsvajanmanā caṅkramaṇena cāñcati || 26 ||"
+    },
+    {
+      "ref": "1.10.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अहो बत स्वर्यशसः तिरस्करी\nकुशस्थली पुण्ययशस्करी भुवः ।\nपश्यन्ति नित्यं यदनुग्रहेषितं\nस्मितावलोकं स्वपतिं स्म यत्प्रजाः ॥ २७ ॥",
+      "iast": "aho bata svaryaśasaḥ tiraskarī\nkuśasthalī puṇyayaśaskarī bhuvaḥ |\npaśyanti nityaṁ yadanugraheṣitaṁ\nsmitāvalokaṁ svapatiṁ sma yatprajāḥ || 27 ||"
+    },
+    {
+      "ref": "1.10.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "नूनं व्रतस्नानहुतादिनेश्वरः\nसमर्चितो ह्यस्य गृहीतपाणिभिः ।\nपिबंति याः सख्यधरामृतं मुहुः\nव्रजस्त्रियः सम्मुमुहुः यदाशयाः ॥ २८ ॥",
+      "iast": "nūnaṁ vratasnānahutādineśvaraḥ\nsamarcito hyasya gṛhītapāṇibhiḥ |\npibaṁti yāḥ sakhyadharāmṛtaṁ muhuḥ\nvrajastriyaḥ sammumuhuḥ yadāśayāḥ || 28 ||"
+    },
+    {
+      "ref": "1.10.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "या वीर्यशुल्केन हृताः स्वयंवरे\nप्रमथ्य चैद्यः प्रमुखान्हि शुष्मिणः ।\nप्रद्युम्न साम्बाम्ब सुतादयोऽपरा\nयाः चाहृता भौमवधे सहस्रशः ॥ २९ ॥",
+      "iast": "yā vīryaśulkena hṛtāḥ svayaṁvare\npramathya caidyaḥ pramukhānhi śuṣmiṇaḥ |\npradyumna sāmbāmba sutādayo'parā\nyāḥ cāhṛtā bhaumavadhe sahasraśaḥ || 29 ||"
+    },
+    {
+      "ref": "1.10.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "एताः परं स्त्रीत्वमपास्तपेशलं\nनिरस्तशौचं बत साधु कुर्वते ।\nयासां गृहात् पुष्करलोचनः पतिः\nन जातु अपैत्याहृतिभिः हृदि स्पृशन् ॥ ३० ॥",
+      "iast": "etāḥ paraṁ strītvamapāstapeśalaṁ\nnirastaśaucaṁ bata sādhu kurvate |\nyāsāṁ gṛhāt puṣkaralocanaḥ patiḥ\nna jātu apaityāhṛtibhiḥ hṛdi spṛśan || 30 ||"
+    },
+    {
+      "ref": "1.10.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "एवंविधा गदन्तीनां स गिरः पुरयोषिताम् ।\nनिरीक्षणेन अभिनन्दन् सस्मितेन ययौ हरिः ॥ ३१ ॥",
+      "iast": "evaṁvidhā gadantīnāṁ sa giraḥ purayoṣitām |\nnirīkṣaṇena abhinandan sasmitena yayau hariḥ || 31 ||"
+    },
+    {
+      "ref": "1.10.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अजातशत्रुः पृतनां गोपीथाय मधुद्विषः ।\nपरेभ्यः शङ्कितः स्नेहात् प्रायुङ्क्त चतुरङ्गिणीम् ॥ ३२ ॥",
+      "iast": "ajātaśatruḥ pṛtanāṁ gopīthāya madhudviṣaḥ |\nparebhyaḥ śaṅkitaḥ snehāt prāyuṅkta caturaṅgiṇīm || 32 ||"
+    },
+    {
+      "ref": "1.10.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "अथ दूरागतान् शौरिः कौरवान् विरहातुरान् ।\nसन्निवर्त्य दृढं स्निग्धान् प्रायात्स्वनगरीं प्रियैः ॥ ३३ ॥",
+      "iast": "atha dūrāgatān śauriḥ kauravān virahāturān |\nsannivartya dṛḍhaṁ snigdhān prāyātsvanagarīṁ priyaiḥ || 33 ||"
+    },
+    {
+      "ref": "1.10.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "कुरुजाङ्गलपाञ्चालान् शूरसेनान् सयामुनान् ।\nब्रह्मावर्तं कुरुक्षेत्रं मत्स्यान् सारस्वतानथ ॥ ३४ ॥",
+      "iast": "kurujāṅgalapāñcālān śūrasenān sayāmunān |\nbrahmāvartaṁ kurukṣetraṁ matsyān sārasvatānatha || 34 ||"
+    },
+    {
+      "ref": "1.10.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "मरुधन्वमतिक्रम्य सौवीराभीरयोः परान् ।\nआनर्तान् भार्गवोपागात् श्रान्तवाहो मनाग्विभुः ॥ ३५ ॥",
+      "iast": "marudhanvamatikramya sauvīrābhīrayoḥ parān |\nānartān bhārgavopāgāt śrāntavāho manāgvibhuḥ || 35 ||"
+    },
+    {
+      "ref": "1.10.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": "suta",
+      "deva": "तत्र तत्र ह तत्रत्यैः हरिः प्रत्युद्यतार्हणः ।\nसायं भेजे दिशं पश्चात् गविष्ठो गां गतस्तदा ॥ ३६ ॥",
+      "iast": "tatra tatra ha tatratyaiḥ hariḥ pratyudyatārhaṇaḥ |\nsāyaṁ bheje diśaṁ paścāt gaviṣṭho gāṁ gatastadā || 36 ||"
+    }
+  ]
+}

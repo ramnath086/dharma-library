@@ -1,0 +1,393 @@
+{
+  "_note": "Śrīmad Bhāgavata Purāṇa 6.6 — Sanskrit mūla from sa.wikisource.org (https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AC/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AC), CC BY SA 4.0. IAST via scripts/translit.py. Translations, where present, are original Dharma Library work (CC BY-SA 4.0) or omitted. GRETIL was not used as the shipped file.",
+  "_source": {
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83%20%E0%A5%AC/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83%20%E0%A5%AC",
+    "title": "श्रीमद्भागवतपुराणम्/स्कन्धः ६/अध्यायः ६",
+    "retrieved": "2026-09-22T19:12:01Z",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sanskrit Wikisource contributors",
+    "transformation": "MediaWiki wikitext stripped of templates/links; verses split on ॥ N ॥; IAST via scripts/translit.py. No translations invented. GRETIL was not used as the shipped file.",
+    "pageid": 24091,
+    "revid": 333897,
+    "timestamp": "2022-03-19T01:36:40Z",
+    "sha1": "ec330334525f3f6e2082622aa572b1613dbeaf4c",
+    "resolved_title": "श्रीमद्भागवतपुराणम्/स्कन्धः ६/अध्यायः ६"
+  },
+  "section": {
+    "canto": {
+      "ref": "6",
+      "ordinal": 6,
+      "title_iast": "Skandha 6",
+      "title_sa": "स्कन्धः ६"
+    },
+    "chapter": {
+      "ref": "6.6",
+      "ordinal": 6,
+      "title_iast": "Adhyāya 6",
+      "title_sa": "अध्यायः ६"
+    }
+  },
+  "verses": [
+    {
+      "ref": "6.6.1",
+      "ordinal": 1,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अथ षष्ठोऽध्यायः ।\nश्रीशुक उवाच।\nततः प्राचेतसोऽसिक्न्यामनुनीतः स्वयम्भुवा ॥ १ ॥",
+      "iast": "atha ṣaṣṭho'dhyāyaḥ |\nśrīśuka uvāca|\ntataḥ prācetaso'siknyāmanunītaḥ svayambhuvā || 1 ||"
+    },
+    {
+      "ref": "6.6.2",
+      "ordinal": 2,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "षष्टिं सञ्जनयामास दुहितॄः पितृवत्सलाः।\nदश धर्माय कायेन्दोर्द्विषट्त्रिणव दत्तवान् ॥ २ ॥",
+      "iast": "ṣaṣṭiṁ sañjanayāmāsa duhitṝḥ pitṛvatsalāḥ|\ndaśa dharmāya kāyendordviṣaṭtriṇava dattavān || 2 ||"
+    },
+    {
+      "ref": "6.6.3",
+      "ordinal": 3,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "भूताङ्गिरः कृशाश्वेभ्यो द्वे द्वे तार्क्ष्याय चापराः।\nनामधेयान्यमूषां त्वं सापत्यानां च मे शृणु ॥ ३ ॥",
+      "iast": "bhūtāṅgiraḥ kṛśāśvebhyo dve dve tārkṣyāya cāparāḥ|\nnāmadheyānyamūṣāṁ tvaṁ sāpatyānāṁ ca me śṛṇu || 3 ||"
+    },
+    {
+      "ref": "6.6.4",
+      "ordinal": 4,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "यासां प्रसूतिप्रसवैर्लोका आपूरितास्त्रयः।\nभानुर्लम्बा ककुद्यामिर्विश्वा साध्या मरुत्वती ॥ ४ ॥",
+      "iast": "yāsāṁ prasūtiprasavairlokā āpūritāstrayaḥ|\nbhānurlambā kakudyāmirviśvā sādhyā marutvatī || 4 ||"
+    },
+    {
+      "ref": "6.6.5",
+      "ordinal": 5,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वसुर्मुहूर्ता सङ्कल्पा धर्मपत्न्यः सुताञ्शृणु।\nभानोस्तु देवऋषभ इन्द्र सेनस्ततो नृप ॥ ५ ॥",
+      "iast": "vasurmuhūrtā saṅkalpā dharmapatnyaḥ sutāñśṛṇu|\nbhānostu devaṛṣabha indra senastato nṛpa || 5 ||"
+    },
+    {
+      "ref": "6.6.6",
+      "ordinal": 6,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "विद्योत आसील्लम्बायास्ततश्च स्तनयित्नवः।\nककुदः सङ्कटस्तस्य कीकटस्तनयो यतः ॥ ६ ॥",
+      "iast": "vidyota āsīllambāyāstataśca stanayitnavaḥ|\nkakudaḥ saṅkaṭastasya kīkaṭastanayo yataḥ || 6 ||"
+    },
+    {
+      "ref": "6.6.7",
+      "ordinal": 7,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "भुवो दुर्गाणि यामेयः स्वर्गो नन्दिस्ततोऽभवत्।\nविश्वेदेवास्तु विश्वाया अप्रजांस्तान्प्रचक्षते ॥ ७ ॥",
+      "iast": "bhuvo durgāṇi yāmeyaḥ svargo nandistato'bhavat|\nviśvedevāstu viśvāyā aprajāṁstānpracakṣate || 7 ||"
+    },
+    {
+      "ref": "6.6.8",
+      "ordinal": 8,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "साध्योगणश्च साध्याया अर्थसिद्धिस्तु तत्सुतः।\nमरुत्वांश्च जयन्तश्च मरुत्वत्या बभूवतुः ॥ ८ ॥",
+      "iast": "sādhyogaṇaśca sādhyāyā arthasiddhistu tatsutaḥ|\nmarutvāṁśca jayantaśca marutvatyā babhūvatuḥ || 8 ||"
+    },
+    {
+      "ref": "6.6.9",
+      "ordinal": 9,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "जयन्तो वासुदेवांश उपेन्द्र इति यं विदुः।\nमौहूर्तिका देवगणा मुहूर्तायाश्च जज्ञिरे ॥ ९ ॥",
+      "iast": "jayanto vāsudevāṁśa upendra iti yaṁ viduḥ|\nmauhūrtikā devagaṇā muhūrtāyāśca jajñire || 9 ||"
+    },
+    {
+      "ref": "6.6.10",
+      "ordinal": 10,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "ये वै फलं प्रयच्छन्ति भूतानां स्वस्वकालजम्।\nसङ्कल्पायास्तु सङ्कल्पः कामः सङ्कल्पजः स्मृतः ॥ १० ॥",
+      "iast": "ye vai phalaṁ prayacchanti bhūtānāṁ svasvakālajam|\nsaṅkalpāyāstu saṅkalpaḥ kāmaḥ saṅkalpajaḥ smṛtaḥ || 10 ||"
+    },
+    {
+      "ref": "6.6.11",
+      "ordinal": 11,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वसवोऽष्टौ वसोः पुत्रास्तेषां नामानि मे शृणु।\nद्रोणः प्राणो ध्रुवोऽर्कोऽग्निर्दोषो वास्तुर्विभावसुः ॥ ११ ॥",
+      "iast": "vasavo'ṣṭau vasoḥ putrāsteṣāṁ nāmāni me śṛṇu|\ndroṇaḥ prāṇo dhruvo'rko'gnirdoṣo vāsturvibhāvasuḥ || 11 ||"
+    },
+    {
+      "ref": "6.6.12",
+      "ordinal": 12,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "द्रोणस्याभिमतेः पत्न्या हर्षशोकभयादयः।\nप्राणस्योर्जस्वती भार्या सह आयुः पुरोजवः ॥ १२ ॥",
+      "iast": "droṇasyābhimateḥ patnyā harṣaśokabhayādayaḥ|\nprāṇasyorjasvatī bhāryā saha āyuḥ purojavaḥ || 12 ||"
+    },
+    {
+      "ref": "6.6.13",
+      "ordinal": 13,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "ध्रुवस्य भार्या धरणिरसूत विविधाः पुरः।\nअर्कस्य वासना भार्या पुत्रास्तर्षादयः स्मृताः ॥ १३ ॥",
+      "iast": "dhruvasya bhāryā dharaṇirasūta vividhāḥ puraḥ|\narkasya vāsanā bhāryā putrāstarṣādayaḥ smṛtāḥ || 13 ||"
+    },
+    {
+      "ref": "6.6.14",
+      "ordinal": 14,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अग्नेर्भार्या वसोर्धारा पुत्रा द्रविणकादयः।\nस्कन्दश्च कृत्तिकापुत्रो ये विशाखादयस्ततः ॥ १४ ॥",
+      "iast": "agnerbhāryā vasordhārā putrā draviṇakādayaḥ|\nskandaśca kṛttikāputro ye viśākhādayastataḥ || 14 ||"
+    },
+    {
+      "ref": "6.6.15",
+      "ordinal": 15,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "दोषस्य शर्वरीपुत्रः शिशुमारो हरेः कला।\nवास्तोराङ्गिरसीपुत्रो विश्वकर्माकृतीपतिः ॥ १५ ॥",
+      "iast": "doṣasya śarvarīputraḥ śiśumāro hareḥ kalā|\nvāstorāṅgirasīputro viśvakarmākṛtīpatiḥ || 15 ||"
+    },
+    {
+      "ref": "6.6.16",
+      "ordinal": 16,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "ततो मनुश्चाक्षुषोऽभूद्विश्वे साध्या मनोः सुताः।\nविभावसोरसूतोषा व्युष्टं रोचिषमातपम् ॥ १६ ॥",
+      "iast": "tato manuścākṣuṣo'bhūdviśve sādhyā manoḥ sutāḥ|\nvibhāvasorasūtoṣā vyuṣṭaṁ rociṣamātapam || 16 ||"
+    },
+    {
+      "ref": "6.6.17",
+      "ordinal": 17,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पञ्चयामोऽथ भूतानि येन जाग्रति कर्मसु।\nसरूपासूत भूतस्य भार्या रुद्रांश्च कोटिशः ॥ १७ ॥",
+      "iast": "pañcayāmo'tha bhūtāni yena jāgrati karmasu|\nsarūpāsūta bhūtasya bhāryā rudrāṁśca koṭiśaḥ || 17 ||"
+    },
+    {
+      "ref": "6.6.18",
+      "ordinal": 18,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "रैवतोऽजो भवो भीमो वाम उग्रो वृषाकपिः।\nअजैकपादहिर्बुध्न्यो बहुरूपो महानिति ॥ १८ ॥",
+      "iast": "raivato'jo bhavo bhīmo vāma ugro vṛṣākapiḥ|\najaikapādahirbudhnyo bahurūpo mahāniti || 18 ||"
+    },
+    {
+      "ref": "6.6.19",
+      "ordinal": 19,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "रुद्रस्य पार्षदाश्चान्ये घोराः प्रेतविनायकाः।\nप्रजापतेरङ्गिरसः स्वधा पत्नी पितॄनथ ॥ १९ ॥",
+      "iast": "rudrasya pārṣadāścānye ghorāḥ pretavināyakāḥ|\nprajāpateraṅgirasaḥ svadhā patnī pitṝnatha || 19 ||"
+    },
+    {
+      "ref": "6.6.20",
+      "ordinal": 20,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अथर्वाङ्गिरसं वेदं पुत्रत्वे चाकरोत्सती।\nकृशाश्वोऽर्चिषि भार्यायां धूमकेतुमजीजनत् ॥ २० ॥",
+      "iast": "atharvāṅgirasaṁ vedaṁ putratve cākarotsatī|\nkṛśāśvo'rciṣi bhāryāyāṁ dhūmaketumajījanat || 20 ||"
+    },
+    {
+      "ref": "6.6.21",
+      "ordinal": 21,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "धिषणायां वेदशिरो देवलं वयुनं मनुम्।\nतार्क्ष्यस्य विनता कद्रूः पतङ्गी यामिनीति च ॥ २१ ॥",
+      "iast": "dhiṣaṇāyāṁ vedaśiro devalaṁ vayunaṁ manum|\ntārkṣyasya vinatā kadrūḥ pataṅgī yāminīti ca || 21 ||"
+    },
+    {
+      "ref": "6.6.22",
+      "ordinal": 22,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पतङ्ग्यसूत पतगान्यामिनी शलभानथ।\nसुपर्णासूत गरुडं साक्षाद्यज्ञेशवाहनम् ।\nसूर्यसूतमनूरुं च कद्रूर्नागाननेकशः ॥ २२ ॥",
+      "iast": "pataṅgyasūta patagānyāminī śalabhānatha|\nsuparṇāsūta garuḍaṁ sākṣādyajñeśavāhanam |\nsūryasūtamanūruṁ ca kadrūrnāgānanekaśaḥ || 22 ||"
+    },
+    {
+      "ref": "6.6.23",
+      "ordinal": 23,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "कृत्तिकादीनि नक्षत्राणीन्दोः पत्न्यस्तु भारत।\nदक्षशापात्सोऽनपत्यस्तासु यक्ष्मग्रहार्दितः ॥ २३ ॥",
+      "iast": "kṛttikādīni nakṣatrāṇīndoḥ patnyastu bhārata|\ndakṣaśāpātso'napatyastāsu yakṣmagrahārditaḥ || 23 ||"
+    },
+    {
+      "ref": "6.6.24",
+      "ordinal": 24,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पुनः प्रसाद्य तं सोमः कला लेभे क्षये दिताः।\nशृणु नामानि लोकानां मातॄणां शङ्कराणि च ॥ २४ ॥",
+      "iast": "punaḥ prasādya taṁ somaḥ kalā lebhe kṣaye ditāḥ|\nśṛṇu nāmāni lokānāṁ mātṝṇāṁ śaṅkarāṇi ca || 24 ||"
+    },
+    {
+      "ref": "6.6.25",
+      "ordinal": 25,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अथ कश्यपपत्नीनां यत्प्रसूतमिदं जगत्।\nअदितिर्दितिर्दनुः काष्ठा अरिष्टा सुरसा इला ॥ २५ ॥",
+      "iast": "atha kaśyapapatnīnāṁ yatprasūtamidaṁ jagat|\naditirditirdanuḥ kāṣṭhā ariṣṭā surasā ilā || 25 ||"
+    },
+    {
+      "ref": "6.6.26",
+      "ordinal": 26,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "मुनिः क्रोधवशा ताम्रा सुरभिः सरमा तिमिः।\nतिमेर्यादोगणा आसन्श्वापदाः सरमासुताः ॥ २६ ॥",
+      "iast": "muniḥ krodhavaśā tāmrā surabhiḥ saramā timiḥ|\ntimeryādogaṇā āsanśvāpadāḥ saramāsutāḥ || 26 ||"
+    },
+    {
+      "ref": "6.6.27",
+      "ordinal": 27,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "सुरभेर्महिषा गावो ये चान्ये द्विशफा नृप।\nताम्रायाः श्येनगृध्राद्या मुनेरप्सरसां गणाः ॥ २७ ॥",
+      "iast": "surabhermahiṣā gāvo ye cānye dviśaphā nṛpa|\ntāmrāyāḥ śyenagṛdhrādyā munerapsarasāṁ gaṇāḥ || 27 ||"
+    },
+    {
+      "ref": "6.6.28",
+      "ordinal": 28,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "दन्दशूकादयः सर्पा राजन्क्रोधवशात्मजाः।\nइलाया भूरुहाः सर्वे यातुधानाश्च सौरसाः ॥ २८ ॥",
+      "iast": "dandaśūkādayaḥ sarpā rājankrodhavaśātmajāḥ|\nilāyā bhūruhāḥ sarve yātudhānāśca saurasāḥ || 28 ||"
+    },
+    {
+      "ref": "6.6.29",
+      "ordinal": 29,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अरिष्टायास्तु गन्धर्वाः काष्ठाया द्विशफेतराः।\nसुता दनोरेकषष्टिस्तेषां प्राधानिकाञ्शृणु ॥ २९ ॥",
+      "iast": "ariṣṭāyāstu gandharvāḥ kāṣṭhāyā dviśaphetarāḥ|\nsutā danorekaṣaṣṭisteṣāṁ prādhānikāñśṛṇu || 29 ||"
+    },
+    {
+      "ref": "6.6.30",
+      "ordinal": 30,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "द्विमूर्धा शम्बरोऽरिष्टो हयग्रीवो विभावसुः।\nअयोमुखः शङ्कुशिराः स्वर्भानुः कपिलोऽरुणः ॥ ३० ॥",
+      "iast": "dvimūrdhā śambaro'riṣṭo hayagrīvo vibhāvasuḥ|\nayomukhaḥ śaṅkuśirāḥ svarbhānuḥ kapilo'ruṇaḥ || 30 ||"
+    },
+    {
+      "ref": "6.6.31",
+      "ordinal": 31,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पुलोमा वृषपर्वा च एकचक्रोऽनुतापनः।\nधूम्रकेशो विरूपाक्षो विप्रचित्तिश्च दुर्जयः ॥ ३१ ॥",
+      "iast": "pulomā vṛṣaparvā ca ekacakro'nutāpanaḥ|\ndhūmrakeśo virūpākṣo vipracittiśca durjayaḥ || 31 ||"
+    },
+    {
+      "ref": "6.6.32",
+      "ordinal": 32,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "स्वर्भानोः सुप्रभां कन्यामुवाह नमुचिः किल।\nवृषपर्वणस्तु शर्मिष्ठां ययातिर्नाहुषो बली ॥ ३२ ॥",
+      "iast": "svarbhānoḥ suprabhāṁ kanyāmuvāha namuciḥ kila|\nvṛṣaparvaṇastu śarmiṣṭhāṁ yayātirnāhuṣo balī || 32 ||"
+    },
+    {
+      "ref": "6.6.33",
+      "ordinal": 33,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "वैश्वानरसुतायाश्च चतस्रश्चारुदर्शनाः।\nउपदानवी हयशिरा पुलोमा कालका तथा ॥ ३३ ॥",
+      "iast": "vaiśvānarasutāyāśca catasraścārudarśanāḥ|\nupadānavī hayaśirā pulomā kālakā tathā || 33 ||"
+    },
+    {
+      "ref": "6.6.34",
+      "ordinal": 34,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "उपदानवीं हिरण्याक्षः क्रतुर्हयशिरां नृप।\nपुलोमां कालकां च द्वे वैश्वानरसुते तु कः ॥ ३४ ॥",
+      "iast": "upadānavīṁ hiraṇyākṣaḥ kraturhayaśirāṁ nṛpa|\npulomāṁ kālakāṁ ca dve vaiśvānarasute tu kaḥ || 34 ||"
+    },
+    {
+      "ref": "6.6.35",
+      "ordinal": 35,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "उपयेमेऽथ भगवान्कश्यपो ब्रह्मचोदितः।\nपौलोमाः कालकेयाश्च दानवा युद्धशालिनः ॥ ३५ ॥",
+      "iast": "upayeme'tha bhagavānkaśyapo brahmacoditaḥ|\npaulomāḥ kālakeyāśca dānavā yuddhaśālinaḥ || 35 ||"
+    },
+    {
+      "ref": "6.6.36",
+      "ordinal": 36,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तयोः षष्टिसहस्राणि यज्ञघ्नांस्ते पितुः पिता।\nजघान स्वर्गतो राजन्नेक इन्द्र प्रियङ्करः ॥ ३६ ॥",
+      "iast": "tayoḥ ṣaṣṭisahasrāṇi yajñaghnāṁste pituḥ pitā|\njaghāna svargato rājanneka indra priyaṅkaraḥ || 36 ||"
+    },
+    {
+      "ref": "6.6.37",
+      "ordinal": 37,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "विप्रचित्तिः सिंहिकायां शतं चैकमजीजनत्।\nराहुज्येष्ठं केतुशतं ग्रहत्वं य उपागताः ॥ ३७ ॥",
+      "iast": "vipracittiḥ siṁhikāyāṁ śataṁ caikamajījanat|\nrāhujyeṣṭhaṁ ketuśataṁ grahatvaṁ ya upāgatāḥ || 37 ||"
+    },
+    {
+      "ref": "6.6.38",
+      "ordinal": 38,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अथातः श्रूयतां वंशो योऽदितेरनुपूर्वशः।\nयत्र नारायणो देवः स्वांशेनावातरद्विभुः ॥ ३८ ॥",
+      "iast": "athātaḥ śrūyatāṁ vaṁśo yo'diteranupūrvaśaḥ|\nyatra nārāyaṇo devaḥ svāṁśenāvātaradvibhuḥ || 38 ||"
+    },
+    {
+      "ref": "6.6.39",
+      "ordinal": 39,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "विवस्वानर्यमा पूषा त्वष्टाथ सविता भगः।\nधाता विधाता वरुणो मित्रः शत्रु उरुक्रमः ॥ ३९ ॥",
+      "iast": "vivasvānaryamā pūṣā tvaṣṭātha savitā bhagaḥ|\ndhātā vidhātā varuṇo mitraḥ śatru urukramaḥ || 39 ||"
+    },
+    {
+      "ref": "6.6.40",
+      "ordinal": 40,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "विवस्वतः श्राद्धदेवं संज्ञासूयत वै मनुम्।\nमिथुनं च महाभागा यमं देवं यमीं तथा ।\nसैव भूत्वाथ वडवा नासत्यौ सुषुवे भुवि ॥ ४० ॥",
+      "iast": "vivasvataḥ śrāddhadevaṁ saṁjñāsūyata vai manum|\nmithunaṁ ca mahābhāgā yamaṁ devaṁ yamīṁ tathā |\nsaiva bhūtvātha vaḍavā nāsatyau suṣuve bhuvi || 40 ||"
+    },
+    {
+      "ref": "6.6.41",
+      "ordinal": 41,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "छाया शनैश्चरं लेभे सावर्णिं च मनुं ततः ।\nकन्यां च तपतीं या वै वव्रे संवरणं पतिम् ॥ ४१ ॥",
+      "iast": "chāyā śanaiścaraṁ lebhe sāvarṇiṁ ca manuṁ tataḥ |\nkanyāṁ ca tapatīṁ yā vai vavre saṁvaraṇaṁ patim || 41 ||"
+    },
+    {
+      "ref": "6.6.42",
+      "ordinal": 42,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "अर्यम्णो मातृका पत्नी तयोश्चर्षणयः सुताः ।\nयत्र वै मानुषी जातिर्ब्रह्मणा चोपकल्पिता ॥ ४२ ॥",
+      "iast": "aryamṇo mātṛkā patnī tayoścarṣaṇayaḥ sutāḥ |\nyatra vai mānuṣī jātirbrahmaṇā copakalpitā || 42 ||"
+    },
+    {
+      "ref": "6.6.43",
+      "ordinal": 43,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "पूषानपत्यः पिष्टादो भग्नदन्तोऽभवत्पुरा।\nयोऽसौ दक्षाय कुपितं जहास विवृतद्विजः ॥ ४३ ॥",
+      "iast": "pūṣānapatyaḥ piṣṭādo bhagnadanto'bhavatpurā|\nyo'sau dakṣāya kupitaṁ jahāsa vivṛtadvijaḥ || 43 ||"
+    },
+    {
+      "ref": "6.6.44",
+      "ordinal": 44,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "त्वष्टुर्दैत्यात्मजा भार्या रचना नाम कन्यका।\nसन्निवेशस्तयोर्जज्ञे विश्वरूपश्च वीर्यवान् ॥ ४४ ॥",
+      "iast": "tvaṣṭurdaityātmajā bhāryā racanā nāma kanyakā|\nsanniveśastayorjajñe viśvarūpaśca vīryavān || 44 ||"
+    },
+    {
+      "ref": "6.6.45",
+      "ordinal": 45,
+      "kind": "verse",
+      "speaker": "suka",
+      "deva": "तं वव्रिरे सुरगणा स्वस्रीयं द्विषतामपि।\nविमतेन परित्यक्ता गुरुणाङ्गिरसेन यत् ॥ ४५ ॥",
+      "iast": "taṁ vavrire suragaṇā svasrīyaṁ dviṣatāmapi|\nvimatena parityaktā guruṇāṅgirasena yat || 45 ||"
+    }
+  ]
+}
