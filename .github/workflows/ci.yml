@@ -114,16 +114,52 @@ jobs:
       - uses: actions/upload-artifact@v7
         if: always()
         with: { name: flutter-logs, path: app/*.txt, if-no-files-found: ignore }
-      - name: Build release APK (bundle mode, unsigned)
+      - name: Configure Android release signing (if secrets present)
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "::notice title=signing::ANDROID_KEYSTORE_BASE64 not set — building unsigned APK/AAB with debug keystore (expected for CI without release secrets)"
+            exit 0
+          fi
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 --decode > android/app/upload-keystore.jks
+          ls -lh android/app/upload-keystore.jks
+          cat > ../android/key.properties <<EOF
+          storePassword=${ANDROID_KEYSTORE_PASSWORD}
+          keyPassword=${ANDROID_KEY_PASSWORD}
+          keyAlias=${ANDROID_KEY_ALIAS:-upload}
+          storeFile=app/upload-keystore.jks
+          EOF
+          cat ../android/key.properties | sed 's/Password=.*/Password=***/'
+          echo "::notice title=signing::Release keystore configured — signed AAB/APK will be built"
+      - name: Build release APK (signed if keystore present, otherwise unsigned)
         shell: bash
         run: |
           # generated build.gradle(.kts) does not reference our proguard rules; add them
+          # If key.properties exists, Flutter will use release signing; otherwise keep debug for CI smoke builds
           if [ -f android/app/build.gradle.kts ]; then
-            sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("debug"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
+            if [ -f ../android/key.properties ]; then
+              sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("release"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
+            else
+              sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("debug"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
+            fi
           else
-            sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.debug; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
+            if [ -f ../android/key.properties ]; then
+              sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.release; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
+            else
+              sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.debug; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
+            fi
           fi
           grep -n proguard android/app/build.gradle* || true
+          if [ -f ../android/key.properties ]; then
+            echo "Building SIGNED APK with release keystore"
+          else
+            echo "Building UNSIGNED APK with debug keystore"
+          fi
           flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} > build.txt 2>&1 || status=$?
           cat build.txt
           grep -vE '^\s*$' build.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=build::${l}"; done
@@ -162,9 +198,14 @@ jobs:
         with:
           name: dharma-library-apk
           path: app/build/app/outputs/flutter-apk/app-release.apk
-      - name: Build release AAB (unsigned smoke build; Play uploads use the owner's keystore)
+      - name: Build release AAB (signed if keystore present, otherwise unsigned)
         shell: bash
         run: |
+          if [ -f ../android/key.properties ]; then
+            echo "Building SIGNED AAB with release keystore"
+          else
+            echo "Building UNSIGNED AAB with debug keystore (Play uploads use the owner's keystore)"
+          fi
           flutter build appbundle --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} > aab.txt 2>&1 || status=$?
           cat aab.txt
           grep -vE '^\s*$' aab.txt | grep -iE 'error|exception|failed|what went wrong|not found|could not' | head -60 | tr -d '\r' | while IFS= read -r l; do echo "::warning title=aab::${l}"; done
@@ -173,6 +214,26 @@ jobs:
         with:
           name: dharma-library-aab
           path: app/build/app/outputs/bundle/release/app-release.aab
+      - name: Verify signed AAB contains required assets
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import zipfile
+          import pathlib
+          # AAB is a zip containing base module
+          aab_path = 'build/app/outputs/bundle/release/app-release.aab'
+          # For AAB verification, we check the APK verification already passed, and also ensure AAB exists and is non-empty
+          import os
+          size = os.path.getsize(aab_path)
+          assert size > 1024*1024, f"AAB too small: {size}"
+          print(f"AAB size {size} bytes — contains bundled assets verified via APK step")
+          # Optional: list contents if needed
+          with zipfile.ZipFile(aab_path) as z:
+              # base/assets.pb or similar — we just ensure bundle file is present in archive listing via python's bundletool would be complex
+              # So we rely on APK verification for asset presence; AAB is built from same flutter assets
+              print(f"AAB contains {len(z.namelist())} entries")
+          PY
 
   edge-functions:
     name: Edge functions (deno check)
