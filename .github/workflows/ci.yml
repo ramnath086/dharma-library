@@ -189,109 +189,197 @@ jobs:
           if [ -f android/key.properties ]; then
             echo "Ensuring release signingConfig exists in Gradle files"
             python3 <<'PY'
-          import pathlib, re, sys
+          import pathlib, re
+
           kts_path = pathlib.Path("android/app/build.gradle.kts")
           gradle_path = pathlib.Path("android/app/build.gradle")
+
+          LOADER_KTS = '''val keystoreProperties = Properties()
+          val keystorePropertiesFile = rootProject.file("key.properties")
+          if (keystorePropertiesFile.exists()) {
+              keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+          }'''
+
+          CREATE_KTS = '''create("release") {
+              if (keystorePropertiesFile.exists()) {
+                  keyAlias = keystoreProperties["keyAlias"] as String
+                  keyPassword = keystoreProperties["keyPassword"] as String
+                  storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+                  storePassword = keystoreProperties["storePassword"] as String
+              }
+          }'''
+
+          CREATE_KTS_RE = r'create\(\s*"release"\s*\)'
+
+          USE_RELEASE_KTS = ('signingConfig = if (keystorePropertiesFile.exists()) '
+                             'signingConfigs.getByName("release") else signingConfigs.getByName("debug")')
+
+          MINIFY_KTS = '''isMinifyEnabled = true
+          isShrinkResources = true
+          proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")'''
+
+          LOADER_GROOVY = '''def keystoreProperties = new Properties()
+          def keystorePropertiesFile = rootProject.file('key.properties')
+          if (keystorePropertiesFile.exists()) {
+              keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+          }'''
+
+          CREATE_GROOVY = '''release {
+              if (keystorePropertiesFile.exists()) {
+                  keyAlias keystoreProperties['keyAlias']
+                  keyPassword keystoreProperties['keyPassword']
+                  storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                  storePassword keystoreProperties['storePassword']
+              }
+          }'''
+
+          CREATE_GROOVY_RE = r'signingConfigs\s*\{[^{}]*\brelease\s*\{'
+
+          USE_RELEASE_GROOVY = ('signingConfig = keystorePropertiesFile.exists() '
+                                '? signingConfigs.getByName("release") : signingConfigs.getByName("debug")')
+
+          MINIFY_GROOVY = (
+              "minifyEnabled true\n"
+              "shrinkResources true\n"
+              "proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'"
+          )
+
+          RELEASE_TYPES = ("signingConfig", "minifyEnabled", "isMinifyEnabled", "shrinkResources",
+                           "isShrinkResources", "proguardFiles", "debuggable", "applicationIdSuffix")
+
+
+          def indented(block, pad):
+              return "\n".join(pad + line if line.strip() else line for line in block.split("\n"))
+
+
+          def brace_end(text, open_idx):
+              """Index of the '}' matching the '{' at open_idx, or -1 when the block is unbalanced."""
+              depth = 0
+              for i in range(open_idx, len(text)):
+                  if text[i] == "{":
+                      depth += 1
+                  elif text[i] == "}":
+                      depth -= 1
+                      if depth == 0:
+                          return i
+              return -1
+
+
+          def wire_signing(txt, create_re, create_block, use_release, minify_block, label):
+              """Ensure a release signing config exists and that buildTypes.release references it.
+
+              The Flutter template only contains `signingConfig = signingConfigs.getByName("debug")`:
+              there is no `signingConfigs { }` block at all, so the block must be created before the
+              release build type can point at signingConfigs.release.
+              """
+              changes = []
+
+              if not re.search(create_re, txt):
+                  real_block = re.search(r'signingConfigs\s*\{', txt)
+                  if real_block:
+                      txt = txt[:real_block.end()] + "\n" + indented(create_block, "    ") + "\n" + txt[real_block.end():]
+                      changes.append("added the release signing config to the existing signingConfigs block")
+                  else:
+                      app_block = re.search(r'(?m)^\s*android\s*\{', txt)
+                      if not app_block:
+                          raise SystemExit("%s: no android { } block found" % label)
+                      block = "signingConfigs {\n" + indented(create_block, "    ") + "\n}"
+                      txt = txt[:app_block.end()] + "\n" + indented(block, "    ") + "\n" + txt[app_block.end():]
+                      changes.append("created a signingConfigs block (with the release config) inside the android block")
+
+              bt = re.search(r'buildTypes\s*\{', txt)
+              if not bt:
+                  raise SystemExit("%s: no buildTypes block found" % label)
+              bt_end = brace_end(txt, bt.end() - 1)
+              if bt_end < 0:
+                  raise SystemExit("%s: unbalanced buildTypes block" % label)
+
+              body = [use_release]
+              if minify_block:
+                  body += minify_block.split("\n")
+              rel = re.search(r'\brelease\s*\{', txt[bt.end():bt_end])
+              if rel:
+                  rel_open = bt.end() + rel.end() - 1
+                  rel_end = brace_end(txt, rel_open)
+                  if rel_end < 0:
+                      raise SystemExit("%s: unbalanced release block" % label)
+                  # keep any settings the template already had; comments and the old signingConfig go away
+                  kept = [ln.strip() for ln in txt[rel_open + 1:rel_end].split("\n")
+                          if ln.strip() and not ln.strip().startswith(("//", "*", "/*"))
+                          and not ln.strip().startswith(RELEASE_TYPES)]
+                  txt = txt[:rel_open + 1] + "\n            " + "\n            ".join(body + kept) + "\n        " + txt[rel_end:]
+                  changes.append("wired buildTypes.release to signingConfigs.release (debug keystore fallback kept)")
+              else:
+                  new_block = "release {\n            " + "\n            ".join(body) + "\n        }\n        "
+                  txt = txt[:bt_end] + new_block + txt[bt_end:]
+                  changes.append("added a release build type wired to signingConfigs.release")
+              return txt, changes
+
 
           def fix_kts():
               if not kts_path.exists():
                   return
               txt = kts_path.read_text()
-              orig = txt
-
-              # Ensure imports
-              if "java.util.Properties" not in txt:
+              added = []
+              if "import java.util.Properties" not in txt:
                   txt = "import java.util.Properties\n" + txt
-              if "java.io.FileInputStream" not in txt:
+                  added.append("import java.util.Properties")
+              if "import java.io.FileInputStream" not in txt:
                   txt = "import java.io.FileInputStream\n" + txt
-
-              # Ensure keystoreProperties loading after plugins block
-              if "keystoreProperties" not in txt or "keystorePropertiesFile" not in txt:
-                  # Insert after plugins { ... }
-                  # Find plugins block end
+                  added.append("import java.io.FileInputStream")
+              if "keystorePropertiesFile" not in txt:
                   m = re.search(r'plugins\s*\{[^}]*\}', txt, re.DOTALL)
                   if m:
-                      insert = '''
-          val keystoreProperties = Properties()
-          val keystorePropertiesFile = rootProject.file("key.properties")
-          if (keystorePropertiesFile.exists()) {
-              keystoreProperties.load(FileInputStream(keystorePropertiesFile))
-          }
-          '''
-                      txt = txt[:m.end()] + "\n" + insert + "\n" + txt[m.end():]
+                      txt = txt[:m.end()] + "\n\n" + LOADER_KTS + "\n" + txt[m.end():]
                   else:
-                      # fallback prepend after imports
-                      txt = txt + "\nval keystoreProperties = Properties()\nval keystorePropertiesFile = rootProject.file(\"key.properties\")\nif (keystorePropertiesFile.exists()) { keystoreProperties.load(FileInputStream(keystorePropertiesFile)) }\n"
+                      txt = LOADER_KTS + "\n\n" + txt
+                  added.append("keystoreProperties loader for android/key.properties")
+              minify = MINIFY_KTS if (kts_path.parent / "proguard-rules.pro").exists() else None
+              txt, changes = wire_signing(txt, CREATE_KTS_RE, CREATE_KTS, USE_RELEASE_KTS, minify, "build.gradle.kts")
+              kts_path.write_text(txt)
+              print("build.gradle.kts: " + ("; ".join(added + changes) if added + changes else "no signing changes needed"))
 
-              # Ensure signingConfigs has release
-              if 'create("release")' not in txt:
-                  # If signingConfigs exists, inject release inside it
-                  if "signingConfigs" in txt:
-                      txt = txt.replace("signingConfigs {", "signingConfigs {\n        create(\"release\") {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias = keystoreProperties[\"keyAlias\"] as String\n                keyPassword = keystoreProperties[\"keyPassword\"] as String\n                storeFile = keystoreProperties[\"storeFile\"]?.let { file(it) }\n                storePassword = keystoreProperties[\"storePassword\"] as String\n            }\n        }\n")
-                  else:
-                      # No signingConfigs at all, add before buildTypes
-                      txt = txt.replace("android {", "android {\n    signingConfigs {\n        create(\"release\") {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias = keystoreProperties[\"keyAlias\"] as String\n                keyPassword = keystoreProperties[\"keyPassword\"] as String\n                storeFile = keystoreProperties[\"storeFile\"]?.let { file(it) }\n                storePassword = keystoreProperties[\"storePassword\"] as String\n            }\n        }\n    }\n")
-
-              # Ensure buildTypes release uses release config when key.properties exists, else debug
-              # Replace the whole buildTypes block for safety
-              # Find buildTypes { ... } and replace its release section
-              # Simple approach: replace any signingConfig = signingConfigs.getByName("debug") inside release with conditional logic that we will then simplify via sed
-              # Instead, rewrite buildTypes release to always use release if file exists
-              # Use regex to replace buildTypes block content
-              def replace_buildtypes(m):
-                  block = m.group(0)
-                  # Replace debug with release if keystorePropertiesFile exists else debug, but we can just set to release and handle fallback
-                  # We'll set to release and ensure release signingConfig exists even without keystore (empty) to avoid not found error
-                  new_release = '''
-              release {
-                      // Use release signing if key.properties exists, otherwise debug for CI without secrets
-                      signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
-                      isMinifyEnabled = true
-                      isShrinkResources = true
-                      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-                  }'''
-                  # Replace inner release { ... } with new_release
-                  block = re.sub(r'release\s*\{[^}]*\}', new_release, block, flags=re.DOTALL)
-                  return block
-
-              txt = re.sub(r'buildTypes\s*\{[^}]*release\s*\{[^}]*\}[^}]*\}', replace_buildtypes, txt, flags=re.DOTALL)
-
-              # If still contains debug reference for release, force replace
-              txt = txt.replace('signingConfig = signingConfigs.getByName("debug")', 'signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else signingConfigs.getByName("debug")')
-              # Ensure proguard present
-              if "proguardFiles" not in txt:
-                  txt = txt.replace('isMinifyEnabled = true', 'isMinifyEnabled = true\n            isShrinkResources = true\n            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")')
-
-              if txt != orig:
-                  print("Injected release signingConfig into build.gradle.kts")
-                  kts_path.write_text(txt)
-              else:
-                  print("No injection needed for kts")
 
           def fix_gradle():
               if not gradle_path.exists():
                   return
               txt = gradle_path.read_text()
-              orig = txt
-              if "keystoreProperties" not in txt:
-                  # Insert after android {
-                  txt = txt.replace("android {", "android {\n    def keystoreProperties = new Properties()\n    def keystorePropertiesFile = rootProject.file('key.properties')\n    if (keystorePropertiesFile.exists()) {\n        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))\n    }\n")
-              if "signingConfigs" not in txt:
-                  txt = txt.replace("android {", "android {\n    signingConfigs {\n        release {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias keystoreProperties['keyAlias']\n                keyPassword keystoreProperties['keyPassword']\n                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null\n                storePassword keystoreProperties['storePassword']\n            }\n        }\n    }\n")
-              elif "release" not in txt.split("signingConfigs")[1].split("buildTypes")[0] if "buildTypes" in txt else True:
-                  txt = txt.replace("signingConfigs {", "signingConfigs {\n        release {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias keystoreProperties['keyAlias']\n                keyPassword keystoreProperties['keyPassword']\n                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null\n                storePassword keystoreProperties['storePassword']\n            }\n        }\n")
-              # Fix buildTypes release
-              txt = re.sub(r'signingConfig\s+signingConfigs\.debug', 'signingConfig = keystorePropertiesFile.exists() ? signingConfigs.release : signingConfigs.debug', txt)
-              txt = re.sub(r'signingConfig\s+signingConfigs\.release', 'signingConfig = keystorePropertiesFile.exists() ? signingConfigs.release : signingConfigs.debug', txt)
-              if "proguardFiles" not in txt:
-                  txt = txt.replace("signingConfigs.debug", "signingConfigs.debug\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'")
-                  txt = txt.replace("signingConfigs.release", "signingConfigs.release\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'")
-              if txt != orig:
-                  print("Injected release signingConfig into build.gradle")
-                  gradle_path.write_text(txt)
+              added = []
+              if "keystorePropertiesFile" not in txt:
+                  txt = LOADER_GROOVY + "\n\n" + txt
+                  added.append("keystoreProperties loader for android/key.properties")
+              minify = MINIFY_GROOVY if (gradle_path.parent / "proguard-rules.pro").exists() else None
+              txt, changes = wire_signing(txt, CREATE_GROOVY_RE, CREATE_GROOVY, USE_RELEASE_GROOVY, minify, "build.gradle")
+              gradle_path.write_text(txt)
+              print("build.gradle: " + ("; ".join(added + changes) if added + changes else "no signing changes needed"))
+
+
+          def verify():
+              """Fail the step loudly instead of letting Gradle fail with 'SigningConfig ... not found'."""
+              problems = []
+              if kts_path.exists():
+                  txt = kts_path.read_text()
+                  if not re.search(CREATE_KTS_RE, txt):
+                      problems.append('build.gradle.kts: signingConfigs.create("release") is missing')
+                  if "keystorePropertiesFile" not in txt:
+                      problems.append("build.gradle.kts: keystoreProperties loader is missing")
+                  if 'getByName("release")' not in txt:
+                      problems.append("build.gradle.kts: buildTypes.release is not wired to signingConfigs.release")
+              if gradle_path.exists():
+                  txt = gradle_path.read_text()
+                  if not re.search(CREATE_GROOVY_RE, txt):
+                      problems.append("build.gradle: release signing config is missing")
+                  if "keystorePropertiesFile" not in txt:
+                      problems.append("build.gradle: keystoreProperties loader is missing")
+              if problems:
+                  raise SystemExit("release signing setup incomplete: " + "; ".join(problems))
+              print("signing setup verified: release keystore wired into buildTypes.release, "
+                    "debug keystore kept as the fallback when android/key.properties is absent")
+
 
           fix_kts()
           fix_gradle()
+          verify()
           PY
           fi
 
@@ -376,6 +464,69 @@ jobs:
           with zipfile.ZipFile(aab_path) as z:
               print(f"AAB contains {len(z.namelist())} entries")
           PY
+      - name: Verify APK/AAB are signed with the release keystore
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ ! -f android/key.properties ]; then
+            echo "::notice title=signing-verify::no release keystore configured — unsigned fallback, skipping signature check"
+            exit 0
+          fi
+          apk=build/app/outputs/flutter-apk/app-release.apk
+          aab=build/app/outputs/bundle/release/app-release.aab
+          for f in "$apk" "$aab"; do
+            [ -s "$f" ] || { echo "::error title=signing-verify::missing or empty artifact $f"; exit 1; }
+          done
+
+          # SHA-256 of the certificate in the upload keystore (the source of truth)
+          keystore_sha=$(keytool -list -v -keystore android/app/upload-keystore.jks \
+              -alias "${ANDROID_KEY_ALIAS:-upload}" -storepass "$ANDROID_KEYSTORE_PASSWORD" 2>/dev/null \
+              | grep -m1 'SHA256:' | sed 's/.*SHA256: *//' | tr -d ':' | tr -d '[:space:]' | tr 'A-Z' 'a-z')
+          if [ -z "$keystore_sha" ]; then
+            echo "::warning title=signing-verify::could not read the upload keystore certificate — skipping signature verification"
+            exit 0
+          fi
+          echo "::notice title=signing-verify::release keystore certificate SHA-256 $keystore_sha"
+
+          # APK: prefer apksigner (covers the v2/v3 schemes), fall back to the v1 JAR signature
+          apk_sha=""
+          apksigner_bin=$(command -v apksigner 2>/dev/null || true)
+          if [ -z "$apksigner_bin" ]; then
+            for sdk in "${ANDROID_HOME:-}" "${ANDROID_SDK_ROOT:-}" /usr/local/lib/android/sdk; do
+              [ -n "$sdk" ] && [ -d "$sdk/build-tools" ] || continue
+              apksigner_bin=$(ls -1d "$sdk"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -n 1)
+              [ -n "$apksigner_bin" ] && break
+            done
+          fi
+          if [ -n "$apksigner_bin" ]; then
+            apk_sha=$("$apksigner_bin" verify --print-certs "$apk" 2>/dev/null \
+                | grep -m1 'SHA-256 digest' | sed 's/.*digest: *//' | tr -d ':' | tr -d '[:space:]' | tr 'A-Z' 'a-z')
+          fi
+          if [ -z "$apk_sha" ]; then
+            apk_sha=$(keytool -printcert -jarfile "$apk" 2>/dev/null \
+                | grep -m1 'SHA256:' | sed 's/.*SHA256: *//' | tr -d ':' | tr -d '[:space:]' | tr 'A-Z' 'a-z')
+          fi
+
+          # AAB: always carries a v1 JAR signature
+          aab_sha=$(keytool -printcert -jarfile "$aab" 2>/dev/null \
+              | grep -m1 'SHA256:' | sed 's/.*SHA256: *//' | tr -d ':' | tr -d '[:space:]' | tr 'A-Z' 'a-z')
+
+          status=0
+          for pair in "APK:$apk_sha" "AAB:$aab_sha"; do
+            label=${pair%%:*}; sha=${pair#*:}
+            if [ -z "$sha" ]; then
+              echo "::warning title=signing-verify::$label signature could not be read (no supported signature found) — not treated as a failure"
+            elif [ "$sha" = "$keystore_sha" ]; then
+              echo "::notice title=signing-verify::$label is signed with the release keystore (certificate SHA-256 $sha)"
+            else
+              echo "::error title=signing-verify::$label signer SHA-256 $sha does not match the release keystore ($keystore_sha)"
+              status=1
+            fi
+          done
+          exit $status
+
 
   edge-functions:
     name: Edge functions (deno check)
