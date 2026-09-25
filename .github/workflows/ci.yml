@@ -128,13 +128,13 @@ jobs:
           fi
           echo "$ANDROID_KEYSTORE_BASE64" | base64 --decode > android/app/upload-keystore.jks
           ls -lh android/app/upload-keystore.jks
-          cat > ../android/key.properties <<EOF
+          cat > android/key.properties <<EOF
           storePassword=${ANDROID_KEYSTORE_PASSWORD}
           keyPassword=${ANDROID_KEY_PASSWORD}
           keyAlias=${ANDROID_KEY_ALIAS:-upload}
           storeFile=app/upload-keystore.jks
           EOF
-          cat ../android/key.properties | sed 's/Password=.*/Password=***/'
+          cat android/key.properties | sed 's/Password=.*/Password=***/'
           echo "::notice title=signing::Release keystore configured — signed AAB/APK will be built"
       - name: Build release APK (signed if keystore present, otherwise unsigned)
         shell: bash
@@ -142,20 +142,20 @@ jobs:
           # generated build.gradle(.kts) does not reference our proguard rules; add them
           # If key.properties exists, Flutter will use release signing; otherwise keep debug for CI smoke builds
           if [ -f android/app/build.gradle.kts ]; then
-            if [ -f ../android/key.properties ]; then
+            if [ -f android/key.properties ]; then
               sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("release"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
             else
               sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("debug"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
             fi
           else
-            if [ -f ../android/key.properties ]; then
+            if [ -f android/key.properties ]; then
               sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.release; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
             else
               sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.debug; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
             fi
           fi
           grep -n proguard android/app/build.gradle* || true
-          if [ -f ../android/key.properties ]; then
+          if [ -f android/key.properties ]; then
             echo "Building SIGNED APK with release keystore"
           else
             echo "Building UNSIGNED APK with debug keystore"
@@ -201,7 +201,7 @@ jobs:
       - name: Build release AAB (signed if keystore present, otherwise unsigned)
         shell: bash
         run: |
-          if [ -f ../android/key.properties ]; then
+          if [ -f android/key.properties ]; then
             echo "Building SIGNED AAB with release keystore"
           else
             echo "Building UNSIGNED AAB with debug keystore (Play uploads use the owner's keystore)"
