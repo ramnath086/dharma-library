@@ -99,7 +99,7 @@ jobs:
           storePassword=${ANDROID_KEYSTORE_PASSWORD}
           keyPassword=${ANDROID_KEY_PASSWORD}
           keyAlias=${ANDROID_KEY_ALIAS:-upload}
-          storeFile=app/upload-keystore.jks
+          storeFile=upload-keystore.jks
           EOF
           cat android/key.properties | sed 's/Password=.*/Password=***/'
           echo "::notice title=signing::Release keystore configured — signed AAB/APK will be built"
@@ -142,7 +142,7 @@ jobs:
           storePassword=${ANDROID_KEYSTORE_PASSWORD}
           keyPassword=${ANDROID_KEY_PASSWORD}
           keyAlias=${ANDROID_KEY_ALIAS:-upload}
-          storeFile=app/upload-keystore.jks
+          storeFile=upload-keystore.jks
           EOF
           cat android/key.properties | sed 's/Password=.*/Password=***/'
           echo "Re-applied key.properties after flutter create"
@@ -172,53 +172,139 @@ jobs:
       - name: Build release APK (signed if keystore present, otherwise unsigned)
         shell: bash
         run: |
-          # Ensure release signingConfig exists — flutter create may not generate it if key.properties was absent at first create
+          set -e
+          echo "=== Pre-build Gradle files check ==="
+          ls -lh android/app/build.gradle* || true
+          if [ -f android/app/build.gradle.kts ]; then
+            echo "--- android/app/build.gradle.kts (before injection) ---"
+            cat android/app/build.gradle.kts
+            echo "--- end ---"
+          fi
+          if [ -f android/app/build.gradle ]; then
+            echo "--- android/app/build.gradle (before injection) ---"
+            cat android/app/build.gradle
+            echo "--- end ---"
+          fi
+
           if [ -f android/key.properties ]; then
             echo "Ensuring release signingConfig exists in Gradle files"
-            if [ -f android/app/build.gradle.kts ]; then
-              if ! grep -q 'create("release")' android/app/build.gradle.kts; then
-                echo "Injecting release signingConfig into build.gradle.kts"
-                python3 <<'PY'
-          import pathlib
-          p = pathlib.Path("android/app/build.gradle.kts")
-          txt = p.read_text()
-          if 'create("release")' not in txt and 'signingConfigs' in txt:
-              txt = txt.replace("signingConfigs {", "signingConfigs {\n        create(\"release\") {\n            val props = java.util.Properties()\n            val f = rootProject.file(\"key.properties\")\n            if (f.exists()) {\n                props.load(java.io.FileInputStream(f))\n            }\n            keyAlias = props[\"keyAlias\"] as String?\n            keyPassword = props[\"keyPassword\"] as String?\n            storeFile = props[\"storeFile\"]?.let { file(it) }\n            storePassword = props[\"storePassword\"] as String?\n        }\n")
-              p.write_text(txt)
+            python3 <<'PY'
+          import pathlib, re, sys
+          kts_path = pathlib.Path("android/app/build.gradle.kts")
+          gradle_path = pathlib.Path("android/app/build.gradle")
+
+          def fix_kts():
+              if not kts_path.exists():
+                  return
+              txt = kts_path.read_text()
+              orig = txt
+
+              # Ensure imports
+              if "java.util.Properties" not in txt:
+                  txt = "import java.util.Properties\n" + txt
+              if "java.io.FileInputStream" not in txt:
+                  txt = "import java.io.FileInputStream\n" + txt
+
+              # Ensure keystoreProperties loading after plugins block
+              if "keystoreProperties" not in txt or "keystorePropertiesFile" not in txt:
+                  # Insert after plugins { ... }
+                  # Find plugins block end
+                  m = re.search(r'plugins\s*\{[^}]*\}', txt, re.DOTALL)
+                  if m:
+                      insert = '''
+          val keystoreProperties = Properties()
+          val keystorePropertiesFile = rootProject.file("key.properties")
+          if (keystorePropertiesFile.exists()) {
+              keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+          }
+          '''
+                      txt = txt[:m.end()] + "\n" + insert + "\n" + txt[m.end():]
+                  else:
+                      # fallback prepend after imports
+                      txt = txt + "\nval keystoreProperties = Properties()\nval keystorePropertiesFile = rootProject.file(\"key.properties\")\nif (keystorePropertiesFile.exists()) { keystoreProperties.load(FileInputStream(keystorePropertiesFile)) }\n"
+
+              # Ensure signingConfigs has release
+              if 'create("release")' not in txt:
+                  # If signingConfigs exists, inject release inside it
+                  if "signingConfigs" in txt:
+                      txt = txt.replace("signingConfigs {", "signingConfigs {\n        create(\"release\") {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias = keystoreProperties[\"keyAlias\"] as String\n                keyPassword = keystoreProperties[\"keyPassword\"] as String\n                storeFile = keystoreProperties[\"storeFile\"]?.let { file(it) }\n                storePassword = keystoreProperties[\"storePassword\"] as String\n            }\n        }\n")
+                  else:
+                      # No signingConfigs at all, add before buildTypes
+                      txt = txt.replace("android {", "android {\n    signingConfigs {\n        create(\"release\") {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias = keystoreProperties[\"keyAlias\"] as String\n                keyPassword = keystoreProperties[\"keyPassword\"] as String\n                storeFile = keystoreProperties[\"storeFile\"]?.let { file(it) }\n                storePassword = keystoreProperties[\"storePassword\"] as String\n            }\n        }\n    }\n")
+
+              # Ensure buildTypes release uses release config when key.properties exists, else debug
+              # Replace the whole buildTypes block for safety
+              # Find buildTypes { ... } and replace its release section
+              # Simple approach: replace any signingConfig = signingConfigs.getByName("debug") inside release with conditional logic that we will then simplify via sed
+              # Instead, rewrite buildTypes release to always use release if file exists
+              # Use regex to replace buildTypes block content
+              def replace_buildtypes(m):
+                  block = m.group(0)
+                  # Replace debug with release if keystorePropertiesFile exists else debug, but we can just set to release and handle fallback
+                  # We'll set to release and ensure release signingConfig exists even without keystore (empty) to avoid not found error
+                  new_release = '''
+              release {
+                      // Use release signing if key.properties exists, otherwise debug for CI without secrets
+                      signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
+                      isMinifyEnabled = true
+                      isShrinkResources = true
+                      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+                  }'''
+                  # Replace inner release { ... } with new_release
+                  block = re.sub(r'release\s*\{[^}]*\}', new_release, block, flags=re.DOTALL)
+                  return block
+
+              txt = re.sub(r'buildTypes\s*\{[^}]*release\s*\{[^}]*\}[^}]*\}', replace_buildtypes, txt, flags=re.DOTALL)
+
+              # If still contains debug reference for release, force replace
+              txt = txt.replace('signingConfig = signingConfigs.getByName("debug")', 'signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else signingConfigs.getByName("debug")')
+              # Ensure proguard present
+              if "proguardFiles" not in txt:
+                  txt = txt.replace('isMinifyEnabled = true', 'isMinifyEnabled = true\n            isShrinkResources = true\n            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")')
+
+              if txt != orig:
+                  print("Injected release signingConfig into build.gradle.kts")
+                  kts_path.write_text(txt)
+              else:
+                  print("No injection needed for kts")
+
+          def fix_gradle():
+              if not gradle_path.exists():
+                  return
+              txt = gradle_path.read_text()
+              orig = txt
+              if "keystoreProperties" not in txt:
+                  # Insert after android {
+                  txt = txt.replace("android {", "android {\n    def keystoreProperties = new Properties()\n    def keystorePropertiesFile = rootProject.file('key.properties')\n    if (keystorePropertiesFile.exists()) {\n        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))\n    }\n")
+              if "signingConfigs" not in txt:
+                  txt = txt.replace("android {", "android {\n    signingConfigs {\n        release {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias keystoreProperties['keyAlias']\n                keyPassword keystoreProperties['keyPassword']\n                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null\n                storePassword keystoreProperties['storePassword']\n            }\n        }\n    }\n")
+              elif "release" not in txt.split("signingConfigs")[1].split("buildTypes")[0] if "buildTypes" in txt else True:
+                  txt = txt.replace("signingConfigs {", "signingConfigs {\n        release {\n            if (keystorePropertiesFile.exists()) {\n                keyAlias keystoreProperties['keyAlias']\n                keyPassword keystoreProperties['keyPassword']\n                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null\n                storePassword keystoreProperties['storePassword']\n            }\n        }\n")
+              # Fix buildTypes release
+              txt = re.sub(r'signingConfig\s+signingConfigs\.debug', 'signingConfig = keystorePropertiesFile.exists() ? signingConfigs.release : signingConfigs.debug', txt)
+              txt = re.sub(r'signingConfig\s+signingConfigs\.release', 'signingConfig = keystorePropertiesFile.exists() ? signingConfigs.release : signingConfigs.debug', txt)
+              if "proguardFiles" not in txt:
+                  txt = txt.replace("signingConfigs.debug", "signingConfigs.debug\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'")
+                  txt = txt.replace("signingConfigs.release", "signingConfigs.release\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'")
+              if txt != orig:
+                  print("Injected release signingConfig into build.gradle")
+                  gradle_path.write_text(txt)
+
+          fix_kts()
+          fix_gradle()
           PY
-              fi
-            else
-              if ! grep -q "release" android/app/build.gradle; then
-                echo "Injecting release signingConfig into build.gradle"
-                python3 <<'PY'
-          import pathlib
-          p = pathlib.Path("android/app/build.gradle")
-          txt = p.read_text()
-          if "signingConfigs" not in txt:
-              txt = txt.replace("android {", "android {\n    signingConfigs {\n        release {\n            def props = new Properties()\n            def f = rootProject.file('key.properties')\n            if (f.exists()) {\n                props.load(new FileInputStream(f))\n                keyAlias props['keyAlias']\n                keyPassword props['keyPassword']\n                storeFile props['storeFile'] ? file(props['storeFile']) : null\n                storePassword props['storePassword']\n            }\n        }\n    }\n")
-          elif "release" not in txt.split("signingConfigs")[1].split("buildTypes")[0]:
-              txt = txt.replace("signingConfigs {", "signingConfigs {\n        release {\n            def props = new Properties()\n            def f = rootProject.file('key.properties')\n            if (f.exists()) {\n                props.load(new FileInputStream(f))\n                keyAlias props['keyAlias']\n                keyPassword props['keyPassword']\n                storeFile props['storeFile'] ? file(props['storeFile']) : null\n                storePassword props['storePassword']\n            }\n        }\n")
-          p.write_text(txt)
-          PY
-              fi
-            fi
           fi
-          # Add proguard and set signingConfig
+
+          echo "=== After injection ==="
           if [ -f android/app/build.gradle.kts ]; then
-            if [ -f android/key.properties ]; then
-              sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("release"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
-            else
-              sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("debug"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
-            fi
-          else
-            if [ -f android/key.properties ]; then
-              sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.release; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
-            else
-              sed -i 's|signingConfig = signingConfigs.debug|signingConfig = signingConfigs.debug; proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"|' android/app/build.gradle
-            fi
+            cat android/app/build.gradle.kts
+            echo "---"
+            grep -n "signingConfig\|signingConfigs\|keystoreProperties" android/app/build.gradle.kts | head -n 40
           fi
-          grep -n proguard android/app/build.gradle* || true
-          grep -n "signingConfig" android/app/build.gradle* | head -n 20
+          if [ -f android/app/build.gradle ]; then
+            cat android/app/build.gradle
+          fi
+
           if [ -f android/key.properties ]; then
             echo "Building SIGNED APK with release keystore"
             cat android/key.properties | sed 's/Password=.*/Password=***/'
