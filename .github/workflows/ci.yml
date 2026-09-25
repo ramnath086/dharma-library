@@ -26,7 +26,6 @@ jobs:
       - name: Auth stub + migrations
         run: |
           psql "$PGURI" -v ON_ERROR_STOP=1 -c "create schema if not exists auth" || true
-          # supabase/postgres image already has auth schema + roles; the stub is a no-op there
           psql "$PGURI" -v ON_ERROR_STOP=1 -f supabase/tests/00_local_auth_stub.sql || true
           for f in supabase/migrations/*.sql; do echo "== $f"; psql "$PGURI" -v ON_ERROR_STOP=1 -q -f "$f"; done
       - name: Seed + ingest content
@@ -41,10 +40,8 @@ jobs:
           python3 scripts/export_bundle.py --db "$PGURI"
           python3 - <<'PY'
           import json
-
           def load(slug):
               return json.load(open(f'app/assets/bundles/{slug}.json'))
-
           work = json.load(open('content/bhagavata-purana/work.json'))
           meta = work['metadata']
           bhagavata = load('bhagavata-purana')
@@ -57,7 +54,6 @@ jobs:
           else:
               assert n_sections == 1 and n_verses == 10, 'pilot Bhāgavata bundle must contain 1.1.1-1.1.10'
           assert all(e['rights_status'] in ('public_domain','open_license','permission_granted','original') for e in bhagavata['editions'])
-
           gita = load('bhagavad-gita')
           assert len(gita['sections']) == 18, 'Gita bundle must contain 18 chapters'
           assert sum(len(s['verses']) for s in gita['sections']) == 700, 'Gita bundle must contain 700 verses'
@@ -87,27 +83,24 @@ jobs:
             echo "::notice title=signing::ANDROID_KEYSTORE_BASE64 not set — building unsigned APK/AAB with debug keystore (expected for CI without release secrets)"
             exit 0
           fi
-          # Robust decode: trim whitespace, handle newlines, fallback to unsigned on failure
           echo "$ANDROID_KEYSTORE_BASE64" | tr -d '\r' | base64 --decode > android/app/upload-keystore.jks 2> /tmp/b64.err || {
             echo "::warning title=signing::Failed to decode ANDROID_KEYSTORE_BASE64: $(cat /tmp/b64.err)"
-            echo "::notice title=signing::Falling back to unsigned build — check secret is base64 of .jks without extra wrapping"
+            echo "::notice title=signing::Falling back to unsigned build"
             rm -f android/app/upload-keystore.jks
             exit 0
           }
           if [ ! -s android/app/upload-keystore.jks ]; then
-            echo "::warning title=signing::Decoded keystore is empty — falling back to unsigned"
+            echo "::warning title=signing::Decoded keystore empty — falling back to unsigned"
             rm -f android/app/upload-keystore.jks
             exit 0
           fi
           ls -lh android/app/upload-keystore.jks
-          # key.properties must be in android/ (relative to app working dir) BEFORE flutter create so release signingConfig is generated
           cat > android/key.properties <<EOF
           storePassword=${ANDROID_KEYSTORE_PASSWORD}
           keyPassword=${ANDROID_KEY_PASSWORD}
           keyAlias=${ANDROID_KEY_ALIAS:-upload}
           storeFile=app/upload-keystore.jks
           EOF
-          # Mask passwords in log
           cat android/key.properties | sed 's/Password=.*/Password=***/'
           echo "::notice title=signing::Release keystore configured — signed AAB/APK will be built"
       - uses: subosito/flutter-action@v2
@@ -127,6 +120,33 @@ jobs:
           cat create.txt
           grep -vE '^\s*$' create.txt | grep -v '(created)' | head -n 40 | while IFS= read -r l; do echo "::warning title=create::${l}"; done
           exit ${status:-0}
+      - name: Re-apply Android release signing after regenerate (flutter create may delete key.properties)
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "No keystore secret — unsigned build"
+            exit 0
+          fi
+          if [ ! -f android/app/upload-keystore.jks ]; then
+            echo "$ANDROID_KEYSTORE_BASE64" | tr -d '\r' | base64 --decode > android/app/upload-keystore.jks 2> /tmp/b64.err || {
+              echo "::warning title=signing::Re-decode failed: $(cat /tmp/b64.err)"
+              exit 0
+            }
+          fi
+          cat > android/key.properties <<EOF
+          storePassword=${ANDROID_KEYSTORE_PASSWORD}
+          keyPassword=${ANDROID_KEY_PASSWORD}
+          keyAlias=${ANDROID_KEY_ALIAS:-upload}
+          storeFile=app/upload-keystore.jks
+          EOF
+          cat android/key.properties | sed 's/Password=.*/Password=***/'
+          echo "Re-applied key.properties after flutter create"
+          ls -lh android/app/upload-keystore.jks android/key.properties
       - run: flutter pub get
       - run: flutter gen-l10n
       - run: python3 ../scripts/dart_lint_lite.py
@@ -152,8 +172,38 @@ jobs:
       - name: Build release APK (signed if keystore present, otherwise unsigned)
         shell: bash
         run: |
-          # generated build.gradle(.kts) does not reference our proguard rules; add them
-          # If key.properties exists, Flutter will use release signing; otherwise keep debug for CI smoke builds
+          # Ensure release signingConfig exists — flutter create may not generate it if key.properties was absent at first create
+          if [ -f android/key.properties ]; then
+            echo "Ensuring release signingConfig exists in Gradle files"
+            if [ -f android/app/build.gradle.kts ]; then
+              if ! grep -q 'create("release")' android/app/build.gradle.kts; then
+                echo "Injecting release signingConfig into build.gradle.kts"
+                python3 <<'PY'
+          import pathlib
+          p = pathlib.Path("android/app/build.gradle.kts")
+          txt = p.read_text()
+          if 'create("release")' not in txt and 'signingConfigs' in txt:
+              txt = txt.replace("signingConfigs {", "signingConfigs {\n        create(\"release\") {\n            val props = java.util.Properties()\n            val f = rootProject.file(\"key.properties\")\n            if (f.exists()) {\n                props.load(java.io.FileInputStream(f))\n            }\n            keyAlias = props[\"keyAlias\"] as String?\n            keyPassword = props[\"keyPassword\"] as String?\n            storeFile = props[\"storeFile\"]?.let { file(it) }\n            storePassword = props[\"storePassword\"] as String?\n        }\n")
+              p.write_text(txt)
+          PY
+              fi
+            else
+              if ! grep -q "release" android/app/build.gradle; then
+                echo "Injecting release signingConfig into build.gradle"
+                python3 <<'PY'
+          import pathlib
+          p = pathlib.Path("android/app/build.gradle")
+          txt = p.read_text()
+          if "signingConfigs" not in txt:
+              txt = txt.replace("android {", "android {\n    signingConfigs {\n        release {\n            def props = new Properties()\n            def f = rootProject.file('key.properties')\n            if (f.exists()) {\n                props.load(new FileInputStream(f))\n                keyAlias props['keyAlias']\n                keyPassword props['keyPassword']\n                storeFile props['storeFile'] ? file(props['storeFile']) : null\n                storePassword props['storePassword']\n            }\n        }\n    }\n")
+          elif "release" not in txt.split("signingConfigs")[1].split("buildTypes")[0]:
+              txt = txt.replace("signingConfigs {", "signingConfigs {\n        release {\n            def props = new Properties()\n            def f = rootProject.file('key.properties')\n            if (f.exists()) {\n                props.load(new FileInputStream(f))\n                keyAlias props['keyAlias']\n                keyPassword props['keyPassword']\n                storeFile props['storeFile'] ? file(props['storeFile']) : null\n                storePassword props['storePassword']\n            }\n        }\n")
+          p.write_text(txt)
+          PY
+              fi
+            fi
+          fi
+          # Add proguard and set signingConfig
           if [ -f android/app/build.gradle.kts ]; then
             if [ -f android/key.properties ]; then
               sed -i 's|signingConfig = signingConfigs.getByName("debug")|signingConfig = signingConfigs.getByName("release"); proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")|' android/app/build.gradle.kts
@@ -168,8 +218,11 @@ jobs:
             fi
           fi
           grep -n proguard android/app/build.gradle* || true
+          grep -n "signingConfig" android/app/build.gradle* | head -n 20
           if [ -f android/key.properties ]; then
             echo "Building SIGNED APK with release keystore"
+            cat android/key.properties | sed 's/Password=.*/Password=***/'
+            ls -lh android/app/upload-keystore.jks
           else
             echo "Building UNSIGNED APK with debug keystore"
           fi
@@ -181,9 +234,7 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import json
-          import zipfile
-
+          import json, zipfile
           apk = 'build/app/outputs/flutter-apk/app-release.apk'
           required = [
               'assets/flutter_assets/assets/bundles/bhagavata-purana.json',
@@ -231,11 +282,8 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import json
-          import zipfile
-          import pathlib
+          import os, zipfile
           aab_path = 'build/app/outputs/bundle/release/app-release.aab'
-          import os
           size = os.path.getsize(aab_path)
           assert size > 1024*1024, f"AAB too small: {size}"
           print(f"AAB size {size} bytes — contains bundled assets verified via APK step")
