@@ -75,6 +75,41 @@ jobs:
         working-directory: app
     steps:
       - uses: actions/checkout@v7
+      - name: Configure Android release signing (if secrets present)
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "::notice title=signing::ANDROID_KEYSTORE_BASE64 not set — building unsigned APK/AAB with debug keystore (expected for CI without release secrets)"
+            exit 0
+          fi
+          # Robust decode: trim whitespace, handle newlines, fallback to unsigned on failure
+          echo "$ANDROID_KEYSTORE_BASE64" | tr -d '\r' | base64 --decode > android/app/upload-keystore.jks 2> /tmp/b64.err || {
+            echo "::warning title=signing::Failed to decode ANDROID_KEYSTORE_BASE64: $(cat /tmp/b64.err)"
+            echo "::notice title=signing::Falling back to unsigned build — check secret is base64 of .jks without extra wrapping"
+            rm -f android/app/upload-keystore.jks
+            exit 0
+          }
+          if [ ! -s android/app/upload-keystore.jks ]; then
+            echo "::warning title=signing::Decoded keystore is empty — falling back to unsigned"
+            rm -f android/app/upload-keystore.jks
+            exit 0
+          fi
+          ls -lh android/app/upload-keystore.jks
+          # key.properties must be in android/ (relative to app working dir) BEFORE flutter create so release signingConfig is generated
+          cat > android/key.properties <<EOF
+          storePassword=${ANDROID_KEYSTORE_PASSWORD}
+          keyPassword=${ANDROID_KEY_PASSWORD}
+          keyAlias=${ANDROID_KEY_ALIAS:-upload}
+          storeFile=app/upload-keystore.jks
+          EOF
+          # Mask passwords in log
+          cat android/key.properties | sed 's/Password=.*/Password=***/'
+          echo "::notice title=signing::Release keystore configured — signed AAB/APK will be built"
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
@@ -114,41 +149,6 @@ jobs:
       - uses: actions/upload-artifact@v7
         if: always()
         with: { name: flutter-logs, path: app/*.txt, if-no-files-found: ignore }
-      - name: Configure Android release signing (if secrets present)
-        shell: bash
-        env:
-          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
-          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-        run: |
-          if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
-            echo "::notice title=signing::ANDROID_KEYSTORE_BASE64 not set — building unsigned APK/AAB with debug keystore (expected for CI without release secrets)"
-            exit 0
-          fi
-          # Robust decode: trim whitespace, handle newlines, fallback to unsigned on failure
-          echo "$ANDROID_KEYSTORE_BASE64" | tr -d '\r' | base64 --decode > android/app/upload-keystore.jks 2> /tmp/b64.err || {
-            echo "::warning title=signing::Failed to decode ANDROID_KEYSTORE_BASE64: $(cat /tmp/b64.err)"
-            echo "::notice title=signing::Falling back to unsigned build — check secret is base64 of .jks without extra wrapping"
-            rm -f android/app/upload-keystore.jks
-            exit 0
-          }
-          if [ ! -s android/app/upload-keystore.jks ]; then
-            echo "::warning title=signing::Decoded keystore is empty — falling back to unsigned"
-            rm -f android/app/upload-keystore.jks
-            exit 0
-          fi
-          ls -lh android/app/upload-keystore.jks
-          # key.properties must be in android/ (relative to app working dir)
-          cat > android/key.properties <<EOF
-          storePassword=${ANDROID_KEYSTORE_PASSWORD}
-          keyPassword=${ANDROID_KEY_PASSWORD}
-          keyAlias=${ANDROID_KEY_ALIAS:-upload}
-          storeFile=app/upload-keystore.jks
-          EOF
-          # Mask passwords in log
-          cat android/key.properties | sed 's/Password=.*/Password=***/'
-          echo "::notice title=signing::Release keystore configured — signed AAB/APK will be built"
       - name: Build release APK (signed if keystore present, otherwise unsigned)
         shell: bash
         run: |
@@ -234,17 +234,12 @@ jobs:
           import json
           import zipfile
           import pathlib
-          # AAB is a zip containing base module
           aab_path = 'build/app/outputs/bundle/release/app-release.aab'
-          # For AAB verification, we check the APK verification already passed, and also ensure AAB exists and is non-empty
           import os
           size = os.path.getsize(aab_path)
           assert size > 1024*1024, f"AAB too small: {size}"
           print(f"AAB size {size} bytes — contains bundled assets verified via APK step")
-          # Optional: list contents if needed
           with zipfile.ZipFile(aab_path) as z:
-              # base/assets.pb or similar — we just ensure bundle file is present in archive listing via python's bundletool would be complex
-              # So we rely on APK verification for asset presence; AAB is built from same flutter assets
               print(f"AAB contains {len(z.namelist())} entries")
           PY
 
