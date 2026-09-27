@@ -162,32 +162,41 @@ class VerseCard extends ConsumerWidget {
         ],
 
         // ---- translation
-        if (s.showTranslation && translation != null) ...[
-          SelectableText(translation.body, style: AppTheme.scriptStyle(translation.scriptCode, fontSize: 17, height: 1.6, color: theme.textTheme.bodyLarge?.color)),
-          if (translationEd != null) _Label(icon: Icons.verified_outlined, text: _rightsLabel(translationEd, l)),
+        // When nothing was published for this verse we say so instead of
+        // leaving a silent gap that reads as "not loaded yet". We never
+        // substitute or invent a translation.
+        if (s.showTranslation) ...[
+          if (translation != null) ...[
+            SelectableText(translation.body, style: AppTheme.scriptStyle(translation.scriptCode, fontSize: 17, height: 1.6, color: theme.textTheme.bodyLarge?.color)),
+            if (translationEd != null) _Label(icon: Icons.verified_outlined, text: _rightsLabel(translationEd, l)),
+          ] else
+            _Label(icon: Icons.translate_outlined, text: l.translationUnavailable),
           const SizedBox(height: 6),
         ],
 
-        // ---- word meanings
-        if (s.showWordMeanings && wm != null && wm.wordMeanings != null) ...[
-          ExpansionTile(
-            tilePadding: EdgeInsets.zero,
-            title: Text(l.wordMeanings, style: theme.textTheme.titleSmall),
-            initiallyExpanded: !compact,
-            children: [
-              Wrap(spacing: 6, runSpacing: 6, children: [
-                for (final w in wm.wordMeanings!)
-                  Chip(
-                    label: RichText(text: TextSpan(style: theme.textTheme.bodySmall, children: [
-                      TextSpan(text: '${w['word']} ', style: const TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
-                      TextSpan(text: '${w['meaning']}'),
-                    ])),
-                    visualDensity: VisualDensity.compact,
-                  ),
-              ]),
-              const SizedBox(height: 8),
-            ],
-          ),
+        // ---- word meanings (same disclosure rule as translations)
+        if (s.showWordMeanings) ...[
+          if (wm != null && wm.wordMeanings != null && wm.wordMeanings!.isNotEmpty) ...[
+            ExpansionTile(
+              tilePadding: EdgeInsets.zero,
+              title: Text(l.wordMeanings, style: theme.textTheme.titleSmall),
+              initiallyExpanded: !compact,
+              children: [
+                Wrap(spacing: 6, runSpacing: 6, children: [
+                  for (final w in wm.wordMeanings!)
+                    Chip(
+                      label: RichText(text: TextSpan(style: theme.textTheme.bodySmall, children: [
+                        TextSpan(text: '${w['word']} ', style: const TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+                        TextSpan(text: '${w['meaning']}'),
+                      ])),
+                      visualDensity: VisualDensity.compact,
+                    ),
+                ]),
+                const SizedBox(height: 8),
+              ],
+            ),
+          ] else
+            _Label(icon: Icons.list_alt, text: l.wordMeaningsUnavailable),
         ],
         if (translation?.notes != null && !compact)
           Padding(

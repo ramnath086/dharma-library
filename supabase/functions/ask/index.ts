@@ -13,13 +13,15 @@
 //   4. Conversation continuity: when the caller passes a session_id they own,
 //      the last few exchanges are replayed as chat turns so follow-up
 //      questions resolve correctly (pure logic in context.ts).
-//   5. Build a prompt containing ONLY those verses (ref + text + attribution).
-//      Ask the model to answer strictly from the passages and to cite refs in
-//      the form [SB 1.1.2]. If the passages don't support an answer it must
-//      say so. Temperature 0.2.
-//   6. Post-validate: extract cited refs, drop any that were not in the
-//      retrieved set (hallucination guard), mark `grounded=false` and return
-//      an honest "no reliable answer" if no valid citation remains.
+//   5. Build a prompt containing ONLY those verses (work short code + ref +
+//      text + attribution). The prompt is work-aware: it names the work(s)
+//      actually retrieved and asks for citations in the form [SB 1.1.2] /
+//      [BG 2.47], using that work's own short code. If the passages don't
+//      support an answer the model must say so. Temperature 0.2.
+//   6. Post-validate: extract cited (work, ref) pairs, drop any that were not
+//      in the retrieved set (hallucination guard; a [BG …] citation can never
+//      be satisfied by an SB passage), mark `grounded=false` and return an
+//      honest "no reliable answer" if no valid citation remains.
 //   7. Log to qa_sessions / qa_messages when a user JWT is present, and return
 //      session_id + the assistant message_id (the app needs it for feedback).
 //
@@ -30,7 +32,7 @@
 // output is constrained to cite it.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";
-import { ground } from "./grounding.ts";
+import { ground, type AllowedCitations } from "./grounding.ts";
 import { capReached, clampQuestion, prepareHistory } from "./context.ts";
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
@@ -107,10 +109,20 @@ Deno.serve(async (req) => {
 
     // Prefer translations in the user's language, then base text; cap ~12 passages
     passages = dedupe(passages).slice(0, 12);
-    const allowedRefs = new Set(passages.map((p) => p.ref));
 
     if (passages.length === 0) {
       return json({ answer: "", citations: [], grounded: false, model: MODEL, session_id: session_id ?? null });
+    }
+
+    // 3c. work short codes: citations are validated and labelled per work, so
+    // [BG 2.47] and [SB 2.47] never collapse into one another. The works table
+    // is public-readable; if the lookup fails we fall back to the slug.
+    const shortCodes = await resolveWorks(sb, passages.map((p) => p.work_slug));
+    const allowed: AllowedCitations = new Map();
+    for (const p of passages) {
+      const code = shortCodeFor(p.work_slug, shortCodes);
+      if (!allowed.has(code)) allowed.set(code, new Set());
+      allowed.get(code)!.add(p.ref);
     }
 
     // 4. conversation continuity (only for a session the caller actually owns — RLS enforces it)
@@ -125,12 +137,14 @@ Deno.serve(async (req) => {
       } catch (_) { /* continuity is best-effort */ }
     }
 
-    // 5. prompt
+    // 5. prompt (work-aware: names the works retrieved and uses their codes)
     const context = passages.map((p, i) =>
-      `[${i + 1}] SB ${p.ref} (${p.edition_title}, ${p.language_code})\n${p.body}`).join("\n\n");
-    const system = `You are a careful scholar assisting readers of the Śrīmad Bhāgavata Purāṇa.
+      `[${i + 1}] ${shortCodeFor(p.work_slug, shortCodes)} ${p.ref} (${p.edition_title}, ${p.language_code})\n${p.body}`).join("\n\n");
+    const workList = [...new Set(passages.map((p) => workName(p, shortCodes)))].join(", ");
+    const example = `[${shortCodeFor(passages[0].work_slug, shortCodes)} ${passages[0].ref}]`;
+    const system = `You are a careful scholar assisting readers of the Dharma Library scriptures (${workList}).
 Answer ONLY from the passages provided. Do not use outside knowledge about the text's contents, and never invent or paraphrase verses that are not in the passages.
-Cite every claim with the verse reference in square brackets exactly like [SB 1.1.2]. Only cite references that appear in the passages.
+Cite every claim with the verse reference in square brackets, using the work's short code exactly as written in the passages — for example ${example}. Only cite references that appear in the passages, and never label a verse with another work's short code.
 If the passages do not contain enough information, say so plainly in one or two sentences and do not guess.
 Earlier chat turns are context for the question only — every claim in your answer must still be supported by the passages below.
 Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep Sanskrit terms in IAST.`;
@@ -150,13 +164,19 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
     const text: string = data.choices?.[0]?.message?.content ?? "";
     const usage = data.usage ?? {};
 
-    // 7. validate citations (hallucination guard)
-    const g = ground(text, allowedRefs);
-    const grounded = g.grounded;
-    const citations = g.valid.map((ref) => {
-      const p = passages.find((x) => x.ref === ref)!;
-      return { verse_id: p.verse_id, ref, work_slug: p.work_slug, edition_id: p.edition_id, quote: p.body.slice(0, 200) };
+    // 7. validate citations (hallucination guard, per work)
+    const g = ground(text, allowed);
+    const citations = g.valid.flatMap((c) => {
+      // `allowed` was built from `passages`, so a valid (work, ref) always resolves
+      const p = passages.find((x) => x.ref === c.ref && shortCodeFor(x.work_slug, shortCodes) === c.code);
+      if (!p) return [];
+      // `label` is what the client renders in the citation chip: "SB 1.1.2" / "BG 2.47"
+      return [{
+        verse_id: p.verse_id, ref: c.ref, label: `${c.code} ${c.ref}`, short_code: c.code,
+        work_slug: p.work_slug, edition_id: p.edition_id, quote: p.body.slice(0, 200),
+      }];
     });
+    const grounded = citations.length > 0;
     const answer = g.answer;
 
     // 8. log (only when signed in — RLS requires ownership); message_id powers feedback
@@ -185,6 +205,43 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
     return json({ error: String(e?.message ?? e) }, 500);
   }
 });
+
+type AskClient = ReturnType<typeof createClient>;
+
+/** slug → work display title, for the prompt header. */
+type WorkInfo = { slug: string; short_code?: string; title_iast?: string };
+
+/**
+ * Look up the display info of the works behind the retrieved passages, so
+ * citations can be validated and labelled per work (SB vs BG). The `works`
+ * table is publicly readable; a failure here is non-fatal — `shortCodeFor`
+ * falls back to the slug-derived code instead.
+ */
+async function resolveWorks(sb: AskClient, slugs: string[]): Promise<Map<string, WorkInfo>> {
+  const out = new Map<string, WorkInfo>();
+  const unique = [...new Set(slugs)].filter(Boolean);
+  if (unique.length === 0) return out;
+  try {
+    const { data } = await sb.from("works").select("slug, short_code, title_iast").in("slug", unique);
+    for (const w of (data ?? []) as WorkInfo[]) {
+      if (w?.slug && w?.short_code) out.set(w.slug, { ...w, short_code: String(w.short_code).toUpperCase() });
+    }
+  } catch (_) { /* fall back to the slug-derived code below */ }
+  return out;
+}
+
+/** The citation code for a work: its stored short code, else a slug fallback. */
+function shortCodeFor(slug: string, info: Map<string, WorkInfo>): string {
+  const stored = info.get(slug)?.short_code;
+  if (stored) return stored;
+  return String(slug ?? "").replace(/[^A-Za-z0-9]/g, "").slice(0, 6).toUpperCase() || "WORK";
+}
+
+/** Human-readable work name for the prompt header; falls back to the code. */
+function workName(p: Passage, info: Map<string, WorkInfo>): string {
+  const title = info.get(p.work_slug)?.title_iast;
+  return title ? `${title} (${shortCodeFor(p.work_slug, info)})` : shortCodeFor(p.work_slug, info);
+}
 
 function dedupe(ps: Passage[]): Passage[] {
   const seen = new Set<string>();

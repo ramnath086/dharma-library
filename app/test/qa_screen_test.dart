@@ -40,7 +40,8 @@ class _FakeRepo extends Repository {
     return QaAnswer.fromJson({
       'answer': 'Test answer text',
       'citations': [
-        {'verse_id': 'v1', 'ref': '1.1.1', 'quote': 'quoted text', 'work_slug': 'bhagavata-purana'}
+        {'verse_id': 'v1', 'ref': '1.1.1', 'label': 'SB 1.1.1', 'short_code': 'SB', 'quote': 'quoted text', 'work_slug': 'bhagavata-purana'},
+        {'verse_id': 'v2', 'ref': '2.47', 'label': 'BG 2.47', 'short_code': 'BG', 'quote': 'quoted text', 'work_slug': 'bhagavad-gita'},
       ],
       'grounded': true,
       'model': 'test-model',
@@ -76,6 +77,25 @@ void main() {
       final old = QaAnswer.fromJson({'answer': '', 'citations': const [], 'grounded': false});
       expect(old.sessionId, isNull);
       expect(old.messageId, isNull);
+    });
+
+    test('citation labels come from the server and stay work-correct', () {
+      final marked = QaAnswer.fromJson({
+        'answer': 'a',
+        'citations': [
+          {'verse_id': 'v', 'ref': '2.47', 'label': 'BG 2.47', 'short_code': 'BG', 'work_slug': 'bhagavad-gita'},
+          {'verse_id': 'v', 'ref': '1.1.2', 'label': 'SB 1.1.2', 'short_code': 'SB', 'work_slug': 'bhagavata-purana'},
+        ],
+        'grounded': true,
+      });
+      expect(marked.citations[0].label, 'BG 2.47');
+      expect(marked.citations[1].label, 'SB 1.1.2');
+
+      // a Gītā citation is never rendered as SB, even without a server label
+      Citation c(Map<String, dynamic> j) => Citation.fromJson({'quote': '', ...j});
+      expect(c({'ref': '2.47', 'work_slug': 'bhagavad-gita'}).label, 'BG 2.47');
+      expect(c({'ref': '2.47', 'short_code': 'BG'}).label, 'BG 2.47');
+      expect(c({'ref': '2.47'}).label, '2.47'); // unknown work: bare ref, no guessing
     });
 
     test('QaSession / QaMessage parse stored rows', () {
@@ -144,7 +164,8 @@ void main() {
       await tester.tap(find.byIcon(Icons.send));
       await _settle(tester);
       expect(find.text('What is the highest truth?'), findsOneWidget); // user bubble
-      expect(find.text('SB 1.1.1'), findsOneWidget); // citation chip
+      expect(find.text('SB 1.1.1'), findsOneWidget); // Bhāgavata citation chip
+      expect(find.text('BG 2.47'), findsOneWidget); // Gītā chip is not mislabelled SB
       expect(find.byIcon(Icons.add_comment_outlined), findsOneWidget); // new-chat action appears
     });
 
