@@ -23,8 +23,7 @@ class LocalStore {
   final Database _db;
 
   static Future<LocalStore> open({String? pathOverride}) async {
-    final dir = await getApplicationSupportDirectory();
-    final path = pathOverride ?? p.join(dir.path, 'dharma_library.db');
+    final path = pathOverride ?? p.join((await getApplicationSupportDirectory()).path, 'dharma_library.db');
     final db = await openDatabase(path, version: 5, onCreate: _create, onUpgrade: _upgrade);
     return LocalStore._(db);
   }

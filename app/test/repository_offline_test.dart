@@ -160,7 +160,8 @@ void main() {
   });
   test('offline index covers late chapters; readiness, rebuild and removal', () async {
     final bundle = jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map<String, dynamic>;
-    final fresh = await LocalStore.inMemory();
+    final dir = await Directory.systemTemp.createTemp('dharma-search-test-');
+    final fresh = await LocalStore.open(pathOverride: '${dir.path}/search.db');
     try {
       await fresh.importBundle(bundle);
       final slug = (bundle['toc']['work'] as Map)['slug'] as String;
@@ -185,6 +186,7 @@ void main() {
       expect(await fresh.isBundleReady(slug, generated), isTrue);
     } finally {
       await fresh.close();
+      await dir.delete(recursive: true);
     }
   });
 
