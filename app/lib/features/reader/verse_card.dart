@@ -177,23 +177,30 @@ class VerseCard extends ConsumerWidget {
         // ---- word meanings (same disclosure rule as translations)
         if (s.showWordMeanings) ...[
           if (wm != null && wm.wordMeanings != null && wm.wordMeanings!.isNotEmpty) ...[
-            ExpansionTile(
-              tilePadding: EdgeInsets.zero,
-              title: Text(l.wordMeanings, style: theme.textTheme.titleSmall),
-              initiallyExpanded: !compact,
-              children: [
-                Wrap(spacing: 6, runSpacing: 6, children: [
-                  for (final w in wm.wordMeanings!)
-                    Chip(
-                      label: RichText(text: TextSpan(style: theme.textTheme.bodySmall, children: [
-                        TextSpan(text: '${w['word']} ', style: const TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
-                        TextSpan(text: '${w['meaning']}'),
-                      ])),
-                      visualDensity: VisualDensity.compact,
-                    ),
-                ]),
-                const SizedBox(height: 8),
-              ],
+            // ExpansionTile builds a ListTile, which paints its background and
+            // ink splashes on the nearest Material ancestor. Give it one of its
+            // own, otherwise the card's coloured box trips Flutter's "ink
+            // splashes may be invisible" assertion.
+            Material(
+              type: MaterialType.transparency,
+              child: ExpansionTile(
+                tilePadding: EdgeInsets.zero,
+                title: Text(l.wordMeanings, style: theme.textTheme.titleSmall),
+                initiallyExpanded: !compact,
+                children: [
+                  Wrap(spacing: 6, runSpacing: 6, children: [
+                    for (final w in wm.wordMeanings!)
+                      Chip(
+                        label: RichText(text: TextSpan(style: theme.textTheme.bodySmall, children: [
+                          TextSpan(text: '${w['word']} ', style: const TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+                          TextSpan(text: '${w['meaning']}'),
+                        ])),
+                        visualDensity: VisualDensity.compact,
+                      ),
+                  ]),
+                  const SizedBox(height: 8),
+                ],
+              ),
             ),
           ] else
             _Label(icon: Icons.list_alt, text: l.wordMeaningsUnavailable),

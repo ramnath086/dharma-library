@@ -115,14 +115,15 @@ Deno.serve(async (req) => {
     }
 
     // 3c. work short codes: citations are validated and labelled per work, so
-    // [BG 2.47] and [SB 2.47] never collapse into one another. The works table
-    // is public-readable; if the lookup fails we fall back to the slug.
+    // [BG 2.47] and [SB 2.47] never collapse into one another. `works` is
+    // public-readable; if the lookup fails we fall back to the slug.
     const shortCodes = await resolveWorks(sb, passages.map((p) => p.work_slug));
-    const allowed: AllowedCitations = new Map();
+    const allowed: AllowedCitations = new Map<string, Set<string>>();
     for (const p of passages) {
       const code = shortCodeFor(p.work_slug, shortCodes);
-      if (!allowed.has(code)) allowed.set(code, new Set());
-      allowed.get(code)!.add(p.ref);
+      const refs = allowed.get(code);
+      if (refs) refs.add(p.ref);
+      else allowed.set(code, new Set<string>([p.ref]));
     }
 
     // 4. conversation continuity (only for a session the caller actually owns — RLS enforces it)
@@ -166,16 +167,16 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
 
     // 7. validate citations (hallucination guard, per work)
     const g = ground(text, allowed);
-    const citations = g.valid.flatMap((c) => {
+    const citations: CitationPayload[] = [];
+    for (const c of g.valid) {
       // `allowed` was built from `passages`, so a valid (work, ref) always resolves
       const p = passages.find((x) => x.ref === c.ref && shortCodeFor(x.work_slug, shortCodes) === c.code);
-      if (!p) return [];
-      // `label` is what the client renders in the citation chip: "SB 1.1.2" / "BG 2.47"
-      return [{
+      if (!p) continue;
+      citations.push({
         verse_id: p.verse_id, ref: c.ref, label: `${c.code} ${c.ref}`, short_code: c.code,
         work_slug: p.work_slug, edition_id: p.edition_id, quote: p.body.slice(0, 200),
-      }];
-    });
+      });
+    }
     const grounded = citations.length > 0;
     const answer = g.answer;
 
@@ -206,10 +207,24 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
   }
 });
 
-type AskClient = ReturnType<typeof createClient>;
+/** What we need to know about a work to validate and label its citations. */
+type WorkInfo = { slug: string; short_code: string; title_iast?: string };
 
-/** slug → work display title, for the prompt header. */
-type WorkInfo = { slug: string; short_code?: string; title_iast?: string };
+/** One citation as returned to the client (label is the chip text). */
+type CitationPayload = {
+  verse_id: string; ref: string; label: string; short_code: string;
+  work_slug: string; edition_id: string; quote: string;
+};
+
+/** The rows we ask PostgREST for when resolving work short codes. */
+type WorkRow = { slug?: string | null; short_code?: string | null; title_iast?: string | null };
+
+/**
+ * The little bit of the Supabase client this lookup needs, kept structural so
+ * the helper does not depend on the generic inference of `createClient`.
+ * deno-lint-ignore no-explicit-any
+ */
+type WorksClient = { from: (table: string) => any };
 
 /**
  * Look up the display info of the works behind the retrieved passages, so
@@ -217,14 +232,19 @@ type WorkInfo = { slug: string; short_code?: string; title_iast?: string };
  * table is publicly readable; a failure here is non-fatal — `shortCodeFor`
  * falls back to the slug-derived code instead.
  */
-async function resolveWorks(sb: AskClient, slugs: string[]): Promise<Map<string, WorkInfo>> {
+async function resolveWorks(sb: WorksClient, slugs: string[]): Promise<Map<string, WorkInfo>> {
   const out = new Map<string, WorkInfo>();
-  const unique = [...new Set(slugs)].filter(Boolean);
+  const unique = Array.from(new Set(slugs)).filter((s) => !!s);
   if (unique.length === 0) return out;
   try {
     const { data } = await sb.from("works").select("slug, short_code, title_iast").in("slug", unique);
-    for (const w of (data ?? []) as WorkInfo[]) {
-      if (w?.slug && w?.short_code) out.set(w.slug, { ...w, short_code: String(w.short_code).toUpperCase() });
+    for (const w of (data ?? []) as WorkRow[]) {
+      if (!w.slug || !w.short_code) continue;
+      out.set(w.slug, {
+        slug: w.slug,
+        short_code: w.short_code.toUpperCase(),
+        title_iast: w.title_iast ?? undefined,
+      });
     }
   } catch (_) { /* fall back to the slug-derived code below */ }
   return out;
