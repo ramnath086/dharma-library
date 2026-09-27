@@ -89,11 +89,11 @@ class LocalStore {
 
   Future<List<Map<String, Object?>>> searchRows(String slug, String foldedQuery, Set<String> mentioned) {
     // Escape SQL wildcards: a literal '%' or '_' must not match every verse.
-    final escaped = foldedQuery.replaceAll('\\', '\\\\').replaceAll('%', '\\%').replaceAll('_', '\\_');
+    final escaped = foldedQuery.replaceAll('!', '!!').replaceAll('%', '!%').replaceAll('_', '!_');
     final ids = mentioned.toList();
     final mentionsClause = ids.isEmpty ? '' : ' or verse_id in (${List.filled(ids.length, '?').join(',')})';
     return _db.query('search_index',
-        where: "work_slug = ? and (folded_body like ? escape '\' or ref = ?$mentionsClause)",
+        where: "work_slug = ? and (folded_body like ? escape '!' or ref = ?$mentionsClause)",
         whereArgs: [slug, '%$escaped%', foldedQuery, ...ids], orderBy: 'ref, edition_id');
   }
 

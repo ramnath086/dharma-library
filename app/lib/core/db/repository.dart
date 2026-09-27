@@ -204,12 +204,6 @@ class Repository {
     return hits.take(limit).toList();
   }
 
-  SearchHit _hit(Verse v, Rendering r, Edition? e, String slug, String snippet, double rank, {String shortCode = ''}) => SearchHit.fromJson({
-        'verse_id': v.id, 'ref': v.ref, 'work_slug': slug, 'edition_id': r.editionId, 'edition_title': e?.title ?? r.kind,
-        'language_code': r.languageCode, 'script_code': r.scriptCode, 'kind': r.kind, 'snippet': snippet, 'rank': rank,
-        'short_code': shortCode,
-      });
-
   /// Dart mirror of SQL `iast_fold` (also used when building the local index).
   static String fold(String s) => foldSearch(s);
 
