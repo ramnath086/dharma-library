@@ -7,6 +7,7 @@ import 'package:uuid/uuid.dart';
 
 import '../offline/local_store.dart';
 import '../offline/prefetch.dart';
+import '../offline/search_fold.dart';
 import 'models.dart';
 
 /// Single data-access layer for the app.
@@ -167,36 +168,36 @@ class Repository {
       }
 
       final tocObj = Toc.fromJson((toc as Map).cast<String, dynamic>());
-      for (final ch in tocObj.chapters) {
-        final raw = await store.get('chapter:${ch.id}');
-        if (raw == null) continue;
-        final chapter = Chapter.fromJson((raw as Map).cast<String, dynamic>());
-        final edById = {for (final e in chapter.editions) e.id: e};
-        for (final v in chapter.verses) {
-          if (v.ref == q.trim()) {
-            final r = v.renderings.firstOrNull;
-            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body, 1.0, shortCode: tocObj.work.shortCode));
-            continue;
-          }
-          var matched = false;
-          for (final r in v.renderings) {
-            if (language != null && r.languageCode != language) continue;
-            final body = r.body;
-            final idx = fold(body).indexOf(f);
-            if (idx >= 0 || body.contains(q)) {
-              final at = idx >= 0 ? idx : body.indexOf(q);
-              final start = (at - 60).clamp(0, body.length);
-              final end = (at + 100).clamp(0, body.length);
-              hits.add(_hit(v, r, edById[r.editionId], slug,
-                  '${start > 0 ? '…' : ''}${body.substring(start, end)}${end < body.length ? '…' : ''}', 0.9, shortCode: tocObj.work.shortCode));
-              matched = true;
-            }
-          }
-          if (!matched && mentioned.contains(v.id)) {
-            final r = v.renderings.where((r) => r.kind == 'translation' && (language == null || r.languageCode == language)).firstOrNull ?? v.renderings.firstOrNull;
-            if (r != null) hits.add(_hit(v, r, edById[r.editionId], slug, r.body.length > 160 ? '${r.body.substring(0, 160)}…' : r.body, 0.5, shortCode: tocObj.work.shortCode));
-          }
-        }
+      // A validated on-disk index is built atomically with the bundle. No
+      // decoding of 335 chapter JSON blobs on every keystroke.
+      final rows = await store.searchRows(slug, f, mentioned);
+      for (final row in rows) {
+        final ref = row['ref'] as String;
+        final verseId = row['verse_id'] as String;
+        final isExact = ref == q.trim();
+        final body = row['body'] as String;
+        if (language != null && !isExact && row['language_code'] != language) continue;
+        if (isExact && hits.any((h) => h.verseId == verseId && h.workSlug == slug)) continue;
+        final idx = (row['folded_body'] as String).indexOf(f);
+        if (!isExact && idx < 0 && !body.contains(q) && !mentioned.contains(verseId)) continue;
+        // Keep a single hit for entity-only matches; normal text matches may
+        // return multiple editions just as they did before the index.
+        final isMention = !isExact && idx < 0 && !body.contains(q);
+        if (isMention && hits.any((h) => h.verseId == verseId && h.workSlug == slug)) continue;
+        final at = idx >= 0 ? idx : body.indexOf(q);
+        final begin = (at - 60).clamp(0, body.length);
+        final finish = (at + 100).clamp(0, body.length);
+        final snippet = isExact ? body : isMention
+            ? (body.length > 160 ? '${body.substring(0, 160)}…' : body)
+            : '${begin > 0 ? '…' : ''}${body.substring(begin, finish)}${finish < body.length ? '…' : ''}';
+        hits.add(SearchHit.fromJson({
+          'verse_id': verseId, 'ref': ref, 'work_slug': slug,
+          'edition_id': row['edition_id'], 'edition_title': row['edition_title'],
+          'language_code': row['language_code'], 'script_code': row['script_code'],
+          'kind': row['kind'], 'snippet': snippet,
+          'rank': isExact ? 1.0 : isMention ? 0.5 : 0.9,
+          'short_code': tocObj.work.shortCode,
+        }));
       }
     }
     hits.sort((a, b) => b.rank.compareTo(a.rank));
@@ -209,17 +210,8 @@ class Repository {
         'short_code': shortCode,
       });
 
-  /// Dart mirror of SQL `iast_fold`: lower-case, strip IAST diacritics,
-  /// normalise popular spellings.
-  static String fold(String s) {
-    const from = 'āīūṛṝḷḹṃṁḥṅñṭḍṇśṣ\'’';
-    const to = 'aiurrllmmhnntdnss';
-    var out = s.toLowerCase();
-    for (var i = 0; i < from.length; i++) {
-      out = out.replaceAll(from[i], i < to.length ? to[i] : '');
-    }
-    return out.replaceAll('sh', 's').replaceAll('ri', 'r').replaceAll('ee', 'i');
-  }
+  /// Dart mirror of SQL `iast_fold` (also used when building the local index).
+  static String fold(String s) => foldSearch(s);
 
   // ---------------------------------------------------------- bookmarks
   Future<List<Bookmark>> bookmarks() async {
@@ -471,6 +463,7 @@ class Repository {
     await store.delete('graph:$workSlug');
     await store.deletePrefix('verse:$workSlug:');
     await store.delete('bundle_meta:$workSlug');
+    await store.deleteSearchIndex(workSlug);
     final remaining = (await store.bundleSlugs())..remove(workSlug);
     await store.put('bundle_slugs', remaining);
   }

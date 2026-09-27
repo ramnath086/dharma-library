@@ -158,4 +158,44 @@ void main() {
     await repo.logAnalytics('daily_open');
     await repo.logAnalytics('search', {'hits': 3, 'offline': true});
   });
+  test('offline index covers late chapters; readiness, rebuild and removal', () async {
+    final bundle = jsonDecode(File('test/fixtures/mini_bhagavata_bundle.json').readAsStringSync()) as Map<String, dynamic>;
+    final fresh = await LocalStore.inMemory();
+    try {
+      await fresh.importBundle(bundle);
+      final slug = (bundle['toc']['work'] as Map)['slug'] as String;
+      final generated = bundle['generated_at'] as String?;
+      expect(await fresh.isBundleReady(slug, generated), isTrue);
+      final count = (await fresh.searchRows(slug, 'naimisa', {})).length;
+      await fresh.importBundle(bundle);
+      expect((await fresh.searchRows(slug, 'naimisa', {})).length, count, reason: 'reimport must not duplicate rows');
+
+      await fresh.deleteSearchIndex(slug); // simulate a damaged/interrupted index
+      expect(await fresh.isBundleReady(slug, generated), isFalse);
+      await fresh.importBundle(bundle);
+      expect(await fresh.isBundleReady(slug, generated), isTrue);
+      expect((await fresh.searchRows(slug, 'naimisa', {})).length, count);
+      final offline = Repository(store: fresh);
+      expect((await offline.search('1.1.7')).first.ref, '1.1.7');
+      await offline.removeDownload(slug);
+      expect(await fresh.bundleSlugs(), isEmpty);
+      expect(await fresh.searchRows(slug, 'naimisa', {}), isEmpty);
+      expect(await fresh.isBundleReady(slug, generated), isFalse);
+      await fresh.importBundle(bundle);
+      expect(await fresh.isBundleReady(slug, generated), isTrue);
+    } finally {
+      await fresh.close();
+    }
+  });
+
+  test('index searches late Bhāgavata verse and BG 18.66 by exact ref', () async {
+    final late = await repo.search('12.13.23', workSlug: 'bhagavata-purana');
+    expect(late.map((h) => h.ref), contains('12.13.23'));
+    final gita = jsonDecode(File('assets/bundles/bhagavad-gita.json').readAsStringSync()) as Map<String, dynamic>;
+    await store.importBundle(gita);
+    final bg = await repo.search('18.66', workSlug: 'bhagavad-gita');
+    expect(bg.map((h) => h.ref), contains('18.66'));
+    expect(bg.every((h) => h.workSlug == 'bhagavad-gita'), isTrue);
+  });
+
 }

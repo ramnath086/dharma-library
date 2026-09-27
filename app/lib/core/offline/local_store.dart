@@ -5,6 +5,8 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
+import 'search_fold.dart';
+
 /// On-device cache (SQLite via sqflite).
 ///
 /// Tables
@@ -23,12 +25,12 @@ class LocalStore {
   static Future<LocalStore> open({String? pathOverride}) async {
     final dir = await getApplicationSupportDirectory();
     final path = pathOverride ?? p.join(dir.path, 'dharma_library.db');
-    final db = await openDatabase(path, version: 4, onCreate: _create, onUpgrade: _upgrade);
+    final db = await openDatabase(path, version: 5, onCreate: _create, onUpgrade: _upgrade);
     return LocalStore._(db);
   }
 
   static Future<LocalStore> inMemory() async {
-    final db = await openDatabase(inMemoryDatabasePath, version: 4, onCreate: _create);
+    final db = await openDatabase(inMemoryDatabasePath, version: 5, onCreate: _create);
     return LocalStore._(db);
   }
 
@@ -38,6 +40,7 @@ class LocalStore {
     if (from < 3 && !await _hasColumn(db, 'verse_reads', 'verse_ref')) {
       await db.execute('alter table verse_reads add column verse_ref text');
     }
+    if (from < 5) await _createSearchTable(db);
     if (from < 4 && !await _hasColumn(db, 'verse_reads', 'work_slug')) {
       await db.execute('alter table verse_reads add column work_slug text');
     }
@@ -60,7 +63,42 @@ class LocalStore {
     await db.execute('''create table if not exists outbox (
       id integer primary key autoincrement, kind text not null, payload text not null, created_at integer not null)''');
     await db.execute('create table if not exists verse_reads (verse_id text primary key, verse_ref text, work_slug text, read_at text not null, dirty integer not null default 1)');
+    await _createSearchTable(db);
   }
+
+  static Future<void> _createSearchTable(Database db) async {
+    await db.execute('''create table if not exists search_index (
+      work_slug text not null, verse_id text not null, ref text not null,
+      edition_id text not null, edition_title text not null,
+      language_code text not null, script_code text not null, kind text not null,
+      body text not null, folded_body text not null,
+      primary key (work_slug, ref, edition_id)
+    )''');
+    await db.execute('create index if not exists search_work_ref on search_index(work_slug, ref)');
+  }
+
+  /// Index and bundle keys are committed together. Incomplete imports can
+  /// never publish a ready marker, and an interrupted transaction rolls back.
+  /// An explicit count check detects stale/partial indexes on the next launch.
+  Future<bool> isBundleReady(String slug, String? generatedAt) async {
+    final meta = await get<Map<String, dynamic>>('bundle_meta:$slug');
+    if (meta == null || meta['index_version'] != 1 || meta['generated_at'] != generatedAt) return false;
+    final rows = await _db.rawQuery('select count(*) as n from search_index where work_slug = ?', [slug]);
+    return rows.first['n'] == meta['index_count'];
+  }
+
+  Future<List<Map<String, Object?>>> searchRows(String slug, String foldedQuery, Set<String> mentioned) {
+    // Escape SQL wildcards: a literal '%' or '_' must not match every verse.
+    final escaped = foldedQuery.replaceAll('\\', '\\\\').replaceAll('%', '\\%').replaceAll('_', '\\_');
+    final ids = mentioned.toList();
+    final mentionsClause = ids.isEmpty ? '' : ' or verse_id in (${List.filled(ids.length, '?').join(',')})';
+    return _db.query('search_index',
+        where: "work_slug = ? and (folded_body like ? escape '\' or ref = ?$mentionsClause)",
+        whereArgs: [slug, '%$escaped%', foldedQuery, ...ids], orderBy: 'ref, edition_id');
+  }
+
+  Future<void> deleteSearchIndex(String slug) =>
+      _db.delete('search_index', where: 'work_slug = ?', whereArgs: [slug]);
 
   // ---------------------------------------------------------------- kv
   Future<void> put(String key, Object json) async {
@@ -94,8 +132,15 @@ class LocalStore {
   Future<void> importBundle(Map<String, dynamic> bundle) async {
     final toc = (bundle['toc'] as Map).cast<String, dynamic>();
     final slug = toc['work']['slug'] as String;
+    if (await isBundleReady(slug, bundle['generated_at'] as String?)) return;
     final knownSlugs = await bundleSlugs();
-    final batch = _db.batch();
+    final mentionsByVerse = <Object?, List<dynamic>>{};
+    for (final m in (bundle['mentions'] as List)) {
+      mentionsByVerse.putIfAbsent((m as Map)['verse_id'], () => []).add(m);
+    }
+    await _db.transaction((txn) async {
+    final batch = txn.batch();
+    batch.delete('search_index', where: 'work_slug = ?', whereArgs: [slug]);
     void putB(String k, Object v) =>
         batch.insert('kv', {'k': k, 'v': jsonEncode(v), 'updated_at': DateTime.now().millisecondsSinceEpoch}, conflictAlgorithm: ConflictAlgorithm.replace);
     putB('toc:$slug', toc);
@@ -104,6 +149,8 @@ class LocalStore {
       'people': bundle['people'], 'places': bundle['places'], 'topics': bundle['topics'], 'stories': bundle['stories'],
       'entity_names': bundle['entity_names'], 'mentions': bundle['mentions'], 'cross_references': bundle['cross_references'],
     });
+    final titles = {for (final e in (bundle['editions'] as List)) (e as Map)['id']: e['title']};
+    var indexCount = 0;
     for (final sec in (bundle['sections'] as List)) {
       final s = (sec as Map).cast<String, dynamic>();
       putB('chapter:${s['section']['id']}', s);
@@ -111,18 +158,30 @@ class LocalStore {
       final verses = (s['verses'] as List).map((v) => (v as Map).cast<String, dynamic>()).toList();
       for (var i = 0; i < verses.length; i++) {
         final v = verses[i];
+        for (final raw in (v['renderings'] as List? ?? const [])) {
+          final r = raw as Map;
+          final body = r['body'] as String? ?? '';
+          batch.insert('search_index', {
+            'work_slug': slug, 'verse_id': v['id'], 'ref': v['ref'],
+            'edition_id': r['edition_id'], 'edition_title': titles[r['edition_id']] ?? r['kind'],
+            'language_code': r['language_code'], 'script_code': r['script_code'], 'kind': r['kind'],
+            'body': body, 'folded_body': foldSearch(body),
+          }, conflictAlgorithm: ConflictAlgorithm.replace);
+          indexCount++;
+        }
         putB('verse:$slug:${v['ref']}', {
           'verse': v, 'section': s['section'], 'renderings': v['renderings'],
-          'mentions': (bundle['mentions'] as List).where((m) => m['verse_id'] == v['id']).toList(),
+          'mentions': mentionsByVerse[v['id']] ?? const [],
           'cross_references': [],
           'prev_ref': i > 0 ? verses[i - 1]['ref'] : null,
           'next_ref': i < verses.length - 1 ? verses[i + 1]['ref'] : null,
         });
       }
     }
-    putB('bundle_meta:$slug', {'generated_at': bundle['generated_at'], 'imported_at': DateTime.now().toIso8601String()});
+    putB('bundle_meta:$slug', {'generated_at': bundle['generated_at'], 'imported_at': DateTime.now().toIso8601String(), 'index_version': 1, 'index_count': indexCount});
     putB('bundle_slugs', {...knownSlugs, slug}.toList()..sort());
     await batch.commit(noResult: true);
+    });
   }
 
   Future<bool> hasBundle(String slug) async => (await get('bundle_meta:$slug')) != null;
@@ -164,7 +223,10 @@ class LocalStore {
 
   Future<void> importAssetBundle(String slug) async {
     final txt = await rootBundle.loadString('assets/bundles/$slug.json');
-    await importBundle(jsonDecode(txt) as Map<String, dynamic>);
+    final bundle = jsonDecode(txt) as Map<String, dynamic>;
+    final meta = (bundle['toc'] as Map)['work'] as Map;
+    if (await isBundleReady(meta['slug'] as String, bundle['generated_at'] as String?)) return;
+    await importBundle(bundle);
   }
 
   // -------------------------------------------------------- bookmarks
