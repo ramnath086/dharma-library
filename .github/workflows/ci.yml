@@ -66,7 +66,7 @@ jobs:
           set -o pipefail
           python3 -m unittest discover -s scripts/tests -v 2>&1 | tee python-tests.txt || status=$?
           if [ "${status:-0}" -ne 0 ]; then
-            python3 -c 'from pathlib import Path; text = Path("python-tests.txt").read_text()[-16000:]; print("::error title=Python tests::" + text.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A"))'
+            python3 -c 'from pathlib import Path; text = Path("python-tests.txt").read_text()[-3000:]; print("::error title=Python tests::" + text.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A"))'
           fi
           exit ${status:-0}
 
@@ -174,6 +174,7 @@ jobs:
           flutter test --coverage 2>&1 | tee test.txt || status=$?
           { echo '### flutter test'; echo '```'; tail -n 200 test.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           grep -vE '^\s*$' test.txt | grep -vE '^\s*(✅|\+[0-9]+)' | tr -d '\r' | tail -n 80 | while IFS= read -r l; do echo "::warning title=test::${l}"; done
+          python3 -c 'from pathlib import Path; text = Path("test.txt").read_text()[-1200:]; print("::notice title=Flutter test result::" + text.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A"))'
           exit ${status:-0}
       - uses: actions/upload-artifact@v7
         if: always()
