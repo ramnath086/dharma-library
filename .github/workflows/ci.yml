@@ -66,7 +66,7 @@ jobs:
           set -o pipefail
           python3 -m unittest discover -s scripts/tests -v 2>&1 | tee python-tests.txt || status=$?
           if [ "${status:-0}" -ne 0 ]; then
-            tail -n 80 python-tests.txt | while IFS= read -r line; do echo "::error title=Python tests::${line}"; done
+            python3 -c 'from pathlib import Path; text = Path("python-tests.txt").read_text()[-16000:]; print("::error title=Python tests::" + text.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A"))'
           fi
           exit ${status:-0}
 
