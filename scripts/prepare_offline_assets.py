@@ -28,6 +28,8 @@ def derived_assets(source=SOURCE):
             continue
         original = path.read_bytes()
         bundle = json.loads(original)
+        if not isinstance(bundle.get('toc', {}).get('work'), dict):
+            raise ValueError(f'Bundle has no published work: {path}')
         slug = bundle['toc']['work']['slug']
         if slug != path.stem:
             raise ValueError(f'Bundle slug does not match filename: {path}')
