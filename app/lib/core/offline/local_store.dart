@@ -144,7 +144,9 @@ class LocalStore {
     final slug = toc['work']['slug'] as String;
     if (await isBundleReady(slug, bundle['generated_at'] as String?,
         expectedIndexCount: expected?['index_count'] as int?,
-        sourceHash: expected?['source_sha256'] as String?)) return;
+        sourceHash: expected?['source_sha256'] as String?)) {
+      return;
+    }
     final mentionsByVerse = <Object?, List<dynamic>>{};
     for (final m in (bundle['mentions'] as List)) {
       mentionsByVerse.putIfAbsent((m as Map)['verse_id'], () => []).add(m);
@@ -253,7 +255,9 @@ class LocalStore {
     final slug = work['slug'] as String;
     if (await isBundleReady(slug, work['generated_at'] as String?,
         expectedIndexCount: work['index_count'] as int,
-        sourceHash: work['source_sha256'] as String)) return;
+        sourceHash: work['source_sha256'] as String)) {
+      return;
+    }
     final metadata = jsonDecode(await assets.loadString(work['metadata_asset'] as String, cache: false)) as Map<String, dynamic>;
     if (metadata['toc']['work']['slug'] != slug || metadata['generated_at'] != work['generated_at']) {
       throw StateError('Offline asset metadata mismatch: $slug');
