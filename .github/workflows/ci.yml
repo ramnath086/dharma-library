@@ -61,7 +61,14 @@ jobs:
           print(f"all published bundles ok: Bhāgavata {n_sections} chapters / {n_verses} verses; Gītā 18 chapters / 700 verses")
           PY
       - name: Python unit tests
-        run: python3 -m unittest discover -s scripts/tests -v
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 -m unittest discover -s scripts/tests -v 2>&1 | tee python-tests.txt || status=$?
+          if [ "${status:-0}" -ne 0 ]; then
+            tail -n 80 python-tests.txt | while IFS= read -r line; do echo "::error title=Python tests::${line}"; done
+          fi
+          exit ${status:-0}
 
   flutter:
     name: Flutter (analyze · test · build)
