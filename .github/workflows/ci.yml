@@ -147,6 +147,8 @@ jobs:
           cat android/key.properties | sed 's/Password=.*/Password=***/'
           echo "Re-applied key.properties after flutter create"
           ls -lh android/app/upload-keystore.jks android/key.properties
+      - name: Generate bounded offline runtime assets
+        run: python3 ../scripts/prepare_offline_assets.py
       - run: flutter pub get
       - run: flutter gen-l10n
       - run: python3 ../scripts/dart_lint_lite.py
@@ -432,6 +434,8 @@ jobs:
           assert n_sections == meta['imported_chapter_count'], (n_sections, meta)
           print(f'APK assets verified: Bhāgavata {n_sections} chapters / {n_verses} verses; Gītā 18 chapters / 700 verses')
           PY
+      - name: Verify APK runtime chapters match canonical bundles exactly
+        run: python3 ../scripts/prepare_offline_assets.py --verify-archive build/app/outputs/flutter-apk/app-release.apk
       - uses: actions/upload-artifact@v7
         with:
           name: dharma-library-apk
@@ -464,6 +468,8 @@ jobs:
           with zipfile.ZipFile(aab_path) as z:
               print(f"AAB contains {len(z.namelist())} entries")
           PY
+      - name: Verify AAB runtime chapters match canonical bundles exactly
+        run: python3 ../scripts/prepare_offline_assets.py --verify-archive build/app/outputs/bundle/release/app-release.aab
       - name: Verify APK/AAB are signed with the release keystore
         shell: bash
         env:

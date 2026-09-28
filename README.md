@@ -55,6 +55,7 @@ python3 scripts/export_bundle.py       # refresh app/assets/bundles/bhagavata-pu
 ```bash
 cd app
 flutter create . --platforms=android,ios --org org.dharmalibrary --project-name dharma_library   # regenerates boilerplate only
+python3 ../scripts/prepare_offline_assets.py     # required: bounded runtime chapter assets
 flutter pub get && flutter gen-l10n && flutter test
 flutter run                                    # bundle mode (offline, no backend)
 flutter run --dart-define-from-file=../env.json   # with Supabase (see .env.example)

@@ -1,10 +1,11 @@
 import 'dart:convert';
 
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart' show AssetBundle, rootBundle;
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
+import 'bounded_batch.dart';
 import 'search_fold.dart';
 
 /// On-device cache (SQLite via sqflite).
@@ -79,9 +80,12 @@ class LocalStore {
   /// Index and bundle keys are committed together. Incomplete imports can
   /// never publish a ready marker, and an interrupted transaction rolls back.
   /// An explicit count check detects stale/partial indexes on the next launch.
-  Future<bool> isBundleReady(String slug, String? generatedAt) async {
+  Future<bool> isBundleReady(String slug, String? generatedAt,
+      {int? expectedIndexCount, String? sourceHash}) async {
     final meta = await get<Map<String, dynamic>>('bundle_meta:$slug');
     if (meta == null || meta['index_version'] != 1 || meta['generated_at'] != generatedAt) return false;
+    if (expectedIndexCount != null && meta['index_count'] != expectedIndexCount) return false;
+    if (sourceHash != null && meta['source_sha256'] != sourceHash) return false;
     final rows = await _db.rawQuery('select count(*) as n from search_index where work_slug = ?', [slug]);
     return rows.first['n'] == meta['index_count'];
   }
@@ -128,58 +132,84 @@ class LocalStore {
   // ---------------------------------------------------------- bundles
   /// Import a work bundle (output of get_work_bundle) into the kv cache under
   /// the same keys the repository uses for live data.
-  Future<void> importBundle(Map<String, dynamic> bundle) async {
+  Future<void> importBundle(Map<String, dynamic> bundle) => _importSections(
+      bundle, () => Stream.fromIterable((bundle['sections'] as List)
+          .map((s) => (s as Map).cast<String, dynamic>())));
+
+  /// The source is opened only after checking persistent readiness. At most
+  /// one decoded chapter and one bounded platform batch are live at a time.
+  Future<void> _importSections(Map<String, dynamic> bundle,
+      Stream<Map<String, dynamic>> Function() sections, {Map<String, dynamic>? expected}) async {
     final toc = (bundle['toc'] as Map).cast<String, dynamic>();
     final slug = toc['work']['slug'] as String;
-    if (await isBundleReady(slug, bundle['generated_at'] as String?)) return;
-    final knownSlugs = await bundleSlugs();
+    if (await isBundleReady(slug, bundle['generated_at'] as String?,
+        expectedIndexCount: expected?['index_count'] as int?,
+        sourceHash: expected?['source_sha256'] as String?)) return;
     final mentionsByVerse = <Object?, List<dynamic>>{};
     for (final m in (bundle['mentions'] as List)) {
       mentionsByVerse.putIfAbsent((m as Map)['verse_id'], () => []).add(m);
     }
     await _db.transaction((txn) async {
-    final batch = txn.batch();
-    batch.delete('search_index', where: 'work_slug = ?', whereArgs: [slug]);
-    void putB(String k, Object v) =>
-        batch.insert('kv', {'k': k, 'v': jsonEncode(v), 'updated_at': DateTime.now().millisecondsSinceEpoch}, conflictAlgorithm: ConflictAlgorithm.replace);
-    putB('toc:$slug', toc);
-    putB('editions:$slug', bundle['editions']);
-    putB('graph:$slug', {
-      'people': bundle['people'], 'places': bundle['places'], 'topics': bundle['topics'], 'stories': bundle['stories'],
-      'entity_names': bundle['entity_names'], 'mentions': bundle['mentions'], 'cross_references': bundle['cross_references'],
-    });
-    final titles = {for (final e in (bundle['editions'] as List)) (e as Map)['id']: e['title']};
-    var indexCount = 0;
-    for (final sec in (bundle['sections'] as List)) {
-      final s = (sec as Map).cast<String, dynamic>();
-      putB('chapter:${s['section']['id']}', s);
-      // also derive per-verse detail (subset) so verse pages work offline
-      final verses = (s['verses'] as List).map((v) => (v as Map).cast<String, dynamic>()).toList();
-      for (var i = 0; i < verses.length; i++) {
-        final v = verses[i];
-        for (final raw in (v['renderings'] as List? ?? const [])) {
-          final r = raw as Map;
-          final body = r['body'] as String? ?? '';
-          batch.insert('search_index', {
-            'work_slug': slug, 'verse_id': v['id'], 'ref': v['ref'],
-            'edition_id': r['edition_id'], 'edition_title': titles[r['edition_id']] ?? r['kind'],
-            'language_code': r['language_code'], 'script_code': r['script_code'], 'kind': r['kind'],
-            'body': body, 'folded_body': foldSearch(body),
-          }, conflictAlgorithm: ConflictAlgorithm.replace);
-          indexCount++;
+      // Read catalogue inside the transaction to preserve other imported works.
+      final known = await txn.query('kv', columns: ['v'], where: 'k = ?', whereArgs: ['bundle_slugs']);
+      final knownSlugs = known.isEmpty ? <String>[] : (jsonDecode(known.first['v'] as String) as List).cast<String>();
+      await txn.delete('search_index', where: 'work_slug = ?', whereArgs: [slug]);
+      final batch = BoundedBatch(txn);
+      Future<void> putB(String k, Object v) => batch.insert('kv', {
+        'k': k, 'v': jsonEncode(v), 'updated_at': DateTime.now().millisecondsSinceEpoch,
+      });
+      await putB('toc:$slug', toc);
+      await putB('editions:$slug', bundle['editions']);
+      await putB('graph:$slug', {
+        'people': bundle['people'], 'places': bundle['places'], 'topics': bundle['topics'], 'stories': bundle['stories'],
+        'entity_names': bundle['entity_names'], 'mentions': bundle['mentions'], 'cross_references': bundle['cross_references'],
+      });
+      final titles = {for (final e in (bundle['editions'] as List)) (e as Map)['id']: e['title']};
+      var indexCount = 0;
+      var verseCount = 0;
+      var sectionCount = 0;
+      await for (final s in sections()) {
+        sectionCount++;
+        await putB('chapter:${s['section']['id']}', s);
+        final verses = s['verses'] as List;
+        verseCount += verses.length;
+        for (var i = 0; i < verses.length; i++) {
+          final v = verses[i] as Map;
+          for (final raw in (v['renderings'] as List? ?? const [])) {
+            final r = raw as Map;
+            final body = r['body'] as String? ?? '';
+            await batch.insert('search_index', {
+              'work_slug': slug, 'verse_id': v['id'], 'ref': v['ref'],
+              'edition_id': r['edition_id'], 'edition_title': titles[r['edition_id']] ?? r['kind'],
+              'language_code': r['language_code'], 'script_code': r['script_code'], 'kind': r['kind'],
+              'body': body, 'folded_body': foldSearch(body),
+            });
+            indexCount++;
+          }
+          await putB('verse:$slug:${v['ref']}', {
+            'verse': v, 'section': s['section'], 'renderings': v['renderings'],
+            'mentions': mentionsByVerse[v['id']] ?? const [],
+            'cross_references': [],
+            'prev_ref': i > 0 ? verses[i - 1]['ref'] : null,
+            'next_ref': i < verses.length - 1 ? verses[i + 1]['ref'] : null,
+          });
         }
-        putB('verse:$slug:${v['ref']}', {
-          'verse': v, 'section': s['section'], 'renderings': v['renderings'],
-          'mentions': mentionsByVerse[v['id']] ?? const [],
-          'cross_references': [],
-          'prev_ref': i > 0 ? verses[i - 1]['ref'] : null,
-          'next_ref': i < verses.length - 1 ? verses[i + 1]['ref'] : null,
-        });
+        await batch.flush(); // never retain prior chapters in a pending batch
       }
-    }
-    putB('bundle_meta:$slug', {'generated_at': bundle['generated_at'], 'imported_at': DateTime.now().toIso8601String(), 'index_version': 1, 'index_count': indexCount});
-    putB('bundle_slugs', {...knownSlugs, slug}.toList()..sort());
-    await batch.commit(noResult: true);
+      await batch.flush();
+      final rows = await txn.rawQuery('select count(*) as n from search_index where work_slug = ?', [slug]);
+      if (rows.first['n'] != indexCount || (expected != null &&
+          (expected['index_count'] != indexCount || expected['verse_count'] != verseCount ||
+           expected['section_count'] != sectionCount))) {
+        throw StateError('Incomplete offline bundle: $slug');
+      }
+      await putB('bundle_meta:$slug', {
+        'generated_at': bundle['generated_at'], 'imported_at': DateTime.now().toIso8601String(),
+        'index_version': 1, 'index_count': indexCount,
+        'source_sha256': expected?['source_sha256'],
+      });
+      await putB('bundle_slugs', {...knownSlugs, slug}.toList()..sort());
+      await batch.flush();
     });
   }
 
@@ -196,36 +226,45 @@ class LocalStore {
     return slugs;
   }
 
-  /// Discover every bundle declared in Flutter's generated asset manifest and
-  /// import it.  Asset directories cannot be listed directly at runtime, so
-  /// the manifest is the source of truth and adding a new JSON asset is all
-  /// that is needed to add a work to the offline catalogue.
-  Future<List<String>> importAllAssetBundles() async {
-    final manifest = jsonDecode(await rootBundle.loadString('AssetManifest.json'));
-    final paths = manifest is Map
-        ? manifest.keys.cast<String>()
-        : manifest is List
-            ? manifest.whereType<String>()
-            : const <String>[];
-    final slugs = paths
-        .where((path) => path.startsWith('assets/bundles/') && path.endsWith('.json'))
-        .map((path) => path.substring('assets/bundles/'.length, path.length - '.json'.length))
-        .where((slug) => slug.isNotEmpty && !slug.contains('/') && slug != 'manifest' && slug != 'catalog')
-        .toSet()
-        .toList()
-      ..sort();
-    for (final slug in slugs) {
-      await importAssetBundle(slug);
-    }
-    return slugs;
+  /// Build-time catalogue contains only metadata and chapter paths, never the
+  /// corpus. Unlike AssetManifest.json this also works on modern Flutter builds.
+  Future<List<Map<String, dynamic>>> _assetCatalogue(AssetBundle assets) async {
+    final catalog = jsonDecode(await assets.loadString('assets/offline_parts/catalog.json', cache: false)) as Map;
+    if (catalog['format_version'] != 1) throw StateError('Unsupported offline asset format');
+    return (catalog['works'] as List).map((w) => (w as Map).cast<String, dynamic>()).toList();
   }
 
-  Future<void> importAssetBundle(String slug) async {
-    final txt = await rootBundle.loadString('assets/bundles/$slug.json');
-    final bundle = jsonDecode(txt) as Map<String, dynamic>;
-    final meta = (bundle['toc'] as Map)['work'] as Map;
-    if (await isBundleReady(meta['slug'] as String, bundle['generated_at'] as String?)) return;
-    await importBundle(bundle);
+  Future<List<String>> importAllAssetBundles({AssetBundle? assets}) async {
+    final source = assets ?? rootBundle;
+    final works = await _assetCatalogue(source);
+    for (final work in works) {
+      await _importAssetWork(work, source);
+    }
+    return works.map((w) => w['slug'] as String).toList()..sort();
+  }
+
+  Future<void> importAssetBundle(String slug, {AssetBundle? assets}) async {
+    final source = assets ?? rootBundle;
+    final work = (await _assetCatalogue(source)).firstWhere((w) => w['slug'] == slug);
+    await _importAssetWork(work, source);
+  }
+
+  Future<void> _importAssetWork(Map<String, dynamic> work, AssetBundle assets) async {
+    final slug = work['slug'] as String;
+    if (await isBundleReady(slug, work['generated_at'] as String?,
+        expectedIndexCount: work['index_count'] as int,
+        sourceHash: work['source_sha256'] as String)) return;
+    final metadata = jsonDecode(await assets.loadString(work['metadata_asset'] as String, cache: false)) as Map<String, dynamic>;
+    if (metadata['toc']['work']['slug'] != slug || metadata['generated_at'] != work['generated_at']) {
+      throw StateError('Offline asset metadata mismatch: $slug');
+    }
+    await _importSections(metadata, () async* {
+      for (final path in work['sections'] as List) {
+        // cache:false is essential: CachingAssetBundle otherwise retains every
+        // chapter string for the process lifetime. No prefetch/parallel decode.
+        yield jsonDecode(await assets.loadString(path as String, cache: false)) as Map<String, dynamic>;
+      }
+    }, expected: work);
   }
 
   // -------------------------------------------------------- bookmarks

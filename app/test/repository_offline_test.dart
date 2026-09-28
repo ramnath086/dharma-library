@@ -6,18 +6,21 @@ import 'package:dharma_library/core/offline/local_store.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
+import 'support/recording_assets.dart';
+
 /// Exercises the offline path end-to-end against the shipped Wikisource bundle:
 /// import → toc → chapter → verse → search → bookmarks → progress.
 void main() {
   late LocalStore store;
   late Repository repo;
+  late RecordingAssets assets;
 
   setUpAll(() async {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
     store = await LocalStore.inMemory();
-    final bundle = jsonDecode(File('assets/bundles/bhagavata-purana.json').readAsStringSync()) as Map<String, dynamic>;
-    await store.importBundle(bundle);
+    assets = RecordingAssets();
+    await store.importAllAssetBundles(assets: assets);
   });
 
   setUp(() {
@@ -30,6 +33,28 @@ void main() {
   });
 
   tearDownAll(() => store.close());
+
+
+  test('startup assets and index cover every verse without whole-bundle loads', () async {
+    expect(assets.reads.any((p) => p.startsWith('assets/bundles/')), isFalse);
+    expect(assets.largestRead, lessThanOrEqualTo(1024 * 1024));
+    expect(assets.cacheRequests.every((cache) => !cache), isTrue);
+    expect(assets.reads.where((p) => RegExp(r'-\d{4}\.json$').hasMatch(p)), hasLength(353));
+    for (final entry in {'bhagavata-purana': 14105, 'bhagavad-gita': 700}.entries) {
+      final toc = await repo.toc(entry.key);
+      var verses = 0;
+      for (final chapter in toc.chapters) {
+        verses += (await repo.chapter(chapter.id)).verses.length;
+      }
+      expect(verses, entry.value);
+      final meta = (await store.get<Map>('bundle_meta:${entry.key}'))!;
+      expect(meta['index_count'], entry.key == 'bhagavata-purana' ? 98765 : 6300);
+      expect(await store.isBundleReady(entry.key, meta['generated_at'] as String?), isTrue);
+    }
+    assets.reads.clear();
+    await store.importAllAssetBundles(assets: assets);
+    expect(assets.reads, ['assets/offline_parts/catalog.json'], reason: 'warm startup must not decode any corpus');
+  });
 
   test('toc and chapter load from bundle', () async {
     final toc = await repo.toc('bhagavata-purana');
@@ -49,8 +74,7 @@ void main() {
   });
 
   test('library imports Gita alongside Bhāgavata and searches both works', () async {
-    final gita = jsonDecode(File('assets/bundles/bhagavad-gita.json').readAsStringSync()) as Map<String, dynamic>;
-    await store.importBundle(gita);
+    await store.importAssetBundle('bhagavad-gita', assets: assets);
     expect(await store.bundleSlugs(), ['bhagavad-gita', 'bhagavata-purana']);
 
     final toc = await repo.toc('bhagavad-gita');
@@ -193,8 +217,7 @@ void main() {
   test('index searches late Bhāgavata verse and BG 18.66 by exact ref', () async {
     final late = await repo.search('12.13.23', workSlug: 'bhagavata-purana');
     expect(late.map((h) => h.ref), contains('12.13.23'));
-    final gita = jsonDecode(File('assets/bundles/bhagavad-gita.json').readAsStringSync()) as Map<String, dynamic>;
-    await store.importBundle(gita);
+    await store.importAssetBundle('bhagavad-gita', assets: assets);
     final bg = await repo.search('18.66', workSlug: 'bhagavad-gita');
     expect(bg.map((h) => h.ref), contains('18.66'));
     expect(bg.every((h) => h.workSlug == 'bhagavad-gita'), isTrue);
