@@ -8,8 +8,8 @@
 //      answers per UTC day (counted via qa_answers_today(), RLS-scoped).
 //      Anonymous callers are not per-user capped — they have no stored counter;
 //      provider spend is governed by the project budget instead.
-//   3. Retrieve candidate verses with `retrieve_for_qa` (lexical + entity
-//      match; pgvector similarity is merged in when embeddings exist).
+//   3. Resolve bounded candidate references via indexed work/ref and verse ID
+//      lookups. Never run corpus-wide lexical/vector ranking on this path.
 //   4. Conversation continuity: when the caller passes a session_id they own,
 //      the last few exchanges are replayed as chat turns so follow-up
 //      questions resolve correctly (pure logic in context.ts).
@@ -26,11 +26,12 @@
 //      session_id + the assistant message_id (the app needs it for feedback).
 //
 // Secrets (set with `supabase secrets set`): OPENAI_API_KEY. Optional:
-// AI_MODEL, EMBEDDING_MODEL, ASK_DAILY_CAP (default 30, 0 disables),
+// AI_MODEL, ASK_DAILY_CAP (default 30, 0 disables),
 // OPENAI_BASE_URL (any OpenAI-compatible endpoint).
 // Never fabricates scripture: the model sees real verse text only, and the
 // output is constrained to cite it.
 
+import { retrievePassages, type Passage } from "./retrieval.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";
 import { ground, type AllowedCitations } from "./grounding.ts";
 import { capReached, clampQuestion, prepareHistory } from "./context.ts";
@@ -40,17 +41,11 @@ const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY")!;
 const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY") ?? "";
 const OPENAI_BASE_URL = Deno.env.get("OPENAI_BASE_URL") ?? "https://api.openai.com/v1";
 const MODEL = Deno.env.get("AI_MODEL") ?? "gpt-4o-mini";
-const EMBEDDING_MODEL = Deno.env.get("EMBEDDING_MODEL") ?? "text-embedding-3-small";
 const DAILY_CAP = Math.max(0, parseInt(Deno.env.get("ASK_DAILY_CAP") ?? "30", 10) || 30);
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
-
-type Passage = {
-  verse_id: string; ref: string; work_slug: string; edition_id: string; edition_title: string;
-  language_code: string; body: string; attribution_text: string; rank: number;
 };
 
 const LANG_NAME: Record<string, string> = { en: "English", ml: "Malayalam", hi: "Hindi", sa: "Sanskrit" };
@@ -89,23 +84,10 @@ Deno.serve(async (req) => {
       }
     }
 
-    // 3. retrieval (lexical + entity)
-    const { data: lexical, error: rerr } = await sb.rpc("retrieve_for_qa", {
-      p_query: question, p_work_slug: work_slug, p_language: language, p_limit: 8,
-    });
-    if (rerr) throw rerr;
-    let passages: Passage[] = lexical ?? [];
-
-    // 3b. vector retrieval (if embeddings exist) — merged by verse
-    try {
-      const emb = await embed(question);
-      if (emb) {
-        const { data: vec } = await sb.rpc("match_verse_contents", { p_embedding: emb, p_language: language, p_work_slug: work_slug, p_limit: 8 });
-        for (const v of vec ?? []) {
-          if (!passages.some((p) => p.verse_id === v.verse_id && p.edition_id === v.edition_id)) passages.push(v);
-        }
-      }
-    } catch (_) { /* embeddings optional */ }
+    // Exact indexed lookups only. Candidate references are not trusted text:
+    // the database and existing grounding guard remain the source of truth.
+    let passages = await retrievePassages(sb, question, work_slug, language,
+      () => selectReferences(question, work_slug));
 
     // Prefer translations in the user's language, then base text; cap ~12 passages
     passages = dedupe(passages).slice(0, 12);
@@ -275,15 +257,26 @@ function dedupe(ps: Passage[]): Passage[] {
   return out;
 }
 
-async function embed(text: string): Promise<number[] | null> {
-  const res = await fetch(`${OPENAI_BASE_URL}/embeddings`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${OPENAI_API_KEY}` },
-    body: JSON.stringify({ model: EMBEDDING_MODEL, input: text }),
-  });
-  if (!res.ok) return null;
-  const d = await res.json();
-  return d.data?.[0]?.embedding ?? null;
+async function selectReferences(question: string, work: string | null): Promise<unknown> {
+  // No corpus search fallback on provider failure or invalid/nonexistent refs.
+  try {
+    const res = await fetch(`${OPENAI_BASE_URL}/chat/completions`, {
+      method: "POST", signal: AbortSignal.timeout(15000),
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${OPENAI_API_KEY}` },
+      body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 350,
+        response_format: { type: "json_object" }, messages: [
+          { role: "system", content: `Select at most 8 scripture passage references relevant to the question.
+Return only JSON {"passages":[{"work_slug":"bhagavad-gita","ref":"2.47"}]}.
+Allowed works: ${work ?? "bhagavata-purana and bhagavad-gita"}.
+Bhagavata references have canto.chapter.verse; Gita references have chapter.verse.
+Do not supply quotations or answers. If unsure return an empty passages array. These are candidates that will be checked against the database.` },
+          { role: "user", content: question },
+        ] }),
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return JSON.parse(data.choices?.[0]?.message?.content ?? "{}").passages;
+  } catch (_) { return []; }
 }
 
 function json(body: unknown, status = 200) {
