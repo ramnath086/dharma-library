@@ -18,10 +18,14 @@ jobs:
         with:
           version: latest
       - name: Link Supabase project
+        # `link` only records the project ref for later commands; it applies no
+        # migrations. The DB password is passed purely so the CLI never drops
+        # into an interactive prompt on a non-TTY runner.
         run: supabase link --project-ref "$SUPABASE_PROJECT_REF"
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
           SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
       - name: Deploy ask edge function
         run: supabase functions deploy ask
         env:
