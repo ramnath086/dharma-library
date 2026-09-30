@@ -27,10 +27,30 @@ export function candidates(value: unknown): Candidate[] {
   return out;
 }
 
+/** Names used by readers as well as the canonical citation short codes. */
+const WORK_NAME = /\b(BG|SB|Bhagavad[ -]+G[iī]t[aā]|(?:(?:Srimad|Shrimad|Śrīmad|Sri|Shri|Śrī)[ -]+)?Bh[aā]gavat(?:am|a(?:[ -]+Pur[aā]ṇa)?))\b/giu;
+
+function namedWork(name: string): string {
+  return /^(?:BG|Bhagavad)/i.test(name) ? WORKS.BG : WORKS.SB;
+}
+
+/** Explicit names override the app's default work for general questions too. */
+export function requestedWork(question: string, fallback: string | null): string | null {
+  const names = [...question.matchAll(WORK_NAME)].map((m) => namedWork(m[0]));
+  const unique = [...new Set(names)];
+  return unique.length === 1 ? unique[0] : unique.length > 1 ? null : fallback;
+}
+
 export function explicitCandidates(question: string, work: string | null): Candidate[] {
   const found: Candidate[] = [];
-  for (const m of question.matchAll(/\b(?:(SB|BG)\s+)?(\d{1,3}(?:\.\d{1,3}){1,2})\b/gi)) {
-    found.push({ work_slug: m[1] ? WORKS[m[1].toUpperCase()] : work ?? '', ref: m[2] });
+  const names = [...question.matchAll(WORK_NAME)];
+  const defaultWork = requestedWork(question, work);
+  for (const m of question.matchAll(/\b(\d{1,3}(?:\.\d{1,3}){1,2})\b/g)) {
+    // Bind to the preceding work name for comparisons, rather than letting
+    // the UI's default SB scope swallow a named Gita reference.
+    const preceding = names.filter((n) => n.index! < m.index!).at(-1);
+    const scope = preceding ? namedWork(preceding[0]) : defaultWork;
+    found.push({ work_slug: scope ?? '', ref: m[1] });
   }
   return candidates(found);
 }
@@ -40,11 +60,16 @@ export async function retrievePassages(
   select: () => Promise<unknown>,
 ): Promise<Passage[]> {
   const explicit = explicitCandidates(question, work);
-  const refs = explicit.length ? explicit : candidates(await select()).filter((c) => !work || c.work_slug === work);
-  if (!refs.length) return [];
+  const scope = requestedWork(question, work);
+  const refs = explicit.length ? explicit : candidates(await select()).filter((c) => !scope || c.work_slug === scope);
+  if (!refs.length) {
+    console.info("ask.retrieval", JSON.stringify({ stage: "candidates", count: 0 }));
+    return [];
+  }
   const { data: works, error: we } = await sb.from('works').select('id,slug')
     .in('slug', [...new Set(refs.map((c) => c.work_slug))]).eq('status', 'published').limit(2);
   if (we) throw we;
+  console.info("ask.retrieval", JSON.stringify({ stage: "works", count: works?.length ?? 0 }));
   const passages: Passage[] = [];
   for (const w of works ?? []) {
     // Unique btree (work_id, ref), no text transforms, OR ranks or wildcard scans.
@@ -52,18 +77,21 @@ export async function retrievePassages(
       .eq('work_id', w.id).in('ref', refs.filter((c) => c.work_slug === w.slug).map((c) => c.ref))
       .eq('status', 'published').limit(MAX_CANDIDATES);
     if (ve) throw ve;
+    console.info("ask.retrieval", JSON.stringify({ stage: "verses", work: w.slug, count: verses?.length ?? 0 }));
     if (!verses?.length) continue;
     const { data: editions, error: ee } = await sb.from('v_editions')
-      .select('id,title,language_code,kind,script_code,attribution_text').eq('work_id', w.id).order('sort_order').limit(32);
+      .select('id,title,language_code,kind,script_code,attribution_text').eq('work_id', w.id).eq('status', 'published').order('sort_order').limit(32);
     if (ee) throw ee;
     const eligible = (editions ?? []).filter((e: Record<string, string>) =>
       (e.kind === 'translation' && e.language_code === language) || (e.kind === 'transliteration' && e.script_code === 'Latn')).slice(0, 4);
+    console.info("ask.retrieval", JSON.stringify({ stage: "editions", work: w.slug, count: eligible.length }));
     if (!eligible.length) continue;
     // Unique btree (verse_id, edition_id); at most 8 verses x 4 editions.
     const { data: contents, error: ce } = await sb.from('verse_contents').select('verse_id,edition_id,body')
       .in('verse_id', verses.map((v: { id: string }) => v.id)).in('edition_id', eligible.map((e: { id: string }) => e.id))
       .eq('status', 'published').limit(MAX_CANDIDATES * 4);
     if (ce) throw ce;
+    console.info("ask.retrieval", JSON.stringify({ stage: "contents", work: w.slug, count: contents?.length ?? 0 }));
     for (const v of verses) {
       for (const e of eligible) {
         const text = (contents ?? []).find((c: { verse_id: string; edition_id: string }) => c.verse_id === v.id && c.edition_id === e.id);

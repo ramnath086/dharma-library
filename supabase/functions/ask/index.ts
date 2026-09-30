@@ -31,7 +31,7 @@
 // Never fabricates scripture: the model sees real verse text only, and the
 // output is constrained to cite it.
 
-import { retrievePassages, type Passage } from "./retrieval.ts";
+import { retrievePassages, requestedWork, type Passage } from "./retrieval.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";
 import { ground, type AllowedCitations } from "./grounding.ts";
 import { capReached, clampQuestion, prepareHistory } from "./context.ts";
@@ -87,7 +87,7 @@ Deno.serve(async (req) => {
     // Exact indexed lookups only. Candidate references are not trusted text:
     // the database and existing grounding guard remain the source of truth.
     let passages = await retrievePassages(sb, question, work_slug, language,
-      () => selectReferences(question, work_slug));
+      () => selectReferences(question, requestedWork(question, work_slug)));
 
     // Prefer translations in the user's language, then base text; cap ~12 passages
     passages = dedupe(passages).slice(0, 12);
@@ -149,6 +149,7 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
 
     // 7. validate citations (hallucination guard, per work)
     const g = ground(text, allowed);
+    console.info("ask.grounding", JSON.stringify({ passages: passages.length, valid_citations: g.valid.length }));
     const citations: CitationPayload[] = [];
     for (const c of g.valid) {
       // `allowed` was built from `passages`, so a valid (work, ref) always resolves
@@ -185,6 +186,7 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
 
     return json({ answer, citations, grounded, model: MODEL, session_id: sid, message_id: messageId });
   } catch (e) {
+    console.error("ask.error", String(e?.message ?? e));
     return json({ error: String(e?.message ?? e) }, 500);
   }
 });
@@ -236,6 +238,8 @@ async function resolveWorks(sb: WorksClient, slugs: string[]): Promise<Map<strin
 function shortCodeFor(slug: string, info: Map<string, WorkInfo>): string {
   const stored = info.get(slug)?.short_code;
   if (stored) return stored;
+  if (slug === "bhagavad-gita") return "BG";
+  if (slug === "bhagavata-purana") return "SB";
   return String(slug ?? "").replace(/[^A-Za-z0-9]/g, "").slice(0, 6).toUpperCase() || "WORK";
 }
 
