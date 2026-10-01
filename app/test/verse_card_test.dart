@@ -31,6 +31,19 @@ const _iastBody = 'janmādy asya yato ’nvayād itaratas cārtheṣv abhijña�
 const _pilotTranslation =
     'Oṁ. Obeisance to the blessed Lord Vāsudeva.\nWe meditate upon the supreme truth.';
 
+/// The published pilot translation of 1.1.2 — the verse just after the first.
+const _secondTranslation =
+    'Here is set forth the highest dharma, free of every ulterior motive, for the good who are without envy; '
+    'here the real substance is to be known — that which grants well-being and uproots the threefold misery. '
+    'In this Śrīmad Bhāgavata, composed by the great sage, what need is there of any other scripture? '
+    'The Lord is at once captured in the heart of those who are fortunate enough to wish to hear it — in that very moment.';
+
+/// Published word meanings of 1.1.2 (subset, verbatim from the bundle).
+const _secondMeanings = [
+  {'word': 'dharmaḥ', 'meaning': 'dharma, religion'},
+  {'word': 'projjhita-kaitavaḥ', 'meaning': 'from which all deceit / ulterior motive is cast out'},
+];
+
 Map<String, dynamic> _rendering(String kind, String body, {String lang = 'sa', String script = 'Deva', String id = 'ed-1', List<Map<String, dynamic>>? wm}) => {
       'edition_id': id,
       'kind': kind,
@@ -54,20 +67,33 @@ Map<String, dynamic> _edition(String id, String kind, String lang, String script
 
 /// A verse as published today: mūla + IAST always, and translation / word
 /// meanings only for the 1.1.1–1.1.10 pilot.
-Verse _verse({required bool withTranslation, required bool withWordMeanings}) => Verse.fromJson({
-      'id': 'v-1.1.1',
-      'ref': '1.1.1',
+Verse _verse({
+  required bool withTranslation,
+  required bool withWordMeanings,
+  String ref = '1.1.1',
+  String translation = _pilotTranslation,
+  List<Map<String, dynamic>> meanings = const [
+    {'word': 'janma-ādi', 'meaning': 'birth and the rest (sustenance, dissolution)'},
+  ],
+}) => Verse.fromJson({
+      'id': 'v-$ref',
+      'ref': ref,
       'kind': 'verse',
       'ordinal': 1,
       'meter': 'anuṣṭubh',
       'renderings': [
         _rendering('base_text', _devaBody),
         _rendering('transliteration', _iastBody, script: 'Latn', id: 'ed-2'),
-        if (withTranslation) _rendering('translation', _pilotTranslation, lang: 'en', script: 'Latn', id: 'ed-3'),
+        if (withTranslation) _rendering('translation', translation, lang: 'en', script: 'Latn', id: 'ed-3'),
         if (withWordMeanings)
-          _rendering('word_meanings', 'janma-ādi — birth and the rest', lang: 'en', script: 'Latn', id: 'ed-4', wm: [
-            {'word': 'janma-ādi', 'meaning': 'birth and the rest (sustenance, dissolution)'},
-          ]),
+          _rendering(
+            'word_meanings',
+            meanings.map((m) => '${m['word']} — ${m['meaning']}').join('\n'),
+            lang: 'en',
+            script: 'Latn',
+            id: 'ed-4',
+            wm: meanings,
+          ),
       ],
     });
 
@@ -145,6 +171,31 @@ void main() {
     expect(find.text('No translation is available for this verse yet — Sanskrit text only.'), findsNothing);
     expect(find.text('No word meanings are available for this verse yet.'), findsNothing);
   });
+
+  testWidgets(
+    'a later pilot verse (1.1.2) renders its translation and word meanings too',
+    timeout: const Timeout(Duration(minutes: 2)),
+    (tester) async {
+      // Regression: the Bhāgavata pilot covers 1.1.1–1.1.10, so the reader must
+      // show translation + word meanings for 1.1.2 exactly as for 1.1.1.
+      await _pump(
+        tester,
+        verse: _verse(
+          withTranslation: true,
+          withWordMeanings: true,
+          ref: '1.1.2',
+          translation: _secondTranslation,
+          meanings: _secondMeanings,
+        ),
+        withWordMeanings: true,
+      );
+
+      expect(_bodies(tester), contains(_secondTranslation)); // verbatim, unmodified
+      expect(find.text('Word meanings'), findsOneWidget);
+      expect(find.text('No translation is available for this verse yet — Sanskrit text only.'), findsNothing);
+      expect(find.text('No word meanings are available for this verse yet.'), findsNothing);
+    },
+  );
 
   testWidgets('the disclosure is localized in Malayalam', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
     await _pump(
