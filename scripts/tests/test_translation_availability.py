@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
@@ -77,6 +78,51 @@ class TranslationAvailability(unittest.TestCase):
                 self.assertFalse(_corpus(ref).get("en"), f"invented English at {ref}")
                 self.assertNotIn("translation", self.bundle_renderings[ref], f"invented translation at {ref}")
                 self.assertNotIn("word_meanings", self.bundle_renderings[ref], f"invented word meanings at {ref}")
+
+
+class GeneratedImport(unittest.TestCase):
+    """`content/generated/*.sql` is what the database actually receives."""
+
+    @staticmethod
+    def _translation_edition(work_dir: pathlib.Path) -> str:
+        work = json.loads((work_dir / "work.json").read_text(encoding="utf-8"))
+        return next(
+            e["slug"]
+            for e in work["editions"]
+            if e.get("kind") == "translation" and e.get("language_code") == "en"
+        )
+
+    @staticmethod
+    def _verses_with_english(work_dir: pathlib.Path) -> set:
+        refs = set()
+        for path in sorted(work_dir.glob("**/verses.json")):
+            for verse in json.loads(path.read_text(encoding="utf-8"))["verses"]:
+                if (verse.get("en") or "").strip():
+                    refs.add(verse["ref"])
+        return refs
+
+    def _imported_refs(self, slug: str, edition: str) -> set:
+        pattern = re.compile(
+            r"ref='([\d.]+)'\s+and work_id=\(select id from works where slug='%s'\)\),\s*"
+            r"\(select id from editions where slug='%s'" % (re.escape(slug), re.escape(edition))
+        )
+        found = set()
+        with (ROOT / "content" / "generated" / f"{slug}.sql").open(encoding="utf-8") as handle:
+            for line in handle:
+                found.update(pattern.findall(line))
+        return found
+
+    def test_every_verse_with_a_translation_gets_one_imported(self):
+        """Both works: nothing that exists in the source is left behind on import."""
+        for slug in ("bhagavad-gita", "bhagavata-purana"):
+            with self.subTest(work=slug):
+                work_dir = ROOT / "content" / slug
+                expected = self._verses_with_english(work_dir)
+                self.assertTrue(expected, f"{slug} unexpectedly has no translated verses")
+                imported = self._imported_refs(slug, self._translation_edition(work_dir))
+                missing = sorted(expected - imported, key=lambda r: [int(x) for x in r.split(".")])
+                self.assertEqual(missing, [], f"{slug}: translation not imported for {missing}")
+                self.assertEqual(len(expected), len(imported & expected), f"{slug}: wrong row count")
 
 
 if __name__ == "__main__":
