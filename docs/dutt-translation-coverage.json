@@ -37,8 +37,8 @@
       "corpus_verses": 23,
       "paragraphs": 4,
       "sentences": 19,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 0.754
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -48,7 +48,7 @@
       "paragraphs": 1,
       "sentences": 33,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -57,8 +57,8 @@
       "corpus_verses": 45,
       "paragraphs": 4,
       "sentences": 49,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.7223
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -67,8 +67,8 @@
       "corpus_verses": 33,
       "paragraphs": 2,
       "sentences": 32,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.9182
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -78,7 +78,7 @@
       "paragraphs": 4,
       "sentences": 50,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -88,7 +88,7 @@
       "paragraphs": 19,
       "sentences": 82,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -97,8 +97,8 @@
       "corpus_verses": 58,
       "paragraphs": 3,
       "sentences": 54,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 8,
+      "mean_score": 0.9149
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -107,8 +107,8 @@
       "corpus_verses": 52,
       "paragraphs": 13,
       "sentences": 99,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.7742
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -117,8 +117,8 @@
       "corpus_verses": 49,
       "paragraphs": 24,
       "sentences": 147,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 6,
+      "mean_score": 0.8694
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -127,8 +127,8 @@
       "corpus_verses": 36,
       "paragraphs": 26,
       "sentences": 115,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 8,
+      "mean_score": 0.8717
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -137,8 +137,8 @@
       "corpus_verses": 39,
       "paragraphs": 6,
       "sentences": 35,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -147,8 +147,8 @@
       "corpus_verses": 36,
       "paragraphs": 4,
       "sentences": 36,
-      "aligned": 36,
-      "method": "one_to_one"
+      "aligned": 3,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -157,8 +157,8 @@
       "corpus_verses": 60,
       "paragraphs": 5,
       "sentences": 115,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 7,
+      "mean_score": 0.9677
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -167,8 +167,8 @@
       "corpus_verses": 51,
       "paragraphs": 10,
       "sentences": 83,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 0.7276
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -178,7 +178,7 @@
       "paragraphs": 3,
       "sentences": 37,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -187,8 +187,8 @@
       "corpus_verses": 45,
       "paragraphs": 5,
       "sentences": 96,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -198,7 +198,7 @@
       "paragraphs": 1,
       "sentences": 37,
       "aligned": 0,
-      "method": "empty"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -207,8 +207,8 @@
       "corpus_verses": 39,
       "paragraphs": 4,
       "sentences": 41,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -218,7 +218,7 @@
       "paragraphs": 8,
       "sentences": 52,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -228,7 +228,7 @@
       "paragraphs": 8,
       "sentences": 23,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -237,8 +237,8 @@
       "corpus_verses": 25,
       "paragraphs": 20,
       "sentences": 77,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 5,
+      "mean_score": 0.9101
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -247,8 +247,8 @@
       "corpus_verses": 45,
       "paragraphs": 10,
       "sentences": 58,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 5,
+      "mean_score": 0.8655
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -258,7 +258,7 @@
       "paragraphs": 12,
       "sentences": 14,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -267,8 +267,8 @@
       "corpus_verses": 23,
       "paragraphs": 13,
       "sentences": 104,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 0.754
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -277,8 +277,8 @@
       "corpus_verses": 33,
       "paragraphs": 19,
       "sentences": 103,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 5,
+      "mean_score": 0.8883
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -287,8 +287,8 @@
       "corpus_verses": 40,
       "paragraphs": 19,
       "sentences": 91,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 5,
+      "mean_score": 0.72
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -297,8 +297,8 @@
       "corpus_verses": 39,
       "paragraphs": 7,
       "sentences": 93,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 0.5119
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -307,8 +307,8 @@
       "corpus_verses": 58,
       "paragraphs": 27,
       "sentences": 158,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.9556
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -317,8 +317,8 @@
       "corpus_verses": 52,
       "paragraphs": 29,
       "sentences": 145,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.7742
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -327,8 +327,8 @@
       "corpus_verses": 36,
       "paragraphs": 26,
       "sentences": 184,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.8431
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -337,8 +337,8 @@
       "corpus_verses": 51,
       "paragraphs": 8,
       "sentences": 71,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 0.7276
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -347,8 +347,8 @@
       "corpus_verses": 40,
       "paragraphs": 35,
       "sentences": 118,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 6,
+      "mean_score": 0.9147
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -358,7 +358,7 @@
       "paragraphs": 11,
       "sentences": 150,
       "aligned": 0,
-      "method": "empty"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -367,8 +367,8 @@
       "corpus_verses": 45,
       "paragraphs": 59,
       "sentences": 229,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -378,7 +378,7 @@
       "paragraphs": 3,
       "sentences": 31,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -388,7 +388,7 @@
       "paragraphs": 3,
       "sentences": 18,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -398,7 +398,7 @@
       "paragraphs": 7,
       "sentences": 80,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -407,8 +407,8 @@
       "corpus_verses": 50,
       "paragraphs": 60,
       "sentences": 241,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 6,
+      "mean_score": 0.8125
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -417,8 +417,8 @@
       "corpus_verses": 40,
       "paragraphs": 27,
       "sentences": 121,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 0.6942
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -428,7 +428,7 @@
       "paragraphs": 14,
       "sentences": 179,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -437,8 +437,8 @@
       "corpus_verses": 29,
       "paragraphs": 109,
       "sentences": 307,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 5,
+      "mean_score": 0.6956
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -447,8 +447,8 @@
       "corpus_verses": 41,
       "paragraphs": 28,
       "sentences": 220,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 4,
+      "mean_score": 0.7217
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -457,8 +457,8 @@
       "corpus_verses": 50,
       "paragraphs": 3,
       "sentences": 95,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.899
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -467,8 +467,8 @@
       "corpus_verses": 37,
       "paragraphs": 15,
       "sentences": 48,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.8892
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -477,8 +477,8 @@
       "corpus_verses": 31,
       "paragraphs": 5,
       "sentences": 64,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 0.8904
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -487,8 +487,8 @@
       "corpus_verses": 28,
       "paragraphs": 17,
       "sentences": 93,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.7906
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -497,8 +497,8 @@
       "corpus_verses": 38,
       "paragraphs": 15,
       "sentences": 132,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.9452
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -507,8 +507,8 @@
       "corpus_verses": 53,
       "paragraphs": 9,
       "sentences": 35,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 0.6241
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -517,8 +517,8 @@
       "corpus_verses": 56,
       "paragraphs": 6,
       "sentences": 46,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 5,
+      "mean_score": 0.7252
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -527,8 +527,8 @@
       "corpus_verses": 39,
       "paragraphs": 22,
       "sentences": 183,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 6,
+      "mean_score": 0.8395
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -537,8 +537,8 @@
       "corpus_verses": 57,
       "paragraphs": 10,
       "sentences": 87,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.9788
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -547,8 +547,8 @@
       "corpus_verses": 44,
       "paragraphs": 22,
       "sentences": 132,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.5185
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -557,8 +557,8 @@
       "corpus_verses": 72,
       "paragraphs": 7,
       "sentences": 95,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.921
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -567,8 +567,8 @@
       "corpus_verses": 30,
       "paragraphs": 4,
       "sentences": 23,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -577,8 +577,8 @@
       "corpus_verses": 44,
       "paragraphs": 6,
       "sentences": 82,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 0.6617
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -587,8 +587,8 @@
       "corpus_verses": 45,
       "paragraphs": 9,
       "sentences": 71,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.9017
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -597,8 +597,8 @@
       "corpus_verses": 34,
       "paragraphs": 24,
       "sentences": 231,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -608,7 +608,7 @@
       "paragraphs": 9,
       "sentences": 28,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -618,7 +618,7 @@
       "paragraphs": 6,
       "sentences": 64,
       "aligned": 0,
-      "method": "empty"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -628,7 +628,7 @@
       "paragraphs": 4,
       "sentences": 42,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -637,8 +637,8 @@
       "corpus_verses": 19,
       "paragraphs": 6,
       "sentences": 22,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.8735
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -647,8 +647,8 @@
       "corpus_verses": 35,
       "paragraphs": 2,
       "sentences": 31,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 0.4298
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -658,7 +658,7 @@
       "paragraphs": 4,
       "sentences": 30,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -667,8 +667,8 @@
       "corpus_verses": 31,
       "paragraphs": 2,
       "sentences": 28,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 1,
+      "mean_score": 0.8111
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -678,7 +678,7 @@
       "paragraphs": 2,
       "sentences": 26,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -687,8 +687,8 @@
       "corpus_verses": 25,
       "paragraphs": 8,
       "sentences": 39,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.6918
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -698,7 +698,7 @@
       "paragraphs": 6,
       "sentences": 40,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -708,7 +708,7 @@
       "paragraphs": 5,
       "sentences": 41,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -717,8 +717,8 @@
       "corpus_verses": 15,
       "paragraphs": 5,
       "sentences": 39,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -727,8 +727,8 @@
       "corpus_verses": 29,
       "paragraphs": 2,
       "sentences": 21,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -737,8 +737,8 @@
       "corpus_verses": 23,
       "paragraphs": 14,
       "sentences": 160,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.9988
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -747,8 +747,8 @@
       "corpus_verses": 46,
       "paragraphs": 3,
       "sentences": 49,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 6,
+      "mean_score": 0.9747
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -758,7 +758,7 @@
       "paragraphs": 2,
       "sentences": 11,
       "aligned": 0,
-      "method": "count_mismatch"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -767,8 +767,8 @@
       "corpus_verses": 9,
       "paragraphs": 7,
       "sentences": 94,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.9271
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -777,8 +777,8 @@
       "corpus_verses": 15,
       "paragraphs": 4,
       "sentences": 28,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 2,
+      "mean_score": 0.7221
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -787,8 +787,8 @@
       "corpus_verses": 40,
       "paragraphs": 9,
       "sentences": 73,
-      "aligned": 0,
-      "method": "count_mismatch"
+      "aligned": 3,
+      "mean_score": 0.9332
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -798,7 +798,7 @@
       "paragraphs": 0,
       "sentences": 0,
       "aligned": 0,
-      "method": "empty"
+      "mean_score": 0.0
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -808,13 +808,374 @@
       "paragraphs": 7,
       "sentences": 62,
       "aligned": 0,
-      "method": "empty"
+      "mean_score": 0.0
+    }
+  ],
+  "missing_chapters": [
+    "1.14",
+    "1.18",
+    "2.5",
+    "2.7",
+    "2.8",
+    "2.10",
+    "3.7",
+    "3.9",
+    "3.12",
+    "3.13",
+    "3.15",
+    "3.24",
+    "3.32",
+    "3.33",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "4.8",
+    "4.9",
+    "4.10",
+    "4.11",
+    "4.12",
+    "4.13",
+    "4.14",
+    "4.15",
+    "4.16",
+    "4.17",
+    "4.18",
+    "4.19",
+    "4.20",
+    "4.21",
+    "4.22",
+    "4.23",
+    "4.24",
+    "4.25",
+    "4.26",
+    "4.27",
+    "4.28",
+    "4.29",
+    "4.30",
+    "4.31",
+    "5.1",
+    "5.3",
+    "5.7",
+    "5.11",
+    "5.13",
+    "5.18",
+    "5.19",
+    "5.21",
+    "5.24",
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4",
+    "6.5",
+    "6.6",
+    "6.7",
+    "6.8",
+    "6.9",
+    "6.10",
+    "6.11",
+    "6.12",
+    "6.13",
+    "6.14",
+    "6.15",
+    "6.16",
+    "6.17",
+    "6.18",
+    "6.19",
+    "7.1",
+    "7.2",
+    "7.3",
+    "7.4",
+    "7.5",
+    "7.6",
+    "7.7",
+    "7.8",
+    "7.9",
+    "7.10",
+    "7.11",
+    "7.12",
+    "7.13",
+    "7.14",
+    "7.15",
+    "8.1",
+    "8.2",
+    "8.3",
+    "8.4",
+    "8.5",
+    "8.6",
+    "8.7",
+    "8.8",
+    "8.9",
+    "8.10",
+    "8.11",
+    "8.12",
+    "8.13",
+    "8.14",
+    "8.15",
+    "8.16",
+    "8.17",
+    "8.18",
+    "8.19",
+    "8.20",
+    "8.21",
+    "8.22",
+    "8.23",
+    "8.24",
+    "9.1",
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5",
+    "9.6",
+    "9.7",
+    "9.8",
+    "9.9",
+    "9.10",
+    "9.11",
+    "9.12",
+    "9.13",
+    "9.14",
+    "9.15",
+    "9.16",
+    "9.17",
+    "9.18",
+    "9.19",
+    "9.20",
+    "9.21",
+    "9.22",
+    "9.23",
+    "9.24",
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.4",
+    "10.5",
+    "10.6",
+    "10.7",
+    "10.8",
+    "10.9",
+    "10.10",
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.14",
+    "10.15",
+    "10.16",
+    "10.17",
+    "10.18",
+    "10.19",
+    "10.20",
+    "10.21",
+    "10.22",
+    "10.23",
+    "10.24",
+    "10.25",
+    "10.26",
+    "10.27",
+    "10.28",
+    "10.29",
+    "10.30",
+    "10.31",
+    "10.32",
+    "10.33",
+    "10.34",
+    "10.35",
+    "10.36",
+    "10.37",
+    "10.38",
+    "10.39",
+    "10.40",
+    "10.41",
+    "10.42",
+    "10.43",
+    "10.44",
+    "10.45",
+    "10.46",
+    "10.47",
+    "10.48",
+    "10.49",
+    "10.50",
+    "10.51",
+    "10.52",
+    "10.53",
+    "10.54",
+    "10.55",
+    "10.56",
+    "10.57",
+    "10.58",
+    "10.59",
+    "10.60",
+    "10.61",
+    "10.62",
+    "10.63",
+    "10.64",
+    "10.65",
+    "10.66",
+    "10.67",
+    "10.68",
+    "10.69",
+    "10.70",
+    "10.71",
+    "10.72",
+    "10.73",
+    "10.74",
+    "10.75",
+    "10.76",
+    "10.77",
+    "10.78",
+    "10.79",
+    "10.80",
+    "10.81",
+    "10.82",
+    "10.83",
+    "10.84",
+    "10.85",
+    "10.86",
+    "10.87",
+    "10.88",
+    "10.89",
+    "10.90",
+    "11.1",
+    "11.2",
+    "11.3",
+    "11.4",
+    "11.5",
+    "11.6",
+    "11.7",
+    "11.8",
+    "11.9",
+    "11.10",
+    "11.11",
+    "11.12",
+    "11.13",
+    "11.14",
+    "11.15",
+    "11.16",
+    "11.17",
+    "11.18",
+    "11.19",
+    "11.20",
+    "11.21",
+    "11.22",
+    "11.23",
+    "11.24",
+    "11.25",
+    "11.26",
+    "11.27",
+    "11.28",
+    "11.29",
+    "11.30",
+    "11.31",
+    "12.1",
+    "12.2",
+    "12.3",
+    "12.4",
+    "12.5",
+    "12.6",
+    "12.7",
+    "12.8",
+    "12.9",
+    "12.10",
+    "12.11",
+    "12.12",
+    "12.13"
+  ],
+  "unaligned_chapters": [
+    "1.2",
+    "1.5",
+    "1.6",
+    "1.16",
+    "1.45",
+    "2.2",
+    "2.3",
+    "2.9",
+    "1.40",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.8",
+    "3.31",
+    "3.42",
+    "5.2",
+    "5.6",
+    "5.9",
+    "5.12",
+    "5.14",
+    "5.22",
+    "5.31",
+    "5.50"
+  ],
+  "samples": [
+    {
+      "ref": "1.1.3",
+      "score": 0.9218,
+      "dutt": "Drink, ye appreciative and thoughtful on earth, every moment of your lives and for evermore — even when you have acquired the final beatitude — of the Bhagabata, the ambrosial and juicy fruit of the Kalpa' tree constituting the Vedas, dropped from the mouth of Suka.f In the Naimisha forest, the land of the Winkless Divinity, Saunaka and other sages performed, through a hundred years, a sacrifice f"
+    },
+    {
+      "ref": "1.1.7",
+      "score": 0.4155,
+      "dutt": "Suta, thou knowest — -good betide thee! what the Protector of the devout was born of Devaki to Vasudeva, to perform."
+    },
+    {
+      "ref": "1.1.12",
+      "score": 0.6787,
+      "dutt": "Suta, thou knowest — -good betide thee! what the Protector of the devout was born of Devaki to Vasudeva, to perform."
+    },
+    {
+      "ref": "1.1.15",
+      "score": 1.0,
+      "dutt": "Suta, thou knowest — -good betide thee! what the Protector of the devout was born of Devaki to Vasudeva, to perform."
+    },
+    {
+      "ref": "1.3.1",
+      "score": 0.6173,
+      "dutt": "SuTA said, — “The Lord, desirous of creation, first assumed the form of Purusha composed of sixteen elements,-— out of seven other subtle elements, Mahat ( intelligence ), etc.; ( the others being egoism and the five subtile rudiments of matter)."
+    },
+    {
+      "ref": "1.3.2",
+      "score": 0.9535,
+      "dutt": "From the lotos of His lake-like navel, as He lay asleep on his bed of waters locked in the sleep of self-communion, sprang Brahma, supreme among the creators of the world, from the disposition of whose limbs, the diversification of the world is supposed to have been determined."
+    },
+    {
+      "ref": "1.3.6",
+      "score": 0.5961,
+      "dutt": "From the lotos of His lake-like navel, as He lay asleep on his bed of waters locked in the sleep of self-communion, sprang Brahma, supreme among the creators of the world, from the disposition of whose limbs, the diversification of the world is supposed to have been determined."
+    },
+    {
+      "ref": "1.4.2",
+      "score": 0.7547,
+      "dutt": "Then spoke Saunaka,the oldest among the sages engaged in that ceremony of long duration — the holy patriarchf given to the study and cultivation of the Rigveda, complimenting Suta in fair terms, as he was speaking in the foregoing manner, — “O Suta, O Suta, O honorable one, O prince of speakers, report to us that holy discourse about the Most High which the mighty Suka hath delivered."
+    },
+    {
+      "ref": "1.4.9",
+      "score": 1.0,
+      "dutt": "I look upon thee as profoundly versed in all themes of discourse excluding the Vedas.” Suta said,— ‘‘With the approach of DvSpara, and the third revolution of the wheel of time, there was born the sage Vyasa of Vasabi by Parasara, as a partial incarnation of Hari."
+    },
+    {
+      "ref": "1.4.21",
+      "score": 1.0,
+      "dutt": "Among these Vedas, Paila alone obtained mastery over the Righ, the sages Jaimini alone studied the Saman; while Vai9ampayana was the only sage that became well versed in the Yajus."
+    },
+    {
+      "ref": "1.4.24",
+      "score": 0.6868,
+      "dutt": "And yet my soul, as encased in the jf body, full as it is of spiritual light, looks very poor and imper- of theosophy, dear to the devout recluse and dear to the, changeless Divinity?’ While Krishna (Vyasa) was reflecting l’ | in this cheerless and self-despising mood, N&rada came to his from his seat in a hurry and paid due honors to the sage arrived, held in reverence even by the gods.”"
+    },
+    {
+      "ref": "1.4.28",
+      "score": 1.0,
+      "dutt": "To me, a devoted, humble, sinless, reverential child, who had tamed my passions, and who assiduously waited upon their steps, these sages, cornpas- siooate towards the meek, when toe Hour tor meir oepanorc approached, graciously communicated the occult knowledge revealed by the Lord Himself,— knowledge by means of which I understood the might of the Maya (illusion), abiding in the Lord Vasudeva, a"
     }
   ],
   "summary": {
     "corpus_verses": 14105,
-    "aligned_verses": 36,
-    "coverage": 0.0026,
+    "aligned_verses": 167,
+    "coverage": 0.0118,
+    "accept_threshold": 0.3,
+    "margin_threshold": 0.1,
     "field": "en_dutt",
     "edition": "sb-en-dutt"
   }

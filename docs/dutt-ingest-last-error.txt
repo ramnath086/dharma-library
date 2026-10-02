@@ -1,14 +1,4 @@
-Traceback (most recent call last):
-  File "/home/runner/work/dharma-library/dharma-library/scripts/ingest_dutt_translation.py", line 761, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "/home/runner/work/dharma-library/dharma-library/scripts/ingest_dutt_translation.py", line 718, in main
-    mapping, report = build(cache, gloss)
-                      ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/dharma-library/dharma-library/scripts/ingest_dutt_translation.py", line 668, in build
-    aligner = Aligner(idf, gloss)
-              ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/dharma-library/dharma-library/scripts/ingest_dutt_translation.py", line 521, in __init__
-    self.accept = accept
-                  ^^^^^^
-NameError: name 'accept' is not defined. Did you mean: 'self.accept'?
+Dutt alignment: 167/14105 verses (1.2%); 55/78 chapters contributed
+  dutt-1895-book-1-2: books [1, 2] chapters 23 (299052 bytes OCR)
+  dutt-1895-book-7-12: books [] chapters 0 (682485 bytes OCR)
+  dutt-1896-book-1-7: books [1, 3, 5] chapters 55 (1560109 bytes OCR)
