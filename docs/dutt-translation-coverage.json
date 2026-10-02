@@ -1,0 +1,821 @@
+{
+  "volumes": [
+    {
+      "key": "dutt-1895-book-1-2",
+      "identifier": "proseenglishtran12dutt",
+      "bytes": 299052,
+      "books": [
+        1,
+        2
+      ],
+      "chapters": 23
+    },
+    {
+      "key": "dutt-1895-book-7-12",
+      "identifier": "india.history.resource.40625",
+      "bytes": 682485,
+      "books": [],
+      "chapters": 0
+    },
+    {
+      "key": "dutt-1896-book-1-7",
+      "identifier": "in.ernet.dli.2015.272582",
+      "bytes": 1560109,
+      "books": [
+        1,
+        3,
+        5
+      ],
+      "chapters": 55
+    }
+  ],
+  "chapters": [
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 1,
+      "corpus_verses": 23,
+      "paragraphs": 4,
+      "sentences": 19,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 2,
+      "corpus_verses": 34,
+      "paragraphs": 1,
+      "sentences": 33,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 3,
+      "corpus_verses": 45,
+      "paragraphs": 4,
+      "sentences": 49,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 4,
+      "corpus_verses": 33,
+      "paragraphs": 2,
+      "sentences": 32,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 5,
+      "corpus_verses": 40,
+      "paragraphs": 4,
+      "sentences": 50,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 6,
+      "corpus_verses": 39,
+      "paragraphs": 19,
+      "sentences": 82,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 7,
+      "corpus_verses": 58,
+      "paragraphs": 3,
+      "sentences": 54,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 8,
+      "corpus_verses": 52,
+      "paragraphs": 13,
+      "sentences": 99,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 9,
+      "corpus_verses": 49,
+      "paragraphs": 24,
+      "sentences": 147,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 10,
+      "corpus_verses": 36,
+      "paragraphs": 26,
+      "sentences": 115,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 11,
+      "corpus_verses": 39,
+      "paragraphs": 6,
+      "sentences": 35,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 12,
+      "corpus_verses": 36,
+      "paragraphs": 4,
+      "sentences": 36,
+      "aligned": 36,
+      "method": "one_to_one"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 13,
+      "corpus_verses": 60,
+      "paragraphs": 5,
+      "sentences": 115,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 15,
+      "corpus_verses": 51,
+      "paragraphs": 10,
+      "sentences": 83,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 16,
+      "corpus_verses": 38,
+      "paragraphs": 3,
+      "sentences": 37,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 17,
+      "corpus_verses": 45,
+      "paragraphs": 5,
+      "sentences": 96,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 1,
+      "adhyaya": 45,
+      "corpus_verses": 0,
+      "paragraphs": 1,
+      "sentences": 37,
+      "aligned": 0,
+      "method": "empty"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 2,
+      "adhyaya": 1,
+      "corpus_verses": 39,
+      "paragraphs": 4,
+      "sentences": 41,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 2,
+      "adhyaya": 2,
+      "corpus_verses": 37,
+      "paragraphs": 8,
+      "sentences": 52,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 2,
+      "adhyaya": 3,
+      "corpus_verses": 25,
+      "paragraphs": 8,
+      "sentences": 23,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 2,
+      "adhyaya": 4,
+      "corpus_verses": 25,
+      "paragraphs": 20,
+      "sentences": 77,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 2,
+      "adhyaya": 6,
+      "corpus_verses": 45,
+      "paragraphs": 10,
+      "sentences": 58,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1895-book-1-2",
+      "skandha": 2,
+      "adhyaya": 9,
+      "corpus_verses": 45,
+      "paragraphs": 12,
+      "sentences": 14,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 1,
+      "corpus_verses": 23,
+      "paragraphs": 13,
+      "sentences": 104,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 4,
+      "corpus_verses": 33,
+      "paragraphs": 19,
+      "sentences": 103,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 5,
+      "corpus_verses": 40,
+      "paragraphs": 19,
+      "sentences": 91,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 6,
+      "corpus_verses": 39,
+      "paragraphs": 7,
+      "sentences": 93,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 7,
+      "corpus_verses": 58,
+      "paragraphs": 27,
+      "sentences": 158,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 8,
+      "corpus_verses": 52,
+      "paragraphs": 29,
+      "sentences": 145,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 10,
+      "corpus_verses": 36,
+      "paragraphs": 26,
+      "sentences": 184,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 15,
+      "corpus_verses": 51,
+      "paragraphs": 8,
+      "sentences": 71,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 19,
+      "corpus_verses": 40,
+      "paragraphs": 35,
+      "sentences": 118,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 1,
+      "adhyaya": 40,
+      "corpus_verses": 0,
+      "paragraphs": 11,
+      "sentences": 150,
+      "aligned": 0,
+      "method": "empty"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 1,
+      "corpus_verses": 45,
+      "paragraphs": 59,
+      "sentences": 229,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 2,
+      "corpus_verses": 34,
+      "paragraphs": 3,
+      "sentences": 31,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 3,
+      "corpus_verses": 28,
+      "paragraphs": 3,
+      "sentences": 18,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 4,
+      "corpus_verses": 36,
+      "paragraphs": 7,
+      "sentences": 80,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 5,
+      "corpus_verses": 50,
+      "paragraphs": 60,
+      "sentences": 241,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 6,
+      "corpus_verses": 40,
+      "paragraphs": 27,
+      "sentences": 121,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 8,
+      "corpus_verses": 33,
+      "paragraphs": 14,
+      "sentences": 179,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 10,
+      "corpus_verses": 29,
+      "paragraphs": 109,
+      "sentences": 307,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 11,
+      "corpus_verses": 41,
+      "paragraphs": 28,
+      "sentences": 220,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 14,
+      "corpus_verses": 50,
+      "paragraphs": 3,
+      "sentences": 95,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 16,
+      "corpus_verses": 37,
+      "paragraphs": 15,
+      "sentences": 48,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 17,
+      "corpus_verses": 31,
+      "paragraphs": 5,
+      "sentences": 64,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 18,
+      "corpus_verses": 28,
+      "paragraphs": 17,
+      "sentences": 93,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 19,
+      "corpus_verses": 38,
+      "paragraphs": 15,
+      "sentences": 132,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 20,
+      "corpus_verses": 53,
+      "paragraphs": 9,
+      "sentences": 35,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 21,
+      "corpus_verses": 56,
+      "paragraphs": 6,
+      "sentences": 46,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 22,
+      "corpus_verses": 39,
+      "paragraphs": 22,
+      "sentences": 183,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 23,
+      "corpus_verses": 57,
+      "paragraphs": 10,
+      "sentences": 87,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 25,
+      "corpus_verses": 44,
+      "paragraphs": 22,
+      "sentences": 132,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 26,
+      "corpus_verses": 72,
+      "paragraphs": 7,
+      "sentences": 95,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 27,
+      "corpus_verses": 30,
+      "paragraphs": 4,
+      "sentences": 23,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 28,
+      "corpus_verses": 44,
+      "paragraphs": 6,
+      "sentences": 82,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 29,
+      "corpus_verses": 45,
+      "paragraphs": 9,
+      "sentences": 71,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 30,
+      "corpus_verses": 34,
+      "paragraphs": 24,
+      "sentences": 231,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 31,
+      "corpus_verses": 48,
+      "paragraphs": 9,
+      "sentences": 28,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 3,
+      "adhyaya": 42,
+      "corpus_verses": 0,
+      "paragraphs": 6,
+      "sentences": 64,
+      "aligned": 0,
+      "method": "empty"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 2,
+      "corpus_verses": 23,
+      "paragraphs": 4,
+      "sentences": 42,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 4,
+      "corpus_verses": 19,
+      "paragraphs": 6,
+      "sentences": 22,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 5,
+      "corpus_verses": 35,
+      "paragraphs": 2,
+      "sentences": 31,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 6,
+      "corpus_verses": 19,
+      "paragraphs": 4,
+      "sentences": 30,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 8,
+      "corpus_verses": 31,
+      "paragraphs": 2,
+      "sentences": 28,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 9,
+      "corpus_verses": 20,
+      "paragraphs": 2,
+      "sentences": 26,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 10,
+      "corpus_verses": 25,
+      "paragraphs": 8,
+      "sentences": 39,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 12,
+      "corpus_verses": 16,
+      "paragraphs": 6,
+      "sentences": 40,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 14,
+      "corpus_verses": 46,
+      "paragraphs": 5,
+      "sentences": 41,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 15,
+      "corpus_verses": 15,
+      "paragraphs": 5,
+      "sentences": 39,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 16,
+      "corpus_verses": 29,
+      "paragraphs": 2,
+      "sentences": 21,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 17,
+      "corpus_verses": 23,
+      "paragraphs": 14,
+      "sentences": 160,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 20,
+      "corpus_verses": 46,
+      "paragraphs": 3,
+      "sentences": 49,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 22,
+      "corpus_verses": 17,
+      "paragraphs": 2,
+      "sentences": 11,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 23,
+      "corpus_verses": 9,
+      "paragraphs": 7,
+      "sentences": 94,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 25,
+      "corpus_verses": 15,
+      "paragraphs": 4,
+      "sentences": 28,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 26,
+      "corpus_verses": 40,
+      "paragraphs": 9,
+      "sentences": 73,
+      "aligned": 0,
+      "method": "count_mismatch"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 31,
+      "corpus_verses": 0,
+      "paragraphs": 0,
+      "sentences": 0,
+      "aligned": 0,
+      "method": "empty"
+    },
+    {
+      "volume": "dutt-1896-book-1-7",
+      "skandha": 5,
+      "adhyaya": 50,
+      "corpus_verses": 0,
+      "paragraphs": 7,
+      "sentences": 62,
+      "aligned": 0,
+      "method": "empty"
+    }
+  ],
+  "summary": {
+    "corpus_verses": 14105,
+    "aligned_verses": 36,
+    "coverage": 0.0026,
+    "field": "en_dutt",
+    "edition": "sb-en-dutt"
+  }
+}
