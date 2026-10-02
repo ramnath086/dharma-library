@@ -518,8 +518,6 @@ class Aligner:
         self.margin = MARGIN
         self.idf = idf
         self.gloss = gloss
-        self.accept = accept
-        self.margin = margin
 
     def score(self, translit: set[str], glossed: set[str], sentence: str) -> float:
         words = content_words(sentence)
