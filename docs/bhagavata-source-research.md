@@ -210,3 +210,80 @@ were not rewritten. See `docs/bhagavata-completeness.md` and verse
 * 1.13.36, 4.1.52 (`/sb/4/1/49-52/`; `/sb/4/1/52/` is 404), 4.21.45, 8.7.5,
   8.16.23, 11.11.13 (line after `॥ १२ ॥` on `/sb/11/11/12-13/`), 11.27.40
   (`/sb/11/27/38-41/`; Vedabase `हवि:` stored as supplied `हविः`).
+
+---
+
+## Additive editions, 2026-10-02: word-by-word, English, Malayalam
+
+Requested additions to the *existing published* corpus (12 cantos / 335
+adhyāyas / 14,105 verses), additively only. Nothing below rewrote the Sanskrit
+mūla, the IAST, the refs, the ordinals or the structure; `scripts/ingest.py` and
+`scripts/export_bundle.py` were only extended where a second edition of the same
+kind needed its own verse field.
+
+### 1. Word-by-word meaning — SHIPPED (Digital Corpus of Sanskrit, CC BY 4.0)
+
+* Source: Oliver Hellwig, *Digital Corpus of Sanskrit*, 2010–2021 —
+  `github.com/OliverHellwig/sanskrit`. Licence per `dcs/data/readme.md`:
+  “The data of the DCS and any data in child directories are licensed under the
+  Creative Common BY 4.0 (CC BY 4.0) license.”
+* Data: `dcs/data/conllu/files/Bhāgavatapurāṇa/*.conllu` (437 files) joined to
+  `dcs/data/conllu/lookup/dictionary.csv` (180,455 lemmas). Each CoNLL-U
+  sentence is one pāda; `# sent_counter` is the verse number and
+  `# sent_subcounter` the pāda, so the parse is *verse-aligned* by construction —
+  no guessing is involved.
+* Result: **5,007 of 14,105 verses (35.5%), 117 of 335 adhyāyas, 77,350 glossed
+  words.** Cantos 5, 6, 7, 9 and 12 have no DCS parse at all; those chapters keep
+  whatever they already had. Measured in
+  `docs/dcs-word-meanings-coverage.json`.
+* Shipped as edition `sb-wm-dcs-en` (`kind: word_meanings`, `en`/`Latn`, rights
+  `dcs-cc-by-4.0` = `open_license`, CC BY 4.0), stored in a **new** verse field
+  `wm_dcs` so it cannot overwrite the existing `sb-wm-en` editorial glosses.
+  `scripts/ingest.py` now iterates every `word_meanings` edition off its own
+  `content_field`.
+* **Caveat, stated in the edition description:** these are *dictionary* senses
+  (first three, capped at 140 characters), not contextual translations. For
+  1.1.1, `brahma` yields “pious effusion or utterance; outpouring of the heart
+  in worshipping the gods; prayer”, not the contextual “the Veda”.
+
+### 2. English translation — M. N. Dutt 1895: BLOCKED (alignment, not rights)
+
+* Verified public domain. Three Internet Archive scans were located and together
+  cover **all twelve books**:
+  * `proseenglishtran12dutt` — *A prose English translation of Shrimadbhagabatam*,
+    H. C. Dass, Elysium Press, Calcutta, 1895. Books I–II. Cleanest OCR.
+  * `india.history.resource.40625` — Books VII–XII, 1895. Heavily degraded OCR.
+  * `in.ernet.dli.2015.272582` — *Shrimad Bhagwatam*, 1896, 744 pp. Books I–VII,
+    with a footnote apparatus.
+* **Blocker — Dutt's own introduction:** “I have not considered it necessary to
+  put in the numbers of the Slokas.” The translation is continuous, unnumbered
+  prose. Measured against the corpus, sentence counts diverge wildly from verse
+  counts (1.1: 101 sentences for 23 verses; 1.9: 147 for 49; 1.13: 115 for 60),
+  single paragraphs span up to 30+ ślokas, and single sentences merge several.
+* **What was tried.** `scripts/ingest_dutt_translation.py` parses the scans into
+  (skandha, adhyāya) with OCR-tolerant BOOK/CHAPTER heading detection, splits
+  each adhyāya into sentences, and aligns them to the corpus refs with a monotone
+  Viterbi pass that maximises transliteration + DCS-dictionary evidence, gated
+  on both an absolute and a relative confidence bar. Even at a deliberately lax
+  threshold (accept 0.10, margin 0.02) it reaches only **285 of 14,105 verses
+  (2.0%)**, and 256 of 335 adhyāyas never parse cleanly at all.
+* **Verdict.** A trustworthy per-verse mapping is not achievable from this
+  source. Ingesting `en_dutt` would misattribute prose to the wrong verse, which
+  this project does not do. Dutt is therefore registered as a verified
+  public-domain *source* row (with the provenance above and this verdict) and
+  **no edition is shipped from it**. The measurement stays reproducible:
+  `.github/workflows/dutt-translation.yml` regenerates
+  `docs/dutt-translation-coverage.json` on every push.
+
+### 3. Malayalam translation — BLOCKED (rights)
+
+* The only verse-aligned Malayalam translation located —
+  *Śrīmad Bhāgavatam with anvayakrama and paribhāṣā*,
+  `archive.org/details/Srimad_Bhagavatam_Malayalam_Anvayakrama_Paribhasha_sahitam`
+  — carries **“Attribution-Noncommercial-No Derivative Works 3.0 Creative
+  Commons License”**. Both the non-commercial and the no-derivatives terms
+  conflict with `docs/rights-policy.md`, so it cannot be served.
+* Malayalam Wikisource has no usable Bhagavata text (prefix `ഭാഗവत` returns one
+  irrelevant page).
+* The existing Dharma Library Malayalam draft on 1.1.1–1.1.10 is unchanged and no
+  Malayalam text was invented.

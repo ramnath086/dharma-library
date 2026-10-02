@@ -211,7 +211,11 @@ on conflict (slug) do update set name_iast=excluded.name_iast, name_sa=excluded.
     iast_slug = _find_edition(lambda e: e.get("kind") == "transliteration" and e.get("language_code") == "sa" and e.get("script_code") == "Latn" and not e.get("is_machine"))
     en_slug = _find_edition(lambda e: e.get("kind") == "translation" and e.get("language_code") == "en")
     ml_slug = _find_edition(lambda e: e.get("kind") == "translation" and e.get("language_code") == "ml")
-    wm_slug = _find_edition(lambda e: e.get("kind") == "word_meanings")
+    # Every word-by-word edition reads its own verse field (`content_field`), so
+    # adding a second word-by-word source is additive and can never overwrite an
+    # existing one.
+    wm_editions = [(eslug, e.get("content_field", "word_meanings"))
+                   for eslug, e in editions.items() if e.get("kind") == "word_meanings"]
     all_xrefs = []
     n_verses = 0
     for vf in verse_files:
@@ -290,10 +294,12 @@ on conflict (work_id, ref) do update set ordinal=excluded.ordinal, kind=excluded
                 if eslug in editions and editions[eslug].get("is_machine") and editions[eslug]["script_code"] in LOSSY:
                     notes = "Automatic conversion; this script cannot represent every Sanskrit sound distinctly."
                 emit_content(em, slug, v["ref"], eslug, body, notes=notes)
-            if v.get("word_meanings"):
-                target_wm = wm_slug or "sb-wm-en"
-                if target_wm in editions or slug == "bhagavata-purana":
-                    emit_content(em, slug, v["ref"], target_wm, "\n".join(f"{w['word']} — {w['meaning']}" for w in v["word_meanings"]), word_meanings=v["word_meanings"])
+            for wm_slug, wm_field in wm_editions:
+                rows = v.get(wm_field)
+                if rows and (wm_slug in editions or slug == "bhagavata-purana"):
+                    emit_content(em, slug, v["ref"], wm_slug,
+                                 "\n".join(f"{w['word']} — {w['meaning']}" for w in rows),
+                                 word_meanings=rows)
 
             for m in v.get("mentions", []):
                 table = {"person": "people", "place": "places", "topic": "topics", "story": "stories"}[m["kind"]]

@@ -24,7 +24,7 @@
       "label_ml": "അധ്യായം"
     }
   ],
-  "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. This build ships the complete sa.wikisource.org mūla: 12 skandhas, 335 adhyāyas, 14098 numbered verses parsed from that edition on 2026-09-22 (CC BY-SA 4.0), plus 7 printed-number fills whose Devanagari was taken from BBT Vedabase (traditional mūla only; no BBT translation shipped) where Wikisource had no mūla at that number. Traditional ~18,000 is an approximation, not an import target. English and Malayalam translations remain original Dharma Library drafts on 1.1.1–1.1.10 only; other verses have no invented translation. GRETIL was collated as a scholarly witness and is not shipped.",
+  "description": "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka to King Parīkṣit, as retold by Sūta to the sages at Naimiṣāraṇya. This build ships the complete sa.wikisource.org mūla: 12 skandhas, 335 adhyāyas, 14105 numbered verses parsed from that edition on 2026-09-22 (CC BY-SA 4.0), plus 7 printed-number fills whose Devanagari was taken from BBT Vedabase (traditional mūla only; no BBT translation shipped) where Wikisource had no mūla at that number. Traditional ~18,000 is an approximation, not an import target. English and Malayalam translations remain original Dharma Library drafts on 1.1.1–1.1.10 only; other verses have no invented translation. A second word-by-word edition, from the Digital Corpus of Sanskrit (CC BY 4.0), covers the 117 adhyāyas that corpus parses (5,007 verses, 35.5%): those are dictionary senses, not contextual translations, and cantos 5, 6, 7, 9 and 12 have no DCS parse. GRETIL was collated as a scholarly witness and is not shipped. M. N. Dutt's 1895 public-domain prose English translation was verified and located (all twelve books) but is deliberately NOT ingested: it carries no śloka numbers, so a verse-level mapping cannot be verified — see docs/dutt-translation-coverage.json.",
   "metadata": {
     "total_cantos": 12,
     "traditional_chapter_inventory": 335,
@@ -44,7 +44,25 @@
       "8.16.23",
       "11.11.13",
       "11.27.40"
-    ]
+    ],
+    "word_meanings_editions": [
+      {
+        "slug": "sb-wm-en",
+        "source": "dharma-library-editorial",
+        "verses": 10,
+        "scope": "1.1.1–1.1.10",
+        "content_field": "word_meanings"
+      },
+      {
+        "slug": "sb-wm-dcs-en",
+        "source": "dcs-sanskrit",
+        "verses": 5007,
+        "scope": "117 adhyāyas (cantos 1, 2, 3, 4, 8, 10, 11 in part)",
+        "content_field": "wm_dcs"
+      }
+    ],
+    "dutt_translation_status": "verified public domain (M. N. Dutt, H. C. Dass, 1895/1896; three Internet Archive scans cover all twelve books) but not ingested: the translation carries no śloka numbers and its paragraph/sentence boundaries do not correspond to śloka boundaries, so per-verse attribution cannot be verified. See docs/dutt-translation-coverage.json and scripts/ingest_dutt_translation.py.",
+    "malayalam_status": "blocked: the only verse-aligned Malayalam translation located (Srimad Bhagavatam with anvaya and paribhasha, Internet Archive) is licensed CC BY-NC-ND, whose non-commercial and no-derivatives terms conflict with docs/rights-policy.md. No verse-aligned Malayalam translation with reusable rights could be verified; the existing 1.1.1–1.1.10 Dharma Library draft is unchanged and no Malayalam text was invented."
   },
   "sources": [
     {
@@ -97,6 +115,32 @@
       "publisher": "Bhaktivedanta Book Trust",
       "url": "https://vedabase.io/en/library/sb/",
       "notes": "Used only to supply Devanagari for seven printed numbers absent on sa.wikisource.org (1.13.36, 4.1.52, 4.21.45, 8.7.5, 8.16.23, 11.11.13, 11.27.40). BBT English translation, synonyms, and purports are not shipped. Traditional Sanskrit mūla; BBT colon-visarga normalised to U+0903."
+    },
+    {
+      "slug": "dcs-sanskrit",
+      "kind": "digital_text",
+      "title": "Digital Corpus of Sanskrit (DCS) — Bhagavata Purana CoNLL-U + dictionary",
+      "authors": [
+        "Oliver Hellwig"
+      ],
+      "publisher": "Digital Corpus of Sanskrit, Heidelberg / Berlin",
+      "year": 2021,
+      "url": "https://github.com/OliverHellwig/sanskrit",
+      "archive_url": "https://github.com/OliverHellwig/sanskrit",
+      "notes": "Verse-aligned word-by-word parse of the Bhagavata Purana: dcs/data/conllu/files/Bhagavatapurana (CoNLL-U, one sentence per pada, # sent_counter = verse number) joined to dcs/data/conllu/lookup/dictionary.csv (180,455 lemmas, Monier-Williams-style senses). Licence per dcs/data/readme.md: \"The data of the DCS and any data in child directories are licensed under the Creative Common BY 4.0 (CC BY 4.0) license.\" Covers 117 of the 335 adhyayas (cantos 1, 2, 3, 4, 8, 10, 11 in part); the remaining 218 adhyayas have no DCS parse and are left untouched. Retrieved 2026-10-02."
+    },
+    {
+      "slug": "dutt-1895-bhagavata",
+      "kind": "digital_text",
+      "title": "A prose English translation of Shrimadbhagabatam (M. N. Dutt, H. C. Dass, Calcutta, 1895/1896)",
+      "authors": [
+        "Manmatha Nath Dutt"
+      ],
+      "publisher": "H. C. Dass, Elysium Press, Calcutta",
+      "year": 1895,
+      "url": "https://archive.org/details/proseenglishtran12dutt",
+      "archive_url": "https://archive.org/details/proseenglishtran12dutt",
+      "notes": "Verified public domain (published 1895/1896, no copyright page in the Internet Archive scans). Three scans were located and cover all twelve books: proseenglishtran12dutt (Books I-II), india.history.resource.40625 (Books VII-XII), in.ernet.dli.2015.272582 (Books I-VII, 1896 expanded edition). NO EDITION IS SHIPPED from this source. Dutt's own introduction states: \"I have not considered it necessary to put in the numbers of the Slokas\", so the translation is continuous unnumbered prose in which single paragraphs span up to 30+ slokas and single sentences merge several. Reconstructing the verse mapping is therefore guesswork; the reproducible measurement is in scripts/ingest_dutt_translation.py and docs/dutt-translation-coverage.json (285 of 14,105 verses, 2.0%, at a high-confidence evidence threshold). Rather than misattribute prose to the wrong verse, nothing from this source is ingested. Verified 2026-10-02."
     }
   ],
   "rights": [
@@ -132,6 +176,18 @@
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights_holder": "Dharma Library",
       "attribution_text": "Automatic script conversion of the public-domain Sanskrit text by Dharma Library (CC0).",
+      "allows_commercial": true,
+      "allows_derivatives": true,
+      "allows_audio": true
+    },
+    {
+      "key": "dcs-cc-by-4.0",
+      "source": "dcs-sanskrit",
+      "status": "open_license",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "rights_holder": "Oliver Hellwig, Digital Corpus of Sanskrit",
+      "attribution_text": "Word-by-word analysis and dictionary senses from the Digital Corpus of Sanskrit, Oliver Hellwig (CC BY 4.0).",
       "allows_commercial": true,
       "allows_derivatives": true,
       "allows_audio": true
@@ -267,7 +323,24 @@
       "source": "dharma-library-editorial",
       "is_default": true,
       "sort_order": 40,
-      "description": "Word-by-word glosses keyed to the IAST."
+      "description": "Word-by-word glosses keyed to the IAST.",
+      "content_field": "word_meanings"
+    },
+    {
+      "slug": "sb-wm-dcs-en",
+      "kind": "word_meanings",
+      "language_code": "en",
+      "script_code": "Latn",
+      "title": "Word-by-word (Digital Corpus of Sanskrit)",
+      "contributors": [
+        "Oliver Hellwig (Digital Corpus of Sanskrit)"
+      ],
+      "rights": "dcs-cc-by-4.0",
+      "source": "dcs-sanskrit",
+      "is_default": false,
+      "sort_order": 41,
+      "description": "Machine word-by-word analysis of the 117 adhyayas the DCS parses. Each word is listed in its inflected sandhi form with the dictionary senses of its lemma (first three, truncated at 140 characters). These are dictionary senses, NOT contextual translations: e.g. brahma in 1.1.1 yields \"pious effusion or utterance; outpouring of the heart in worshipping the gods; prayer\" rather than the contextual \"the Veda\". Cantos 5, 6, 7, 9 and 12 have no DCS parse and therefore no entry here.",
+      "content_field": "wm_dcs"
     }
   ]
 }
