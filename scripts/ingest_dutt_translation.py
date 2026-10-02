@@ -698,6 +698,8 @@ def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--report", action="store_true",
+                    help="default: parse, align and write the coverage report only")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--cache", default=str(ROOT / ".dutt-cache"))
     ap.add_argument("--accept", type=float, default=0.30)
