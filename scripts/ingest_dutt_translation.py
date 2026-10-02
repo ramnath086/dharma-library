@@ -458,7 +458,7 @@ def expected_chapters() -> dict[int, int]:
         from generate_bhagavata_corpus import SKANDHA_CHAPTERS
     except Exception:
         return {}
-    return {int(k): len(v) for k, v in SKANDHA_CHAPTERS.items()}
+        return {int(k): int(v) for k, v in SKANDHA_CHAPTERS.items()}
 
 
 def load_corpus() -> dict[tuple[int, int], list[dict]]:
