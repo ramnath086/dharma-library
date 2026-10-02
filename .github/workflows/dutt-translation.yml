@@ -73,6 +73,7 @@ jobs:
           print(f"- aligned verses: **{s['aligned_verses']}** ({s['coverage']:.1%})")
           by = collections.Counter(c["method"] for c in r["chapters"])
           print(f"- chapters: {len(r['chapters'])} — methods: {dict(by)}")
+          print(f"- score histogram: {r.get('score_histogram', {})}")
           print(f"- chapters with no aligned verse: **{len(r.get('unaligned_chapters', []))}**")
           print(f"- chapters the parser never produced: **{len(r.get('missing_chapters', []))}** "
                 f"-> {r.get('missing_chapters', [])[:60]}")

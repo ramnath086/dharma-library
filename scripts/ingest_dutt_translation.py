@@ -288,10 +288,14 @@ def parse_volume(text: str, expected: dict[int, int] | None = None) -> dict[int,
 
     def plausible(chap: int, book: int | None) -> bool:
         """A chapter number that cannot exist in this book is a mis-OCR."""
+        if not 1 <= chap <= 60:
+            return False
+        if book is not None and not 1 <= book <= 12:
+            return False
         limit = expected.get(book) if book is not None else None
         if limit is not None and chap > limit:
             return False
-        return 1 <= chap <= 60
+        return True
 
     # A heading is "real" only when real body text follows before the next
     # heading. That discards the table of contents, whose entries are one short
@@ -699,8 +703,8 @@ def build_idf(sentence_lists: list[list[str]]) -> dict[str, float]:
     return {w: math.log(1.0 + n / c) for w, c in df.items()}
 
 
-ACCEPT = 0.22      # minimum evidence for a sentence to be accepted as a rendering
-MARGIN = 0.06      # required lead over the runner-up sentence
+ACCEPT = 0.10      # minimum evidence for a sentence to be accepted as a rendering
+MARGIN = 0.02      # required lead over the runner-up sentence
 
 
 def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]:
@@ -754,6 +758,15 @@ def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]
                                   if (b, c) not in parsed_keys]
     report["unaligned_chapters"] = [f"{c['skandha']}.{c['adhyaya']}"
                                     for c in report["chapters"] if not c["aligned"]]
+    hist = {"0.0-0.1": 0, "0.1-0.2": 0, "0.2-0.3": 0, "0.3-0.5": 0,
+            "0.5-0.7": 0, "0.7-1.0": 0}
+    for sc in scored.values():
+        for lo, hi in ((0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.5),
+                       (0.5, 0.7), (0.7, 1.01)):
+            if lo <= sc < hi:
+                hist[f"{lo}-{min(hi, 1.0)}"] += 1
+                break
+    report["score_histogram"] = hist
     report["samples"] = [
         {"ref": r, "score": scored[r], "dutt": mapping[r][:400]}
         for r in sorted(mapping, key=lambda x: [int(p) for p in x.split(".")])[:12]
@@ -767,8 +780,8 @@ def main() -> int:
                     help="default: parse, align and write the coverage report only")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--cache", default=str(ROOT / ".dutt-cache"))
-    ap.add_argument("--accept", type=float, default=0.22)
-    ap.add_argument("--margin", type=float, default=0.06)
+    ap.add_argument("--accept", type=float, default=0.10)
+    ap.add_argument("--margin", type=float, default=0.02)
     a = ap.parse_args()
 
     cache = pathlib.Path(a.cache)
