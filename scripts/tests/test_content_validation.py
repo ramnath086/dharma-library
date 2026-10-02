@@ -211,6 +211,47 @@ class RightsShape(unittest.TestCase):
                 self.assertIn(e["rights"], keys, e["slug"])
                 self.assertTrue(e.get("source"), e["slug"])
 
+    def test_every_word_meanings_edition_has_its_own_verse_field(self):
+        """Two word-by-word sources must not fight over one verse field."""
+        w = _load(BHAGAVATA / "work.json")
+        wm = [e for e in w["editions"] if e["kind"] == "word_meanings"]
+        self.assertGreaterEqual(len(wm), 2, "expected the DCS word-by-word edition too")
+        fields = [e.get("content_field") for e in wm]
+        self.assertEqual(len(fields), len(set(fields)), fields)
+        for e in wm:
+            self.assertTrue(e.get("content_field"), e["slug"])
+            status = {r["key"]: r["status"] for r in w["rights"]}[e["rights"]]
+            self.assertIn(status, ("public_domain", "open_license",
+                                   "permission_granted", "original"), e["slug"])
+
+    def test_dcs_word_meanings_are_present_where_the_report_says_they_are(self):
+        """The DCS edition may only cover the chapters it actually parsed."""
+        w = _load(BHAGAVATA / "work.json")
+        ed = next(e for e in w["editions"] if e["slug"] == "sb-wm-dcs-en")
+        field = ed["content_field"]
+        report = _load(ROOT / "docs" / "dcs-word-meanings-coverage.json")
+        expected = report["summary"]["verses_with_glosses"]
+        found = 0
+        for vf in _verse_files(BHAGAVATA):
+            for v in _load(vf)["verses"]:
+                rows = v.get(field)
+                if rows:
+                    found += 1
+                    self.assertTrue(all(r.get("word") and r.get("meaning") for r in rows),
+                                    f"empty gloss at {v['ref']}")
+                    for r in rows:
+                        self.assertLessEqual(len(r["meaning"]), 145, v["ref"])
+        self.assertEqual(found, expected, "content no longer matches the coverage report")
+
+    def test_no_dutt_translation_is_ingested(self):
+        """Dutt is public domain but unnumbered: nothing may be misattributed."""
+        for vf in _verse_files(BHAGAVATA):
+            for v in _load(vf)["verses"]:
+                self.assertNotIn("en_dutt", v, f"unverified Dutt mapping at {v['ref']}")
+        w = _load(BHAGAVATA / "work.json")
+        slugs = {e["slug"] for e in w["editions"]}
+        self.assertNotIn("sb-en-dutt", slugs)
+
 
 if __name__ == "__main__":
     unittest.main()
