@@ -1,0 +1,121 @@
+name: Ingest Dutt English translation
+
+# M. N. Dutt's 1895/1896 prose English translation of the Śrīmad Bhāgavata
+# Purāṇa is public domain, but the only verified copies live on the Internet
+# Archive, which the Arena sandbox's TLS stack cannot reach. GitHub-hosted
+# runners can. This job downloads the verified scans, aligns Dutt's unnumbered
+# prose to the refs already on disk, and reports coverage. It never invents a
+# mapping: chapters that cannot be aligned unambiguously are reported, not
+# guessed.
+#
+#   --report   parse + align + write docs/dutt-translation-coverage.json only
+#
+# Set WRITE=1 (workflow_dispatch input) to also patch the `en_dutt` field into
+# content/bhagavata-purana/**/verses.json and commit it back to the branch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      write:
+        description: "Patch en_dutt into content and commit (0 = report only)"
+        required: false
+        default: "0"
+  push:
+    branches: ["arena/**"]
+    paths:
+      - "scripts/ingest_dutt_translation.py"
+      - ".github/workflows/dutt-translation.yml"
+
+concurrency:
+  group: dutt-translation-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  dutt:
+    name: Fetch · parse · align · report
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Report or write
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -o pipefail
+          mkdir -p .dutt-cache
+          if [ "${{ github.event.inputs.write || '0' }}" = "1" ]; then
+            python3 scripts/ingest_dutt_translation.py --write 2>&1 | tee dutt-log.txt
+          else
+            python3 scripts/ingest_dutt_translation.py --report 2>&1 | tee dutt-log.txt
+          fi
+          tail -n 30 dutt-log.txt
+
+      - name: Coverage summary
+        if: always()
+        run: |
+          {
+            echo "### Dutt English translation — alignment coverage"
+            echo
+            if [ -f docs/dutt-translation-coverage.json ]; then
+              python3 - <<'PY'
+          import json, collections
+          r = json.load(open("docs/dutt-translation-coverage.json"))
+          s = r["summary"]
+          print(f"- corpus verses: **{s['corpus_verses']}**")
+          print(f"- aligned verses: **{s['aligned_verses']}** ({s['coverage']:.1%})")
+          by = collections.Counter(c["method"] for c in r["chapters"])
+          print(f"- chapters: {len(r['chapters'])} — methods: {dict(by)}")
+          bad = [c for c in r["chapters"] if c["method"] != "one_to_one"]
+          print(f"- unaligned chapters: **{len(bad)}**")
+          for c in bad[:40]:
+              print(f"  - {c['skandha']}.{c['adhyaya']}: corpus {c['corpus_verses']}, "
+                    f"sentences {c['sentences']}, paragraphs {c['paragraphs']} ({c['volume']})")
+          for v in r["volumes"]:
+              print(f"- volume `{v['key']}`: books {v['books']}, {v['chapters']} chapters, {v['bytes']} bytes OCR")
+          PY
+            else
+              echo "No coverage report — the importer did not run."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: dutt-alignment-report
+          path: |
+            dutt-log.txt
+            docs/dutt-translation-coverage.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit aligned translation
+        if: github.event.inputs.write == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 scripts/audit_bhagavata_corpus.py || true
+          git add content/bhagavata-purana docs/dutt-translation-coverage.json docs/bhagavata-completeness-audit.json || true
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json
+          r = json.load(open("docs/dutt-translation-coverage.json"))
+          s = r["summary"]
+          print(f"committing Dutt en for {s['aligned_verses']}/{s['corpus_verses']} verses")
+          PY
+          git commit -m "content: M. N. Dutt 1895 English translation aligned to the published Bhāgavata corpus (public domain)"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
