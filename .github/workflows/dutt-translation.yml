@@ -73,11 +73,12 @@ jobs:
           print(f"- aligned verses: **{s['aligned_verses']}** ({s['coverage']:.1%})")
           by = collections.Counter(c["method"] for c in r["chapters"])
           print(f"- chapters: {len(r['chapters'])} — methods: {dict(by)}")
-          bad = [c for c in r["chapters"] if c["method"] != "one_to_one"]
-          print(f"- unaligned chapters: **{len(bad)}**")
-          for c in bad[:40]:
-              print(f"  - {c['skandha']}.{c['adhyaya']}: corpus {c['corpus_verses']}, "
-                    f"sentences {c['sentences']}, paragraphs {c['paragraphs']} ({c['volume']})")
+          print(f"- chapters with no aligned verse: **{len(r.get('unaligned_chapters', []))}**")
+          print(f"- chapters the parser never produced: **{len(r.get('missing_chapters', []))}** "
+                f"-> {r.get('missing_chapters', [])[:60]}")
+          print(f"- unaligned: {r.get('unaligned_chapters', [])[:40]}")
+          for smp in r.get("samples", [])[:8]:
+              print(f"  - `{smp['ref']}` (score {smp['score']}): {smp['dutt'][:220]}")
           for v in r["volumes"]:
               print(f"- volume `{v['key']}`: books {v['books']}, {v['chapters']} chapters, {v['bytes']} bytes OCR")
           PY

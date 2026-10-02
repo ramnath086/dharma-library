@@ -35,7 +35,77 @@
       "kind": "verse",
       "speaker": "suka",
       "deva": "इति भागवतः पृष्टः क्षत्त्रा वार्तां प्रियाश्रयाम् ।\nप्रतिवक्तुं न चोत्सेह औत्कण्ठ्यात् स्मारितेश्वरः ॥ १ ॥",
-      "iast": "iti bhāgavataḥ pṛṣṭaḥ kṣattrā vārtāṁ priyāśrayām |\nprativaktuṁ na cotseha autkaṇṭhyāt smāriteśvaraḥ || 1 ||"
+      "iast": "iti bhāgavataḥ pṛṣṭaḥ kṣattrā vārtāṁ priyāśrayām |\nprativaktuṁ na cotseha autkaṇṭhyāt smāriteśvaraḥ || 1 ||",
+      "wm_dcs": [
+        {
+          "word": "śrī",
+          "meaning": "light; lustre; radiance"
+        },
+        {
+          "word": "śukaḥ",
+          "meaning": "a parrot; Acacia Sirissa; Zizyphus Scandens"
+        },
+        {
+          "word": "uvāca",
+          "meaning": "to speak; to say; to tell"
+        },
+        {
+          "word": "iti",
+          "meaning": "in this manner; thus (in its original signification iti refers to something that has been said or thought); so"
+        },
+        {
+          "word": "bhāgavataḥ",
+          "meaning": "a follower or worshipper of Bhagavati or Viṣṇu; name of a king; son of Vajramitra"
+        },
+        {
+          "word": "pṛṣṭaḥ",
+          "meaning": "to question; to interrogate (acc.); to ask after inquire about (acc.)"
+        },
+        {
+          "word": "kṣattrā",
+          "meaning": "one who cuts or carves or distributes anything; an attendant; (especially) door-keeper"
+        },
+        {
+          "word": "vārttām",
+          "meaning": "livelihood; business; profession (esp. that of a Vaiśya)"
+        },
+        {
+          "word": "priya",
+          "meaning": "beloved; dear to; liked"
+        },
+        {
+          "word": "āśrayām",
+          "meaning": "that to which anything is annexed or with which anything is closely connected or on which anything depends or rests; a recipient; the person…"
+        },
+        {
+          "word": "prativaktum",
+          "meaning": "to announce; to indicate; to recommend"
+        },
+        {
+          "word": "na",
+          "meaning": "not; no; nor"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "utseha",
+          "meaning": "to endure; to bear; to be able"
+        },
+        {
+          "word": "autkaṇṭhyāt",
+          "meaning": "desire; longing for; intensity"
+        },
+        {
+          "word": "smārita",
+          "meaning": "to call to mind; to recollect"
+        },
+        {
+          "word": "īśvaraḥ",
+          "meaning": "a husband; God; the Supreme Being"
+        }
+      ]
     },
     {
       "ref": "3.2.2",
@@ -43,7 +113,69 @@
       "kind": "verse",
       "speaker": "suka",
       "deva": "यः पञ्चहायनो मात्रा प्रातराशाय याचितः ।\nतन्नैच्छत् रचयन् यस्य सपर्यां बाललीलया ॥ २ ॥",
-      "iast": "yaḥ pañcahāyano mātrā prātarāśāya yācitaḥ |\ntannaicchat racayan yasya saparyāṁ bālalīlayā || 2 ||"
+      "iast": "yaḥ pañcahāyano mātrā prātarāśāya yācitaḥ |\ntannaicchat racayan yasya saparyāṁ bālalīlayā || 2 ||",
+      "wm_dcs": [
+        {
+          "word": "yaḥ",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "pañca",
+          "meaning": "five"
+        },
+        {
+          "word": "hāyanaḥ",
+          "meaning": "a year"
+        },
+        {
+          "word": "mātrā",
+          "meaning": "a mother; any mother (applicable to animals); father and mother"
+        },
+        {
+          "word": "prātar",
+          "meaning": "in the early morning; at dawn; next morning"
+        },
+        {
+          "word": "āśāya",
+          "meaning": "food; eating"
+        },
+        {
+          "word": "yācitaḥ",
+          "meaning": "to ask; to beg; to solicit"
+        },
+        {
+          "word": "tat",
+          "meaning": "this"
+        },
+        {
+          "word": "na",
+          "meaning": "not; no; nor"
+        },
+        {
+          "word": "aicchat",
+          "meaning": "to seek for; to desire; to intend"
+        },
+        {
+          "word": "racayan",
+          "meaning": "to produce; to fashion; to form"
+        },
+        {
+          "word": "yasya",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "saparyām",
+          "meaning": "worship; homage; adoration"
+        },
+        {
+          "word": "bāla",
+          "meaning": "a child; boy (esp. one under 5 years); (in law) a minor"
+        },
+        {
+          "word": "līlayā",
+          "meaning": "play; sport; diversion"
+        }
+      ]
     },
     {
       "ref": "3.2.3",
@@ -51,7 +183,61 @@
       "kind": "verse",
       "speaker": "suka",
       "deva": "स कथं सेवया तस्य कालेन जरसं गतः ।\nपृष्टो वार्तां प्रतिब्रूयाद् भर्तुः पादौ अनुस्मरन् ॥ ३ ॥",
-      "iast": "sa kathaṁ sevayā tasya kālena jarasaṁ gataḥ |\npṛṣṭo vārtāṁ pratibrūyād bhartuḥ pādau anusmaran || 3 ||"
+      "iast": "sa kathaṁ sevayā tasya kālena jarasaṁ gataḥ |\npṛṣṭo vārtāṁ pratibrūyād bhartuḥ pādau anusmaran || 3 ||",
+      "wm_dcs": [
+        {
+          "word": "saḥ",
+          "meaning": "this"
+        },
+        {
+          "word": "katham",
+          "meaning": "how?"
+        },
+        {
+          "word": "sevayā",
+          "meaning": "going or resorting to; visiting; frequenting"
+        },
+        {
+          "word": "tasya",
+          "meaning": "this"
+        },
+        {
+          "word": "kālena",
+          "meaning": "time; the proper time or season for; eine Essenszeit"
+        },
+        {
+          "word": "jarasam",
+          "meaning": "the becoming old; decay; old age"
+        },
+        {
+          "word": "gataḥ",
+          "meaning": "to go; to move; to approach"
+        },
+        {
+          "word": "pṛṣṭaḥ",
+          "meaning": "to question; to interrogate (acc.); to ask after inquire about (acc.)"
+        },
+        {
+          "word": "vārttām",
+          "meaning": "livelihood; business; profession (esp. that of a Vaiśya)"
+        },
+        {
+          "word": "pratibrūyāt",
+          "meaning": "to speak in reply; to answer; to answer i.e. return (an attack etc.)"
+        },
+        {
+          "word": "bhartuḥ",
+          "meaning": "a bearer; one who bears or carries or maintains; a husband"
+        },
+        {
+          "word": "pādau",
+          "meaning": "the foot (of men and animals); the foot or leg of an inanimate object; column"
+        },
+        {
+          "word": "anusmaran",
+          "meaning": "to remember; to recollect"
+        }
+      ]
     },
     {
       "ref": "3.2.4",
@@ -59,7 +245,65 @@
       "kind": "verse",
       "speaker": "suka",
       "deva": "स मुहूर्तं अभूत्तूष्णीं कृष्णाङ्घ्रिसुधया भृशम् ।\nतीव्रेण भक्तियोगेन निमग्नः साधु निर्वृतः ॥ ४ ॥",
-      "iast": "sa muhūrtaṁ abhūttūṣṇīṁ kṛṣṇāṅghrisudhayā bhṛśam |\ntīvreṇa bhaktiyogena nimagnaḥ sādhu nirvṛtaḥ || 4 ||"
+      "iast": "sa muhūrtaṁ abhūttūṣṇīṁ kṛṣṇāṅghrisudhayā bhṛśam |\ntīvreṇa bhaktiyogena nimagnaḥ sādhu nirvṛtaḥ || 4 ||",
+      "wm_dcs": [
+        {
+          "word": "saḥ",
+          "meaning": "this"
+        },
+        {
+          "word": "muhūrtam",
+          "meaning": "a moment; instant; any short space of time"
+        },
+        {
+          "word": "abhūt",
+          "meaning": "to be; to become; to come into being"
+        },
+        {
+          "word": "tūṣṇīm",
+          "meaning": "silently; quietly"
+        },
+        {
+          "word": "kṛṣṇa",
+          "meaning": "the dark half of the lunar month from full to new moon; fourth or Kaliyuga; black"
+        },
+        {
+          "word": "aṅghri",
+          "meaning": "a foot; foot of a seat; the root of a tree"
+        },
+        {
+          "word": "sudhayā",
+          "meaning": "the beverage of the gods; nectar; the nectar or honey of flowers"
+        },
+        {
+          "word": "bhṛśam",
+          "meaning": "very"
+        },
+        {
+          "word": "tīvreṇa",
+          "meaning": "strong; severe; violent"
+        },
+        {
+          "word": "bhakti",
+          "meaning": "distribution; partition; separation"
+        },
+        {
+          "word": "yogena",
+          "meaning": "the act of yoking; joining; attaching"
+        },
+        {
+          "word": "nimagnaḥ",
+          "meaning": "to sink down; to dive; to sink or plunge or penetrate into"
+        },
+        {
+          "word": "sādhu",
+          "meaning": "straight; right; leading to a goal"
+        },
+        {
+          "word": "nirvṛtaḥ",
+          "meaning": "satisfied; happy; tranquil"
+        }
+      ]
     },
     {
       "ref": "3.2.5",
@@ -67,7 +311,57 @@
       "kind": "verse",
       "speaker": "suka",
       "deva": "पुलकोद् भिन्नसर्वाङ्गो मुञ्चन्मीलद्दृशा शुचः ।\nपूर्णार्थो लक्षितस्तेन स्नेहप्रसरसम्प्लुतः ॥ ५ ॥",
-      "iast": "pulakod bhinnasarvāṅgo muñcanmīladdṛśā śucaḥ |\npūrṇārtho lakṣitastena snehaprasarasamplutaḥ || 5 ||"
+      "iast": "pulakod bhinnasarvāṅgo muñcanmīladdṛśā śucaḥ |\npūrṇārtho lakṣitastena snehaprasarasamplutaḥ || 5 ||",
+      "wm_dcs": [
+        {
+          "word": "pulaka",
+          "meaning": "a species of earth; horripilation"
+        },
+        {
+          "word": "udbhinna",
+          "meaning": "to break or burst through; to appear above; to become visible"
+        },
+        {
+          "word": "sarva",
+          "meaning": "whole; entire; all"
+        },
+        {
+          "word": "aṅgaḥ",
+          "meaning": "a limb of the body; a limb; a member"
+        },
+        {
+          "word": "muñcan",
+          "meaning": "to loose; to let loose; to release"
+        },
+        {
+          "word": "śucaḥ",
+          "meaning": "flame; glow; heat"
+        },
+        {
+          "word": "pūrṇārthaḥ",
+          "meaning": "one who has attained his object; whose wishes have been realized"
+        },
+        {
+          "word": "lakṣitaḥ",
+          "meaning": "to perceive; to observe"
+        },
+        {
+          "word": "tena",
+          "meaning": "this"
+        },
+        {
+          "word": "sneha",
+          "meaning": "oiliness; unctuousness; fattiness"
+        },
+        {
+          "word": "prasara",
+          "meaning": "going forwards; advance; progress"
+        },
+        {
+          "word": "saṃplutaḥ",
+          "meaning": "to flow or stream together; to meet (as waters); to be heaped or massed together (as clouds)"
+        }
+      ]
     },
     {
       "ref": "3.2.6",
@@ -75,7 +369,53 @@
       "kind": "verse",
       "speaker": "suka",
       "deva": "शनकैः भगवल्लोकान् नृलोकं पुनरागतः ।\nविमृज्य नेत्रे विदुरं प्रीत्याहोद्धव उत्स्मयन् ॥ ६ ॥",
-      "iast": "śanakaiḥ bhagavallokān nṛlokaṁ punarāgataḥ |\nvimṛjya netre viduraṁ prītyāhoddhava utsmayan || 6 ||"
+      "iast": "śanakaiḥ bhagavallokān nṛlokaṁ punarāgataḥ |\nvimṛjya netre viduraṁ prītyāhoddhava utsmayan || 6 ||",
+      "wm_dcs": [
+        {
+          "word": "śanakais",
+          "meaning": "(dimin. of śanais) quietly; softly; gently"
+        },
+        {
+          "word": "nṛlokam",
+          "meaning": "the world of men; the earth"
+        },
+        {
+          "word": "punar",
+          "meaning": "back; home; in an opposite direction"
+        },
+        {
+          "word": "āgataḥ",
+          "meaning": "to come; to make one's appearance; to come near from (abl.) or to (acc. or loc.)"
+        },
+        {
+          "word": "vimṛjya",
+          "meaning": "to rub off or out; to purify; to cleanse"
+        },
+        {
+          "word": "netre",
+          "meaning": "leading; guiding; conducting"
+        },
+        {
+          "word": "viduram",
+          "meaning": "a learned or clever man; an intriguer; name of the younger brother of Dhṛtarāṣṭra and Pāṇḍu"
+        },
+        {
+          "word": "prītyā",
+          "meaning": "any pleasurable sensation; pleasure; joy"
+        },
+        {
+          "word": "āha",
+          "meaning": "to say; to call; to consider"
+        },
+        {
+          "word": "uddhavaḥ",
+          "meaning": "sacrificial fire; a festival; holiday"
+        },
+        {
+          "word": "utsmayan",
+          "meaning": "to begin smiling; to smile at; to deride"
+        }
+      ]
     },
     {
       "ref": "3.2.7",
@@ -86,7 +426,77 @@
       "iast": "kṛṣṇadyumaṇi nimloce gīrṇeṣvajagareṇa ha |\nkiṁ nu naḥ kuśalaṁ brūyāṁ gataśrīṣu gṛheṣvaham || 7 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "uddhavaḥ",
+          "meaning": "sacrificial fire; a festival; holiday"
+        },
+        {
+          "word": "uvāca",
+          "meaning": "to speak; to say; to tell"
+        },
+        {
+          "word": "kṛṣṇa",
+          "meaning": "the dark half of the lunar month from full to new moon; fourth or Kaliyuga; black"
+        },
+        {
+          "word": "dyumaṇi",
+          "meaning": "the sun; name of Śiva; calcined copper"
+        },
+        {
+          "word": "nimloce",
+          "meaning": "name of a prince; son of Bhajamāna"
+        },
+        {
+          "word": "gīrṇeṣu",
+          "meaning": "to call; to invoke; to announce"
+        },
+        {
+          "word": "ajagareṇa",
+          "meaning": "a huge serpent; Boa Constrictor; name of an Asura"
+        },
+        {
+          "word": "ha",
+          "meaning": "indeed; a kind of bīja; thus"
+        },
+        {
+          "word": "kim",
+          "meaning": "who?; what?"
+        },
+        {
+          "word": "nu",
+          "meaning": "now"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "I; we"
+        },
+        {
+          "word": "kuśalam",
+          "meaning": "proper; suitable; good"
+        },
+        {
+          "word": "brūyām",
+          "meaning": "to speak; to say; to tell"
+        },
+        {
+          "word": "gata",
+          "meaning": "to go; to move; to approach"
+        },
+        {
+          "word": "_",
+          "meaning": "light; lustre; radiance"
+        },
+        {
+          "word": "gṛheṣu",
+          "meaning": "an assistant; servant; a house"
+        },
+        {
+          "word": "aham",
+          "meaning": "I; we"
+        }
+      ]
     },
     {
       "ref": "3.2.8",
@@ -97,7 +507,69 @@
       "iast": "durbhago bata loko'yaṁ yadavo nitarāmapi |\nye saṁvasanto na viduḥ hariṁ mīnā ivoḍupam || 8 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "durbhagaḥ",
+          "meaning": "unfortunate; unlucky; disgusting"
+        },
+        {
+          "word": "bata",
+          "meaning": "an interjection expressing astonishment or regret"
+        },
+        {
+          "word": "lokaḥ",
+          "meaning": "free or open space; room; place"
+        },
+        {
+          "word": "ayam",
+          "meaning": "this; (near deictic pronoun in Vedic)"
+        },
+        {
+          "word": "yadavaḥ",
+          "meaning": "name of an ancient hero; name of a country on the west of the Jumnā river (about Mathurā and Vṛndāvana); the people of Yadu or the descendan…"
+        },
+        {
+          "word": "nitarām",
+          "meaning": "downwards; in a low tone; completely"
+        },
+        {
+          "word": "api",
+          "meaning": "also; moreover; besides"
+        },
+        {
+          "word": "ye",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "saṃvasantaḥ",
+          "meaning": "to live or associate with (instr. with and without saha); to cohabit with (acc.); to meet or assemble together"
+        },
+        {
+          "word": "na",
+          "meaning": "not; no; nor"
+        },
+        {
+          "word": "viduḥ",
+          "meaning": "to know; to understand; to learn"
+        },
+        {
+          "word": "harim",
+          "meaning": "yellow or reddish brown or green (the colour); a horse; steed (esp. of Indra)"
+        },
+        {
+          "word": "mīnāḥ",
+          "meaning": "a fish; the sign of the zodiac Pisces; name of a teacher of Yoga"
+        },
+        {
+          "word": "iva",
+          "meaning": "like; in the same manner as (in this sense = yathā); as it were"
+        },
+        {
+          "word": "uḍupam",
+          "meaning": "a raft or float; a kind of drinking vessel covered with leather"
+        }
+      ]
     },
     {
       "ref": "3.2.9",
@@ -108,7 +580,61 @@
       "iast": "iṅgitajñāḥ puruprauḍhā ekārāmāśca sātvatāḥ |\nsātvatāṁ ṛṣabhaṁ sarve bhūtāvāsamamaṁsata || 9 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "iṅgita",
+          "meaning": "palpitation; change of the voice; internal motion"
+        },
+        {
+          "word": "jñāḥ",
+          "meaning": "knowing; familiar with (chiefly in comp.); intelligent"
+        },
+        {
+          "word": "puru",
+          "meaning": "many; much"
+        },
+        {
+          "word": "prauḍhāḥ",
+          "meaning": "raised or lifted up; grown up; fullgrown"
+        },
+        {
+          "word": "eka",
+          "meaning": "one; alone; happening only once"
+        },
+        {
+          "word": "ārāmāḥ",
+          "meaning": "delight; pleasure; place of pleasure"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "sātvatāḥ",
+          "meaning": "a king of the Satvats; name of a people; an adherent or worshipper of Kṛṣṇa"
+        },
+        {
+          "word": "sātvantām",
+          "meaning": "name of a people"
+        },
+        {
+          "word": "ṛṣabham",
+          "meaning": "a bull (as impregnating the flock); any male animal in general; the best or most excellent of any kind or race"
+        },
+        {
+          "word": "sarve",
+          "meaning": "whole; entire; all"
+        },
+        {
+          "word": "bhūtāvāsam",
+          "meaning": "name of Viṣṇu and Śiva; Terminalia Bellerica (as the abode of evil beings); the body (as the abode of the elements)"
+        },
+        {
+          "word": "amaṃsata",
+          "meaning": "to think; to believe; to imagine"
+        }
+      ]
     },
     {
       "ref": "3.2.10",
@@ -119,7 +645,77 @@
       "iast": "devasya māyayā spṛṣṭā ye cānyad asadāśritāḥ |\nbhrāmyate dhīrna tadvākyaiḥ ātmanyuptātmano harau || 10 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "devasya",
+          "meaning": "a deity; god; (rarely applied to) evil demons"
+        },
+        {
+          "word": "māyayā",
+          "meaning": "art; wisdom; extraordinary or supernatural power (only in the earlier language)"
+        },
+        {
+          "word": "spṛṣṭāḥ",
+          "meaning": "to touch; to feel with the hand; to lay the hand on (acc. or loc.)"
+        },
+        {
+          "word": "ye",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "anyat",
+          "meaning": "other; another"
+        },
+        {
+          "word": "asat",
+          "meaning": "untrue; wrong; bad"
+        },
+        {
+          "word": "āśritāḥ",
+          "meaning": "to affix; to apply anything; to join"
+        },
+        {
+          "word": "bhrāmyate",
+          "meaning": "to confuse; to move or roam about; to cause to wander"
+        },
+        {
+          "word": "dhī",
+          "meaning": "thought; religious thought; reflection"
+        },
+        {
+          "word": "na",
+          "meaning": "not; no; nor"
+        },
+        {
+          "word": "tad",
+          "meaning": "this"
+        },
+        {
+          "word": "vākyaiḥ",
+          "meaning": "speech; saying; assertion"
+        },
+        {
+          "word": "ātmani",
+          "meaning": "the breath; the soul; principle of life and sensation"
+        },
+        {
+          "word": "upta",
+          "meaning": "to strew; to scatter (esp. seed); to sow"
+        },
+        {
+          "word": "ātmanaḥ",
+          "meaning": "the breath; the soul; principle of life and sensation"
+        },
+        {
+          "word": "harau",
+          "meaning": "yellow or reddish brown or green (the colour); a horse; steed (esp. of Indra)"
+        }
+      ]
     },
     {
       "ref": "3.2.11",
@@ -130,7 +726,69 @@
       "iast": "pradarśyā taptatapasāṁ avitṛptadṛśāṁ nṛṇām |\nādāyāntaradhādyastu svabimbaṁ lokalocanam || 11 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "pradarśya",
+          "meaning": "to make visible; to show; to indicate"
+        },
+        {
+          "word": "atapta",
+          "meaning": "not heated; cool"
+        },
+        {
+          "word": "tapasām",
+          "meaning": "warmth; heat; pain"
+        },
+        {
+          "word": "a",
+          "meaning": "[gramm.] the sound a; eh bien!; (ibc., negating particle)"
+        },
+        {
+          "word": "vitṛpta",
+          "meaning": "to be satisfied; to become satiated with"
+        },
+        {
+          "word": "dṛśām",
+          "meaning": "sight; view; look"
+        },
+        {
+          "word": "nṝṇām",
+          "meaning": "man; people; human being"
+        },
+        {
+          "word": "ādāya",
+          "meaning": "to take; to accept; to receive from"
+        },
+        {
+          "word": "antar",
+          "meaning": "within; between; amongst"
+        },
+        {
+          "word": "adhāt",
+          "meaning": "to put; to place; to hold"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "tu",
+          "meaning": "do; now; then"
+        },
+        {
+          "word": "sva",
+          "meaning": "own; one's own; related"
+        },
+        {
+          "word": "bimbam",
+          "meaning": "the disk of the sun or moon; any disk; sphere"
+        },
+        {
+          "word": "lokalocanam",
+          "meaning": "the sun; the eyes of men"
+        }
+      ]
     },
     {
       "ref": "3.2.12",
@@ -141,7 +799,89 @@
       "iast": "yanmartyalīlaupayikaṁ svayoga\nmāyābalaṁ darśayatā gṛhītam |\nvismāpanaṁ svasya ca saubhagarddheḥ\nparaṁ padaṁ bhūṣaṇabhūṣaṇāṅgam || 12 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "yat",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "martya",
+          "meaning": "a mortal; man; person"
+        },
+        {
+          "word": "līlā",
+          "meaning": "play; sport; diversion"
+        },
+        {
+          "word": "aupayikam",
+          "meaning": "answering a purpose; leading to an object; belonging to"
+        },
+        {
+          "word": "sva",
+          "meaning": "own; one's own; related"
+        },
+        {
+          "word": "yoga",
+          "meaning": "the act of yoking; joining; attaching"
+        },
+        {
+          "word": "māyā",
+          "meaning": "art; wisdom; extraordinary or supernatural power (only in the earlier language)"
+        },
+        {
+          "word": "balam",
+          "meaning": "power; strength; might"
+        },
+        {
+          "word": "darśayatā",
+          "meaning": "to prove; to demonstrate; to produce"
+        },
+        {
+          "word": "gṛhītam",
+          "meaning": "to seize; to take (by the hand); to grasp"
+        },
+        {
+          "word": "vismāpanam",
+          "meaning": "the act of astonishing or surprising; a means of surprising; a surprising or miraculous sign or phenomenon"
+        },
+        {
+          "word": "svasya",
+          "meaning": "own; one's own; related"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "saubhaga",
+          "meaning": "name of a son of Bṛhacchloka; [rel.] name of Śiva"
+        },
+        {
+          "word": "ṛddhyāḥ",
+          "meaning": "increase; growth; prosperity"
+        },
+        {
+          "word": "param",
+          "meaning": "far; remote; opposite"
+        },
+        {
+          "word": "padam",
+          "meaning": "a step; pace; stride"
+        },
+        {
+          "word": "bhūṣaṇa",
+          "meaning": "embellishment; ornament; decoration"
+        },
+        {
+          "word": "bhūṣaṇa",
+          "meaning": "embellishment; ornament; decoration"
+        },
+        {
+          "word": "aṅgam",
+          "meaning": "a limb of the body; a limb; a member"
+        }
+      ]
     },
     {
       "ref": "3.2.13",
@@ -152,7 +892,89 @@
       "iast": "yaddharmasūnorbata rājasūye\nnirīkṣya dṛksvastyayanaṁ trilokaḥ |\nkārtsnyena cādyeha gataṁ vidhātuḥ\narvāksṛtau kauśalamityamanyata || 13 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "yat",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "dharma",
+          "meaning": "that which is established or firm; steadfast decree; statute"
+        },
+        {
+          "word": "sūnoḥ",
+          "meaning": "a son; child; offspring"
+        },
+        {
+          "word": "bata",
+          "meaning": "an interjection expressing astonishment or regret"
+        },
+        {
+          "word": "rājasūye",
+          "meaning": "a great sacrifice performed at the coronation of a king; name of various wks."
+        },
+        {
+          "word": "nirīkṣya",
+          "meaning": "to look at or towards; to behold; to regard"
+        },
+        {
+          "word": "dṛś",
+          "meaning": "sight; view; look"
+        },
+        {
+          "word": "svastyayanam",
+          "meaning": "auspicious progress; success; blessing"
+        },
+        {
+          "word": "trilokaḥ",
+          "meaning": "the inhabitants of the 3 worlds"
+        },
+        {
+          "word": "kārtsnyena",
+          "meaning": "totality"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "adya",
+          "meaning": "to-day; now-a-days; now"
+        },
+        {
+          "word": "iha",
+          "meaning": "in this place; here; to this place"
+        },
+        {
+          "word": "gatam",
+          "meaning": "to go; to move; to approach"
+        },
+        {
+          "word": "vidhātuḥ",
+          "meaning": "a distributer; disposer; arranger"
+        },
+        {
+          "word": "arvāk",
+          "meaning": "hither; from a certain point; before"
+        },
+        {
+          "word": "sṛtau",
+          "meaning": "a road; path; wandering"
+        },
+        {
+          "word": "kauśalam",
+          "meaning": "well-being; welfare; good fortune"
+        },
+        {
+          "word": "iti",
+          "meaning": "in this manner; thus (in its original signification iti refers to something that has been said or thought); so"
+        },
+        {
+          "word": "amanyata",
+          "meaning": "to think; to believe; to imagine"
+        }
+      ]
     },
     {
       "ref": "3.2.14",
@@ -163,7 +985,33 @@
       "iast": "yasyānurāgaplutahāsarāsa\nlīlāvalokapratilabdhamānāḥ |\nvrajastriyo dṛgbhiranupravṛtta\ndhiyo'vatasthuḥ kila kṛtyaśeṣāḥ || 14 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "vrajastryaḥ",
+          "meaning": "= -rāma"
+        },
+        {
+          "word": "anupravṛtta",
+          "meaning": "to proceed along; to follow"
+        },
+        {
+          "word": "dhyaḥ",
+          "meaning": "thought; religious thought; reflection"
+        },
+        {
+          "word": "avatasthuḥ",
+          "meaning": "to reach down to; to remain standing; to be separated from"
+        },
+        {
+          "word": "kila",
+          "meaning": "(a particle of asseveration or emphasis) indeed; verily; assuredly"
+        },
+        {
+          "word": "kṛtyaśeṣāḥ",
+          "meaning": "one who has left some work to be done; one who has not finished his task"
+        }
+      ]
     },
     {
       "ref": "3.2.15",
@@ -174,7 +1022,89 @@
       "iast": "svaśāntarūpeṣvitaraiḥ svarūpaiḥ\nabhyardyamāneṣvanukampitātmā |\nparāvareśo mahadaṁśayukto\nhyajo'pi jāto bhagavān yathāgniḥ || 15 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "sva",
+          "meaning": "own; one's own; related"
+        },
+        {
+          "word": "śānta",
+          "meaning": "to toil at; to fatigue one's self; to arrange"
+        },
+        {
+          "word": "rūpeṣu",
+          "meaning": "any outward appearance or phenomenon or colour (often pl.); form; shape"
+        },
+        {
+          "word": "itaraiḥ",
+          "meaning": "the other (of two); another"
+        },
+        {
+          "word": "sva",
+          "meaning": "own; one's own; related"
+        },
+        {
+          "word": "rūpaiḥ",
+          "meaning": "any outward appearance or phenomenon or colour (often pl.); form; shape"
+        },
+        {
+          "word": "anukampita",
+          "meaning": "to sympathize with; to compassionate; to reconcile"
+        },
+        {
+          "word": "ātmā",
+          "meaning": "the breath; the soul; principle of life and sensation"
+        },
+        {
+          "word": "parāvara",
+          "meaning": "cause and effect; motive and consequence; the whole extent of an idea"
+        },
+        {
+          "word": "īśaḥ",
+          "meaning": "master; lord; the supreme spirit"
+        },
+        {
+          "word": "mahat",
+          "meaning": "a great or noble man (opp. to nīca); the leader of a sect or superior of a monastery; a camel"
+        },
+        {
+          "word": "aṃśa",
+          "meaning": "share; portion; part"
+        },
+        {
+          "word": "yuktaḥ",
+          "meaning": "to yoke or join or fasten or harness (horses or a chariot); to make ready; to prepare"
+        },
+        {
+          "word": "hi",
+          "meaning": "for; because; on account of"
+        },
+        {
+          "word": "ajaḥ",
+          "meaning": "name of the first uncreated being; Brahmā; Viṣṇu"
+        },
+        {
+          "word": "api",
+          "meaning": "also; moreover; besides"
+        },
+        {
+          "word": "jātaḥ",
+          "meaning": "to come into existence; to grow (as plants); to be born as"
+        },
+        {
+          "word": "bhagavant",
+          "meaning": "name of Kṛṣṇa; name of Śiva; name of a Buddha or a Bodhisattva or a Jina"
+        },
+        {
+          "word": "yathā",
+          "meaning": "according; as; like"
+        },
+        {
+          "word": "agniḥ",
+          "meaning": "fire; sacrificial fire (of three kinds); the number three"
+        }
+      ]
     },
     {
       "ref": "3.2.16",
@@ -185,7 +1115,93 @@
       "iast": "māṁ khedayatyetadajasya janma\nviḍambanaṁ yadvasudevagehe |\nvraje ca vāso'ribhayādiva svayaṁ\npurād vyavātsīd yat anantavīryaḥ || 16 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "mām",
+          "meaning": "I; we"
+        },
+        {
+          "word": "khedayati",
+          "meaning": "to afflict; to torment; to grind"
+        },
+        {
+          "word": "etat",
+          "meaning": "this; [gramm.] the pronoun etad"
+        },
+        {
+          "word": "ajasya",
+          "meaning": "name of the first uncreated being; Brahmā; Viṣṇu"
+        },
+        {
+          "word": "janma",
+          "meaning": "birth; origin; existence"
+        },
+        {
+          "word": "viḍambanam",
+          "meaning": "imitation; copying; representing"
+        },
+        {
+          "word": "yat",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "vasudeva",
+          "meaning": "name of the father of Kṛṣṇa; name of a king of the Kaṇva dynasty; name of Kṛṣṇa"
+        },
+        {
+          "word": "gehe",
+          "meaning": "a house; dwelling; habitation"
+        },
+        {
+          "word": "vraje",
+          "meaning": "a fold; stall; cow-pen"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "vāsaḥ",
+          "meaning": "lodging for the night; night-quarters"
+        },
+        {
+          "word": "ari",
+          "meaning": "an enemy; (in astron.) a hostile planet; name of the sixth astrological mansion"
+        },
+        {
+          "word": "bhayāt",
+          "meaning": "fear; alarm; fear of"
+        },
+        {
+          "word": "iva",
+          "meaning": "like; in the same manner as (in this sense = yathā); as it were"
+        },
+        {
+          "word": "svayam",
+          "meaning": "self; one's self (applicable to all persons); of or by one's self spontaneously"
+        },
+        {
+          "word": "purāt",
+          "meaning": "a town; a stronghold"
+        },
+        {
+          "word": "vyavātsīt",
+          "meaning": "to change an abode; to depart from (abl.); to enter upon an apprenticeship"
+        },
+        {
+          "word": "yat",
+          "meaning": "as often; how many or often; as many as (= Lat. quot)"
+        },
+        {
+          "word": "ananta",
+          "meaning": "endless; boundless; eternal"
+        },
+        {
+          "word": "vīryaḥ",
+          "meaning": "manliness; valour; strength"
+        }
+      ]
     },
     {
       "ref": "3.2.17",
@@ -196,7 +1212,85 @@
       "iast": "dunoti cetaḥ smarato mamaitad\nyadāha pādāvabhivandya pitroḥ |\ntātāmba kaṁsād uruśaṁkitānāṁ\nprasīdataṁ no'kṛtaniṣkṛtīnām || 17 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "dunoti",
+          "meaning": "to be burnt; to be consumed with internal heat; to burn"
+        },
+        {
+          "word": "cetaḥ",
+          "meaning": "splendour; consciousness; intelligence"
+        },
+        {
+          "word": "smarataḥ",
+          "meaning": "to remember; to recollect; to bear in mind"
+        },
+        {
+          "word": "mama",
+          "meaning": "I; we"
+        },
+        {
+          "word": "etat",
+          "meaning": "this; [gramm.] the pronoun etad"
+        },
+        {
+          "word": "yat",
+          "meaning": "as often; how many or often; as many as (= Lat. quot)"
+        },
+        {
+          "word": "āha",
+          "meaning": "to say; to call; to consider"
+        },
+        {
+          "word": "pādau",
+          "meaning": "the foot (of men and animals); the foot or leg of an inanimate object; column"
+        },
+        {
+          "word": "abhivandya",
+          "meaning": "to salute respectfully"
+        },
+        {
+          "word": "pitroḥ",
+          "meaning": "a father; parents; the fathers"
+        },
+        {
+          "word": "tāta",
+          "meaning": "a father"
+        },
+        {
+          "word": "ambaiḥ",
+          "meaning": "a mother; good woman (as a title of respect); name of a plant"
+        },
+        {
+          "word": "kaṃsāt",
+          "meaning": "vessel made of metal; drinking vessel; cup"
+        },
+        {
+          "word": "uru",
+          "meaning": "wide; broad; great"
+        },
+        {
+          "word": "śaṅkitānām",
+          "meaning": "to be anxious or apprehensive; to be afraid of (abl.); to fear"
+        },
+        {
+          "word": "prasīdatam",
+          "meaning": "to fall into the power of (acc.); to settle down; to grow clear and bright"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "I; we"
+        },
+        {
+          "word": "akṛta",
+          "meaning": "undone; not committed; not made"
+        },
+        {
+          "word": "niṣkṛtīnām",
+          "meaning": "complete development; restoration; cure"
+        }
+      ]
     },
     {
       "ref": "3.2.18",
@@ -207,7 +1301,77 @@
       "iast": "ko vā amuṣyāṅghrisarojareṇuṁ\nvismartumīśīta pumān vijighran |\nyo visphuradbhrūviṭapena bhūmeḥ\nbhāraṁ kṛtāntena tiraścakāra || 18 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "kaḥ",
+          "meaning": "who?; what?"
+        },
+        {
+          "word": "vā",
+          "meaning": "either - or; on the one side - on the other side; optionally"
+        },
+        {
+          "word": "amuṣya",
+          "meaning": "jener; yonder"
+        },
+        {
+          "word": "aṅghri",
+          "meaning": "a foot; foot of a seat; the root of a tree"
+        },
+        {
+          "word": "saroja",
+          "meaning": "a lotus"
+        },
+        {
+          "word": "reṇum",
+          "meaning": "dust; a grain or atom of dust; sand"
+        },
+        {
+          "word": "vismartum",
+          "meaning": "to forget; to be unmindful of (acc. or gen.); to be forgotten"
+        },
+        {
+          "word": "pumān",
+          "meaning": "a man; a male being; (in gram.) a masculine"
+        },
+        {
+          "word": "yaḥ",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "visphurat",
+          "meaning": "to dart asunder (intr.); to quiver; to tremble"
+        },
+        {
+          "word": "bhrū",
+          "meaning": "an eyebrow"
+        },
+        {
+          "word": "viṭapena",
+          "meaning": "the young branch of a tree or creeper; twig; sprout"
+        },
+        {
+          "word": "bhūmyāḥ",
+          "meaning": "earth; territory; country"
+        },
+        {
+          "word": "bhāram",
+          "meaning": "a burden; load; weight"
+        },
+        {
+          "word": "kṛtāntena",
+          "meaning": "destiny; fate; name of Yama"
+        },
+        {
+          "word": "tiras",
+          "meaning": "through (acc.); across; beyond"
+        },
+        {
+          "word": "cakāra",
+          "meaning": "to make like or similar; to consider equivalent; to reduce anything to"
+        }
+      ]
     },
     {
       "ref": "3.2.19",
@@ -218,7 +1382,81 @@
       "iast": "dṛṣṭā bhavadbhiḥ nanu rājasūye\ncaidyasya kṛṣṇaṁ dviṣato'pi siddhiḥ |\nyāṁ yoginaḥ saṁspṛhayanti samyag\nyogena kastadvirahaṁ saheta || 19 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "dṛṣṭā",
+          "meaning": "to behold; to look at; to regard"
+        },
+        {
+          "word": "bhavadbhiḥ",
+          "meaning": "your honour; your worship; your lordship or ladyship"
+        },
+        {
+          "word": "nanu",
+          "meaning": "not; not at all; never"
+        },
+        {
+          "word": "rājasūye",
+          "meaning": "a great sacrifice performed at the coronation of a king; name of various wks."
+        },
+        {
+          "word": "caidyasya",
+          "meaning": "patr. from cedi; a prince of the Cedis; the Cedi people (pl.)"
+        },
+        {
+          "word": "kṛṣṇam",
+          "meaning": "the dark half of the lunar month from full to new moon; fourth or Kaliyuga; black"
+        },
+        {
+          "word": "dviṣataḥ",
+          "meaning": "to hate; to show hatred against; to be hostile or unfriendly"
+        },
+        {
+          "word": "api",
+          "meaning": "also; moreover; besides"
+        },
+        {
+          "word": "siddhiḥ",
+          "meaning": "accomplishment; performance; fulfilment"
+        },
+        {
+          "word": "yām",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "yoginaḥ",
+          "meaning": "a follower of the Yoga system; a Yogin (usually called Yogī) or contemplative saint; devotee"
+        },
+        {
+          "word": "saṃspṛhayanti",
+          "meaning": "to desire eagerly (acc.)"
+        },
+        {
+          "word": "samyak",
+          "meaning": "richtig; angemessen"
+        },
+        {
+          "word": "yogena",
+          "meaning": "the act of yoking; joining; attaching"
+        },
+        {
+          "word": "kaḥ",
+          "meaning": "who?; what?"
+        },
+        {
+          "word": "tad",
+          "meaning": "this"
+        },
+        {
+          "word": "viraham",
+          "meaning": "abandonment; desertion; parting"
+        },
+        {
+          "word": "saheta",
+          "meaning": "to be victorious; to defeat; to win"
+        }
+      ]
     },
     {
       "ref": "3.2.20",
@@ -229,7 +1467,97 @@
       "iast": "tathaiva cānye naralokavīrā\nya āhave kṛṣṇamukhāravindam |\nnetraiḥ pibanto nayanābhirāmaṁ\npārthāstrapūtāḥ padamāpurasya || 20 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "tathā",
+          "meaning": "in that manner; so; thus"
+        },
+        {
+          "word": "eva",
+          "meaning": "so; just so; exactly so (in the sense of the later evam)"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "anye",
+          "meaning": "other; another"
+        },
+        {
+          "word": "nara",
+          "meaning": "a man; a male; a person"
+        },
+        {
+          "word": "loka",
+          "meaning": "free or open space; room; place"
+        },
+        {
+          "word": "vīrāḥ",
+          "meaning": "man; hero; chief"
+        },
+        {
+          "word": "ye",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "āhave",
+          "meaning": "sacrificing; sacrifice"
+        },
+        {
+          "word": "kṛṣṇa",
+          "meaning": "the dark half of the lunar month from full to new moon; fourth or Kaliyuga; black"
+        },
+        {
+          "word": "mukha",
+          "meaning": "the mouth; face; countenance"
+        },
+        {
+          "word": "aravindam",
+          "meaning": "a lotus; Nelumbium Speciosum; copper"
+        },
+        {
+          "word": "netraiḥ",
+          "meaning": "leading; guiding; conducting"
+        },
+        {
+          "word": "pibantaḥ",
+          "meaning": "to drink; to quaff; to suck"
+        },
+        {
+          "word": "nayana",
+          "meaning": "leading; directing; managing"
+        },
+        {
+          "word": "abhirāmam",
+          "meaning": "pleasing; delightful; agreeable"
+        },
+        {
+          "word": "pārtha",
+          "meaning": "patr. of Tānva; metron. of Yudhiṣṭhira; name of a king of Kaśmīra (son of Paṅgu) and of another man"
+        },
+        {
+          "word": "astra",
+          "meaning": "a missile weapon; bolt; arrow"
+        },
+        {
+          "word": "pūtaḥ",
+          "meaning": "to make clean or clear or pure or bright; to cleanse; to purify"
+        },
+        {
+          "word": "padam",
+          "meaning": "a step; pace; stride"
+        },
+        {
+          "word": "āpuḥ",
+          "meaning": "to reach; to overtake; to meet with"
+        },
+        {
+          "word": "asya",
+          "meaning": "this; (near deictic pronoun in Vedic)"
+        }
+      ]
     },
     {
       "ref": "3.2.21",
@@ -240,7 +1568,81 @@
       "iast": "svayaṁ tvasāmyātiśayastryadhīśaḥ\nsvārājyalakṣmyāptasamastakāmaḥ |\nbaliṁ haradbhiściralokapālaiḥ\nkirīṭakoṭyeḍitapādapīṭhaḥ || 21 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "svayam",
+          "meaning": "self; one's self (applicable to all persons); of or by one's self spontaneously"
+        },
+        {
+          "word": "tu",
+          "meaning": "do; now; then"
+        },
+        {
+          "word": "asāmya",
+          "meaning": "difference; dissimilarity"
+        },
+        {
+          "word": "atiśayaḥ",
+          "meaning": "pre-eminence; eminence; superiority in quality or quantity or numbers"
+        },
+        {
+          "word": "svāḥ",
+          "meaning": "own; one's own; related"
+        },
+        {
+          "word": "rājya",
+          "meaning": "royalty; kingship; sovereignty"
+        },
+        {
+          "word": "lakṣmī",
+          "meaning": "a mark; sign; token"
+        },
+        {
+          "word": "samasta",
+          "meaning": "thrown or put together; combined; united"
+        },
+        {
+          "word": "kāmaḥ",
+          "meaning": "wish; desire; longing"
+        },
+        {
+          "word": "balim",
+          "meaning": "tribute; offering; gift"
+        },
+        {
+          "word": "haradbhiḥ",
+          "meaning": "to take; to bear; to carry in or on"
+        },
+        {
+          "word": "cira",
+          "meaning": "long; lasting long time; existing from ancient times"
+        },
+        {
+          "word": "lokapālaiḥ",
+          "meaning": "a world-protector; guardian of the world; regent of a quarter of the world"
+        },
+        {
+          "word": "kirīṭa",
+          "meaning": "a diadem; crest; any ornament used as a crown"
+        },
+        {
+          "word": "koṭyā",
+          "meaning": "the curved end of a bow or of claws; end or top of anything; edge or point (of a sword)"
+        },
+        {
+          "word": "īḍita",
+          "meaning": "to implore; to request; to ask for (with two acc.)"
+        },
+        {
+          "word": "pāda",
+          "meaning": "the foot (of men and animals); the foot or leg of an inanimate object; column"
+        },
+        {
+          "word": "pīṭhaḥ",
+          "meaning": "a stool; seat; chair"
+        }
+      ]
     },
     {
       "ref": "3.2.22",
@@ -251,7 +1653,77 @@
       "iast": "tattasya kaiṅkaryamalaṁ bhṛtānno\nviglāpayatyaṅga yadugrasenam |\ntiṣṭhanniṣaṇṇaṁ parameṣṭhidhiṣṇye\nnyabodhayaddeva nidhārayeti || 22 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "tat",
+          "meaning": "this"
+        },
+        {
+          "word": "tasya",
+          "meaning": "this"
+        },
+        {
+          "word": "kaiṃkaryam",
+          "meaning": "the office of a servant; servitude"
+        },
+        {
+          "word": "alam",
+          "meaning": "enough; sufficient; adequate"
+        },
+        {
+          "word": "bhṛtān",
+          "meaning": "to bear; to carry; to convey"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "I; we"
+        },
+        {
+          "word": "aṅga",
+          "meaning": "a particle implying attention; wirklich; allein"
+        },
+        {
+          "word": "yat",
+          "meaning": "as often; how many or often; as many as (= Lat. quot)"
+        },
+        {
+          "word": "ugrasenam",
+          "meaning": "name of several princes; name of a son (S￶rensen: father? or =) of Āhuka; name of a Gandharva"
+        },
+        {
+          "word": "tiṣṭhat",
+          "meaning": "to stand; to station one's self; to get upon"
+        },
+        {
+          "word": "niṣaṇṇam",
+          "meaning": "to sit or lie down or rest upon; to sink or go down (as a ship); to be afflicted"
+        },
+        {
+          "word": "parameṣṭhi",
+          "meaning": "name of any supreme being; name of Agni; name of Prajāpati"
+        },
+        {
+          "word": "dhiṣṇye",
+          "meaning": "site; place; abode"
+        },
+        {
+          "word": "nyabodhayat",
+          "meaning": "to know; to understand; to consider as"
+        },
+        {
+          "word": "devaiḥ",
+          "meaning": "a deity; god; (rarely applied to) evil demons"
+        },
+        {
+          "word": "nidhāraya",
+          "meaning": "to place down in; to bring to; to establish"
+        },
+        {
+          "word": "iti",
+          "meaning": "in this manner; thus (in its original signification iti refers to something that has been said or thought); so"
+        }
+      ]
     },
     {
       "ref": "3.2.23",
@@ -262,7 +1734,89 @@
       "iast": "aho bakī yaṁ stanakālakūṭaṁ\njighāṁsayāpāyayadapyasādhvī |\nlebhe gatiṁ dhātryucitāṁ tato'nyaṁ\nkaṁ vā dayāluṁ śaraṇaṁ vrajema || 23 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "aho",
+          "meaning": "a particle (implying joyful or painful surprise)"
+        },
+        {
+          "word": "bakī",
+          "meaning": "a female crane; a female demon = pūtanā"
+        },
+        {
+          "word": "yam",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "stana",
+          "meaning": "the female breast (either human or animal); teat; dug"
+        },
+        {
+          "word": "kālakūṭam",
+          "meaning": "a poison (contained in a bulbous root or tube); a poison (produced at the churning of the ocean); poison (in general)"
+        },
+        {
+          "word": "jighāṃsayā",
+          "meaning": "wish or intention to strike or slay or destroy; malice; revenge"
+        },
+        {
+          "word": "apāyayat",
+          "meaning": "to temper; (eine erhitzte Substanz) eintauchen; to make someone drink"
+        },
+        {
+          "word": "api",
+          "meaning": "also; moreover; besides"
+        },
+        {
+          "word": "asādhuḥ",
+          "meaning": "not good; wicked; bad"
+        },
+        {
+          "word": "lebhe",
+          "meaning": "to take; to seize; to catch"
+        },
+        {
+          "word": "gatim",
+          "meaning": "going; moving; gait"
+        },
+        {
+          "word": "dhātrī",
+          "meaning": "a nurse; midwife; mother"
+        },
+        {
+          "word": "ucitām",
+          "meaning": "delightful; pleasurable; agreeable"
+        },
+        {
+          "word": "tatas",
+          "meaning": "from that; in consequence of that; for that reason"
+        },
+        {
+          "word": "anyam",
+          "meaning": "other; another"
+        },
+        {
+          "word": "kam",
+          "meaning": "who?; what?"
+        },
+        {
+          "word": "vā",
+          "meaning": "either - or; on the one side - on the other side; optionally"
+        },
+        {
+          "word": "dayālum",
+          "meaning": "= dayāvat; miserable"
+        },
+        {
+          "word": "śaraṇam",
+          "meaning": "shelter; place of shelter or refuge or rest; hut"
+        },
+        {
+          "word": "vrajema",
+          "meaning": "to go; to walk; to proceed"
+        }
+      ]
     },
     {
       "ref": "3.2.24",
@@ -273,7 +1827,69 @@
       "iast": "manye'surān bhāgavatāṁstryadhīśe\nsaṁrambhamārgābhiniviṣṭacittān |\nye saṁyuge'cakṣata tārkṣyaputra\nmaṁse sunābhāyudhamāpatantam || 24 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "manye",
+          "meaning": "to think; to believe; to imagine"
+        },
+        {
+          "word": "asurān",
+          "meaning": "a spirit; good spirit; supreme spirit (said of Varuṇa)"
+        },
+        {
+          "word": "bhāgavatān",
+          "meaning": "a follower or worshipper of Bhagavati or Viṣṇu; name of a king; son of Vajramitra"
+        },
+        {
+          "word": "saṃrambha",
+          "meaning": "the act of grasping or taking hold of; vehemence; impetuosity"
+        },
+        {
+          "word": "mārga",
+          "meaning": "seeking; search; tracing out"
+        },
+        {
+          "word": "abhiniviṣṭa",
+          "meaning": "to enter; to disembogue (as a river) into; to devote one's self entirely"
+        },
+        {
+          "word": "cittān",
+          "meaning": "attending; observing; thinking"
+        },
+        {
+          "word": "ye",
+          "meaning": "what; which; who"
+        },
+        {
+          "word": "saṃyuge",
+          "meaning": "union; conjunction; conflict"
+        },
+        {
+          "word": "acakṣata",
+          "meaning": "to look at; herauslugen; to see"
+        },
+        {
+          "word": "tārkṣyaputram",
+          "meaning": "name of Suparṇa"
+        },
+        {
+          "word": "aṃse",
+          "meaning": "the shoulder; les \"￩paules\" de la vedi"
+        },
+        {
+          "word": "sunābha",
+          "meaning": "a wheel; discus"
+        },
+        {
+          "word": "āyudham",
+          "meaning": "a weapon; implement; gold used for ornaments"
+        },
+        {
+          "word": "āpatantam",
+          "meaning": "to fly towards; to come flying; to hasten towards"
+        }
+      ]
     },
     {
       "ref": "3.2.25",
@@ -284,7 +1900,53 @@
       "iast": "vasudevasya devakyāṁ jāto bhojendrabandhane |\ncikīrṣurbhagavānasyāḥ śamajenābhiyācitaḥ || 25 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "vasudevasya",
+          "meaning": "name of the father of Kṛṣṇa; name of a king of the Kaṇva dynasty; name of Kṛṣṇa"
+        },
+        {
+          "word": "devakyām",
+          "meaning": "name of a daughter of Devaka who was wife of Vasudeva and mother of Kṛṣṇa (identified with aditi); name of Devī at Mathurā"
+        },
+        {
+          "word": "jātaḥ",
+          "meaning": "to come into existence; to grow (as plants); to be born as"
+        },
+        {
+          "word": "bhojendra",
+          "meaning": "a king of the Bhojas"
+        },
+        {
+          "word": "bandhane",
+          "meaning": "the act of binding; tying; fastening"
+        },
+        {
+          "word": "cikīrṣuḥ",
+          "meaning": "intending to make or do or perform (with acc. or ifc.); wishing to exercise one's self in the use of (acc.)"
+        },
+        {
+          "word": "bhagavān",
+          "meaning": "possessing fortune; fortunate; prosperous"
+        },
+        {
+          "word": "asyāḥ",
+          "meaning": "this; (near deictic pronoun in Vedic)"
+        },
+        {
+          "word": "śam",
+          "meaning": "auspiciously; fortunately; happily"
+        },
+        {
+          "word": "ajena",
+          "meaning": "name of the first uncreated being; Brahmā; Viṣṇu"
+        },
+        {
+          "word": "abhiyācitaḥ",
+          "meaning": "to ask for; to solicit; to request"
+        }
+      ]
     },
     {
       "ref": "3.2.26",
@@ -295,7 +1957,65 @@
       "iast": "tato nandavrajamitaḥ pitrā kaṁsād vibibhyatā |\nekādaśa samāstatra gūḍhārciḥ sabalo'vasat || 26 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "tatas",
+          "meaning": "from that; in consequence of that; for that reason"
+        },
+        {
+          "word": "nanda",
+          "meaning": "joy; delight; happiness"
+        },
+        {
+          "word": "vrajam",
+          "meaning": "a fold; stall; cow-pen"
+        },
+        {
+          "word": "itaḥ",
+          "meaning": "to go; to walk; to flow"
+        },
+        {
+          "word": "pitrā",
+          "meaning": "a father; parents; the fathers"
+        },
+        {
+          "word": "kaṃsāt",
+          "meaning": "vessel made of metal; drinking vessel; cup"
+        },
+        {
+          "word": "vibibhyatā",
+          "meaning": "to be afraid of; to fear"
+        },
+        {
+          "word": "ekādaśa",
+          "meaning": "eleven"
+        },
+        {
+          "word": "samāḥ",
+          "meaning": "a year; a half-year; season"
+        },
+        {
+          "word": "tatra",
+          "meaning": "in that place; there (in comp.); thither"
+        },
+        {
+          "word": "gūḍha",
+          "meaning": "to cover; to conceal; to hide"
+        },
+        {
+          "word": "arcīḥ",
+          "meaning": "ray of light; flame; light"
+        },
+        {
+          "word": "sabalaḥ",
+          "meaning": "powerful; strong; together with strength or power"
+        },
+        {
+          "word": "avasat",
+          "meaning": "to dwell; to live; to stop (at a place)"
+        }
+      ]
     },
     {
       "ref": "3.2.27",
@@ -306,7 +2026,57 @@
       "iast": "parīto vatsapairvatsān cārayan vyaharadvibhuḥ |\nyamunopavane kūjad dvijasaṅkulitāṅghripe || 27 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "parītaḥ",
+          "meaning": "to go about; to move in a circle; (trans.) to go or flow round (acc.)"
+        },
+        {
+          "word": "vatsapaiḥ",
+          "meaning": "a keeper of calves; name of a demon"
+        },
+        {
+          "word": "vatsān",
+          "meaning": "a calf; the young of any animal; offspring"
+        },
+        {
+          "word": "cārayan",
+          "meaning": "[alchemy]; to make someone perform sth.; to distribute"
+        },
+        {
+          "word": "vyaharat",
+          "meaning": "to put asunder; to keep apart; to separate"
+        },
+        {
+          "word": "vibhuḥ",
+          "meaning": "bestowing richly; liberal; mighty"
+        },
+        {
+          "word": "yamunā",
+          "meaning": "name of a river commonly called the Jumnā; name of a daughter of the Muni Mataṃga; name of a cow"
+        },
+        {
+          "word": "upavane",
+          "meaning": "a small forest or wood; grove; garden"
+        },
+        {
+          "word": "_",
+          "meaning": "to make any inarticulate or monotonous sound; to utter a cry (as a bird); to coo (as a pigeon)"
+        },
+        {
+          "word": "dvija",
+          "meaning": "a man of any one of the first 3 classes; any Āryan; a Brāhman (re-born through investiture with the sacred thread)"
+        },
+        {
+          "word": "saṃkulita",
+          "meaning": "crowded or filled with; abounding in (comp.); confused"
+        },
+        {
+          "word": "aṅghripe",
+          "meaning": "a tree"
+        }
+      ]
     },
     {
       "ref": "3.2.28",
@@ -317,7 +2087,57 @@
       "iast": "kaumārīṁ darśayan ceṣṭāṁ prekṣaṇīyāṁ vrajaukasām |\nrudanniva hasanmugdha bālasiṁhāvalokanaḥ || 28 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "kaumārām",
+          "meaning": "juvenile; youthful; belonging to a youth or young girl"
+        },
+        {
+          "word": "darśayan",
+          "meaning": "to prove; to demonstrate; to produce"
+        },
+        {
+          "word": "ceṣṭām",
+          "meaning": "moving any limb; gesture; action"
+        },
+        {
+          "word": "prekṣaṇīyām",
+          "meaning": "to be seen; visible; looking like"
+        },
+        {
+          "word": "vrajaukasām",
+          "meaning": "a herdsman"
+        },
+        {
+          "word": "rudan",
+          "meaning": "to weep; to cry; to howl"
+        },
+        {
+          "word": "iva",
+          "meaning": "like; in the same manner as (in this sense = yathā); as it were"
+        },
+        {
+          "word": "hasan",
+          "meaning": "to laugh; to smile; to laugh at (instr.)"
+        },
+        {
+          "word": "mugdha",
+          "meaning": "to become stupefied or unconscious; to be bewildered or perplexed; to err"
+        },
+        {
+          "word": "bāla",
+          "meaning": "young; childish; infantine"
+        },
+        {
+          "word": "siṃha",
+          "meaning": "a lion; the zodiacal sign Leo or its Lagna; a hero or eminent person"
+        },
+        {
+          "word": "avalokanaḥ",
+          "meaning": "seeing; beholding; viewing"
+        }
+      ]
     },
     {
       "ref": "3.2.29",
@@ -328,7 +2148,53 @@
       "iast": "sa eva godhanaṁ lakṣmyā niketaṁ sitagovṛṣam |\ncārayannanugān gopān raṇad veṇurarīramat || 29 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "saḥ",
+          "meaning": "this"
+        },
+        {
+          "word": "eva",
+          "meaning": "so; just so; exactly so (in the sense of the later evam)"
+        },
+        {
+          "word": "godhanam",
+          "meaning": "possession of cows; herd of cows; multitude of cattle (esp. considered as property)"
+        },
+        {
+          "word": "lakṣmyāḥ",
+          "meaning": "a mark; sign; token"
+        },
+        {
+          "word": "niketam",
+          "meaning": "a mark; sign; a house"
+        },
+        {
+          "word": "sita",
+          "meaning": "white; pale; bright"
+        },
+        {
+          "word": "govṛṣam",
+          "meaning": "a bull; Śiva"
+        },
+        {
+          "word": "cārayan",
+          "meaning": "[alchemy]; to make someone perform sth.; to distribute"
+        },
+        {
+          "word": "anugān",
+          "meaning": "following; adapted to; follower"
+        },
+        {
+          "word": "gopān",
+          "meaning": "a cowherd; herdsman; milkman (considered as a man of mixed caste)"
+        },
+        {
+          "word": "arīramat",
+          "meaning": "to stop; to calm; to set at rest"
+        }
+      ]
     },
     {
       "ref": "3.2.30",
@@ -339,7 +2205,53 @@
       "iast": "prayuktān bhojarājena māyinaḥ kāmarūpiṇaḥ |\nlīlayā vyanudattān tān bālaḥ krīḍanakāniva || 30 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "prayuktān",
+          "meaning": "to yoke or join or harness to; to unite with (instr.); to turn (the mind) to"
+        },
+        {
+          "word": "bhojarājena",
+          "meaning": "name of Kaṃsa; name of Bhojadeva (king of Dhārā)"
+        },
+        {
+          "word": "māyinaḥ",
+          "meaning": "artful; skilled in art or enchantment; cunning"
+        },
+        {
+          "word": "kāmarūpiṇaḥ",
+          "meaning": "a pole-cat; a boar; a Vidyādhara (a kind of subordinate deity)"
+        },
+        {
+          "word": "līlayā",
+          "meaning": "play; sport; diversion"
+        },
+        {
+          "word": "vyanudat",
+          "meaning": "to drive away or asunder; to scare away; to dispel"
+        },
+        {
+          "word": "tān",
+          "meaning": "this"
+        },
+        {
+          "word": "tān",
+          "meaning": "this"
+        },
+        {
+          "word": "bālaḥ",
+          "meaning": "a child; boy (esp. one under 5 years); (in law) a minor"
+        },
+        {
+          "word": "krīḍanakān",
+          "meaning": "a plaything; a playground"
+        },
+        {
+          "word": "iva",
+          "meaning": "like; in the same manner as (in this sense = yathā); as it were"
+        }
+      ]
     },
     {
       "ref": "3.2.31",
@@ -350,7 +2262,61 @@
       "iast": "vipannān viṣapānena nigṛhya bhujagādhipam |\nutthāpyāpāyayad gāvaḥ tattoyaṁ prakṛtisthitam || 31 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "vipannān",
+          "meaning": "to fall asunder; to come between; to hinder"
+        },
+        {
+          "word": "viṣa",
+          "meaning": "poison; bane; anything actively pernicious"
+        },
+        {
+          "word": "pānena",
+          "meaning": "drinking (esp. drinking spirituous liquors); draught (only ifc.); drinking the saliva i.e. kissing"
+        },
+        {
+          "word": "nigṛhya",
+          "meaning": "to hold down; to lower; to depress"
+        },
+        {
+          "word": "bhujaga",
+          "meaning": "a snake; serpent; [min.] lead"
+        },
+        {
+          "word": "adhipam",
+          "meaning": "a ruler; commander; regent"
+        },
+        {
+          "word": "utthāpya",
+          "meaning": "to cause to stand up; to raise; to rouse"
+        },
+        {
+          "word": "apāyayat",
+          "meaning": "to temper; (eine erhitzte Substanz) eintauchen; to make someone drink"
+        },
+        {
+          "word": "gāvaḥ",
+          "meaning": "an ox; cattle; a herd of cattle"
+        },
+        {
+          "word": "tat",
+          "meaning": "this"
+        },
+        {
+          "word": "toyam",
+          "meaning": "water; [min.] !!"
+        },
+        {
+          "word": "prakṛti",
+          "meaning": "the original or natural form or condition of anything; original or primary substance (opp. to vi-kṛti); cause"
+        },
+        {
+          "word": "sthitam",
+          "meaning": "to stand; to station one's self; to get upon"
+        }
+      ]
     },
     {
       "ref": "3.2.32",
@@ -361,7 +2327,57 @@
       "iast": "ayājayad gosavena goparājaṁ dvijottamaiḥ |\nvittasya corubhārasya cikīrṣan sadvyayaṁ vibhuḥ || 32 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "ayājayat",
+          "meaning": "to assist any one (acc.) as a priest at a sacrifice (instr.); to cause any one (acc.) to sacrifice anything (acc.) or by means of any one (i…"
+        },
+        {
+          "word": "gosavena",
+          "meaning": "name of an Ekāha ceremony; a cow-sacrifice"
+        },
+        {
+          "word": "gopa",
+          "meaning": "a cowherd; herdsman; milkman (considered as a man of mixed caste)"
+        },
+        {
+          "word": "rājam",
+          "meaning": "= 1. rājan; a king; sovereign"
+        },
+        {
+          "word": "vittasya",
+          "meaning": "anything found; a find; (in later language also pl.) acquisition"
+        },
+        {
+          "word": "ca",
+          "meaning": "and; both; also"
+        },
+        {
+          "word": "uru",
+          "meaning": "wide; broad; great"
+        },
+        {
+          "word": "bhārasya",
+          "meaning": "a burden; load; weight"
+        },
+        {
+          "word": "cikīrṣan",
+          "meaning": "to desire; to wish to do; to intend"
+        },
+        {
+          "word": "sat",
+          "meaning": "to be; to live; to exist"
+        },
+        {
+          "word": "vyayam",
+          "meaning": "disappearance; decay; ruin"
+        },
+        {
+          "word": "vibhuḥ",
+          "meaning": "bestowing richly; liberal; mighty"
+        }
+      ]
     },
     {
       "ref": "3.2.33",
@@ -372,7 +2388,65 @@
       "iast": "varṣatīndre vrajaḥ kopād bhagnamāne'tivihvalaḥ |\ngotralīlātapatreṇa trāto bhadrānugṛhṇatā || 33 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "varṣati",
+          "meaning": "to rain; to rain down; to shower down"
+        },
+        {
+          "word": "indre",
+          "meaning": "the god of the atmosphere and sky; the Indian Jupiter Pluvius or lord of rain (who in Vedic mythology reigns over the deities of the interme…"
+        },
+        {
+          "word": "vrajaḥ",
+          "meaning": "a fold; stall; cow-pen"
+        },
+        {
+          "word": "kopāt",
+          "meaning": "morbid irritation or disorder of the humors of the body; fury (of fire); passion"
+        },
+        {
+          "word": "bhagna",
+          "meaning": "to break; to shatter; to split"
+        },
+        {
+          "word": "māne",
+          "meaning": "opinion; notion; conception"
+        },
+        {
+          "word": "ati",
+          "meaning": "very; extremely"
+        },
+        {
+          "word": "vihvalaḥ",
+          "meaning": "agitated; distressed; annoyed"
+        },
+        {
+          "word": "gotra",
+          "meaning": "protection or shelter for cows; cow-pen; cow-shed"
+        },
+        {
+          "word": "līlā",
+          "meaning": "play; sport; diversion"
+        },
+        {
+          "word": "ātapatreṇa",
+          "meaning": "a large umbrella (of silk or leaves)"
+        },
+        {
+          "word": "trātaḥ",
+          "meaning": "to protect; to preserve; to cherish"
+        },
+        {
+          "word": "bhadraiḥ",
+          "meaning": "blessed; auspicious; happy"
+        },
+        {
+          "word": "anugṛhṇatā",
+          "meaning": "to follow in taking or plundering; to uphold; to receive"
+        }
+      ]
     },
     {
       "ref": "3.2.34",
@@ -383,7 +2457,53 @@
       "iast": "śaracchaśikarairmṛṣṭaṁ mānayan rajanīmukham |\ngāyan kalapadaṁ reme strīṇāṁ maṇḍalamaṇḍanaḥ || 34 ||",
       "metadata": {
         "speaker_surface": "उद्धव"
-      }
+      },
+      "wm_dcs": [
+        {
+          "word": "karaiḥ",
+          "meaning": "ray of light; sunbeam; hail"
+        },
+        {
+          "word": "mṛṣṭam",
+          "meaning": "to wipe; to rub; to polish"
+        },
+        {
+          "word": "mānayan",
+          "meaning": "to honour; to esteem highly"
+        },
+        {
+          "word": "rajanīmukham",
+          "meaning": "the evening"
+        },
+        {
+          "word": "gāyan",
+          "meaning": "to sing; to speak or recite in a singing manner; to sing to (dat.)"
+        },
+        {
+          "word": "kala",
+          "meaning": "a low or soft and inarticulate tone (as humming); Shorea robusta; (in poetry) time equal to four Mātras or instants"
+        },
+        {
+          "word": "padam",
+          "meaning": "a step; pace; stride"
+        },
+        {
+          "word": "reme",
+          "meaning": "to stop; to calm; to set at rest"
+        },
+        {
+          "word": "strīṇām",
+          "meaning": "a woman; female; wife"
+        },
+        {
+          "word": "maṇḍala",
+          "meaning": "a disk; a circle; circumference"
+        },
+        {
+          "word": "maṇḍanaḥ",
+          "meaning": "adorning; being an ornament to (gen.)"
+        }
+      ]
     }
   ]
 }

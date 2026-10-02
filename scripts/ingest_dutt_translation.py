@@ -39,6 +39,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import bisect
 import json
 import os
 import pathlib
@@ -413,68 +414,305 @@ def load_corpus() -> dict[tuple[int, int], list[dict]]:
 
 # ------------------------------------------------------------------ alignment
 
-def align(sentences: list[str], verses: list[dict]) -> tuple[list[tuple[str, str]], str]:
-    """Return ([(ref, sentence)], method).
+# English function words carry no alignment signal.
+ENGLISH_STOP = set("""a an the and or but if then than that this these those there here of in
+on at to for with from by as is are was were be been being am do does did doing have has had
+having i you he she it we they me him her them my your his its our their who whom whose which
+what when where why how all any both each few more most other some such no nor not only own
+same so too very can will just should now into out up down over under again further once
+o thou thee thy ye unto hath hast doth dost saith said says upon whilst among between within
+also even ever every neither none other others shall would could may might must let us let
+o's""".split())
 
-    Only an unambiguous one-to-one, in-order mapping is accepted. Anything else
-    is reported as unaligned rather than guessed.
+
+def deaccent(s: str) -> str:
+    """IAST -> plain ASCII, so 'Vāsudeva' can be matched against 'Vasudeva'."""
+    table = str.maketrans({
+        "ā": "a", "Ā": "A", "ī": "i", "Ī": "I", "ū": "u", "Ū": "U",
+        "ṛ": "r", "Ṛ": "R", "ṝ": "r", "ḹ": "l",
+        "ḷ": "l", "Ḹ": "L",
+        "ē": "e", "ō": "o", "ṁ": "m", "ṃ": "m", "ṅ": "n", "ñ": "n",
+        "ṇ": "n", "ś": "s", "ṣ": "s", "ś": "s", "ṭ": "t", "ḍ": "d",
+        "ḥ": "", "ḫ": "h", "ṟ": "r",
+    })
+    return s.translate(table)
+
+
+class GlossIndex:
+    """lemma -> English senses, with a prefix fallback for inflected forms.
+
+    Built from the Digital Corpus of Sanskrit dictionary (CC BY 4.0), the same
+    source as the word-by-word edition. It is only used as a *bridge* to score
+    how well a sentence of Dutt's English matches a Sanskrit verse; it is never
+    written into the corpus.
     """
-    if not sentences or not verses:
-        return [], "empty"
-    if len(sentences) == len(verses):
-        return [(v["ref"], s) for v, s in zip(verses, sentences)], "one_to_one"
-    # A chapter whose sentence count is short by a small amount usually means
-    # Dutt merged a few neighbouring ślokas into one sentence. We do NOT guess:
-    # those chapters are reported as unaligned.
-    return [], "count_mismatch"
+
+    def __init__(self, dictionary: dict[str, str]):
+        self.lemmas = sorted(dictionary)
+        self.raw = dictionary
+        self._cache: dict[str, list[str]] = {}
+
+    def lemmas_for(self, token: str) -> list[str]:
+        token = token.strip().lower()
+        if token in self._cache:
+            return self._cache[token]
+        found: list[str] = []
+        for length in range(len(token), 4, -1):
+            prefix = token[:length]
+            i = bisect.bisect_left(self.lemmas, prefix)
+            n = 0
+            while i < len(self.lemmas) and self.lemmas[i].startswith(prefix):
+                found.append(self.lemmas[i])
+                i += 1
+                n += 1
+                if n >= 8:
+                    break
+            if found:
+                break
+        self._cache[token] = found
+        return found
+
+    def english_words(self, token: str) -> set[str]:
+        out: set[str] = set()
+        for lem in self.lemmas_for(token):
+            for sense in self.raw[lem].split(";"):
+                for w in re.findall(r"[a-z]{3,}", sense.lower()):
+                    if w not in ENGLISH_STOP:
+                        out.add(w)
+        return out
 
 
-def build(cache: pathlib.Path) -> tuple[dict[str, str], dict]:
+def content_words(sentence: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z]{3,}", sentence.lower())
+            if w not in ENGLISH_STOP}
+
+
+def verse_signals(verse: dict, gloss: GlossIndex) -> tuple[set[str], set[str]]:
+    """(transliterated Sanskrit words, dictionary-glossed English words)."""
+    translit: set[str] = set()
+    glossed: set[str] = set()
+    for tok in re.findall(r"[A-Za-zāīūṛṝḷēōṁṃṅñṇśṣṭḍḥḫ]+", verse.get("iast", "")):
+        plain = deaccent(tok).lower()
+        if len(plain) >= 4:
+            translit.add(plain)
+        glossed |= gloss.english_words(tok)
+    return translit, glossed
+
+
+class Aligner:
+    """Monotone alignment of Dutt's sentences onto the corpus refs.
+
+    Dutt renders a śloka as one or more consecutive sentences and sometimes
+    merges neighbouring ślokas into a single sentence, so the mapping is a
+    monotone many-to-one alignment rather than a bijection. It is solved with a
+    Viterbi pass that maximises the total evidence, and every emitted pair then
+    has to clear an absolute *and* a relative evidence bar — a mapping is only
+    written when the sentence matches that verse far better than any neighbour.
+    """
+
+    SKIP_VERSE = 0.0       # Dutt omitted / merged away this śloka
+    SKIP_SENTENCE = 0.35   # a sentence that renders no śloka of its own
+
+    def __init__(self, idf: dict[str, float], gloss: GlossIndex,
+                 accept: float = 0.30, margin: float = 0.10):
+        self.idf = idf
+        self.gloss = gloss
+        self.accept = accept
+        self.margin = margin
+
+    def score(self, translit: set[str], glossed: set[str], sentence: str) -> float:
+        words = content_words(sentence)
+        if not words or not (translit or glossed):
+            return 0.0
+        hit = 0.0
+        for w in words:
+            if w in translit:
+                hit += 3.0 * self.idf.get(w, 1.0)      # transliteration: strong
+            elif w in glossed:
+                hit += 1.0 * self.idf.get(w, 1.0)      # dictionary gloss: weak
+        total = sum(self.idf.get(w, 1.0) for w in translit) + \
+            sum(self.idf.get(w, 1.0) for w in glossed)
+        if total <= 0:
+            return 0.0
+        return min(hit / total, 1.0)
+
+    REUSE = 0.8              # a sentence Dutt uses for two neighbouring ślokas
+
+    def align(self, verses: list[dict], sentences: list[str]) -> list[tuple[str, str, float]]:
+        if not verses or not sentences:
+            return []
+        sig = [verse_signals(v, self.gloss) for v in verses]
+        n, m = len(verses), len(sentences)
+        S = [[self.score(t, g, s) for s in sentences] for t, g in sig]
+        NEG = float("-inf")
+
+        # best[i][j] = best total evidence when verses 0..i are explained by
+        # sentences 0..j, with verse i either using sentence j or being skipped.
+        best = [[NEG] * m for _ in range(n)]
+        back: list[list[tuple[str, int] | None]] = [[None] * m for _ in range(n)]
+        for j in range(m):
+            if S[0][j] >= self.SKIP_VERSE:
+                best[0][j], back[0][j] = S[0][j], ("s", j)
+            else:
+                best[0][j], back[0][j] = self.SKIP_VERSE, ("v", j)
+
+        for i in range(1, n):
+            prev, row, brow = best[i - 1], best[i], back[i]
+            # best k < j reached by verse i-1
+            pref = [NEG] * (m + 1)
+            argpref = [-1] * (m + 1)
+            run, arg = NEG, -1
+            for j in range(m):
+                if prev[j] > run:
+                    run, arg = prev[j], j
+                pref[j + 1], argpref[j + 1] = run, arg
+            for j in range(m):
+                opt, arg = NEG, None
+                # verse i skipped, sentence j left for later
+                if prev[j] != NEG:
+                    opt, arg = prev[j] + self.SKIP_VERSE, ("v", j)
+                # verse i rendered by sentence j; verse i-1 by an earlier one
+                if pref[j] != NEG:
+                    cand = pref[j] + S[i][j]
+                    if cand > opt:
+                        opt, arg = cand, ("s", argpref[j])
+                # sentence j shared by verses i-1 and i (Dutt merges ślokas)
+                if prev[j] != NEG:
+                    cand = prev[j] + self.REUSE * S[i][j]
+                    if cand > opt:
+                        opt, arg = cand, ("r", j)
+                # sentence j renders nothing on its own
+                if j > 0 and row[j - 1] != NEG:
+                    cand = row[j - 1] + self.SKIP_SENTENCE
+                    if cand > opt:
+                        opt, arg = cand, ("j", j - 1)
+                row[j], brow[j] = opt, arg
+
+        last = best[n - 1]
+        if max(last) == NEG:
+            return []
+        j = max(range(m), key=lambda x: last[x])
+        pairs: list[tuple[int, int, float]] = []
+        i = n - 1
+        while i >= 0:
+            move = back[i][j]
+            if move is None:
+                break
+            kind, k = move
+            if kind == "s":
+                pairs.append((i, j, S[i][j]))
+                i, j = i - 1, k
+            elif kind == "r":
+                pairs.append((i, j, S[i][j]))
+                i -= 1
+            elif kind == "v":
+                i -= 1
+            else:                      # "j": this sentence was skipped
+                j = k
+        pairs.reverse()
+
+    # Confidence gate: the chosen sentence must beat every other sentence
+        # that could plausibly render this verse.
+        out = []
+        for i, j, sc in pairs:
+            others = sorted((S[i][k] for k in range(max(0, j - 2), min(m, j + 3))
+                             if k != j), reverse=True)
+            runner = others[0] if others else 0.0
+            if sc >= self.accept and sc - runner >= self.margin:
+                out.append((verses[i]["ref"], sentences[j], round(sc, 4)))
+        return out
+
+
+def build_idf(sentence_lists: list[list[str]]) -> dict[str, float]:
+    import math
+    df: dict[str, int] = {}
+    for sents in sentence_lists:
+        for s in sents:
+            for w in content_words(s):
+                df[w] = df.get(w, 0) + 1
+    n = max(1, sum(len(s) for s in sentence_lists))
+    return {w: math.log(1.0 + n / c) for w, c in df.items()}
+
+
+def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]:
     corpus = load_corpus()
     mapping: dict[str, str] = {}
     report = {"volumes": [], "chapters": []}
 
+    # First pass: parse every volume so the idf table sees all of Dutt's English.
+    parsed_volumes = []
     for src in DUTT_SOURCES:
         text = download(src, cache)
         parsed = parse_volume(text)
-        vol = {"key": src["key"], "identifier": src["identifier"],
-               "bytes": len(text), "books": sorted(parsed.keys()), "chapters": 0}
+        chapters = []
         for book in sorted(parsed):
             for chap_no in sorted(parsed[book]):
                 verses = corpus.get((book, chap_no), [])
                 paras = chapter_paragraphs(parsed[book][chap_no])
                 sents = chapter_sentences(paras)
-                pairs, method = align(sents, verses)
-                vol["chapters"] += 1
-                rec = {
-                    "volume": src["key"], "skandha": book, "adhyaya": chap_no,
-                    "corpus_verses": len(verses), "paragraphs": len(paras),
-                    "sentences": len(sents), "aligned": len(pairs), "method": method,
-                }
-                report["chapters"].append(rec)
-                for ref, sentence in pairs:
-                    if ref not in mapping:      # first verified witness wins
-                        mapping[ref] = sentence
-        report["volumes"].append(vol)
+                chapters.append((book, chap_no, verses, paras, sents))
+        parsed_volumes.append((src, text, chapters))
+        report["volumes"].append({
+            "key": src["key"], "identifier": src["identifier"],
+            "bytes": len(text),
+            "books": sorted({b for b, _c, _v, _p, _s in chapters}),
+            "chapters": len(chapters),
+        })
+
+    idf = build_idf([c[4] for _s, _t, chs in parsed_volumes for c in chs])
+    aligner = Aligner(idf, gloss)
+    scored: dict[str, float] = {}
+
+    for src, _text, chapters in parsed_volumes:
+        for book, chap_no, verses, paras, sents in chapters:
+            pairs = aligner.align(verses, sents)
+            report["chapters"].append({
+                "volume": src["key"], "skandha": book, "adhyaya": chap_no,
+                "corpus_verses": len(verses), "paragraphs": len(paras),
+                "sentences": len(sents), "aligned": len(pairs),
+                "mean_score": round(sum(p[2] for p in pairs) / len(pairs), 4) if pairs else 0.0,
+            })
+            for ref, sentence, sc in pairs:
+                scored.setdefault(ref, sc)
+                if ref not in mapping:      # first verified witness wins
+                    mapping[ref] = sentence
+
+    # Which adhyāyas the parser never produced, and which never aligned — the
+    # honest measure of what is *not* covered.
+    parsed_keys = {(c["skandha"], c["adhyaya"]) for c in report["chapters"]}
+    report["missing_chapters"] = [f"{b}.{c}" for (b, c) in sorted(corpus)
+                                  if (b, c) not in parsed_keys]
+    report["unaligned_chapters"] = [f"{c['skandha']}.{c['adhyaya']}"
+                                    for c in report["chapters"] if not c["aligned"]]
+    report["samples"] = [
+        {"ref": r, "score": scored[r], "dutt": mapping[r][:400]}
+        for r in sorted(mapping, key=lambda x: [int(p) for p in x.split(".")])[:12]
+    ]
     return mapping, report
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--report", action="store_true")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--cache", default=str(ROOT / ".dutt-cache"))
+    ap.add_argument("--accept", type=float, default=0.30)
+    ap.add_argument("--margin", type=float, default=0.10)
     a = ap.parse_args()
 
     cache = pathlib.Path(a.cache)
-    mapping, report = build(cache)
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from ingest_dcs_wordmeanings import load_dictionary  # noqa: E402
+    gloss = GlossIndex(load_dictionary())
+    Aligner.__init__.__defaults__ = (a.accept, a.margin)
 
+    mapping, report = build(cache, gloss)
     total = sum(len(v) for v in load_corpus().values())
-    covered = len(mapping)
     report["summary"] = {
         "corpus_verses": total,
-        "aligned_verses": covered,
-        "coverage": round(covered / total, 4) if total else 0.0,
+        "aligned_verses": len(mapping),
+        "coverage": round(len(mapping) / total, 4) if total else 0.0,
+        "accept_threshold": a.accept,
+        "margin_threshold": a.margin,
         "field": FIELD,
         "edition": EDITION_SLUG,
     }
@@ -482,11 +720,10 @@ def main() -> int:
     (DOCS / "dutt-translation-coverage.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    by_method: dict[str, int] = {}
-    for rec in report["chapters"]:
-        by_method[rec["method"]] = by_method.get(rec["method"], 0) + 1
-    print(f"Dutt alignment: {covered}/{total} verses "
-          f"({report['summary']['coverage']:.1%}) methods={by_method}")
+    aligned_ch = sum(1 for c in report["chapters"] if c["aligned"])
+    print(f"Dutt alignment: {len(mapping)}/{total} verses "
+          f"({report['summary']['coverage']:.1%}); "
+          f"{aligned_ch}/{len(report['chapters'])} chapters contributed")
     for vol in report["volumes"]:
         print(f"  {vol['key']}: books {vol['books']} chapters {vol['chapters']} "
               f"({vol['bytes']} bytes OCR)")
