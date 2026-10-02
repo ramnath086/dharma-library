@@ -28,7 +28,7 @@ on:
 
 concurrency:
   group: dutt-translation-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -124,7 +124,15 @@ jobs:
             exit 0
           fi
           git commit -m "docs: Dutt English translation alignment coverage report"
-          git push origin "HEAD:${GITHUB_REF_NAME}" || echo "::warning::coverage report push failed"
+          # The log/artifact CDNs are unreachable from the maintainer's sandbox,
+          # so the report travels as a commit; rebase onto whatever else landed
+          # on the branch in the meantime.
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then break; fi
+            echo "push attempt ${attempt} failed, retrying"
+            sleep 10
+          done
 
       - name: Commit aligned translation
         if: github.event.inputs.write == '1'
