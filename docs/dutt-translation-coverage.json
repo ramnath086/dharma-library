@@ -20,7 +20,7 @@
         10,
         20
       ],
-      "chapters": 33
+      "chapters": 22
     },
     {
       "key": "dutt-1896-book-1-7",
@@ -44,7 +44,7 @@
       "paragraphs": 23,
       "sentences": 101,
       "aligned": 4,
-      "mean_score": 0.8268
+      "mean_score": 0.8267
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -64,7 +64,7 @@
       "paragraphs": 4,
       "sentences": 49,
       "aligned": 3,
-      "mean_score": 0.9661
+      "mean_score": 0.966
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -74,7 +74,7 @@
       "paragraphs": 2,
       "sentences": 32,
       "aligned": 3,
-      "mean_score": 0.8913
+      "mean_score": 0.8914
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -94,7 +94,7 @@
       "paragraphs": 3,
       "sentences": 54,
       "aligned": 8,
-      "mean_score": 0.9666
+      "mean_score": 0.9665
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -104,7 +104,7 @@
       "paragraphs": 13,
       "sentences": 99,
       "aligned": 3,
-      "mean_score": 0.9347
+      "mean_score": 0.9346
     },
     {
       "volume": "dutt-1895-book-1-2",
@@ -249,12 +249,12 @@
     {
       "volume": "dutt-1895-book-7-12",
       "skandha": 8,
-      "adhyaya": 10,
-      "corpus_verses": 57,
+      "adhyaya": 24,
+      "corpus_verses": 61,
       "paragraphs": 22,
       "sentences": 27,
-      "aligned": 0,
-      "mean_score": 0.0
+      "aligned": 1,
+      "mean_score": 1.0
     },
     {
       "volume": "dutt-1895-book-7-12",
@@ -334,7 +334,7 @@
       "paragraphs": 24,
       "sentences": 60,
       "aligned": 3,
-      "mean_score": 0.9507
+      "mean_score": 0.9506
     },
     {
       "volume": "dutt-1895-book-7-12",
@@ -414,7 +414,7 @@
       "paragraphs": 25,
       "sentences": 90,
       "aligned": 2,
-      "mean_score": 0.8772
+      "mean_score": 0.8758
     },
     {
       "volume": "dutt-1895-book-7-12",
@@ -433,16 +433,16 @@
       "corpus_verses": 39,
       "paragraphs": 6,
       "sentences": 44,
-      "aligned": 12,
-      "mean_score": 1.0
+      "aligned": 13,
+      "mean_score": 0.9975
     },
     {
       "volume": "dutt-1895-book-7-12",
       "skandha": 9,
       "adhyaya": 24,
       "corpus_verses": 67,
-      "paragraphs": 28,
-      "sentences": 116,
+      "paragraphs": 18,
+      "sentences": 94,
       "aligned": 19,
       "mean_score": 1.0
     },
@@ -459,120 +459,10 @@
     {
       "volume": "dutt-1895-book-7-12",
       "skandha": 20,
-      "adhyaya": 1,
-      "corpus_verses": 0,
-      "paragraphs": 11,
-      "sentences": 83,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 3,
-      "corpus_verses": 0,
-      "paragraphs": 7,
-      "sentences": 74,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 4,
-      "corpus_verses": 0,
-      "paragraphs": 4,
-      "sentences": 65,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 5,
-      "corpus_verses": 0,
-      "paragraphs": 5,
-      "sentences": 41,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 6,
-      "corpus_verses": 0,
-      "paragraphs": 16,
-      "sentences": 188,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 7,
-      "corpus_verses": 0,
-      "paragraphs": 26,
-      "sentences": 236,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 10,
-      "corpus_verses": 0,
-      "paragraphs": 14,
-      "sentences": 206,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 11,
-      "corpus_verses": 0,
-      "paragraphs": 4,
-      "sentences": 39,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 12,
-      "corpus_verses": 0,
-      "paragraphs": 1,
-      "sentences": 41,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 13,
-      "corpus_verses": 0,
-      "paragraphs": 9,
-      "sentences": 125,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
       "adhyaya": 24,
       "corpus_verses": 0,
-      "paragraphs": 0,
-      "sentences": 0,
-      "aligned": 0,
-      "mean_score": 0.0
-    },
-    {
-      "volume": "dutt-1895-book-7-12",
-      "skandha": 20,
-      "adhyaya": 50,
-      "corpus_verses": 0,
-      "paragraphs": 5,
-      "sentences": 59,
+      "paragraphs": 101,
+      "sentences": 1156,
       "aligned": 0,
       "mean_score": 0.0
     },
@@ -584,7 +474,7 @@
       "paragraphs": 13,
       "sentences": 104,
       "aligned": 4,
-      "mean_score": 0.8268
+      "mean_score": 0.8267
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -594,7 +484,7 @@
       "paragraphs": 19,
       "sentences": 103,
       "aligned": 5,
-      "mean_score": 0.9243
+      "mean_score": 0.9244
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -614,7 +504,7 @@
       "paragraphs": 7,
       "sentences": 93,
       "aligned": 1,
-      "mean_score": 0.6893
+      "mean_score": 0.6892
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -634,7 +524,7 @@
       "paragraphs": 29,
       "sentences": 145,
       "aligned": 3,
-      "mean_score": 0.9347
+      "mean_score": 0.9346
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -644,7 +534,7 @@
       "paragraphs": 26,
       "sentences": 228,
       "aligned": 5,
-      "mean_score": 0.8817
+      "mean_score": 0.8816
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -704,7 +594,7 @@
       "paragraphs": 108,
       "sentences": 278,
       "aligned": 5,
-      "mean_score": 0.9134
+      "mean_score": 0.9133
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -714,7 +604,7 @@
       "paragraphs": 21,
       "sentences": 109,
       "aligned": 4,
-      "mean_score": 0.8525
+      "mean_score": 0.8523
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -824,7 +714,7 @@
       "paragraphs": 2,
       "sentences": 31,
       "aligned": 1,
-      "mean_score": 0.9456
+      "mean_score": 0.9465
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -979,7 +869,7 @@
     {
       "volume": "dutt-1896-book-1-7",
       "skandha": 5,
-      "adhyaya": 31,
+      "adhyaya": 30,
       "corpus_verses": 0,
       "paragraphs": 0,
       "sentences": 0,
@@ -1014,7 +904,7 @@
       "paragraphs": 32,
       "sentences": 149,
       "aligned": 6,
-      "mean_score": 0.8944
+      "mean_score": 0.8943
     },
     {
       "volume": "dutt-1896-book-1-7",
@@ -1162,6 +1052,7 @@
     "8.7",
     "8.8",
     "8.9",
+    "8.10",
     "8.11",
     "8.12",
     "8.13",
@@ -1175,7 +1066,6 @@
     "8.21",
     "8.22",
     "8.23",
-    "8.24",
     "9.7",
     "9.14",
     "9.15",
@@ -1322,20 +1212,8 @@
     "2.2",
     "2.3",
     "2.9",
-    "8.10",
     "9.5",
-    "20.1",
-    "20.3",
-    "20.4",
-    "20.5",
-    "20.6",
-    "20.7",
-    "20.10",
-    "20.11",
-    "20.12",
-    "20.13",
     "20.24",
-    "20.50",
     "1.40",
     "3.30",
     "5.2",
@@ -1344,10 +1222,18 @@
     "5.12",
     "5.14",
     "5.22",
-    "5.31",
+    "5.30",
     "5.50",
     "6.26"
   ],
+  "score_histogram": {
+    "0.0-0.1": 0,
+    "0.1-0.2": 0,
+    "0.2-0.3": 0,
+    "0.3-0.5": 1,
+    "0.5-0.7": 8,
+    "0.7-1.0": 276
+  },
   "samples": [
     {
       "ref": "1.1.3",
@@ -1356,12 +1242,12 @@
     },
     {
       "ref": "1.1.7",
-      "score": 0.5592,
+      "score": 0.5591,
       "dutt": "Suta, thou knowest — -good betide thee! what the Protector of the devout was born of Devaki to Vasudeva, to perform."
     },
     {
       "ref": "1.1.12",
-      "score": 0.748,
+      "score": 0.7479,
       "dutt": "Suta, thou knowest — -good betide thee! what the Protector of the devout was born of Devaki to Vasudeva, to perform."
     },
     {
@@ -1376,7 +1262,7 @@
     },
     {
       "ref": "1.3.2",
-      "score": 0.8984,
+      "score": 0.8981,
       "dutt": "From the lotos of His lake-like navel, as He lay asleep on his bed of waters locked in the sleep of self-communion, sprang Brahma, supreme among the creators of the world, from the disposition of whose limbs, the diversification of the world is supposed to have been determined."
     },
     {
@@ -1386,7 +1272,7 @@
     },
     {
       "ref": "1.4.2",
-      "score": 0.6738,
+      "score": 0.6741,
       "dutt": "Then spoke Saunaka,the oldest among the sages engaged in that ceremony of long duration — the holy patriarchf given to the study and cultivation of the Rigveda, complimenting Suta in fair terms, as he was speaking in the foregoing manner, — “O Suta, O Suta, O honorable one, O prince of speakers, report to us that holy discourse about the Most High which the mighty Suka hath delivered."
     },
     {
@@ -1412,10 +1298,10 @@
   ],
   "summary": {
     "corpus_verses": 14105,
-    "aligned_verses": 283,
-    "coverage": 0.0201,
-    "accept_threshold": 0.22,
-    "margin_threshold": 0.06,
+    "aligned_verses": 285,
+    "coverage": 0.0202,
+    "accept_threshold": 0.1,
+    "margin_threshold": 0.02,
     "field": "en_dutt",
     "edition": "sb-en-dutt"
   }
