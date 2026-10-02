@@ -711,7 +711,7 @@ def main() -> int:
     from ingest_dcs_wordmeanings import load_dictionary  # noqa: E402
     # the DCS dictionary dump is (lemma, grammar, meanings); the aligner only
     # needs the meanings
-    gloss = GlossIndex({k: v[2] for k, v in load_dictionary().items()})
+    gloss = GlossIndex({k: v[1] for k, v in load_dictionary().items()})
     global ACCEPT, MARGIN
     ACCEPT, MARGIN = a.accept, a.margin
 
