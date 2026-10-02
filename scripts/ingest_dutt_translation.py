@@ -189,8 +189,8 @@ def is_noise(line: str) -> bool:
     return False
 
 
-BOOK_RE = re.compile(r"^\s*([A-Za-z][A-Za-z'’]{1,7})\s+([IVXL]{1,6})\b")
-CHAPTER_RE = re.compile(r"^\s*([A-Za-z][A-Za-z'’]{3,12})\s+([IVXL]{1,6})\b")
+BOOK_RE = re.compile(r"^\s*([A-Za-z][A-Za-z'’]{1,9})\s+([A-Za-z]{1,7})\b")
+CHAPTER_RE = re.compile(r"^\s*([A-Za-z][A-Za-z'’]{3,12})\s+([A-Za-z]{1,7})\b")
 # Table-of-contents entries carry a trailing page reference ("— P. 4."); real
 # chapter headings never do.
 TOC_RE = re.compile(r"\bP\.\s*[ivxl0-9]|\bPage\s+\d|\bpp?\.\s*\d", re.I)
@@ -205,33 +205,71 @@ STOP_RE = re.compile(
 
 # How much body text must follow a heading for it to count as a real one.
 MIN_CHAPTER_SPAN = 250
-# How close a BOOK heading must be to a CHAPTER heading for the chapter to be
-# considered part of the body (this is what rejects table-of-contents entries).
-BOOK_LOOKBACK = 12
 
 
-def parse_volume(text: str) -> dict[int, dict[int, dict]]:
-    """Split a scan's OCR text into {book: {chapter: {'lines': [...]}}}."""
+def int_to_roman(n: int) -> str:
+    vals = ((1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"),
+            (90, "XC"), (50, "L"), (40, "XL"), (10, "X"), (9, "IX"),
+            (5, "V"), (4, "IV"), (1, "I"))
+    out = []
+    for v, sym in vals:
+        while n >= v:
+            out.append(sym)
+            n -= v
+    return "".join(out)
+
+
+ROMAN_NUMERALS = {int_to_roman(i): i for i in range(1, 61)}
+
+
+def fuzzy_numeral(tok: str) -> int | None:
+    """OCR-safe roman numeral: 'XTV' -> 14, 'TI' -> 2, '12' -> 12."""
+    t = re.sub(r"[^A-Za-z0-9]", "", tok).upper()
+    if not t:
+        return None
+    if t.isdigit():
+        v = int(t)
+        return v if 1 <= v <= 60 else None
+    if t in ROMAN_NUMERALS:
+        return ROMAN_NUMERALS[t]
+    best, best_d = None, 99
+    for r, v in ROMAN_NUMERALS.items():
+        d = edit_distance(t, r)
+        if d < best_d or (d == best_d and best is not None and v < best):
+            best, best_d = v, d
+    return best if best_d <= 1 else None
+
+
+def heading_num(line: str, pattern, word: str, tol: int) -> int | None:
+    """Return the numeral value if `line` is a bare BOOK/CHAPTER heading.
+
+    A real heading line carries nothing but the word and the number.
+    Table-of-contents entries carry a long description after it, and are
+    rejected here. The word itself is matched with an edit-distance tolerance
+    because these scans are full of 'Cuaprer', 'Cnarrer' and 'BOOR'.
+    """
+    m = pattern.match(line)
+    if not m or not looks_like(m.group(1), word, tol):
+        return None
+    rest = line[m.end():].strip(" .:—|	")
+    if len(rest) > 12:            # description / page reference follows
+        return None
+    if TOC_RE.search(line):
+        return None
+    return fuzzy_numeral(m.group(2)) or 0
+
+
+def parse_volume(text: str, expected: dict[int, int] | None = None) -> dict[int, dict[int, dict]]:
+    """Split a scan's OCR text into {book: {chapter: {'lines': [...]}}}.
+
+    `expected` maps skandha -> number of adhyāyas in the corpus, and is used to
+    throw away headings whose chapter number cannot exist (a mangled roman
+    numeral in the table of contents, e.g. 'CHAPTER XLV' in a book that only
+    has nineteen).
+    """
     lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
     n = len(lines)
-
-    # 1. locate candidate BOOK and CHAPTER headings
-    def heading_num(line: str, pattern, word: str, tol: int) -> int | None:
-        """Return the roman-numeral value if `line` is a bare heading line.
-
-        A real heading line carries nothing but the word and the number.
-        Table-of-contents entries carry a long description after it, and are
-        rejected here.
-        """
-        m = pattern.match(line)
-        if not m or not looks_like(m.group(1), word, tol):
-            return None
-        rest = line[m.end():].strip(" .:—-|\t")
-        if len(rest) > 12:            # description / page reference follows
-            return None
-        if TOC_RE.search(line):
-            return None
-        return roman_to_int(m.group(2)) or 0
+    expected = expected or {}
 
     book_at: dict[int, int] = {}
     chapter_at: dict[int, int] = {}
@@ -243,42 +281,55 @@ def parse_volume(text: str) -> dict[int, dict[int, dict]]:
         c = heading_num(line, CHAPTER_RE, "CHAPTER", 2)
         if c is not None:
             chapter_at[i] = c
-
     chapter_idx = sorted(chapter_at)
     book_idx = sorted(book_at)
     if not chapter_idx:
         return {}
 
-    def nearest_book_before(i: int) -> int | None:
-        best = None
-        for b in book_idx:
-            if b < i and i - b <= BOOK_LOOKBACK:
-                best = book_at[b]
-        return best
+    def plausible(chap: int, book: int | None) -> bool:
+        """A chapter number that cannot exist in this book is a mis-OCR."""
+        limit = expected.get(book) if book is not None else None
+        if limit is not None and chap > limit:
+            return False
+        return 1 <= chap <= 60
 
-    # 2. a heading is "real" only when real body text follows before the next
-    #    heading *and* a BOOK heading sits just above it. Both tests together
-    #    discard the table of contents, whose entries are one short line each
-    #    and only the first of which follows a BOOK line.
+    # A heading is "real" only when real body text follows before the next
+    # heading. That discards the table of contents, whose entries are one short
+    # line each.
     real_chapters: list[tuple[int, int]] = []
     for pos, i in enumerate(chapter_idx):
         nxt = chapter_idx[pos + 1] if pos + 1 < len(chapter_idx) else n
-        span = sum(len(x) for x in lines[i + 1:nxt])
-        if span >= MIN_CHAPTER_SPAN and nearest_book_before(i) is not None:
+        if sum(len(x) for x in lines[i + 1:nxt]) >= MIN_CHAPTER_SPAN:
             real_chapters.append((i, chapter_at[i]))
     if not real_chapters:
         return {}
 
     body_start = real_chapters[0][0]
+
+    # The book owning the first body chapter: the nearest BOOK heading above
+    # it, else (contents often interpose) the book named closest above that
+    # still admits this chapter number.
+    def book_before(i: int) -> int | None:
+        cands = [book_at[b] for b in book_idx if b < i]
+        if not cands:
+            return None
+        chap = real_chapters[0][1]
+        for b in reversed(cands):
+            if plausible(chap, b):
+                return b
+        return cands[-1]
+
     body_end = real_chapters[-1][0]
 
-    # 3. walk the body, assigning lines to the current (book, chapter)
+    # Walk the body, assigning lines to the current (book, chapter). The book
+    # is inherited from the last BOOK heading seen, which survives the scans
+    # where a page break pushes the heading far from the chapter line.
     out: dict[int, dict[int, dict]] = {}
-    cur_book = nearest_book_before(body_start) or 0
+    cur_book = book_before(body_start) or 0
     cur_chap = 0
     buf: list[str] = []
 
-    def flush():
+    def flush() -> None:
         nonlocal buf
         if cur_book and cur_chap:
             out.setdefault(cur_book, {}).setdefault(cur_chap, {"lines": []})["lines"].extend(buf)
@@ -291,6 +342,8 @@ def parse_volume(text: str) -> dict[int, dict[int, dict]]:
             cur_book = book_at[i]
             continue          # the heading itself is not body text
         if i in chapter_at:
+            if not plausible(chapter_at[i], cur_book):
+                continue
             if i > body_start:
                 flush()
             cur_chap = chapter_at[i]
@@ -397,6 +450,16 @@ def chapter_sentences(paras: list[str]) -> list[str]:
 
 
 # ------------------------------------------------------------- corpus access
+
+def expected_chapters() -> dict[int, int]:
+    """skandha -> number of adhyāyas, from the corpus generator's chapter map."""
+    sys.path.insert(0, str(ROOT / "scripts"))
+    try:
+        from generate_bhagavata_corpus import SKANDHA_CHAPTERS
+    except Exception:
+        return {}
+    return {int(k): len(v) for k, v in SKANDHA_CHAPTERS.items()}
+
 
 def load_corpus() -> dict[tuple[int, int], list[dict]]:
     corpus: dict[tuple[int, int], list[dict]] = {}
@@ -523,14 +586,17 @@ class Aligner:
         words = content_words(sentence)
         if not words or not (translit or glossed):
             return 0.0
+        # Words that never occur anywhere in Dutt's English get zero weight:
+        # they cannot carry any evidence, and counting them would dilute the
+        # score of the words that do.
         hit = 0.0
         for w in words:
             if w in translit:
-                hit += 3.0 * self.idf.get(w, 1.0)      # transliteration: strong
+                hit += 3.0 * self.idf.get(w, 0.0)      # transliteration: strong
             elif w in glossed:
-                hit += 1.0 * self.idf.get(w, 1.0)      # dictionary gloss: weak
-        total = sum(self.idf.get(w, 1.0) for w in translit) + \
-            sum(self.idf.get(w, 1.0) for w in glossed)
+                hit += 1.0 * self.idf.get(w, 0.0)      # dictionary gloss: weak
+        total = sum(self.idf.get(w, 0.0) for w in translit) + \
+            sum(self.idf.get(w, 0.0) for w in glossed)
         if total <= 0:
             return 0.0
         return min(hit / total, 1.0)
@@ -633,8 +699,8 @@ def build_idf(sentence_lists: list[list[str]]) -> dict[str, float]:
     return {w: math.log(1.0 + n / c) for w, c in df.items()}
 
 
-ACCEPT = 0.30      # minimum evidence for a sentence to be accepted as a rendering
-MARGIN = 0.10      # required lead over the runner-up sentence
+ACCEPT = 0.22      # minimum evidence for a sentence to be accepted as a rendering
+MARGIN = 0.06      # required lead over the runner-up sentence
 
 
 def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]:
@@ -646,7 +712,8 @@ def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]
     parsed_volumes = []
     for src in DUTT_SOURCES:
         text = download(src, cache)
-        parsed = parse_volume(text)
+        expected = expected_chapters()
+        parsed = parse_volume(text, expected)
         chapters = []
         for book in sorted(parsed):
             for chap_no in sorted(parsed[book]):
@@ -700,8 +767,8 @@ def main() -> int:
                     help="default: parse, align and write the coverage report only")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--cache", default=str(ROOT / ".dutt-cache"))
-    ap.add_argument("--accept", type=float, default=0.30)
-    ap.add_argument("--margin", type=float, default=0.10)
+    ap.add_argument("--accept", type=float, default=0.22)
+    ap.add_argument("--margin", type=float, default=0.06)
     a = ap.parse_args()
 
     cache = pathlib.Path(a.cache)
