@@ -20,11 +20,6 @@ on:
         description: "Patch en_dutt into content and commit (0 = report only)"
         required: false
         default: "0"
-  push:
-    branches: ["arena/**"]
-    paths:
-      - "scripts/ingest_dutt_translation.py"
-      - ".github/workflows/dutt-translation.yml"
 
 concurrency:
   group: dutt-translation-${{ github.ref }}
@@ -71,8 +66,7 @@ jobs:
           s = r["summary"]
           print(f"- corpus verses: **{s['corpus_verses']}**")
           print(f"- aligned verses: **{s['aligned_verses']}** ({s['coverage']:.1%})")
-          by = collections.Counter(c["method"] for c in r["chapters"])
-          print(f"- chapters: {len(r['chapters'])} — methods: {dict(by)}")
+          print(f"- chapters parsed: {len(r['chapters'])}")
           print(f"- score histogram: {r.get('score_histogram', {})}")
           print(f"- chapters with no aligned verse: **{len(r.get('unaligned_chapters', []))}**")
           print(f"- chapters the parser never produced: **{len(r.get('missing_chapters', []))}** "
@@ -87,16 +81,6 @@ jobs:
               echo "No coverage report — the importer did not run."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
-
-      - uses: actions/upload-artifact@v7
-        if: always()
-        with:
-          name: dutt-alignment-report
-          path: |
-            dutt-log.txt
-            docs/dutt-translation-coverage.json
-          if-no-files-found: ignore
-          retention-days: 14
 
       # The Arena sandbox cannot reach the Actions log/artifact CDNs, so the
       # coverage report is committed to the session branch instead. It is a QA
