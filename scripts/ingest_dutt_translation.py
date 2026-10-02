@@ -513,8 +513,9 @@ class Aligner:
     SKIP_VERSE = 0.0       # Dutt omitted / merged away this śloka
     SKIP_SENTENCE = 0.35   # a sentence that renders no śloka of its own
 
-    def __init__(self, idf: dict[str, float], gloss: GlossIndex,
-                 accept: float = 0.30, margin: float = 0.10):
+    def __init__(self, idf: dict[str, float], gloss: GlossIndex):
+        self.accept = ACCEPT
+        self.margin = MARGIN
         self.idf = idf
         self.gloss = gloss
         self.accept = accept
@@ -634,6 +635,10 @@ def build_idf(sentence_lists: list[list[str]]) -> dict[str, float]:
     return {w: math.log(1.0 + n / c) for w, c in df.items()}
 
 
+ACCEPT = 0.30      # minimum evidence for a sentence to be accepted as a rendering
+MARGIN = 0.10      # required lead over the runner-up sentence
+
+
 def build(cache: pathlib.Path, gloss: GlossIndex) -> tuple[dict[str, str], dict]:
     corpus = load_corpus()
     mapping: dict[str, str] = {}
@@ -702,8 +707,11 @@ def main() -> int:
     cache = pathlib.Path(a.cache)
     sys.path.insert(0, str(ROOT / "scripts"))
     from ingest_dcs_wordmeanings import load_dictionary  # noqa: E402
-    gloss = GlossIndex(load_dictionary())
-    Aligner.__init__.__defaults__ = (a.accept, a.margin)
+    # the DCS dictionary dump is (lemma, grammar, meanings); the aligner only
+    # needs the meanings
+    gloss = GlossIndex({k: v[2] for k, v in load_dictionary().items()})
+    global ACCEPT, MARGIN
+    ACCEPT, MARGIN = a.accept, a.margin
 
     mapping, report = build(cache, gloss)
     total = sum(len(v) for v in load_corpus().values())

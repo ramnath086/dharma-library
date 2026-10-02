@@ -112,6 +112,13 @@ jobs:
           if [ -f docs/dutt-translation-coverage.json ]; then
             git add docs/dutt-translation-coverage.json
           fi
+          # The sandbox cannot read the Actions log CDN, so the log itself is
+          # committed on failure — same convention as
+          # docs/bhagavata-ingest-last-error.txt.
+          if [ -f dutt-log.txt ]; then
+            cp dutt-log.txt docs/dutt-ingest-last-error.txt
+            git add docs/dutt-ingest-last-error.txt
+          fi
           if git diff --cached --quiet; then
             echo "coverage report unchanged"
             exit 0
