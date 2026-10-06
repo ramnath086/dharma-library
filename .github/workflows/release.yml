@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   publish:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact CI commit
@@ -59,6 +59,30 @@ jobs:
           touch _site/.nojekyll
           ls -lh _site/downloads/
 
+      - name: Check whether release already exists
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.version.outputs.version }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create GitHub Release
+        if: ${{ steps.existing.outputs.exists != 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.version.outputs.version }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          gh release create "$TAG" "_site/downloads/dharma-library-v${VERSION}.apk" \
+            --target ${{ github.event.workflow_run.head_sha }} \
+            --title "Dharma Library v${VERSION}" \
+            --generate-notes
+
       - name: Check Cloudflare configuration
         id: cloudflare
         shell: bash
@@ -74,31 +98,6 @@ jobs:
             echo "::warning::Cloudflare secrets are not configured yet; website deployment will be skipped."
           fi
 
-      - name: Create GitHub Release
-        id: release
-        if: ${{ steps.existing.outputs.exists != 'true' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: v${{ steps.version.outputs.version }}
-          VERSION: ${{ steps.version.outputs.version }}
-        run: |
-          gh release create "$TAG" "_site/downloads/dharma-library-v${VERSION}.apk" \
-            --target ${{ github.event.workflow_run.head_sha }} \
-            --title "Dharma Library v${VERSION}" \
-            --generate-notes
-
-      - name: Check whether release already exists
-        id: existing
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: v${{ steps.version.outputs.version }}
-        run: |
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "exists=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Deploy website to Cloudflare Workers
         if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
         uses: cloudflare/wrangler-action@v4
@@ -106,7 +105,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --config wrangler.jsonc
-          workingDirectory: .
 
       - name: Publication summary
         if: always()
@@ -122,5 +120,5 @@ jobs:
             echo "- CI commit: ${{ github.event.workflow_run.head_sha }}"
             echo "- GitHub Release: v$VERSION"
             echo "- Cloudflare deployment enabled: $CF_ENABLED"
-            echo "- Website path: /downloads/dharma-library-latest.apk"
+            echo "- Website download path: /downloads/dharma-library-latest.apk"
           } >> "$GITHUB_STEP_SUMMARY"
