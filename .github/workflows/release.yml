@@ -1,0 +1,124 @@
+name: Release Android + Publish Website
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: release-and-website
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact CI commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - name: Read app version
+        id: version
+        shell: bash
+        run: |
+          version=$(sed -n 's/^version:[[:space:]]*\([^+[:space:]]*\)+[0-9][0-9]*/\1/p' app/pubspec.yaml | head -n1)
+          build=$(sed -n 's/^version:[[:space:]]*[^+[:space:]]*+\([0-9][0-9]*\).*/\1/p' app/pubspec.yaml | head -n1)
+          test -n "$version"
+          test -n "$build"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "build=$build" >> "$GITHUB_OUTPUT"
+
+      - name: Download signed APK from CI
+        uses: actions/download-artifact@v4
+        with:
+          name: dharma-library-apk
+          path: release-artifact
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Prepare website
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          BUILD: ${{ steps.version.outputs.build }}
+        run: |
+          rm -rf _site
+          mkdir -p _site/downloads
+          cp website/index.html website/download.html website/styles.css _site/
+          apk=$(find release-artifact -type f -name '*.apk' | head -n1)
+          test -n "$apk"
+          cp "$apk" "_site/downloads/dharma-library-v${VERSION}.apk"
+          cp "$apk" "_site/downloads/dharma-library-latest.apk"
+          printf '{\n  "version": "%s",\n  "build": "%s",\n  "download": "downloads/dharma-library-latest.apk",\n  "release": "v%s"\n}\n' "$VERSION" "$BUILD" "$VERSION" > _site/version.json
+          touch _site/.nojekyll
+          ls -lh _site/downloads/
+
+      - name: Check whether release already exists
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.version.outputs.version }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create GitHub Release
+        if: ${{ steps.existing.outputs.exists != 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.version.outputs.version }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          gh release create "$TAG" "_site/downloads/dharma-library-v${VERSION}.apk" \
+            --target ${{ github.event.workflow_run.head_sha }} \
+            --title "Dharma Library v${VERSION}" \
+            --generate-notes
+
+      - name: Check Cloudflare configuration
+        id: cloudflare
+        shell: bash
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "Cloudflare deployment credentials are configured."
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Cloudflare secrets are not configured yet; website deployment will be skipped."
+          fi
+
+      - name: Deploy website to Cloudflare Workers
+        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config wrangler.jsonc
+
+      - name: Publication summary
+        if: always()
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          BUILD: ${{ steps.version.outputs.build }}
+          CF_ENABLED: ${{ steps.cloudflare.outputs.enabled }}
+        run: |
+          {
+            echo "### Dharma Library publication"
+            echo "- Version: $VERSION"
+            echo "- Build: $BUILD"
+            echo "- CI commit: ${{ github.event.workflow_run.head_sha }}"
+            echo "- GitHub Release: v$VERSION"
+            echo "- Cloudflare deployment enabled: $CF_ENABLED"
+            echo "- Website download path: /downloads/dharma-library-latest.apk"
+          } >> "$GITHUB_STEP_SUMMARY"
