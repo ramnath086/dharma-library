@@ -9,11 +9,9 @@ on:
 permissions:
   contents: write
   actions: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: release-and-pages
+  group: release-and-website
   cancel-in-progress: false
 
 jobs:
@@ -37,7 +35,7 @@ jobs:
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "build=$build" >> "$GITHUB_OUTPUT"
 
-      - name: Download signed APK from the successful CI run
+      - name: Download signed APK from CI
         uses: actions/download-artifact@v4
         with:
           name: dharma-library-apk
@@ -61,6 +59,34 @@ jobs:
           touch _site/.nojekyll
           ls -lh _site/downloads/
 
+      - name: Check Cloudflare configuration
+        id: cloudflare
+        shell: bash
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "Cloudflare deployment credentials are configured."
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Cloudflare secrets are not configured yet; website deployment will be skipped."
+          fi
+
+      - name: Create GitHub Release
+        id: release
+        if: ${{ steps.existing.outputs.exists != 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.version.outputs.version }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          gh release create "$TAG" "_site/downloads/dharma-library-v${VERSION}.apk" \
+            --target ${{ github.event.workflow_run.head_sha }} \
+            --title "Dharma Library v${VERSION}" \
+            --generate-notes
+
       - name: Check whether release already exists
         id: existing
         env:
@@ -73,30 +99,28 @@ jobs:
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Create GitHub Release
-        if: steps.existing.outputs.exists != 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: v${{ steps.version.outputs.version }}
-          VERSION: ${{ steps.version.outputs.version }}
-        run: |
-          gh release create "$TAG" "_site/downloads/dharma-library-v${VERSION}.apk" \
-            --target ${{ github.event.workflow_run.head_sha }} \
-            --title "Dharma Library v${VERSION}" \
-            --generate-notes
-
-      - name: Upload GitHub Pages artifact
-        if: steps.existing.outputs.exists != 'true'
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy website to Cloudflare Workers
+        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
+        uses: cloudflare/wrangler-action@v4
         with:
-          path: _site
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config wrangler.jsonc
+          workingDirectory: .
 
-      - name: Deploy GitHub Pages
-        if: steps.existing.outputs.exists != 'true'
-        uses: actions/deploy-pages@v4
-
-      - name: Publish summary
+      - name: Publication summary
         if: always()
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          BUILD: ${{ steps.version.outputs.build }}
+          CF_ENABLED: ${{ steps.cloudflare.outputs.enabled }}
         run: |
-          echo "Dharma Library publication workflow completed for version ${{ steps.version.outputs.version }}"
-          echo "Commit: ${{ github.event.workflow_run.head_sha }}"
+          {
+            echo "### Dharma Library publication"
+            echo "- Version: $VERSION"
+            echo "- Build: $BUILD"
+            echo "- CI commit: ${{ github.event.workflow_run.head_sha }}"
+            echo "- GitHub Release: v$VERSION"
+            echo "- Cloudflare deployment enabled: $CF_ENABLED"
+            echo "- Website path: /downloads/dharma-library-latest.apk"
+          } >> "$GITHUB_STEP_SUMMARY"
