@@ -9,18 +9,24 @@ on:
 permissions:
   contents: write
   actions: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: release-and-website
+  group: release-and-pages
   cancel-in-progress: false
 
 jobs:
   publish:
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout exact CI commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
 
@@ -51,8 +57,9 @@ jobs:
           rm -rf _site
           mkdir -p _site
           cp website/index.html website/download.html website/styles.css _site/
-          printf '{\n  "version": "%s",\n  "build": "%s",\n  "download": "downloads/dharma-library-latest.apk",\n  "release": "v%s"\n}\n' "$VERSION" "$BUILD" "$VERSION" > _site/version.json
+          printf '{\n  "version": "%s",\n  "build": "%s",\n  "download": "https://github.com/ramnath086/dharma-library/releases/latest/download/dharma-library-latest.apk",\n  "release": "v%s"\n}\n' "$VERSION" "$BUILD" "$VERSION" > _site/version.json
           touch _site/.nojekyll
+          find _site -maxdepth 2 -type f -printf '%p %k KB\n' | sort
 
       - name: Check whether release already exists
         id: existing
@@ -71,79 +78,42 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: v${{ steps.version.outputs.version }}
-          VERSION: ${{ steps.version.outputs.version }}
         run: |
-          apk=$(find release-artifact -type f -name '*.apk' | head -n1)
-          test -n "$apk"
-          gh release create "$TAG" "$apk" \
+          gh release create "$TAG" \
             --target ${{ github.event.workflow_run.head_sha }} \
-            --title "Dharma Library v${VERSION}" \
+            --title "Dharma Library v${{ steps.version.outputs.version }}" \
             --generate-notes
 
-      - name: Check Cloudflare configuration
-        id: cloudflare
-        shell: bash
+      - name: Publish APK assets to GitHub Release
         env:
-          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then
-            echo "enabled=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::Cloudflare secrets are not configured; website publication will be skipped."
-          fi
-
-      - name: Install Wrangler
-        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
-        run: npm install --no-save wrangler@4
-
-      - name: Ensure R2 APK bucket exists
-        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          BUCKET: dharma-library-apk
-        run: |
-          if npx wrangler r2 bucket info "$BUCKET" >/dev/null 2>&1; then
-            echo "R2 bucket $BUCKET already exists."
-          else
-            npx wrangler r2 bucket create "$BUCKET"
-          fi
-
-      - name: Upload signed APKs to R2
-        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.version.outputs.version }}
           VERSION: ${{ steps.version.outputs.version }}
         run: |
           apk=$(find release-artifact -type f -name '*.apk' | head -n1)
           test -n "$apk"
-          npx wrangler r2 object put "dharma-library-apk/dharma-library-v${VERSION}.apk" \
-            --file "$apk" --remote \
-            --content-type "application/vnd.android.package-archive" \
-            --content-disposition "attachment; filename=dharma-library-v${VERSION}.apk" \
-            --cache-control "public, max-age=31536000, immutable" --force
-          npx wrangler r2 object put "dharma-library-apk/dharma-library-latest.apk" \
-            --file "$apk" --remote \
-            --content-type "application/vnd.android.package-archive" \
-            --content-disposition "attachment; filename=dharma-library-latest.apk" \
-            --cache-control "public, max-age=300" --force
+          gh release upload "$TAG" \
+            "$apk#dharma-library-v${VERSION}.apk" \
+            "$apk#dharma-library-latest.apk" \
+            --clobber
 
-      - name: Deploy website Worker
-        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx wrangler deploy --config wrangler.jsonc
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Publication summary
         if: always()
         env:
           VERSION: ${{ steps.version.outputs.version }}
           BUILD: ${{ steps.version.outputs.build }}
-          CF_ENABLED: ${{ steps.cloudflare.outputs.enabled }}
         run: |
           {
             echo "### Dharma Library publication"
@@ -151,6 +121,5 @@ jobs:
             echo "- Build: $BUILD"
             echo "- CI commit: ${{ github.event.workflow_run.head_sha }}"
             echo "- GitHub Release: v$VERSION"
-            echo "- Cloudflare deployment enabled: $CF_ENABLED"
-            echo "- Website download path: /downloads/dharma-library-latest.apk"
+            echo "- GitHub Pages APK: /downloads/dharma-library-latest.apk"
           } >> "$GITHUB_STEP_SUMMARY"
