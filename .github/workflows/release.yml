@@ -49,15 +49,10 @@ jobs:
           BUILD: ${{ steps.version.outputs.build }}
         run: |
           rm -rf _site
-          mkdir -p _site/downloads
+          mkdir -p _site
           cp website/index.html website/download.html website/styles.css _site/
-          apk=$(find release-artifact -type f -name '*.apk' | head -n1)
-          test -n "$apk"
-          cp "$apk" "_site/downloads/dharma-library-v${VERSION}.apk"
-          cp "$apk" "_site/downloads/dharma-library-latest.apk"
           printf '{\n  "version": "%s",\n  "build": "%s",\n  "download": "downloads/dharma-library-latest.apk",\n  "release": "v%s"\n}\n' "$VERSION" "$BUILD" "$VERSION" > _site/version.json
           touch _site/.nojekyll
-          ls -lh _site/downloads/
 
       - name: Check whether release already exists
         id: existing
@@ -78,7 +73,9 @@ jobs:
           TAG: v${{ steps.version.outputs.version }}
           VERSION: ${{ steps.version.outputs.version }}
         run: |
-          gh release create "$TAG" "_site/downloads/dharma-library-v${VERSION}.apk" \
+          apk=$(find release-artifact -type f -name '*.apk' | head -n1)
+          test -n "$apk"
+          gh release create "$TAG" "$apk" \
             --target ${{ github.event.workflow_run.head_sha }} \
             --title "Dharma Library v${VERSION}" \
             --generate-notes
@@ -92,19 +89,54 @@ jobs:
         run: |
           if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
-            echo "Cloudflare deployment credentials are configured."
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::Cloudflare secrets are not configured yet; website deployment will be skipped."
+            echo "::warning::Cloudflare secrets are not configured; website publication will be skipped."
           fi
 
-      - name: Deploy website to Cloudflare Workers
+      - name: Install Wrangler
         if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --config wrangler.jsonc
+        run: npm install --no-save wrangler@4
+
+      - name: Ensure R2 APK bucket exists
+        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          BUCKET: dharma-library-apk
+        run: |
+          if npx wrangler r2 bucket info "$BUCKET" >/dev/null 2>&1; then
+            echo "R2 bucket $BUCKET already exists."
+          else
+            npx wrangler r2 bucket create "$BUCKET"
+          fi
+
+      - name: Upload signed APKs to R2
+        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          apk=$(find release-artifact -type f -name '*.apk' | head -n1)
+          test -n "$apk"
+          npx wrangler r2 object put "dharma-library-apk/dharma-library-v${VERSION}.apk" \
+            --file "$apk" --remote \
+            --content-type "application/vnd.android.package-archive" \
+            --content-disposition "attachment; filename=dharma-library-v${VERSION}.apk" \
+            --cache-control "public, max-age=31536000, immutable" --force
+          npx wrangler r2 object put "dharma-library-apk/dharma-library-latest.apk" \
+            --file "$apk" --remote \
+            --content-type "application/vnd.android.package-archive" \
+            --content-disposition "attachment; filename=dharma-library-latest.apk" \
+            --cache-control "public, max-age=300" --force
+
+      - name: Deploy website Worker
+        if: ${{ steps.cloudflare.outputs.enabled == 'true' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy --config wrangler.jsonc
 
       - name: Publication summary
         if: always()
