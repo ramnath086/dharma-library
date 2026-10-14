@@ -1,29 +1,17 @@
 # Website deployment
 
-The repository stays private. The public website is deployed as a Cloudflare Worker with static assets.
-
-## One-time GitHub setup
-
-Add these repository secrets under **Settings → Secrets and variables → Actions**:
-
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
-
-The API token should be scoped only to the Cloudflare account used for this site and have permission to deploy Workers. Keep the token only in GitHub Secrets.
+The repository is public and the website is deployed with GitHub Pages. Android APK binaries are published as GitHub Release assets, so the large APK is not copied into the Pages site.
 
 ## Automatic flow
 
 After a successful CI run on `main`, the release workflow:
 
 1. Downloads the signed APK produced by CI.
-2. Builds the website bundle with the current app version.
-3. Creates the GitHub Release tag (only when that version does not already exist).
-4. Deploys the website and APK to Cloudflare automatically.
+2. Creates the GitHub Release tag when that version does not already exist.
+3. Uploads the versioned APK and a `dharma-library-latest.apk` asset to that release.
+4. Generates `version.json` for the website.
+5. Deploys the static `website/` directory to GitHub Pages.
 
-The public APK path is:
-
-`/downloads/dharma-library-latest.apk`
-
-The Worker name is `dharma-library-website`.
+The download page reads `version.json` and links directly to the latest GitHub Release APK.
 
 No scripture content is changed by the website/release workflow.
