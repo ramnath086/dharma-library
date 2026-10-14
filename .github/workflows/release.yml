@@ -92,9 +92,11 @@ jobs:
         run: |
           apk=$(find release-artifact -type f -name '*.apk' | head -n1)
           test -n "$apk"
+          cp "$apk" "release-artifact/dharma-library-v${VERSION}.apk"
+          cp "$apk" "release-artifact/dharma-library-latest.apk"
           gh release upload "$TAG" \
-            "$apk#dharma-library-v${VERSION}.apk" \
-            "$apk#dharma-library-latest.apk" \
+            "release-artifact/dharma-library-v${VERSION}.apk" \
+            "release-artifact/dharma-library-latest.apk" \
             --clobber
 
       - name: Configure GitHub Pages
