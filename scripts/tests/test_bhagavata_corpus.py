@@ -383,11 +383,34 @@ class ParserTests(unittest.TestCase):
 
 
 class MergePilotTests(unittest.TestCase):
+    def test_translation_coverage_is_derived_from_shipped_content(self):
+        import tempfile
+        verses = [
+            {
+                "ref": f"1.1.{number}",
+                "en": "English",
+                "ml": "മലയാളം",
+                "word_meanings": [{"word": "test", "meaning": "test"}],
+            }
+            for number in (1, 2)
+        ]
+        verses.append({"ref": "1.1.3", "en": "Incomplete", "ml": "", "word_meanings": []})
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory)
+            (root / "1" / "1").mkdir(parents=True)
+            (root / "1" / "1" / "verses.json").write_text(
+                json.dumps({"verses": verses}, ensure_ascii=False), encoding="utf-8"
+            )
+            coverage = G.translation_coverage(root)
+        self.assertEqual(coverage["scope"], "1.1.1–1.1.2")
+        self.assertEqual(coverage["complete"], 2)
+        self.assertEqual(coverage["counts"], {"en": 3, "ml": 2, "word_meanings_en": 2})
+
     def test_keeps_existing_translations_on_overlap_only(self):
         existing = ROOT / "content" / "bhagavata-purana" / "1" / "1" / "verses.json"
         incoming = [
             {"ref": "1.1.4", "ordinal": 4, "kind": "verse", "speaker": "ignored", "deva": "X", "iast": "x"},
-            {"ref": "1.1.11", "ordinal": 11, "kind": "verse", "speaker": None, "deva": "Y", "iast": "y"},
+            {"ref": "1.1.999", "ordinal": 999, "kind": "verse", "speaker": None, "deva": "Y", "iast": "y"},
         ]
         merged = G.merge_pilot_translations(incoming, existing)
         self.assertTrue(merged[0].get("en"))

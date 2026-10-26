@@ -1,0 +1,829 @@
+{
+  "schema_version": 1,
+  "work": "bhagavata-purana",
+  "chapter": "1.1",
+  "drafts": [
+    {
+      "ref": "1.1.11",
+      "source_sha256": "d4f11f36271c48bc5e3c910056115c8add67d4a7a075e139a9fa451e722fdae6",
+      "en": "There are many teachings to be heard, with their many prescribed practices, arranged in various divisions. Therefore, O virtuous sage, discern and extract their essence and tell us, who have faith, that by which the self may find complete peace.",
+      "ml": "വിവിധ വിഭാഗങ്ങളിൽപ്പെട്ട, അനേകം നിശ്ചിതകർമ്മാചാരങ്ങളുള്ള ധാരാളം വിഷയങ്ങൾ കേട്ടറിയേണ്ടതുണ്ട്. ആയതിനാൽ, സാധോ, നിങ്ങളുടെ വിചക്ഷണബുദ്ധികൊണ്ട് അവയുടെ സാരം തിരഞ്ഞെടുത്ത്, ഏതിനാൽ ആത്മാവിന് പൂർണ്ണശാന്തി ലഭിക്കുന്നുവോ അത് വിശ്വാസികളായ ഞങ്ങൾക്ക് പറഞ്ഞുതരേണമേ.",
+      "word_meanings": [
+        {
+          "word": "bhūrīṇi",
+          "meaning": "many (teachings or topics)"
+        },
+        {
+          "word": "bhūri-karmāṇi",
+          "meaning": "having many prescribed rites or practices"
+        },
+        {
+          "word": "śrotavyāni",
+          "meaning": "to be heard or learned"
+        },
+        {
+          "word": "vibhāgaśaḥ",
+          "meaning": "according to their various divisions"
+        },
+        {
+          "word": "ataḥ",
+          "meaning": "therefore"
+        },
+        {
+          "word": "sādho'tra",
+          "meaning": "O virtuous sage, here in this matter"
+        },
+        {
+          "word": "yat sāram",
+          "meaning": "the essence which"
+        },
+        {
+          "word": "samuddhṛtya",
+          "meaning": "having extracted"
+        },
+        {
+          "word": "manīṣayā",
+          "meaning": "with discerning wisdom"
+        },
+        {
+          "word": "brūhi",
+          "meaning": "please tell"
+        },
+        {
+          "word": "naḥ śraddadhānānām",
+          "meaning": "to us who have faith"
+        },
+        {
+          "word": "yena",
+          "meaning": "by which"
+        },
+        {
+          "word": "ātmā",
+          "meaning": "the self or inner being"
+        },
+        {
+          "word": "saṁprasīdati",
+          "meaning": "may become fully serene or satisfied"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T15:23:41Z",
+        "output_sha256": "378019a6877a0efe108f80174424668d98181aff1d68648326ebaf9344e0b1e2"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "Small AI-assisted workflow sample; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.12",
+      "source_sha256": "ad7d8b3426712db6d12979dad8ed3de054690eb009bec5ad3c19838cf5fd1ce3",
+      "en": "O Sūta, blessings upon you; you know the blessed Lord, the master of the Sātvatas, who by his own will was born as the son of Devakī and Vasudeva.",
+      "ml": "സൂതനേ, നിനക്ക് മംഗളം ഉണ്ടാകട്ടെ; സാത്വതരുടെ നാഥനായ ഭഗവാനെ നീ അറിയുന്നു. ആ ഭഗവാൻ സ്വന്തം ഇച്ഛയാൽ ദേവകിയുടെയും വസുദേവന്റെയും പുത്രനായി ജനിച്ചു.",
+      "word_meanings": [
+        {
+          "word": "sūta",
+          "meaning": "O Sūta"
+        },
+        {
+          "word": "jānāsi",
+          "meaning": "you know"
+        },
+        {
+          "word": "bhadraṁ te",
+          "meaning": "blessings to you; may good befall you"
+        },
+        {
+          "word": "bhagavān",
+          "meaning": "the blessed Lord"
+        },
+        {
+          "word": "sātvatāṁ patiḥ",
+          "meaning": "the master of the Sātvatas"
+        },
+        {
+          "word": "devakyām",
+          "meaning": "in or from Devakī"
+        },
+        {
+          "word": "vasudevasya",
+          "meaning": "of Vasudeva"
+        },
+        {
+          "word": "jāto",
+          "meaning": "born"
+        },
+        {
+          "word": "yasya",
+          "meaning": "whose"
+        },
+        {
+          "word": "cikīrṣayā",
+          "meaning": "by his own desire or will"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T15:23:41Z",
+        "output_sha256": "42641b7268e4aef67f6724780d23757ac022550a7808ab6078db6df99b0f4e4b"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "Small AI-assisted workflow sample; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.13",
+      "source_sha256": "25047e59413fdc5c6a90feac7ab46e78b12548a59ecee66711b71ed39ada00fa",
+      "en": "O dear one, please describe him in detail to us, who long to hear—the one whose incarnation is for the welfare and prosperity of all beings.",
+      "ml": "പ്രിയ സൂതനേ, എല്ലാ ജീവികൾക്കും ക്ഷേമത്തിനും അഭിവൃദ്ധിക്കും വേണ്ടി അവതരിക്കുന്ന ആ ഭഗവാനെക്കുറിച്ച്, കേൾക്കാൻ ആഗ്രഹിക്കുന്ന ഞങ്ങൾക്ക് നീ വിശദമായി വിവരിച്ചുതരേണമേ.",
+      "word_meanings": [
+        {
+          "word": "tat",
+          "meaning": "that; him, the Lord"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "to us"
+        },
+        {
+          "word": "śuṣrūṣamāṇānām",
+          "meaning": "of us who are eager to hear"
+        },
+        {
+          "word": "arhasi",
+          "meaning": "you are able; please"
+        },
+        {
+          "word": "aṅga",
+          "meaning": "O dear one"
+        },
+        {
+          "word": "anuvarṇitum",
+          "meaning": "to describe in detail"
+        },
+        {
+          "word": "yasya",
+          "meaning": "whose"
+        },
+        {
+          "word": "avatāro",
+          "meaning": "incarnation"
+        },
+        {
+          "word": "bhūtānām",
+          "meaning": "of all beings"
+        },
+        {
+          "word": "kṣemāya",
+          "meaning": "for welfare or protection"
+        },
+        {
+          "word": "ca",
+          "meaning": "and"
+        },
+        {
+          "word": "bhavāya",
+          "meaning": "for prosperity or flourishing"
+        },
+        {
+          "word": "ca",
+          "meaning": "and"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T15:23:41Z",
+        "output_sha256": "b80638a11fa590f876263827fde5990dcaa77efd779b57aa81a6f288c5607fa4"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "Small AI-assisted workflow sample; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.14",
+      "source_sha256": "2c28b02dad02a254f7f2ac58167a3bcd7426aa4652d74b232012c3514caf83f3",
+      "en": "A person who has fallen into the fearful cycle of worldly existence and who, in helplessness, utters the Lord’s name would be freed from it at once; even fear itself fears that name.",
+      "ml": "ഭയാനകമായ സംസാരചക്രത്തിൽ വീണവൻ, നിസ്സഹായനായി ഭഗവാന്റെ നാമം ഉച്ചരിക്കുന്നുവെങ്കിൽ, ഉടനടി അതിൽനിന്ന് മോചിതനാകും; ആ നാമത്തെ ഭയം സ്വയവും ഭയപ്പെടുന്നു.",
+      "word_meanings": [
+        {
+          "word": "āpannaḥ",
+          "meaning": "having fallen into; caught in"
+        },
+        {
+          "word": "saṁsṛtiṁ",
+          "meaning": "the cycle of worldly existence or rebirth"
+        },
+        {
+          "word": "ghorām",
+          "meaning": "fearful; terrible"
+        },
+        {
+          "word": "yat nāma",
+          "meaning": "whose name; the Lord’s name"
+        },
+        {
+          "word": "vivaśo",
+          "meaning": "helpless; without self-control"
+        },
+        {
+          "word": "gṛṇan",
+          "meaning": "uttering or chanting"
+        },
+        {
+          "word": "tataḥ",
+          "meaning": "from that"
+        },
+        {
+          "word": "sadyaḥ",
+          "meaning": "at once; immediately"
+        },
+        {
+          "word": "vimucyeta",
+          "meaning": "would be freed"
+        },
+        {
+          "word": "yat",
+          "meaning": "which; that name"
+        },
+        {
+          "word": "bibheti",
+          "meaning": "fears; is afraid of"
+        },
+        {
+          "word": "svayam",
+          "meaning": "itself"
+        },
+        {
+          "word": "bhayam",
+          "meaning": "fear"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T15:27:10Z",
+        "output_sha256": "e3885358efd19418039118933590efd1555b128ee0912c5c0753b009e7f31262"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.15",
+      "source_sha256": "fba835520ba44585ea914786b20296d522835d5afa70c6fa859aeb50e586c1d4",
+      "en": "O Sūta, sages who have taken refuge at the Lord’s feet and who are established in peace purify those who come into contact with them at once; the waters of the celestial river, the Ganges, purify through continued association.",
+      "ml": "സൂതനേ, ഭഗവാന്റെ ചരണങ്ങളെ ശരണം പ്രാപിച്ച് ശാന്തിയിൽ നിലകൊള്ളുന്ന മുനിമാർ, തങ്ങളുമായി സമ്പർക്കം വരുന്നവരെ ഉടനടി പവിത്രരാക്കുന്നു; സ്വർഗ്ഗനദിയായ ഗംഗാജലം നിരന്തരസേവനത്തിലൂടെ പവിത്രമാക്കുന്നു.",
+      "word_meanings": [
+        {
+          "word": "yat-pāda-saṁśrayāḥ",
+          "meaning": "those who have taken refuge at his feet"
+        },
+        {
+          "word": "sūta",
+          "meaning": "O Sūta"
+        },
+        {
+          "word": "munayaḥ",
+          "meaning": "sages"
+        },
+        {
+          "word": "praśamāyanāḥ",
+          "meaning": "those who are established in peace"
+        },
+        {
+          "word": "sadyaḥ",
+          "meaning": "at once; immediately"
+        },
+        {
+          "word": "punanti",
+          "meaning": "they purify"
+        },
+        {
+          "word": "upaspṛṣṭāḥ",
+          "meaning": "those who are touched or come into contact"
+        },
+        {
+          "word": "svardhuny-āpo",
+          "meaning": "the waters of the celestial river, the Ganges"
+        },
+        {
+          "word": "anusevayā",
+          "meaning": "through continued association or use"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T15:27:10Z",
+        "output_sha256": "bf0f2fa3da9c50fae1c502eadf9be7224862aba336556c73fc086b3e5f80ab45"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.16",
+      "source_sha256": "044496f1e67e0d25e3f33cea83fd7d099b06767b175184426afa7598af47eb22",
+      "en": "The deeds of that blessed Lord are extolled in sacred verses, and his glory removes the defilement of Kali. Who indeed, desiring purification, would not listen to it?",
+      "ml": "ആ ഭഗവാന്റെ കർമ്മങ്ങൾ പുണ്യശ്ലോകങ്ങൾകൊണ്ട് സ്തുതിക്കപ്പെടുന്നു; അദ്ദേഹത്തിന്റെ യശസ്സ് കലിയുടെ മലിനതകളെ നീക്കുന്നു. ശുദ്ധി ആഗ്രഹിക്കുന്ന ആരാണ് അത് കേൾക്കാതിരിക്കുക?",
+      "word_meanings": [
+        {
+          "word": "ko vā",
+          "meaning": "who indeed"
+        },
+        {
+          "word": "bhagavatas tasya",
+          "meaning": "of that blessed Lord"
+        },
+        {
+          "word": "puṇya-ślokeḍya-karmaṇaḥ",
+          "meaning": "whose deeds are extolled in sacred verses"
+        },
+        {
+          "word": "śuddhi-kāmo",
+          "meaning": "desiring purification"
+        },
+        {
+          "word": "na",
+          "meaning": "not"
+        },
+        {
+          "word": "śrṇuyāt",
+          "meaning": "would hear or listen to"
+        },
+        {
+          "word": "yaśaḥ",
+          "meaning": "glory; fame"
+        },
+        {
+          "word": "kali-malāpaham",
+          "meaning": "removing the defilement of the age of Kali"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T15:27:10Z",
+        "output_sha256": "71b76599ed5cc83b4626673ff6ffe95f70b6663ed4e8fa8b1a7146be12aa50eb"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.17",
+      "source_sha256": "1f6ade97109e0f3e0ebb3be0e87c794f8ceb34fc695b6139d0528021011334f1",
+      "en": "Tell us, who have faith, of his noble deeds, which the wise sing of, as he assumes various forms in his divine play.",
+      "ml": "തന്റെ ലീലകളിൽ വിവിധ രൂപങ്ങൾ ധരിക്കുന്ന അദ്ദേഹത്തിന്റെ, ജ്ഞാനികൾ പുകഴ്ത്തിചൊല്ലുന്ന ഉദാരകർമ്മങ്ങൾ, വിശ്വാസികളായ ഞങ്ങൾക്ക് പറഞ്ഞുതരേണമേ.",
+      "word_meanings": [
+        {
+          "word": "tasya",
+          "meaning": "his; of him"
+        },
+        {
+          "word": "karmāṇi",
+          "meaning": "deeds; activities"
+        },
+        {
+          "word": "udārāṇi",
+          "meaning": "noble; exalted"
+        },
+        {
+          "word": "parigītāni",
+          "meaning": "sung of; celebrated in song"
+        },
+        {
+          "word": "sūribhiḥ",
+          "meaning": "by the wise"
+        },
+        {
+          "word": "brūhi",
+          "meaning": "tell; describe"
+        },
+        {
+          "word": "naḥ śraddadhānānām",
+          "meaning": "to us who have faith"
+        },
+        {
+          "word": "līlayā",
+          "meaning": "in his divine play; as a pastime"
+        },
+        {
+          "word": "dadhataḥ",
+          "meaning": "of him who assumes or holds"
+        },
+        {
+          "word": "kalāḥ",
+          "meaning": "forms; aspects"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:14:08Z",
+        "output_sha256": "184121370ca7c70fea40f00472dbfcbf58a3109caa0455d01b95b307b93157fb"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.18",
+      "source_sha256": "316e94c5bcf71049eecd4bea90ef18825cbac18d0e9884d622860bc55171bbbc",
+      "en": "Now, O wise one, recount the auspicious stories of Hari’s descents—the pastimes that the Lord freely performs through his own māyā.",
+      "ml": "ജ്ഞാനിയേ, ഇപ്പോൾ ഹരിയുടെ മംഗളകരമായ അവതാരകഥകൾ വിവരിച്ചുതരേണമേ. അവ ഈശ്വരൻ സ്വന്തം മായയാൽ സ്വേച്ഛയാൽ നിർവ്വഹിക്കുന്ന ലീലകളാണ്.",
+      "word_meanings": [
+        {
+          "word": "atha",
+          "meaning": "now; therefore"
+        },
+        {
+          "word": "ākhyāhi",
+          "meaning": "recount; narrate"
+        },
+        {
+          "word": "hareḥ",
+          "meaning": "of Hari"
+        },
+        {
+          "word": "dhīman",
+          "meaning": "O wise one"
+        },
+        {
+          "word": "avatāra-kathāḥ",
+          "meaning": "stories of the incarnations or descents"
+        },
+        {
+          "word": "śubhāḥ",
+          "meaning": "auspicious"
+        },
+        {
+          "word": "līlā",
+          "meaning": "pastimes"
+        },
+        {
+          "word": "vidadhataḥ",
+          "meaning": "of him who performs"
+        },
+        {
+          "word": "svairam",
+          "meaning": "freely; by his own will"
+        },
+        {
+          "word": "īśvarasya",
+          "meaning": "of the Lord"
+        },
+        {
+          "word": "ātma-māyayā",
+          "meaning": "through his own māyā"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:14:08Z",
+        "output_sha256": "1a3e93842a737d0ae3efb6e8f0a314a11a76bb61a927cabe53fbe9ad7a27fe60"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.19",
+      "source_sha256": "51250819a8679cdf35042fe5c48f1ecbaaa6d15068a3663d1f42274eb74df5f1",
+      "en": "But we never tire of hearing about the exploits of Uttamaśloka, the supremely praised Lord; for those who listen and know rasa, they are sweeter and sweeter at every step.",
+      "ml": "ഉത്തമശ്ലോകനായ ഭഗവാന്റെ വിക്രമങ്ങൾ കേട്ട് ഞങ്ങൾ ഒരിക്കലും മടുക്കുന്നില്ല; രസം അറിഞ്ഞ് കേൾക്കുന്നവർക്ക് അവ ഓരോ ഘട്ടത്തിലും കൂടുതൽ കൂടുതൽ മധുരമാണ്.",
+      "word_meanings": [
+        {
+          "word": "vayam tu",
+          "meaning": "but we; as for us"
+        },
+        {
+          "word": "na vitṛpyāma",
+          "meaning": "we never tire; we are not satiated"
+        },
+        {
+          "word": "uttama-śloka-vikrame",
+          "meaning": "in the exploits of Uttamaśloka, the supremely praised Lord"
+        },
+        {
+          "word": "yat",
+          "meaning": "which"
+        },
+        {
+          "word": "śrṇvatām",
+          "meaning": "of those who hear or listen"
+        },
+        {
+          "word": "rasa-jñānām",
+          "meaning": "of those who know rasa or spiritual and aesthetic relish"
+        },
+        {
+          "word": "svādu svādu",
+          "meaning": "sweeter and sweeter"
+        },
+        {
+          "word": "pade pade",
+          "meaning": "at every step; at every word"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:14:08Z",
+        "output_sha256": "784f53ced0731c3a4af61388099c1a1be230495eb7cfbcaf7d7c1f2b4bb94200"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.20",
+      "source_sha256": "70abe306e89708a0613d06b8c98a3fa9d874c425a307363964b87e203cb88cf2",
+      "en": "The blessed Lord Keśava, together with Rāma, indeed performed superhuman feats while concealed in human guise.",
+      "ml": "കേശവനായ ഭഗവാൻ രാമനോടൊപ്പം, മനുഷ്യവേഷത്തിൽ മറഞ്ഞുനിന്ന്, അതിമാനുഷകര്മ്മങ്ങൾ നിർവ്വഹിച്ചു.",
+      "word_meanings": [
+        {
+          "word": "kṛtavān kila",
+          "meaning": "indeed performed"
+        },
+        {
+          "word": "vīryāṇi",
+          "meaning": "feats of prowess; heroic deeds"
+        },
+        {
+          "word": "saha rāmeṇa",
+          "meaning": "together with Rāma (Balarāma)"
+        },
+        {
+          "word": "keśavaḥ",
+          "meaning": "Keśava"
+        },
+        {
+          "word": "atimartyāni",
+          "meaning": "superhuman"
+        },
+        {
+          "word": "bhagavān",
+          "meaning": "the blessed Lord"
+        },
+        {
+          "word": "gūḍhaḥ",
+          "meaning": "concealed; hidden"
+        },
+        {
+          "word": "kapaṭa-mānuṣaḥ",
+          "meaning": "in the guise of a human being"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:17:00Z",
+        "output_sha256": "dd39a19061ccaf86e0e68db9eac5565c834aa1854dfdffa2c0e031f9d3ceecbe"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch completing Chapter 1; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.21",
+      "source_sha256": "82f0f4563603ab859f1f2da93c57947c6d5385d4e1de4d039a362d3444bb00fa",
+      "en": "Knowing that Kali had arrived, we sat down in this field sacred to Viṣṇu for a long sacrificial session, so as to have time for the stories of Hari.",
+      "ml": "കലി എത്തിയതായി അറിഞ്ഞ്, ഹരിയുടെ കഥകൾക്കായി അല്പം സമയം ലഭിക്കുന്നതിന്, വിഷ്ണുവിന് പവിത്രമായ ഈ ക്ഷേത്രത്തിൽ ഞങ്ങൾ ദീർഘസത്രത്തിനായി ഇരുന്നിരിക്കുന്നു.",
+      "word_meanings": [
+        {
+          "word": "kalim āgatam ājñāya",
+          "meaning": "knowing that Kali had arrived"
+        },
+        {
+          "word": "kṣetre'smin",
+          "meaning": "in this field"
+        },
+        {
+          "word": "vaiṣṇave",
+          "meaning": "sacred to Viṣṇu"
+        },
+        {
+          "word": "vayam",
+          "meaning": "we"
+        },
+        {
+          "word": "āsīnāḥ",
+          "meaning": "seated"
+        },
+        {
+          "word": "dīrgha-satreṇa",
+          "meaning": "for a long sacrificial session"
+        },
+        {
+          "word": "kathāyām",
+          "meaning": "for the stories or narration"
+        },
+        {
+          "word": "sa-kṣaṇāḥ",
+          "meaning": "having time; with a moment available"
+        },
+        {
+          "word": "hareḥ",
+          "meaning": "of Hari"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:17:00Z",
+        "output_sha256": "cd90f51ccae6553ff1aa5dfc507999fc00bdacb27d4c380ea57e526ce7c34a87"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch completing Chapter 1; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.22",
+      "source_sha256": "d522c5738c9f1c81a0c02b892b265e486715a67ed4c0122ee69b850864ffd92c",
+      "en": "You have been revealed to us by Providence as a helmsman for us who wish to cross the ocean of Kali, nearly impossible to cross, which robs people of their strength and goodness.",
+      "ml": "മനുഷ്യരുടെ ശക്തിയും സദ്ഗുണങ്ങളും അപഹരിക്കുന്ന, കടക്കാൻ അത്യന്തം ദുഷ്കരമായ കലിസമുദ്രം തരണം ചെയ്യാൻ ആഗ്രഹിക്കുന്ന ഞങ്ങൾക്ക്, ധാതാവ് താങ്കളെ കർണ്ണധാരനായി കാണിച്ചുതന്നിരിക്കുന്നു.",
+      "word_meanings": [
+        {
+          "word": "tvam",
+          "meaning": "you"
+        },
+        {
+          "word": "naḥ",
+          "meaning": "to us; for us"
+        },
+        {
+          "word": "saṁdarśito",
+          "meaning": "shown; revealed"
+        },
+        {
+          "word": "dhātrā",
+          "meaning": "by Dhātā, the Creator or Providence"
+        },
+        {
+          "word": "dustaram",
+          "meaning": "difficult to cross"
+        },
+        {
+          "word": "nistitīrṣatām",
+          "meaning": "of us who wish to cross over"
+        },
+        {
+          "word": "kalim",
+          "meaning": "Kali"
+        },
+        {
+          "word": "sattva-haram",
+          "meaning": "taking away strength and goodness"
+        },
+        {
+          "word": "puṁsām",
+          "meaning": "of people"
+        },
+        {
+          "word": "karṇa-dhāra iva",
+          "meaning": "like a helmsman"
+        },
+        {
+          "word": "arṇavam",
+          "meaning": "the ocean"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:17:00Z",
+        "output_sha256": "a033fddfa21d92a7f7382d9b59a108c51466a3aee68784896bc9e89283616703"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch completing Chapter 1; pending human editorial review and not promoted to the app."
+      }
+    },
+    {
+      "ref": "1.1.23",
+      "source_sha256": "6a859ec7759d545388d9597ee0daf43a35d6061e615624e6693bcc6f3579ca3a",
+      "en": "Tell us: now that Kṛṣṇa, the master of yoga, the well-wisher of the brāhmaṇas and the protector of dharma, has attained his own abode, to whom has dharma gone for refuge?",
+      "ml": "യോഗേശ്വരനും ബ്രാഹ്മണരുടെ ഹിതൈഷിയും ധർമ്മസംരക്ഷകനുമായ കൃഷ്ണൻ ഇപ്പോൾ സ്വന്തം ധാമത്തെ പ്രാപിച്ചിരിക്കെ, ധർമ്മം ആരിൽ ശരണം പ്രാപിച്ചു? ഞങ്ങൾക്ക് പറഞ്ഞുതരേണമേ.",
+      "word_meanings": [
+        {
+          "word": "brūhi",
+          "meaning": "tell us"
+        },
+        {
+          "word": "yoga-īśvare",
+          "meaning": "the master of yoga"
+        },
+        {
+          "word": "kṛṣṇe",
+          "meaning": "Kṛṣṇa"
+        },
+        {
+          "word": "brahmaṇye",
+          "meaning": "the well-wisher of the brāhmaṇas; devoted to brahman"
+        },
+        {
+          "word": "dharma-varmaṇi",
+          "meaning": "the protector of dharma; whose armour is dharma"
+        },
+        {
+          "word": "svām kāṣṭhām",
+          "meaning": "his own abode"
+        },
+        {
+          "word": "adhunā upete",
+          "meaning": "now having attained"
+        },
+        {
+          "word": "dharmaḥ",
+          "meaning": "dharma"
+        },
+        {
+          "word": "kam",
+          "meaning": "to whom"
+        },
+        {
+          "word": "śaraṇam gataḥ",
+          "meaning": "gone for refuge"
+        }
+      ],
+      "generation": {
+        "method": "ai_assisted",
+        "provider": "arena.ai Agent Mode",
+        "model": "not exposed by runtime",
+        "prompt_version": "sb-translation-v1-agent-sample",
+        "generated_at": "2026-10-26T16:17:00Z",
+        "output_sha256": "1af8b400fa91aea4a7ebfefea97649a837582612a60a6b23ede0fca408d8c8d6"
+      },
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "AI-assisted continuation batch completing Chapter 1; pending human editorial review and not promoted to the app."
+      }
+    }
+  ]
+}

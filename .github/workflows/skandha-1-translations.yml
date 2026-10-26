@@ -1,0 +1,140 @@
+name: Skandha 1 AI translation drafts
+
+# Starts when this workflow is first added on its working branch. Later runs can
+# be dispatched manually once the workflow is on the default branch, or a failed
+# run can be rerun: already staged refs are skipped.
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/9c9c00d8-dharma-library]
+    paths: [.github/workflows/skandha-1-translations.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skandha-1-translation-drafts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - name: Require an API key before starting any chapter
+        run: |
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "::error::OPENAI_API_KEY is not configured as a repository Actions secret. No verses were generated."
+            exit 1
+          fi
+          echo "API credential is present; starting review-gated Skandha 1 draft generation."
+
+  generate:
+    needs: preflight
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        chapter: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_TRANSLATION_MODEL: gpt-4o-mini
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref }}
+      - name: Generate Chapter ${{ matrix.chapter }} drafts
+        run: |
+          chapter='${{ matrix.chapter }}'
+          last="$(python3 -c "import json; print(len(json.load(open('content/bhagavata-purana/1/${chapter}/verses.json'))['verses']))")"
+          echo "Generating 1.${chapter}.1 through 1.${chapter}.${last}; existing drafts are skipped."
+          python3 scripts/translate_bhagavata.py generate \
+            --start "1.${chapter}.1" --end "1.${chapter}.${last}" --batch-size 5
+      - name: Preserve valid partial progress
+        if: always()
+        run: |
+          mkdir -p artifacts
+          source="content/bhagavata-purana/translation-drafts/1/${{ matrix.chapter }}.json"
+          if [ -f "$source" ]; then
+            cp "$source" "artifacts/${{ matrix.chapter }}.json"
+          fi
+      - name: Upload chapter draft
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: skandha-1-chapter-${{ matrix.chapter }}
+          path: artifacts/${{ matrix.chapter }}.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+  consolidate:
+    needs: [preflight, generate]
+    if: ${{ always() && needs.preflight.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      - name: Download all available chapter drafts
+        uses: actions/download-artifact@v7
+        with:
+          pattern: skandha-1-chapter-*
+          path: /tmp/skandha-1-drafts
+      - name: Merge chapter artifacts
+        run: |
+          shopt -s nullglob
+          for directory in /tmp/skandha-1-drafts/skandha-1-chapter-*; do
+            for file in "$directory"/*.json; do
+              cp "$file" "content/bhagavata-purana/translation-drafts/1/$(basename "$file")"
+            done
+          done
+          python3 scripts/translate_bhagavata.py validate
+      - name: Check Skandha 1 coverage
+        id: coverage
+        run: |
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import sys
+          sys.path.insert(0, 'scripts')
+          from translate_bhagavata import TranslationPipeline, is_complete
+
+          pipeline = TranslationPipeline()
+          drafts = pipeline.all_drafts()
+          refs = [ref for ref in pipeline.order if ref.startswith('1.')]
+          missing = [
+              ref for ref in refs
+              if not is_complete(pipeline.verses[ref]) and ref not in drafts
+          ]
+          skandha_drafts = [ref for ref in refs if ref in drafts]
+          print(f'Skandha 1: {len(refs)} verses; {len(skandha_drafts)} staged drafts; {len(missing)} without a draft.')
+          if missing:
+              print('First missing refs:', ', '.join(missing[:30]))
+          pathlib.Path('/tmp/skandha-1-missing.json').write_text(json.dumps(missing))
+          if not missing:
+              print('::notice::Skandha 1 draft coverage is complete: 812/812 verses. All new drafts remain pending human review.'
+              )
+          PY
+      - name: Commit and push validated draft progress
+        run: |
+          git config user.name 'Dharma Library Translation Bot'
+          git config user.email 'translation-bot@users.noreply.github.com'
+          git add content/bhagavata-purana/translation-drafts/1
+          if git diff --cached --quiet; then
+            echo 'No new draft changes to commit.'
+          else
+            git commit -m 'content: advance Skandha 1 AI translation drafts'
+            git push origin '${{ github.ref_name }}'
+          fi
+      - name: Require complete Skandha 1 coverage for success
+        run: |
+          python3 - <<'PY'
+          import json
+          missing = json.load(open('/tmp/skandha-1-missing.json'))
+          if missing:
+              raise SystemExit(f'Run is incomplete: {len(missing)} Skandha 1 verses still need drafts. Rerun this workflow to resume.')
+          print('SUCCESS: Skandha 1 has 812/812 published-or-staged translation coverage. Nothing was promoted to the app.')
+          PY

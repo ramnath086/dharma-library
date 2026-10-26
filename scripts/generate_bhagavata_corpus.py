@@ -45,6 +45,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from translit import deva_to_iast  # noqa: E402
+from translate_bhagavata import format_translation_scope, is_complete  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content" / "bhagavata-purana"
@@ -740,10 +741,11 @@ def fetch_chapter(skandha: int, adhyaya: int) -> dict:
 
 
 def merge_pilot_translations(new_verses: list[dict], existing_path: pathlib.Path) -> list[dict]:
-    """Keep Dharma Library translations on 1.1.1–1.1.10; do not invent others.
+    """Keep existing reviewed translations and editorial fields on overlap.
 
     Overlapping verses also keep the already-shipped editorial Devanagari / IAST
-    (word-breaks, notes, audio cues). New verses stay Wikisource-only.
+    (word-breaks, notes, audio cues and translation provenance). New verses stay
+    Wikisource-only; no translation is invented by source ingestion.
     """
     if not existing_path.exists():
         return new_verses
@@ -950,6 +952,30 @@ def write_manifest(summary: dict) -> pathlib.Path:
     return path
 
 
+def translation_coverage(content: pathlib.Path = CONTENT) -> dict:
+    """Derive editorial coverage from shipped verses, never from a fixed pilot.
+
+    Source re-ingestion preserves existing translations. Recomputing this
+    metadata prevents it from resetting work.json to 1.1.1–1.1.10 after the
+    review-gated translation pipeline has promoted additional verses.
+    """
+    complete_refs: list[str] = []
+    counts = {"en": 0, "ml": 0, "word_meanings_en": 0}
+    for path in content.glob("**/verses.json"):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for verse in data.get("verses", []):
+            if is_complete(verse):
+                complete_refs.append(verse["ref"])
+            counts["en"] += bool(verse.get("en"))
+            counts["ml"] += bool(verse.get("ml"))
+            counts["word_meanings_en"] += bool(verse.get("word_meanings"))
+    return {
+        "scope": format_translation_scope(complete_refs),
+        "complete": len(complete_refs),
+        "counts": counts,
+    }
+
+
 def update_work_json(summary: dict) -> None:
     path = CONTENT / "work.json"
     work = json.loads(path.read_text(encoding="utf-8"))
@@ -965,7 +991,14 @@ def update_work_json(summary: dict) -> None:
     if complete:
         meta.pop("pilot_scope", None)
         meta.pop("source_blocker", None)
-        meta["translation_scope"] = "1.1.1–1.1.10"
+        coverage = translation_coverage()
+        meta["translation_scope"] = coverage["scope"]
+        meta["translated_verse_count"] = coverage["complete"]
+        meta["translation_counts"] = coverage["counts"]
+        meta["translation_review"] = (
+            "AI-assisted drafts are promoted only after recorded human editorial review; "
+            "all translations remain drafts pending scholarly review."
+        )
         work["description"] = (
             "The Bhāgavata Purāṇa (Śrīmad Bhāgavatam) is one of the eighteen "
             "Mahāpurāṇas, traditionally attributed to Vyāsa and narrated by Śuka "
@@ -974,9 +1007,11 @@ def update_work_json(summary: dict) -> None:
             f"{summary['chapters']} adhyāyas, {summary['verses']} numbered verses "
             f"parsed from that edition on {summary['retrieved'][:10]} (CC BY-SA 4.0). "
             "Traditional ~18,000 is an approximation, not an import target. "
-            "English and Malayalam translations remain original Dharma Library "
-            "drafts on 1.1.1–1.1.10 only; other verses have no invented translation. "
-            "GRETIL was collated as a scholarly witness and is not shipped."
+            "English and Malayalam translations and English word-by-word glosses "
+            "are original Dharma Library drafts; current coverage is recorded in "
+            "metadata.translation_scope. AI-assisted drafts are promoted only "
+            "after recorded human editorial review. GRETIL was collated as a "
+            "scholarly witness and is not shipped."
         )
         for e in work.get("editions", []):
             if e.get("slug") == "sb-mula-deva":
@@ -1018,7 +1053,7 @@ def write_source_md(summary: dict) -> None:
 | Skandhas | 12 |
 | Adhyāyas parsed | {summary["chapters"]} (expected {EXPECTED_CHAPTERS}) |
 | Numbered verses parsed | **{summary["verses"]}** (this edition; not a traditional 18,000 target) |
-| Translations | original Dharma Library drafts on **1.1.1–1.1.10** only; nothing invented for the rest |
+| Translations | original Dharma Library en/ml drafts and English word glosses; current promoted coverage is in `work.json` → `metadata.translation_scope` (currently **{translation_coverage()['scope']}**) |
 | GRETIL | collation/validation only; **not shipped** |
 
 | Skandha | Chapters | Verses |

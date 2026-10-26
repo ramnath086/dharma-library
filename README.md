@@ -27,7 +27,10 @@ content/
   bhagavata-purana/  work.json (editions, sources, RIGHTS), graph.json, 1/1/verses.json,
                      lessons/, audio/ (Canto 1 Chapter 1 audio manifest)
   generated/         SQL emitted by scripts/ingest.py (committed, reproducible)
+  bhagavata-purana/translation-drafts/
+                     review-gated AI-assisted en/ml/word-gloss candidates (not shipped)
 scripts/
+  translate_bhagavata.py  resumable AI staging, validation, human review and promotion
   localdb.py         embedded Postgres harness: reset / migrate / seed / test
   ingest.py          content JSON → idempotent SQL (+ machine transliterations)
   ingest_lessons.py  lessons JSON → pgvector lessons SQL
@@ -61,6 +64,20 @@ flutter run --dart-define-from-file=../env.json   # with Supabase (see .env.exam
 ```
 
 For Play-Store release steps see [docs/playstore-checklist.md](docs/playstore-checklist.md).
+
+### AI-assisted translation expansion
+
+The original translated pilot remains 1.1.1–1.1.10. A resumable workflow stages
+English, Malayalam and English word-by-word drafts separately, validates source
+and review hashes, and requires recorded human editorial approval before
+promotion into app content. The remaining thirteen verses of Chapter 1
+(1.1.11–1.1.23) are staged as pending drafts and are **not shipped**. See [docs/translation-pipeline.md](docs/translation-pipeline.md)
+for generation, review, promotion and final bundle-export commands.
+
+```bash
+python3 scripts/translate_bhagavata.py status
+python3 scripts/translate_bhagavata.py validate
+```
 
 ### Deploy to Supabase
 See [docs/deployment.md](docs/deployment.md). In short: create a project, set

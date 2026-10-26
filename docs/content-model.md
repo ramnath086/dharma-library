@@ -32,7 +32,10 @@ offline bundles carry the cue.
 
 ## Content files
 `content/<work>/work.json` declares sources, rights and editions.
-`content/<work>/<canto>/<chapter>/verses.json` holds verses. `scripts/ingest.py`
+`content/<work>/<canto>/<chapter>/verses.json` holds verses. For Bhāgavata,
+`translation-drafts/` holds AI-assisted candidates separately; those files are
+not ingested until human approval and explicit promotion (see
+`docs/translation-pipeline.md`). `scripts/ingest.py`
 validates (rights present, refs match, ordinals dense, base text non-empty),
 generates machine transliterations for Indic-script editions, and emits
 idempotent SQL. Editions whose rights are `pending`/`restricted` are forced to

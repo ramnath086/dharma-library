@@ -75,17 +75,55 @@ class BhagavataPilot(unittest.TestCase):
             self.assertEqual(meta.get("imported_verse_count"), 10)
             self.assertFalse(meta.get("complete"))
 
-    def test_pilot_translations_are_not_invented_beyond_1_1_10(self):
-        data = _load(BHAGAVATA / "1" / "1" / "verses.json")
-        verses = data["verses"]
-        self.assertGreaterEqual(len(verses), 10)
-        self.assertEqual([v["ref"] for v in verses[:10]], [f"1.1.{i}" for i in range(1, 11)])
-        for v in verses[:10]:
-            self.assertTrue(v["en"].strip())
-            self.assertTrue(v["ml"].strip())
-        for v in verses[10:]:
-            self.assertFalse(v.get("en"), f"invented English at {v['ref']}")
-            self.assertFalse(v.get("ml"), f"invented Malayalam at {v['ref']}")
+    def test_translation_coverage_and_ai_provenance_match_work_json(self):
+        """The original pilot is grandfathered; expansion must be reviewed.
+
+        Staged AI files are intentionally outside verses.json. Any AI-assisted
+        verse promoted beyond 1.1.1–1.1.10 must carry its source/content hashes
+        and human editorial-review provenance into the shipped content.
+        """
+        import sys
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from translate_bhagavata import (  # noqa: E402
+            content_sha256,
+            format_translation_scope,
+            source_sha256,
+        )
+
+        work = _load(BHAGAVATA / "work.json")
+        legacy_pilot = {f"1.1.{i}" for i in range(1, 11)}
+        translated = []
+        for vf in _verse_files(BHAGAVATA):
+            for verse in _load(vf)["verses"]:
+                ref = verse["ref"]
+                present = [bool(verse.get(key)) for key in ("en", "ml", "word_meanings")]
+                self.assertTrue(all(present) or not any(present), f"partial translation at {ref}")
+                if not all(present):
+                    continue
+                translated.append(ref)
+                if ref in legacy_pilot:
+                    continue
+                provenance = (verse.get("metadata") or {}).get("translation_provenance")
+                self.assertIsNotNone(provenance, f"unreviewed AI expansion at {ref}")
+                self.assertEqual(provenance["method"], "ai_assisted", ref)
+                self.assertTrue(provenance["reviewer"].strip(), ref)
+                self.assertTrue(provenance["reviewed_at"], ref)
+                self.assertEqual(provenance["source_sha256"], source_sha256(verse), ref)
+                self.assertEqual(provenance["content_sha256"], content_sha256(verse), ref)
+
+        self.assertTrue(legacy_pilot.issubset(set(translated)), "keep the original ten-verse pilot")
+        self.assertEqual(
+            format_translation_scope(translated),
+            work["metadata"]["translation_scope"],
+            "work.json translation_scope must equal actual complete tri-lingual/gloss coverage",
+        )
+        if "translated_verse_count" in work["metadata"]:
+            self.assertEqual(work["metadata"]["translated_verse_count"], len(translated))
+        if "translation_counts" in work["metadata"]:
+            self.assertEqual(
+                work["metadata"]["translation_counts"],
+                {"en": len(translated), "ml": len(translated), "word_meanings_en": len(translated)},
+            )
 
     def test_gretil_is_collation_only_not_a_commercial_pd_grant(self):
         w = _load(BHAGAVATA / "work.json")

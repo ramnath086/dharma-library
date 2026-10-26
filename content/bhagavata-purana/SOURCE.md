@@ -12,7 +12,7 @@
 | Skandhas | 12 |
 | Adhyāyas parsed | 335 (expected 335) |
 | Numbered verses parsed | **14105** (14098 Wikisource + 7 BBT-numbered fills; not a traditional 18,000 target) |
-| Translations | original Dharma Library drafts on **1.1.1–1.1.10** only; nothing invented for the rest |
+| Translations | original Dharma Library en/ml drafts and English word glosses; current promoted coverage is in `work.json` → `metadata.translation_scope` (currently **1.1.1–1.1.10**) |
 | GRETIL | collation/validation only; **not shipped** |
 
 | Skandha | Chapters | Verses |

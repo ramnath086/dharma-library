@@ -10,6 +10,12 @@
   cannot run, leave the 10-verse pilot and do not invent verses. See
   `docs/bhagavata-source-research.md`.
 * Content lives in `content/**/*.json`; never edit `content/generated/`.
+* **AI-assisted translations are review-gated.** Generate only into
+  `translation-drafts/` with `scripts/translate_bhagavata.py`; never paste
+  unreviewed model output into `verses.json` or a shipped bundle. English,
+  Malayalam and word glosses must be checked against the mūla by a human editor,
+  then approved and promoted through the workflow. See
+  `docs/translation-pipeline.md`.
 * Run before pushing:
   ```bash
   python3 scripts/localdb.py reset && python3 scripts/ingest.py --apply && python3 scripts/localdb.py test
