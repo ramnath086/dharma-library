@@ -111,6 +111,7 @@
   "askHistoryEmpty": "No past conversations yet.",
   "askHistoryHint": "Signed-in conversations are kept here so you can revisit and continue them.",
   "askContinue": "Continue this conversation",
+  "askNoBackend": "Ask Dharma needs the online service, and this build has no server configured. Reading and search work offline.",
   "askCapReached": "You have reached today's answer limit — Ask Dharma is in early testing. Please come back tomorrow.",
   "askHelpful": "Helpful",
   "askNotHelpful": "Not helpful",

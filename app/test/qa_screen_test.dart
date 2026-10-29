@@ -118,14 +118,14 @@ void main() {
   });
 
   group('AskScreen', () {
-    Future<void> pumpAsk(WidgetTester tester, Repository repo) async {
+    Future<void> pumpAsk(WidgetTester tester, Repository repo, {bool online = true}) async {
       SharedPreferences.setMockInitialValues({});
       final prefs = await SharedPreferences.getInstance();
       await tester.pumpWidget(ProviderScope(
         overrides: [
           repositoryProvider.overrideWithValue(repo),
           prefsProvider.overrideWithValue(prefs),
-          connectivityProvider.overrideWith((ref) => Stream.value(true)),
+          connectivityProvider.overrideWith((ref) => Stream.value(online)),
         ],
         child: const MaterialApp(
           localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -142,6 +142,25 @@ void main() {
       expect(find.textContaining('not a substitute for a teacher'), findsOneWidget);
       expect(find.text('Ask needs an internet connection.'), findsOneWidget);
       expect(find.byIcon(Icons.send), findsNothing); // input row replaced by the offline note
+    });
+
+    testWidgets('a device with no connectivity is gated, never a raw exception', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
+      final store = await tester.runAsync(() => LocalStore.inMemory());
+      final repo = _FakeRepo(store: store!);
+      await pumpAsk(tester, repo, online: false);
+      expect(find.text('Ask needs an internet connection.'), findsOneWidget);
+      expect(find.byIcon(Icons.send), findsNothing);
+    });
+
+    testWidgets('a backend-less build names its own failure', timeout: const Timeout(Duration(minutes: 2)), (tester) async {
+      final store = await tester.runAsync(() => LocalStore.inMemory());
+      final repo = Repository(store: store!);
+      await pumpAsk(tester, repo);
+      // The input is gated; the reason reaches the user through the repository.
+      await expectLater(
+        repo.ask('anything'),
+        throwsA(isA<RepositoryException>().having((e) => e.message, 'message', 'no-backend')),
+      );
     });
 
     testWidgets('empty thread shows suggested questions; tapping one fills the field', timeout: const Timeout(Duration(minutes: 2)), (tester) async {

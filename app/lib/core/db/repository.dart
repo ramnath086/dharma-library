@@ -321,7 +321,11 @@ class Repository {
   // ---------------------------------------------------------------- QA (Ask Dharma)
   Future<QaAnswer> ask(String question, {String language = 'en', String? workSlug, String? sessionId}) async {
     final c = _client;
-    if (c == null || !_online) throw RepositoryException('offline');
+    // Two very different failures used to share one opaque message: a build
+    // with no backend configured, and a device with no connectivity. Callers
+    // surface them separately so the reason is visible on the device.
+    if (c == null) throw RepositoryException('no-backend');
+    if (!_online) throw RepositoryException('offline');
     final res = await c.functions.invoke('ask', body: {
       'question': question, 'language': language, 'work_slug': workSlug ?? workSlugDefault, 'session_id': sessionId,
     });

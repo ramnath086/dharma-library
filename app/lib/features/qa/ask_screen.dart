@@ -76,6 +76,13 @@ class _AskScreenState extends ConsumerState<AskScreen> {
       setState(() => _msgs.add(_Msg.bot(a)));
     } on QaLimitException catch (_) {
       setState(() => _error = AppLocalizations.of(context).askCapReached);
+    } on RepositoryException catch (e) {
+      final l = AppLocalizations.of(context);
+      setState(() => _error = switch (e.message) {
+        'no-backend' => l.askNoBackend,
+        'offline' => l.askOffline,
+        _ => e.toString(),
+      });
     } catch (e) {
       setState(() => _error = e.toString());
     } finally {
