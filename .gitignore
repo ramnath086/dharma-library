@@ -44,3 +44,6 @@ app/android/gradle.properties
 app/android/gradle/
 app/android/gradlew*
 app/android/app/build.gradle*
+
+# Derived bounded offline runtime assets (regenerate before Flutter builds)
+app/assets/offline_parts/*.json

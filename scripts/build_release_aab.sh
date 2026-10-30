@@ -26,6 +26,7 @@ if ! grep -Eq 'keyAlias|storeFile' app/android/key.properties; then
   exit 1
 fi
 
+python3 scripts/prepare_offline_assets.py
 cd app
 flutter pub get
 flutter gen-l10n

@@ -42,9 +42,9 @@ Future<void> main() async {
     await prefs.setString('locale', firstRunLocale(null, device.languageCode));
   }
 
-  // Seed the cache from every bundle shipped in the app.  The asset manifest
-  // is discovered at runtime, so a new published work is available offline
-  // without another hard-coded slug here (and without regressing the pilot).
+  // Seed every shipped work from the generated chapter catalogue. Warm starts
+  // read only the small catalogue and validate SQLite counts. Cold starts
+  // decode one uncached chapter at a time, never the full corpus.
   try {
     final imported = await store.importAllAssetBundles();
     // Bundle assets are optional in a backend-only build; retain the old
@@ -54,8 +54,9 @@ Future<void> main() async {
         await store.importAssetBundle(AppConfig.defaultWorkSlug);
       } catch (_) {/* bundle optional */}
     }
-  } catch (_) {
-    // A missing manifest is also fine for a backend-only build.
+  } catch (error) {
+    await store.appendErrorLog('offline-import', error.toString());
+    // A missing catalogue is also fine for a backend-only build.
     if (!await store.hasBundle(AppConfig.defaultWorkSlug)) {
       try {
         await store.importAssetBundle(AppConfig.defaultWorkSlug);

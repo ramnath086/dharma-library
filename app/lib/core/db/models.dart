@@ -288,13 +288,30 @@ class ReadingProgress {
 
 class Citation {
   final String verseId, ref, quote;
-  final String? editionId, workSlug;
+  final String? editionId, workSlug, shortCode, labelOverride;
   Citation.fromJson(Map<String, dynamic> j)
       : verseId = j['verse_id'] ?? '',
         ref = j['ref'],
         quote = j['quote'] ?? '',
         editionId = j['edition_id'],
-        workSlug = j['work_slug'];
+        workSlug = j['work_slug'],
+        shortCode = j['short_code'],
+        labelOverride = j['label'];
+
+  /// Short codes for the bundled works, used only to label citations stored
+  /// before the server started returning `short_code` — so a Bhāgavad-gītā
+  /// citation is never rendered as "SB".
+  static const _slugCodes = {'bhagavata-purana': 'SB', 'bhagavad-gita': 'BG'};
+
+  /// Chip text: the server's label ("BG 2.47"), else the server's short code
+  /// plus ref, else the code implied by the work slug. Falls back to the bare
+  /// ref rather than guessing a work that wasn't supplied.
+  String get label {
+    final given = labelOverride;
+    if (given != null && given.isNotEmpty) return given;
+    final code = shortCode ?? _slugCodes[workSlug];
+    return code == null || code.isEmpty ? ref : '$code $ref';
+  }
 }
 
 class QaAnswer {

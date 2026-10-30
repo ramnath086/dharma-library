@@ -76,6 +76,13 @@ class _AskScreenState extends ConsumerState<AskScreen> {
       setState(() => _msgs.add(_Msg.bot(a)));
     } on QaLimitException catch (_) {
       setState(() => _error = AppLocalizations.of(context).askCapReached);
+    } on RepositoryException catch (e) {
+      final l = AppLocalizations.of(context);
+      setState(() => _error = switch (e.message) {
+        'no-backend' => l.askNoBackend,
+        'offline' => l.askOffline,
+        _ => e.toString(),
+      });
     } catch (e) {
       setState(() => _error = e.toString());
     } finally {
@@ -173,7 +180,8 @@ class _AskScreenState extends ConsumerState<AskScreen> {
                                     for (final cit in m.citations)
                                       ActionChip(
                                         avatar: const Icon(Icons.format_quote, size: 14),
-                                        label: Text('SB ${cit.ref}'),
+                                        // server-supplied label: "SB 1.1.2" / "BG 2.47"
+                                        label: Text(cit.label),
                                         tooltip: cit.quote,
                                         onPressed: () => c.push('/read/${cit.workSlug ?? slug}/verse/${cit.ref}'),
                                       ),
