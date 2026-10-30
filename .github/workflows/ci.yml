@@ -177,6 +177,7 @@ jobs:
           python3 -c 'from pathlib import Path; text = Path("test.txt").read_text()[-1200:]; print("::notice title=Flutter test result::" + text.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A"))'
           exit ${status:-0}
       - name: Per-file test counts (diagnostic)
+        if: always()
         run: |
           set -o pipefail
           for f in test/*.dart; do
