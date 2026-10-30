@@ -8,32 +8,29 @@
 //      answers per UTC day (counted via qa_answers_today(), RLS-scoped).
 //      Anonymous callers are not per-user capped — they have no stored counter;
 //      provider spend is governed by the project budget instead.
-//   3. Resolve bounded candidate references via indexed work/ref and verse ID
-//      lookups. Never run corpus-wide lexical/vector ranking on this path.
+//   3. Retrieve candidate verses with `retrieve_for_qa` (lexical + entity
+//      match; pgvector similarity is merged in when embeddings exist).
 //   4. Conversation continuity: when the caller passes a session_id they own,
 //      the last few exchanges are replayed as chat turns so follow-up
 //      questions resolve correctly (pure logic in context.ts).
-//   5. Build a prompt containing ONLY those verses (work short code + ref +
-//      text + attribution). The prompt is work-aware: it names the work(s)
-//      actually retrieved and asks for citations in the form [SB 1.1.2] /
-//      [BG 2.47], using that work's own short code. If the passages don't
-//      support an answer the model must say so. Temperature 0.2.
-//   6. Post-validate: extract cited (work, ref) pairs, drop any that were not
-//      in the retrieved set (hallucination guard; a [BG …] citation can never
-//      be satisfied by an SB passage), mark `grounded=false` and return an
-//      honest "no reliable answer" if no valid citation remains.
+//   5. Build a prompt containing ONLY those verses (ref + text + attribution).
+//      Ask the model to answer strictly from the passages and to cite refs in
+//      the form [SB 1.1.2]. If the passages don't support an answer it must
+//      say so. Temperature 0.2.
+//   6. Post-validate: extract cited refs, drop any that were not in the
+//      retrieved set (hallucination guard), mark `grounded=false` and return
+//      an honest "no reliable answer" if no valid citation remains.
 //   7. Log to qa_sessions / qa_messages when a user JWT is present, and return
 //      session_id + the assistant message_id (the app needs it for feedback).
 //
 // Secrets (set with `supabase secrets set`): OPENAI_API_KEY. Optional:
-// AI_MODEL, ASK_DAILY_CAP (default 30, 0 disables),
+// AI_MODEL, EMBEDDING_MODEL, ASK_DAILY_CAP (default 30, 0 disables),
 // OPENAI_BASE_URL (any OpenAI-compatible endpoint).
 // Never fabricates scripture: the model sees real verse text only, and the
 // output is constrained to cite it.
 
-import { retrievePassages, requestedWork, type Passage } from "./retrieval.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";
-import { ground, type AllowedCitations } from "./grounding.ts";
+import { ground } from "./grounding.ts";
 import { capReached, clampQuestion, prepareHistory } from "./context.ts";
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
@@ -41,11 +38,17 @@ const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY")!;
 const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY") ?? "";
 const OPENAI_BASE_URL = Deno.env.get("OPENAI_BASE_URL") ?? "https://api.openai.com/v1";
 const MODEL = Deno.env.get("AI_MODEL") ?? "gpt-4o-mini";
+const EMBEDDING_MODEL = Deno.env.get("EMBEDDING_MODEL") ?? "text-embedding-3-small";
 const DAILY_CAP = Math.max(0, parseInt(Deno.env.get("ASK_DAILY_CAP") ?? "30", 10) || 30);
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+};
+
+type Passage = {
+  verse_id: string; ref: string; work_slug: string; edition_id: string; edition_title: string;
+  language_code: string; body: string; attribution_text: string; rank: number;
 };
 
 const LANG_NAME: Record<string, string> = { en: "English", ml: "Malayalam", hi: "Hindi", sa: "Sanskrit" };
@@ -84,28 +87,30 @@ Deno.serve(async (req) => {
       }
     }
 
-    // Exact indexed lookups only. Candidate references are not trusted text:
-    // the database and existing grounding guard remain the source of truth.
-    let passages = await retrievePassages(sb, question, work_slug, language,
-      () => selectReferences(question, requestedWork(question, work_slug)));
+    // 3. retrieval (lexical + entity)
+    const { data: lexical, error: rerr } = await sb.rpc("retrieve_for_qa", {
+      p_query: question, p_work_slug: work_slug, p_language: language, p_limit: 8,
+    });
+    if (rerr) throw rerr;
+    let passages: Passage[] = lexical ?? [];
+
+    // 3b. vector retrieval (if embeddings exist) — merged by verse
+    try {
+      const emb = await embed(question);
+      if (emb) {
+        const { data: vec } = await sb.rpc("match_verse_contents", { p_embedding: emb, p_language: language, p_work_slug: work_slug, p_limit: 8 });
+        for (const v of vec ?? []) {
+          if (!passages.some((p) => p.verse_id === v.verse_id && p.edition_id === v.edition_id)) passages.push(v);
+        }
+      }
+    } catch (_) { /* embeddings optional */ }
 
     // Prefer translations in the user's language, then base text; cap ~12 passages
     passages = dedupe(passages).slice(0, 12);
+    const allowedRefs = new Set(passages.map((p) => p.ref));
 
     if (passages.length === 0) {
       return json({ answer: "", citations: [], grounded: false, model: MODEL, session_id: session_id ?? null });
-    }
-
-    // 3c. work short codes: citations are validated and labelled per work, so
-    // [BG 2.47] and [SB 2.47] never collapse into one another. `works` is
-    // public-readable; if the lookup fails we fall back to the slug.
-    const shortCodes = await resolveWorks(sb, passages.map((p) => p.work_slug));
-    const allowed: AllowedCitations = new Map<string, Set<string>>();
-    for (const p of passages) {
-      const code = shortCodeFor(p.work_slug, shortCodes);
-      const refs = allowed.get(code);
-      if (refs) refs.add(p.ref);
-      else allowed.set(code, new Set<string>([p.ref]));
     }
 
     // 4. conversation continuity (only for a session the caller actually owns — RLS enforces it)
@@ -120,14 +125,12 @@ Deno.serve(async (req) => {
       } catch (_) { /* continuity is best-effort */ }
     }
 
-    // 5. prompt (work-aware: names the works retrieved and uses their codes)
+    // 5. prompt
     const context = passages.map((p, i) =>
-      `[${i + 1}] ${shortCodeFor(p.work_slug, shortCodes)} ${p.ref} (${p.edition_title}, ${p.language_code})\n${p.body}`).join("\n\n");
-    const workList = [...new Set(passages.map((p) => workName(p, shortCodes)))].join(", ");
-    const example = `[${shortCodeFor(passages[0].work_slug, shortCodes)} ${passages[0].ref}]`;
-    const system = `You are a careful scholar assisting readers of the Dharma Library scriptures (${workList}).
+      `[${i + 1}] SB ${p.ref} (${p.edition_title}, ${p.language_code})\n${p.body}`).join("\n\n");
+    const system = `You are a careful scholar assisting readers of the Śrīmad Bhāgavata Purāṇa.
 Answer ONLY from the passages provided. Do not use outside knowledge about the text's contents, and never invent or paraphrase verses that are not in the passages.
-Cite every claim with the verse reference in square brackets, using the work's short code exactly as written in the passages — for example ${example}. Only cite references that appear in the passages, and never label a verse with another work's short code.
+Cite every claim with the verse reference in square brackets exactly like [SB 1.1.2]. Only cite references that appear in the passages.
 If the passages do not contain enough information, say so plainly in one or two sentences and do not guess.
 Earlier chat turns are context for the question only — every claim in your answer must still be supported by the passages below.
 Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep Sanskrit terms in IAST.`;
@@ -147,20 +150,13 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
     const text: string = data.choices?.[0]?.message?.content ?? "";
     const usage = data.usage ?? {};
 
-    // 7. validate citations (hallucination guard, per work)
-    const g = ground(text, allowed);
-    console.info("ask.grounding", JSON.stringify({ passages: passages.length, valid_citations: g.valid.length }));
-    const citations: CitationPayload[] = [];
-    for (const c of g.valid) {
-      // `allowed` was built from `passages`, so a valid (work, ref) always resolves
-      const p = passages.find((x) => x.ref === c.ref && shortCodeFor(x.work_slug, shortCodes) === c.code);
-      if (!p) continue;
-      citations.push({
-        verse_id: p.verse_id, ref: c.ref, label: `${c.code} ${c.ref}`, short_code: c.code,
-        work_slug: p.work_slug, edition_id: p.edition_id, quote: p.body.slice(0, 200),
-      });
-    }
-    const grounded = citations.length > 0;
+    // 7. validate citations (hallucination guard)
+    const g = ground(text, allowedRefs);
+    const grounded = g.grounded;
+    const citations = g.valid.map((ref) => {
+      const p = passages.find((x) => x.ref === ref)!;
+      return { verse_id: p.verse_id, ref, work_slug: p.work_slug, edition_id: p.edition_id, quote: p.body.slice(0, 200) };
+    });
     const answer = g.answer;
 
     // 8. log (only when signed in — RLS requires ownership); message_id powers feedback
@@ -186,68 +182,9 @@ Write in ${LANG_NAME[language] ?? language}. Be concise (under 200 words). Keep 
 
     return json({ answer, citations, grounded, model: MODEL, session_id: sid, message_id: messageId });
   } catch (e) {
-    console.error("ask.error", String(e?.message ?? e));
     return json({ error: String(e?.message ?? e) }, 500);
   }
 });
-
-/** What we need to know about a work to validate and label its citations. */
-type WorkInfo = { slug: string; short_code: string; title_iast?: string };
-
-/** One citation as returned to the client (label is the chip text). */
-type CitationPayload = {
-  verse_id: string; ref: string; label: string; short_code: string;
-  work_slug: string; edition_id: string; quote: string;
-};
-
-/** The rows we ask PostgREST for when resolving work short codes. */
-type WorkRow = { slug?: string | null; short_code?: string | null; title_iast?: string | null };
-
-/**
- * The little bit of the Supabase client this lookup needs, kept structural so
- * the helper does not depend on the generic inference of `createClient`.
- * deno-lint-ignore no-explicit-any
- */
-type WorksClient = { from: (table: string) => any };
-
-/**
- * Look up the display info of the works behind the retrieved passages, so
- * citations can be validated and labelled per work (SB vs BG). The `works`
- * table is publicly readable; a failure here is non-fatal — `shortCodeFor`
- * falls back to the slug-derived code instead.
- */
-async function resolveWorks(sb: WorksClient, slugs: string[]): Promise<Map<string, WorkInfo>> {
-  const out = new Map<string, WorkInfo>();
-  const unique = Array.from(new Set(slugs)).filter((s) => !!s);
-  if (unique.length === 0) return out;
-  try {
-    const { data } = await sb.from("works").select("slug, short_code, title_iast").in("slug", unique);
-    for (const w of (data ?? []) as WorkRow[]) {
-      if (!w.slug || !w.short_code) continue;
-      out.set(w.slug, {
-        slug: w.slug,
-        short_code: w.short_code.toUpperCase(),
-        title_iast: w.title_iast ?? undefined,
-      });
-    }
-  } catch (_) { /* fall back to the slug-derived code below */ }
-  return out;
-}
-
-/** The citation code for a work: its stored short code, else a slug fallback. */
-function shortCodeFor(slug: string, info: Map<string, WorkInfo>): string {
-  const stored = info.get(slug)?.short_code;
-  if (stored) return stored;
-  if (slug === "bhagavad-gita") return "BG";
-  if (slug === "bhagavata-purana") return "SB";
-  return String(slug ?? "").replace(/[^A-Za-z0-9]/g, "").slice(0, 6).toUpperCase() || "WORK";
-}
-
-/** Human-readable work name for the prompt header; falls back to the code. */
-function workName(p: Passage, info: Map<string, WorkInfo>): string {
-  const title = info.get(p.work_slug)?.title_iast;
-  return title ? `${title} (${shortCodeFor(p.work_slug, info)})` : shortCodeFor(p.work_slug, info);
-}
 
 function dedupe(ps: Passage[]): Passage[] {
   const seen = new Set<string>();
@@ -261,26 +198,15 @@ function dedupe(ps: Passage[]): Passage[] {
   return out;
 }
 
-async function selectReferences(question: string, work: string | null): Promise<unknown> {
-  // No corpus search fallback on provider failure or invalid/nonexistent refs.
-  try {
-    const res = await fetch(`${OPENAI_BASE_URL}/chat/completions`, {
-      method: "POST", signal: AbortSignal.timeout(15000),
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${OPENAI_API_KEY}` },
-      body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 350,
-        response_format: { type: "json_object" }, messages: [
-          { role: "system", content: `Select at most 8 scripture passage references relevant to the question.
-Return only JSON {"passages":[{"work_slug":"bhagavad-gita","ref":"2.47"}]}.
-Allowed works: ${work ?? "bhagavata-purana and bhagavad-gita"}.
-Bhagavata references have canto.chapter.verse; Gita references have chapter.verse.
-Do not supply quotations or answers. If unsure return an empty passages array. These are candidates that will be checked against the database.` },
-          { role: "user", content: question },
-        ] }),
-    });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return JSON.parse(data.choices?.[0]?.message?.content ?? "{}").passages;
-  } catch (_) { return []; }
+async function embed(text: string): Promise<number[] | null> {
+  const res = await fetch(`${OPENAI_BASE_URL}/embeddings`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${OPENAI_API_KEY}` },
+    body: JSON.stringify({ model: EMBEDDING_MODEL, input: text }),
+  });
+  if (!res.ok) return null;
+  const d = await res.json();
+  return d.data?.[0]?.embedding ?? null;
 }
 
 function json(body: unknown, status = 200) {

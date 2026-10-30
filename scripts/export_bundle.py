@@ -34,9 +34,7 @@ else:
 
 
 def run_sql(sql: str) -> list[str]:
-    # Quiet mode suppresses command tags from SET ROLE. Without it, "SET"
-    # is mistaken for a work slug and produces an invalid SET.json bundle.
-    r = subprocess.run([psql, uri, "-qAt", "-v", "ON_ERROR_STOP=1", "-c", sql], capture_output=True, text=True)
+    r = subprocess.run([psql, uri, "-At", "-v", "ON_ERROR_STOP=1", "-c", sql], capture_output=True, text=True)
     if r.returncode != 0:
         sys.exit(r.stderr)
     return [line for line in r.stdout.splitlines() if line.strip()]
